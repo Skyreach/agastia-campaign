@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 import os
+import sys
 import json
+sys.path.insert(0, os.path.expanduser('~/.local/lib/python3.10/site-packages'))
+
 from notion_client import Client
 from pathlib import Path
 import frontmatter
-import sys
 
 # Load Notion API key
 def load_notion_key():
@@ -25,9 +27,9 @@ def get_notion_client():
         print("   Check your API key in .config/notion_key.txt")
         sys.exit(1)
 
-# Database IDs (replace with your actual IDs after creation)
+# Database IDs
 DATABASES = {
-    'entities': 'YOUR_DATABASE_ID_HERE',  # Single unified database
+    'entities': '281693f0-c6b4-80be-87c3-f56fef9cc2b9',  # D&D Campaign Entities database
 }
 
 def sync_to_notion(file_path, entry_type):
@@ -69,10 +71,6 @@ def sync_to_notion(file_path, entry_type):
 
 def sync_all():
     """Sync all campaign files to Notion"""
-    if DATABASES['entities'] == 'YOUR_DATABASE_ID_HERE':
-        print("❌ Please update database ID in sync_notion.py")
-        print("   See .config/NOTION_SETUP.md for instructions")
-        sys.exit(1)
         
     sync_mappings = [
         ('Player_Characters/*.md', 'PC'),

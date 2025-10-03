@@ -79,6 +79,18 @@
 - `./update_index.sh` - Rebuild this index
 - `dnd` - Navigate to campaign and start Claude
 
+### Notion Integration Status: ✅ ACTIVE
+- **Database:** D&D Campaign Entities
+- **Database ID:** 281693f0-c6b4-80be-87c3-f56fef9cc2b9
+- **Last Sync:** 17 entities synced successfully
+- **API Status:** Connected and functional
+
+### Agent Configuration:
+- **System Prompt:** This file (CLAUDE.md)
+- **Project Type:** D&D Campaign Management
+- **Integrations:** Notion sync, Git tracking
+- **Specialized Commands:** Campaign-specific file creation and management
+
 ## 📝 Update Log
 - 2025-01-20: Repository initialized with safety checks
 - 2025-01-20: Directory structure created

@@ -1,0 +1,30 @@
+[project]
+name = "Agastia D&D Campaign"
+description = "Campaign management system for D&D with Notion integration"
+
+[system_prompt]
+file = "CLAUDE.md"
+
+[agent]
+name = "D&D Campaign Assistant"
+description = "Specialized agent for managing D&D campaign with faction tracking, NPC management, and session planning"
+
+[commands]
+sync_notion = "./sync_notion.py all"
+update_index = "./update_index.sh"
+create_npc = "Create new NPC file in appropriate folder"
+create_faction = "Create new faction file with relationships"
+plan_session = "Create session planning document"
+
+[directories]
+characters = "Player_Characters"
+npcs = "NPCs"
+factions = "Factions"
+locations = "Locations"
+sessions = "Sessions"
+core = "Campaign_Core"
+resources = "Resources"
+
+[integrations]
+notion_sync = true
+git_tracking = true

@@ -8,6 +8,14 @@ command -v python3 >/dev/null 2>&1 || { echo "❌ Python3 required but not insta
 
 # Install Python dependencies
 echo "📦 Installing Python dependencies..."
+if ! command -v pip3 &> /dev/null; then
+    echo "🔧 Installing pip3..."
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    python3 get-pip.py --user
+    export PATH="$HOME/.local/bin:$PATH"
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+fi
+
 pip3 install -r requirements.txt 2>/dev/null || pip3 install notion-client python-frontmatter pyyaml
 
 # Set up configuration
