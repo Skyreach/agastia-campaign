@@ -2,18 +2,22 @@
 
 ## Prerequisites
 - **Python 3.x** with pip
+- **Node.js** (for MCP server)
 - **Git** for version control
 - **Notion account** with integration setup
-- **Claude Code CLI** (optional but recommended)
+- **Claude Desktop** (for MCP server integration)
 
 ## Installation
 1. Clone repository: `git clone https://github.com/Skyreach/agastia-campaign.git`
 2. Navigate to directory: `cd /mnt/c/dnd`
-3. Install Python dependencies: `pip3 install -r requirements.txt`
-   - If pip3 not found: `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py --user`
-   - Add to PATH: `export PATH="$HOME/.local/bin:$PATH"`
-4. Run setup: `./setup.sh`
-5. Start Claude: `dnd` (alias) or `claude`
+3. Run automated setup: `./setup.sh`
+   - Installs Python dependencies (pip3, notion-client, etc.)
+   - Installs Node.js and MCP server dependencies
+   - Sets up Claude Desktop MCP integration
+   - Creates shell aliases and configuration
+4. Add your Notion API key to `.config/notion_key.txt`
+5. Restart Claude Desktop to load MCP server
+6. Start Claude: `dnd` (alias) or open Claude Desktop in this directory
 
 ## Structure
 - `Campaign_Core/` - Core campaign documents
@@ -36,7 +40,28 @@
 - **Entities Synced:** 17 (PCs, NPCs, Factions, Locations, Resources)
 - **Last Sync:** Successful
 
-## Required Python Packages
-- `notion-client>=2.0.0` - Notion API integration
-- `python-frontmatter>=1.0.0` - Markdown frontmatter parsing
-- `pyyaml>=6.0` - YAML configuration support
+## MCP Server Features
+🤖 **Persistent Campaign Context** - The MCP server provides:
+
+### Automatic Context Loading
+- **Player Characters**: All PC info, goals, and status
+- **Active Factions**: Current faction states and relationships  
+- **Recent Sessions**: Latest session info and outcomes
+- **Pending Decisions**: Campaign choices that need to be made
+
+### Campaign Management Tools
+- **Notion Sync**: `sync_notion` - Push updates to Notion database
+- **NPC Creation**: `create_npc` - Generate new NPCs with templates
+- **Session Planning**: `plan_session` - Create session planning documents
+- **Faction Analysis**: `get_faction_relationships` - Analyze faction dynamics
+- **State Refresh**: `update_campaign_state` - Reload current campaign data
+
+### Multi-Machine Setup
+✅ **Works across all your devices** - Just clone the repo and run setup
+- MCP server auto-configures for Claude Desktop
+- All campaign data syncs via Git + Notion
+- API keys are the only manual step per machine
+
+## Dependencies (Auto-Installed)
+- **Python**: `notion-client`, `python-frontmatter`, `pyyaml`
+- **Node.js**: `@modelcontextprotocol/sdk`, `@notionhq/client`, `front-matter`

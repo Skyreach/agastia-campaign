@@ -90,11 +90,21 @@ cat > COMMANDS.md << 'EOF'
 - 🔒 Notion API key protection enabled
 EOF
 
+# Install MCP server
+echo "🤖 Installing MCP server for persistent campaign context..."
+./install_mcp.sh
+
 echo "✅ Setup complete!"
 echo ""
 echo "Next steps:"
 echo "1. 🔑 Add Notion API key to .config/notion_key.txt"
-echo "2. 📊 Update database ID in sync_notion.py"
-echo "3. 🔄 Run 'source ~/.bashrc' to activate aliases"
+echo "2. 🔄 Run 'source ~/.bashrc' to activate aliases"
+echo "3. 🔄 Restart Claude Desktop to load MCP server"
 echo "4. 🎲 Use 'dnd' to start Claude in campaign directory"
 echo "5. 🐙 Create GitHub repo: https://github.com/Skyreach/agastia-campaign"
+echo ""
+echo "🤖 MCP Server Features:"
+echo "   - Persistent campaign context across sessions"
+echo "   - Automatic loading of PC, NPC, and faction data"
+echo "   - Notion sync integration"
+echo "   - Session planning and NPC creation tools"
