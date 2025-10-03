@@ -37,7 +37,11 @@ class DnDCampaignServer {
       playerCharacters: [],
       currentQuests: [],
       pendingDecisions: [],
-      recentUpdates: []
+      recentUpdates: [],
+      locations: [],
+      locationHierarchy: {},
+      goals: [],
+      artifacts: []
     };
 
     this.setupHandlers();
@@ -139,8 +143,192 @@ class DnDCampaignServer {
         // Core directory issues
       }
 
+      // Load locations with hierarchy
+      await this.loadLocations();
+
+      // Load goals
+      await this.loadGoals();
+
+      // Load artifacts
+      await this.loadArtifacts();
+
     } catch (error) {
       console.error('Error loading campaign state:', error.message);
+    }
+  }
+
+  async loadLocations() {
+    this.campaignState.locations = [];
+    this.campaignState.locationHierarchy = {};
+
+    const locationsRoot = path.join(campaignRoot, 'Locations');
+
+    const loadLocationFiles = async (dir, relPath = '') => {
+      try {
+        const entries = await fs.readdir(dir, { withFileTypes: true });
+
+        for (const entry of entries) {
+          const fullPath = path.join(dir, entry.name);
+          const newRelPath = relPath ? `${relPath}/${entry.name}` : entry.name;
+
+          if (entry.isDirectory()) {
+            await loadLocationFiles(fullPath, newRelPath);
+          } else if (entry.name.endsWith('.md')) {
+            const content = await fs.readFile(fullPath, 'utf-8');
+            const parsed = frontMatter(content);
+            const attrs = parsed.attributes;
+
+            const location = {
+              name: attrs.name || entry.name.replace('.md', ''),
+              type: attrs.type || 'Location',
+              location_type: attrs.location_type,
+              parent_location: attrs.parent_location,
+              child_locations: attrs.child_locations || [],
+              status: attrs.status,
+              tags: attrs.tags || [],
+              file: newRelPath,
+              version: attrs.version || '0.1.0'
+            };
+
+            this.campaignState.locations.push(location);
+
+            // Build hierarchy index
+            if (!this.campaignState.locationHierarchy[location.name]) {
+              this.campaignState.locationHierarchy[location.name] = {
+                ...location,
+                children: [],
+                path: []
+              };
+            }
+          }
+        }
+      } catch (e) {
+        // Directory doesn't exist yet
+      }
+    };
+
+    await loadLocationFiles(locationsRoot);
+
+    // Build parent-child relationships
+    for (const loc of this.campaignState.locations) {
+      if (loc.parent_location && this.campaignState.locationHierarchy[loc.parent_location]) {
+        this.campaignState.locationHierarchy[loc.parent_location].children.push(loc.name);
+      }
+    }
+
+    // Build full paths
+    const buildPath = (locName, visited = new Set()) => {
+      if (visited.has(locName)) return []; // Prevent circular references
+      visited.add(locName);
+
+      const loc = this.campaignState.locationHierarchy[locName];
+      if (!loc) return [];
+
+      if (loc.parent_location) {
+        const parentPath = buildPath(loc.parent_location, visited);
+        return [...parentPath, locName];
+      }
+      return [locName];
+    };
+
+    for (const locName in this.campaignState.locationHierarchy) {
+      this.campaignState.locationHierarchy[locName].path = buildPath(locName);
+    }
+  }
+
+  async loadGoals() {
+    this.campaignState.goals = [];
+
+    // Extract goals from PC files
+    for (const pc of this.campaignState.playerCharacters) {
+      const pcPath = path.join(campaignRoot, 'Player_Characters', pc.file);
+      const content = await fs.readFile(pcPath, 'utf-8');
+      const parsed = frontMatter(content);
+
+      // Parse goals from content sections
+      const lines = content.split('\n');
+      let inGoalsSection = false;
+      let currentStatus = 'pending';
+
+      for (const line of lines) {
+        if (line.match(/##\s+(Active\s+)?Goals?/i)) {
+          inGoalsSection = true;
+          continue;
+        }
+        if (inGoalsSection && line.startsWith('##')) {
+          break;
+        }
+        if (inGoalsSection) {
+          if (line.match(/###\s+Active/i)) currentStatus = 'active';
+          else if (line.match(/###\s+Pending/i)) currentStatus = 'pending';
+          else if (line.match(/###\s+Completed/i)) currentStatus = 'completed';
+
+          const goalMatch = line.match(/^[\s-]*\*?\*?(.+?)\*?\*?\s*\[([^\]]+)\]/);
+          if (goalMatch) {
+            this.campaignState.goals.push({
+              description: goalMatch[1].trim(),
+              status: currentStatus,
+              owner: pc.name,
+              owner_type: 'PC',
+              scope: goalMatch[2].toLowerCase()
+            });
+          }
+        }
+      }
+    }
+
+    // Load goals from Resources/Goals_Tracker.md if it exists
+    try {
+      const goalsPath = path.join(campaignRoot, 'Resources', 'Goals_Tracker.md');
+      const content = await fs.readFile(goalsPath, 'utf-8');
+      const parsed = frontMatter(content);
+
+      // Extract faction goals with progress clocks
+      const lines = content.split('\n');
+      for (const line of lines) {
+        const clockMatch = line.match(/\*\*(.+?)\*\*.*?\[(\d+)\/(\d+)\]/);
+        if (clockMatch) {
+          this.campaignState.goals.push({
+            description: clockMatch[1].trim(),
+            status: 'active',
+            progress_clock: `[${clockMatch[2]}/${clockMatch[3]}]`,
+            owner: 'Unknown',
+            owner_type: 'Faction'
+          });
+        }
+      }
+    } catch (e) {
+      // Goals tracker doesn't exist yet
+    }
+  }
+
+  async loadArtifacts() {
+    this.campaignState.artifacts = [];
+
+    const coreDir = path.join(campaignRoot, 'Campaign_Core');
+    try {
+      const files = await fs.readdir(coreDir);
+
+      for (const file of files.filter(f => f.endsWith('.md'))) {
+        const content = await fs.readFile(path.join(coreDir, file), 'utf-8');
+        const parsed = frontMatter(content);
+        const attrs = parsed.attributes;
+
+        if (attrs.type === 'Artifact' || file.includes('Artifact') || file.includes('Codex') || file.includes('Axe')) {
+          this.campaignState.artifacts.push({
+            name: attrs.name || file.replace('.md', ''),
+            type: 'Artifact',
+            current_location: attrs.current_location || 'Unknown',
+            seekers: attrs.seekers || [],
+            status: attrs.status,
+            tags: attrs.tags || [],
+            file: file,
+            version: attrs.version || '0.1.0'
+          });
+        }
+      }
+    } catch (e) {
+      // No artifacts yet
     }
   }
 
@@ -156,7 +344,7 @@ class DnDCampaignServer {
           },
           {
             uri: 'campaign://characters',
-            mimeType: 'application/json', 
+            mimeType: 'application/json',
             name: 'Player Characters',
             description: 'All player character information'
           },
@@ -177,6 +365,42 @@ class DnDCampaignServer {
             mimeType: 'application/json',
             name: 'Recent Updates',
             description: 'Latest changes to campaign files'
+          },
+          {
+            uri: 'campaign://locations/hierarchy',
+            mimeType: 'application/json',
+            name: 'Location Hierarchy',
+            description: 'Full location tree with parent-child relationships'
+          },
+          {
+            uri: 'campaign://locations/all',
+            mimeType: 'application/json',
+            name: 'All Locations',
+            description: 'List of all locations in the campaign'
+          },
+          {
+            uri: 'campaign://goals/active',
+            mimeType: 'application/json',
+            name: 'Active Goals',
+            description: 'All goals with active status'
+          },
+          {
+            uri: 'campaign://goals/all',
+            mimeType: 'application/json',
+            name: 'All Goals',
+            description: 'All goals tracked across PCs and factions'
+          },
+          {
+            uri: 'campaign://artifacts',
+            mimeType: 'application/json',
+            name: 'Artifacts & Mysteries',
+            description: 'Important items and unsolved mysteries'
+          },
+          {
+            uri: 'campaign://sessions/upcoming',
+            mimeType: 'application/json',
+            name: 'Upcoming Session',
+            description: 'Next session information'
           }
         ]
       };
@@ -184,7 +408,7 @@ class DnDCampaignServer {
 
     this.server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
       const { uri } = request.params;
-      
+
       switch (uri) {
         case 'campaign://state':
           return {
@@ -194,7 +418,7 @@ class DnDCampaignServer {
               text: JSON.stringify(this.campaignState, null, 2)
             }]
           };
-          
+
         case 'campaign://characters':
           return {
             contents: [{
@@ -203,7 +427,7 @@ class DnDCampaignServer {
               text: JSON.stringify(this.campaignState.playerCharacters, null, 2)
             }]
           };
-          
+
         case 'campaign://factions':
           return {
             contents: [{
@@ -212,7 +436,7 @@ class DnDCampaignServer {
               text: JSON.stringify(this.campaignState.activeFactions, null, 2)
             }]
           };
-          
+
         case 'campaign://decisions':
           return {
             contents: [{
@@ -221,7 +445,7 @@ class DnDCampaignServer {
               text: JSON.stringify(this.campaignState.pendingDecisions, null, 2)
             }]
           };
-          
+
         case 'campaign://recent-updates':
           return {
             contents: [{
@@ -230,7 +454,65 @@ class DnDCampaignServer {
               text: JSON.stringify(this.campaignState.recentUpdates, null, 2)
             }]
           };
-          
+
+        case 'campaign://locations/hierarchy':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(this.campaignState.locationHierarchy, null, 2)
+            }]
+          };
+
+        case 'campaign://locations/all':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(this.campaignState.locations, null, 2)
+            }]
+          };
+
+        case 'campaign://goals/active':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(
+                this.campaignState.goals.filter(g => g.status === 'active'),
+                null,
+                2
+              )
+            }]
+          };
+
+        case 'campaign://goals/all':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(this.campaignState.goals, null, 2)
+            }]
+          };
+
+        case 'campaign://artifacts':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(this.campaignState.artifacts, null, 2)
+            }]
+          };
+
+        case 'campaign://sessions/upcoming':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'application/json',
+              text: JSON.stringify(this.campaignState.lastSession || { message: 'No session data yet' }, null, 2)
+            }]
+          };
+
         default:
           throw new Error(`Unknown resource: ${uri}`);
       }
@@ -303,6 +585,45 @@ class DnDCampaignServer {
               },
               required: ['session_number']
             }
+          },
+          {
+            name: 'commit_and_push',
+            description: 'Commit current changes to git and push to GitHub',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                message: { type: 'string', description: 'Commit message' },
+                auto_sync: { 
+                  type: 'boolean', 
+                  description: 'Automatically sync to Notion after commit', 
+                  default: true 
+                }
+              },
+              required: ['message']
+            }
+          },
+          {
+            name: 'edit_file',
+            description: 'Edit a campaign file and optionally auto-commit/sync',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                file_path: { type: 'string', description: 'Path to file to edit' },
+                content: { type: 'string', description: 'New file content' },
+                commit_message: { type: 'string', description: 'Commit message for changes' },
+                auto_commit: { 
+                  type: 'boolean', 
+                  description: 'Automatically commit and push changes', 
+                  default: true 
+                },
+                auto_sync: { 
+                  type: 'boolean', 
+                  description: 'Automatically sync to Notion after edit', 
+                  default: true 
+                }
+              },
+              required: ['file_path', 'content']
+            }
           }
         ]
       };
@@ -327,6 +648,12 @@ class DnDCampaignServer {
           
         case 'plan_session':
           return await this.planSession(args.session_number, args.title, args.focus);
+          
+        case 'commit_and_push':
+          return await this.commitAndPush(args.message, args.auto_sync);
+          
+        case 'edit_file':
+          return await this.editFile(args.file_path, args.content, args.commit_message, args.auto_commit, args.auto_sync);
           
         default:
           throw new Error(`Unknown tool: ${name}`);
@@ -564,6 +891,162 @@ ${this.campaignState.playerCharacters.length > 0 ?
         content: [{
           type: 'text',
           text: `Failed to create session plan: ${error.message}`
+        }]
+      };
+    }
+  }
+
+  async verifyGitConfig() {
+    const { spawn } = await import('child_process');
+    
+    return new Promise((resolve) => {
+      const child = spawn('git', ['config', 'user.email'], { cwd: campaignRoot });
+      let output = '';
+      
+      child.stdout.on('data', (data) => output += data.toString());
+      child.on('close', (code) => {
+        const email = output.trim();
+        resolve(email === 'mbourqu3@gmail.com');
+      });
+    });
+  }
+
+  async commitAndPush(message, autoSync = true) {
+    try {
+      // Verify git configuration
+      const validConfig = await this.verifyGitConfig();
+      if (!validConfig) {
+        return {
+          content: [{
+            type: 'text',
+            text: '❌ Git commit blocked: Not using approved email (mbourqu3@gmail.com)'
+          }]
+        };
+      }
+
+      const { spawn } = await import('child_process');
+      
+      // Add all changes
+      const addResult = await new Promise((resolve) => {
+        const child = spawn('git', ['add', '.'], { cwd: campaignRoot });
+        let output = '';
+        child.stdout.on('data', (data) => output += data.toString());
+        child.stderr.on('data', (data) => output += data.toString());
+        child.on('close', (code) => resolve({ code, output }));
+      });
+
+      // Check for changes
+      const statusResult = await new Promise((resolve) => {
+        const child = spawn('git', ['status', '--porcelain'], { cwd: campaignRoot });
+        let output = '';
+        child.stdout.on('data', (data) => output += data.toString());
+        child.on('close', (code) => resolve({ code, output }));
+      });
+
+      if (!statusResult.output.trim()) {
+        return {
+          content: [{
+            type: 'text',
+            text: '📝 No changes to commit'
+          }]
+        };
+      }
+
+      // Commit changes
+      const commitMessage = `${message}
+
+🎲 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>`;
+
+      const commitResult = await new Promise((resolve) => {
+        const child = spawn('git', ['commit', '-m', commitMessage], { cwd: campaignRoot });
+        let output = '';
+        child.stdout.on('data', (data) => output += data.toString());
+        child.stderr.on('data', (data) => output += data.toString());
+        child.on('close', (code) => resolve({ code, output }));
+      });
+
+      if (commitResult.code !== 0) {
+        return {
+          content: [{
+            type: 'text',
+            text: `❌ Commit failed: ${commitResult.output}`
+          }]
+        };
+      }
+
+      // Push to GitHub
+      const pushResult = await new Promise((resolve) => {
+        const child = spawn('git', ['push'], { cwd: campaignRoot });
+        let output = '';
+        child.stdout.on('data', (data) => output += data.toString());
+        child.stderr.on('data', (data) => output += data.toString());
+        child.on('close', (code) => resolve({ code, output }));
+      });
+
+      let resultMessage = `✅ Successfully committed and pushed changes\n${commitResult.output}`;
+      
+      if (pushResult.code !== 0) {
+        resultMessage += `\n⚠️ Push failed: ${pushResult.output}`;
+      }
+
+      // Auto-sync to Notion if requested
+      if (autoSync) {
+        const syncResult = await this.syncNotion('all');
+        resultMessage += `\n📊 Auto-synced to Notion`;
+      }
+
+      return {
+        content: [{
+          type: 'text',
+          text: resultMessage
+        }]
+      };
+    } catch (error) {
+      return {
+        content: [{
+          type: 'text',
+          text: `❌ Commit/push failed: ${error.message}`
+        }]
+      };
+    }
+  }
+
+  async editFile(filePath, content, commitMessage, autoCommit = true, autoSync = true) {
+    try {
+      const fullPath = path.join(campaignRoot, filePath);
+      
+      // Write the file
+      await fs.writeFile(fullPath, content);
+      
+      let resultMessage = `✅ Updated file: ${filePath}`;
+
+      // Auto-commit if requested
+      if (autoCommit) {
+        const defaultMessage = commitMessage || `Update ${filePath}`;
+        const commitResult = await this.commitAndPush(defaultMessage, autoSync);
+        resultMessage += `\n${commitResult.content[0].text}`;
+      } else if (autoSync) {
+        // Just sync to Notion without committing
+        const syncResult = await this.syncNotion('all');
+        resultMessage += `\n📊 Synced to Notion`;
+      }
+
+      // Update campaign state
+      await this.loadCampaignState();
+
+      return {
+        content: [{
+          type: 'text',
+          text: resultMessage
+        }]
+      };
+    } catch (error) {
+      return {
+        content: [{
+          type: 'text',
+          text: `❌ File edit failed: ${error.message}`
         }]
       };
     }

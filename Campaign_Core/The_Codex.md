@@ -1,121 +1,195 @@
 ---
-name: The Codex
+name: The Dominion Evolution Codex
 type: Campaign Mystery
-status: Undefined
+status: Active
+version: "1.0.0"
 importance: High
-tags: [codex, mystery, artifact, campaign-central, professor-zero]
+tags: [codex, mystery, dominion-evolution, professor-zero, decimate-project, campaign-central]
 ---
 
-# The Codex - Central Campaign Mystery
+# The Dominion Evolution Codex - Central Campaign Mystery
 
-## Current Status: UNDEFINED
-The Codex is mentioned as a significant campaign element but requires definition of its nature, content, and role in the overall story.
+## Player Summary
 
-## Potential Natures
-
-### Option 1: Ancient Magical Text
-- **Content:** Spells, rituals, or magical knowledge from a lost civilization
-- **Power:** Contains dangerous or revolutionary magical techniques
-- **Seekers:** Wizards, scholars, cult members seeking magical power
-- **Danger:** Could upset magical balance or enable catastrophic events
-
-### Option 2: Historical Record
-- **Content:** True history of the region, including hidden or suppressed events
-- **Power:** Knowledge that could destabilize current political structures
-- **Seekers:** Historians, political factions, those seeking legitimacy
-- **Danger:** Truth could destroy Merit Council's foundation or reveal dark secrets
-
-### Option 3: Prophetic Writings
-- **Content:** Predictions about future events, possibly including PC actions
-- **Power:** Ability to foresee and potentially prevent or ensure outcomes
-- **Seekers:** Anyone hoping to gain advantage through foreknowledge
-- **Danger:** Self-fulfilling prophecies or timeline manipulation
-
-### Option 4: Technological Blueprint
-- **Content:** Advanced technological or magical-technological designs
-- **Power:** Could revolutionize society through new inventions
-- **Seekers:** Inventors, the Merit Council, those seeking progress
-- **Danger:** Technology falling into wrong hands or disrupting society
-
-### Option 5: Philosophical Framework
-- **Content:** New system of governance, ethics, or social organization
-- **Power:** Could provide alternative to current Merit Council system
-- **Seekers:** The Dispossessed, reformers, political philosophers
-- **Danger:** Revolutionary ideas leading to social upheaval
-
-## Key Questions to Resolve
-
-### Basic Nature
-- What exactly is the Codex? (Book, scroll, tablet, crystal, etc.)
-- How old is it and who created it?
-- What language or format is it in?
-- How large/comprehensive is it?
-
-### Content & Power
-- What specific information does it contain?
-- What makes it valuable or dangerous?
-- Are there multiple copies or is it unique?
-- Does it require special knowledge or tools to understand?
+### What the PCs Know
+The Dominion Evolution Codex is a mysterious text or artifact that Professor Zero is actively seeking. Two party members have missions related to it:
+- **Manny:** Mission #10 involves the Codex
+- **Nikki (Biago):** Mission #8 involves the Codex
 
 ### Current Status
+- **Location:** Unknown
+- **Nature:** Unclear - could be book, scroll, artifact, or something else
+- **Purpose:** Professor Zero's interest suggests significant importance
+- **Connection:** May relate to Decimate Project, Josh's markings, or Steel Dragon
+
+---
+
+## DM Notes
+
+### Established Facts
+- **Name:** "Dominion Evolution Codex" - suggests transformation or change in control/power
+- **Seeker:** Professor Zero actively searching for it
+- **PC Involvement:** Manny and Nikki have missions connected to finding it
+- **Faction:** Likely central to Decimate Project's goals
+- **Importance:** Significant enough to assign to two separate PCs
+
+### The Name's Meaning
+"Dominion Evolution Codex" suggests several possibilities:
+- **Dominion:** Control, rulership, sovereignty, or realm of influence
+- **Evolution:** Change, transformation, development, or progression
+- **Codex:** Ancient text, compiled knowledge, or systematic doctrine
+
+**Possible Interpretations:**
+- Instructions for evolving forms of control/rulership
+- History of how power structures change over time
+- Methods for transforming dominion from one type to another
+- Systematic knowledge about evolving sovereignty
+- Connection to Steel Dragon's reincarnation/evolution across lifetimes
+
+### Potential Connections to Campaign
+
+**Steel Dragon:**
+- Could the Codex explain reincarnation mechanisms?
+- Does it describe how to maintain dominion across incarnations?
+- Might it reveal the Dragon's supporters' methods of control?
+- Could understanding evolution of dominion help stop the Dragon?
+
+**Decimate Project:**
+- Why does Professor Zero want this specifically?
+- Does "Decimate" relate to transforming or destroying dominion?
+- Is the project about preventing or enabling dominion evolution?
+- What would Professor Zero do with this knowledge?
+
+**Josh's Markings:**
+- Could the markings be excerpts or symbols from the Codex?
+- Do they indicate Josh's connection to dominion evolution?
+- Might the Codex explain the markings' purpose and origin?
+- Is Josh marked as part of someone's evolving dominion?
+
+**Merit Council System:**
+- Does meritocracy represent one form of dominion evolution?
+- Could the Codex threaten or validate the Merit Council?
+- Might it describe merit systems as stage in dominion development?
+- Would understanding dominion evolution destabilize current power?
+
+**Giant's Axe & Ratterdan:**
+- Does reality-bleeding relate to dominion over planes/reality?
+- Could giant clans possess their own form of evolving dominion?
+- Might the Codex explain planar/temporal manipulation?
+- Is Ratterdan's destruction part of dominion evolution pattern?
+
+### Development Questions
+
+**Basic Nature:**
+- Physical form: Book? Scroll? Stone tablets? Crystal? Mental imprint?
+- Age and origin: Ancient civilization? Divine revelation? Compiled research?
+- Language/format: Readable by whom? Requires special knowledge?
+- Completeness: Whole or fragments scattered across locations?
+
+**Content & Power:**
+- Specific information: What exactly does it contain?
+- Practical application: Can knowledge be used directly or requires interpretation?
+- Dangers: Why is this knowledge considered dangerous or valuable?
+- Accessibility: Who can understand and use this information?
+
+**Current Location:**
 - Where is the Codex now?
-- Who knows of its existence?
-- Has anyone successfully used it?
-- Is it complete or are there missing pieces?
+- Who has possessed it previously?
+- How do Manny and Nikki's missions differ in approach?
+- What obstacles prevent Professor Zero from finding it directly?
 
-### Campaign Integration
-- How does Professor Zero connect to the Codex?
-- Which factions would want to possess it?
-- How might PCs encounter or seek it?
-- What role should it play in the overall campaign?
+**Campaign Integration:**
+- When should PCs first encounter real leads?
+- How does searching for Codex intersect with other adventures?
+- What happens if PCs find it before understanding its significance?
+- Should multiple factions compete for it?
 
-## Potential Connections
+### Manny and Nikki's Missions
 
-### Professor Zero
-- **Knowledge:** Academic who has studied references to the Codex
-- **Research:** Actively seeking to locate or understand it
-- **Expertise:** Specialized knowledge needed to interpret it
-- **Motivation:** Academic curiosity vs. practical application
+**Mission Differences:**
+- **Manny's Mission #10:** Unknown specifics, connects to the Codex
+- **Nikki's Mission #8:** Unknown specifics, connects to the Codex
+- **Possible Separation:** Different aspects? Competing approaches? Complementary research?
+- **Professor Zero's Strategy:** Why assign two separate missions for one objective?
 
-### Factions
-- **Merit Council:** Could use it to legitimize or improve their system
-- **Chaos Cult:** Might seek to use or destroy it
-- **Dispossessed:** Could see it as tool for change
-- **Decimate Project:** Possibly connected to their mysterious agenda
+**Questions:**
+- Do Manny and Nikki know about each other's Codex missions?
+- Are they seeking the same part or different fragments?
+- Does Professor Zero expect them to work together or independently?
+- What information has each been given?
 
-### Campaign Mysteries
-- **Josh's Markings:** Could be related to Codex contents or warnings
-- **Ratterdan Ruins:** Possible location or clue to Codex whereabouts
-- **Giant Axe:** Might be connected to same source as Codex
+## Faction Interest
 
-## Campaign Role Considerations
+### Professor Zero & Decimate Project
+- **Primary Seeker:** Professor Zero actively searching
+- **Project Connection:** Likely central to Decimate Project goals
+- **Resources:** Academic connections, research capabilities
+- **Limitations:** Unknown why Professor Zero can't find it directly
 
-### MacGuffin
-- Object that drives plot through various parties seeking it
-- Creates conflicts between factions
-- Provides ongoing motivation for adventures
+### Other Potential Seekers
 
-### Knowledge Source
-- Gradual revelation of Codex contents drives story
-- PCs learn pieces over time
-- Information changes their understanding of the world
+**Merit Council:**
+- If Codex explains dominion evolution, could validate or threaten meritocracy
+- Might seek to suppress or control access
+- Could provide legitimacy or expose foundational flaws
 
-### Power Source
-- Provides abilities or advantages to those who possess it
-- Creates moral dilemmas about its use
-- Potential for corruption or misuse
+**Chaos Cult:**
+- If related to Steel Dragon's reincarnation, critical to cult's plans
+- Might want to use, corrupt, or destroy it
+- Could explain how to amplify or disrupt dominion evolution
 
-### Red Herring
-- Appears important but leads to deeper truths
-- Distraction from real threats or mysteries
-- Subverts expectations about campaign direction
+**The Dispossessed:**
+- If Codex describes alternative power structures, represents hope
+- Might seek to use knowledge for revolution
+- Could justify demands for systemic change
 
-## Development Priority
-**This mystery requires immediate attention as it's central to the campaign concept and may influence early session planning, especially connections to Professor Zero and potential patron motivations.**
+**Steel Dragon's Supporters:**
+- If Codex explains maintaining dominion across incarnations, essential
+- Anonymous supporters might already possess or seek it
+- Could be how they control Dragon's motives across lifetimes
 
-## DM Decision Points
-1. **Basic Nature:** What is the Codex?
-2. **Content Significance:** What makes it important to the campaign?
-3. **Current Location:** Where is it and how will PCs encounter it?
-4. **Faction Involvement:** Which groups want it and why?
-5. **Campaign Timeline:** When and how will it become relevant to PC adventures?
+**Giant Clans:**
+- If related to reality manipulation or planar dominion, relevant
+- Storm giant's actions at Ratterdan might connect
+- Could explain giant magic and primordial forces
+
+## Campaign Role & Timeline
+
+### Early Campaign (Current)
+- **PC Knowledge:** Manny and Nikki aware of their missions
+- **Active Search:** Professor Zero seeking but hasn't found it
+- **Background Mystery:** Mentioned but not immediate focus
+- **First Clues:** When should PCs encounter real leads?
+
+### Mid Campaign Development
+- **Intersection:** Codex search connects to other adventures
+- **Faction Competition:** Multiple groups seeking same goal
+- **Partial Discovery:** Finding clues, fragments, or references
+- **Stakes Rising:** Understanding significance increases urgency
+
+### Late Campaign Resolution
+- **Discovery:** Finding the actual Codex
+- **Understanding:** Comprehending its true meaning
+- **Decision:** What to do with knowledge/power
+- **Consequences:** How Codex affects campaign resolution
+
+### Flexible Integration
+The Codex should intersect organically with:
+- Session adventures providing clues
+- Faction conflicts revealing different interests
+- PC backstories connecting to dominion themes
+- Steel Dragon mystery unfolding
+- Josh's markings potentially being related
+
+## Development Notes
+
+**Status:** While the Codex is established as important to the campaign (Professor Zero's search, Manny and Nikki's missions), its exact nature and specific role remain flexible for optimal campaign integration.
+
+**Priority:** Define concrete details as Professor Zero becomes more active in the campaign, Manny and Nikki pursue their missions, or other plot threads create natural connections to dominion evolution themes.
+
+**Themes to Consider:**
+- Evolution of power and control
+- Transformation across lifetimes (Steel Dragon)
+- Merit-based vs. other forms of dominion
+- Knowledge as power and danger
+- Who should control transformative information

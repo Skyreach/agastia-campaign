@@ -1,113 +1,143 @@
 ---
 name: Session 0 - Character Creation & Campaign Setup
 session_number: 0
-status: Planning
-date: TBD
-tags: [session0, character-creation, campaign-setup, safety-tools]
+status: Completed
+version: "1.0.0"
+date: September 21, 2025
+tags: [session0, character-creation, campaign-setup, world-building]
 ---
 
 # Session 0: Character Creation & Campaign Setup
 
-## Purpose
-Establish characters, campaign expectations, and world foundations before beginning actual adventures. This crucial session ensures everyone is aligned on campaign tone, character goals, and table expectations.
+## Session Summary
+**Date:** September 21, 2025
+**Status:** Successfully completed
+**Outcome:** All characters finalized, campaign framework established, world-building contributions integrated
 
-## Session Agenda (2-3 hours)
+## Session Accomplishments
 
-### 1. Welcome & Introductions (15 minutes)
-- Player introductions (if needed)
-- Overview of campaign concept and themes
-- Schedule and commitment expectations
+### Characters Finalized
+All five player characters were created and approved:
 
-### 2. Safety Tools & Table Expectations (15 minutes)
-- **Safety Tools:** X-Card, Lines & Veils discussion
-- **Table Rules:** Respectful play, spotlight sharing, character conflict vs. player conflict
-- **Campaign Tone:** Heroic adventure with political intrigue and moral complexity
-- **Content Guidelines:** Mature themes acceptable, extreme content discussion
+1. **Manny** - Half-Orc Eldritch Knight
+2. **Nikki/Biago** - Tiefling Arcane Trickster
+3. **Ian/Rakash** - Goblin Barbarian
+4. **Kyle/Nameless** - Rainbow Ranger/Rogue (homebrew race approved)
+5. **Josh** - Sorcerer with mysterious markings
 
-### 3. World Overview (30 minutes)
-- **Setting:** Agastia and the Merit Council system
-- **Factions:** Brief overview of major political groups
-- **Current Situation:** Tensions between order and chaos
-- **Starting Point:** PCs as new adventurers in Agastia
+**Special Rules Established:**
+- All characters started at 2nd level
+- Each character received one bonus feat
+- Bastion system integrated for character-focused downtime
+- 3-2-1 quest structure (three-session major arcs, two-session minor arcs, one-shots)
 
-### 4. Character Creation (60-90 minutes)
+### Character Connections Established
 
-#### Character Requirements
-- **Level:** Starting at 1st level
-- **Stats:** Point buy (27 points) or standard array
-- **Races:** PHB + approved supplemental material
-- **Classes:** All PHB classes, discuss homebrew case-by-case
-- **Background Integration:** How does PC fit into Merit Council society?
+**Pre-Existing Relationships:**
+- **Kyle saved Rakash:** Kyle's character rescued Rakash (Ian's goblin) from a dangerous situation in their shared background
+- **Manny and Nikki together:** Traveling companions or partners with established relationship
+- **[Additional connections established during session]**
 
-#### Special Character Considerations
-- **Manny:** Half-Orc Eldritch Knight - background in Merit society?
-- **Nikki/Biago:** Tiefling Arcane Trickster - how do tieflings fit in Agastia?
-- **Ian/Rakash:** Goblin Barbarian - unusual race choice, background story needed
-- **Kyle/Nameless:** Rainbow race (homebrew) - mechanics and lore to establish
-- **Josh:** Sorcerer with mysterious markings - origin and significance
+**Player-Created Locations:**
+- **Italian Restaurant:** [Details to be developed]
+- **Traveling Carnival:** Mobile entertainment with potential faction connections
+- **Midnight Market:** Underground economy and information exchange
+- **Burned Mansion:** Destroyed noble estate, potential investigation site
+- **Villages and Landmarks:** Multiple settlements and geographic features
+- **[Additional contributions from session notes]**
 
-#### Background Questions for All PCs
-1. How does your character feel about the Merit Council system?
-2. What brought you to adventuring instead of pursuing merit advancement?
-3. Do you have family or connections in Agastia?
-4. What are your character's immediate goals?
-5. How do you feel about working with a diverse group?
+### Campaign Decisions Made
 
-### 5. Party Connections (30 minutes)
-- **Group Formation:** Why would these characters work together?
-- **Shared History:** Do any characters know each other previously?
-- **Common Goals:** What unites the party beyond simple profit?
-- **Group Dynamic:** What role does each character fill in the party?
+**System Modifications:**
+1. **3-Faction System:** Simplified to focus on Merit Council, Chaos Cult, and Dispossessed as primary factions (with Decimate Project and others as secondary)
+2. **3-2-1 Quest Structure:** Major arcs span three sessions, minor arcs two sessions, one-shot adventures as needed
+3. **Bastion Integration:** Character-focused downtime activities between adventures
+4. **Bonus Feat:** Each character received one additional feat at creation
+5. **Starting Level:** Characters begin at 2nd level (advanced from 1st)
 
-### 6. Campaign Hooks Setup (20 minutes)
-- **Session 1 Preview:** Caravan job opportunity
-- **Character Motivations:** Why would each PC take this job?
-- **Long-term Interests:** What might keep the party together after Session 1?
-- **Faction Connections:** Any PC ties to major factions?
+**Campaign Style Agreed:**
+- **Light Story:** Engaging narrative that doesn't overwhelm gameplay
+- **Moral Dilemmas:** Complex situations requiring difficult choices
+- **40% Combat / 60% Exploration:** Emphasis on investigation and roleplay
+- **Levels 2-9:** Campaign scope defined
+- **Player Contributions:** Ongoing world-building encouraged
 
-## Character Sheet Requirements
-- **Completed Stats:** All abilities, skills, and basic equipment
-- **Background Story:** 2-3 paragraph character background
-- **Goals & Motivations:** Short-term and long-term character goals
-- **Connections:** Relationships to setting and other PCs
-- **Appearance & Personality:** Basic description and key traits
+### Central Conflict Established
 
-## Special Rules & Homebrew
+**The Steel Dragon:**
+Players were introduced to the campaign's central antagonist:
+- Living multiple incarnations across time
+- Creating "artistic murders" that escalate to mass destruction
+- Thrives in meritocratic systems
+- Controlled/influenced by anonymous supporters across lifetimes
+- Represents merit without morality, ability without accountability
 
-### Rainbow Race (Kyle's Character)
-- **Abilities:** [To be established based on player input]
-- **Appearance:** [Color-shifting or consistently multicolored?]
-- **Culture:** [Where do Rainbow people come from? How are they viewed?]
-- **Mechanics:** [Racial traits equivalent to standard races]
+**Supporting Elements:**
+- Chaos Cult working to corrupt and amplify the Dragon
+- Merit Council representing order vs. Dispossessed seeking equity
+- Professor Zero and the Decimate Project seeking the Dominion Evolution Codex
+- Giant clans and other external forces with mysterious agendas
 
-### Mysterious Markings (Josh's Character)
-- **Appearance:** [Physical description of markings]
-- **Origin:** [Unknown to character, but player and DM should discuss privately]
-- **Recognition:** [Which NPCs might recognize these markings?]
-- **Mechanical Effects:** [If any, appropriate for 1st level]
+### Character-Specific Elements
 
-## DM Preparation
-- **World Questions:** Be ready to answer setting questions
-- **Homebrew Approval:** Review any custom content requests
-- **NPC Concepts:** Have ideas for character connections
-- **Faction Recruitment:** Consider which factions might interest each PC
+**Manny (Half-Orc Eldritch Knight):**
+- Mission #10: Connected to finding the Dominion Evolution Codex
+- Relationship with Nikki established
+- [Additional background details from session]
 
-## Materials Needed
-- Character sheets (physical or digital)
-- PHB and other approved rulebooks
-- Setting handouts or maps
-- Note-taking materials for tracking character details
+**Nikki/Biago (Tiefling Arcane Trickster):**
+- Mission #8: Connected to finding the Dominion Evolution Codex
+- Traveling with Manny
+- [Additional background details from session]
 
-## Post-Session 0 Tasks
-- **Character Sheet Review:** Ensure all sheets are complete and legal
-- **Background Integration:** Work individual character stories into campaign
-- **Session 1 Prep:** Adjust first session based on character choices
-- **Handout Creation:** Prepare any character-specific materials
+**Ian/Rakash (Goblin Barbarian):**
+- Saved by Kyle's character in backstory
+- [Additional background details from session]
 
-## Session 0 Outcomes
-By the end of this session, we should have:
-- Complete, legal character sheets for all players
-- Clear understanding of campaign tone and expectations
-- Party connections and group dynamic established
-- Character motivations for Session 1 adventure
-- Any homebrew elements fully defined and approved
+**Kyle/Nameless (Rainbow Ranger/Rogue):**
+- Homebrew Rainbow race approved with mechanics
+- Rescued Rakash previously
+- [Additional background details from session]
+
+**Josh (Sorcerer):**
+- Mysterious markings with campaign significance
+- Potential connection to Dominion Evolution Codex, Steel Dragon, or other mysteries
+- [Additional background details from session]
+
+## Session 0 Outcomes Achieved
+
+**Successful Completions:**
+- ✅ All five character sheets complete and approved
+- ✅ Homebrew elements (Rainbow race, mysterious markings) integrated
+- ✅ Party connections and dynamics established
+- ✅ Campaign tone and expectations aligned
+- ✅ World-building contributions gathered
+- ✅ Special rules (bonus feat, Bastion, 3-2-1 structure) agreed upon
+- ✅ Central conflict (Steel Dragon) introduced
+- ✅ Session 1 setup prepared (caravan to Ratterdan)
+
+**Ready for Session 1:**
+The party is prepared to begin their first adventure investigating the ruins of Ratterdan, where a storm giant's axe is "bleeding reality" and causing temporal distortions.
+
+## Notes for Campaign Development
+
+**Player Engagement:**
+Players actively contributed to world-building, showing investment in collaborative storytelling. Their location and landmark contributions should be integrated into future sessions.
+
+**Character Connections:**
+The pre-existing relationships (Kyle-Rakash, Manny-Nikki) provide strong foundation. Additional connections developed during Session 0 create party cohesion.
+
+**Homebrew Integration:**
+- Rainbow race mechanics finalized and balanced
+- Josh's mysterious markings set up as campaign mystery
+- Bonus feat adds character customization without breaking balance
+- Bastion system provides downtime structure
+
+**Campaign Scope:**
+Levels 2-9 provides clear endpoint, allowing focused story arc. Light story approach with moral dilemmas matches player preferences. 40/60 combat/exploration ratio emphasizes investigation and roleplay.
+
+**Next Steps:**
+- Integrate player-created locations into regional maps and adventures
+- Develop patron NPC for Session 1 hiring
+- Prepare Ratterdan encounter details
+- Create character-specific moments for Session 1 spotlight

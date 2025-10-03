@@ -1,119 +1,188 @@
 ---
-name: Giant Axe
-type: Magical Artifact
-status: To Be Discovered
+name: Giant's Axe
+type: Artifact
+status: Active
+version: "1.0.0"
 location: Ratterdan Ruins
-tags: [artifact, giant-axe, ratterdan, session1, magical-item]
+tags: [artifact, reality-bleeding, ratterdan, storm-giant, temporal-distortion, session1]
 ---
 
-# Giant Axe - Ratterdan Artifact
+# Giant's Axe - Reality-Bleeding Artifact
 
-## Overview
-A significant magical artifact to be discovered during the party's first adventure to Ratterdan. This item will serve as both reward and plot hook for future adventures.
+## Player Summary
 
-## Physical Description (Tentative)
-- **Size:** Large, requiring significant strength to wield effectively
-- **Material:** [To be determined - enchanted steel? Ancient metal? Composite materials?]
-- **Appearance:** [Decorative elements? Runes? Battle damage? Pristine condition?]
-- **Weight:** Heavy enough to be challenging but not impossible for strong characters
+### Overview
+A massive greataxe left by a storm giant at the site of Ratterdan's destruction. The weapon is "bleeding reality," causing temporal distortions and planar phenomena in the surrounding area. The patron wants the party to investigate and either retrieve or secure this dangerous artifact.
 
-## Mechanical Properties (Scaling Options)
+### Physical Description
+- **Size:** Sized for a storm giant - massive compared to humanoid weapons
+- **Material:** Unknown metal with bluish-silver sheen
+- **Current State:** Embedded in the earth at Ratterdan's center
+- **Visual Effects:** Reality appears to warp and shimmer around it
 
-### Level 1 Version (Session 1 Discovery)
-- **Base Weapon:** Greataxe or Battleaxe statistics
-- **Magic Bonus:** +1 to attack and damage rolls
-- **Special Property:** [Minor magical effect appropriate for low-level characters]
-- **Attunement:** [Required? By specific class/race/background?]
+### Observable Phenomena
+- **Temporal Distortions:** Time flows irregularly near the axe
+- **Feywild Bleeding:** Upward-falling leaves in a pocket of Feywild energy
+- **Reality Warping:** Visual distortions, "bleeding" effect around the weapon
+- **Environmental Impact:** Smoking crater, destroyed buildings, warped ecosystem
+- **Giant Tracks:** Evidence the storm giant left deliberately, not in flight
 
-### Potential Growth
-- **Awakening Powers:** Artifact reveals additional abilities as PCs advance
-- **Unlocking Conditions:** Specific achievements, locations, or knowledge triggers new abilities
-- **Scaling Mechanics:** Powers appropriate to party level when discovered
+### Patron's Mission
+The patron has hired the party to:
+- Investigate what happened at Ratterdan
+- Assess the axe and its effects
+- Retrieve or secure the artifact if possible
+- Report findings back to the patron
 
-## Possible Magical Properties
+---
 
-### Combat Abilities
-- **Enhanced Damage:** Bonus damage dice on critical hits
-- **Elemental Effect:** Fire, cold, lightning, or thunder damage addition
-- **Cleaving:** Ability to hit multiple adjacent enemies
-- **Sundering:** Extra effectiveness against objects and armor
+## DM Notes
 
-### Utility Powers
-- **Detect Magic:** Sense magical auras within a certain range
-- **Earth Walking:** Move through stone or dirt as if difficult terrain
-- **Giant Strength:** Temporary enhancement to Strength score
-- **Size Alteration:** Shrink or grow to accommodate different wielders
+### True Nature
+The giant's axe is not merely abandoned - it was deliberately left to "bleed reality." The storm giant used it to destroy Ratterdan, then intentionally positioned it to create ongoing temporal and planar distortions.
 
-### Legendary Properties (High Level)
-- **Legendary Resistance:** Limited uses per day
-- **Spell Storage:** Can hold and release certain spells
-- **Planar Connection:** Portal creation or planar travel
-- **Command Giants:** Influence over giant-type creatures
+### Reality-Bleeding Properties
 
-## Historical Significance
+**Dimensional Effects:**
+- Creates weak points between Material Plane, Feywild, and potentially other planes
+- Temporal distortions causing time to flow irregularly
+- Manifestation of Feywild pockets and phenomena
+- Local ecosystem becoming warped by planar bleed
+- Possible beacon or anchor for something from another plane
 
-### Origin Questions
-- **Creator:** Who made this axe and why?
-- **Previous Owners:** Giants? Heroes? Villains?
-- **Purpose:** War weapon? Ceremonial item? Tool of power?
-- **Age:** Ancient artifact or more recent creation?
+**Effect Zones:**
+- **Core (30 feet):** Severe temporal distortion, dangerous exposure
+- **Transition (30-100 feet):** Moderate planar bleeding, environmental effects
+- **Outer (100-300 feet):** Minor phenomena, subtle reality warping
 
-### Connection to Ratterdan
-- **Why Here:** What brought the axe to Ratterdan?
-- **Protection:** What has guarded it until now?
-- **Discovery Context:** How do the PCs find it?
-- **Local Legend:** Do people know about it?
+### Storm Giant's Intent
+**Critical Mystery:** Why did the giant leave such a dangerous artifact behind?
 
-## Campaign Integration
+**Possible Explanations:**
+- Deliberate marker or beacon
+- Anchoring planar ritual or summoning
+- Too dangerous even for the giant to keep
+- Part of coordinated giant clan operation
+- Bait to draw specific individuals or forces
 
-### Immediate Impact (Session 1)
-- **Discovery Moment:** Dramatic reveal during Ratterdan exploration
-- **Power Demonstration:** Early chance to showcase magical properties
-- **Group Decision:** Who gets to wield it initially?
-- **Patron Interest:** How does the patron react to this discovery?
+### Investigation Clues
 
-### Long-term Implications
-- **Faction Interest:** Which groups would want to claim or study it?
-- **Quest Hooks:** Adventures arising from its discovery
-- **Character Development:** How does possession affect the wielder?
-- **Plot Advancement:** How does it connect to larger campaign mysteries?
+**Physical Evidence:**
+- Giant tracks show deliberate placement, standing and observing
+- Zhaask (Draconic) symbols etched near the axe base
+- Signs others attempted approach but retreated
+- Temporal patterns suggest intentional calibration
+- No signs of battle - destruction was methodical
 
-## Potential Connections
+**Zhaask Symbols:**
+Draconic runes that might translate to:
+- Location coordinates or planar addresses
+- Warning messages or prophecy
+- Names (Steel Dragon? Giant's identity?)
+- Instructions for those who know how to read them
+- Temporal markers or countdown
 
-### Campaign Mysteries
-- **The Codex:** Possible mention or connection to the mysterious text
-- **Decimate Project:** Could their interest relate to powerful artifacts?
-- **Professor Zero:** Academic interest in studying ancient items
-- **Faction Conflicts:** Different groups' approaches to magical artifacts
+### Personal Clues by Character
+Each PC might receive unique insights based on background:
 
-### Character Hooks
-- **Manny:** Eldritch Knight might have special affinity for magical weapons
-- **Josh's Markings:** Possible reaction or resonance with mysterious symbols
-- **Background Connections:** PC families or organizations with artifact knowledge
+- **Manny:** Recognition of craftsmanship beyond normal giant smithing, techniques that suggest ancient traditions
+- **Nikki (Biago):** Arcane signatures feel familiar, like something from their past or training
+- **Rakash:** Instinctive understanding of the giant's emotional state when it left - purposeful, not fearful
+- **Kyle/Nameless:** Rainbow nature resonates with planar bleeding, uncomfortable familiarity
+- **Josh:** Mysterious markings might glow, tingle, or react to temporal distortions
 
-## DM Considerations
+### Connection to Campaign Mysteries
 
-### Balance Issues
-- **Power Level:** Ensure appropriate strength for party level
-- **Distribution:** How to handle if multiple PCs want it
-- **Upgrade Path:** Plan for power growth over campaign
-- **Replacement:** What happens if lost or destroyed?
+**Potential Links:**
+- **Steel Dragon:** Temporal distortion could relate to reincarnation mechanism
+- **The Codex:** Might the Dominion Evolution Codex explain or control such artifacts?
+- **Decimate Project:** Is Professor Zero seeking reality-bleeding phenomena?
+- **Josh's Markings:** Reaction to temporal/planar energies suggests deeper connection
+- **Chaos Cult:** Would they exploit or amplify these reality-warping effects?
+- **Giant Clans:** Part of larger giant operation across multiple sites?
 
-### Story Integration
-- **Mystery Depth:** How much lore should be immediately available?
-- **Research Opportunities:** Ways for PCs to learn more about it
-- **Consequences:** Effects of using or displaying the artifact
-- **Faction Reactions:** How different groups respond to its discovery
+### Session 1 Encounters & Challenges
 
-## Immediate Development Needs
-1. **Session 1 Stats:** Appropriate mechanical properties for discovery
-2. **Discovery Context:** How and where PCs find it in Ratterdan
-3. **Initial Mysteries:** What questions does its discovery raise?
-4. **Patron Reaction:** How does the hiring NPC respond to this find?
-5. **Immediate Powers:** What can it do right away vs. what might be unlocked later?
+**Environmental Hazards:**
+- Temporal distortion zones requiring saves or skill checks
+- Reality warps creating difficult terrain or illusions
+- Feywild influence affecting emotions or perceptions
+- Unstable ground from crater and destruction
 
-## Future Development
-- **Lore Research:** Opportunities to learn its history
-- **Power Awakening:** Conditions for unlocking new abilities
-- **Related Artifacts:** Are there other items from the same source?
-- **Ultimate Purpose:** What role might it play in campaign climax?
+**Potential Combat:**
+- Temporal wisps (adapted creatures drawn to distortions)
+- Warped local creatures with displaced/aberrant traits
+- Rival seekers attempting to claim the axe
+- Ecosystem predators mutated by planar bleed
+
+**Investigation Opportunities:**
+- Examining giant tracks and destruction patterns
+- Translating or copying Zhaask symbols
+- Testing temporal distortion boundaries
+- Documenting phenomena for patron's report
+
+### Patron's Interest
+The patron's motivation should connect to their identity:
+
+- **Academic:** Studying unprecedented planar phenomena
+- **Safety Concern:** Preventing artifact from falling into wrong hands
+- **Personal Connection:** Related to patron's background or secret knowledge
+- **Faction Directive:** Merit Council, Decimate Project, or other orders
+- **Hidden Agenda:** Knows more about giant's plan than revealed
+
+### Current Status (Level 2 Party)
+
+**Challenges:**
+- Axe is sized for storm giant - currently unusable by party
+- Reality-bleeding effects dangerous to approach unprepared
+- Retrieval would require magical means or exceptional strength
+- Full understanding beyond current party capabilities
+
+**Realistic Outcomes:**
+- Document location and phenomena
+- Copy Zhaask symbols for later translation
+- Secure area or warn others away
+- Follow giant's trail to learn more
+- Return to patron with findings
+
+**Future Possibilities:**
+- Return at higher level with proper equipment
+- Research leads to understanding and safe retrieval
+- Giant's plan unfolds, changing the situation
+- Other factions make moves on the artifact
+- Connection to larger plot becomes clear
+
+### Long-Term Campaign Role
+
+**Developing Mystery:**
+- Key to understanding storm giant plots
+- Evidence of cross-planar conspiracy
+- Component for larger magical working
+- Connection to Steel Dragon's reincarnation
+- Part of network of similar artifacts
+
+**Decision Point:**
+Session 1 establishes this as significant beyond immediate resolution, creating:
+- Ongoing investigation opportunity
+- Reason to grow stronger and return
+- Multiple faction interest hooks
+- Personal stakes for each PC
+- Connection between immediate adventure and campaign arc
+
+### Mechanical Notes for Session 1
+
+**Artifact Properties (If Examined):**
+At level 2, PCs can determine:
+- Requires giant size or transformation magic to wield
+- Ancient creation, not recent craft
+- Intentionally positioned for specific effect
+- Extremely dangerous to approach carelessly
+- Beyond their current ability to safely move
+
+**Future Power Potential:**
+When/if PCs can eventually claim it:
+- Plane-shifting or dimensional manipulation
+- Temporal effects (advanced haste/slow or more exotic)
+- Reality-warping strikes
+- Connection to giant magic and primordial forces
+- Awakening properties tied to campaign progression

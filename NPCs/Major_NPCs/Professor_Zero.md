@@ -1,66 +1,158 @@
 ---
 name: Professor Zero
-type: Major NPC
-status: Active
-importance: High
-tags: [professor, academic, mysterious, zero, knowledge, codex]
+type: NPC
+status: Unknown
+version: "1.0.0"
+tags: [major-npc, decimate-project, mysterious, patron, antagonist]
+location: Keth (Laboratory)
+faction: Decimate Project
+threat_level: Unknown
+related_entities: [Manny, Nikki, All Decimate Subjects, Beholder, Niletrix]
 ---
 
 # Professor Zero
 
-## Basic Information
-- **Title:** Professor
-- **Name/Designation:** Zero (likely not birth name)
-- **Profession:** Academic/Scholar
-- **Status:** Active in the campaign world
-- **Importance:** Major NPC with significant campaign relevance
+## Player Summary
 
-## Background
-- **Academic Field:** [To be determined - possibly arcane studies, history, or multidisciplinary]
-- **Institution:** [University, magical academy, or independent scholar]
-- **Reputation:** [Respected? Controversial? Secretive?]
-- **"Zero" Origin:** [Why this designation? Mathematical concept? Fresh start? Memory loss?]
+**Professor Zero** is a mysterious figure who never shows their face. They run the Decimate Project from a hidden laboratory in Keth, using ten kidnapped and memory-wiped children as experimental agents. The Professor currently seeks the Dominion Evolution Codex for unknown purposes, having dispatched Manny (#10) and Nikki (#8) to retrieve it.
 
-## Personality Traits
-- **Intellectual Approach:** [Methodical? Innovative? Obsessive?]
-- **Social Demeanor:** [Approachable? Aloof? Eccentric?]
-- **Teaching Style:** [If applicable]
-- **Quirks:** [Academic mannerisms, speech patterns]
+### Basic Information
+- **Status:** Active (unknown location)
+- **Base:** Hidden laboratory in Keth
+- **Known Associates:** 10 Decimate Project subjects
+- **Current Goal:** Acquire the Dominion Evolution Codex
 
-## Knowledge & Expertise
-- **Specializations:** [Areas of deep knowledge]
-- **Research Interests:** [Current projects and obsessions]
-- **Library/Resources:** [Access to rare books, artifacts, information]
-- **Network:** [Academic contacts, former students, colleagues]
+### Appearance
+- **Never shows face** - communicates through intermediaries or messages
+- True identity completely unknown
+- Gender, race, age all uncertain
 
-## Potential Connections
-- **The Codex:** May have knowledge of or connection to the mysterious Codex
-- **Factions:** [Possible ties to Merit Council through academic institutions]
-- **PCs:** [How might the party encounter or need the Professor?]
-- **Other NPCs:** [Academic rivals, colleagues, students]
+### Known Personality Traits
+- Calculating and methodical
+- Mysterious and secretive
+- Controls through memory manipulation
+- Long-term planner
 
-## Resources
-- **Knowledge:** Extensive academic and possibly arcane knowledge
-- **Academic Access:** University resources, libraries, laboratories
-- **Students/Contacts:** Network of current and former students
-- **Research Materials:** [Books, artifacts, experimental materials]
+## The Decimate Project
 
-## Goals & Motivations
-- **Academic:** Pursuit of knowledge and understanding
-- **Personal:** [Hidden motivations related to "Zero" identity]
-- **Professional:** [Tenure, recognition, specific research goals]
-- **Secret:** [Possible hidden agenda or past]
+### The Ten Subjects
+All kidnapped at age 10 and memory-wiped. Higher numbers = more recent recruitment:
 
-## Potential Plot Hooks
-- **Information Source:** PCs need academic expertise
-- **Quest Giver:** Research expedition or investigation
-- **Mystery:** The truth behind the "Zero" designation
-- **Codex Connection:** Key to understanding campaign mysteries
-- **Faction Involvement:** Academic caught in political conflicts
+1. **Decum** - Male high elf wizard (oldest, ~9 years service)
+2. **Trinity** - Female gnome/human (8 years service)
+3. **Octavia** - Female drow warlock (7 years service)
+4. **Tetran** - Male wood elf ranger (6 years service)
+5. **Quincy** - Male goliath barbarian (5 years service)
+6. **Hexus/Tex** - Male human gunslinger (4 years service)
+7. **Septimus** - Male dragonborn sorcerer (3 years service)
+8. **Biago "Nikki"** - Male tiefling rogue (PC, 8 years service)
+9. **Nona** - Female half-elf bard (protective "big sister" role, 1 year service)
+10. **Monomi "Manny"** - Male half-orc fighter (PC, newest recruit)
+
+### Project Purpose
+- True goal unknown even to most subjects
+- Experiments involve memory manipulation
+- Training children as specialized agents
+- Current mission: Retrieve the Codex
+
+## Current Activities
+- **Primary:** Seeking Dominion Evolution Codex via Manny/Nikki
+- **Secondary:** Managing other 8 Decimate subjects
+- **Unknown:** True experiments and endgame
+
+## Relationships
+
+### Decimate Project Subjects
+- **Manny (#10):** Newest subject, dispatched for Codex
+- **Nikki (#8):** Loyal subject, protecting Manny
+- **Nona (#9):** Protective guardian role over younger subjects
+- **Others (#1-#7):** Status and locations unknown
+
+### External Connections
+- **Rakash:** Knows Professor Zero "a little" through Niletrix work
+- **Niletrix:** Dragon connection (nature unclear)
+- **Beholder:** Sometimes collaborates
+- **Agastian Authorities:** Likely unknown to them
+
+## Known Capabilities
+- Memory wiping/manipulation magic
+- Child abduction without detection
+- Running hidden facility in Keth
+- Intelligence network (how else find Codex leads?)
+- Funding source unknown
 
 ## DM Notes
-- Flexible character for exposition and information sharing
-- "Zero" name suggests mathematical precision or fresh beginning
-- Academic setting provides neutral meeting ground
-- Can scale from helpful contact to major quest figure
-- Potential connection to larger campaign mysteries through research
+
+### Secrets & Hidden Info
+- **True Identity:** [DM to determine - could be anyone]
+- **Real Goals for Codex:** [Unknown even to DM yet - major campaign mystery]
+- **Decimate Purpose:** Not just Codex - larger experiment
+- **Memory Wipe Method:** Powerful magic or artifact
+- **Funding Source:** Unknown backer or personal wealth?
+- **Other Subjects' Locations:** #1-#7 deployed on other missions?
+
+### Possible True Identities
+1. **Respected Scholar:** Hidden in plain sight in Agastia
+2. **Ancient Being:** Living multiple lifetimes
+3. **Construct/Golem:** Not even humanoid
+4. **Collective:** "Professor Zero" is multiple people
+5. **Dragon in Disguise:** Connection to Niletrix
+6. **Former Decimate Subject:** Grew up and took over
+7. **Chaos Cult Member:** Connected to larger conspiracy
+
+### True Goals (Options)
+1. **Codex Contains Decimate Formula:** Wants to perfect the process
+2. **World-Changing Knowledge:** Codex power for noble/evil purpose
+3. **Personal Immortality:** Decimate subjects are backup bodies
+4. **Army Creation:** Building super-soldier program
+5. **Specific Threat Prevention:** Knows something terrible is coming
+6. **Revenge:** Against specific faction/person
+7. **Unknowing Pawn:** Being manipulated by greater power
+
+### Future Hooks
+- Manny/Nikki discovering truth about their pasts
+- Meeting other Decimate siblings
+- Laboratory discovery in Keth
+- Professor Zero's true identity revelation
+- Codex actually found (what happens then?)
+- Loyalty crisis among subjects
+- Professor Zero's backup plans
+- Connection to main campaign plot (Steel Dragon, Chaos Cult, etc.)
+
+### Character Development Notes
+- Can be sympathetic (good intentions) or purely evil
+- Memory wipes might be reversible
+- Each subject has tragic pre-capture story
+- Nona's protective role suggests some subjects retain humanity
+- "Zero" name significant? Tenth experiment? Reset point?
+
+### Combat Considerations
+- Likely avoids direct confrontation
+- Uses Decimate subjects as proxies
+- May have powerful magic/artifacts
+- Hidden laboratory is fortress
+- Backup plans within backup plans
+- Final confrontation should be high-level (tier 3-4)
+
+### Campaign Integration
+- **Codex Quest:** Central to Manny/Nikki arc
+- **Rakash Connection:** Through Niletrix (unexplored)
+- **Beholder Link:** Collaborates sometimes - why?
+- **Keth Location:** Hidden lab could be dungeon
+- **Memory Magic:** Could tie to Steel Dragon, Chaos Cult
+- **Final Villain?:** Could be endgame BBEG or red herring
+
+### Session Hooks
+- Letters/messages to Manny and Nikki
+- Reports on Codex progress demanded
+- Other Decimate subjects encountered
+- Clues to identity in various locations
+- NPCs who recognize Decimate subjects
+- Parents of kidnapped children searching
+
+### Moral Complexity Options
+- **Gray:** Preventing apocalypse through terrible means
+- **Tragic:** Was once good, corrupted by necessity
+- **Evil:** Pure megalomaniac experimenting on children
+- **Controlled:** Possessed or blackmailed into running Decimate
+- **Justified:** Codex contains cure for major threat
