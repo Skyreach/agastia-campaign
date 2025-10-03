@@ -57,13 +57,21 @@ fi
 
 cd ..
 
+# Configure Claude Code MCP
+echo "🔧 Configuring Claude Code MCP server..."
+if command -v claude &> /dev/null; then
+    claude mcp add dnd-campaign node ./mcp_server/server.js --scope project 2>/dev/null || echo "Claude Code MCP config already exists"
+else
+    echo "⚠️  Claude Code CLI not found - MCP server will work in Claude Desktop only"
+fi
+
 echo ""
 echo "🎲 MCP Server Installation Complete!"
 echo ""
 echo "📋 Next Steps:"
 echo "1. Restart Claude Desktop if it's running"
-echo "2. Start a new conversation in this directory"
-echo "3. The MCP server will provide persistent campaign context"
+echo "2. Start a new Claude Code session in this directory (or use Claude Desktop)"
+echo "3. The MCP server will provide persistent campaign context in both environments"
 echo ""
 echo "🔧 MCP Server Features:"
 echo "   - Automatic campaign state loading"
