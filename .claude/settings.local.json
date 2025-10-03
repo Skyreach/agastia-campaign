@@ -8,7 +8,11 @@
       "Bash(claude mcp:*)",
       "Bash(claude --version)",
       "Bash(git config:*)",
-      "mcp__dnd-campaign__update_campaign_state"
+      "mcp__dnd-campaign__update_campaign_state",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
