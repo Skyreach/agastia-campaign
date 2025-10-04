@@ -862,6 +862,56 @@ This page contains:
               },
               required: ['difficulty']
             }
+          },
+          {
+            name: 'generate_quest',
+            description: 'Generate a quest using Dungeon World Fronts/Grim Portents mechanics with node-based progression',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                quest_type: {
+                  type: 'string',
+                  enum: ['mission', 'travel', 'mixed'],
+                  description: 'Type of quest (mission, travel, or both)'
+                },
+                location: {
+                  type: 'string',
+                  description: 'Primary location for the quest (optional - will suggest 3 options if omitted)'
+                },
+                patron_npc: {
+                  type: 'string',
+                  description: 'NPC issuing the quest (optional - will suggest 3 options if omitted)'
+                },
+                reward_npc: {
+                  type: 'string',
+                  description: 'NPC providing reward if different from patron (optional)'
+                },
+                num_nodes: {
+                  type: 'number',
+                  description: 'Number of quest nodes/steps (optional - will suggest options if omitted)',
+                  minimum: 2,
+                  maximum: 10
+                },
+                completion_time_days: {
+                  type: 'number',
+                  description: 'In-game time needed to complete (in days, optional - will suggest realistic times)'
+                },
+                base_monster: {
+                  type: 'string',
+                  description: 'Base monster type or boss for impending doom (optional - will suggest 3 options)'
+                },
+                hook_number: {
+                  type: 'number',
+                  description: 'Adventure hook reference number from campaign hooks (optional)',
+                  minimum: 1
+                },
+                export_mermaid: {
+                  type: 'boolean',
+                  description: 'Export quest as Mermaid diagram code',
+                  default: false
+                }
+              }
+            }
           }
         ]
       };
@@ -904,7 +954,10 @@ This page contains:
           
         case 'calculate_encounter_xp':
           return await this.calculateEncounterXP(args.party_size, args.party_level, args.difficulty);
-          
+
+        case 'generate_quest':
+          return await this.generateQuest(args);
+
         default:
           throw new Error(`Unknown tool: ${name}`);
       }
@@ -1902,6 +1955,271 @@ ${this.suggestEnemies(xpBudget)}`;
     }
 
     return suggestions.slice(0, 5).join('\n');
+  }
+
+  async generateQuest(args) {
+    /**
+     * Generate a quest using Fronts/Grim Portents mechanics
+     * Quests are story mechanisms to achieve goals, not goals themselves
+     */
+    const {
+      quest_type,
+      location,
+      patron_npc,
+      reward_npc,
+      num_nodes,
+      completion_time_days,
+      base_monster,
+      hook_number,
+      export_mermaid = false
+    } = args;
+
+    // Provide options if parameters are missing
+    const options = {
+      locations: [],
+      npcs: [],
+      monsters: [],
+      node_counts: [3, 5, 7], // Default progression options
+      time_estimates: []
+    };
+
+    // Suggest locations if not provided
+    if (!location && this.campaignState.locations.length > 0) {
+      options.locations = this.campaignState.locations
+        .filter(l => ['City', 'Town', 'Wilderness', 'Dungeon'].includes(l.location_type))
+        .slice(0, 3)
+        .map(l => l.name);
+    }
+
+    // Suggest NPCs if not provided
+    if (!patron_npc) {
+      const patrons = this.campaignState.activeNPCs.filter(npc =>
+        npc.name.includes('Patron') || npc.role === 'quest_giver'
+      );
+      options.npcs = patrons.length > 0
+        ? patrons.map(n => n.name)
+        : this.campaignState.activeNPCs.slice(0, 3).map(n => n.name);
+    }
+
+    // Suggest monsters if not provided
+    if (!base_monster) {
+      options.monsters = [
+        'Beholder (Unknown motives)',
+        'Dragon (Territorial threat)',
+        'Cult Leader (Chaos corruption)'
+      ];
+    }
+
+    // Calculate realistic time estimates
+    if (!completion_time_days) {
+      const nodes = num_nodes || 5;
+      options.time_estimates = [
+        { days: Math.ceil(nodes * 0.5), description: 'Quick (4-8 hours per node)' },
+        { days: nodes, description: 'Standard (1 day per node)' },
+        { days: nodes * 2, description: 'Extended (2 days per node)' }
+      ];
+    }
+
+    // If any options need to be provided, return them for user selection
+    if (!location || !patron_npc || !base_monster || !num_nodes || !completion_time_days) {
+      return {
+        content: [{
+          type: 'text',
+          text: `🗺️ Quest Generation - Select Parameters\n\n${
+            options.locations.length > 0 ? `**Location Options:**\n${options.locations.map((l, i) => `${i + 1}. ${l}`).join('\n')}\n\n` : ''
+          }${
+            options.npcs.length > 0 ? `**Patron NPC Options:**\n${options.npcs.map((n, i) => `${i + 1}. ${n}`).join('\n')}\n\n` : ''
+          }${
+            options.monsters.length > 0 ? `**Impending Doom (Boss) Options:**\n${options.monsters.map((m, i) => `${i + 1}. ${m}`).join('\n')}\n\n` : ''
+          }${
+            options.time_estimates.length > 0 ? `**Time Estimate Options:**\n${options.time_estimates.map((t, i) => `${i + 1}. ${t.days} days (${t.description})`).join('\n')}\n\n` : ''
+          }**Node Count Options:** ${options.node_counts.join(', ')}\n\nPlease specify missing parameters and call generate_quest again.`
+        }]
+      };
+    }
+
+    // Generate the quest
+    const quest = await this.buildQuest({
+      quest_type: quest_type || 'mixed',
+      location,
+      patron_npc,
+      reward_npc: reward_npc || patron_npc,
+      num_nodes,
+      completion_time_days,
+      base_monster,
+      hook_number
+    });
+
+    // Export as Mermaid if requested
+    if (export_mermaid) {
+      const mermaid = this.exportQuestMermaid(quest);
+      return {
+        content: [{
+          type: 'text',
+          text: `${quest.summary}\n\n${mermaid}`
+        }]
+      };
+    }
+
+    return {
+      content: [{
+        type: 'text',
+        text: quest.summary
+      }]
+    };
+  }
+
+  async buildQuest(params) {
+    const { quest_type, location, patron_npc, reward_npc, num_nodes, completion_time_days, base_monster, hook_number } = params;
+
+    const quest = {
+      type: quest_type,
+      location,
+      patron: patron_npc,
+      reward_giver: reward_npc,
+      total_time_days: completion_time_days,
+      hook: hook_number || 'Generated',
+      impending_doom: {
+        description: `If the heroes do nothing, ${base_monster} will threaten ${location}`,
+        boss: base_monster
+      },
+      nodes: []
+    };
+
+    // Generate nodes
+    const time_per_node = Math.floor(completion_time_days / num_nodes);
+
+    for (let i = 0; i < num_nodes; i++) {
+      const node = this.generateQuestNode(i + 1, num_nodes, time_per_node, quest);
+      quest.nodes.push(node);
+    }
+
+    // Build summary
+    quest.summary = this.formatQuestSummary(quest);
+
+    return quest;
+  }
+
+  generateQuestNode(nodeNum, totalNodes, timePerNode, quest) {
+    const travelTimeHours = Math.max(4, Math.floor(Math.random() * 24) + 4);
+    const completionTimeHours = nodeNum < totalNodes ? Math.floor(Math.random() * 8) + 4 : null;
+
+    const encounterTypes = ['combat', 'skill_challenge', 'social', 'exploration'];
+    const encounterType = encounterTypes[Math.floor(Math.random() * encounterTypes.length)];
+
+    return {
+      number: nodeNum,
+      name: `Node ${nodeNum}: ${this.generateNodeName(nodeNum, totalNodes, quest)}`,
+      travel_time: travelTimeHours >= 24 ? `${Math.floor(travelTimeHours / 24)} days` : `${travelTimeHours} hours`,
+      completion_time: completionTimeHours ? `${completionTimeHours} hours` : 'Final confrontation',
+      encounter: {
+        type: encounterType,
+        description: this.generateEncounterDescription(encounterType, nodeNum, quest)
+      },
+      success: `Progress to Node ${nodeNum + 1}. ${this.generateSuccessEffect(nodeNum, totalNodes)}`,
+      failure: `Fail forward: ${this.generateFailureEffect(nodeNum, totalNodes, quest)}`,
+      abandon: `Abandon consequences: ${this.generateAbandonEffect(nodeNum, totalNodes, quest)}`,
+      reward: this.generateNodeReward(nodeNum, totalNodes)
+    };
+  }
+
+  generateNodeName(nodeNum, totalNodes, quest) {
+    const names = [
+      `Discover the Threat`,
+      `Gather Information`,
+      `Navigate the Obstacle`,
+      `Confront the Danger`,
+      `Final Showdown with ${quest.impending_doom.boss}`
+    ];
+    const index = Math.min(nodeNum - 1, names.length - 1);
+    return names[index];
+  }
+
+  generateEncounterDescription(type, nodeNum, quest) {
+    const descriptions = {
+      combat: `Combat encounter with minions of ${quest.impending_doom.boss}`,
+      skill_challenge: `Skill challenge to overcome environmental hazard in ${quest.location}`,
+      social: `Social encounter with faction/NPC related to ${quest.patron}`,
+      exploration: `Exploration and discovery of clues about ${quest.impending_doom.boss}`
+    };
+    return descriptions[type];
+  }
+
+  generateSuccessEffect(nodeNum, totalNodes) {
+    if (nodeNum === totalNodes) {
+      return 'Quest complete! Impending doom prevented.';
+    }
+    return `Gain advantage on next node. Learn critical information.`;
+  }
+
+  generateFailureEffect(nodeNum, totalNodes, quest) {
+    const effects = [
+      `Impending doom advances. Time pressure increases.`,
+      `Lose resources but discover alternate path.`,
+      `NPC ally captured/endangered, new rescue objective.`,
+      `${quest.impending_doom.boss} grows stronger, final battle harder.`
+    ];
+    return effects[Math.floor(Math.random() * effects.length)];
+  }
+
+  generateAbandonEffect(nodeNum, totalNodes, quest) {
+    return `${quest.location} suffers consequences. Reputation with ${quest.patron} damaged. ${quest.impending_doom.boss} achieves partial victory.`;
+  }
+
+  generateNodeReward(nodeNum, totalNodes) {
+    if (nodeNum === totalNodes) {
+      return 'Major reward: Magic item, faction alliance, or significant gold';
+    }
+    return `Minor reward: Useful item, information, or temporary ally`;
+  }
+
+  formatQuestSummary(quest) {
+    let summary = `# Quest: ${quest.location} Mission\n\n`;
+    summary += `**Type:** ${quest.type}\n`;
+    summary += `**Patron:** ${quest.patron}\n`;
+    summary += `**Reward Giver:** ${quest.reward_giver}\n`;
+    summary += `**Total Time:** ${quest.total_time_days} days\n`;
+    summary += `**Hook:** ${quest.hook}\n\n`;
+    summary += `## Impending Doom\n${quest.impending_doom.description}\n`;
+    summary += `**Boss:** ${quest.impending_doom.boss}\n\n`;
+    summary += `## Quest Nodes (${quest.nodes.length})\n\n`;
+
+    quest.nodes.forEach(node => {
+      summary += `### ${node.name}\n`;
+      summary += `- **Travel Time:** ${node.travel_time}\n`;
+      if (node.completion_time) summary += `- **Completion Time:** ${node.completion_time}\n`;
+      summary += `- **Encounter:** ${node.encounter.type} - ${node.encounter.description}\n`;
+      summary += `- **Success:** ${node.success}\n`;
+      summary += `- **Failure:** ${node.failure}\n`;
+      summary += `- **Abandon:** ${node.abandon}\n`;
+      summary += `- **Reward:** ${node.reward}\n\n`;
+    });
+
+    return summary;
+  }
+
+  exportQuestMermaid(quest) {
+    const escape = (str) => str.replace(/"/g, '#quot;').replace(/\n/g, '<br/>');
+
+    let mermaid = '```mermaid\ngraph TD\n';
+    mermaid += `  Start([Quest Start: ${escape(quest.patron)}]) --> Node1\n`;
+
+    quest.nodes.forEach((node, i) => {
+      const nodeId = `Node${i + 1}`;
+      const nextNodeId = i + 1 < quest.nodes.length ? `Node${i + 2}` : 'End';
+
+      mermaid += `  ${nodeId}["${escape(node.name)}<br/>${escape(node.encounter.type)}"] --> |Success| ${nextNodeId}\n`;
+      mermaid += `  ${nodeId} --> |Failure| Fail${i + 1}["${escape(node.failure)}"]\n`;
+      mermaid += `  ${nodeId} --> |Abandon| Abandon${i + 1}["${escape(node.abandon)}"]\n`;
+      mermaid += `  Fail${i + 1} --> ${nextNodeId}\n`;
+      mermaid += `  Abandon${i + 1} --> QuestEnd[Quest Abandoned]\n`;
+    });
+
+    mermaid += `  End([Quest Complete: ${escape(quest.impending_doom.boss)} Defeated])\n`;
+    mermaid += `  QuestEnd([Consequences in ${escape(quest.location)}])\n`;
+    mermaid += '```';
+
+    return mermaid;
   }
 
   async run() {
