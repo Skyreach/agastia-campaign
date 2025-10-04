@@ -41,7 +41,10 @@ class DnDCampaignServer {
       locations: [],
       locationHierarchy: {},
       goals: [],
-      artifacts: []
+      artifacts: [],
+      partyLevel: 2,
+      partySize: 5,
+      encounterDifficulty: 'Medium'
     };
 
     this.setupHandlers();
@@ -624,6 +627,125 @@ class DnDCampaignServer {
               },
               required: ['file_path', 'content']
             }
+          },
+          {
+            name: 'generate_encounter',
+            description: 'Generate a resource-draining encounter for the party',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                encounter_type: { 
+                  type: 'string', 
+                  enum: ['combat', 'environmental', 'social', 'trap', 'mixed'],
+                  description: 'Type of encounter to generate'
+                },
+                difficulty: {
+                  type: 'string',
+                  enum: ['Easy', 'Medium', 'Hard', 'Deadly'],
+                  description: 'Encounter difficulty',
+                  default: 'Medium'
+                },
+                location: { type: 'string', description: 'Where the encounter takes place' },
+                resource_focus: {
+                  type: 'string',
+                  enum: ['spell_slots', 'hit_dice', 'abilities', 'mixed'],
+                  description: 'Which resources to target',
+                  default: 'mixed'
+                },
+                save_to_file: {
+                  type: 'boolean',
+                  description: 'Save encounter to dated file',
+                  default: true
+                },
+                confirm_before_save: {
+                  type: 'boolean',
+                  description: 'Ask for confirmation before saving',
+                  default: true
+                }
+              },
+              required: ['encounter_type']
+            }
+          },
+          {
+            name: 'generate_npc',
+            description: 'Generate an NPC with simplified MCDM-style stat block',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                npc_type: {
+                  type: 'string',
+                  enum: ['major', 'minor', 'faction', 'location', 'random'],
+                  description: 'Category of NPC'
+                },
+                role: {
+                  type: 'string',
+                  enum: ['ally', 'rival', 'neutral', 'villain', 'patron', 'merchant', 'quest_giver'],
+                  description: 'NPC role in campaign'
+                },
+                faction: { type: 'string', description: 'Associated faction (optional)' },
+                location: { type: 'string', description: 'Current location' },
+                cr: { type: 'number', description: 'Challenge rating if combatant' },
+                include_stat_block: {
+                  type: 'boolean',
+                  description: 'Include combat stats',
+                  default: false
+                },
+                save_to_file: {
+                  type: 'boolean',
+                  description: 'Save NPC to dated file',
+                  default: true
+                },
+                confirm_before_save: {
+                  type: 'boolean',
+                  description: 'Ask for confirmation before saving',
+                  default: true
+                }
+              },
+              required: ['npc_type', 'role']
+            }
+          },
+          {
+            name: 'roll_reaction',
+            description: 'Roll on the reaction table for NPC initial attitudes',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                modifier: {
+                  type: 'number',
+                  description: 'Charisma or circumstance modifier',
+                  default: 0
+                },
+                context: {
+                  type: 'string',
+                  description: 'Situation context for reaction'
+                }
+              }
+            }
+          },
+          {
+            name: 'calculate_encounter_xp',
+            description: 'Calculate XP budget for encounter design',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                party_size: {
+                  type: 'number',
+                  description: 'Number of party members',
+                  default: 5
+                },
+                party_level: {
+                  type: 'number',
+                  description: 'Average party level',
+                  default: 2
+                },
+                difficulty: {
+                  type: 'string',
+                  enum: ['Easy', 'Medium', 'Hard', 'Deadly'],
+                  description: 'Target difficulty'
+                }
+              },
+              required: ['difficulty']
+            }
           }
         ]
       };
@@ -654,6 +776,18 @@ class DnDCampaignServer {
           
         case 'edit_file':
           return await this.editFile(args.file_path, args.content, args.commit_message, args.auto_commit, args.auto_sync);
+          
+        case 'generate_encounter':
+          return await this.generateEncounter(args);
+          
+        case 'generate_npc':
+          return await this.generateNPC(args);
+          
+        case 'roll_reaction':
+          return await this.rollReaction(args.modifier, args.context);
+          
+        case 'calculate_encounter_xp':
+          return await this.calculateEncounterXP(args.party_size, args.party_level, args.difficulty);
           
         default:
           throw new Error(`Unknown tool: ${name}`);
@@ -1050,6 +1184,583 @@ Co-Authored-By: Claude <noreply@anthropic.com>`;
         }]
       };
     }
+  }
+
+  async generateEncounter(args) {
+    try {
+      const { encounter_type, difficulty = 'Medium', location, resource_focus = 'mixed', save_to_file = true, confirm_before_save = true } = args;
+      
+      // Calculate XP budget
+      const xpBudget = await this.calculateEncounterXP(this.campaignState.partySize, this.campaignState.partyLevel, difficulty);
+      
+      // Generate encounter based on type
+      let encounter = {
+        type: encounter_type,
+        difficulty,
+        location: location || 'Unknown location',
+        resource_focus,
+        xp_budget: xpBudget.content[0].text,
+        timestamp: new Date().toISOString(),
+        party_level: this.campaignState.partyLevel,
+        party_size: this.campaignState.partySize
+      };
+
+      // Generate encounter details based on type
+      switch (encounter_type) {
+        case 'combat':
+          encounter.details = this.generateCombatEncounter(difficulty, resource_focus);
+          break;
+        case 'environmental':
+          encounter.details = this.generateEnvironmentalEncounter(difficulty, resource_focus);
+          break;
+        case 'social':
+          encounter.details = this.generateSocialEncounter(difficulty, resource_focus);
+          break;
+        case 'trap':
+          encounter.details = this.generateTrapEncounter(difficulty, resource_focus);
+          break;
+        case 'mixed':
+          encounter.details = this.generateMixedEncounter(difficulty, resource_focus);
+          break;
+      }
+
+      let result = this.formatEncounter(encounter);
+      
+      if (save_to_file) {
+        if (confirm_before_save) {
+          result += '\n\n📁 Ready to save. Use commit_and_push to save this encounter.';
+        } else {
+          // Save immediately
+          const date = new Date().toISOString().split('T')[0];
+          const filename = `Encounter_${date}_${encounter_type}_${difficulty}.md`;
+          const filePath = path.join(campaignRoot, 'Encounters', filename);
+          
+          await fs.mkdir(path.join(campaignRoot, 'Encounters'), { recursive: true });
+          await fs.writeFile(filePath, result);
+          
+          result += `\n\n✅ Saved to Encounters/${filename}`;
+        }
+      }
+
+      return {
+        content: [{
+          type: 'text',
+          text: result
+        }]
+      };
+    } catch (error) {
+      return {
+        content: [{
+          type: 'text',
+          text: `❌ Encounter generation failed: ${error.message}`
+        }]
+      };
+    }
+  }
+
+  generateCombatEncounter(difficulty, resourceFocus) {
+    const enemies = {
+      Easy: ['2 Goblins (CR 1/4)', '1 Wolf (CR 1/4)', '3 Kobolds (CR 1/8)'],
+      Medium: ['1 Ogre (CR 2)', '3 Orcs (CR 1/2)', '1 Dire Wolf (CR 1) + 2 Wolves'],
+      Hard: ['1 Owlbear (CR 3)', '2 Dire Wolves (CR 1) + 1 Orc Eye of Gruumsh (CR 2)', '1 Troll (CR 5, adjusted)'],
+      Deadly: ['1 Young Dragon (CR 8, adjusted)', '2 Owlbears (CR 3)', '1 Chimera (CR 6, adjusted)']
+    };
+
+    const resourceDrains = {
+      spell_slots: 'Enemies use Counterspell, Silence zones, or antimagic fields',
+      hit_dice: 'Ongoing poison damage, disease effects, or exhaustion',
+      abilities: 'Enemies target specific saves, grapples to restrict movement, or charm effects',
+      mixed: 'Combination of magical suppression, environmental hazards, and status effects'
+    };
+
+    return {
+      enemies: enemies[difficulty][Math.floor(Math.random() * enemies[difficulty].length)],
+      resource_drain: resourceDrains[resourceFocus],
+      tactics: 'Enemies focus on splitting the party, targeting casters, and forcing resource expenditure',
+      failure_sensory: 'The metallic taste of blood fills your mouth as exhaustion sets in. Your limbs feel leaden, each movement requiring conscious effort.',
+      success_reward: 'Tactical positioning advantage for next encounter, recovered consumables, or useful intelligence'
+    };
+  }
+
+  generateEnvironmentalEncounter(difficulty, resourceFocus) {
+    const challenges = {
+      Easy: 'Crossing a swift river (DC 10 Athletics)',
+      Medium: 'Navigating a collapsing bridge (DC 13 Dexterity saves)',
+      Hard: 'Escaping a forest fire (DC 15 Constitution saves, exhaustion)',
+      Deadly: 'Surviving an avalanche (DC 17+ multiple saves)'
+    };
+
+    const resourceDrains = {
+      spell_slots: 'Requires magical solutions (Fly, Water Walk, etc.)',
+      hit_dice: 'Exhaustion levels, ongoing environmental damage',
+      abilities: 'Multiple ability checks drain resources like Bardic Inspiration',
+      mixed: 'Combination of all resource types needed for success'
+    };
+
+    return {
+      challenge: challenges[difficulty],
+      resource_drain: resourceDrains[resourceFocus],
+      complication: 'Time pressure adds urgency - each failed check costs valuable time',
+      failure_sensory: 'Your chest burns as you gasp for air. Sweat stings your eyes, blurring your vision. Every muscle screams in protest.',
+      success_reward: 'Discovered shortcut, environmental advantage, or shelter for rest'
+    };
+  }
+
+  generateSocialEncounter(difficulty, resourceFocus) {
+    const scenarios = {
+      Easy: 'Convincing town guards to allow passage',
+      Medium: 'Negotiating with hostile merchants or rival adventurers',
+      Hard: 'Mediating between warring factions',
+      Deadly: 'Deceiving a powerful devil or fey lord'
+    };
+
+    const resourceDrains = {
+      spell_slots: 'Magical compulsions needed (Charm Person, Suggestion)',
+      hit_dice: 'Stress and tension cause psychic damage on failures',
+      abilities: 'Multiple uses of class features (Bardic Inspiration, Channel Divinity)',
+      mixed: 'Requires combination of magic, abilities, and roleplay'
+    };
+
+    return {
+      scenario: scenarios[difficulty],
+      resource_drain: resourceDrains[resourceFocus],
+      stakes: 'Failure results in combat, loss of reputation, or missed opportunities',
+      failure_sensory: 'A cold dread settles in your stomach. Your mouth goes dry as you realize your words have failed you.',
+      success_reward: 'New ally, valuable information, or avoided combat'
+    };
+  }
+
+  generateTrapEncounter(difficulty, resourceFocus) {
+    const traps = {
+      Easy: 'Pit trap with spikes (DC 12 Perception, 2d6 damage)',
+      Medium: 'Poison dart hallway (DC 14 Investigation, ongoing poison)',
+      Hard: 'Complex mechanical trap room (multiple DC 15 checks)',
+      Deadly: 'Magical maze trap (DC 17+ Intelligence saves, teleportation)'
+    };
+
+    const resourceDrains = {
+      spell_slots: 'Dispel Magic or similar required to disable',
+      hit_dice: 'Ongoing damage forces Hit Dice usage',
+      abilities: 'Requires specific class features to bypass safely',
+      mixed: 'Multi-stage trap requiring various resources'
+    };
+
+    return {
+      trap: traps[difficulty],
+      resource_drain: resourceDrains[resourceFocus],
+      complexity: 'Multiple stages or reset mechanisms',
+      failure_sensory: 'Sharp pain lances through you. The acrid smell of your own fear-sweat mingles with ancient dust and decay.',
+      success_reward: 'Trap components for later use, hidden treasure, or safe rest area'
+    };
+  }
+
+  generateMixedEncounter(difficulty, resourceFocus) {
+    return {
+      primary: this.generateCombatEncounter(difficulty, resourceFocus),
+      secondary: 'Environmental complication during combat (difficult terrain, extreme weather)',
+      tertiary: 'Social element (innocent bystanders, potential allies to convince)',
+      resource_drain: 'All resource types stressed simultaneously',
+      failure_sensory: 'Overwhelming chaos. Your senses blur together - pain, fear, exhaustion all melding into a desperate struggle for survival.',
+      success_reward: 'Multiple rewards possible based on approach taken'
+    };
+  }
+
+  formatEncounter(encounter) {
+    const date = new Date().toISOString().split('T')[0];
+    return `---
+type: encounter
+encounter_type: ${encounter.type}
+difficulty: ${encounter.difficulty}
+location: ${encounter.location}
+resource_focus: ${encounter.resource_focus}
+date_created: ${date}
+party_level: ${encounter.party_level}
+party_size: ${encounter.party_size}
+tags: [encounter, ${encounter.type}, ${encounter.difficulty.toLowerCase()}, resource-drain]
+---
+
+# ${encounter.type.charAt(0).toUpperCase() + encounter.type.slice(1)} Encounter - ${encounter.difficulty}
+
+## Overview
+- **Type:** ${encounter.type}
+- **Difficulty:** ${encounter.difficulty}
+- **Location:** ${encounter.location}
+- **Resource Focus:** ${encounter.resource_focus}
+- **XP Budget:** ${encounter.xp_budget}
+
+## Encounter Details
+${Object.entries(encounter.details).map(([key, value]) => 
+  `### ${key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ')}
+${value}`
+).join('\n\n')}
+
+## Resource Drain Mechanics
+This encounter is designed to drain ${encounter.resource_focus === 'mixed' ? 'multiple resource types' : encounter.resource_focus.replace(/_/g, ' ')} rather than just hit points.
+
+## DM Notes
+- Adjust difficulty based on party's current resource state
+- Consider allowing creative solutions that bypass resource expenditure
+- Track resource usage for pacing the adventuring day
+- Use failure sensory descriptions to enhance immersion
+`;
+  }
+
+  async generateNPC(args) {
+    try {
+      const { npc_type, role, faction, location, cr, include_stat_block = false, save_to_file = true, confirm_before_save = true } = args;
+      
+      // Generate NPC details
+      const npc = this.createNPCDetails(npc_type, role, faction, location);
+      
+      if (include_stat_block && cr) {
+        npc.stat_block = this.generateStatBlock(cr, npc.name);
+      }
+
+      let result = this.formatNPC(npc, include_stat_block);
+      
+      if (save_to_file) {
+        if (confirm_before_save) {
+          result += '\n\n📁 Ready to save. Use commit_and_push to save this NPC.';
+        } else {
+          // Save immediately
+          const date = new Date().toISOString().split('T')[0];
+          const filename = `NPC_${date}_${npc.name.replace(/\s+/g, '_')}.md`;
+          const dirMap = {
+            'major': 'Major_NPCs',
+            'minor': 'Minor_NPCs',
+            'faction': 'Faction_NPCs',
+            'location': 'Location_NPCs',
+            'random': 'Random_NPCs'
+          };
+          
+          const dir = dirMap[npc_type] || 'Random_NPCs';
+          const filePath = path.join(campaignRoot, 'NPCs', dir, filename);
+          
+          await fs.mkdir(path.join(campaignRoot, 'NPCs', dir), { recursive: true });
+          await fs.writeFile(filePath, result);
+          
+          result += `\n\n✅ Saved to NPCs/${dir}/${filename}`;
+        }
+      }
+
+      return {
+        content: [{
+          type: 'text',
+          text: result
+        }]
+      };
+    } catch (error) {
+      return {
+        content: [{
+          type: 'text',
+          text: `❌ NPC generation failed: ${error.message}`
+        }]
+      };
+    }
+  }
+
+  createNPCDetails(type, role, faction, location) {
+    // Generate random NPC details
+    const races = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Dragonborn', 'Half-Orc', 'Gnome'];
+    const genders = ['Male', 'Female', 'Non-binary'];
+    
+    const names = {
+      Human: ['Marcus', 'Elena', 'Theron', 'Lydia', 'Kai'],
+      Elf: ['Silvain', 'Miriel', 'Caelum', 'Aelara', 'Zephyr'],
+      Dwarf: ['Thorin', 'Dura', 'Grimli', 'Kilda', 'Ori'],
+      Halfling: ['Bilbo', 'Rosie', 'Merry', 'Pearl', 'Sam'],
+      Tiefling: ['Damakos', 'Makaria', 'Morthos', 'Nemeia', 'Kai'],
+      Dragonborn: ['Balasar', 'Kava', 'Donaar', 'Thava', 'Rhogar'],
+      'Half-Orc': ['Grok', 'Shel', 'Thokk', 'Emen', 'Morg'],
+      Gnome: ['Boddynock', 'Nyx', 'Warryn', 'Breena', 'Zook']
+    };
+
+    const race = races[Math.floor(Math.random() * races.length)];
+    const gender = genders[Math.floor(Math.random() * genders.length)];
+    const name = names[race][Math.floor(Math.random() * names[race].length)];
+
+    const personalities = [
+      'Gruff but kind-hearted',
+      'Nervously enthusiastic',
+      'Quietly confident',
+      'Boisterously friendly',
+      'Mysteriously aloof',
+      'Pragmatically cautious'
+    ];
+
+    const quirks = [
+      'Constantly fidgets with a lucky charm',
+      'Speaks in third person when nervous',
+      'Has an unusual pet',
+      'Collects strange objects',
+      'Afraid of a common thing',
+      'Laughs at inappropriate times'
+    ];
+
+    return {
+      name,
+      race,
+      gender,
+      type,
+      role,
+      faction: faction || 'Independent',
+      location: location || 'Wandering',
+      personality: personalities[Math.floor(Math.random() * personalities.length)],
+      quirk: quirks[Math.floor(Math.random() * quirks.length)],
+      motivation: this.generateMotivation(role),
+      secret: this.generateSecret(type, role)
+    };
+  }
+
+  generateMotivation(role) {
+    const motivations = {
+      ally: 'Seeks to protect the innocent and uphold justice',
+      rival: 'Desires to prove superiority through competition',
+      neutral: 'Primarily concerned with personal survival and profit',
+      villain: 'Craves power and control over others',
+      patron: 'Wants specific tasks completed for mysterious reasons',
+      merchant: 'Aims to maximize profit while maintaining reputation',
+      quest_giver: 'Needs help resolving a personal crisis'
+    };
+    return motivations[role] || 'Has their own mysterious agenda';
+  }
+
+  generateSecret(type, role) {
+    const secrets = [
+      'Secretly working for another faction',
+      'Hiding their true identity',
+      'Possesses forbidden knowledge',
+      'Owes a debt to dangerous people',
+      'Searching for a lost loved one',
+      'Cursed by ancient magic',
+      'Former member of ' + (role === 'villain' ? 'a heroic order' : 'a villainous cult')
+    ];
+    return secrets[Math.floor(Math.random() * secrets.length)];
+  }
+
+  generateStatBlock(cr, name) {
+    // MCDM-inspired simplified stat block
+    const crStats = {
+      0.125: { hp: 7, ac: 12, attack: '+2', damage: '1d4', saves: 10 },
+      0.25: { hp: 10, ac: 13, attack: '+3', damage: '1d6', saves: 11 },
+      0.5: { hp: 15, ac: 13, attack: '+3', damage: '1d6+1', saves: 11 },
+      1: { hp: 20, ac: 14, attack: '+4', damage: '1d8+2', saves: 12 },
+      2: { hp: 30, ac: 14, attack: '+5', damage: '2d6+2', saves: 13 },
+      3: { hp: 45, ac: 15, attack: '+5', damage: '2d8+3', saves: 13 },
+      4: { hp: 60, ac: 15, attack: '+6', damage: '2d10+3', saves: 14 },
+      5: { hp: 75, ac: 16, attack: '+7', damage: '3d8+4', saves: 15 }
+    };
+
+    const stats = crStats[cr] || crStats[1];
+    
+    return {
+      ac: stats.ac,
+      hp: stats.hp,
+      speed: '30 ft.',
+      attack_bonus: stats.attack,
+      damage: stats.damage,
+      save_dc: stats.saves,
+      special_abilities: this.generateSpecialAbilities(cr)
+    };
+  }
+
+  generateSpecialAbilities(cr) {
+    const abilities = [
+      'Multiattack (2 attacks)',
+      'Cunning Action (Dash/Disengage/Hide as bonus)',
+      'Spellcasting (3 spell slots)',
+      'Resistance to nonmagical damage',
+      'Advantage on saves vs magic',
+      'Regeneration (5 hp/turn)',
+      'Pack Tactics',
+      'Sneak Attack (+2d6)'
+    ];
+    
+    const numAbilities = Math.min(Math.floor(cr) + 1, 3);
+    const selected = [];
+    
+    for (let i = 0; i < numAbilities; i++) {
+      const ability = abilities[Math.floor(Math.random() * abilities.length)];
+      if (!selected.includes(ability)) {
+        selected.push(ability);
+      }
+    }
+    
+    return selected;
+  }
+
+  formatNPC(npc, includeStats) {
+    const date = new Date().toISOString().split('T')[0];
+    let content = `---
+name: ${npc.name}
+type: NPC
+npc_type: ${npc.type}
+role: ${npc.role}
+race: ${npc.race}
+gender: ${npc.gender}
+faction: ${npc.faction}
+location: ${npc.location}
+status: Active
+date_created: ${date}
+tags: [npc, ${npc.type}, ${npc.role}, ${npc.race.toLowerCase()}]
+---
+
+# ${npc.name}
+
+## Basic Information
+- **Name:** ${npc.name}
+- **Race:** ${npc.race}
+- **Gender:** ${npc.gender}
+- **Role:** ${npc.role}
+- **Faction:** ${npc.faction}
+- **Location:** ${npc.location}
+
+## Appearance
+*[Generate based on race and role]*
+
+## Personality
+- **Trait:** ${npc.personality}
+- **Quirk:** ${npc.quirk}
+- **Motivation:** ${npc.motivation}
+
+## Secret
+${npc.secret}
+
+## Relationships
+- **Allies:** [To be determined based on faction]
+- **Rivals:** [To be determined based on role]
+- **Contacts:** [Other notable connections]
+`;
+
+    if (includeStats && npc.stat_block) {
+      content += `
+## Combat Statistics (MCDM-Style)
+- **AC:** ${npc.stat_block.ac}
+- **HP:** ${npc.stat_block.hp}
+- **Speed:** ${npc.stat_block.speed}
+- **Attack:** ${npc.stat_block.attack_bonus} to hit, ${npc.stat_block.damage} damage
+- **Save DC:** ${npc.stat_block.save_dc}
+
+### Special Abilities
+${npc.stat_block.special_abilities.map(a => `- ${a}`).join('\n')}
+`;
+    }
+
+    content += `
+## Campaign Integration
+[How this NPC connects to current story threads]
+
+## DM Notes
+[Private notes for running this NPC]
+`;
+
+    return content;
+  }
+
+  async rollReaction(modifier = 0, context = '') {
+    const roll = Math.floor(Math.random() * 20) + 1;
+    const total = roll + modifier;
+    
+    let reaction, description;
+    
+    if (total <= 1) {
+      reaction = 'Hostile';
+      description = 'Immediately attacks or actively opposes the party';
+    } else if (total <= 5) {
+      reaction = 'Unfriendly';
+      description = 'Refuses to help, may hinder or report the party';
+    } else if (total <= 10) {
+      reaction = 'Suspicious';
+      description = 'Wary and careful, requires convincing to cooperate';
+    } else if (total <= 15) {
+      reaction = 'Neutral';
+      description = 'Indifferent, will deal fairly but offers no special aid';
+    } else if (total <= 18) {
+      reaction = 'Friendly';
+      description = 'Well-disposed, willing to help within reason';
+    } else {
+      reaction = 'Helpful';
+      description = 'Actively supportive, goes out of their way to assist';
+    }
+
+    let result = `🎲 **Reaction Roll**
+Roll: ${roll} ${modifier !== 0 ? (modifier > 0 ? '+' : '') + modifier : ''} = ${total}
+**Result:** ${reaction}
+**Behavior:** ${description}`;
+
+    if (context) {
+      result += `\n**Context:** ${context}`;
+    }
+
+    return {
+      content: [{
+        type: 'text',
+        text: result
+      }]
+    };
+  }
+
+  async calculateEncounterXP(partySize = 5, partyLevel = 2, difficulty) {
+    const xpThresholds = {
+      1: { Easy: 25, Medium: 50, Hard: 75, Deadly: 100 },
+      2: { Easy: 50, Medium: 100, Hard: 150, Deadly: 200 },
+      3: { Easy: 75, Medium: 150, Hard: 225, Deadly: 400 },
+      4: { Easy: 125, Medium: 250, Hard: 375, Deadly: 500 },
+      5: { Easy: 250, Medium: 500, Hard: 750, Deadly: 1100 },
+      6: { Easy: 300, Medium: 600, Hard: 900, Deadly: 1400 },
+      7: { Easy: 350, Medium: 750, Hard: 1100, Deadly: 1700 },
+      8: { Easy: 450, Medium: 900, Hard: 1400, Deadly: 2100 },
+      9: { Easy: 550, Medium: 1100, Hard: 1600, Deadly: 2400 },
+      10: { Easy: 600, Medium: 1200, Hard: 1900, Deadly: 2800 }
+    };
+
+    const threshold = xpThresholds[partyLevel] || xpThresholds[2];
+    const xpBudget = threshold[difficulty] * partySize;
+
+    const result = `**XP Budget for ${difficulty} Encounter**
+- Party Size: ${partySize}
+- Party Level: ${partyLevel}
+- Per Character: ${threshold[difficulty]} XP
+- **Total Budget: ${xpBudget} XP**
+
+**Suggested Enemies:**
+${this.suggestEnemies(xpBudget)}`;
+
+    return {
+      content: [{
+        type: 'text',
+        text: result
+      }]
+    };
+  }
+
+  suggestEnemies(xpBudget) {
+    const enemies = [
+      { name: 'Kobold', cr: 0.125, xp: 25 },
+      { name: 'Goblin', cr: 0.25, xp: 50 },
+      { name: 'Wolf', cr: 0.25, xp: 50 },
+      { name: 'Skeleton', cr: 0.25, xp: 50 },
+      { name: 'Zombie', cr: 0.25, xp: 50 },
+      { name: 'Orc', cr: 0.5, xp: 100 },
+      { name: 'Shadow', cr: 0.5, xp: 100 },
+      { name: 'Dire Wolf', cr: 1, xp: 200 },
+      { name: 'Bugbear', cr: 1, xp: 200 },
+      { name: 'Ogre', cr: 2, xp: 450 },
+      { name: 'Owlbear', cr: 3, xp: 700 }
+    ];
+
+    const suggestions = [];
+    
+    for (const enemy of enemies) {
+      if (enemy.xp <= xpBudget) {
+        const count = Math.floor(xpBudget / enemy.xp);
+        if (count > 0 && count <= 8) {
+          suggestions.push(`- ${count} × ${enemy.name} (${count * enemy.xp} XP)`);
+        }
+      }
+    }
+
+    return suggestions.slice(0, 5).join('\n');
   }
 
   async run() {
