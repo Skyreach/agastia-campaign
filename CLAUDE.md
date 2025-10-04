@@ -93,6 +93,37 @@
 - For landing page setup: Follow `.config/NOTION_SETUP_GUIDE.md` (manual setup, no automation)
 - If uncertain about Notion operations: ASK USER FIRST
 
+### Approved Database Properties (16 Total):
+**Core Properties:**
+- Name (title) - Entity name
+- Tags (multi_select) - Quest tags, entity types inferred from here
+- Status (select) - Active, Inactive, etc.
+
+**Navigation Properties:**
+- Related Entities (relation) - Cross-entity connections
+- Faction (relation) - NPC faction membership
+- Location (relation) - NPC/artifact location
+- Parent Location (relation) - Location hierarchy
+
+**Utility Properties:**
+- Player (rich_text) - PC player assignment
+- Session Number (number) - Session ordering
+- Progress Clock (rich_text) - Faction/goal progress
+- File Path (rich_text) - Markdown file path
+- Version (rich_text) - Semantic versioning
+- Location Type (select) - Region, City, District, etc.
+
+**Optional Properties:**
+- Relations (rich_text) - Freeform relationship notes
+- Secrets (rich_text) - Hidden information
+- Last Seen (date) - When entity was last encountered
+
+**Properties REMOVED (do not re-add):**
+- Type (inferred from Tags)
+- Class, Level, Threat Level (content is on pages)
+- Player Summary, DM Notes (content is on pages)
+- All "Related to D&D Campaign Entities (...)" nested properties
+
 ### Notion Linking Requirements:
 **CRITICAL: When syncing to Notion, follow these rules:**
 

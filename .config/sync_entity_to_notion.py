@@ -65,37 +65,36 @@ def sync_entity(file_path):
     except ValueError:
         rel_path = path  # Use as-is if not in campaign root
 
+    # APPROVED PROPERTIES ONLY (16 total)
+    # Core: Name, Tags, Status
+    # Navigation: Related Entities, Faction, Location, Parent Location
+    # Utility: Player, Session Number, Progress Clock, File Path, Version, Location Type
+    # Optional: Relations, Secrets, Last Seen
+
     properties = {
         "Name": {"title": [{"text": {"content": post.get('name', path.stem)}}]},
-        "Type": {"select": {"name": post.get('type', 'Unknown')}},
         "Status": {"select": {"name": post.get('status', 'Active')}},
         "Tags": {"multi_select": [{"name": str(tag)} for tag in post.get('tags', [])]},
-        "Player Summary": {"rich_text": [{"text": {"content": player_summary}}]},
-        "DM Notes": {"rich_text": [{"text": {"content": dm_notes}}]},
         "Version": {"rich_text": [{"text": {"content": post.get('version', '0.1.0')}}]},
         "File Path": {"rich_text": [{"text": {"content": str(rel_path)}}]}
     }
 
-    # Add type-specific properties
-    if post.get('type') == 'PC':
-        if post.get('player'):
-            properties["Player"] = {"rich_text": [{"text": {"content": post['player']}}]}
-        if post.get('class'):
-            properties["Class"] = {"rich_text": [{"text": {"content": post['class']}}]}
-        if post.get('level'):
-            properties["Level"] = {"number": post['level']}
+    # Add approved type-specific properties
+    if post.get('player'):
+        properties["Player"] = {"rich_text": [{"text": {"content": post['player']}}]}
 
     if post.get('location_type'):
         properties["Location Type"] = {"select": {"name": post['location_type']}}
-
-    if post.get('threat_level'):
-        properties["Threat Level"] = {"select": {"name": post['threat_level']}}
 
     if post.get('session_number'):
         properties["Session Number"] = {"number": post['session_number']}
 
     if post.get('progress_clock'):
         properties["Progress Clock"] = {"rich_text": [{"text": {"content": post['progress_clock']}}]}
+
+    # Note: Relation properties (Faction, Location, Related Entities, Parent Location)
+    # are NOT synced from markdown frontmatter to avoid auto-creating nested properties.
+    # Use add_entity_relationships.py to manually set these after initial sync.
 
     # Find or create
     entity_name = post.get('name', path.stem)
