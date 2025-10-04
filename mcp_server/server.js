@@ -335,6 +335,65 @@ class DnDCampaignServer {
     }
   }
 
+  async getNotionEntityLinks() {
+    /**
+     * Get Notion page links for all entities by running the Python script
+     */
+    try {
+      const { spawn } = await import('child_process');
+      const scriptPath = path.join(campaignRoot, '.config', 'get_notion_links.py');
+
+      return new Promise((resolve) => {
+        const child = spawn('python3', [scriptPath, '--json'], {
+          cwd: campaignRoot,
+          env: { ...process.env, PATH: `${process.env.HOME}/.local/bin:${process.env.PATH}` }
+        });
+
+        let output = '';
+        child.stdout.on('data', (data) => output += data.toString());
+
+        child.on('close', (code) => {
+          if (code === 0) {
+            try {
+              const entityLinks = JSON.parse(output);
+              resolve({
+                contents: [{
+                  uri: 'campaign://notion/entity-links',
+                  mimeType: 'application/json',
+                  text: JSON.stringify(entityLinks, null, 2)
+                }]
+              });
+            } catch (e) {
+              resolve({
+                contents: [{
+                  uri: 'campaign://notion/entity-links',
+                  mimeType: 'text/plain',
+                  text: `Error parsing entity links: ${e.message}`
+                }]
+              });
+            }
+          } else {
+            resolve({
+              contents: [{
+                uri: 'campaign://notion/entity-links',
+                mimeType: 'text/plain',
+                text: 'Failed to fetch entity links from Notion'
+              }]
+            });
+          }
+        });
+      });
+    } catch (error) {
+      return {
+        contents: [{
+          uri: 'campaign://notion/entity-links',
+          mimeType: 'text/plain',
+          text: `Error fetching entity links: ${error.message}`
+        }]
+      };
+    }
+  }
+
   setupHandlers() {
     this.server.setRequestHandler(ListResourcesRequestSchema, async () => {
       return {
@@ -404,6 +463,24 @@ class DnDCampaignServer {
             mimeType: 'application/json',
             name: 'Upcoming Session',
             description: 'Next session information'
+          },
+          {
+            uri: 'campaign://notion/database',
+            mimeType: 'text/plain',
+            name: 'Notion Database Link',
+            description: 'Direct link to D&D Campaign Entities database in Notion'
+          },
+          {
+            uri: 'campaign://notion/landing-page',
+            mimeType: 'text/plain',
+            name: 'Notion Landing Page',
+            description: 'Direct link to Agastia Campaign landing page in Notion'
+          },
+          {
+            uri: 'campaign://notion/entity-links',
+            mimeType: 'application/json',
+            name: 'Notion Entity Page Links',
+            description: 'Direct links to all entity pages in Notion database'
           }
         ]
       };
@@ -515,6 +592,45 @@ class DnDCampaignServer {
               text: JSON.stringify(this.campaignState.lastSession || { message: 'No session data yet' }, null, 2)
             }]
           };
+
+        case 'campaign://notion/database':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'text/plain',
+              text: `D&D Campaign Entities Database
+
+Direct Link: https://www.notion.so/281693f0c6b480be87c3f56fef9cc2b9
+
+Database ID: 281693f0-c6b4-80be-87c3-f56fef9cc2b9
+
+This database contains all campaign entities:
+- PCs, NPCs, Factions, Locations, Sessions, Artifacts, etc.
+- Use filtered views to organize by type
+- Click any row to open the full page with content`
+            }]
+          };
+
+        case 'campaign://notion/landing-page':
+          return {
+            contents: [{
+              uri,
+              mimeType: 'text/plain',
+              text: `Agastia Campaign Landing Page
+
+Direct Link: https://www.notion.so/Agastia-Campaign-281693f0c6b480b8b3dbfdfb2ea94997
+
+Page ID: 281693f0c6b480b8b3dbfdfb2ea94997
+
+This page contains:
+- Navigation structure for the campaign
+- 8 filtered database views (setup required)
+- Quick links to key entities and sessions`
+            }]
+          };
+
+        case 'campaign://notion/entity-links':
+          return await this.getNotionEntityLinks();
 
         default:
           throw new Error(`Unknown resource: ${uri}`);
