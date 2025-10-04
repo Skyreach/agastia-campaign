@@ -1,5 +1,6 @@
 ---
 name: Ratterdan
+type: Location
 location_type: Ruined Settlement
 parent_location: Infinite Forest
 child_locations: []

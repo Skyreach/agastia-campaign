@@ -1,5 +1,6 @@
 ---
 name: Session 1 - Caravan to Ratterdan
+type: Session
 session_number: 1
 status: Planning
 version: "1.0.0"

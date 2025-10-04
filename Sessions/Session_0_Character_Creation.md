@@ -1,5 +1,6 @@
 ---
 name: Session 0 - Character Creation & Campaign Setup
+type: Session
 session_number: 0
 status: Completed
 version: "1.0.0"

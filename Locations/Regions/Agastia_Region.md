@@ -1,5 +1,6 @@
 ---
 name: Agastia Region
+type: Location
 location_type: Region
 parent_location: null
 child_locations: [Agastia City, Infinite Forest, Ratterdan Ruins, Meridian's Rest]

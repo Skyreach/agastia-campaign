@@ -1,5 +1,6 @@
 ---
 name: Agastia
+type: Location
 location_type: Major City
 parent_location: Agastia Region
 child_locations: [Scholar Quarter, Merchant District, Government Complex]

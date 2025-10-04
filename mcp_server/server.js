@@ -798,20 +798,45 @@ class DnDCampaignServer {
   async syncNotion(target) {
     try {
       await this.initNotion();
-      
+
       const { spawn } = await import('child_process');
-      const scriptPath = path.join(campaignRoot, 'sync_notion.py');
-      
+      const scriptPath = path.join(campaignRoot, '.config', 'sync_entity_to_notion.py');
+
+      // Use safe_resync_all.sh for 'all' target to prevent destructive operations
+      if (target === 'all') {
+        const safeScriptPath = path.join(campaignRoot, '.config', 'safe_resync_all.sh');
+        return new Promise((resolve) => {
+          const child = spawn('bash', [safeScriptPath], {
+            cwd: campaignRoot,
+            env: { ...process.env, PATH: `${process.env.HOME}/.local/bin:${process.env.PATH}` }
+          });
+
+          let output = '';
+          child.stdout.on('data', (data) => output += data.toString());
+          child.stderr.on('data', (data) => output += data.toString());
+
+          child.on('close', (code) => {
+            resolve({
+              content: [{
+                type: 'text',
+                text: `✅ Safe re-sync completed (exit code: ${code})\nℹ️  This sync UPDATES entities only, no deletions\n\n${output}`
+              }]
+            });
+          });
+        });
+      }
+
+      // For individual targets, sync specific files
       return new Promise((resolve) => {
-        const child = spawn('python3', [scriptPath, target === 'all' ? 'all' : target], {
+        const child = spawn('python3', [scriptPath, target], {
           cwd: campaignRoot,
           env: { ...process.env, PATH: `${process.env.HOME}/.local/bin:${process.env.PATH}` }
         });
-        
+
         let output = '';
         child.stdout.on('data', (data) => output += data.toString());
         child.stderr.on('data', (data) => output += data.toString());
-        
+
         child.on('close', (code) => {
           resolve({
             content: [{

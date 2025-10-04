@@ -1,5 +1,6 @@
 ---
 name: Merchant District
+type: Location
 location_type: District
 parent_location: Agastia City
 child_locations: []

@@ -1,5 +1,6 @@
 ---
 name: Infinite Forest
+type: Location
 location_type: Wilderness
 parent_location: Agastia Region
 child_locations: [Ratterdan Ruins]

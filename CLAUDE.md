@@ -85,6 +85,14 @@
 - **Architecture:** See `.config/NOTION_ARCHITECTURE.md`
 - **API Status:** Connected and functional
 
+### Notion Safety Protocol: 🛡️ CRITICAL
+- **NEVER delete or overwrite Notion page content**
+- Use MCP `sync_notion` tool with 'all' target for safe updates (UPDATE only, no deletions)
+- Use `.config/safe_resync_all.sh` for manual re-syncing (UPDATE only)
+- **ALWAYS test with new pages before attempting any Notion page modifications**
+- For landing page setup: Follow `.config/NOTION_SETUP_GUIDE.md` (manual setup, no automation)
+- If uncertain about Notion operations: ASK USER FIRST
+
 ### Notion Linking Requirements:
 **CRITICAL: When syncing to Notion, follow these rules:**
 

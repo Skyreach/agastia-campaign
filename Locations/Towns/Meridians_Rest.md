@@ -1,5 +1,6 @@
 ---
 name: Meridian's Rest
+type: Location
 location_type: Settlement
 parent_location: Agastia Region
 child_locations: []
