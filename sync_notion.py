@@ -91,23 +91,25 @@ def sync_to_notion(file_path, entry_type):
         print(f"✨ Created: {post.get('name', Path(file_path).stem)}")
 
 def sync_all():
-    """Sync all campaign files to Notion"""
-        
+    """Sync all campaign files to Notion - dynamically discovers all markdown files"""
+
     sync_mappings = [
-        ('Player_Characters/*.md', 'PC'),
+        ('Player_Characters/**/*.md', 'PC'),
         ('NPCs/**/*.md', 'NPC'),
-        ('Factions/*.md', 'Faction'),
-        ('Locations/*.md', 'Location'),
-        ('Resources/*.md', 'Resource'),
+        ('Factions/**/*.md', 'Faction'),
+        ('Locations/**/*.md', 'Location'),
+        ('Resources/**/*.md', 'Resource'),
+        ('Campaign_Core/**/*.md', 'Artifact'),
+        ('Sessions/**/*.md', 'Session'),
     ]
-    
+
     synced_count = 0
     for pattern, entry_type in sync_mappings:
         for file_path in Path('.').glob(pattern):
             if not file_path.name.startswith('_'):
                 sync_to_notion(file_path, entry_type)
                 synced_count += 1
-    
+
     print(f"🎲 Synced {synced_count} files to Notion")
 
 if __name__ == "__main__":
