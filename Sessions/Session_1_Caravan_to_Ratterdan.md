@@ -1,271 +1,381 @@
 ---
-name: Session 1 - Caravan to Ratterdan
+name: Session 1 - Ratterdan Investigation
 type: Session
 session_number: 1
 status: Planning
-version: "1.0.0"
+version: "2.0.0"
 date: TBD
-tags: [session1, ratterdan, heartstone, giant-axe, octavia, first-adventure]
+tags: [session1, ratterdan, heartstone, giant-axe, octavia, shadow-dungeon]
 ---
 
-# Session 1: Ratterdan Ruins Investigation
+# Session 1: Ratterdan Investigation - DM Guide
 
-## Session Overview
-The party (level 1) arrives at the ruins of Ratterdan to investigate reports of a storm giant's attack. They discover the buried Animated Heartstone artifact, which grants them bonus feats when touched. They also find the giant's massive axe - too large and cursed to claim yet - and face 1-2 minor encounters while exploring the ruins.
+**Party:** Level 1 (5 PCs with food buffs) | **Duration:** 2-3 hours | **Type:** Linear tutorial
 
-**Session Type:** Light combat, exploration, mystery setup
-**Expected Duration:** 2-3 hours
-**Party Level:** 1 (5 PCs with food buffs)
+---
 
-## Key Objectives
-- Investigate Ratterdan ruins and discover what happened
-- Find and interact with the Animated Heartstone (feat grant)
-- Locate the giant's axe and understand why it was left
-- Survive 1-2 minor encounters in the ruins
-- Establish the larger mystery (who orchestrated this?)
+## Quick Reference
 
-## Session Structure
+<details>
+<summary><b>Session Flow (Click to expand)</b></summary>
 
-### Opening: Arrival at Ratterdan (5-10 minutes)
-**Starting Point:** Party arrives at the ruins after hearing reports of the destruction
+1. **Arrival at Ratterdan** → Describe smoking crater, giant's axe
+2. **Node 1: Cloud Compass Skill Challenge** → Find underground entrance
+3. **Node 2: Shadow Dungeon (3 rooms)** → Resource-draining combat
+4. **Node 3: Heartstone Cutscene** → Feats granted, corruption breaks
+5. **Node 4: Rakash Claims Axe** → Weapon transforms
+6. **Node 5: Travel to Agastia** → Ad-hoc (Meridian's Rest if needed)
 
-**What They Know:**
-- Storm giant attacked and destroyed the village
-- Giant left a massive axe at the site
-- Strange phenomena reported (reality distortions, upward-falling leaves)
-- No survivors found
+</details>
 
-**Initial Impression:**
-- Smoking crater where village once stood
-- Destroyed buildings scattered around periphery
-- Massive axe embedded at center, sized for a storm giant
-- Reality visibly warping around the artifact
-- Unnatural quiet - ecosystem disrupted
-- Sense of wrongness in the air
+<details>
+<summary><b>Key NPCs & Factions</b></summary>
 
-### Investigation Phase: Exploring the Ruins (30-45 minutes)
-**Goal:** Let party explore freely and discover the two key artifacts
+- **None this session** - Solo exploration
+- **Hidden Mastermind:** Octavia (Subject #8, unknown to party)
 
-**The Giant's Axe (Cannot claim yet):**
-- Sized for storm giant, bluish-silver metal
-- Embedded at center of crater
-- **Corruption seed visible** - dark energy pulsing through it
-- Reality "bleeding" around it - temporal distortions
-- **Cannot be moved:** Too heavy for level 1 party, cursed weight
-- Touching it causes psychic damage (don't recommend it)
-- Zhaask (Draconic) symbols etched near base
+</details>
 
-**The Heartstone (Buried, must be found):**
-- Buried beneath rubble in the ruins
-- **Finding it:** Perception DC 12 or Investigation DC 10 while exploring
-- Fey energy signature if party has magical detection
-- Purple crystalline heart-shaped stone, faintly pulsing
-- Size of a human fist, warm to the touch
+<details>
+<summary><b>Important Items</b></summary>
 
-**The Destruction Pattern:**
-- Village methodically destroyed, not a chaotic battle
-- Crater suggests massive lightning strike or storm magic
-- No bodies found (incinerated completely)
-- Giant deliberately positioned axe and left
-- Giant tracks lead away purposefully (not fleeing)
+- **Animated Heartstone:** Grants feats, breaks axe corruption
+- **Giant's Axe:** Too large/cursed until cleansed, then Rakash claims it
+- **Zhaask Symbols:** Draconic writing on axe (partial translation possible)
 
-**Environmental Hazards:**
-- **Reality Warps:** Difficult terrain in zones near axe (DEX save DC 10)
-- **Feywild Bleed:** Upward-falling leaves, time feels strange
-- **Temporal Distortions:** Small pockets where time flows oddly
-- Party can navigate safely with care
+</details>
 
-### The Heartstone Awakening (15-20 minutes)
-**Trigger:** When party finds and touches the Heartstone
+---
 
-**The Feat Ceremony:**
-1. **Purple light explodes** from the Heartstone when first touched
-2. **Each PC sees a vision** of their deepest desire/potential
-3. **Feat manifests** - they gain the bonus feat immediately
-4. **Light reclaims** - purple energy flows back into the stone
-5. **Evil laugh echoes** - Heartstone is now sentient and awake
-6. **Stone goes dormant** - for now
+## Node 1: Cloud Compass Skill Challenge
 
-**Each PC's Vision (personalize):**
-- **Manny:** Blade and magic becoming one
-- **Nikki:** Shadow and arcane power merging
-- **Rakash:** Primal fury perfected
-- **Kyle:** Nature's rainbow spectrum expanding
-- **Josh:** Mysterious markings glowing with purpose
+<details>
+<summary><b>Player Description</b></summary>
 
-**Important Notes:**
-- Feats are permanent even if Heartstone is lost
-- **IF HEARTSTONE IS DESTROYED:** Party loses feats permanently
-- Party can choose to take the Heartstone with them or leave it
-- The evil laugh hints at corruption/danger
+> As you approach the crater, you see the massive bluish-silver axe embedded at the center - clearly sized for a storm giant. Around the weapon, a dark storm cloud swirls unnaturally, trapped in place. The cloud doesn't dissipate or drift - it hovers, pulsing with electrical energy, as if bound to the axe itself.
+>
+> Reality warps visibly around the artifact. Leaves fall upward in pockets of fey energy. Time seems to flow irregularly in zones near the crater's edge.
 
-### Minor Encounters (Choose 1-2)
+</details>
 
-**Encounter 1: Scavengers (Easy)**
-- 2-3 bandits looting the ruins
-- CR 1/8 each (Bandit stat block)
-- Can be scared off or negotiated with
-- Alternative: 3-4 giant rats drawn to death
+<details>
+<summary><b>DM Notes - Skill Challenge</b></summary>
 
-**Encounter 2: Warped Creature (Medium)**
-- Single dire wolf mutated by planar bleed
-- CR 1 with minor aberrant traits
-- Extra eyes, time-displaced movement
-- Not evil, just territorial and confused
+**Goal:** Party discovers the cloud is pointing underground like a compass
 
-**Encounter Goals (Level 1 party):**
-- Light combat, test basic tactics
-- Show environmental effects in play
-- Build party cohesion
-- Quick resolution (10-15 minutes each)
+**Structure:** 3 successes before 2 failures
 
-### Session Wrap-Up & Mysteries (10-15 minutes)
+**DC:** 12-14 for all checks
 
-**What the Party Learned:**
-- Storm giant deliberately destroyed Ratterdan
-- Giant positioned the axe and left it (why?)
-- Heartstone was buried here (by whom? when?)
-- Heartstone grants power but has sinister laugh (dangerous?)
-- Axe is cursed/corrupted - cannot claim yet
-- Zhaask symbols on axe (draconic, need translation)
+**Possible Skills:**
+- **Arcana:** Understand cloud's magical nature, recognize it as directional pointer
+- **Investigation:** Examine axe position relative to cloud direction
+- **Nature:** Read storm cloud behavior, recognize it's unnatural/bound
+- **Perception:** Notice cloud isn't random, has consistent direction
+- **Survival:** Use cloud as navigational tool, track direction
 
-**Questions Left Unanswered:**
-- Who orchestrated this attack? (Octavia, unknown to party)
-- Why did giant leave the axe here?
-- What is the connection between axe and Heartstone?
-- Will the giant return?
-- What was Ratterdan hiding that someone wanted destroyed?
+**Success:** Party realizes cloud points underground → find entrance to chamber
+**Failure:** Find entrance eventually BUT:
+- Dungeon creatures alerted (no surprise)
+- OR time pressure (weather worsens)
+- OR environmental hazard triggered
 
-**Party Decisions:**
-- Take Heartstone with them or leave it?
-- Report findings to anyone?
-- Return to claim axe when stronger?
-- Follow giant's trail?
+</details>
 
-**Session End:** Party leaves Ratterdan with more questions than answers, but significantly more powerful (feats gained)
+<details>
+<summary><b>Axe Examination</b></summary>
 
-## Important NPCs This Session
+**If players examine the axe closely:**
+- Sized for storm giant (20+ feet tall)
+- Bluish-silver metal, masterwork quality
+- **Corruption seed visible:** Dark energy pulsing through weapon
+- **Zhaask symbols** etched near base (Draconic language)
+- Touching causes 1d4 psychic damage (warn them!)
+- Cannot be moved (DC 25+ STR, basically impossible)
 
-**None required for Session 1**
-- Party explores independently
-- Encounter NPCs are generic (bandits, creatures)
-- Mastermind Octavia is unknown to party (reveal later)
+**Partial Translation (if Draconic speaker):**
+Player can read fragments: "...storm... bond... dragon..." (full translation requires research)
 
-## Key Handouts & Props
+</details>
 
-**Visual Aids:**
-- Sketch of Ratterdan crater layout
-- Heartstone description card (when found)
-- Zhaask symbols on axe (for later translation)
-- Giant's axe appearance (emphasize SIZE and corruption)
+---
 
-## Combat & Challenge Preparation
+## Node 2: Underground Shadow Dungeon
 
-**Encounter Difficulty (Level 1 party):**
-- 1-2 easy encounters total
-- CR 1/8 to CR 1 enemies
-- Light combat focus - exploration priority
-- Can flee or negotiate if needed
+<details>
+<summary><b>Player Description - Entrance</b></summary>
 
-**Environmental Hazards (Minor):**
-- Reality warps: Difficult terrain, DEX save DC 10
-- Temporal zones: Odd time flow, mostly flavor
-- Feywild bleed: Upward leaves, strange sensations
+> Following the cloud's direction, you find a collapsed section of ruins where the ground has caved in, revealing a dark passage descending underground. The air is cold, and shadows seem to move unnaturally along the walls. A faint purple glow emanates from somewhere deep below.
 
-**Skill Checks:**
-- **Finding Heartstone:** Perception DC 12 or Investigation DC 10
-- **Examining axe safely:** Arcana DC 12 (corruption visible)
-- **Reading Zhaask:** Languages (Draconic) for partial translation
-- **Tracking giant:** Survival DC 10 (tracks obvious)
+</details>
 
-## Discovery & Rewards
+<details>
+<summary><b>Dungeon Map & Ecology</b></summary>
 
-**Information Gained:**
-- Major campaign mystery introduced (giant's purpose)
-- Personal character connections revealed
-- Faction interests hinted at
-- Future adventure hooks established
+**Layout:** 3 rooms, linear with one loop option
 
-**Material Rewards:**
-- Patron's payment for investigation
-- Possible salvage from Ratterdan ruins (minimal)
-- Copied Zhaask symbols for later research
-- Knowledge valuable to multiple factions
+```
+[Entrance]
+    |
+[Room 1: Shadow Rats]
+    |
+[Room 2: Shadow Spawn] <--loop--> [Secret Passage]
+    |                                    |
+[Room 3: Heartstone Chamber] <----------+
+```
 
-**Advancement:**
-- Experience from encounter and investigation
-- Progress toward level 3
-- Relationship establishment with patron
-- Introduction to campaign scope
+**Jaquaysing Elements:**
+- Secret passage from Room 2 → Room 3 (Investigation DC 14)
+- Allows bypassing some encounters
+- Verticality: Rats use ceiling cracks, spawn use walls
 
-**Long-term Value:**
-- Axe location known for future retrieval
-- Giant's trail identified for tracking
-- Personal stakes established (character reactions)
-- Multiple faction hooks available
+**Lighting:** Dim to dark (party needs light sources)
 
-## Session Outcomes & Future Hooks
+**Ecology Notes:**
+- Shadow creatures spawned from axe corruption
+- Feed on magical energy (spell slots, class features)
+- Will collapse when corruption source removed
+- See full ecology: Dungeon_Ecologies/Ratterdan_Underground_Ecology.md
 
-**Immediate Outcomes:**
-- Mission completed (investigation done)
-- Report to patron (their reaction sets up future)
-- Party cohesion tested and strengthened
-- Characters' abilities showcased
+</details>
 
-**Short-term Hooks:**
-- Translate Zhaask symbols completely
-- Research giant lore and storm giant territories
-- Follow giant's trail in Session 2
-- Investigate Josh's markings' reaction
-- Pursue Codex leads (Manny and Nikki)
+<details>
+<summary><b>Room 1: Shadow Rats (Warm-up Encounter)</b></summary>
 
-**Long-term Hooks:**
-- Return to claim axe when stronger
-- Discover if other sites exist
-- Understand giant's overall plan
-- Connect to Steel Dragon mystery
-- Navigate faction interest in findings
+### Player Description
+> The passage opens into a small chamber. The purple glow is stronger here. Shadowy forms skitter along the walls and ceiling - rats, but wrong. Their bodies seem to absorb light, leaving trails of darkness.
 
-**Campaign Integration:**
-- Reality-bleeding ties to dominion evolution themes
-- Temporal distortion connects to Dragon's reincarnation
-- Giant clans as external force beyond faction politics
-- Planar phenomena expanding campaign scope
-- Personal character mysteries deepening
+### Encounter
+**Creatures:** 3-4 Shadow-Touched Rats (CR 1/8 each)
 
-## DM Preparation Checklist
+**Tactics:**
+- Pack tactics (advantage when ally adjacent)
+- Attack from ceiling (drop attacks)
+- Target isolated PCs
+- Flee to Room 2 if reduced to 1 rat
 
-- [ ] **Select Patron:** Choose NPC, define motivation and resources
-- [ ] **Feat Ceremony:** Plan narrative explanation for bonus feats
-- [ ] **Travel Encounters:** Choose 1-2 from options, prepare details
-- [ ] **First Combat:** Select and prepare stat blocks for chosen encounter
-- [ ] **Ratterdan Details:** Map crater, position key elements
-- [ ] **Zhaask Symbols:** Decide actual meaning, prepare partial translation
-- [ ] **Character Clues:** Prepare specific insights for each PC
-- [ ] **Handouts:** Create symbol sketch, map, mission details
-- [ ] **NPC Voices:** Practice patron and any encounter NPCs
-- [ ] **Environmental Effects:** Prepare mechanical details for distortion zones
+### Stat Block
+- **AC:** 12
+- **HP:** 7 (2d6) each
+- **Speed:** 30ft, climb 30ft
+- **Attack:** Bite +4, 1d4+2 piercing
+- **Special - Nibble Essence:** On crit, drains 1 use of minor ability (Second Wind, Bardic Inspiration, etc.)
+- **Pack Tactics:** Advantage when ally within 5ft of target
 
-## Post-Session Planning
+### DM Notes
+- Introduce resource drain mechanic
+- Show that shadows are dangerous but beatable
+- Let party test tactics in low-stakes fight
 
-**Record What Happened:**
-- Which patron was chosen and how they reacted
-- Travel encounters and party decisions
-- First combat resolution and tactics used
-- Investigation discoveries and character moments
-- Party's final decision about the axe
-- Hooks that engaged players most
+</details>
 
-**Setup for Session 2:**
-- Follow up on party's decision
-- Develop patron relationship based on report
-- Pursue most interesting hooks from player engagement
-- Prepare consequences of their choices
-- Continue personal character storylines
+<details>
+<summary><b>Room 2: Shadow Spawn (Serious Threat)</b></summary>
 
-**Campaign Development:**
-- Note which mysteries players found most interesting
-- Track faction involvement based on party's actions
-- Develop NPCs who might react to their discoveries
-- Plan how giant's plot unfolds regardless of party
-- Consider intersections with Codex search and other plots
+### Player Description
+> This larger chamber pulses with corruption. Two humanoid shadows detach from the walls, their forms flickering between solid and ethereal. They move with unnatural fluidity, reaching toward you with shadowy claws.
+
+### Encounter
+**Creatures:** 2 Shadow Spawn (CR 1/4 each)
+
+**Tactics (Tucker's Kobolds):**
+- Use darkness to hide (bonus action Hide in dim/dark)
+- Attack from unexpected angles (walls, ceiling if incorporeal)
+- Focus fire on casters/healers (drain spell slots)
+- Retreat to walls when bloodied
+- Guard path to Room 3 (won't pursue far)
+
+### Stat Block
+- **AC:** 12
+- **HP:** 9 (2d8) each
+- **Speed:** 40ft
+- **Attack:** Shadow Touch +4, 1d6+2 necrotic damage
+- **Special - Power Drain:** On hit, target makes DC 12 WIS save or lose:
+  - 1 spell slot (lowest level), OR
+  - 1 use racial/class feature (player choice), OR
+  - 1d4 temp HP if no resources
+- **Shadow Convert:** Spawn regains HP equal to spell slot level drained
+- **Sunlight Sensitivity:** Disadvantage in bright light
+- **Shadow Stealth:** Bonus action Hide in dim/dark
+
+### DM Notes
+- **Resource management test** - drain spell slots/features
+- Can be deadly if party bunches up
+- Secret passage (Investigation DC 14) bypasses this fight
+- Environmental hazard: Corruption pools (DEX DC 10 or difficult terrain)
+
+</details>
+
+<details>
+<summary><b>Room 3: Heartstone Chamber (Finale)</b></summary>
+
+### Player Description
+> The passage opens into a circular chamber carved from ancient stone. At the center, partially buried in rubble, a purple crystalline heart pulses with fey energy. The light you've been following emanates from this artifact. Shadows writhe protectively around it.
+
+### Finding Heartstone
+- **Perception DC 12** or **Investigation DC 10** to find among rubble
+- **Detect Magic:** Strong fey aura, transmutation school
+- Size of human fist, warm to touch
+
+### Final Guardian (Optional)
+**Creatures:** 1-2 Shadow Spawn (same stats as Room 2)
+
+**OR Environmental Challenge:**
+- Corruption zones (must navigate carefully)
+- Skill challenge to retrieve Heartstone safely
+- Use if party is low on resources
+
+### The Heartstone Cutscene
+
+**When party touches/retrieves Heartstone:**
+
+1. **Animation:**
+   > The crystal heart begins to shift and change, transforming into [DM CHOICE: shape?]. Fey energy pulses visibly through its form.
+
+2. **Feat Granting:**
+   > Purple light EXPLODES from the Heartstone, washing over each of you.
+   >
+   > **[To each PC individually]:** You see a vision of your deepest desire...
+   > - **Manny:** Blade and magic becoming one
+   > - **Nikki:** Shadow and arcane merging
+   > - **Rakash:** Primal fury perfected
+   > - **Kyle:** Rainbow spectrum expanding
+   > - **Josh:** Markings glowing with purpose
+   >
+   > The power manifests within you - you gain a new feat immediately!
+   >
+   > The light reclaims back into the Heartstone.
+
+3. **Evil Laugh:**
+   > An evil, echoing laugh reverberates through the chamber. The Heartstone goes dormant.
+
+4. **Corruption Breaking:**
+   > You feel a tremendous pulse of energy surge UPWARD through the earth, traveling from the Heartstone toward the surface. Above you, you hear a tremendous CRACK.
+
+### DM Notes
+- Feats are permanent even if Heartstone lost
+- **Critical:** If Heartstone destroyed, party LOSES feats
+- Heartstone can be taken or left (player choice)
+- Corruption pulse breaks axe curse above
+
+</details>
+
+---
+
+## Node 3: Rakash Claims the Axe
+
+<details>
+<summary><b>Player Description - Return to Surface</b></summary>
+
+> As you emerge from the underground chamber, you see immediate changes. The dark corruption pulsing through the giant's axe has SHATTERED - the weapon now gleams with clean, bluish-silver light. The storm cloud dissipates, finally free.
+>
+> The reality warps around Ratterdan fade. The upward-falling leaves drift normally. Time stabilizes.
+>
+> **[To Rakash]:** You feel an overwhelming compulsion pulling you toward the weapon. Something deep within recognizes this axe as YOURS.
+
+</details>
+
+<details>
+<summary><b>The Claiming Event</b></summary>
+
+**When Rakash approaches and touches the axe:**
+
+> As your hand makes contact with the weapon, it SHRINKS. The massive 20-foot giant's axe reduces in size, transforming into a weapon perfectly sized for you to wield. The bluish-silver metal gleams, free of corruption.
+>
+> You feel dormant power within it - the Storm Bond ability, waiting to activate when lightning strikes.
+
+### Axe Transformation
+- **Before:** Giant-sized (unusable), cursed, corrupted
+- **After:** Medium-sized (usable), cleansed, evolving weapon
+- **Storm Bond:** Dormant but present (see Giant_Axe_Artifact.md)
+- **Rakash:** Can now wield as primary weapon
+
+</details>
+
+<details>
+<summary><b>DM Questions (Answer During Session)</b></summary>
+
+- What shape did Heartstone take when animated?
+- Did Heartstone go dormant or stay animated?
+- Did party take Heartstone with them?
+- How did Rakash's player react to the compulsion/axe claiming?
+
+</details>
+
+---
+
+## Node 4: Travel to Agastia
+
+<details>
+<summary><b>Travel Options (Ad-hoc)</b></summary>
+
+**Option A: Direct to Agastia**
+- Party pushes through without rest
+- Narrate travel, arrive exhausted but safe
+- Session ends at Agastia arrival
+
+**Option B: Stop at Meridian's Rest**
+- Party needs long rest after dungeon
+- Choose encounter type:
+  - **Dream Sequence:** Visions related to Heartstone/feats
+  - **Night Attack:** 2-4 bandits/wolves (CR 1/8)
+  - **Social at Inn:** Meet NPC, foreshadow Agastia
+- Then travel to Agastia
+
+</details>
+
+---
+
+## Post-Session Debrief Questions
+
+**Ask player/DM after session:**
+1. What did the party learn/discover?
+2. What questions are they asking?
+3. Which mysteries hooked them most?
+4. Any PC character development moments?
+5. What resources did they burn? (spell slots, HP, features)
+6. Did they take the Heartstone?
+7. What's their plan for next session?
+
+**Then update:**
+- PC knowledge sections
+- Location files (Ratterdan stabilized)
+- Prepare Session 2 branching goals
+
+---
+
+## Mermaid Flowchart
+
+```mermaid
+graph TD
+    Start([Arrive at Ratterdan]) --> Node1[Node 1: Cloud Compass<br/>Skill Challenge]
+
+    Node1 -->|Success| Enter[Find Underground Entrance]
+    Node1 -->|Failure| EnterAlerted[Find Entrance<br/>Creatures Alerted]
+
+    Enter --> Room1[Room 1: Shadow Rats<br/>3-4 CR 1/8]
+    EnterAlerted --> Room1
+
+    Room1 --> Room2[Room 2: Shadow Spawn<br/>2 CR 1/4]
+    Room2 --> |Secret Passage DC 14| Room3Direct[Room 3: Heartstone]
+    Room2 --> Room3[Room 3: Heartstone<br/>+ Final Guardian]
+
+    Room3 --> Cutscene[Heartstone Cutscene<br/>Feats Granted]
+    Room3Direct --> Cutscene
+
+    Cutscene --> CorruptionBreak[Corruption Breaks<br/>Axe Cleansed]
+
+    CorruptionBreak --> Surface[Return to Surface]
+
+    Surface --> RakashClaim[Rakash Claims Axe<br/>Weapon Transforms]
+
+    RakashClaim --> TravelChoice{Long Rest Needed?}
+
+    TravelChoice -->|Yes| Meridian[Stop at Meridian's Rest<br/>Choose Encounter]
+    TravelChoice -->|No| AgastiaDirect[Travel Direct to Agastia]
+
+    Meridian --> Agastia[Arrive at Agastia]
+    AgastiaDirect --> Agastia
+
+    Agastia --> End([Session 1 Complete])
+```
