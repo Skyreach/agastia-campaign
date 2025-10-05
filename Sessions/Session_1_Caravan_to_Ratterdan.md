@@ -5,256 +5,178 @@ session_number: 1
 status: Planning
 version: "1.0.0"
 date: TBD
-tags: [session1, caravan, ratterdan, patron, giant-axe, reality-bleeding, first-adventure]
+tags: [session1, ratterdan, heartstone, giant-axe, octavia, first-adventure]
 ---
 
-# Session 1: Caravan to Ratterdan
+# Session 1: Ratterdan Ruins Investigation
 
 ## Session Overview
-The party's first adventure begins with the patron introducing them to their mission: investigate the ruins of Ratterdan where a storm giant has left a massive axe that's "bleeding reality" and causing dangerous temporal distortions.
+The party (level 1) arrives at the ruins of Ratterdan to investigate reports of a storm giant's attack. They discover the buried Animated Heartstone artifact, which grants them bonus feats when touched. They also find the giant's massive axe - too large and cursed to claim yet - and face 1-2 minor encounters while exploring the ruins.
+
+**Session Type:** Light combat, exploration, mystery setup
+**Expected Duration:** 2-3 hours
+**Party Level:** 1 (5 PCs with food buffs)
 
 ## Key Objectives
-- **Patron Introduction:** Establish hiring NPC and their connection to the party
-- **Mission Briefing:** Giant's axe at Ratterdan causing temporal/planar distortions
-- **Travel Sequence:** Character spotlight moments on journey to Ratterdan
-- **Investigation:** Arrival at ruins, examining the phenomenon
-- **First Encounter:** Combat or challenge appropriate for level 2 party
-- **Decision Point:** What to do about the axe and their findings
-
-## PRE-SESSION REQUIREMENTS
-
-### CRITICAL DECISIONS STILL NEEDED:
-1. **Patron Selection:** [See The_Patron.md - MUST BE CHOSEN before session]
-2. **Feat Ceremony:** How is the bonus feat narratively presented?
-3. **First Encounter:** Choose from temporal wisps, warped creatures, or rival seekers
+- Investigate Ratterdan ruins and discover what happened
+- Find and interact with the Animated Heartstone (feat grant)
+- Locate the giant's axe and understand why it was left
+- Survive 1-2 minor encounters in the ruins
+- Establish the larger mystery (who orchestrated this?)
 
 ## Session Structure
 
-### Opening Scene: Patron Meeting & Feat Ceremony (30-40 minutes)
-**Location:** Agastia (specific venue based on patron choice)
+### Opening: Arrival at Ratterdan (5-10 minutes)
+**Starting Point:** Party arrives at the ruins after hearing reports of the destruction
 
-**Part 1 - Feat Recognition:**
-- Patron acknowledges each PC's exceptional abilities
-- Narrative explanation for bonus feat (training, natural talent, magical gift, etc.)
-- Brief spotlight for each character demonstrating their feat
-- Establishes party as exceptional even at low level
+**What They Know:**
+- Storm giant attacked and destroyed the village
+- Giant left a massive axe at the site
+- Strange phenomena reported (reality distortions, upward-falling leaves)
+- No survivors found
 
-**Part 2 - Mission Briefing:**
-- **The Situation:** Storm giant destroyed village of Ratterdan
-- **The Artifact:** Giant left massive axe embedded at the site
-- **The Problem:** Axe is "bleeding reality" - temporal distortions, planar effects
-- **The Mission:** Investigate, assess the danger, retrieve or secure if possible
-- **The Payment:** [Based on patron's resources and motivations]
-- **The Timeline:** Urgent but not immediate crisis
-
-**Key Information Provided:**
-- Ratterdan location and general route
-- Reports of strange phenomena (upward-falling leaves, time distortions)
-- Giant tracks leading away from site (deliberately left, not fleeing)
-- No survivors found, village destroyed methodically
-- Unknown whether giant might return
-
-**Party Questions:** Allow PCs to gather information and establish dynamics
-
-### Travel Phase: Journey to Ratterdan (30-45 minutes)
-**Route:** Agastia to Ratterdan (exact path depends on geography)
-
-**Goals:**
-- Character spotlight moments
-- World-building and faction introduction
-- Establish tone and pacing
-- Foreshadowing of campaign themes
-
-**Character Spotlight Opportunities:**
-- **Manny:** Eldritch Knight skills, Merit Council perspective, Codex mission hint
-- **Nikki:** Arcane knowledge, relationship with Manny, Codex mission hint
-- **Rakash:** Barbarian instincts, connection to Kyle, goblin perspective
-- **Kyle:** Ranger/Rogue abilities, rainbow nature's reaction to environment
-- **Josh:** Mysterious markings, sorcerous power, player engagement moment
-
-**Possible Encounters (Choose 1-2):**
-1. **Refugees fleeing danger:** Opportunity for roleplay and information
-2. **Merit Council patrol:** Introduce faction, establish authority/tension
-3. **Environmental challenge:** Test party skills, show cooperation
-4. **Distant signs of chaos:** Foreshadow cult activity without direct encounter
-5. **Merchant caravan:** World-building, potential resources or information
-
-**Approaching Ratterdan:**
-- Describe smoking crater visible from distance
-- Strange shimmer in the air (reality distortion)
-- Unnatural quiet (ecosystem disrupted)
-- Sense of wrongness increasing as they approach
-
-### Arrival: Ratterdan Ruins (45-60 minutes)
-**Initial Description:**
+**Initial Impression:**
 - Smoking crater where village once stood
 - Destroyed buildings scattered around periphery
-- Giant's axe embedded at center, massive and imposing
+- Massive axe embedded at center, sized for a storm giant
 - Reality visibly warping around the artifact
-- Upward-falling leaves in pocket of Feywild energy
-- Giant tracks leading deliberately away
+- Unnatural quiet - ecosystem disrupted
+- Sense of wrongness in the air
 
-**Investigation Phase:**
+### Investigation Phase: Exploring the Ruins (30-45 minutes)
+**Goal:** Let party explore freely and discover the two key artifacts
 
-**The Axe Itself:**
+**The Giant's Axe (Cannot claim yet):**
 - Sized for storm giant, bluish-silver metal
-- Embedded deliberately, not dropped or thrown
-- Reality "bleeding" effect visible - temporal distortions
+- Embedded at center of crater
+- **Corruption seed visible** - dark energy pulsing through it
+- Reality "bleeding" around it - temporal distortions
+- **Cannot be moved:** Too heavy for level 1 party, cursed weight
+- Touching it causes psychic damage (don't recommend it)
 - Zhaask (Draconic) symbols etched near base
-- Approaching requires navigating distortion zones
 
-**The Destruction:**
-- Village methodically destroyed, not battle
-- Crater suggests massive impact or magical effect
-- No bodies found (incinerated? removed? teleported?)
-- Pattern suggests giant took time, was deliberate
-- Signs others attempted to approach but turned back
+**The Heartstone (Buried, must be found):**
+- Buried beneath rubble in the ruins
+- **Finding it:** Perception DC 12 or Investigation DC 10 while exploring
+- Fey energy signature if party has magical detection
+- Purple crystalline heart-shaped stone, faintly pulsing
+- Size of a human fist, warm to the touch
 
-**Environmental Phenomena:**
-- **Temporal Distortions:** Time flows irregularly in zones
-- **Feywild Bleed:** Pockets of fey energy, upward-falling leaves
-- **Reality Warps:** Visual distortions, impossible geometry
-- **Ecosystem Impact:** Local creatures altered or fled
+**The Destruction Pattern:**
+- Village methodically destroyed, not a chaotic battle
+- Crater suggests massive lightning strike or storm magic
+- No bodies found (incinerated completely)
+- Giant deliberately positioned axe and left
+- Giant tracks lead away purposefully (not fleeing)
 
-**Character-Specific Clues:**
-- **Manny:** Recognizes craftsmanship beyond normal giant work
-- **Nikki:** Arcane signatures feel strangely familiar
-- **Rakash:** Instinctively understands giant's purposeful emotional state
-- **Kyle:** Rainbow nature resonates uncomfortably with planar bleeding
-- **Josh:** Markings react - glowing, tingling, or warming
+**Environmental Hazards:**
+- **Reality Warps:** Difficult terrain in zones near axe (DEX save DC 10)
+- **Feywild Bleed:** Upward-falling leaves, time feels strange
+- **Temporal Distortions:** Small pockets where time flows oddly
+- Party can navigate safely with care
 
-**Zhaask Symbols:**
-- Visible to anyone who approaches carefully
-- Draconic language (PCs with language can partially translate)
-- Possible meanings: location coordinates, warning, prophecy, names
-- Full translation requires expertise or research
+### The Heartstone Awakening (15-20 minutes)
+**Trigger:** When party finds and touches the Heartstone
 
-### First Encounter (Choose One)
+**The Feat Ceremony:**
+1. **Purple light explodes** from the Heartstone when first touched
+2. **Each PC sees a vision** of their deepest desire/potential
+3. **Feat manifests** - they gain the bonus feat immediately
+4. **Light reclaims** - purple energy flows back into the stone
+5. **Evil laugh echoes** - Heartstone is now sentient and awake
+6. **Stone goes dormant** - for now
 
-**Option 1: Temporal Wisps**
-- Creatures drawn to temporal distortions
-- Adapted from shadow/air elemental stat blocks
-- Phasing abilities, temporal displacement attacks
-- 2-3 wisps appropriate for level 2 party
-- Non-evil, but dangerous and territorial
+**Each PC's Vision (personalize):**
+- **Manny:** Blade and magic becoming one
+- **Nikki:** Shadow and arcane power merging
+- **Rakash:** Primal fury perfected
+- **Kyle:** Nature's rainbow spectrum expanding
+- **Josh:** Mysterious markings glowing with purpose
 
-**Option 2: Warped Ecosystem Creatures**
-- Local animals mutated by planar bleed
-- Wolves, bears, or predatory birds with aberrant traits
-- Displaced features (extra eyes, wrong-colored fur, temporal echoes)
-- 2-4 creatures with slight CR adjustments
-- Emphasizes environmental danger
+**Important Notes:**
+- Feats are permanent even if Heartstone is lost
+- **IF HEARTSTONE IS DESTROYED:** Party loses feats permanently
+- Party can choose to take the Heartstone with them or leave it
+- The evil laugh hints at corruption/danger
 
-**Option 3: Rival Seekers**
-- Another group investigating the axe
-- Could be Merit Council agents, Chaos cultists, opportunistic bandits, or academic researchers
-- Potential for combat or negotiation
-- Introduces faction complexity
-- 3-5 humanoid opponents
+### Minor Encounters (Choose 1-2)
 
-**Encounter Goals:**
-- Appropriate challenge for level 2 party
-- Demonstrate reality-bleeding effects in combat
-- Test party tactics and cooperation
-- Can be resolved through combat, negotiation, or clever thinking
+**Encounter 1: Scavengers (Easy)**
+- 2-3 bandits looting the ruins
+- CR 1/8 each (Bandit stat block)
+- Can be scared off or negotiated with
+- Alternative: 3-4 giant rats drawn to death
 
-### Revelations & Clues
+**Encounter 2: Warped Creature (Medium)**
+- Single dire wolf mutated by planar bleed
+- CR 1 with minor aberrant traits
+- Extra eyes, time-displaced movement
+- Not evil, just territorial and confused
 
-**What PCs Can Learn:**
-- Giant deliberately positioned axe and left it
-- Reality-bleeding is intentional effect, not accident
-- Zhaask symbols suggest connection to dragons or giant lore
-- Temporal patterns indicate ongoing ritual or process
-- Others have attempted to approach but failed or retreated
+**Encounter Goals (Level 1 party):**
+- Light combat, test basic tactics
+- Show environmental effects in play
+- Build party cohesion
+- Quick resolution (10-15 minutes each)
 
-**Personal Discoveries:**
-Each PC receives unique insight connected to their character:
-- **Manny:** Craftsmanship suggests ancient giant traditions, possible Codex connection
-- **Nikki:** Arcane patterns similar to something in their past or training
-- **Rakash:** Giant's emotional state was purposeful, not angry or fearful
-- **Kyle:** Rainbow nature's uncomfortable resonance suggests planar familiarity
-- **Josh:** Markings' reaction indicates connection to temporal/planar phenomena
+### Session Wrap-Up & Mysteries (10-15 minutes)
 
-**Campaign Hooks Established:**
-- What is the giant's larger plan?
-- Are there other sites like this?
-- How does this connect to Steel Dragon, Codex, or faction conflicts?
-- What do the Zhaask symbols actually say?
-- Should the axe be moved, studied, contained, or left alone?
+**What the Party Learned:**
+- Storm giant deliberately destroyed Ratterdan
+- Giant positioned the axe and left it (why?)
+- Heartstone was buried here (by whom? when?)
+- Heartstone grants power but has sinister laugh (dangerous?)
+- Axe is cursed/corrupted - cannot claim yet
+- Zhaask symbols on axe (draconic, need translation)
 
-### Decision Point: What Now?
+**Questions Left Unanswered:**
+- Who orchestrated this attack? (Octavia, unknown to party)
+- Why did giant leave the axe here?
+- What is the connection between axe and Heartstone?
+- Will the giant return?
+- What was Ratterdan hiding that someone wanted destroyed?
 
-**Immediate Choices:**
-1. **Attempt Retrieval:** Try to move or claim the axe (difficult at level 2)
-2. **Document Everything:** Copy symbols, record phenomena, report to patron
-3. **Follow Giant's Trail:** Track where the storm giant went
-4. **Secure the Area:** Attempt containment to prevent others from approaching
-5. **Investigate Further:** Search for more clues before deciding
+**Party Decisions:**
+- Take Heartstone with them or leave it?
+- Report findings to anyone?
+- Return to claim axe when stronger?
+- Follow giant's trail?
 
-**Party Discussion:**
-- What to report to the patron?
-- Should they reveal everything they learned?
-- What are the personal implications (Josh's markings, Kyle's reaction, etc.)?
-- Do their individual missions (Manny and Nikki's Codex search) relate?
-
-**Session Ending:**
-- Close with party's decision about immediate next steps
-- Tease consequences of their choice
-- Foreshadow Session 2 possibilities
-- Leave mystery hooks unresolved
+**Session End:** Party leaves Ratterdan with more questions than answers, but significantly more powerful (feats gained)
 
 ## Important NPCs This Session
 
-**The Patron (MUST BE SELECTED):**
-- See The_Patron.md for options
-- Provides mission briefing and payment
-- Reaction to findings drives future relationship
-- Motivation colors interpretation of discoveries
-
-**Potential Travel NPCs:**
-- Merit Council patrol members
-- Refugees with information
-- Merchants or travelers
-- [Based on chosen encounters]
-
-**Encounter NPCs (If Option 3 Chosen):**
-- Rival seekers with own agenda
-- Could become recurring characters or one-time challenge
+**None required for Session 1**
+- Party explores independently
+- Encounter NPCs are generic (bandits, creatures)
+- Mastermind Octavia is unknown to party (reveal later)
 
 ## Key Handouts & Props
 
-**Mission Information:**
-- Patron's briefing (verbal or written)
-- Map showing route to Ratterdan
-- Payment terms and expectations
-- What patron knows (or claims to know)
-
-**At Ratterdan:**
-- Sketch of Zhaask symbols for copying
-- Description of axe and distortion zones
-- Giant track details
-- Environmental phenomena notes
+**Visual Aids:**
+- Sketch of Ratterdan crater layout
+- Heartstone description card (when found)
+- Zhaask symbols on axe (for later translation)
+- Giant's axe appearance (emphasize SIZE and corruption)
 
 ## Combat & Challenge Preparation
 
-**Encounter Difficulty:**
-- Designed for level 2 party (5 PCs)
-- XP appropriate for medium-hard encounter
-- Multiple resolution paths available
-- Environmental factors add complexity
+**Encounter Difficulty (Level 1 party):**
+- 1-2 easy encounters total
+- CR 1/8 to CR 1 enemies
+- Light combat focus - exploration priority
+- Can flee or negotiate if needed
 
-**Environmental Hazards:**
-- Temporal distortion zones (CON or WIS saves)
-- Reality warps creating difficult terrain
-- Feywild influence affecting emotions (CHA saves)
-- Unstable ground near crater edge
+**Environmental Hazards (Minor):**
+- Reality warps: Difficult terrain, DEX save DC 10
+- Temporal zones: Odd time flow, mostly flavor
+- Feywild bleed: Upward leaves, strange sensations
 
-**Skill Challenges:**
-- Investigating destruction patterns (Investigation, Survival)
-- Copying Zhaask symbols accurately (Arcana, Calligrapher's tools)
-- Navigating distortion zones (Perception, Athletics)
-- Understanding giant's emotional state (Insight, Nature)
-- Translating draconic symbols (Languages, History)
+**Skill Checks:**
+- **Finding Heartstone:** Perception DC 12 or Investigation DC 10
+- **Examining axe safely:** Arcana DC 12 (corruption visible)
+- **Reading Zhaask:** Languages (Draconic) for partial translation
+- **Tracking giant:** Survival DC 10 (tracks obvious)
 
 ## Discovery & Rewards
 

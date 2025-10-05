@@ -1,0 +1,16 @@
+{
+  "name": "factions-patrons-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for managing factions, faction conflicts, and patron negotiations",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0"
+  },
+  "keywords": ["mcp", "dnd", "factions", "patrons", "campaign-management"],
+  "author": "",
+  "license": "MIT"
+}

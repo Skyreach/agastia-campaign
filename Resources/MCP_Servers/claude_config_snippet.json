@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "campaign-goals": {
+      "command": "node",
+      "args": [
+        "E:\\dnd\\agastia-campaign\\Resources\\MCP_Servers\\campaign-goals-mcp\\index.js"
+      ]
+    },
+    "factions-patrons": {
+      "command": "node",
+      "args": [
+        "E:\\dnd\\agastia-campaign\\Resources\\MCP_Servers\\factions-patrons-mcp\\index.js"
+      ]
+    }
+  }
+}
