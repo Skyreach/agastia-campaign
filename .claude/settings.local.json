@@ -33,7 +33,10 @@
       "Bash(do python3 .config/sync_entity_to_notion.py \"$c\")",
       "Bash(do python3 .config/sync_entity_to_notion.py \"$s\")",
       "Bash(chmod:*)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(./start_file_watcher.sh:*)",
+      "Bash(./.config/SESSION_STARTUP_CHECK.sh:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

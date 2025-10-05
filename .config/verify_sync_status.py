@@ -3,8 +3,9 @@
 
 import sys
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import argparse
+import subprocess
 
 sys.path.insert(0, str(Path(__file__).parent))
 from notion_helpers import (
@@ -27,7 +28,7 @@ def get_local_files():
 
     for md_file in campaign_root.rglob('*.md'):
         # Skip certain directories
-        if any(skip in md_file.parts for skip in ['.config', 'node_modules', '.git', '.claude']):
+        if any(skip in md_file.parts for skip in ['.config', 'node_modules', '.git', '.claude', 'Resources']):
             continue
 
         try:
@@ -44,6 +45,44 @@ def get_local_files():
             continue
 
     return files
+
+def get_last_pull_time():
+    """Get the timestamp of the last git pull"""
+    try:
+        # Check git reflog for recent pulls/merges
+        result = subprocess.run(
+            ['git', 'reflog', '--date=iso', '-n', '20'],
+            capture_output=True,
+            text=True,
+            cwd=get_campaign_root()
+        )
+
+        if result.returncode == 0:
+            for line in result.stdout.splitlines():
+                # Look for pull operations in reflog
+                if 'pull:' in line.lower() or 'merge:' in line.lower():
+                    # Extract timestamp from reflog line
+                    # Format: "hash HEAD@{timestamp}: action"
+                    if '{' in line and '}' in line:
+                        timestamp_str = line[line.find('{')+1:line.find('}')]
+                        try:
+                            # Parse the timestamp (format: "2025-10-05 09:25:25 -0400")
+                            # Convert to ISO format
+                            parts = timestamp_str.rsplit(' ', 1)  # Split off timezone
+                            if len(parts) == 2:
+                                dt_str, tz_str = parts
+                                # Convert timezone format from -0400 to -04:00
+                                if len(tz_str) == 5 and (tz_str.startswith('+') or tz_str.startswith('-')):
+                                    tz_str = tz_str[:3] + ':' + tz_str[3:]
+                                iso_str = dt_str.replace(' ', 'T') + tz_str
+                                pull_time = datetime.fromisoformat(iso_str)
+                                return pull_time
+                        except Exception as e:
+                            continue
+    except Exception:
+        pass
+
+    return None
 
 def get_notion_pages(notion, db_id):
     """Get all Notion pages with their last_edited time"""
@@ -105,9 +144,15 @@ def verify_sync(quiet=False):
     local_files = get_local_files()
     notion_pages = get_notion_pages(notion, db_id)
 
+    # Get last git pull time to filter out false positives
+    last_pull = get_last_pull_time()
+    pull_window = timedelta(minutes=10)  # Files modified within 10 mins of pull are likely from the pull
+
     if not quiet:
         log_info(f"Found {len(local_files)} local files")
         log_info(f"Found {len(notion_pages)} Notion pages")
+        if last_pull:
+            log_info(f"Last git pull: {last_pull.strftime('%Y-%m-%d %H:%M:%S')}")
 
     # Check for desyncs
     issues = []
@@ -120,6 +165,8 @@ def verify_sync(quiet=False):
 
     # Files potentially out of sync (local newer than Notion)
     out_of_sync = []
+    pull_related = []  # Files that are newer due to git pull
+
     for file_path, file_info in local_files.items():
         if file_path in notion_pages:
             notion_edited = notion_pages[file_path]['last_edited']
@@ -128,12 +175,36 @@ def verify_sync(quiet=False):
             if notion_edited and local_modified > notion_edited:
                 time_diff = (local_modified - notion_edited).total_seconds()
                 if time_diff > 60:  # More than 1 minute difference
-                    out_of_sync.append({
-                        'path': file_path,
-                        'local': local_modified,
-                        'notion': notion_edited,
-                        'diff_seconds': time_diff
-                    })
+                    # Check if this is from a recent git pull
+                    # Compare file modification time to git pull time
+                    if last_pull:
+                        # Ensure both times are timezone-aware for comparison
+                        local_mod_aware = local_modified if local_modified.tzinfo else local_modified.replace(tzinfo=timezone.utc)
+                        pull_time_aware = last_pull if last_pull.tzinfo else last_pull.replace(tzinfo=timezone.utc)
+
+                        # Check if file was modified within pull window
+                        time_since_pull = abs((local_mod_aware - pull_time_aware).total_seconds())
+                        if time_since_pull < pull_window.total_seconds():
+                            pull_related.append({
+                                'path': file_path,
+                                'local': local_modified,
+                                'notion': notion_edited,
+                                'diff_seconds': time_diff
+                            })
+                        else:
+                            out_of_sync.append({
+                                'path': file_path,
+                                'local': local_modified,
+                                'notion': notion_edited,
+                                'diff_seconds': time_diff
+                            })
+                    else:
+                        out_of_sync.append({
+                            'path': file_path,
+                            'local': local_modified,
+                            'notion': notion_edited,
+                            'diff_seconds': time_diff
+                        })
 
     # Report results
     has_issues = bool(missing_in_notion or out_of_sync)
@@ -152,9 +223,14 @@ def verify_sync(quiet=False):
             if len(missing_in_notion) > 10:
                 print(f"  ... and {len(missing_in_notion) - 10} more")
 
+        if pull_related and not out_of_sync:
+            print()
+            log_success(f"✓ {len(pull_related)} files updated from git pull (no action needed)")
+            print("  These files were synced by whoever pushed them")
+
         if out_of_sync:
             print()
-            log_warning(f"{len(out_of_sync)} files potentially out of sync:")
+            log_warning(f"{len(out_of_sync)} files need syncing (local edits):")
             for item in out_of_sync[:10]:
                 mins = int(item['diff_seconds'] / 60)
                 print(f"  • {item['path']}")
@@ -171,7 +247,10 @@ def verify_sync(quiet=False):
             print("⚠️  SYNC ISSUES DETECTED")
             print("Run: python3 sync_notion.py all")
         else:
-            print("✅ ALL FILES IN SYNC")
+            if pull_related:
+                print("✅ FILES FROM GIT PULL - NO SYNC NEEDED")
+            else:
+                print("✅ ALL FILES IN SYNC")
 
         print("=" * 60)
 
