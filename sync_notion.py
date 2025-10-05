@@ -32,8 +32,84 @@ DATABASES = {
     'entities': '281693f0-c6b4-80be-87c3-f56fef9cc2b9',  # D&D Campaign Entities database
 }
 
+def markdown_to_notion_blocks(content):
+    """Convert markdown content to Notion blocks (simplified parser)"""
+    blocks = []
+    lines = content.split('\n')
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+
+        # Skip empty lines at start
+        if not blocks and not line.strip():
+            i += 1
+            continue
+
+        # Handle headers
+        if line.startswith('# '):
+            blocks.append({
+                'object': 'block',
+                'type': 'heading_1',
+                'heading_1': {'rich_text': [{'type': 'text', 'text': {'content': line[2:].strip()[:2000]}}]}
+            })
+        elif line.startswith('## '):
+            blocks.append({
+                'object': 'block',
+                'type': 'heading_2',
+                'heading_2': {'rich_text': [{'type': 'text', 'text': {'content': line[3:].strip()[:2000]}}]}
+            })
+        elif line.startswith('### '):
+            blocks.append({
+                'object': 'block',
+                'type': 'heading_3',
+                'heading_3': {'rich_text': [{'type': 'text', 'text': {'content': line[4:].strip()[:2000]}}]}
+            })
+        # Handle code blocks
+        elif line.strip().startswith('```'):
+            code_lines = []
+            i += 1
+            language = line.strip()[3:].strip() or 'plain text'
+            while i < len(lines) and not lines[i].strip().startswith('```'):
+                code_lines.append(lines[i])
+                i += 1
+            blocks.append({
+                'object': 'block',
+                'type': 'code',
+                'code': {
+                    'rich_text': [{'type': 'text', 'text': {'content': '\n'.join(code_lines)[:2000]}}],
+                    'language': language
+                }
+            })
+        # Handle bulleted lists
+        elif line.strip().startswith('- ') or line.strip().startswith('* '):
+            blocks.append({
+                'object': 'block',
+                'type': 'bulleted_list_item',
+                'bulleted_list_item': {'rich_text': [{'type': 'text', 'text': {'content': line.strip()[2:].strip()[:2000]}}]}
+            })
+        # Handle numbered lists
+        elif line.strip() and line.strip()[0].isdigit() and '. ' in line:
+            content = line.strip().split('. ', 1)[1] if '. ' in line else line
+            blocks.append({
+                'object': 'block',
+                'type': 'numbered_list_item',
+                'numbered_list_item': {'rich_text': [{'type': 'text', 'text': {'content': content[:2000]}}]}
+            })
+        # Regular paragraph
+        elif line.strip():
+            blocks.append({
+                'object': 'block',
+                'type': 'paragraph',
+                'paragraph': {'rich_text': [{'type': 'text', 'text': {'content': line[:2000]}}]}
+            })
+
+        i += 1
+
+    return blocks
+
 def sync_to_notion(file_path, entry_type):
-    """Sync a markdown file to Notion database"""
+    """Sync a markdown file to Notion database with full content"""
     notion = get_notion_client()
 
     with open(file_path, 'r') as f:
@@ -68,27 +144,52 @@ def sync_to_notion(file_path, entry_type):
     if entry_type.lower() not in [t.lower() for t in tags_list]:
         tags_list.append(entry_type.lower())
         properties["Tags"] = {"multi_select": [{"name": tag} for tag in tags_list]}
-    
+
     # Check if entry exists
     results = notion.databases.query(
         database_id=DATABASES['entities'],
         filter={"property": "Name", "title": {"equals": post.get('name', Path(file_path).stem)}}
     )
-    
+
+    # Convert markdown content to Notion blocks
+    content_blocks = markdown_to_notion_blocks(post.content)
+
     if results['results']:
-        # Update existing
+        # Update existing page
+        page_id = results['results'][0]['id']
+
+        # Update properties
         notion.pages.update(
-            page_id=results['results'][0]['id'],
+            page_id=page_id,
             properties=properties
         )
-        print(f"✅ Updated: {post.get('name', Path(file_path).stem)}")
+
+        # Clear existing content and add new blocks
+        existing_blocks = notion.blocks.children.list(block_id=page_id)
+        for block in existing_blocks['results']:
+            notion.blocks.delete(block_id=block['id'])
+
+        # Add new content in batches (Notion limit: 100 blocks per request)
+        batch_size = 100
+        for i in range(0, len(content_blocks), batch_size):
+            batch = content_blocks[i:i+batch_size]
+            notion.blocks.children.append(block_id=page_id, children=batch)
+
+        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} ({len(content_blocks)} blocks)")
     else:
-        # Create new
-        notion.pages.create(
+        # Create new page with content
+        new_page = notion.pages.create(
             parent={"database_id": DATABASES['entities']},
             properties=properties
         )
-        print(f"✨ Created: {post.get('name', Path(file_path).stem)}")
+
+        # Add content in batches
+        batch_size = 100
+        for i in range(0, len(content_blocks), batch_size):
+            batch = content_blocks[i:i+batch_size]
+            notion.blocks.children.append(block_id=new_page['id'], children=batch)
+
+        print(f"✨ Created: {post.get('name', Path(file_path).stem)} ({len(content_blocks)} blocks)")
 
 def sync_all():
     """Sync all campaign files to Notion - dynamically discovers all markdown files"""
