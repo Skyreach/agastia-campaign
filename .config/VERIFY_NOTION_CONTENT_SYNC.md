@@ -1,6 +1,16 @@
 # Notion Content Sync Verification
 
-## ✅ Status: All Fixes Are In Repository
+## ✅ CONFIRMED: sync_notion.py SYNCS FULL CONTENT (NOT JUST PROPERTIES!)
+
+**CRITICAL:** The `sync_notion.py` script in this repo syncs:
+1. ✅ Frontmatter properties (Name, Tags, Status, etc.)
+2. ✅ **FULL MARKDOWN CONTENT** converted to Notion blocks
+3. ✅ Headers, lists, code blocks, toggles, formatting
+
+**See lines 289-326 in sync_notion.py:**
+- Line 289: `content_blocks = markdown_to_notion_blocks(post.content)` ← Converts content
+- Lines 302-310: Deletes old blocks and adds new content blocks
+- Lines 323-324: Adds content blocks to new pages
 
 This document verifies that all Notion content syncing fixes are available in the repo.
 
@@ -46,6 +56,31 @@ This document verifies that all Notion content syncing fixes are available in th
 - Entity types and relationships
 - Location hierarchy system
 - Filtered database views
+
+## ANSWER: Which Script Syncs Content?
+
+**Script:** `sync_notion.py` (in repo root)
+
+**What it syncs:**
+- ✅ Properties (frontmatter)
+- ✅ **FULL PAGE CONTENT** (markdown body converted to Notion blocks)
+
+**Proof (code inspection):**
+```python
+# Line 289: Converts markdown content to Notion blocks
+content_blocks = markdown_to_notion_blocks(post.content)
+
+# Lines 302-310: For existing pages - deletes old blocks, adds new
+existing_blocks = notion.blocks.children.list(block_id=page_id)
+for block in existing_blocks['results']:
+    notion.blocks.delete(block_id=block['id'])
+notion.blocks.children.append(block_id=page_id, children=batch)
+
+# Lines 323-324: For new pages - adds content blocks
+notion.blocks.children.append(block_id=new_page['id'], children=batch)
+```
+
+**This is NOT the old properties-only sync. This syncs EVERYTHING.**
 
 ## How To Use On New Machine
 
