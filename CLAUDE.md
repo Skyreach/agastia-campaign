@@ -1,5 +1,29 @@
 # D&D Campaign Assistant - System Instructions
 
+## 🚨 MANDATORY SESSION STARTUP
+
+**BEFORE DOING ANYTHING ELSE, RUN THESE TWO COMMANDS:**
+
+1. **Start File Watcher (auto-syncs to Notion):**
+```bash
+./start_file_watcher.sh
+```
+
+2. **Verify Environment:**
+```bash
+./.config/SESSION_STARTUP_CHECK.sh
+```
+
+If either check fails, **STOP IMMEDIATELY** and report to user.
+
+**What the file watcher does:**
+- Monitors all markdown file changes in real-time
+- Automatically syncs modified files to Notion
+- Runs in background - no manual sync needed
+- Prevents Notion desync issues across threads
+
+---
+
 ## 🛡️ CRITICAL SAFETY CHECKS
 
 ### Before Git Commits:
@@ -91,38 +115,34 @@
 - Use `.config/safe_resync_all.sh` for manual re-syncing (UPDATE only)
 - **ALWAYS test with new pages before attempting any Notion page modifications**
 - For landing page setup: Follow `.config/NOTION_SETUP_GUIDE.md` (manual setup, no automation)
+- **Before trying new Notion features:** Check `.config/NOTION_CAPABILITIES.md` for tested capabilities
 - If uncertain about Notion operations: ASK USER FIRST
 
-### Approved Database Properties (16 Total):
+### Actual Notion Database Properties (VERIFIED):
 **Core Properties:**
 - Name (title) - Entity name
-- Tags (multi_select) - Quest tags, entity types inferred from here
-- Status (select) - Active, Inactive, etc.
+- Tags (multi_select) - Quest tags, entity types stored here (pc, npc, faction, etc.)
+- Status (select) - Active, Planning, Completed, Destroyed, Unknown, Pending, etc.
 
-**Navigation Properties:**
-- Related Entities (relation) - Cross-entity connections
-- Faction (relation) - NPC faction membership
-- Location (relation) - NPC/artifact location
-- Parent Location (relation) - Location hierarchy
-
-**Utility Properties:**
-- Player (rich_text) - PC player assignment
-- Session Number (number) - Session ordering
-- Progress Clock (rich_text) - Faction/goal progress
+**Content Properties:**
 - File Path (rich_text) - Markdown file path
 - Version (rich_text) - Semantic versioning
-- Location Type (select) - Region, City, District, etc.
-
-**Optional Properties:**
-- Relations (rich_text) - Freeform relationship notes
 - Secrets (rich_text) - Hidden information
-- Last Seen (date) - When entity was last encountered
+- Relations (rich_text) - Freeform relationship notes
+- Progress Clock (rich_text) - Faction/goal progress tracking
 
-**Properties REMOVED (do not re-add):**
-- Type (inferred from Tags)
-- Class, Level, Threat Level (content is on pages)
-- Player Summary, DM Notes (content is on pages)
-- All "Related to D&D Campaign Entities (...)" nested properties
+**Type-Specific Properties:**
+- Player (rich_text) - PC player assignment
+- Session Number (number) - Session ordering
+- Location Type (select) - Continent, Region, City, District, Building, etc.
+- Parent Location (relation) - Location hierarchy (self-referencing)
+
+**Important Notes:**
+- NO "Type" property - entity type is inferred from Tags
+- NO "Notes" property - content goes in page body
+- NO relation properties except "Parent Location"
+- Entity type (PC, NPC, Faction, etc.) MUST be added to Tags array
+- All properties verified via schema query on 2025-10-04
 
 ### Notion Linking Requirements:
 **CRITICAL: When syncing to Notion, follow these rules:**

@@ -1,0 +1,12 @@
+{
+  "name": "Agastia D&D Campaign",
+  "description": "D&D campaign management with Notion sync",
+  "systemPrompt": "Read CLAUDE.md IMMEDIATELY and execute the MANDATORY SESSION STARTUP commands before doing anything else. This is critical for maintaining data sync across sessions.",
+  "customInstructions": [
+    "BEFORE ANY OTHER ACTION: Run ./start_file_watcher.sh",
+    "BEFORE ANY OTHER ACTION: Run ./.config/SESSION_STARTUP_CHECK.sh",
+    "If either fails, STOP and report to user",
+    "Read CLAUDE.md for complete instructions"
+  ],
+  "workingDirectory": "/mnt/e/dnd/agastia-campaign"
+}

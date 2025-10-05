@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "dnd-campaign": {
+      "command": "node",
+      "args": ["/mnt/e/dnd/agastia-campaign/mcp_server/server.js"]
+    },
+    "session-flow": {
+      "command": "node",
+      "args": ["/mnt/e/dnd/agastia-campaign/mcp_server_session_flow/server.js"]
+    },
+    "dungeon-ecology": {
+      "command": "node",
+      "args": ["/mnt/e/dnd/agastia-campaign/mcp_server_dungeon_ecology/server.js"]
+    }
+  }
+}

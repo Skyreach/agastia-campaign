@@ -4,7 +4,7 @@ type: PC
 player: Player 4 (Kyle)
 race: Rainbow Hair (Homebrew)
 class: Ranger/Rogue
-level: 2
+level: 1
 status: Active
 version: "1.0.0"
 tags: [pc, rainbow-race, ranger, rogue, feywild, bandit-hunt, session1]
@@ -23,7 +23,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 - **Player:** Player 4 (Kyle)
 - **Race:** Rainbow Hair (Homebrew)
 - **Class:** Ranger/Rogue Multiclass
-- **Level:** 2
+- **Level:** 1
 - **Background:** Escaped bandit captive, Feywild soldier
 - **Feat:** Eldritch Adept
 

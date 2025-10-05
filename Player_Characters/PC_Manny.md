@@ -4,7 +4,7 @@ type: PC
 player: Player 1
 race: Half-Orc
 class: Eldritch Knight
-level: 2
+level: 1
 status: Active
 version: "1.0.0"
 tags: [pc, half-orc, eldritch-knight, decimate-project, session1]
@@ -22,7 +22,7 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 - **Player:** Player 1
 - **Race:** Half-Orc
 - **Class:** Eldritch Knight (Fighter)
-- **Level:** 2
+- **Level:** 1
 - **Background:** Decimate Project Subject #10
 - **Feat:** Gift of the Metallic Dragon
 

@@ -24,12 +24,21 @@ related_entities:
 The Decimate Project is a highly secretive program led by the mysterious Professor Zero, whose true identity remains unknown. The Project created ten subjects through memory manipulation and trained them as child soldiers for unknown purposes. Their current active goal is acquiring the Dominion Evolution Codex, but this appears to be only one step in a much larger, still-unrevealed plan.
 
 ### Leadership
+
+**Primary Leader:**
 - **Professor Zero:** Identity completely unknown
   - Architect of entire Project
   - Master of memory manipulation techniques
   - Goals extend beyond Codex acquisition
   - May not be working alone
   - Treats subjects as tools, not people
+
+**Patrons (Strongest Subjects):**
+- **Subject #8 - Biago "Nikki":** Tiefling Arcane Trickster, 8 years of service, field operative
+- **Subject #9 - Nona:** Half-Elf Bard, 1 year of service, protective guardian role
+- **Subject #10 - Monomi "Manny":** Half-Orc Eldritch Knight, newest subject, field operative
+
+*Note: These three subjects are the most powerful and capable, giving them patron-level influence within the Project's operations.*
 
 ### Members - The Ten Subjects
 All subjects detailed in `/mnt/c/dnd/NPCs/Faction_NPCs/Decimate_Project_Subjects.md`:

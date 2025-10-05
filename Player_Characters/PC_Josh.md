@@ -4,7 +4,7 @@ type: PC
 player: Player 5 (Josh)
 race: TBD
 class: Sorcerer
-level: 2
+level: 1
 status: Active
 version: "1.0.0"
 tags: [pc, sorcerer, demonic-markings, mystery, lost-civilization, underdark, session1]
@@ -22,7 +22,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - **Player:** Player 5 (Josh)
 - **Race:** [To be determined]
 - **Class:** Sorcerer
-- **Level:** 2
+- **Level:** 1
 - **Background:** Descendant of lost civilization
 - **Feat:** Elemental Adept
 

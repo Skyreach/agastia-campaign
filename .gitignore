@@ -16,12 +16,26 @@
 .DS_Store
 Thumbs.db
 
-# Node modules (if needed)
+# Node modules
 node_modules/
+package-lock.json
+
+# Python virtual environment
+.venv/
+venv/
+env/
 
 # Python cache
 __pycache__/
 *.py[cod]
+
+# Logs
+*.log
+.config/*.log
+
+# Build outputs
+dist/
+build/
 
 # Session specific
 Sessions/*_notes.md

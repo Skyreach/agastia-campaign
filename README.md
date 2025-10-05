@@ -39,6 +39,7 @@
 - **Database:** D&D Campaign Entities
 - **Entities Synced:** 17 (PCs, NPCs, Factions, Locations, Resources)
 - **Last Sync:** Successful
+- **Capabilities Reference:** See `.config/NOTION_CAPABILITIES.md` for tested features and limitations
 
 ## MCP Server Features
 🤖 **Persistent Campaign Context** - The MCP server provides:

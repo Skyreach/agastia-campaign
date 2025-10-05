@@ -27,8 +27,8 @@ All five player characters were created and approved:
 5. **Josh** - Sorcerer with mysterious markings
 
 **Special Rules Established:**
-- All characters started at 2nd level
-- Each character received one bonus feat
+- All characters started at 1st level
+- Each character will receive one bonus feat during Session 1 (Heartstone discovery)
 - Bastion system integrated for character-focused downtime
 - 3-2-1 quest structure (three-session major arcs, two-session minor arcs, one-shots)
 
@@ -53,14 +53,14 @@ All five player characters were created and approved:
 1. **3-Faction System:** Simplified to focus on Merit Council, Chaos Cult, and Dispossessed as primary factions (with Decimate Project and others as secondary)
 2. **3-2-1 Quest Structure:** Major arcs span three sessions, minor arcs two sessions, one-shot adventures as needed
 3. **Bastion Integration:** Character-focused downtime activities between adventures
-4. **Bonus Feat:** Each character received one additional feat at creation
-5. **Starting Level:** Characters begin at 2nd level (advanced from 1st)
+4. **Bonus Feat:** Each character will receive one additional feat during Session 1 (narrative reward)
+5. **Starting Level:** Characters begin at 1st level
 
 **Campaign Style Agreed:**
 - **Light Story:** Engaging narrative that doesn't overwhelm gameplay
 - **Moral Dilemmas:** Complex situations requiring difficult choices
 - **40% Combat / 60% Exploration:** Emphasis on investigation and roleplay
-- **Levels 2-9:** Campaign scope defined
+- **Levels 1-9:** Campaign scope defined
 - **Player Contributions:** Ongoing world-building encouraged
 
 ### Central Conflict Established

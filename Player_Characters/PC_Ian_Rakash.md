@@ -4,7 +4,7 @@ type: PC
 player: Player 3 (Ian)
 race: Goblin
 class: Barbarian
-level: 2
+level: 1
 status: Active
 version: "1.0.0"
 tags: [pc, goblin, barbarian, revenge, ratterdan, prosthetics, session1]
@@ -22,7 +22,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - **Player:** Player 3 (Ian)
 - **Race:** Goblin
 - **Class:** Barbarian
-- **Level:** 2
+- **Level:** 1
 - **Background:** Sole survivor of Ratterdan
 - **Feat:** Thrown Arms Master
 

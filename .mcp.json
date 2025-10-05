@@ -7,6 +7,22 @@
         "./mcp_server/server.js"
       ],
       "env": {}
+    },
+    "session-flow": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./mcp_server_session_flow/server.js"
+      ],
+      "env": {}
+    },
+    "dungeon-ecology": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./mcp_server_dungeon_ecology/server.js"
+      ],
+      "env": {}
     }
   }
 }

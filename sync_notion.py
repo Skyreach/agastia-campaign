@@ -35,18 +35,39 @@ DATABASES = {
 def sync_to_notion(file_path, entry_type):
     """Sync a markdown file to Notion database"""
     notion = get_notion_client()
-    
+
     with open(file_path, 'r') as f:
         post = frontmatter.load(f)
-    
+
+    # Map to actual Notion properties (based on schema query)
     properties = {
         "Name": {"title": [{"text": {"content": post.get('name', Path(file_path).stem)}}]},
-        "Type": {"select": {"name": entry_type}},
         "Tags": {"multi_select": [{"name": tag} for tag in post.get('tags', [])]},
         "Status": {"select": {"name": post.get('status', 'Active')}},
-        "Relations": {"rich_text": [{"text": {"content": post.get('relations', '')}}]},
-        "Notes": {"rich_text": [{"text": {"content": post.content[:2000]}}]}
+        "File Path": {"rich_text": [{"text": {"content": str(file_path)}}]},
     }
+
+    # Add optional properties if they exist in frontmatter
+    if 'version' in post:
+        properties["Version"] = {"rich_text": [{"text": {"content": post.get('version', '')}}]}
+
+    if 'player' in post:
+        properties["Player"] = {"rich_text": [{"text": {"content": post.get('player', '')}}]}
+
+    if 'session_number' in post:
+        properties["Session Number"] = {"number": post.get('session_number')}
+
+    if 'location_type' in post:
+        properties["Location Type"] = {"select": {"name": post.get('location_type')}}
+
+    if 'progress_clock' in post:
+        properties["Progress Clock"] = {"rich_text": [{"text": {"content": post.get('progress_clock', '')}}]}
+
+    # Store entity type in Tags if not already present
+    tags_list = post.get('tags', [])
+    if entry_type.lower() not in [t.lower() for t in tags_list]:
+        tags_list.append(entry_type.lower())
+        properties["Tags"] = {"multi_select": [{"name": tag} for tag in tags_list]}
     
     # Check if entry exists
     results = notion.databases.query(
