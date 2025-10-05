@@ -2,6 +2,7 @@
 import os
 import sys
 import json
+import re
 sys.path.insert(0, os.path.expanduser('~/.local/lib/python3.10/site-packages'))
 
 from notion_client import Client
@@ -31,6 +32,60 @@ def get_notion_client():
 DATABASES = {
     'entities': '281693f0-c6b4-80be-87c3-f56fef9cc2b9',  # D&D Campaign Entities database
 }
+
+def parse_rich_text(text):
+    """Parse markdown formatting (bold, italic, code) into Notion rich_text format"""
+    if not text:
+        return []
+
+    rich_text = []
+    remaining = text[:2000]  # Notion limit
+
+    # Pattern to match **bold**, *italic*, `code`
+    # Process in order: code, bold, italic to avoid conflicts
+    pattern = r'(`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*)'
+
+    last_end = 0
+    for match in re.finditer(pattern, remaining):
+        # Add plain text before the match
+        if match.start() > last_end:
+            plain = remaining[last_end:match.start()]
+            if plain:
+                rich_text.append({'type': 'text', 'text': {'content': plain}})
+
+        matched_text = match.group()
+
+        # Code (inline)
+        if matched_text.startswith('`') and matched_text.endswith('`'):
+            rich_text.append({
+                'type': 'text',
+                'text': {'content': matched_text[1:-1]},
+                'annotations': {'code': True}
+            })
+        # Bold
+        elif matched_text.startswith('**') and matched_text.endswith('**'):
+            rich_text.append({
+                'type': 'text',
+                'text': {'content': matched_text[2:-2]},
+                'annotations': {'bold': True}
+            })
+        # Italic
+        elif matched_text.startswith('*') and matched_text.endswith('*'):
+            rich_text.append({
+                'type': 'text',
+                'text': {'content': matched_text[1:-1]},
+                'annotations': {'italic': True}
+            })
+
+        last_end = match.end()
+
+    # Add remaining plain text
+    if last_end < len(remaining):
+        plain = remaining[last_end:]
+        if plain:
+            rich_text.append({'type': 'text', 'text': {'content': plain}})
+
+    return rich_text if rich_text else [{'type': 'text', 'text': {'content': remaining}}]
 
 def markdown_to_notion_blocks(content):
     """Convert markdown content to Notion blocks with toggle support"""
@@ -72,44 +127,44 @@ def markdown_to_notion_blocks(content):
                     toggle_children.append({
                         'object': 'block',
                         'type': 'heading_1',
-                        'heading_1': {'rich_text': [{'type': 'text', 'text': {'content': content_line[2:].strip()[:2000]}}]}
+                        'heading_1': {'rich_text': parse_rich_text(content_line[2:].strip())}
                     })
                 elif content_line.startswith('## '):
                     toggle_children.append({
                         'object': 'block',
                         'type': 'heading_2',
-                        'heading_2': {'rich_text': [{'type': 'text', 'text': {'content': content_line[3:].strip()[:2000]}}]}
+                        'heading_2': {'rich_text': parse_rich_text(content_line[3:].strip())}
                     })
                 elif content_line.startswith('### '):
                     toggle_children.append({
                         'object': 'block',
                         'type': 'heading_3',
-                        'heading_3': {'rich_text': [{'type': 'text', 'text': {'content': content_line[4:].strip()[:2000]}}]}
+                        'heading_3': {'rich_text': parse_rich_text(content_line[4:].strip())}
                     })
                 elif content_line.strip().startswith('- ') or content_line.strip().startswith('* '):
                     toggle_children.append({
                         'object': 'block',
                         'type': 'bulleted_list_item',
-                        'bulleted_list_item': {'rich_text': [{'type': 'text', 'text': {'content': content_line.strip()[2:].strip()[:2000]}}]}
+                        'bulleted_list_item': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
                     })
                 elif content_line.strip().startswith('> '):
                     toggle_children.append({
                         'object': 'block',
                         'type': 'quote',
-                        'quote': {'rich_text': [{'type': 'text', 'text': {'content': content_line.strip()[2:].strip()[:2000]}}]}
+                        'quote': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
                     })
                 elif content_line.strip():
                     toggle_children.append({
                         'object': 'block',
                         'type': 'paragraph',
-                        'paragraph': {'rich_text': [{'type': 'text', 'text': {'content': content_line[:2000]}}]}
+                        'paragraph': {'rich_text': parse_rich_text(content_line)}
                     })
 
             blocks.append({
                 'object': 'block',
                 'type': 'toggle',
                 'toggle': {
-                    'rich_text': [{'type': 'text', 'text': {'content': summary_text[:2000]}}],
+                    'rich_text': parse_rich_text(summary_text),
                     'children': toggle_children[:100] if toggle_children else []
                 }
             })
@@ -123,19 +178,19 @@ def markdown_to_notion_blocks(content):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_1',
-                'heading_1': {'rich_text': [{'type': 'text', 'text': {'content': line[2:].strip()[:2000]}}]}
+                'heading_1': {'rich_text': parse_rich_text(line[2:].strip())}
             })
         elif line.startswith('## '):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_2',
-                'heading_2': {'rich_text': [{'type': 'text', 'text': {'content': line[3:].strip()[:2000]}}]}
+                'heading_2': {'rich_text': parse_rich_text(line[3:].strip())}
             })
         elif line.startswith('### '):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_3',
-                'heading_3': {'rich_text': [{'type': 'text', 'text': {'content': line[4:].strip()[:2000]}}]}
+                'heading_3': {'rich_text': parse_rich_text(line[4:].strip())}
             })
         # Handle code blocks (including mermaid)
         elif line.strip().startswith('```'):
@@ -158,14 +213,14 @@ def markdown_to_notion_blocks(content):
             blocks.append({
                 'object': 'block',
                 'type': 'quote',
-                'quote': {'rich_text': [{'type': 'text', 'text': {'content': line.strip()[2:].strip()[:2000]}}]}
+                'quote': {'rich_text': parse_rich_text(line.strip()[2:].strip())}
             })
         # Handle bulleted lists
         elif line.strip().startswith('- ') or line.strip().startswith('* '):
             blocks.append({
                 'object': 'block',
                 'type': 'bulleted_list_item',
-                'bulleted_list_item': {'rich_text': [{'type': 'text', 'text': {'content': line.strip()[2:].strip()[:2000]}}]}
+                'bulleted_list_item': {'rich_text': parse_rich_text(line.strip()[2:].strip())}
             })
         # Handle numbered lists
         elif line.strip() and line.strip()[0].isdigit() and '. ' in line:
@@ -173,14 +228,14 @@ def markdown_to_notion_blocks(content):
             blocks.append({
                 'object': 'block',
                 'type': 'numbered_list_item',
-                'numbered_list_item': {'rich_text': [{'type': 'text', 'text': {'content': content[:2000]}}]}
+                'numbered_list_item': {'rich_text': parse_rich_text(content)}
             })
         # Regular paragraph
         elif line.strip():
             blocks.append({
                 'object': 'block',
                 'type': 'paragraph',
-                'paragraph': {'rich_text': [{'type': 'text', 'text': {'content': line[:2000]}}]}
+                'paragraph': {'rich_text': parse_rich_text(line)}
             })
 
         i += 1
