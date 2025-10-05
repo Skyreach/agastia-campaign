@@ -5,7 +5,9 @@ echo "=== SAFE RE-SYNC OF ALL CAMPAIGN ENTITIES ==="
 echo "This script will UPDATE existing entities, not delete anything"
 echo ""
 
-cd /mnt/c/dnd
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CAMPAIGN_ROOT="$(dirname "$SCRIPT_DIR")"
+cd "$CAMPAIGN_ROOT"
 
 echo "PCs (5):"
 python3 .config/sync_entity_to_notion.py Player_Characters/PC_Manny.md

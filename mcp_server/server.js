@@ -42,7 +42,7 @@ class DnDCampaignServer {
       locationHierarchy: {},
       goals: [],
       artifacts: [],
-      partyLevel: 2,
+      partyLevel: 1,
       partySize: 5,
       encounterDifficulty: 'Medium'
     };
@@ -1343,12 +1343,85 @@ Co-Authored-By: Claude <noreply@anthropic.com>`;
 
   async editFile(filePath, content, commitMessage, autoCommit = true, autoSync = true) {
     try {
+      // DATA PARITY VALIDATION - Enforce protocol automatically
+      const basename = path.basename(filePath);
+
+      // Rule 1: Reject banned filename patterns (duplicate files)
+      const bannedSuffixes = ['_UPDATED', '_FINAL', '_v2', '_V2', '_NEW', '_CONSOLIDATED', '_MERGED'];
+      const hasBannedSuffix = bannedSuffixes.some(suffix =>
+        basename.toUpperCase().includes(suffix.toUpperCase())
+      );
+
+      if (hasBannedSuffix) {
+        return {
+          content: [{
+            type: 'text',
+            text: `❌ DATA PARITY VIOLATION: Filename contains banned suffix\n\n` +
+                  `File: ${basename}\n` +
+                  `Banned patterns: ${bannedSuffixes.join(', ')}\n\n` +
+                  `📋 PROTOCOL: Edit existing files in place. Do NOT create duplicate files.\n` +
+                  `Git tracks history - no need for versioned filenames.\n\n` +
+                  `See: .config/DATA_PARITY_PROTOCOL.md`
+          }]
+        };
+      }
+
       const fullPath = path.join(campaignRoot, filePath);
-      
+
+      // Rule 2: Check if file exists - if editing existing file, calculate diff size
+      let isLargeEdit = false;
+      let diffLineCount = 0;
+
+      try {
+        const existingContent = await fs.readFile(fullPath, 'utf-8');
+        const existingLines = existingContent.split('\n');
+        const newLines = content.split('\n');
+
+        // Simple line-based diff calculation
+        const maxLines = Math.max(existingLines.length, newLines.length);
+        for (let i = 0; i < maxLines; i++) {
+          if (existingLines[i] !== newLines[i]) {
+            diffLineCount++;
+          }
+        }
+
+        // Flag large edits (>20 line changes)
+        isLargeEdit = diffLineCount > 20;
+      } catch (err) {
+        // File doesn't exist yet - this is a new file creation, not an edit
+        // Allow this (but still check filename)
+      }
+
+      // Rule 3: Warn on large replacements (>20 lines changed)
+      if (isLargeEdit) {
+        return {
+          content: [{
+            type: 'text',
+            text: `⚠️ DATA PARITY WARNING: Large edit detected\n\n` +
+                  `File: ${filePath}\n` +
+                  `Estimated changed lines: ${diffLineCount}\n` +
+                  `Threshold: 20 lines\n\n` +
+                  `📋 PROTOCOL: Make small, incremental edits (<20 line diffs)\n` +
+                  `Large replacements:\n` +
+                  `  ❌ Hide what actually changed\n` +
+                  `  ❌ Make review impossible\n` +
+                  `  ❌ Cause sync issues\n\n` +
+                  `✅ RECOMMENDED: Break this into smaller, targeted edits\n` +
+                  `See: .config/DATA_PARITY_PROTOCOL.md\n\n` +
+                  `To override this warning, user must explicitly approve.`
+          }]
+        };
+      }
+
       // Write the file
       await fs.writeFile(fullPath, content);
-      
+
       let resultMessage = `✅ Updated file: ${filePath}`;
+
+      // Rule 4: Always verify sync after edits
+      if (autoSync) {
+        resultMessage += `\n\n🔄 Syncing to Notion...`;
+      }
 
       // Auto-commit if requested
       if (autoCommit) {
@@ -1359,6 +1432,36 @@ Co-Authored-By: Claude <noreply@anthropic.com>`;
         // Just sync to Notion without committing
         const syncResult = await this.syncNotion('all');
         resultMessage += `\n📊 Synced to Notion`;
+      }
+
+      // Rule 5: Verify sync status after edit
+      if (autoSync) {
+        try {
+          const { spawn } = await import('child_process');
+          const verifyScript = path.join(campaignRoot, '.config', 'verify_sync_status.py');
+
+          const verifyResult = await new Promise((resolve) => {
+            const child = spawn('python3', [verifyScript, '--quiet'], {
+              cwd: campaignRoot
+            });
+
+            let output = '';
+            child.stdout.on('data', (data) => output += data.toString());
+            child.stderr.on('data', (data) => output += data.toString());
+
+            child.on('close', (code) => {
+              resolve({ exitCode: code, output });
+            });
+          });
+
+          if (verifyResult.exitCode === 0) {
+            resultMessage += `\n✅ Sync verification passed`;
+          } else {
+            resultMessage += `\n⚠️ Sync verification detected issues - run verify_sync_status.py for details`;
+          }
+        } catch (verifyError) {
+          resultMessage += `\n⚠️ Could not verify sync: ${verifyError.message}`;
+        }
       }
 
       // Update campaign state
