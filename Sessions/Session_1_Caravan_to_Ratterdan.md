@@ -103,7 +103,7 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 ## Node 2: Underground Shadow Dungeon
 
 <details>
-<summary><b>Player Description - Entrance</b></summary>
+<summary><b>Entrance Description</b></summary>
 
 > Following the cloud's direction, you find a collapsed section of ruins where the ground has caved in, revealing a dark passage descending underground. The air is cold, and shadows seem to move unnaturally along the walls. A faint purple glow emanates from somewhere deep below.
 
@@ -129,8 +129,6 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 - Allows bypassing some encounters
 - Verticality: Rats use ceiling cracks, spawn use walls
 
-**Lighting:** Dim to dark (party needs light sources)
-
 **Ecology Notes:**
 - Shadow creatures spawned from axe corruption
 - Feed on magical energy (spell slots, class features)
@@ -140,27 +138,73 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 </details>
 
 <details>
-<summary><b>Room 1: Shadow Rats (Warm-up Encounter)</b></summary>
+<summary><b>Dungeon Features</b></summary>
 
-### Player Description
-> The passage opens into a small chamber. The purple glow is stronger here. Shadowy forms skitter along the walls and ceiling - rats, but wrong. Their bodies seem to absorb light, leaving trails of darkness.
+**Illumination:** None (total darkness). Purple glow from corruption visible in all rooms.
+
+**Ceiling Height:** Varies 6-12 feet. Natural cave ceiling with stalactites. Taller PCs risk head bumps (AC 12, 1 damage if running).
+
+**Walls:** Rough volcanic rock (AC 16, climb DC 13). Fissures leak purple mist. Surface feels greasy with corruption residue.
+
+**Floors:** Uneven cave floor with rubble. Shadow-moss grows in patches (difficult terrain, muffles footsteps - advantage on Stealth).
+
+**Atmosphere:** Unnatural cold despite being underground. Corruption creates visual distortions like heat shimmer, but inverted.
+
+</details>
+
+<details>
+<summary><b>Corridor Themes</b></summary>
+
+Describe passages showing increasing corruption as party descends. Mix 2-3 elements, intensifying toward Room 3:
+
+- **Purple mist tendrils** creeping along ceiling
+- **Shadow-moss patches** dampening sound
+- **Fissures** leaking corruption like wounds
+- **Distortion zones** where reality warps (visual shimmer)
+- **Rubble piles** from ceiling collapses
+- **Claw marks** in stone from shadow creatures
+
+</details>
+
+<details>
+<summary><b>AREA 1: SHADOW RAT DEN</b></summary>
+
+### Boxed Text
+> You emerge into a natural cave chamber, its ceiling studded with dripping stalactites. Purple mist clings to the uneven floor in pools. The corruption here is thick—you can taste metal in the air, feel the unnatural cold seeping through your clothes. In the dim purple glow, you see movement: dark shapes that might be rats, but they're too quiet, too purposeful. They're watching you from the walls and ceiling.
+
+### Reactive Skill Checks
+- **Perception DC 12:** Notice rats positioning for pack tactics, coordinating with chittering sounds
+- **Arcana DC 13:** Recognize shadow-essence draining effect (warns of Nibble Essence ability)
+- **Survival DC 11:** Notice rat trails leading to Room 2 (escape route prediction)
+
+### Room Elements
+
+**Unstable Stalactites:** Can be dropped on rats (DEX attack +5, 2d6 damage, 10ft radius). Perception DC 12 to spot which ones are loose.
+
+**Corruption Pools:** Difficult terrain, can be ignited with fire spells (1d6 fire/round to creatures in pool).
+
+**Ceiling Cracks:** Rats use to move/hide; party can block with Mage Hand/objects (Investigation DC 11 to identify best cracks).
+
+**Wall Fissures:** Leak purple mist; Investigation DC 12 reveals air current flowing toward Room 2.
+
+**Rubble Piles:** Provide half-cover; hiding rats underneath (Perception DC 13 to spot before rats attack).
 
 ### Encounter
 **Creatures:** 3-4 Shadow-Touched Rats (CR 1/8 each)
 
-**Tactics:**
-- Pack tactics (advantage when ally adjacent)
-- Attack from ceiling (drop attacks)
-- Target isolated PCs
-- Flee to Room 2 if reduced to 1 rat
-
-### Stat Block
+**Stat Block:**
 - **AC:** 12
 - **HP:** 7 (2d6) each
 - **Speed:** 30ft, climb 30ft
 - **Attack:** Bite +4, 1d4+2 piercing
 - **Special - Nibble Essence:** On crit, drains 1 use of minor ability (Second Wind, Bardic Inspiration, etc.)
 - **Pack Tactics:** Advantage when ally within 5ft of target
+
+**Tactics:**
+- Pack tactics (advantage when ally adjacent)
+- Attack from ceiling (drop attacks)
+- Target isolated PCs
+- Flee to Room 2 if reduced to 1 rat
 
 ### DM Notes
 - Introduce resource drain mechanic
@@ -170,22 +214,35 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 </details>
 
 <details>
-<summary><b>Room 2: Shadow Spawn (Serious Threat)</b></summary>
+<summary><b>AREA 2: CORRUPTION NEXUS</b></summary>
 
-### Player Description
-> This larger chamber pulses with corruption. Two humanoid shadows detach from the walls, their forms flickering between solid and ethereal. They move with unnatural fluidity, reaching toward you with shadowy claws.
+### Boxed Text
+> The passage descends into a larger cavern, and the wrongness hits you like a physical blow. Purple corruption doesn't just glow here—it *pulses*, rhythmic like a heartbeat. The walls are slick with shadow-residue. Pools of liquid darkness gather in floor depressions, their surfaces rippling without wind. Then the walls themselves begin to move. Two humanoid shapes peel away from the stone—shadows given form, reaching toward you with clawed hands that flicker between solid and smoke.
+
+### Reactive Skill Checks
+- **Perception DC 13:** See spawn eyeing spellcasters specifically (target priority warning)
+- **Arcana DC 14:** Detect spawn siphoning ambient magic (explains Power Drain ability)
+
+### Room Elements
+
+**Stone Pillars:** Provide full cover, can be toppled on spawn (Athletics DC 15, 3d6 damage). Three pillars in room.
+
+**Corruption Pools:** Feed spawn; destroying with radiant damage/fire deals 1d6 damage to nearest spawn. Four pools scattered throughout.
+
+**Stalactite Clusters:** Can be dropped for area denial (DEX DC 12 or 2d6 damage, 10ft radius). Athletics DC 13 to dislodge.
+
+**Distortion Zones:** Corruption warps space; can be triggered to disorient spawn (Arcana DC 13). Causes disadvantage on spawn attacks for 1 round.
+
+**Shadow Residue Walls:** Slick surface makes climbing impossible, forces ground combat. Athletics DC 18 to climb (nearly impossible).
+
+**Floor Cracks:** Unstable; running triggers DEX save DC 11 or prone. Cracks spiderweb through center of room.
+
+**Secret Passage:** Investigation DC 14 reveals passage behind corruption veil leading to Room 3, bypassing final guardian.
 
 ### Encounter
 **Creatures:** 2 Shadow Spawn (CR 1/4 each)
 
-**Tactics (Tucker's Kobolds):**
-- Use darkness to hide (bonus action Hide in dim/dark)
-- Attack from unexpected angles (walls, ceiling if incorporeal)
-- Focus fire on casters/healers (drain spell slots)
-- Retreat to walls when bloodied
-- Guard path to Room 3 (won't pursue far)
-
-### Stat Block
+**Stat Block:**
 - **AC:** 12
 - **HP:** 9 (2d8) each
 - **Speed:** 40ft
@@ -198,32 +255,66 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 - **Sunlight Sensitivity:** Disadvantage in bright light
 - **Shadow Stealth:** Bonus action Hide in dim/dark
 
+**Tactics (Tucker's Kobolds):**
+- Use darkness to hide (bonus action Hide in dim/dark)
+- Attack from unexpected angles (walls, ceiling if incorporeal)
+- Focus fire on casters/healers (drain spell slots)
+- Retreat to walls when bloodied
+- Guard path to Room 3 (won't pursue far)
+
 ### DM Notes
 - **Resource management test** - drain spell slots/features
 - Can be deadly if party bunches up
-- Secret passage (Investigation DC 14) bypasses this fight
-- Environmental hazard: Corruption pools (DEX DC 10 or difficult terrain)
+- Secret passage bypasses this fight entirely
 
 </details>
 
 <details>
-<summary><b>Room 3: Heartstone Chamber (Finale)</b></summary>
+<summary><b>AREA 3: HEARTSTONE CHAMBER</b></summary>
 
-### Player Description
-> The passage opens into a circular chamber carved from ancient stone. At the center, partially buried in rubble, a purple crystalline heart pulses with fey energy. The light you've been following emanates from this artifact. Shadows writhe protectively around it.
+### Boxed Text
+> You emerge into unexpected stillness. The chamber is circular, almost peaceful compared to the chaos behind you. The corruption here isn't violent—it's concentrated, purposeful. Purple light fills the space with an otherworldly glow, emanating from a fist-sized crystal half-buried at the room's center. The Heartstone. It sits among ancient rubble like a treasure on display, its fey energy creating hypnotic patterns in the corruption-thick air. Too easy. The shadows circling it move with deliberate patience, waiting.
 
-### Finding Heartstone
-- **Perception DC 12** or **Investigation DC 10** to find among rubble
-- **Detect Magic:** Strong fey aura, transmutation school
+### Reactive Skill Checks
+- **Arcana DC 15:** Identify Heartstone as fey artifact being corrupted, not corruption source
+- **Perception DC 12:** Notice shadows won't cross certain threshold near Heartstone (safe zone exists, 5ft radius)
+- **Arcana DC 15:** Sense Heartstone's power actively resisting corruption (could cleanse axe)
+- **Religion DC 13:** Recognize fey magic signature matching the giant's axe above
+
+### Room Elements
+
+**The Heartstone:**
+- Perception DC 12 or Investigation DC 10 to find among rubble
+- Detect Magic: Strong fey aura, transmutation school
 - Size of human fist, warm to touch
+- Partially buried, requires action to extract safely
 
-### Final Guardian (Optional)
-**Creatures:** 1-2 Shadow Spawn (same stats as Room 2)
+**Unstable Rubble Mound:**
+- Corruption has eroded supports; visibly unstable (Perception DC 12 reveals danger)
+- Weight-based trigger: Crossing triggers STR save DC 11 or collapse
+- Effect: 2d6 bludgeoning damage, creates difficult terrain in 15ft radius
+- Twist: Controlled collapse (Athletics DC 14) reveals hidden passage to surface, potential escape route
+- Rubble covers 20x20 area around Heartstone
 
-**OR Environmental Challenge:**
-- Corruption zones (must navigate carefully)
-- Skill challenge to retrieve Heartstone safely
-- Use if party is low on resources
+**Shadow Circling Pattern:**
+- Shadows patrol in deliberate circle around Heartstone
+- Investigation DC 13 reveals they avoid the 5ft safe zone
+- Can be used to retrieve Heartstone safely if noticed
+
+**Corruption Veins:**
+- Purple veins run from Heartstone through floor toward surface
+- Arcana DC 14 reveals they connect to giant's axe above
+- Touching veins deals 1d4 psychic damage (warn players)
+
+**Ancient Carvings:**
+- Fey symbols carved into circular wall (Religion/Arcana DC 14 to read)
+- Translate to: "Guardian heart preserves the bond" (foreshadows axe connection)
+
+### Environmental Challenge (No Combat)
+This room has **no final guardian** this time. Party must navigate:
+- Unstable rubble (possible collapse)
+- Corruption zones (safe paths require Perception DC 11)
+- Extraction challenge (safely removing Heartstone without triggering collapse)
 
 ### The Heartstone Cutscene
 
@@ -257,6 +348,7 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 - **Critical:** If Heartstone destroyed, party LOSES feats
 - Heartstone can be taken or left (player choice)
 - Corruption pulse breaks axe curse above
+- Controlled rubble collapse can provide alternate exit if party thinks creatively
 
 </details>
 
