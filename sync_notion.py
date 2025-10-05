@@ -33,7 +33,7 @@ DATABASES = {
 }
 
 def markdown_to_notion_blocks(content):
-    """Convert markdown content to Notion blocks (simplified parser)"""
+    """Convert markdown content to Notion blocks with toggle support"""
     blocks = []
     lines = content.split('\n')
     i = 0
@@ -46,8 +46,80 @@ def markdown_to_notion_blocks(content):
             i += 1
             continue
 
+        # Handle <details> blocks - convert to Notion toggles
+        if line.strip().startswith('<details>'):
+            i += 1
+            # Find the summary line
+            summary_text = "Toggle"
+            toggle_content = []
+
+            while i < len(lines) and not lines[i].strip().startswith('</details>'):
+                if lines[i].strip().startswith('<summary>'):
+                    # Extract summary text (remove HTML tags)
+                    summary_line = lines[i].strip()
+                    summary_line = summary_line.replace('<summary>', '').replace('</summary>', '')
+                    summary_line = summary_line.replace('<b>', '').replace('</b>', '')
+                    summary_text = summary_line.strip()
+                elif not lines[i].strip().startswith('<') and lines[i].strip():
+                    # This is content inside the toggle
+                    toggle_content.append(lines[i])
+                i += 1
+
+            # Create toggle block with nested content
+            toggle_children = []
+            for content_line in toggle_content:
+                if content_line.startswith('# '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'heading_1',
+                        'heading_1': {'rich_text': [{'type': 'text', 'text': {'content': content_line[2:].strip()[:2000]}}]}
+                    })
+                elif content_line.startswith('## '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'heading_2',
+                        'heading_2': {'rich_text': [{'type': 'text', 'text': {'content': content_line[3:].strip()[:2000]}}]}
+                    })
+                elif content_line.startswith('### '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'heading_3',
+                        'heading_3': {'rich_text': [{'type': 'text', 'text': {'content': content_line[4:].strip()[:2000]}}]}
+                    })
+                elif content_line.strip().startswith('- ') or content_line.strip().startswith('* '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'bulleted_list_item',
+                        'bulleted_list_item': {'rich_text': [{'type': 'text', 'text': {'content': content_line.strip()[2:].strip()[:2000]}}]}
+                    })
+                elif content_line.strip().startswith('> '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'quote',
+                        'quote': {'rich_text': [{'type': 'text', 'text': {'content': content_line.strip()[2:].strip()[:2000]}}]}
+                    })
+                elif content_line.strip():
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'paragraph',
+                        'paragraph': {'rich_text': [{'type': 'text', 'text': {'content': content_line[:2000]}}]}
+                    })
+
+            blocks.append({
+                'object': 'block',
+                'type': 'toggle',
+                'toggle': {
+                    'rich_text': [{'type': 'text', 'text': {'content': summary_text[:2000]}}],
+                    'children': toggle_children[:100] if toggle_children else []
+                }
+            })
+
+        # Skip HTML tags and horizontal rules
+        elif line.strip().startswith('<') or line.strip() == '---':
+            pass
+
         # Handle headers
-        if line.startswith('# '):
+        elif line.startswith('# '):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_1',
@@ -65,7 +137,7 @@ def markdown_to_notion_blocks(content):
                 'type': 'heading_3',
                 'heading_3': {'rich_text': [{'type': 'text', 'text': {'content': line[4:].strip()[:2000]}}]}
             })
-        # Handle code blocks
+        # Handle code blocks (including mermaid)
         elif line.strip().startswith('```'):
             code_lines = []
             i += 1
@@ -78,8 +150,15 @@ def markdown_to_notion_blocks(content):
                 'type': 'code',
                 'code': {
                     'rich_text': [{'type': 'text', 'text': {'content': '\n'.join(code_lines)[:2000]}}],
-                    'language': language
+                    'language': 'plain text' if language == 'mermaid' else language
                 }
+            })
+        # Handle blockquotes
+        elif line.strip().startswith('> '):
+            blocks.append({
+                'object': 'block',
+                'type': 'quote',
+                'quote': {'rich_text': [{'type': 'text', 'text': {'content': line.strip()[2:].strip()[:2000]}}]}
             })
         # Handle bulleted lists
         elif line.strip().startswith('- ') or line.strip().startswith('* '):
