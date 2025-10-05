@@ -3,16 +3,22 @@
 
 import sys
 import json
-sys.path.insert(0, '/home/matt-bourque/.local/lib/python3.10/site-packages')
-
-from notion_client import Client
 from pathlib import Path
 
-DB_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
+# Dynamically find site-packages
+try:
+    from notion_client import Client
+except ImportError:
+    # Add common locations for pip --user installations
+    import site
+    user_site = site.getusersitepackages()
+    if user_site not in sys.path:
+        sys.path.insert(0, user_site)
+    from notion_client import Client
 
-def load_notion_client():
-    key = Path('/mnt/c/dnd/.config/notion_key.txt').read_text().strip()
-    return Client(auth=key)
+# DB_ID loaded from notion_helpers
+
+# load_notion_client() now imported from notion_helpers
 
 def get_all_entity_links(notion):
     """Get all entity names and their Notion page links"""

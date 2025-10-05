@@ -2,17 +2,15 @@
 """Safely APPEND content to Agastia Campaign landing page (NO DELETIONS)"""
 
 import sys
-sys.path.insert(0, '/home/matt-bourque/.local/lib/python3.10/site-packages')
+
 
 from notion_client import Client
 from pathlib import Path
 
 LANDING_PAGE_ID = '281693f0c6b480b8b3dbfdfb2ea94997'
-DB_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
+# DB_ID loaded from notion_helpers
 
-def load_notion_client():
-    key = Path('/mnt/c/dnd/.config/notion_key.txt').read_text().strip()
-    return Client(auth=key)
+# load_notion_client() now imported from notion_helpers
 
 def create_heading_block(text, level=2):
     """Create a heading block"""

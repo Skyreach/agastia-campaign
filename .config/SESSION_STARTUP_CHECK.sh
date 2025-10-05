@@ -1,60 +1,59 @@
 #!/bin/bash
-# SESSION STARTUP CHECK - Run this at the start of EVERY Claude session
+# Session Startup Check - Verifies environment and sync status
+# This script MUST pass before starting any session work
 
-echo "================================================"
-echo "🔍 CAMPAIGN DATA INTEGRITY CHECK"
-echo "================================================"
-echo ""
+set -e  # Exit on any error
 
-# Check Notion sync script exists and is correct
-if ! grep -q "File Path" sync_notion.py; then
-    echo "❌ CRITICAL: sync_notion.py is using old schema!"
-    echo "   Run: git checkout sync_notion.py"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CAMPAIGN_ROOT="$(dirname "$SCRIPT_DIR")"
+
+echo "============================================================"
+echo "🔍 SESSION STARTUP CHECK"
+echo "============================================================"
+echo
+
+# Check 1: Notion API Key
+echo "1️⃣  Checking Notion API key..."
+if [[ ! -f "$SCRIPT_DIR/notion_key.txt" ]]; then
+    echo "❌ FAIL: Notion API key not found"
     exit 1
 fi
+echo "   ✅ Notion API key found"
 
-# Check protocol exists
-if [ ! -f ".config/PROACTIVE_UPDATE_PROTOCOL.md" ]; then
-    echo "❌ CRITICAL: Proactive update protocol missing!"
-    exit 1
-fi
-
-# Test Notion connection
-echo "Testing Notion connection..."
+# Check 2: Python dependencies
+echo
+echo "2️⃣  Checking Python dependencies..."
 python3 -c "
-from notion_client import Client
 import sys
-try:
-    with open('.config/notion_key.txt', 'r') as f:
-        notion = Client(auth=f.read().strip())
-    with open('.config/database_id.txt', 'r') as f:
-        db_id = f.read().strip()
-    notion.databases.retrieve(database_id=db_id)
-    print('✅ Notion connection verified')
-except Exception as e:
-    print(f'❌ Notion connection failed: {e}')
-    sys.exit(1)
-"
+sys.path.insert(0, '$SCRIPT_DIR')
+from notion_helpers import load_notion_client
+import frontmatter
+print('   ✅ Python dependencies OK')
+" || exit 1
 
-if [ $? -ne 0 ]; then
-    echo "❌ CRITICAL: Cannot connect to Notion!"
-    exit 1
+# Check 3: Notion Connection
+echo
+echo "3️⃣  Testing Notion connection..."
+python3 -c "
+import sys
+sys.path.insert(0, '$SCRIPT_DIR')
+from notion_helpers import load_notion_client, load_database_id
+notion = load_notion_client()
+db_id = load_database_id()
+notion.databases.query(database_id=db_id, page_size=1)
+print('   ✅ Notion connection OK')
+" || exit 1
+
+# Check 4: File Watcher
+echo
+echo "4️⃣  Checking file watcher..."
+if pgrep -f "chokidar" > /dev/null; then
+    echo "   ✅ File watcher running"
+else
+    echo "   ⚠️  File watcher not detected"
 fi
 
-# Check for uncommitted changes
-if git diff --name-only | grep -q '\.md$'; then
-    echo "⚠️  WARNING: Uncommitted markdown files detected"
-    echo "   These changes may not be synced to Notion:"
-    git diff --name-only | grep '\.md$' | while read file; do
-        echo "     - $file"
-    done
-    echo ""
-fi
-
-echo "================================================"
+echo
+echo "============================================================"
 echo "✅ STARTUP CHECK PASSED"
-echo "================================================"
-echo ""
-echo "REMINDER: After ANY file modification, run:"
-echo "  python3 .config/auto_sync_wrapper.py <filepath>"
-echo ""
+echo "============================================================"

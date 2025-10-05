@@ -2,19 +2,36 @@
 
 ## 🚨 MANDATORY SESSION STARTUP
 
-**BEFORE DOING ANYTHING ELSE, RUN THESE TWO COMMANDS:**
+**BEFORE DOING ANYTHING ELSE, RUN THESE COMMANDS IN ORDER:**
 
 1. **Start File Watcher (auto-syncs to Notion):**
 ```bash
 ./start_file_watcher.sh
 ```
 
-2. **Verify Environment:**
+2. **Verify Environment & Sync Status:**
 ```bash
 ./.config/SESSION_STARTUP_CHECK.sh
 ```
 
-If either check fails, **STOP IMMEDIATELY** and report to user.
+3. **Check for Sync Issues:**
+```bash
+python3 .config/verify_sync_status.py
+```
+
+**If ANY check fails, STOP IMMEDIATELY and report to user.**
+
+**CRITICAL RULES - DATA PARITY PROTOCOL:**
+- ❌ **NEVER "consolidate" or "merge" information from multiple sources**
+- ❌ **NEVER create duplicate files** (no `*_UPDATED`, `*_FINAL`, `*_v2` naming)
+- ❌ **NEVER replace large sections of files** (make small, incremental edits)
+- ❌ **NEVER claim files synced to Notion without running verify_sync_status.py**
+- ✅ **ALWAYS edit existing files in place** (Git tracks history)
+- ✅ **ALWAYS make small, reviewable changes** (< 20 line diffs)
+- ✅ **ALWAYS verify sync before claiming data parity**
+- ✅ **ALWAYS provide Notion URLs when referencing synced content**
+
+**Full protocol:** See `.config/DATA_PARITY_PROTOCOL.md`
 
 **What the file watcher does:**
 - Monitors all markdown file changes in real-time

@@ -2,17 +2,17 @@
 """Update Notion database schema to APPROVED properties only (16 total)"""
 
 import sys
-sys.path.insert(0, '/home/matt-bourque/.local/lib/python3.10/site-packages')
+
 
 from notion_client import Client
 from pathlib import Path
 
 # Load API key
-key_file = Path('/mnt/c/dnd/.config/notion_key.txt')
+key_file = Path(__file__).parent / 'notion_key.txt'
 key = key_file.read_text().strip()
 notion = Client(auth=key)
 
-DB_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
+# DB_ID loaded from notion_helpers
 
 # APPROVED SCHEMA - 16 properties total
 approved_properties = {

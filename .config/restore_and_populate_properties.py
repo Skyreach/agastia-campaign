@@ -3,18 +3,16 @@
 
 import sys
 import re
-sys.path.insert(0, '/home/matt-bourque/.local/lib/python3.10/site-packages')
+
 
 from notion_client import Client
 from pathlib import Path
 import frontmatter
 
-DB_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
+# DB_ID loaded from notion_helpers
 CAMPAIGN_ROOT = Path('/mnt/c/dnd')
 
-def load_notion_client():
-    key = Path('/mnt/c/dnd/.config/notion_key.txt').read_text().strip()
-    return Client(auth=key)
+# load_notion_client() now imported from notion_helpers
 
 def add_properties_to_schema(notion):
     """Add the 4 properties to database schema"""

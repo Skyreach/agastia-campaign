@@ -3,17 +3,21 @@
 
 import sys
 import re
-sys.path.insert(0, '/home/matt-bourque/.local/lib/python3.10/site-packages')
-
-from notion_client import Client
 from pathlib import Path
-import frontmatter
 
-DB_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
+# Import helpers for path/client management
+sys.path.insert(0, str(Path(__file__).parent))
+from notion_helpers import load_notion_client, load_database_id, log_error, log_success, log_warning
 
-def load_notion_client():
-    key = Path('/mnt/c/dnd/.config/notion_key.txt').read_text().strip()
-    return Client(auth=key)
+# Dynamically load dependencies
+try:
+    import frontmatter
+except ImportError:
+    import site
+    sys.path.insert(0, site.getusersitepackages())
+    import frontmatter
+
+DB_ID = load_database_id()
 
 def extract_player_summary_and_dm_notes(content):
     """Split markdown content into Player Summary and DM Notes sections"""
