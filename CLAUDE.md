@@ -129,91 +129,18 @@ python3 .config/verify_sync_status.py
 - `./update_index.sh` - Rebuild this index
 - `dnd` - Navigate to campaign and start Claude
 
-### Notion Integration Status: ✅ ACTIVE
-- **Database:** D&D Campaign Entities
-- **Database ID:** 281693f0-c6b4-80be-87c3-f56fef9cc2b9
-- **Architecture:** See `.config/NOTION_ARCHITECTURE.md`
-- **API Status:** Connected and functional
+### Notion Integration: 📝 SEE NOTION.md
 
-### Notion Safety Protocol: 🛡️ CRITICAL
-- **NEVER delete or overwrite Notion page content**
-- Use MCP `sync_notion` tool with 'all' target for safe updates (UPDATE only, no deletions)
-- Use `.config/safe_resync_all.sh` for manual re-syncing (UPDATE only)
-- **ALWAYS test with new pages before attempting any Notion page modifications**
-- For landing page setup: Follow `.config/NOTION_SETUP_GUIDE.md` (manual setup, no automation)
-- **Before trying new Notion features:** Check `.config/NOTION_CAPABILITIES.md` for tested capabilities
-- If uncertain about Notion operations: ASK USER FIRST
+**All Notion documentation consolidated in:** `NOTION.md`
 
-### Notion Sync Lessons: 📝 MANDATORY READING
-**See `.config/NOTION_SYNC_LESSONS.md` for full details**
+**Quick commands:**
+- Sync all: `python3 sync_notion.py all`
+- Sync one: `python3 sync_notion.py <filepath> <type>`
+- Verify: `python3 .config/verify_sync_status.py`
 
-**Critical Rules:**
-1. **Content must sync to Notion pages** - User reads from Notion, not GitHub
-2. **HTML doesn't render** - Use native Notion blocks (toggles, not `<details>`)
-3. **Markdown formatting needs annotations** - `**bold**` requires `{annotations: {bold: true}}`
-4. **Large re-syncs are expensive** - Ask user to delete Notion page content first
-5. **Mermaid uses code blocks** - Notion renders mermaid in code blocks
-
-**Quota Management:**
-- Deleting 100+ blocks individually = timeout + quota waste
-- **Best practice:** Ask user to delete large page content in Notion UI, then re-sync
-- Syncing new empty pages is cheap (1 create + batched blocks)
-
-**Current Sync Status:**
-- ✅ Session 1 properly formatted (toggles, bold, 37 blocks)
-- ⚠️ ~24 pages have OLD formatting (raw HTML, no toggles)
-- ❌ ~18 pages empty (need first sync)
-- ❌ 10 duplicate PC entries (should DELETE)
-
-### Actual Notion Database Properties (VERIFIED):
-**Core Properties:**
-- Name (title) - Entity name
-- Tags (multi_select) - Quest tags, entity types stored here (pc, npc, faction, etc.)
-- Status (select) - Active, Planning, Completed, Destroyed, Unknown, Pending, etc.
-
-**Content Properties:**
-- File Path (rich_text) - Markdown file path
-- Version (rich_text) - Semantic versioning
-- Secrets (rich_text) - Hidden information
-- Relations (rich_text) - Freeform relationship notes
-- Progress Clock (rich_text) - Faction/goal progress tracking
-
-**Type-Specific Properties:**
-- Player (rich_text) - PC player assignment
-- Session Number (number) - Session ordering
-- Location Type (select) - Continent, Region, City, District, Building, etc.
-- Parent Location (relation) - Location hierarchy (self-referencing)
-
-**Important Notes:**
-- NO "Type" property - entity type is inferred from Tags
-- NO "Notes" property - content goes in page body
-- NO relation properties except "Parent Location"
-- Entity type (PC, NPC, Faction, etc.) MUST be added to Tags array
-- All properties verified via schema query on 2025-10-04
-
-### Notion Linking Requirements:
-**CRITICAL: When syncing to Notion, follow these rules:**
-
-1. **Individual Entity Sync:**
-   - Sync each file as a separate Notion page (NO grouping/summary files)
-   - Decimate_Project_Subjects.md → Create 8 individual NPC pages (not 1 summary)
-   - Each location, NPC, PC, faction gets its own page
-
-2. **Entity Relationships:**
-   - Use Notion relations/mentions for connections
-   - When referencing "Manny" → Link to Manny's database entry
-   - When referencing "Professor Zero" → Link to Professor Zero's database entry
-   - Build bidirectional relationships in database
-
-3. **Content Separation:**
-   - **Player Summary** → Visible content block in Notion
-   - **DM Notes** → Hidden/toggle block in Notion or separate property
-   - Never mix player-visible and DM-only information
-
-4. **Database Views Required:**
-   See `.config/NOTION_ARCHITECTURE.md` for 8 filtered views:
-   - Session Hub, Active Goals Dashboard, Location Guide, NPC Directory
-   - Faction Web, Party Tracker, Quest Threads, Artifacts & Mysteries
+**Database ID:** 281693f0-c6b4-80be-87c3-f56fef9cc2b9
+**Database Schema:** See `.config/NOTION_ARCHITECTURE.md`
+**Complete Guide:** See `NOTION.md` (single source of truth)
 
 ### Agent Configuration:
 - **System Prompt:** This file (CLAUDE.md)
