@@ -333,7 +333,7 @@ def sync_all():
         ('NPCs/**/*.md', 'NPC'),
         ('Factions/**/*.md', 'Faction'),
         ('Locations/**/*.md', 'Location'),
-        ('Resources/**/*.md', 'Resource'),
+        # Resources excluded - reference material for content generation, not table use
         ('Campaign_Core/**/*.md', 'Artifact'),
         ('Sessions/**/*.md', 'Session'),
     ]
