@@ -153,14 +153,37 @@ Location: `.config/file_watcher.py` or similar
 
 ---
 
+## Resources Directory Exclusion
+
+**Decision:** `Resources/**` directory is **EXCLUDED** from Notion sync.
+
+**Rationale:**
+- Resources are reference material for **content creation** (GM guides, tables, frameworks)
+- User reads **campaign content** from Notion, not reference material
+- Resources are for assistant use when building content
+- Including them clutters the Notion database with non-entity content
+
+**Sync Patterns (Updated):**
+```python
+sync_mappings = [
+    ('Player_Characters/**/*.md', 'PC'),
+    ('NPCs/**/*.md', 'NPC'),
+    ('Factions/**/*.md', 'Faction'),
+    ('Locations/**/*.md', 'Location'),
+    # Resources excluded - reference material for content generation, not table use
+    ('Campaign_Core/**/*.md', 'Artifact'),
+    ('Sessions/**/*.md', 'Session'),
+]
+```
+
 ## Action Items
 
-- [ ] Delete 10 duplicate PC entries from Notion
-- [ ] Re-sync Session 0 with proper formatting
-- [ ] Sync all empty Decimate Project NPCs (priority: Octavia)
-- [ ] Sync empty Resource files
-- [ ] Sync empty Animated Heartstone
-- [ ] User-assisted re-sync of high-priority pages with old formatting
+- [x] Delete 10 duplicate PC entries from Notion (archived all 48 old pages)
+- [x] Re-sync Session 0 with proper formatting (fresh sync completed)
+- [x] Sync all empty Decimate Project NPCs (8 individual files created + synced)
+- [x] Sync empty Artifacts (Heartstone, Codex, Axe, Campaign Overview synced)
+- [x] Fresh sync with proper formatting (36 pages total)
+- [x] Document Resources exclusion
 - [ ] Update MCP server sync tool to use new formatting
 - [ ] Update file watcher to use new sync script
-- [ ] Document this in CLAUDE.md for future sessions
+- [ ] Optimize pre-commit hook to skip already-synced files
