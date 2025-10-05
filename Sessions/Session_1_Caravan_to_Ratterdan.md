@@ -14,11 +14,47 @@ tags: [session1, ratterdan, heartstone, giant-axe, octavia, shadow-dungeon]
 
 ---
 
+## Session Flowchart
+
+```mermaid
+graph TD
+    Start([Arrive at Ratterdan]) --> Node1[Node 1: Cloud Compass<br/>Skill Challenge]
+
+    Node1 -->|Success| Enter[Find Underground Entrance]
+    Node1 -->|Failure| EnterAlerted[Find Entrance<br/>Creatures Alerted]
+
+    Enter --> Room1[Room 1: Shadow Rats<br/>3-4 CR 1/8]
+    EnterAlerted --> Room1
+
+    Room1 --> Room2[Room 2: Shadow Spawn<br/>2 CR 1/4]
+    Room2 --> |Secret Passage DC 14| Room3Direct[Room 3: Heartstone]
+    Room2 --> Room3[Room 3: Heartstone<br/>Environmental Challenge]
+
+    Room3 --> Cutscene[Heartstone Cutscene<br/>Feats Granted]
+    Room3Direct --> Cutscene
+
+    Cutscene --> CorruptionBreak[Corruption Breaks<br/>Axe Cleansed]
+
+    CorruptionBreak --> Surface[Return to Surface]
+
+    Surface --> RakashClaim[Rakash Claims Axe<br/>Weapon Transforms]
+
+    RakashClaim --> TravelChoice{Long Rest Needed?}
+
+    TravelChoice -->|Yes| Meridian[Stop at Meridian's Rest<br/>Choose Encounter]
+    TravelChoice -->|No| AgastiaDirect[Travel Direct to Agastia]
+
+    Meridian --> Agastia[Arrive at Agastia]
+    AgastiaDirect --> Agastia
+
+    Agastia --> End([Session 1 Complete])
+```
+
+---
+
 ## Quick Reference
 
-<details>
-<summary><b>Session Flow (Click to expand)</b></summary>
-
+**Toggle: Session Flow**
 1. **Arrival at Ratterdan** → Describe smoking crater, giant's axe
 2. **Node 1: Cloud Compass Skill Challenge** → Find underground entrance
 3. **Node 2: Shadow Dungeon (3 rooms)** → Resource-draining combat
@@ -26,40 +62,32 @@ tags: [session1, ratterdan, heartstone, giant-axe, octavia, shadow-dungeon]
 5. **Node 4: Rakash Claims Axe** → Weapon transforms
 6. **Node 5: Travel to Agastia** → Ad-hoc (Meridian's Rest if needed)
 
-</details>
-
-<details>
-<summary><b>Key NPCs & Factions</b></summary>
-
+**Toggle: Key NPCs & Factions**
 - **None this session** - Solo exploration
 - **Hidden Mastermind:** Octavia (Subject #8, unknown to party)
 
-</details>
-
-<details>
-<summary><b>Important Items</b></summary>
-
+**Toggle: Important Items**
 - **Animated Heartstone:** Grants feats, breaks axe corruption
 - **Giant's Axe:** Too large/cursed until cleansed, then Rakash claims it
 - **Zhaask Symbols:** Draconic writing on axe (partial translation possible)
 
-</details>
-
 ---
 
-## Node 1: Cloud Compass Skill Challenge
+## Nodes
 
-<details>
-<summary><b>Player Description</b></summary>
+### Node 1: Cloud Compass Skill Challenge
 
-> As you approach the crater, you see the massive bluish-silver axe embedded at the center - clearly sized for a storm giant. Around the weapon, a dark storm cloud swirls unnaturally, trapped in place. The cloud doesn't dissipate or drift - it hovers, pulsing with electrical energy, as if bound to the axe itself.
->
-> Reality warps visibly around the artifact. Leaves fall upward in pockets of fey energy. Time seems to flow irregularly in zones near the crater's edge.
+| As you approach the crater, you see the massive bluish-silver axe embedded at the center - clearly sized for a storm giant. Around the weapon, a dark storm cloud swirls unnaturally, trapped in place. The cloud doesn't dissipate or drift - it hovers, pulsing with electrical energy, as if bound to the axe itself.
 
-</details>
+**DC 10:** Sized for a storm giant (20+ feet tall). Made of bluish-silver metal, masterwork quality. **Corruption seed visible:** Dark energy pulsing through weapon.
 
-<details>
-<summary><b>DM Notes - Skill Challenge</b></summary>
+**DC 14:** As above and: Reality warps visibly around the artifact. Leaves fall upward in pockets of fey energy. Time seems to flow irregularly in zones near the crater's edge.
+
+**DC 17:** As above and: **Zhaask symbols** (Draconic) etched near base. If Draconic known: "...storm... bond... dragon..." (full translation requires research)
+
+**DC 20:** As above and: In thieves' cant style, a special rune embedded into the weapon - looks like the number 8
+
+**Skill Challenge - Finding Underground Entrance:**
 
 **Goal:** Party discovers the cloud is pointing underground like a compass
 
@@ -75,42 +103,25 @@ tags: [session1, ratterdan, heartstone, giant-axe, octavia, shadow-dungeon]
 - **Survival:** Use cloud as navigational tool, track direction
 
 **Success:** Party realizes cloud points underground → find entrance to chamber
+
 **Failure:** Find entrance eventually BUT:
 - Dungeon creatures alerted (no surprise)
 - OR time pressure (weather worsens)
 - OR environmental hazard triggered
 
-</details>
-
-<details>
-<summary><b>Axe Examination</b></summary>
-
-**If players examine the axe closely:**
-- Sized for storm giant (20+ feet tall)
-- Bluish-silver metal, masterwork quality
-- **Corruption seed visible:** Dark energy pulsing through weapon
-- **Zhaask symbols** etched near base (Draconic language)
+**Toggle: Axe Interaction**
 - Touching causes 1d4 psychic damage (warn them!)
 - Cannot be moved (DC 25+ STR, basically impossible)
-
-**Partial Translation (if Draconic speaker):**
-Player can read fragments: "...storm... bond... dragon..." (full translation requires research)
-
-</details>
+- Cloud dissipates only after corruption broken
 
 ---
 
-## Node 2: Underground Shadow Dungeon
+### Node 2: Underground Shadow Dungeon
 
-<details>
-<summary><b>Entrance Description</b></summary>
-
+**Toggle: Entrance Description**
 > Following the cloud's direction, you find a collapsed section of ruins where the ground has caved in, revealing a dark passage descending underground. The air is cold, and shadows seem to move unnaturally along the walls. A faint purple glow emanates from somewhere deep below.
 
-</details>
-
-<details>
-<summary><b>Dungeon Map & Ecology</b></summary>
+**Toggle: Dungeon Map & Ecology**
 
 **Layout:** 3 rooms, linear with one loop option
 
@@ -135,10 +146,7 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 - Will collapse when corruption source removed
 - See full ecology: Dungeon_Ecologies/Ratterdan_Underground_Ecology.md
 
-</details>
-
-<details>
-<summary><b>Dungeon Features</b></summary>
+**Toggle: Dungeon Features**
 
 **Illumination:** None (total darkness). Purple glow from corruption visible in all rooms.
 
@@ -150,10 +158,7 @@ Player can read fragments: "...storm... bond... dragon..." (full translation req
 
 **Atmosphere:** Unnatural cold despite being underground. Corruption creates visual distortions like heat shimmer, but inverted.
 
-</details>
-
-<details>
-<summary><b>Corridor Themes</b></summary>
+**Toggle: Corridor Themes**
 
 Describe passages showing increasing corruption as party descends. Mix 2-3 elements, intensifying toward Room 3:
 
@@ -164,20 +169,17 @@ Describe passages showing increasing corruption as party descends. Mix 2-3 eleme
 - **Rubble piles** from ceiling collapses
 - **Claw marks** in stone from shadow creatures
 
-</details>
+**AREA 1: SHADOW RAT DEN**
 
-<details>
-<summary><b>AREA 1: SHADOW RAT DEN</b></summary>
-
-### Boxed Text
+**Boxed Text:**
 > You emerge into a natural cave chamber, its ceiling studded with dripping stalactites. Purple mist clings to the uneven floor in pools. The corruption here is thick—you can taste metal in the air, feel the unnatural cold seeping through your clothes. In the dim purple glow, you see movement: dark shapes that might be rats, but they're too quiet, too purposeful. They're watching you from the walls and ceiling.
 
-### Reactive Skill Checks
+**Reactive Skill Checks:**
 - **Perception DC 12:** Notice rats positioning for pack tactics, coordinating with chittering sounds
 - **Arcana DC 13:** Recognize shadow-essence draining effect (warns of Nibble Essence ability)
 - **Survival DC 11:** Notice rat trails leading to Room 2 (escape route prediction)
 
-### Room Elements
+**Room Elements:**
 
 **Unstable Stalactites:** Can be dropped on rats (DEX attack +5, 2d6 damage, 10ft radius). Perception DC 12 to spot which ones are loose.
 
@@ -189,7 +191,7 @@ Describe passages showing increasing corruption as party descends. Mix 2-3 eleme
 
 **Rubble Piles:** Provide half-cover; hiding rats underneath (Perception DC 13 to spot before rats attack).
 
-### Encounter
+**Encounter:**
 **Creatures:** 3-4 Shadow-Touched Rats (CR 1/8 each)
 
 **Stat Block:**
@@ -206,24 +208,23 @@ Describe passages showing increasing corruption as party descends. Mix 2-3 eleme
 - Target isolated PCs
 - Flee to Room 2 if reduced to 1 rat
 
-### DM Notes
+**DM Notes:**
 - Introduce resource drain mechanic
 - Show that shadows are dangerous but beatable
 - Let party test tactics in low-stakes fight
 
-</details>
+---
 
-<details>
-<summary><b>AREA 2: CORRUPTION NEXUS</b></summary>
+**AREA 2: CORRUPTION NEXUS**
 
-### Boxed Text
+**Boxed Text:**
 > The passage descends into a larger cavern, and the wrongness hits you like a physical blow. Purple corruption doesn't just glow here—it *pulses*, rhythmic like a heartbeat. The walls are slick with shadow-residue. Pools of liquid darkness gather in floor depressions, their surfaces rippling without wind. Then the walls themselves begin to move. Two humanoid shapes peel away from the stone—shadows given form, reaching toward you with clawed hands that flicker between solid and smoke.
 
-### Reactive Skill Checks
+**Reactive Skill Checks:**
 - **Perception DC 13:** See spawn eyeing spellcasters specifically (target priority warning)
 - **Arcana DC 14:** Detect spawn siphoning ambient magic (explains Power Drain ability)
 
-### Room Elements
+**Room Elements:**
 
 **Stone Pillars:** Provide full cover, can be toppled on spawn (Athletics DC 15, 3d6 damage). Three pillars in room.
 
@@ -239,7 +240,7 @@ Describe passages showing increasing corruption as party descends. Mix 2-3 eleme
 
 **Secret Passage:** Investigation DC 14 reveals passage behind corruption veil leading to Room 3, bypassing final guardian.
 
-### Encounter
+**Encounter:**
 **Creatures:** 2 Shadow Spawn (CR 1/4 each)
 
 **Stat Block:**
@@ -262,26 +263,25 @@ Describe passages showing increasing corruption as party descends. Mix 2-3 eleme
 - Retreat to walls when bloodied
 - Guard path to Room 3 (won't pursue far)
 
-### DM Notes
+**DM Notes:**
 - **Resource management test** - drain spell slots/features
 - Can be deadly if party bunches up
 - Secret passage bypasses this fight entirely
 
-</details>
+---
 
-<details>
-<summary><b>AREA 3: HEARTSTONE CHAMBER</b></summary>
+**AREA 3: HEARTSTONE CHAMBER**
 
-### Boxed Text
+**Boxed Text:**
 > You emerge into unexpected stillness. The chamber is circular, almost peaceful compared to the chaos behind you. The corruption here isn't violent—it's concentrated, purposeful. Purple light fills the space with an otherworldly glow, emanating from a fist-sized crystal half-buried at the room's center. The Heartstone. It sits among ancient rubble like a treasure on display, its fey energy creating hypnotic patterns in the corruption-thick air. Too easy. The shadows circling it move with deliberate patience, waiting.
 
-### Reactive Skill Checks
+**Reactive Skill Checks:**
 - **Arcana DC 15:** Identify Heartstone as fey artifact being corrupted, not corruption source
 - **Perception DC 12:** Notice shadows won't cross certain threshold near Heartstone (safe zone exists, 5ft radius)
 - **Arcana DC 15:** Sense Heartstone's power actively resisting corruption (could cleanse axe)
 - **Religion DC 13:** Recognize fey magic signature matching the giant's axe above
 
-### Room Elements
+**Room Elements:**
 
 **The Heartstone:**
 - Perception DC 12 or Investigation DC 10 to find among rubble
@@ -310,13 +310,13 @@ Describe passages showing increasing corruption as party descends. Mix 2-3 eleme
 - Fey symbols carved into circular wall (Religion/Arcana DC 14 to read)
 - Translate to: "Guardian heart preserves the bond" (foreshadows axe connection)
 
-### Environmental Challenge (No Combat)
+**Environmental Challenge (No Combat):**
 This room has **no final guardian** this time. Party must navigate:
 - Unstable rubble (possible collapse)
 - Corruption zones (safe paths require Perception DC 11)
 - Extraction challenge (safely removing Heartstone without triggering collapse)
 
-### The Heartstone Cutscene
+**The Heartstone Cutscene:**
 
 **When party touches/retrieves Heartstone:**
 
@@ -343,32 +343,26 @@ This room has **no final guardian** this time. Party must navigate:
 4. **Corruption Breaking:**
    > You feel a tremendous pulse of energy surge UPWARD through the earth, traveling from the Heartstone toward the surface. Above you, you hear a tremendous CRACK.
 
-### DM Notes
+**DM Notes:**
 - Feats are permanent even if Heartstone lost
 - **Critical:** If Heartstone destroyed, party LOSES feats
 - Heartstone can be taken or left (player choice)
 - Corruption pulse breaks axe curse above
 - Controlled rubble collapse can provide alternate exit if party thinks creatively
 
-</details>
-
 ---
 
-## Node 3: Rakash Claims the Axe
+### Node 3: Rakash Claims the Axe
 
-<details>
-<summary><b>Player Description - Return to Surface</b></summary>
+| As you emerge from the underground chamber, you see immediate changes. The dark corruption pulsing through the giant's axe has SHATTERED - the weapon now gleams with clean, bluish-silver light. The storm cloud dissipates, finally free.
 
-> As you emerge from the underground chamber, you see immediate changes. The dark corruption pulsing through the giant's axe has SHATTERED - the weapon now gleams with clean, bluish-silver light. The storm cloud dissipates, finally free.
->
-> The reality warps around Ratterdan fade. The upward-falling leaves drift normally. Time stabilizes.
->
-> **[To Rakash]:** You feel an overwhelming compulsion pulling you toward the weapon. Something deep within recognizes this axe as YOURS.
+**DC 10:** The reality warps around Ratterdan fade. The upward-falling leaves drift normally. Time stabilizes.
 
-</details>
+**DC 14:** As above and: The axe pulses with clean fey energy, no longer corrupted. It seems... smaller? Or perhaps just less menacing.
 
-<details>
-<summary><b>The Claiming Event</b></summary>
+**[To Rakash only]:** You feel an overwhelming compulsion pulling you toward the weapon. Something deep within recognizes this axe as YOURS.
+
+**The Claiming Event:**
 
 **When Rakash approaches and touches the axe:**
 
@@ -376,30 +370,23 @@ This room has **no final guardian** this time. Party must navigate:
 >
 > You feel dormant power within it - the Storm Bond ability, waiting to activate when lightning strikes.
 
-### Axe Transformation
+**Axe Transformation:**
 - **Before:** Giant-sized (unusable), cursed, corrupted
 - **After:** Medium-sized (usable), cleansed, evolving weapon
 - **Storm Bond:** Dormant but present (see Giant_Axe_Artifact.md)
 - **Rakash:** Can now wield as primary weapon
 
-</details>
-
-<details>
-<summary><b>DM Questions (Answer During Session)</b></summary>
-
+**Toggle: DM Questions (Answer During Session)**
 - What shape did Heartstone take when animated?
 - Did Heartstone go dormant or stay animated?
 - Did party take Heartstone with them?
 - How did Rakash's player react to the compulsion/axe claiming?
 
-</details>
-
 ---
 
-## Node 4: Travel to Agastia
+### Node 4: Travel to Agastia
 
-<details>
-<summary><b>Travel Options (Ad-hoc)</b></summary>
+**Toggle: Travel Options (Ad-hoc)**
 
 **Option A: Direct to Agastia**
 - Party pushes through without rest
@@ -414,12 +401,11 @@ This room has **no final guardian** this time. Party must navigate:
   - **Social at Inn:** Meet NPC, foreshadow Agastia
 - Then travel to Agastia
 
-</details>
-
 ---
 
-## Post-Session Debrief Questions
+## Post-Session Debrief
 
+**Toggle: Debrief Questions**
 **Ask player/DM after session:**
 1. What did the party learn/discover?
 2. What questions are they asking?
@@ -433,41 +419,3 @@ This room has **no final guardian** this time. Party must navigate:
 - PC knowledge sections
 - Location files (Ratterdan stabilized)
 - Prepare Session 2 branching goals
-
----
-
-## Mermaid Flowchart
-
-```mermaid
-graph TD
-    Start([Arrive at Ratterdan]) --> Node1[Node 1: Cloud Compass<br/>Skill Challenge]
-
-    Node1 -->|Success| Enter[Find Underground Entrance]
-    Node1 -->|Failure| EnterAlerted[Find Entrance<br/>Creatures Alerted]
-
-    Enter --> Room1[Room 1: Shadow Rats<br/>3-4 CR 1/8]
-    EnterAlerted --> Room1
-
-    Room1 --> Room2[Room 2: Shadow Spawn<br/>2 CR 1/4]
-    Room2 --> |Secret Passage DC 14| Room3Direct[Room 3: Heartstone]
-    Room2 --> Room3[Room 3: Heartstone<br/>+ Final Guardian]
-
-    Room3 --> Cutscene[Heartstone Cutscene<br/>Feats Granted]
-    Room3Direct --> Cutscene
-
-    Cutscene --> CorruptionBreak[Corruption Breaks<br/>Axe Cleansed]
-
-    CorruptionBreak --> Surface[Return to Surface]
-
-    Surface --> RakashClaim[Rakash Claims Axe<br/>Weapon Transforms]
-
-    RakashClaim --> TravelChoice{Long Rest Needed?}
-
-    TravelChoice -->|Yes| Meridian[Stop at Meridian's Rest<br/>Choose Encounter]
-    TravelChoice -->|No| AgastiaDirect[Travel Direct to Agastia]
-
-    Meridian --> Agastia[Arrive at Agastia]
-    AgastiaDirect --> Agastia
-
-    Agastia --> End([Session 1 Complete])
-```

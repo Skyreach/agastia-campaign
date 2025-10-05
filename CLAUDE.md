@@ -39,6 +39,15 @@ python3 .config/verify_sync_status.py
 - Runs in background - no manual sync needed
 - Prevents Notion desync issues across threads
 
+**CONTENT GENERATION PROTOCOL:**
+- ❌ **NEVER generate content without presenting options first**
+- ✅ **ALWAYS present 3-4 options for user to select from**
+- ✅ **Get approval on creative choices before final generation**
+- ✅ **Follow SESSION_FORMAT_SPEC.md for all session documents**
+- ✅ **Use tiered DC format for all scene descriptions**
+
+**Full workflows:** See `.config/CONTENT_GENERATION_WORKFLOW.md` and `.config/SESSION_FORMAT_SPEC.md`
+
 ---
 
 ## 🛡️ CRITICAL SAFETY CHECKS
