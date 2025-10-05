@@ -12,64 +12,68 @@ related_entities: [Professor Zero, Manny, Nikki]
 
 ## Overview
 
-Professor Zero's experimental program using ten kidnapped children, all memory-wiped at age 10. Higher numbers indicate more recent recruitment. Subjects #8 (Nikki) and #10 (Manny) are player characters.
+Professor Zero's experimental program using ten kidnapped children, all memory-wiped at age 10. **Lower numbers = newer/weaker subjects. Higher numbers = older/stronger subjects.** Subjects #1 (Manny) and #2 (Nikki) are player characters.
 
 ## The Numbering System
 
-- **Higher Number = More Recent**
-- Subject #1 (Decum) has served ~9 years
-- Subject #10 (Manny) is the newest recruit
+- **Lower Number = Newer/Weaker** (Subject #1 is newest)
+- **Higher Number = Older/Stronger** (Subject #10 is eldest)
+- Subject #1 (Monomi) is the newest recruit
+- Subject #10 (Decum) has served ~9 years
 - Each subject specialized in different skills/classes
+- Names are plays on their numbers (Mono-mi, Bi-ago, Tri-nity, etc.)
 
 ---
 
-## Subject #1: Decum
+## Subject #1: Monomi "Manny"
 
 ### Player Summary
-**Decum** is the oldest Decimate subject, a high elf wizard who has served Professor Zero for approximately 9 years. As #1, he has the most experience and likely significant magical power.
+See `/Player_Characters/PC_Manny.md` for full details.
+
+**Manny** is a PC - half-orc eldritch knight, newest and weakest subject, seeking Codex.
 
 ### Basic Information
-- **Name:** Decum
-- **Number:** #1 (oldest)
-- **Race:** High Elf
-- **Class:** Wizard
-- **Service Time:** ~9 years
-- **Current Status:** Location unknown
-- **Age:** ~19 years old
-
-### Personality (Speculative)
-- Most experienced and knowledgeable
-- Possibly Professor Zero's right hand
-- May have significant autonomy
-- Wizardly precision and intellect
-
-### DM Notes
-- **Potential Roles:**
-  - Lab overseer when Professor Zero is away
-  - Mission leader for other subjects
-  - Memory wipe specialist (helping Zero)
-  - Secret rebel planning to free others
-- **Plot Hooks:**
-  - Knows the most about Professor Zero
-  - Has seen all subjects come through
-  - May remember something from before memory wipe
-  - Could be ally or obstacle
+- **Name:** Monomi "Manny"
+- **Number:** #1 (newest/weakest)
+- **Race:** Half-Orc
+- **Class:** Eldritch Knight (Fighter)
+- **Service Time:** <1 year
+- **Current Status:** Active (Player Character)
+- **Level:** 1
 
 ---
 
-## Subject #2: Trinity
+## Subject #2: Biago "Nikki"
 
 ### Player Summary
-**Trinity** is a gnome or human (or mixed heritage) who has served as Subject #2 for approximately 8 years. Little is known about their current whereabouts or specialization.
+See `/Player_Characters/PC_Nikki.md` for full details.
+
+**Nikki** is a PC - tiefling arcane trickster, second newest subject, protecting Manny and seeking Codex.
+
+### Basic Information
+- **Name:** Biago "Nikki"
+- **Number:** #2 (second newest/weakest)
+- **Race:** Tiefling
+- **Class:** Arcane Trickster (Rogue)
+- **Service Time:** ~1-2 years
+- **Current Status:** Active (Player Character)
+- **Level:** 1
+
+---
+
+## Subject #3: Trinity
+
+### Player Summary
+**Trinity** is a female gnome/human (mixed heritage) and Subject #3. Little is known about their current whereabouts or specialization.
 
 ### Basic Information
 - **Name:** Trinity
-- **Number:** #2
+- **Number:** #3
 - **Race:** Gnome/Human (mixed or uncertain)
 - **Class:** Unknown
-- **Service Time:** ~8 years
+- **Service Time:** ~3-4 years
 - **Current Status:** Location unknown
-- **Age:** ~18 years old
+- **Age:** ~13-14 years old
 
 ### DM Notes
 - **Name Significance:** "Trinity" suggests three/triple theme
@@ -85,50 +89,6 @@ Professor Zero's experimental program using ten kidnapped children, all memory-w
   - Gnome heritage = tinker/inventor skills
   - Human blend = fitting in anywhere
   - May be in Agastia undercover
-
----
-
-## Subject #3: Octavia
-
-### Player Summary
-**Octavia** is a drow warlock and Subject #3, having served approximately 7 years. Her dark elf heritage and warlock pact make her a formidable and mysterious member of the Decimate Project.
-
-### Basic Information
-- **Name:** Octavia
-- **Number:** #3
-- **Race:** Drow (Dark Elf)
-- **Class:** Warlock
-- **Service Time:** ~7 years
-- **Current Status:** Location unknown
-- **Age:** ~17 years old
-
-### Personality (Speculative)
-- Warlock suggests pact with otherworldly entity
-- Drow heritage = potential Underdark connections
-- May be most mysterious of subjects
-- Potentially darkest personality
-
-### DM Notes
-- **Warlock Patron Options:**
-  - Professor Zero themselves
-  - Entity Zero arranged pact with
-  - Pre-memory pact she doesn't remember
-  - Hidden patron manipulating her
-- **Drow Implications:**
-  - Kidnapped from Underdark or surface?
-  - Family searching for her?
-  - Connection to Josh's lost people plot?
-  - Underground network access
-- **Potential Roles:**
-  - Magical heavy hitter
-  - Underdark missions specialist
-  - Occult researcher
-  - Most dangerous if turned against party
-- **Plot Hooks:**
-  - Warlock patron has own agenda
-  - Drow family/house involvement
-  - Underdark expedition guide
-  - May recognize Josh's markings
 
 ---
 
@@ -296,109 +256,182 @@ Professor Zero's experimental program using ten kidnapped children, all memory-w
 
 ---
 
-## Subject #8: Biago "Nikki"
+## Subject #8: Octavia
 
 ### Player Summary
-See `/Player_Characters/PC_Nikki.md` for full details.
-
-**Nikki** is a PC - tiefling arcane trickster, protective of Manny, seeking Codex.
+**Octavia** is a drow warlock and Subject #8 - one of the three patron-level subjects. Witch-like and mysterious, she is the most experienced field operative with dark magical powers and her own agendas.
 
 ### Basic Information
-- **Number:** #8
-- **Service Time:** 8 years
-- **Current Status:** Active (Player Character)
+- **Name:** Octavia
+- **Number:** #8 (patron-level, one of strongest three)
+- **Race:** Drow (Dark Elf)
+- **Class:** Warlock
+- **Service Time:** ~7-8 years
+- **Current Status:** Field missions
+- **Age:** ~17-18 years old
+
+### Personality
+- Witch-like presence
+- Most mysterious of subjects
+- Warlock pact with unknown entity
+- Potentially darkest personality
+- Independent and calculating
+
+### Role in Decimate Project
+- **PATRON-LEVEL SUBJECT:** Has enough power for independent operations
+- Most experienced field operative
+- Handles dangerous/occult missions
+- May have orchestrated Ratterdan's destruction (DM secret)
+
+### DM Notes - RATTERDAN MASTERMIND
+- **Secret Role:** Octavia hired the storm giant to destroy Ratterdan
+- **Motive:** Heartstone buried beneath Ratterdan (fey artifact for power)
+- **Method:** Used warlock connections to manipulate giant
+- **Current Status:** Tracking party to recover Heartstone
+- **Warlock Patron:** Entity that wanted the Heartstone awakened
+- May betray Professor Zero if it serves her patron's goals
+
+- **Warlock Patron Options:**
+  - Fey entity connected to Heartstone
+  - Archfey who imprisoned the artifact
+  - Professor Zero themselves
+  - Hidden patron manipulating entire Project
+
+- **Drow Implications:**
+  - Kidnapped from Underdark or surface?
+  - Underground network access
+  - Connection to Josh's lost people plot?
+  - Drow family/house may be searching
+
+- **Plot Hooks:**
+  - First Decimate subject party encounters
+  - Could be ally or antagonist for Heartstone
+  - Warlock patron's agenda conflicts with Zero
+  - May recognize Josh's markings from Underdark lore
 
 ---
 
 ## Subject #9: Nona
 
 ### Player Summary
-**Nona** is a half-elf bard and Subject #9, with approximately 1 year of service. She has taken on a protective "big sister" role toward the younger subjects, especially Manny (#10). Despite being memory-wiped only recently, she shows strong nurturing instincts.
+**Nona** is a half-elf bard and Subject #9 - one of the three patron-level subjects. Despite being protective and nurturing to younger subjects like Manny, she is a strategic coordinator with significant power and influence.
 
 ### Basic Information
 - **Name:** Nona
-- **Number:** #9
+- **Number:** #9 (patron-level, one of strongest three)
 - **Race:** Half-Elf
 - **Class:** Bard
-- **Service Time:** ~1 year
-- **Current Status:** At Keth laboratory (presumed)
-- **Age:** ~11 years old
+- **Service Time:** ~8-9 years
+- **Current Status:** Keth laboratory / strategic missions
+- **Age:** ~18-19 years old
 
 ### Personality
-- Protective and nurturing
-- "Big sister" to Manny and others
-- Retains empathy despite memory wipe
+- Protective and nurturing facade
+- "Big sister" to younger subjects
+- Strategic thinker and coordinator
+- Uses empathy as manipulation tool
 - Musically talented
-- Watches over younger/newer subjects
 
 ### Role in Decimate Project
-- Guardian/caretaker for other subjects
-- Possible emotional anchor
-- May deliver messages to field agents
-- Keeps younger subjects from despair
+- **PATRON-LEVEL SUBJECT:** Strategic coordinator for operations
+- Guardian/handler for younger subjects
+- Information network coordinator
+- Delivers orders and manages field agents
+- Keeps subjects loyal through emotional bonds
 
 ### DM Notes
-- **Only Recent Recruit Besides Manny:**
-  - Kidnapped just 1 year ago
-  - May have clearer pre-memory life
-  - Memory wipe less ingrained
-  - More likely to break conditioning
-- **Protective Nature:**
-  - Natural empathy or Professor Zero's design?
-  - Genuinely cares or following orders?
-  - Could help PCs rescue other subjects
-  - Might rebel to protect "siblings"
-- **Bard Class:**
-  - Uses music/stories to comfort others
-  - Information gatherer
-  - Diplomatic missions
-  - May know secrets through songs
+- **One of Three Patrons:**
+  - Equal in rank to Octavia (#8) and Decum (#10)
+  - Handles subject coordination and loyalty
+  - May know more about Zero's plans than she reveals
+  - Protective nature is genuine but also tactical
+
+- **Bard Abilities:**
+  - Uses music/stories to maintain loyalty
+  - Information gatherer across all subjects
+  - Diplomatic missions and negotiations
+  - Songs may contain encoded orders
+
 - **Potential Roles:**
   - First friendly Decimate contact
-  - Ally in rescuing subjects
-  - Tragic figure (can't leave others)
-  - Emotional scene when meeting Manny
+  - Ally or obstacle depending on loyalties
+  - Tragic figure torn between subjects and Zero
+  - Emotional confrontation with Manny/Nikki
+
 - **Plot Hooks:**
-  - Family searching for her (only 1 year missing)
-  - Manny knows her best
-  - May remember real life in dreams
-  - Could provide intel on Zero's lab
-  - Songs contain hidden messages
-- **Half-Elf Background:**
-  - Which parent was elf/human?
-  - Why kidnapped so recently?
-  - May have siblings outside project
-  - Bardic college connection?
+  - Knows location of all subjects
+  - Has intel on Zero's laboratory
+  - May help party or report them to Zero
+  - Songs contain hidden Project secrets
+  - Could orchestrate subject rebellion or prevent it
 
 ---
 
-## Subject #10: Monomi "Manny"
+## Subject #10: Decum
 
 ### Player Summary
-See `/Player_Characters/PC_Manny.md` for full details.
-
-**Manny** is a PC - half-orc eldritch knight, newest subject, seeking Codex.
+**Decum** is a high elf wizard and Subject #10 - the eldest and most powerful Decimate subject. One of three patron-level operatives, he keeps to himself and handles Professor Zero's most dangerous missions.
 
 ### Basic Information
-- **Number:** #10 (newest)
-- **Service Time:** Less than 1 year
-- **Current Status:** Active (Player Character)
+- **Name:** Decum
+- **Number:** #10 (patron-level, eldest and strongest)
+- **Race:** High Elf
+- **Class:** Wizard
+- **Service Time:** ~9-10 years
+- **Current Status:** Independent field missions
+- **Age:** ~19-20 years old
+
+### Personality
+- Most experienced and knowledgeable
+- Keeps to himself
+- Wizardly precision and intellect
+- Possibly Professor Zero's right hand
+- Significant autonomy in operations
+
+### Role in Decimate Project
+- **PATRON-LEVEL SUBJECT:** Eldest, most powerful, most trusted
+- Handles Zero's most critical missions
+- May oversee lab when Zero is absent
+- Possible memory wipe specialist assisting Zero
+- Leader among subjects when needed
+
+### DM Notes
+- **Potential Roles:**
+  - Lab overseer when Professor Zero is away
+  - Mission leader for other subjects
+  - Memory manipulation specialist
+  - Secret rebel planning to free others
+  - OR completely loyal enforcer
+
+- **Plot Hooks:**
+  - Knows the most about Professor Zero
+  - Has seen all ten subjects recruited
+  - May remember fragments from before memory wipe
+  - Could be greatest ally or most dangerous enemy
+  - Might be testing Manny and Nikki
+
+- **Magical Power:**
+  - Likely 8th-9th level wizard
+  - Access to powerful spells
+  - May have unique magic from Zero's experiments
+  - Potential final boss if loyal to Zero
 
 ---
 
 ## Group Dynamics
 
 ### Pairs & Relationships
-- **#9 & #10:** Nona protects Manny (big sister dynamic)
-- **#8 & #10:** Nikki and Manny travel together (Codex mission)
-- **#1 as Leader:** Decum likely oversees others
-- **Older vs. Younger:** Experience gap creates hierarchy
+- **#1 & #2:** Manny and Nikki travel together (Codex mission, both PCs)
+- **#8, #9, #10:** The Three Patrons (Octavia, Nona, Decum) - most powerful
+- **Nona's Protection:** "Big sister" role toward Manny (#1) and Nikki (#2)
+- **Hierarchy:** Higher numbers command lower numbers
 
 ### Potential Alliances
-- **The Loyal:** Decum (#1), possibly Trinity (#2), Septimus (#7)
-- **The Questioning:** Nona (#9), possibly Octavia (#3)
+- **The Patrons:** Octavia (#8), Nona (#9), Decum (#10) - own agendas
+- **The Loyal:** Possibly Trinity (#3), Septimus (#7)
+- **The Questioning:** Manny (#1), Nikki (#2) - PCs discovering truth
 - **The Wild Cards:** Hexus (#6), Tetran (#4)
-- **The Dangerous:** Octavia (#3), Quincy (#5)
+- **The Dangerous:** Octavia (#8), Quincy (#5)
 
 ### Possible Subplots
 - **Rebellion Arc:** Some subjects plan escape
@@ -428,9 +461,10 @@ See `/Player_Characters/PC_Manny.md` for full details.
 ## DM Notes
 
 ### Subject Deployment (Current)
-- **At Lab (Keth):** Likely Decum (#1), Nona (#9)
-- **Field Missions:** Trinity (#2), Octavia (#3), Tetran (#4), Quincy (#5), Hexus (#6), Septimus (#7)
-- **With Party:** Nikki (#8), Manny (#10)
+- **At Lab (Keth):** Likely Nona (#9), overseeing younger subjects
+- **Independent Missions:** Decum (#10) on Zero's critical tasks, Octavia (#8) pursuing Heartstone
+- **Field Missions:** Trinity (#3), Tetran (#4), Quincy (#5), Hexus (#6), Septimus (#7)
+- **With Party (PCs):** Manny (#1), Nikki (#2) on Codex retrieval mission
 
 ### Story Potential
 Each subject offers:

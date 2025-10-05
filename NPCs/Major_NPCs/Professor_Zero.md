@@ -14,7 +14,7 @@ related_entities: [Manny, Nikki, All Decimate Subjects, Beholder, Niletrix]
 
 ## Player Summary
 
-**Professor Zero** is a mysterious figure who never shows their face. They run the Decimate Project from a hidden laboratory in Keth, using ten kidnapped and memory-wiped children as experimental agents. The Professor currently seeks the Dominion Evolution Codex for unknown purposes, having dispatched Manny (#10) and Nikki (#8) to retrieve it.
+**Professor Zero** is a mysterious figure who never shows their face. They run the Decimate Project from a hidden laboratory in Keth, using ten kidnapped and memory-wiped children as experimental agents. The Professor currently seeks the Dominion Evolution Codex for unknown purposes, having dispatched Manny (#1) and Nikki (#2) to retrieve it.
 
 ### Basic Information
 - **Status:** Active (unknown location)
@@ -36,18 +36,18 @@ related_entities: [Manny, Nikki, All Decimate Subjects, Beholder, Niletrix]
 ## The Decimate Project
 
 ### The Ten Subjects
-All kidnapped at age 10 and memory-wiped. Higher numbers = more recent recruitment:
+All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher numbers = older/stronger:**
 
-1. **Decum** - Male high elf wizard (oldest, ~9 years service)
-2. **Trinity** - Female gnome/human (8 years service)
-3. **Octavia** - Female drow warlock (7 years service)
-4. **Tetran** - Male wood elf ranger (6 years service)
-5. **Quincy** - Male goliath barbarian (5 years service)
-6. **Hexus/Tex** - Male human gunslinger (4 years service)
-7. **Septimus** - Male dragonborn sorcerer (3 years service)
-8. **Biago "Nikki"** - Male tiefling rogue (PC, 8 years service)
-9. **Nona** - Female half-elf bard (protective "big sister" role, 1 year service)
-10. **Monomi "Manny"** - Male half-orc fighter (PC, newest recruit)
+1. **Monomi "Manny"** - Male half-orc eldritch knight (PC, newest/weakest)
+2. **Biago "Nikki"** - Male tiefling arcane trickster (PC, second newest)
+3. **Trinity** - Female gnome/human (unknown class)
+4. **Tetran** - Male wood elf ranger
+5. **Quincy** - Male goliath barbarian
+6. **Hexus/Tex** - Male human gunslinger
+7. **Septimus** - Male dragonborn sorcerer
+8. **Octavia** - Female drow warlock (PATRON - pursuing own agenda)
+9. **Nona** - Female half-elf bard (PATRON - protective coordinator)
+10. **Decum** - Male high elf wizard (PATRON - eldest/strongest, Zero's right hand)
 
 ### Project Purpose
 - True goal unknown even to most subjects

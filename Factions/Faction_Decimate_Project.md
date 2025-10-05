@@ -34,11 +34,15 @@ The Decimate Project is a highly secretive program led by the mysterious Profess
   - Treats subjects as tools, not people
 
 **Patrons (Strongest Subjects):**
-- **Subject #8 - Biago "Nikki":** Tiefling Arcane Trickster, 8 years of service, field operative
-- **Subject #9 - Nona:** Half-Elf Bard, 1 year of service, protective guardian role
-- **Subject #10 - Monomi "Manny":** Half-Orc Eldritch Knight, newest subject, field operative
+- **Subject #8 - Octavia:** Drow Warlock, witch-like, most experienced field operative
+- **Subject #9 - Nona:** Half-Elf Bard, protective guardian role, strategic coordinator
+- **Subject #10 - Decum:** High Elf Wizard, eldest subject, keeps to himself, most missions for Zero
 
-*Note: These three subjects are the most powerful and capable, giving them patron-level influence within the Project's operations.*
+*Note: These three subjects are the most powerful and capable, giving them patron-level influence within the Project's operations. Lower numbers = newer/weaker subjects.*
+
+**Weakest Subjects (Newest Recruits):**
+- **Subject #1 - Monomi "Manny":** Half-Orc Eldritch Knight, newest recruit (PC)
+- **Subject #2 - Biago "Nikki":** Tiefling Arcane Trickster, second newest (PC)
 
 ### Members - The Ten Subjects
 All subjects detailed in `/mnt/c/dnd/NPCs/Faction_NPCs/Decimate_Project_Subjects.md`:

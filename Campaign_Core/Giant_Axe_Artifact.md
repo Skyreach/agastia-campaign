@@ -39,7 +39,9 @@ The patron has hired the party to:
 ## DM Notes
 
 ### True Nature
-The giant's axe is not merely abandoned - it was deliberately left to "bleed reality." The storm giant used it to destroy Ratterdan, then intentionally positioned it to create ongoing temporal and planar distortions.
+The giant's axe was cursed by Octavia (Decimate Subject #8) and planted to drain the Animated Heartstone's power. The storm giant was hired/manipulated to destroy Ratterdan and leave the cursed axe behind. The axe's power transformed into a "corruption seed" that burrowed underground to battle the Heartstone.
+
+**When Party Recovers Heartstone:** The corruption seed breaks, and the axe transforms into an evolving weapon usable by the party (specifically Rakash).
 
 ### Reality-Bleeding Properties
 
@@ -172,17 +174,62 @@ Session 1 establishes this as significant beyond immediate resolution, creating:
 ### Mechanical Notes for Session 1
 
 **Artifact Properties (If Examined):**
-At level 2, PCs can determine:
-- Requires giant size or transformation magic to wield
-- Ancient creation, not recent craft
-- Intentionally positioned for specific effect
-- Extremely dangerous to approach carelessly
-- Beyond their current ability to safely move
+At level 1, PCs can determine:
+- Currently unusable (giant-sized, corrupted)
+- Pointing underground like a compass needle
+- Corruption spreading from underground source
+- Trembling, being pulled toward something below
+- Will transform once Heartstone is recovered
 
-**Future Power Potential:**
-When/if PCs can eventually claim it:
-- Plane-shifting or dimensional manipulation
-- Temporal effects (advanced haste/slow or more exotic)
-- Reality-warping strikes
-- Connection to giant magic and primordial forces
-- Awakening properties tied to campaign progression
+---
+
+## Transformed Weapon: Storm Giant's Greataxe
+
+### Post-Heartstone Transformation
+
+**When Party Recovers Heartstone:**
+- Corruption seed dissolves
+- Axe shrinks to usable size (can be wielded by Medium creatures)
+- Curse breaks, becomes evolving weapon
+- Rakash can wield it effectively
+
+### Weapon Statistics (Initial)
+
+**Storm Giant's Greataxe**
+- **Type:** Martial Melee Weapon (Greataxe)
+- **Damage:** 1d12 slashing
+- **Properties:** Heavy, Two-Handed
+- **Rarity:** Rare (Evolving)
+- **Attunement:** Yes
+
+### Storm Bond Ability
+
+**Storm Bond (1/Day):**
+- **Trigger:** You and an object/creature within 60 feet both take lightning or thunder damage from the same source on the same turn
+- **Action:** Reaction
+- **Effect:** Choose one:
+  - **Teleport:** Each of you may teleport up to 15 feet to an unoccupied space you can see
+  - **Exchange:** You may exchange positions with each other instead
+
+**Tactical Uses:**
+- Escape from area effects
+- Reposition in combat
+- Save allies from dangerous positions
+- Combo with lightning/thunder spells from party
+- Storm giant theme reflects origin
+
+### Evolution Potential
+
+As Rakash gains levels and the weapon awakens:
+- Additional storm-themed abilities
+- Increased damage or magical bonus
+- Extended range for Storm Bond
+- New lightning/thunder powers
+- Connection to giant's identity and revenge plot
+
+**Future Abilities (Campaign Progression):**
+- Call Lightning (limited uses)
+- Thunder Step enhancement
+- Storm Aura damage
+- Giant's Strength bonus
+- Plane-shifting capabilities (late game)

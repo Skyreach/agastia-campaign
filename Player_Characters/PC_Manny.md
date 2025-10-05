@@ -16,20 +16,20 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 
 ## Player Summary
 
-**Manny** is an energetic half-orc Eldritch Knight, the youngest member of Professor Zero's mysterious Decimate Project. Marked with the number 10, he has no memory of his life before age 10 when the Professor took him in. He travels with Nikki (#8), seeking the Dominion Evolution Codex on behalf of their enigmatic patron.
+**Manny** is an energetic half-orc Eldritch Knight, the newest and weakest member of Professor Zero's mysterious Decimate Project. Marked with the number 1, he has no memory of his life before age 10 when the Professor took him in. He travels with Nikki (#2), seeking the Dominion Evolution Codex on behalf of their enigmatic patron.
 
 ### Basic Information
 - **Player:** Player 1
 - **Race:** Half-Orc
 - **Class:** Eldritch Knight (Fighter)
 - **Level:** 1
-- **Background:** Decimate Project Subject #10
+- **Background:** Decimate Project Subject #1 (newest/weakest)
 - **Feat:** Gift of the Metallic Dragon
 
 ### Appearance
 - Half-orc features
 - Energetic and sometimes clumsy demeanor
-- Numbered tattoo or mark: **10**
+- Numbered tattoo or mark: **1**
 - Carries himself with youthful enthusiasm
 
 ### Known Personality Traits

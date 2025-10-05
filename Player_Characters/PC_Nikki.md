@@ -4,7 +4,7 @@ type: PC
 player: Player 2
 race: Tiefling
 class: Arcane Trickster
-level: 2
+level: 1
 status: Active
 version: "1.0.0"
 tags: [pc, tiefling, arcane-trickster, decimate-project, session1]
@@ -16,20 +16,20 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 
 ## Player Summary
 
-**Nikki** (real name Biago) is a tiefling Arcane Trickster and Subject #8 of the Decimate Project. Now 18 years old, they were memory-wiped at age 10 and have spent the last 8 years training under Professor Zero. Fiercely protective of Manny, Nikki seeks to prove themselves worthy while harboring a mysterious connection to Italian cuisine.
+**Nikki** (real name Biago) is a tiefling Arcane Trickster and Subject #2 of the Decimate Project (second newest/weakest). They were memory-wiped at age 10 and have trained for 1-2 years under Professor Zero. Fiercely protective of Manny (#1), Nikki seeks to prove themselves worthy while harboring a mysterious connection to Italian cuisine.
 
 ### Basic Information
 - **Player:** Player 2
 - **Race:** Tiefling
 - **Class:** Arcane Trickster (Rogue)
-- **Level:** 2
-- **Background:** Decimate Project Subject #8
+- **Level:** 1
+- **Background:** Decimate Project Subject #2 (second newest/weakest)
 - **Feat:** Piercer
 
 ### Appearance
 - Tiefling features (horns, tail, infernal heritage)
-- Age 18 (memory-wiped at 10, trained for 8 years)
-- Numbered tattoo or mark: **8**
+- Age 11-12 (memory-wiped at 10, trained for 1-2 years)
+- Numbered tattoo or mark: **2**
 
 ### Personality Traits
 - Protective of Manny
