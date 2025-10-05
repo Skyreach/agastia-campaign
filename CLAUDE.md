@@ -135,6 +135,27 @@ python3 .config/verify_sync_status.py
 - **Before trying new Notion features:** Check `.config/NOTION_CAPABILITIES.md` for tested capabilities
 - If uncertain about Notion operations: ASK USER FIRST
 
+### Notion Sync Lessons: 📝 MANDATORY READING
+**See `.config/NOTION_SYNC_LESSONS.md` for full details**
+
+**Critical Rules:**
+1. **Content must sync to Notion pages** - User reads from Notion, not GitHub
+2. **HTML doesn't render** - Use native Notion blocks (toggles, not `<details>`)
+3. **Markdown formatting needs annotations** - `**bold**` requires `{annotations: {bold: true}}`
+4. **Large re-syncs are expensive** - Ask user to delete Notion page content first
+5. **Mermaid uses code blocks** - Notion renders mermaid in code blocks
+
+**Quota Management:**
+- Deleting 100+ blocks individually = timeout + quota waste
+- **Best practice:** Ask user to delete large page content in Notion UI, then re-sync
+- Syncing new empty pages is cheap (1 create + batched blocks)
+
+**Current Sync Status:**
+- ✅ Session 1 properly formatted (toggles, bold, 37 blocks)
+- ⚠️ ~24 pages have OLD formatting (raw HTML, no toggles)
+- ❌ ~18 pages empty (need first sync)
+- ❌ 10 duplicate PC entries (should DELETE)
+
 ### Actual Notion Database Properties (VERIFIED):
 **Core Properties:**
 - Name (title) - Entity name
