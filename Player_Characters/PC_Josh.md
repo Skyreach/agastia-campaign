@@ -1,30 +1,31 @@
 ---
-name: Unknown "Josh"
+name: Brand Al'Thor "Josh"
 type: PC
 player: Player 5 (Josh)
 race: TBD
 class: Sorcerer
-level: 1
+level: 2
 status: Active
-version: "1.0.0"
-tags: [pc, sorcerer, demonic-markings, mystery, lost-civilization, underdark, session1]
+version: "1.1.0"
+tags: [pc, sorcerer, demonic-markings, mystery, lost-civilization, underdark, session1, inspiring-leader, brand-althor]
 location: Traveling
 related_entities: [Lost People, Family Unknown, Ancient Civilization]
 ---
 
-# Josh's Character (Name TBD)
+# Brand Al'Thor (Josh's Character)
 
 ## Player Summary
 
-**[Name Unknown]** is a sorcerer bearing mysterious demonic markings across their body. They believe their people fled to the Underdark generations ago, leaving behind only cryptic symbols and fragmented history. The markings sometimes tingle near certain locations, suggesting a connection to ancient magic or forgotten places. Driven to find their lost civilization and understand their heritage, they search for answers in old texts and underground passages.
+**Brand Al'Thor** is a sorcerer bearing mysterious demonic markings across their body. They believe their people fled to the Underdark generations ago, leaving behind only cryptic symbols and fragmented history. The markings sometimes tingle near certain locations, suggesting a connection to ancient magic or forgotten places. Driven to find their lost civilization and understand their heritage, they search for answers in old texts and underground passages.
 
 ### Basic Information
 - **Player:** Player 5 (Josh)
 - **Race:** [To be determined]
 - **Class:** Sorcerer
-- **Level:** 1
+- **Level:** 2
 - **Background:** Descendant of lost civilization
-- **Feat:** Elemental Adept
+- **Feat:** Inspiring Leader (Grants temp HP via rousing speeches)
+- **Character Name:** Brand Al'Thor (chosen in Session 1)
 
 ### Appearance
 - Demonic markings on upper and lower body
@@ -51,7 +52,9 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - Learn if family survived
 
 ### Completed Goals
-- None yet
+- Chose character name "Brand Al'Thor"
+- Survived Session 1 shadow dungeon
+- Reached level 2
 
 ## Relationships
 
@@ -91,7 +94,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - Is there a map hidden in the markings?
 
 ## Special Abilities
-- **Feat:** Elemental Adept
+- **Feat:** Inspiring Leader - Grants temporary hit points to party via rousing speeches
 - **Sorcerer Powers:** [Specific subclass and abilities TBD]
 - **Marking Reactions:** Tingle near significant locations
 
@@ -102,9 +105,14 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - Demonic markings established
 - Quest for lost people set up
 
-### Session 1 (Planned)
-- Markings may react to something at Ratterdan
-- Potential clues in ruins or Feywild pocket
+### Session 1 (2025-01-06 - Completed)
+- Chose character name "Brand Al'Thor"
+- Caravan attacked by shadow blob
+- Entered shadow dungeon beneath Ratterdan
+- Defeated shadow creatures
+- Heartstone transformed into "Bloody" (crystalline red demonic cat)
+- Reached level 2
+- Found map to Lonely Mountain
 
 ## DM Notes
 

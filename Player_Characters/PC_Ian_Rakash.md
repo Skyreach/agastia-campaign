@@ -4,10 +4,10 @@ type: PC
 player: Player 3 (Ian)
 race: Goblin
 class: Barbarian
-level: 1
+level: 2
 status: Active
-version: "1.0.0"
-tags: [pc, goblin, barbarian, revenge, ratterdan, prosthetics, session1]
+version: "1.1.0"
+tags: [pc, goblin, barbarian, revenge, ratterdan, prosthetics, session1, giants-axe, strike-of-giants]
 location: Traveling (formerly Ratterdan)
 related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero]
 ---
@@ -22,9 +22,9 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - **Player:** Player 3 (Ian)
 - **Race:** Goblin
 - **Class:** Barbarian
-- **Level:** 1
+- **Level:** 2
 - **Background:** Sole survivor of Ratterdan
-- **Feat:** Thrown Arms Master
+- **Feat:** Strike of the Giants (Cloud Strike)
 
 ### Appearance
 - Goblin with prosthetic arm and leg (dwarven-made)
@@ -40,8 +40,8 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 ## Current Goals
 
 ### Active Goals
-- **Return to Ratterdan and find clues** [Short-term] - Session 1 focus
-- **Find old rapier or take giant's weapon** [Short-term] - Personal recovery
+- **Master the giant's 8-foot axe** [Short-term] - Claimed from Ratterdan
+- **Understand the axe's temporal powers** [Short-term] - Weapon pulses with strange magic
 - **Track down Zhaask the traitor** [Medium-term] - Betrayer must pay
 - **Kill the storm giant** [Long-term] - Primary revenge goal
 - **Collect 11 gem types for beholder earring** [Side quest] - Ongoing collection
@@ -55,6 +55,9 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 ### Completed Goals
 - Survived giant attack
 - Received prosthetics in IdleCreek
+- Returned to Ratterdan (Session 1)
+- Claimed the storm giant's 8-foot axe
+- Reached level 2
 
 ## Relationships
 
@@ -85,14 +88,14 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Needs 11 specific gem types to complete
 - Purpose of completed earring unknown
 
-### Lost Equipment
-- Old rapier (lost in attack or buried in ruins)
-- Potential to claim giant's weapon
+### Special Equipment
+- **Giant's 8-foot Axe** - Claimed from Ratterdan ruins, pulses with temporal magic
 
 ## Combat Style
 - **Previous:** Self-taught rapier fighter
 - **Current:** Barbarian (rage, strength-based)
-- **Feat:** Thrown Arms Master
+- **Feat:** Strike of the Giants (Cloud Strike) - Infuses attacks with giant magic
+- **Signature Weapon:** 8-foot giant's axe
 
 ## Session History
 
@@ -108,10 +111,16 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Connections established
 - Return to Ratterdan planned
 
-### Session 1 (Planned)
-- Return to destroyed village
-- Investigation of giant attack
-- Search for clues and closure
+### Session 1 (2025-01-06 - Completed)
+- Caravan attacked by shadow blob
+- Entered shadow dungeon beneath Ratterdan
+- Defeated shadow creatures (medium and weak shadows)
+- Heartstone transformed into "Bloody" (crystalline red demonic cat companion)
+- Claimed the storm giant's 8-foot axe
+- Gained Strike of the Giants feat
+- Reached level 2
+- Found map to Lonely Mountain
+- Witnessed Octavia's laugh (recognized by Nikki)
 
 ## DM Notes
 

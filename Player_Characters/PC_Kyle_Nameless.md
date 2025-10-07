@@ -4,10 +4,10 @@ type: PC
 player: Player 4 (Kyle)
 race: Rainbow Hair (Homebrew)
 class: Ranger/Rogue
-level: 1
+level: 2
 status: Active
-version: "1.0.0"
-tags: [pc, rainbow-race, ranger, rogue, feywild, bandit-hunt, session1]
+version: "1.1.0"
+tags: [pc, rainbow-race, ranger, rogue, feywild, bandit-hunt, session1, eldritch-adept]
 location: Traveling (on leave from Feywild)
 faction: Feywild Military
 related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Beans]
@@ -23,9 +23,9 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 - **Player:** Player 4 (Kyle)
 - **Race:** Rainbow Hair (Homebrew)
 - **Class:** Ranger/Rogue Multiclass
-- **Level:** 1
+- **Level:** 2
 - **Background:** Escaped bandit captive, Feywild soldier
-- **Feat:** Eldritch Adept
+- **Feat:** Eldritch Adept (Gained warlock invocation)
 
 ### Appearance
 - Rainbow-colored hair (unique and identifying)
@@ -56,6 +56,8 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 - Completed 100 years military service
 - Earned leave from Lord Zaos
 - Rescued Lady Eliyen (received fiddle and name)
+- Survived Session 1 shadow dungeon
+- Reached level 2
 
 ## Relationships
 
@@ -110,10 +112,13 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 - Feywild connections established
 - Relationship with Rakash revealed (savior)
 
-### Session 1 (Planned)
-- Caravan guard duty
-- Following leads toward Agastian capital
-- Protecting party while pursuing bandit trail
+### Session 1 (2025-01-06 - Completed)
+- Caravan attacked by shadow blob
+- Entered shadow dungeon beneath Ratterdan
+- Defeated shadow creatures
+- Heartstone transformed into "Bloody" (crystalline red demonic cat)
+- Reached level 2
+- Found map to Lonely Mountain
 
 ## DM Notes
 

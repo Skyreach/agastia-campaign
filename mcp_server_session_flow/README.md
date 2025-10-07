@@ -42,6 +42,42 @@ Create a new session flowchart document.
 - `start_location` (string) - Where session begins
 - `start_condition` (string, optional) - Initial situation
 
+### create_dungeon_structure
+Create a properly-nested dungeon structure in Notion using hierarchical builder.
+
+**Parameters:**
+- `session_number` (number) - Session number this dungeon belongs to
+- `dungeon_name` (string) - Name of the dungeon
+- `dungeon_data` (object) - Structured dungeon data:
+  ```json
+  {
+    "overview": {
+      "size": "Small|Medium|Large",
+      "mechanics": ["Mechanic 1", "Mechanic 2"]
+    },
+    "corridors": [
+      {
+        "name": "Corridor Name",
+        "properties": ["Property 1", "Property 2"]
+      }
+    ],
+    "rooms": [
+      {
+        "name": "Room 1 - Name",
+        "boxed_text": "Read-aloud description",
+        "creatures": [
+          {
+            "name": "Creature Type (Count)",
+            "stats": ["Stat 1", "Stat 2", "Stat 3"]
+          }
+        ]
+      }
+    ]
+  }
+  ```
+
+**Note:** This tool uses the structure builder approach documented in `.config/NOTION_STRUCTURE_LESSONS.md` to guarantee correct nesting.
+
 ### add_decision_point
 Add a decision node where players choose between options.
 

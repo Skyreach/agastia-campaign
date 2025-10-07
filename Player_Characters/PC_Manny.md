@@ -4,10 +4,10 @@ type: PC
 player: Player 1
 race: Half-Orc
 class: Eldritch Knight
-level: 1
+level: 2
 status: Active
-version: "1.0.0"
-tags: [pc, half-orc, eldritch-knight, decimate-project, session1]
+version: "1.1.0"
+tags: [pc, half-orc, eldritch-knight, decimate-project, session1, metallic-dragon-gift, bloody-companion]
 faction: Decimate Project
 related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 ---
@@ -22,9 +22,9 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 - **Player:** Player 1
 - **Race:** Half-Orc
 - **Class:** Eldritch Knight (Fighter)
-- **Level:** 1
+- **Level:** 2
 - **Background:** Decimate Project Subject #1 (newest/weakest)
-- **Feat:** Gift of the Metallic Dragon
+- **Feat:** Gift of the Gem Dragon (Force damage resistance/breath weapon)
 
 ### Appearance
 - Half-orc features
@@ -46,7 +46,8 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 - **Meet a real dragon** [Personal] - Life dream
 
 ### Completed Goals
-- None yet
+- Survived shadow dungeon in Session 1
+- Reached level 2
 
 ## Relationships
 
@@ -75,9 +76,13 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 - Goals established
 - Connections to party revealed
 
-### Session 1 (Planned)
-- Caravan to Ratterdan
-- Working with patron to investigate giant attack
+### Session 1 (2025-01-06 - Completed)
+- Caravan attacked by shadow blob
+- Entered shadow dungeon beneath Ratterdan
+- Defeated shadow creatures
+- Heartstone transformed into "Bloody" (crystalline red demonic cat)
+- Reached level 2
+- Found map to Lonely Mountain
 
 ## DM Notes
 

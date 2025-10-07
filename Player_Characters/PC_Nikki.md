@@ -4,10 +4,10 @@ type: PC
 player: Player 2
 race: Tiefling
 class: Arcane Trickster
-level: 1
+level: 2
 status: Active
-version: "1.0.0"
-tags: [pc, tiefling, arcane-trickster, decimate-project, session1]
+version: "1.1.0"
+tags: [pc, tiefling, arcane-trickster, decimate-project, session1, octavia-recognition, bloody-companion]
 faction: Decimate Project
 related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 ---
@@ -22,9 +22,9 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - **Player:** Player 2
 - **Race:** Tiefling
 - **Class:** Arcane Trickster (Rogue)
-- **Level:** 1
+- **Level:** 2
 - **Background:** Decimate Project Subject #2 (second newest/weakest)
-- **Feat:** Piercer
+- **Feat:** Piercer (Critical hits with piercing weapons reroll damage dice)
 
 ### Appearance
 - Tiefling features (horns, tail, infernal heritage)
@@ -50,7 +50,9 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Investigate past before memory wipe
 
 ### Completed Goals
-- None yet
+- Survived shadow dungeon in Session 1
+- Protected Manny during first mission
+- Reached level 2
 
 ## Relationships
 
@@ -61,6 +63,7 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 ### NPCs
 - **Professor Zero:** Current patron, seeks approval from
 - **Nona (#9):** Looks up to her as role model
+- **Octavia (#3):** Recognized her distinctive laugh in Session 1
 - **Parents:** Owned Italian restaurant in Agastia (fate unknown, pre-memory)
 - **Decimate Siblings:** Shares all connections with Manny (Trinity, Tetran, Quincy, Hexus, Septimus, Octavia, Decum)
 
@@ -84,9 +87,14 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Italian food connection established
 - Goals and motivations set
 
-### Session 1 (Planned)
-- Caravan to Ratterdan
-- Protecting Manny during investigation
+### Session 1 (2025-01-06 - Completed)
+- Caravan attacked by shadow blob
+- Entered shadow dungeon beneath Ratterdan
+- Defeated shadow creatures
+- Heartstone transformed into "Bloody" (crystalline red demonic cat)
+- Heard Octavia's distinctive laugh during dungeon (triggered memory)
+- Reached level 2
+- Found map to Lonely Mountain
 
 ## DM Notes
 

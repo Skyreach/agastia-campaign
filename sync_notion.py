@@ -178,19 +178,28 @@ def markdown_to_notion_blocks(content):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_1',
-                'heading_1': {'rich_text': parse_rich_text(line[2:].strip())}
+                'heading_1': {
+                    'rich_text': parse_rich_text(line[2:].strip()),
+                    'is_toggleable': True
+                }
             })
         elif line.startswith('## '):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_2',
-                'heading_2': {'rich_text': parse_rich_text(line[3:].strip())}
+                'heading_2': {
+                    'rich_text': parse_rich_text(line[3:].strip()),
+                    'is_toggleable': True
+                }
             })
         elif line.startswith('### '):
             blocks.append({
                 'object': 'block',
                 'type': 'heading_3',
-                'heading_3': {'rich_text': parse_rich_text(line[4:].strip())}
+                'heading_3': {
+                    'rich_text': parse_rich_text(line[4:].strip()),
+                    'is_toggleable': True
+                }
             })
         # Handle code blocks (including mermaid)
         elif line.strip().startswith('```'):
@@ -215,6 +224,121 @@ def markdown_to_notion_blocks(content):
                 'type': 'quote',
                 'quote': {'rich_text': parse_rich_text(line.strip()[2:].strip())}
             })
+        # Handle Toggle blocks (detect **Toggle: Title** pattern)
+        elif line.strip().startswith('**Toggle:') and '**' in line.strip()[9:]:
+            # Extract toggle title (find closing **)
+            text_after_toggle = line.strip()[9:]  # Remove **Toggle:
+            end_pos = text_after_toggle.find('**')
+            toggle_title = text_after_toggle[:end_pos].strip() if end_pos != -1 else text_after_toggle.strip()
+
+            # Collect content until next heading or toggle
+            toggle_content = []
+            i += 1
+            while i < len(lines):
+                next_line = lines[i]
+                # Stop at next heading, toggle, or horizontal rule
+                if (next_line.startswith('#') or
+                    next_line.strip().startswith('**Toggle:') or
+                    next_line.strip() == '---'):
+                    i -= 1  # Back up so main loop processes this line
+                    break
+                if next_line.strip():
+                    toggle_content.append(next_line)
+                i += 1
+
+            # Create toggle block with children (recursively parse for nested toggles)
+            toggle_children = []
+            j = 0
+            while j < len(toggle_content):
+                content_line = toggle_content[j]
+
+                # Check for nested toggle
+                if content_line.strip().startswith('**Toggle:') and '**' in content_line.strip()[9:]:
+                    # Extract nested toggle title
+                    text_after = content_line.strip()[9:]
+                    end_pos = text_after.find('**')
+                    nested_title = text_after[:end_pos].strip()
+
+                    # Collect nested toggle content
+                    nested_content = []
+                    j += 1
+                    while j < len(toggle_content):
+                        next_line = toggle_content[j]
+                        # Stop at next toggle at same level
+                        if next_line.strip().startswith('**Toggle:'):
+                            j -= 1
+                            break
+                        if next_line.strip():
+                            nested_content.append(next_line)
+                        j += 1
+
+                    # Create nested toggle children
+                    nested_children = []
+                    for nc_line in nested_content:
+                        if nc_line.strip().startswith('- ') or nc_line.strip().startswith('* '):
+                            nested_children.append({
+                                'object': 'block',
+                                'type': 'bulleted_list_item',
+                                'bulleted_list_item': {'rich_text': parse_rich_text(nc_line.strip()[2:].strip())}
+                            })
+                        elif nc_line.strip().startswith('> '):
+                            nested_children.append({
+                                'object': 'block',
+                                'type': 'quote',
+                                'quote': {'rich_text': parse_rich_text(nc_line.strip()[2:].strip())}
+                            })
+                        elif nc_line.strip():
+                            nested_children.append({
+                                'object': 'block',
+                                'type': 'paragraph',
+                                'paragraph': {'rich_text': parse_rich_text(nc_line)}
+                            })
+
+                    # Add nested toggle
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'toggle',
+                        'toggle': {
+                            'rich_text': parse_rich_text(nested_title),
+                            'children': nested_children[:100]
+                        }
+                    })
+                elif content_line.startswith('### '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'heading_3',
+                        'heading_3': {'rich_text': parse_rich_text(content_line[4:].strip()), 'is_toggleable': True}
+                    })
+                elif content_line.strip().startswith('- ') or content_line.strip().startswith('* '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'bulleted_list_item',
+                        'bulleted_list_item': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
+                    })
+                elif content_line.strip().startswith('> '):
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'quote',
+                        'quote': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
+                    })
+                elif content_line.strip():
+                    toggle_children.append({
+                        'object': 'block',
+                        'type': 'paragraph',
+                        'paragraph': {'rich_text': parse_rich_text(content_line)}
+                    })
+
+                j += 1
+
+            blocks.append({
+                'object': 'block',
+                'type': 'toggle',
+                'toggle': {
+                    'rich_text': parse_rich_text(toggle_title),
+                    'children': toggle_children[:100] if toggle_children else []
+                }
+            })
+
         # Handle bulleted lists
         elif line.strip().startswith('- ') or line.strip().startswith('* '):
             blocks.append({
@@ -289,27 +413,27 @@ def sync_to_notion(file_path, entry_type):
     content_blocks = markdown_to_notion_blocks(post.content)
 
     if results['results']:
-        # Update existing page
-        page_id = results['results'][0]['id']
+        # Archive existing page
+        old_page_id = results['results'][0]['id']
 
-        # Update properties
         notion.pages.update(
-            page_id=page_id,
+            page_id=old_page_id,
+            archived=True
+        )
+
+        # Create new page with fresh content
+        new_page = notion.pages.create(
+            parent={"database_id": DATABASES['entities']},
             properties=properties
         )
 
-        # Clear existing content and add new blocks
-        existing_blocks = notion.blocks.children.list(block_id=page_id)
-        for block in existing_blocks['results']:
-            notion.blocks.delete(block_id=block['id'])
-
-        # Add new content in batches (Notion limit: 100 blocks per request)
+        # Add content in batches
         batch_size = 100
         for i in range(0, len(content_blocks), batch_size):
             batch = content_blocks[i:i+batch_size]
-            notion.blocks.children.append(block_id=page_id, children=batch)
+            notion.blocks.children.append(block_id=new_page['id'], children=batch)
 
-        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} ({len(content_blocks)} blocks)")
+        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (archived old, created new with {len(content_blocks)} blocks)")
     else:
         # Create new page with content
         new_page = notion.pages.create(
