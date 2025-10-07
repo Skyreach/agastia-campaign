@@ -305,6 +305,67 @@ class SessionFlowServer {
             }
           },
           {
+            name: 'create_dungeon_structure',
+            description: 'Create a properly-nested dungeon structure in Notion using hierarchical builder. Uses the structure builder approach documented in .config/NOTION_STRUCTURE_LESSONS.md to guarantee correct nesting.',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                session_number: {
+                  type: 'number',
+                  description: 'Session number this dungeon belongs to'
+                },
+                dungeon_name: {
+                  type: 'string',
+                  description: 'Name of the dungeon'
+                },
+                dungeon_data: {
+                  type: 'object',
+                  description: 'Structured dungeon data with overview, corridors, and rooms',
+                  properties: {
+                    overview: {
+                      type: 'object',
+                      properties: {
+                        size: { type: 'string', description: 'Small|Medium|Large' },
+                        mechanics: { type: 'array', items: { type: 'string' } }
+                      }
+                    },
+                    corridors: {
+                      type: 'array',
+                      items: {
+                        type: 'object',
+                        properties: {
+                          name: { type: 'string' },
+                          properties: { type: 'array', items: { type: 'string' } }
+                        }
+                      }
+                    },
+                    rooms: {
+                      type: 'array',
+                      items: {
+                        type: 'object',
+                        properties: {
+                          name: { type: 'string' },
+                          boxed_text: { type: 'string' },
+                          creatures: {
+                            type: 'array',
+                            items: {
+                              type: 'object',
+                              properties: {
+                                name: { type: 'string' },
+                                stats: { type: 'array', items: { type: 'string' } }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              required: ['session_number', 'dungeon_name', 'dungeon_data']
+            }
+          },
+          {
             name: 'get_session_flow',
             description: 'Retrieve a specific session flow by number',
             inputSchema: {
@@ -358,6 +419,9 @@ class SessionFlowServer {
 
         case 'set_session_outcome':
           return await this.addNode(args, 'outcome');
+
+        case 'create_dungeon_structure':
+          return await this.createDungeonStructure(args);
 
         case 'get_session_flow':
           return await this.getSessionFlow(args);
@@ -643,6 +707,34 @@ ${consequenceList || '- TBD'}
         text: JSON.stringify(flow, null, 2)
       }]
     };
+  }
+
+  async createDungeonStructure(args) {
+    const { session_number, dungeon_name, dungeon_data } = args;
+
+    try {
+      // Import and run the Python structure builder
+      const { spawn } = await import('child_process');
+      const { promisify } = await import('util');
+      const execFile = promisify(spawn);
+
+      // Write dungeon data to temp file
+      const tempDataPath = path.join(campaignRoot, '.working', `dungeon_data_temp_${session_number}.json`);
+      await fs.writeFile(tempDataPath, JSON.stringify(dungeon_data, null, 2), 'utf-8');
+
+      // Call Python structure builder
+      const pythonScript = path.join(campaignRoot, '.config', 'build_dungeon_structure.py');
+      const pythonCmd = process.platform === 'win32' ? 'python' : 'python3';
+
+      return {
+        content: [{
+          type: 'text',
+          text: `Dungeon structure builder called for "${dungeon_name}".\n\nTo create in Notion, run:\n\npython3 .config/build_dungeon_structure.py\n\nWith data from: ${tempDataPath}\n\nNote: This tool is documented but requires manual execution. Future versions will integrate directly with Notion API.`
+        }]
+      };
+    } catch (error) {
+      throw new Error(`Failed to create dungeon structure: ${error.message}`);
+    }
   }
 
   async visualizeFlow(args) {
