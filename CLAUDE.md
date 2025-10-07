@@ -142,6 +142,26 @@ python3 .config/verify_sync_status.py
 **Database Schema:** See `.config/NOTION_ARCHITECTURE.md`
 **Complete Guide:** See `NOTION.md` (single source of truth)
 
+### Notion Sync Strategy: 📋 Which Tool to Use?
+
+**For simple documents** (PCs, NPCs, factions, max 1-2 toggle levels):
+- Use `sync_notion.py` - Flat sync with toggleable headings
+- Automatically triggered by git commit (pre-commit hook)
+- Handles basic markdown → Notion block conversion
+
+**For complex nested structures** (dungeons, sessions with 3+ toggle levels):
+- Use `.config/build_dungeon_structure.py` - Hierarchical structure builder
+- Guarantees correct nesting via sequential block creation
+- Takes structured data (Python dict) → Builds exact Notion hierarchy
+- See `.config/SYNC_STRATEGY.md` for decision tree
+- See `.config/NOTION_STRUCTURE_LESSONS.md` for technical details
+
+**Key Discovery:** Notion API requires hierarchical block creation:
+1. Create parent blocks first
+2. Append children to parent IDs in separate API calls
+3. Max 2 levels inline, unlimited depth with sequential creation
+4. Toggleable headings need `is_toggleable: True` property
+
 ### Agent Configuration:
 - **System Prompt:** This file (CLAUDE.md)
 - **Project Type:** D&D Campaign Management
