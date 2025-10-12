@@ -111,11 +111,17 @@ python3 .config/verify_sync_status.py
 
 ## 🛡️ CRITICAL SAFETY CHECKS
 
+### Directory Structure:
+- **Working Directory:** `/mnt/e/dnd` (parent directory)
+- **Git Repository:** `/mnt/e/dnd/agastia-campaign` (subdirectory)
+- **Git Commands:** Use `git -C agastia-campaign <command>` format
+- Example: `git -C agastia-campaign status`, `git -C agastia-campaign log --oneline -20`
+
 ### Before Git Commits:
 - **ALWAYS verify git user.email is NOT a work email**
 - Current configured email: `mbourqu3@gmail.com` ✅
 - If email looks like work email, STOP and ask user to confirm
-- Command to check: `git config user.email`
+- Command to check: `git -C agastia-campaign config user.email`
 
 ### Before File Operations:
 - **ALWAYS check operating system before writing files**
@@ -175,22 +181,28 @@ python3 .config/verify_sync_status.py
 3. Generate session materials and NPC details
 4. Sync data with Notion database when requested
 
-### File Naming Conventions:
-- `PC_[Name].md` for players
-- `NPC_[Name].md` for NPCs
-- `Faction_[Name].md` for factions
-- `Location_[Name].md` for locations
-- `Session_[Number]_[Type].md` for sessions
+### File Naming Conventions: 📝 SEE COMPONENT_REGISTRY.md
 
-### Available Commands:
-- `./sync_notion.py all` - Sync everything to Notion
-- `./sync_notion.py [filepath] [type]` - Sync specific file
-- `./update_index.sh` - Rebuild this index
-- `dnd` - Navigate to campaign and start Claude
+**Canonical reference:** `.config/COMPONENT_REGISTRY.md`
 
-### Notion Integration: 📝 SEE NOTION.md
+**Quick patterns:**
+- `PC_[Name].md` → `Player_Characters/`
+- `NPC_[Name].md` → `NPCs/[Category]/`
+- `Faction_[Name].md` → `Factions/`
+- `Location_[Name].md` → `Locations/[Type]/`
+- `Session_[Num]_[Title].md` → `Sessions/`
 
-**All Notion documentation consolidated in:** `NOTION.md`
+**Protocol:** ALWAYS call `validate_filename` MCP tool before creating files
+
+### Entity Format Requirements: 📝 SEE ENTITY_FORMAT_SPECS.md
+
+**Canonical reference:** `.config/ENTITY_FORMAT_SPECS.md`
+
+**Protocol:** Use `validate_document_format` MCP with `use_subagent: true` before syncing
+
+### Notion Integration: 📝 SEE NOTION_INTEGRATION.md
+
+**Canonical reference:** `.config/NOTION_INTEGRATION.md`
 
 **Quick commands:**
 - Sync all: `python3 sync_notion.py all`

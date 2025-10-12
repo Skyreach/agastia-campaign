@@ -1,0 +1,29 @@
+# .notionignore - Files/directories excluded from Notion sync
+# Uses gitignore syntax for pattern matching
+
+# Development and Infrastructure work
+.working/development/**
+.config/**/*.md
+README.md
+CLAUDE.md
+COMMANDS.md
+NOTION.md
+
+# Session private notes
+Sessions/*_notes.md
+Sessions/*_private.md
+
+# Logs and temporary files
+*.log
+.config/*.log
+*.tmp
+*.bak
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Git and version control
+.git/**
+.gitignore

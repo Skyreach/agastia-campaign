@@ -12,6 +12,7 @@ import { spawn } from 'child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -27,8 +28,54 @@ const pathToType = {
   'Campaign_Core/': 'Artifact',
   'Dungeon_Ecologies/': 'Ecology',
   'Session_Flows/': 'Session',
-  'Resources/': 'Resource'
+  'Resources/': 'Resource',
+  '.working/conversation_logs/': 'Conversation'
 };
+
+// Load .notionignore patterns
+function loadNotionIgnore() {
+  const ignoreFilePath = path.join(campaignRoot, '.notionignore');
+
+  if (!fs.existsSync(ignoreFilePath)) {
+    return [];
+  }
+
+  const content = fs.readFileSync(ignoreFilePath, 'utf-8');
+  const patterns = content
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line && !line.startsWith('#'));
+
+  return patterns;
+}
+
+// Check if file should be ignored based on .notionignore patterns
+function shouldIgnore(filePath, patterns) {
+  const normalizedPath = filePath.replace(/\\/g, '/');
+
+  for (const pattern of patterns) {
+    // Handle directory patterns (ending with /**)
+    if (pattern.endsWith('/**')) {
+      const dirPattern = pattern.slice(0, -3);
+      if (normalizedPath.startsWith(dirPattern)) {
+        return true;
+      }
+    }
+    // Handle wildcard patterns
+    else if (pattern.includes('*')) {
+      const regex = new RegExp('^' + pattern.replace(/\*/g, '.*').replace(/\?/g, '.') + '$');
+      if (regex.test(normalizedPath)) {
+        return true;
+      }
+    }
+    // Handle exact matches
+    else if (normalizedPath.includes(pattern) || normalizedPath.endsWith(pattern)) {
+      return true;
+    }
+  }
+
+  return false;
+}
 
 function getEntityType(filePath) {
   for (const [pathPattern, type] of Object.entries(pathToType)) {
@@ -39,7 +86,13 @@ function getEntityType(filePath) {
   return null;
 }
 
-function syncFile(filePath) {
+function syncFile(filePath, ignorePatterns) {
+  // Check if file should be ignored
+  if (shouldIgnore(filePath, ignorePatterns)) {
+    console.log(`⏭️  Skipped (ignored): ${filePath}`);
+    return;
+  }
+
   const entityType = getEntityType(filePath);
 
   if (!entityType) {
@@ -66,15 +119,15 @@ function syncFile(filePath) {
 console.log('👀 File watcher started...');
 console.log('📁 Monitoring campaign markdown files for changes\n');
 
+// Load .notionignore patterns
+const ignorePatterns = loadNotionIgnore();
+console.log(`📋 Loaded ${ignorePatterns.length} ignore patterns from .notionignore\n`);
+
 // Watch all markdown files in campaign directories
 const watcher = chokidar.watch('**/*.md', {
   ignored: [
     '**/node_modules/**',
-    '**/.git/**',
-    '**/README.md',
-    '**/CLAUDE.md',
-    '**/COMMANDS.md',
-    '**/.config/**'
+    '**/.git/**'
   ],
   persistent: true,
   cwd: campaignRoot,
@@ -88,11 +141,11 @@ const watcher = chokidar.watch('**/*.md', {
 watcher
   .on('change', (filePath) => {
     console.log(`\n📝 File changed: ${filePath}`);
-    syncFile(filePath);
+    syncFile(filePath, ignorePatterns);
   })
   .on('add', (filePath) => {
     console.log(`\n✨ New file: ${filePath}`);
-    syncFile(filePath);
+    syncFile(filePath, ignorePatterns);
   })
   .on('error', (error) => {
     console.error(`❌ Watcher error: ${error}`);

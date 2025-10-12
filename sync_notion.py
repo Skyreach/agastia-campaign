@@ -3,6 +3,7 @@ import os
 import sys
 import json
 import re
+import fnmatch
 sys.path.insert(0, os.path.expanduser('~/.local/lib/python3.10/site-packages'))
 
 from notion_client import Client
@@ -32,6 +33,41 @@ def get_notion_client():
 DATABASES = {
     'entities': '281693f0-c6b4-80be-87c3-f56fef9cc2b9',  # D&D Campaign Entities database
 }
+
+def load_notionignore():
+    """Load .notionignore file and return list of patterns"""
+    ignore_file = Path('.notionignore')
+    if not ignore_file.exists():
+        return []
+
+    patterns = []
+    with open(ignore_file, 'r') as f:
+        for line in f:
+            line = line.strip()
+            # Skip empty lines and comments
+            if line and not line.startswith('#'):
+                patterns.append(line)
+    return patterns
+
+def should_ignore(file_path, ignore_patterns):
+    """Check if file matches any ignore patterns"""
+    file_str = str(file_path)
+
+    for pattern in ignore_patterns:
+        # Handle directory patterns (ending with /**)
+        if pattern.endswith('/**'):
+            dir_pattern = pattern[:-3]  # Remove /**
+            if file_str.startswith(dir_pattern):
+                return True
+        # Handle wildcard patterns
+        elif '*' in pattern:
+            if fnmatch.fnmatch(file_str, pattern):
+                return True
+        # Handle exact matches
+        elif pattern in file_str or file_str.endswith(pattern):
+            return True
+
+    return False
 
 def parse_rich_text(text):
     """Parse markdown formatting (bold, italic, code) into Notion rich_text format"""
@@ -460,16 +496,31 @@ def sync_all():
         # Resources excluded - reference material for content generation, not table use
         ('Campaign_Core/**/*.md', 'Artifact'),
         ('Sessions/**/*.md', 'Session'),
+        ('.working/conversation_logs/**/*.md', 'Conversation'),
     ]
 
+    # Load ignore patterns
+    ignore_patterns = load_notionignore()
+
     synced_count = 0
+    skipped_count = 0
+
     for pattern, entry_type in sync_mappings:
         for file_path in Path('.').glob(pattern):
-            if not file_path.name.startswith('_'):
-                sync_to_notion(file_path, entry_type)
-                synced_count += 1
+            # Skip files starting with underscore
+            if file_path.name.startswith('_'):
+                continue
 
-    print(f"🎲 Synced {synced_count} files to Notion")
+            # Check if file should be ignored
+            if should_ignore(file_path, ignore_patterns):
+                skipped_count += 1
+                print(f"⏭️  Skipped (ignored): {file_path}")
+                continue
+
+            sync_to_notion(file_path, entry_type)
+            synced_count += 1
+
+    print(f"🎲 Synced {synced_count} files to Notion ({skipped_count} skipped via .notionignore)")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:

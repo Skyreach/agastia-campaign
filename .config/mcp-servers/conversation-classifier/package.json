@@ -1,0 +1,13 @@
+{
+  "name": "conversation-classifier",
+  "version": "1.0.0",
+  "description": "MCP server to classify conversations as campaign or infrastructure",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0"
+  }
+}
