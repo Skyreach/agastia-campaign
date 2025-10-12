@@ -68,6 +68,113 @@ related_entities: [...]         # All types
 - Tables (use lists instead)
 - Images (not in Notion sync scope)
 
+### Toggle Usage Rules
+
+**What Toggles Are:**
+Toggles are collapsible sections in Notion that hide content until clicked. They improve readability for long documents by allowing readers to expand only what they need.
+
+**Notion Toggle Format:**
+```markdown
+**Toggle: Section Title**
+Content inside the toggle goes here.
+Can span multiple lines and paragraphs.
+
+Next paragraph still inside toggle.
+```
+
+**When to Use Toggles:**
+- ✅ Stat blocks (combat statistics)
+- ✅ Large equipment lists
+- ✅ Session history (one toggle per session)
+- ✅ DM Notes subsections (secrets, future hooks)
+- ✅ Long relationship lists
+- ✅ Detailed background/backstory
+
+**When NOT to Use Toggles:**
+- ❌ Player Summary (always visible)
+- ❌ Basic Information (quick reference)
+- ❌ Current/Active Goals (need visibility)
+- ❌ Single-line items
+- ❌ Critical at-a-glance information
+
+**Toggle Nesting:**
+- Avoid deep nesting (max 2 levels)
+- Use headings instead for structure
+- Example:
+  ```markdown
+  ## DM Notes
+
+  ### Secrets
+  **Toggle: Secret 1**
+  [Content]
+
+  **Toggle: Secret 2**
+  [Content]
+  ```
+
+**HTML Details Tags:**
+NEVER use `<details>` and `<summary>` HTML tags. They don't render in Notion and show as literal text. Always use the `**Toggle: Title**` format instead.
+
+### Information Firewall
+
+**What It Is:**
+The information firewall is a structural pattern that separates player-visible information from DM-only secrets within entity documents. This ensures you can show players their file without revealing hidden plot elements.
+
+**Required Sections:**
+
+**Player Summary (Above the Firewall)**
+- What players observe and know
+- Public information, common knowledge
+- Observable behavior and appearance
+- Known goals and motivations (as the PC/NPC presents them)
+- Basic statistics (for PCs)
+
+**DM Notes (Below the Firewall)**
+- True motivations and secret goals
+- Hidden allegiances
+- Unrevealed backstory
+- Plot hooks and future connections
+- Secret weaknesses or abilities
+- Information players haven't discovered
+
+**Why This Matters:**
+1. You can show PC files to players without spoiling secrets
+2. Prevents accidental reveals during descriptions
+3. Helps you track what players know vs. what's true
+4. Supports dramatic reveals and plot twists
+
+**Example Structure:**
+```markdown
+# NPC Name
+
+## Player Summary
+[What players can observe and have learned through interaction]
+
+### Basic Information
+[Visible traits, known affiliations]
+
+### Known Activities
+[What players have witnessed]
+
+### Personality & Behavior
+[Observable mannerisms and patterns]
+
+## DM Notes
+[--- INFORMATION FIREWALL ---]
+
+### True Motivations
+[What this NPC actually wants]
+
+### Secrets
+[Things players don't know]
+
+### Future Hooks
+[Plot threads you plan to develop]
+```
+
+**Validation:**
+Every NPC, Faction, Quest, and Artifact file should have both Player Summary AND DM Notes sections. If a file has DM Notes but no Player Summary, you've failed the information firewall.
+
 ---
 
 ## Entity Type Specifications

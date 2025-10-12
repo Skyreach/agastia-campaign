@@ -210,6 +210,155 @@ agastia-campaign/
 
 ---
 
+## Subdirectory Selection Criteria
+
+### NPCs: Choosing the Right Subdirectory
+
+**NPCs/Major_NPCs/**
+- Campaign-significant NPCs with major story roles
+- Named antagonists (villains, rivals)
+- Key patrons or quest givers
+- Recurring NPCs with character arcs
+- NPCs with multiple faction affiliations
+
+**Criteria:**
+- Has dedicated goals or motivations
+- Appears in multiple sessions
+- Drives plot forward
+- Has stat block or significant mechanical presence
+
+**Examples:**
+- Professor Zero (campaign antagonist)
+- Steel Dragon (patron/ally)
+- The Patron (quest giver)
+
+**NPCs/Faction_NPCs/**
+- NPCs whose primary defining trait is faction membership
+- Faction leaders or representatives
+- NPCs who exemplify faction philosophy
+- Faction agents or operatives
+
+**Criteria:**
+- Introduced as representative of a faction
+- Role is primarily faction-related
+- May be replaceable by another faction member
+- Serves as faction contact or information source
+
+**Examples:**
+- Merit Council Speaker
+- Chaos Cult Cell Leader
+- Decimate Project Operative #8
+
+**NPCs/Location_NPCs/**
+- NPCs primarily associated with a specific location
+- Merchants, innkeepers, town guards
+- Location-based quest givers (single location)
+- One-off encounters tied to place
+
+**Criteria:**
+- Introduced at a specific location
+- Role is location-specific
+- Unlikely to leave location
+- Part of location's atmosphere/flavor
+
+**Examples:**
+- Ratterdan Survivor (at ruins)
+- Agastia Gate Guard
+- Meridian's Rest Innkeeper
+
+**When in Doubt:**
+1. If NPC drives plot → Major_NPCs
+2. If NPC represents faction → Faction_NPCs
+3. If NPC stays in one place → Location_NPCs
+
+### Locations: Choosing the Right Subdirectory
+
+**Locations/Cities/**
+- Large settlements (population 10,000+)
+- Major population centers
+- Multiple districts/zones
+- Campaign hub locations
+
+**Criteria:**
+- Has child locations (districts, landmarks)
+- Multiple factions present
+- Significant economic/political power
+- Serves as base of operations
+
+**Examples:**
+- Agastia (campaign hub)
+- Regional capitals
+
+**Locations/Districts/**
+- Subsections of cities
+- Neighborhoods with distinct character
+- Wards or quarters
+
+**Criteria:**
+- Parent location is a City
+- Distinct population or architecture
+- Has notable residents or factions
+- Not standalone settlement
+
+**Examples:**
+- Agastia Lower District
+- Agastia Academic Quarter
+
+**Locations/Regions/**
+- Large geographic areas
+- Contains multiple settlements
+- Kingdom/territory level
+
+**Criteria:**
+- Parent to multiple Towns/Cities
+- Defines broad geographic area
+- Has regional governance or culture
+
+**Examples:**
+- The Reach (region containing Agastia)
+- Northern Wastes
+
+**Locations/Towns/**
+- Small settlements (population 100-10,000)
+- Single community, not subdivided
+- Waypoints or minor population centers
+
+**Criteria:**
+- No child locations
+- Smaller than Cities
+- Has local governance
+- Serves specific purpose (trade, farming, etc.)
+
+**Examples:**
+- Meridian's Rest (destination town)
+- Ratterdan (before destruction)
+
+**Locations/Wilderness/**
+- Natural areas
+- Dungeons and ruins
+- Unpopulated locations
+- Travel encounter sites
+
+**Criteria:**
+- No permanent settlement
+- Natural or abandoned structures
+- Exploration/adventure sites
+- Not governed by civilization
+
+**Examples:**
+- Ratterdan Ruins
+- Shadow Cave Network
+- The Deep Woods
+
+**When in Doubt:**
+1. If it has districts → Cities
+2. If it's part of a city → Districts
+3. If it contains cities/towns → Regions
+4. If it has population but no subdivisions → Towns
+5. If it's unpopulated → Wilderness
+
+---
+
 ## Special Cases
 
 ### Generated Content Files

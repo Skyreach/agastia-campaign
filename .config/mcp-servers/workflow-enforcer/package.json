@@ -1,0 +1,10 @@
+{
+  "name": "workflow-enforcer",
+  "version": "1.0.0",
+  "description": "MCP server for enforcing multi-stage content generation workflows",
+  "type": "module",
+  "main": "server.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  }
+}

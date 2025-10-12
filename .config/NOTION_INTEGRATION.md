@@ -7,7 +7,169 @@
 
 ---
 
-## Quick Start (New Machine Setup)
+## First-Time Notion Integration Setup
+
+**Prerequisites:**
+- Notion account (free tier works)
+- Campaign repository cloned locally
+- Python 3.8+ installed
+- Node.js installed (for file watcher)
+
+### Step 1: Create Notion Integration
+
+1. Go to https://www.notion.so/my-integrations
+2. Click **"+ New integration"**
+3. Name it: `Agastia Campaign Sync`
+4. Select workspace where you want the campaign database
+5. Set capabilities:
+   - ✅ Read content
+   - ✅ Update content
+   - ✅ Insert content
+6. Click **"Submit"** to create integration
+7. Copy the **Internal Integration Token** (starts with `secret_`)
+
+### Step 2: Create Campaign Database
+
+1. In Notion, create a new page for your campaign
+2. Add a **Database - Full page**
+3. Name it: `Agastia Campaign Entities`
+4. Add the following properties (exact names matter):
+
+**Required Properties:**
+- **Name** (Title) - Default, already exists
+- **Tags** (Multi-select)
+- **Status** (Select) - Add values: Active, Inactive, Completed, Destroyed, Unknown, Pending
+- **File Path** (Rich text)
+- **Version** (Rich text)
+
+**Optional Properties (add as needed):**
+- **Player** (Rich text) - For PCs
+- **Class** (Rich text) - For PCs
+- **Level** (Number) - For PCs
+- **Faction** (Relation) - Link to other entities
+- **Location** (Relation) - Link to other entities
+- **Threat Level** (Select) - Values: None, Low, Medium, High, Extreme
+- **Progress Clock** (Rich text) - For factions/goals
+- **Location Type** (Select) - Values: City, District, Region, Town, Wilderness, Dungeon
+- **Session Number** (Number) - For sessions
+- **Date Played** (Date) - For sessions
+
+5. Share database with integration:
+   - Click **"•••"** menu (top right)
+   - Select **"Add connections"**
+   - Search for `Agastia Campaign Sync`
+   - Click to connect
+
+6. Copy Database ID:
+   - From database URL: `https://notion.so/WORKSPACE/DATABASE_ID?v=...`
+   - Copy the 32-character DATABASE_ID part
+   - Example: `281693f0c6b480be87c3f56fef9cc2b9` (remove hyphens if present)
+
+### Step 3: Configure Local Repository
+
+```bash
+# Navigate to campaign directory
+cd /path/to/agastia-campaign
+
+# Create .config directory if it doesn't exist
+mkdir -p .config
+
+# Save Notion API key (replace YOUR_KEY with actual token)
+echo "secret_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" > .config/notion_key.txt
+
+# Save database ID (replace YOUR_DB_ID with actual ID)
+echo "281693f0c6b480be87c3f56fef9cc2b9" > .config/database_id.txt
+
+# Ensure these files are gitignored (should already be in .gitignore)
+grep -q "notion_key.txt" .gitignore || echo ".config/notion_key.txt" >> .gitignore
+grep -q "database_id.txt" .gitignore || echo ".config/database_id.txt" >> .gitignore
+```
+
+### Step 4: Install Dependencies
+
+```bash
+# Python dependencies
+pip3 install notion-client python-frontmatter
+
+# Node dependencies (for file watcher)
+npm install chokidar
+```
+
+### Step 5: Initial Sync Test
+
+```bash
+# Test Notion connection
+python3 -c "from notion_client import Client; import pathlib; key = pathlib.Path('.config/notion_key.txt').read_text().strip(); client = Client(auth=key); print('✅ Connection successful')"
+
+# Perform initial sync of all entities
+python3 sync_notion.py all
+
+# Check Notion database - you should see entities appearing
+```
+
+### Step 6: Enable Automatic Sync
+
+```bash
+# Start file watcher for real-time sync
+./start_file_watcher.sh
+
+# Verify it's running
+pgrep -f file_watcher.js && echo "✅ File watcher running" || echo "❌ File watcher not running"
+
+# Check log for any errors
+tail -20 .config/file_watcher.log
+```
+
+### Step 7: Verify Setup
+
+```bash
+# Run startup check
+./.config/SESSION_STARTUP_CHECK.sh
+
+# Should show:
+# ✅ Notion API key found
+# ✅ Python dependencies OK
+# ✅ Notion connection OK
+# ✅ File watcher running
+```
+
+### Troubleshooting First-Time Setup
+
+**"Unauthorized" error:**
+- Check API key in `.config/notion_key.txt` is correct
+- Verify no extra whitespace or newlines in key file
+- Confirm integration has access to the database (Step 2.5)
+
+**"Database not found" error:**
+- Check database ID in `.config/database_id.txt` is correct
+- Remove hyphens from database ID if present
+- Verify integration is connected to database
+
+**"Module not found" error:**
+- Install Python dependencies: `pip3 install notion-client python-frontmatter`
+- Check Python version: `python3 --version` (need 3.8+)
+
+**File watcher won't start:**
+- Install Node dependencies: `npm install chokidar`
+- Check Node version: `node --version` (need 14+)
+- View error: `cat .config/file_watcher.log`
+
+**Entities not syncing:**
+- Check .notionignore isn't excluding your files
+- Verify frontmatter has required fields (name, type, status, version, tags)
+- Check file is in a valid directory (Player_Characters/, NPCs/, etc.)
+
+### Security Notes
+
+**IMPORTANT:**
+- `.config/notion_key.txt` and `.config/database_id.txt` should NEVER be committed to git
+- Both files are in .gitignore by default
+- If accidentally committed, rotate your Notion API key immediately
+- Clear chat history if you paste keys during troubleshooting
+
+---
+
+## Quick Start (Existing Machine Setup)
 
 ```bash
 # 1. Add API key

@@ -200,6 +200,59 @@ python3 .config/verify_sync_status.py
 
 **Protocol:** Use `validate_document_format` MCP with `use_subagent: true` before syncing
 
+### Content Generation Workflow: 📝 PHASE 2 ENFORCEMENT
+
+**CRITICAL:** All content generation MUST follow multi-stage workflow:
+
+1. **Start Workflow:**
+   ```
+   workflow-enforcer: start_workflow(workflow_type="session_generation")
+   → Returns workflow_id
+   ```
+
+2. **Present Options (Required First Step):**
+   - Generate 3-4 options for user to choose from
+   - Present to user, get selection
+   ```
+   workflow-enforcer: transition_workflow(workflow_id, next_stage="user_selection")
+   ```
+
+3. **Generate Content (After Selection):**
+   - Only after user selects an option
+   - Pass workflow_id to generation tools:
+     - `generate_encounter(workflow_id=...)`
+     - `generate_npc(workflow_id=...)`
+     - `generate_quest(workflow_id=...)`
+   ```
+   workflow-enforcer: transition_workflow(workflow_id, next_stage="generate_content")
+   ```
+
+4. **User Approval (Before Saving):**
+   - Show generated content to user
+   - Get approval before saving
+   ```
+   workflow-enforcer: transition_workflow(workflow_id, next_stage="user_approval")
+   ```
+
+5. **Save Content (Final Step):**
+   - Validate format with `format-validator: validate_document_format()`
+   - Save to file
+   - Sync to Notion
+   ```
+   workflow-enforcer: transition_workflow(workflow_id, next_stage="save_content")
+   workflow-enforcer: complete_workflow(workflow_id)
+   ```
+
+**Why This Matters:**
+- Prevents bypassing "options first" requirement via `confirm_before_save: false`
+- Ensures user approval on all creative choices
+- Maintains consistency across sessions via `.workflow_state.json`
+- Workflow state persists even if session ends
+
+**Tools:**
+- `format-validator` MCP: Validates document format compliance
+- `workflow-enforcer` MCP: Tracks and enforces workflow stages
+
 ### Notion Integration: 📝 SEE NOTION_INTEGRATION.md
 
 **Canonical reference:** `.config/NOTION_INTEGRATION.md`

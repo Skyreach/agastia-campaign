@@ -1,0 +1,10 @@
+{
+  "name": "format-validator",
+  "version": "1.0.0",
+  "description": "MCP server for validating entity document format compliance",
+  "type": "module",
+  "main": "server.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  }
+}

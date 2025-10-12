@@ -750,8 +750,8 @@ This page contains:
             inputSchema: {
               type: 'object',
               properties: {
-                encounter_type: { 
-                  type: 'string', 
+                encounter_type: {
+                  type: 'string',
                   enum: ['combat', 'environmental', 'social', 'trap', 'mixed'],
                   description: 'Type of encounter to generate'
                 },
@@ -777,6 +777,10 @@ This page contains:
                   type: 'boolean',
                   description: 'Ask for confirmation before saving',
                   default: true
+                },
+                workflow_id: {
+                  type: 'string',
+                  description: 'Workflow ID from workflow-enforcer MCP (required for workflow enforcement)',
                 }
               },
               required: ['encounter_type']
@@ -815,6 +819,10 @@ This page contains:
                   type: 'boolean',
                   description: 'Ask for confirmation before saving',
                   default: true
+                },
+                workflow_id: {
+                  type: 'string',
+                  description: 'Workflow ID from workflow-enforcer MCP (required for workflow enforcement)',
                 }
               },
               required: ['npc_type', 'role']
@@ -909,6 +917,10 @@ This page contains:
                   type: 'boolean',
                   description: 'Export quest as Mermaid diagram code',
                   default: false
+                },
+                workflow_id: {
+                  type: 'string',
+                  description: 'Workflow ID from workflow-enforcer MCP (required for workflow enforcement)',
                 }
               }
             }
