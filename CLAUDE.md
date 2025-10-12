@@ -253,6 +253,81 @@ python3 .config/verify_sync_status.py
 - `format-validator` MCP: Validates document format compliance
 - `workflow-enforcer` MCP: Tracks and enforces workflow stages
 
+### Format Validation Automation: 📝 PHASE 3 ENFORCEMENT
+
+**CRITICAL:** All entity files MUST pass format validation before commit.
+
+**Automated Checks (Pre-Commit Hook):**
+1. **File Naming Validation** - Blocks forbidden patterns (`_v1`, `_FINAL`, etc.)
+2. **Format Compliance Check** - Validates entity format against ENTITY_FORMAT_SPECS.md
+3. **Notion Sync** - Ensures all changes synced to Notion
+
+**Format Validation Layers:**
+
+**Layer 1: Pre-Commit Hook (Automatic)**
+- Runs on every `git commit`
+- Validates all staged .md files
+- Blocks commit if format violations found
+- Reports specific errors with file:line references
+
+**Layer 2: Manual Validation**
+```bash
+# Check single file
+python3 .config/format_compliance_check.py Player_Characters/PC_Manny.md
+
+# Check multiple files
+python3 .config/format_compliance_check.py Factions/*.md
+```
+
+**Layer 3: Auto-Fix Common Issues**
+```bash
+# Dry run (see what would be fixed)
+python3 .config/auto_fix_format.py --dry-run Player_Characters/PC_Manny.md
+
+# Apply fixes
+python3 .config/auto_fix_format.py Player_Characters/PC_Manny.md
+```
+
+**Auto-fixable violations:**
+- Missing version field (defaults to "1.0.0")
+- Missing status/tags fields (defaults to "Unknown" / "[]")
+- HTML `<details>` tags → Notion toggles
+- Skipped heading levels (H2 → H4 without H3)
+- Uppercase tags → lowercase
+- H1 title mismatch with frontmatter name
+
+**Layer 4: Bulk Audit**
+```bash
+# Audit all entity files
+python3 .config/audit_all_formats.py
+
+# Generates compliance report:
+# - Files by severity (compliant, warnings, errors)
+# - Common issues ranked by frequency
+# - Priority fix list
+# - Entity type compliance stats
+```
+
+**What Gets Validated:**
+- Frontmatter completeness (required fields)
+- Frontmatter value validity (status, version format)
+- Required sections presence
+- No forbidden HTML tags
+- Information firewall (Player Summary + DM Notes)
+- Tag formatting (lowercase)
+- H1 title matches frontmatter name
+
+**Protocol:**
+- Run auto-fix on files with violations
+- Review changes before committing
+- Pre-commit hook will validate automatically
+- If hook blocks commit, fix reported violations
+
+**Tools:**
+- `.config/format_compliance_check.py` - Validation script
+- `.config/auto_fix_format.py` - Auto-repair script
+- `.config/audit_all_formats.py` - Bulk audit script
+
 ### Notion Integration: 📝 SEE NOTION_INTEGRATION.md
 
 **Canonical reference:** `.config/NOTION_INTEGRATION.md`
