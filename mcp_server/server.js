@@ -1497,7 +1497,47 @@ Co-Authored-By: Claude <noreply@anthropic.com>`;
 
   async generateEncounter(args) {
     try {
-      const { encounter_type, difficulty = 'Medium', location, resource_focus = 'mixed', save_to_file = true, confirm_before_save = true } = args;
+      const { encounter_type, difficulty = 'Medium', location, resource_focus = 'mixed', save_to_file = true, confirm_before_save = true, workflow_id } = args;
+
+      // PHASE 4: Workflow enforcement
+      if (workflow_id) {
+        // Validate workflow stage (should be in generate_content stage)
+        const stateFile = path.join(campaignRoot, '.workflow_state.json');
+        try {
+          const stateData = await fs.readFile(stateFile, 'utf-8');
+          const state = JSON.parse(stateData);
+          const workflow = state.workflows[workflow_id];
+
+          if (!workflow) {
+            return {
+              content: [{
+                type: 'text',
+                text: `❌ WORKFLOW ERROR: Workflow ${workflow_id} not found.\n\nStart a workflow first using workflow-enforcer MCP:\nstart_workflow(workflow_type="encounter_generation")`
+              }]
+            };
+          }
+
+          if (workflow.current_stage !== 'generate_content') {
+            return {
+              content: [{
+                type: 'text',
+                text: `❌ WORKFLOW ERROR: Cannot generate encounter in stage "${workflow.current_stage}".\n\nRequired stage: generate_content\nCurrent stage: ${workflow.current_stage}\n\nTransition to generate_content stage first.`
+              }]
+            };
+          }
+        } catch (error) {
+          // Workflow state file doesn't exist or can't be read - warn but allow
+          console.error('Workflow validation warning:', error.message);
+        }
+      } else if (!confirm_before_save) {
+        // If no workflow_id and bypassing confirmation, warn
+        return {
+          content: [{
+            type: 'text',
+            text: `⚠️  WARNING: No workflow_id provided and confirm_before_save=false.\n\nThis bypasses the required "options first" workflow.\n\nStart a workflow first:\n1. workflow-enforcer: start_workflow(workflow_type="encounter_generation")\n2. Present options to user\n3. Get user selection\n4. Call generate_encounter with workflow_id`
+          }]
+        };
+      }
       
       // Calculate XP budget
       const xpBudget = await this.calculateEncounterXP(this.campaignState.partySize, this.campaignState.partyLevel, difficulty);
@@ -1716,7 +1756,44 @@ This encounter is designed to drain ${encounter.resource_focus === 'mixed' ? 'mu
 
   async generateNPC(args) {
     try {
-      const { npc_type, role, faction, location, cr, include_stat_block = false, save_to_file = true, confirm_before_save = true } = args;
+      const { npc_type, role, faction, location, cr, include_stat_block = false, save_to_file = true, confirm_before_save = true, workflow_id } = args;
+
+      // PHASE 4: Workflow enforcement
+      if (workflow_id) {
+        const stateFile = path.join(campaignRoot, '.workflow_state.json');
+        try {
+          const stateData = await fs.readFile(stateFile, 'utf-8');
+          const state = JSON.parse(stateData);
+          const workflow = state.workflows[workflow_id];
+
+          if (!workflow) {
+            return {
+              content: [{
+                type: 'text',
+                text: `❌ WORKFLOW ERROR: Workflow ${workflow_id} not found.\n\nStart a workflow first using workflow-enforcer MCP:\nstart_workflow(workflow_type="npc_creation")`
+              }]
+            };
+          }
+
+          if (workflow.current_stage !== 'generate_content') {
+            return {
+              content: [{
+                type: 'text',
+                text: `❌ WORKFLOW ERROR: Cannot generate NPC in stage "${workflow.current_stage}".\n\nRequired stage: generate_content\nCurrent stage: ${workflow.current_stage}\n\nTransition to generate_content stage first.`
+              }]
+            };
+          }
+        } catch (error) {
+          console.error('Workflow validation warning:', error.message);
+        }
+      } else if (!confirm_before_save) {
+        return {
+          content: [{
+            type: 'text',
+            text: `⚠️  WARNING: No workflow_id provided and confirm_before_save=false.\n\nThis bypasses the required "options first" workflow.\n\nStart a workflow first:\n1. workflow-enforcer: start_workflow(workflow_type="npc_creation")\n2. Present options to user\n3. Get user selection\n4. Call generate_npc with workflow_id`
+          }]
+        };
+      }
       
       // Generate NPC details
       const npc = this.createNPCDetails(npc_type, role, faction, location);
@@ -2086,8 +2163,39 @@ ${this.suggestEnemies(xpBudget)}`;
       completion_time_days,
       base_monster,
       hook_number,
-      export_mermaid = false
+      export_mermaid = false,
+      workflow_id
     } = args;
+
+    // PHASE 4: Workflow enforcement
+    if (workflow_id) {
+      const stateFile = path.join(campaignRoot, '.workflow_state.json');
+      try {
+        const stateData = await fs.readFile(stateFile, 'utf-8');
+        const state = JSON.parse(stateData);
+        const workflow = state.workflows[workflow_id];
+
+        if (!workflow) {
+          return {
+            content: [{
+              type: 'text',
+              text: `❌ WORKFLOW ERROR: Workflow ${workflow_id} not found.\n\nStart a workflow first using workflow-enforcer MCP:\nstart_workflow(workflow_type="quest_generation")`
+            }]
+          };
+        }
+
+        if (workflow.current_stage !== 'generate_content') {
+          return {
+            content: [{
+              type: 'text',
+              text: `❌ WORKFLOW ERROR: Cannot generate quest in stage "${workflow.current_stage}".\n\nRequired stage: generate_content\nCurrent stage: ${workflow.current_stage}\n\nTransition to generate_content stage first.`
+            }]
+          };
+        }
+      } catch (error) {
+        console.error('Workflow validation warning:', error.message);
+      }
+    }
 
     // Provide options if parameters are missing
     const options = {

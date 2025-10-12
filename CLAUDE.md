@@ -72,6 +72,7 @@ This installs critical behavior hooks to `~/.claude/` that enforce git push requ
 ```bash
 ./.config/SESSION_STARTUP_CHECK.sh
 ```
+This now includes **PHASE 4 workflow recovery** - checks for active workflows from previous sessions.
 
 3. **Check for Sync Issues:**
 ```bash
@@ -79,6 +80,13 @@ python3 .config/verify_sync_status.py
 ```
 
 **If ANY check fails, STOP IMMEDIATELY and report to user.**
+
+**PHASE 4: Workflow Recovery**
+- SESSION_STARTUP_CHECK.sh now detects active workflows
+- Shows workflow status (stage, type, age)
+- Prompts for continuation or abandonment
+- Stale workflows (>7 days) flagged for cleanup
+- Use `workflow-enforcer` MCP to resume or complete workflows
 
 **CRITICAL RULES - DATA PARITY PROTOCOL:**
 - ❌ **NEVER "consolidate" or "merge" information from multiple sources**
@@ -252,6 +260,72 @@ python3 .config/verify_sync_status.py
 **Tools:**
 - `format-validator` MCP: Validates document format compliance
 - `workflow-enforcer` MCP: Tracks and enforces workflow stages
+
+### Workflow Enforcement: 📝 PHASE 4 ENFORCEMENT
+
+**CRITICAL:** Generation tools now ENFORCE workflow stages.
+
+**Automatic Enforcement (Built into MCP Tools):**
+- `generate_encounter`, `generate_npc`, `generate_quest` now validate `workflow_id`
+- If `workflow_id` provided: Checks workflow exists and is in correct stage
+- If no `workflow_id` + `confirm_before_save=false`: **BLOCKS with error**
+- Required stage for generation: `generate_content`
+
+**Error Messages You'll See:**
+```
+❌ WORKFLOW ERROR: Workflow {id} not found.
+Start a workflow first using workflow-enforcer MCP
+
+❌ WORKFLOW ERROR: Cannot generate in stage "user_selection".
+Required stage: generate_content
+
+⚠️ WARNING: No workflow_id provided and confirm_before_save=false.
+This bypasses the required "options first" workflow.
+```
+
+**Cross-Session Workflow Recovery:**
+- SESSION_STARTUP_CHECK.sh detects active workflows
+- Shows workflow status, stage, and age
+- Prompts to continue, complete, or abandon
+- Stale workflows (>7 days) flagged for cleanup
+
+**Workflow Management Commands:**
+```bash
+# Check active workflows at startup
+./.config/SESSION_STARTUP_CHECK.sh
+# (includes workflow recovery check)
+
+# Manual workflow recovery check
+python3 .config/workflow_recovery.py
+
+# Clean up stale workflows (dry run)
+python3 .config/workflow_cleanup.py --dry-run
+
+# Clean up stale workflows (>7 days)
+python3 .config/workflow_cleanup.py
+
+# Clean up including completed workflows
+python3 .config/workflow_cleanup.py --remove-completed
+```
+
+**Workflow State Persistence:**
+- `.workflow_state.json` in repository root
+- Not committed to git (in .gitignore)
+- Tracks all workflows across sessions
+- Survives Claude Desktop restarts
+- Cleaned up automatically after 7 days
+
+**What This Prevents:**
+- ❌ Calling generation tools without presenting options first
+- ❌ Setting `confirm_before_save=false` to bypass approval
+- ❌ Generating content without user selection
+- ❌ Losing workflow context between sessions
+- ❌ Stale/abandoned workflows accumulating
+
+**Tools:**
+- `.config/workflow_recovery.py` - Session startup workflow check
+- `.config/workflow_cleanup.py` - Remove stale workflows
+- Generation tools: Built-in workflow validation
 
 ### Format Validation Automation: 📝 PHASE 3 ENFORCEMENT
 

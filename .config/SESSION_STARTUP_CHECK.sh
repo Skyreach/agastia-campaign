@@ -53,6 +53,16 @@ else
     echo "   ⚠️  File watcher not detected"
 fi
 
+# Check 5: Workflow Recovery (PHASE 4)
+echo
+echo "5️⃣  Checking for active workflows..."
+python3 "$SCRIPT_DIR/workflow_recovery.py" || {
+    # workflow_recovery.py returns non-zero if workflows need attention
+    # This is informational, not a failure
+    echo
+    echo "   ℹ️  See workflow recovery information above"
+}
+
 echo
 echo "============================================================"
 echo "✅ STARTUP CHECK PASSED"
