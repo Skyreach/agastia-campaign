@@ -21,6 +21,13 @@ import path from 'path';
 
 const STATE_FILE = '.workflow_state.json';
 
+// Valid workflow types
+const WORKFLOW_TYPES = {
+  SESSION_GENERATION: 'session_generation',
+  ENCOUNTER_GENERATION: 'encounter_generation',
+  NPC_GENERATION: 'npc_generation'
+};
+
 // Valid workflow stages
 const WORKFLOW_STAGES = {
   // Stage 1: Present options to user
@@ -76,6 +83,15 @@ async function saveWorkflowState(state) {
  * Start a new workflow
  */
 async function startWorkflow(workflowType, context = {}) {
+  // Validate workflow type
+  const validTypes = Object.values(WORKFLOW_TYPES);
+  if (!validTypes.includes(workflowType)) {
+    return {
+      success: false,
+      error: `Invalid workflow type: ${workflowType}. Must be one of: ${validTypes.join(', ')}`
+    };
+  }
+
   const state = await loadWorkflowState();
 
   const workflowId = `${workflowType}_${Date.now()}`;
@@ -282,7 +298,8 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           properties: {
             workflow_type: {
               type: 'string',
-              description: 'Type of workflow (e.g., "session_generation", "npc_creation", "location_generation")',
+              description: 'Type of workflow',
+              enum: Object.values(WORKFLOW_TYPES)
             },
             context: {
               type: 'object',

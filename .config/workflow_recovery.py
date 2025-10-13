@@ -27,13 +27,15 @@ def load_workflow_state():
         return None
 
 def parse_iso_timestamp(timestamp_str):
-    """Parse ISO timestamp string to datetime"""
+    """Parse ISO timestamp string to datetime (returns naive datetime in local time)"""
     try:
         # Handle both with and without microseconds
         if '.' in timestamp_str:
-            return datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+            dt = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
         else:
-            return datetime.fromisoformat(timestamp_str.replace('Z', '+00:00').split('.')[0])
+            dt = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00').split('.')[0])
+        # Convert to naive datetime in local time
+        return dt.replace(tzinfo=None)
     except:
         return None
 

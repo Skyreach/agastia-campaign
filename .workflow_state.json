@@ -1,0 +1,24 @@
+{
+  "workflows": {
+    "encounter_generation_1760319705032": {
+      "type": "encounter_generation",
+      "current_stage": "user_selection",
+      "created_at": "2025-10-13T01:41:45.032Z",
+      "context": {
+        "test": true
+      },
+      "history": [
+        {
+          "stage": "present_options",
+          "timestamp": "2025-10-13T01:41:45.032Z"
+        },
+        {
+          "stage": "user_selection",
+          "timestamp": "2025-10-13T01:41:46.812Z",
+          "context": {}
+        }
+      ]
+    }
+  },
+  "last_updated": "2025-10-13T01:41:46.812Z"
+}
