@@ -50,8 +50,8 @@ const ENTITY_SPECS = {
     status_values: ['Active', 'Inactive', 'Dead', 'Unknown']
   },
   Faction: {
-    required_frontmatter: ['name', 'type', 'version', 'status', 'threat_level', 'tags', 'related_entities'],
-    optional_frontmatter: [],
+    required_frontmatter: ['name', 'type', 'version', 'status', 'tags', 'related_entities'],
+    optional_frontmatter: ['threat_level'],
     required_sections: [
       'Player Summary',
       'DM Notes',
@@ -147,6 +147,9 @@ const FORBIDDEN_HTML = [
  * Parse YAML frontmatter from file content
  */
 function parseFrontmatter(content) {
+  // Normalize line endings to \n
+  content = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+
   const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
   if (!frontmatterMatch) {
     return null;

@@ -26,7 +26,7 @@ ENTITY_SPECS = {
         'status_values': ['Active', 'Inactive', 'Dead', 'Unknown']
     },
     'Faction': {
-        'required_frontmatter': ['name', 'type', 'version', 'status', 'threat_level', 'tags', 'related_entities'],
+        'required_frontmatter': ['name', 'type', 'version', 'status', 'tags', 'related_entities'],
         'required_sections': ['Player Summary', 'DM Notes', 'Overview', 'Key Members',
                              'Goals & Progress Clocks', 'Operations', 'Relationships', 'Future Hooks', 'Secrets'],
         'status_values': ['Active', 'Dissolved', 'Hidden']
