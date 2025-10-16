@@ -32,7 +32,7 @@ export const ToolsToolbar = ({
   onFinishRoad
 }) => {
   return (
-    <div className="bg-white shadow-md p-3 flex flex-wrap gap-2 items-center text-sm">
+    <div className="bg-white shadow-md p-4 flex flex-wrap gap-3 items-center text-base">
       <div className="flex gap-1 flex-wrap items-center">
         <TextToolButton
           label="#"
@@ -84,7 +84,6 @@ export const ToolsToolbar = ({
             value={roadType}
             onChange={(e) => onRoadTypeChange(e.target.value)}
             title="Select road type"
-            className="text-xs"
             options={Object.entries(ROAD_TYPES).map(([key, style]) => ({
               value: key,
               label: style.label

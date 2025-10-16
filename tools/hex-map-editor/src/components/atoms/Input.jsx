@@ -19,7 +19,7 @@ export const Input = ({
       placeholder={placeholder}
       min={min}
       max={max}
-      className={`border rounded px-3 py-2 text-sm ${className}`}
+      className={`border rounded px-4 py-2 text-base ${className}`}
       {...props}
     />
   );
@@ -40,7 +40,7 @@ export const NumberInput = ({ value, onChange, min = 1, className = '', ...props
       value={value}
       onChange={handleChange}
       min={min}
-      className={`w-16 ${className}`}
+      className={`w-20 ${className}`}
       {...props}
     />
   );

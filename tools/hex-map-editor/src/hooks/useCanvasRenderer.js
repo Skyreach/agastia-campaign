@@ -30,15 +30,31 @@ export const useCanvasRenderer = ({
     if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
-    const width = currentMap.bgImage ? currentMap.bgImage.width : CANVAS_DEFAULTS.width;
-    const height = currentMap.bgImage ? currentMap.bgImage.height : CANVAS_DEFAULTS.height;
+    const baseWidth = currentMap.bgImage ? currentMap.bgImage.width : CANVAS_DEFAULTS.width;
+    const baseHeight = currentMap.bgImage ? currentMap.bgImage.height : CANVAS_DEFAULTS.height;
 
-    canvas.width = width;
-    canvas.height = height;
-    canvas.style.width = `${width * zoom}px`;
-    canvas.style.height = `${height * zoom}px`;
+    // Set actual canvas resolution (for rendering quality)
+    canvas.width = baseWidth;
+    canvas.height = baseHeight;
 
-    ctx.clearRect(0, 0, width, height);
+    // Scale canvas to fill viewport while maintaining aspect ratio
+    const container = canvas.parentElement;
+    if (container) {
+      const containerWidth = container.clientWidth - 32; // Account for padding
+      const containerHeight = container.clientHeight - 32;
+      const scaleX = containerWidth / baseWidth;
+      const scaleY = containerHeight / baseHeight;
+      const baseScale = Math.min(scaleX, scaleY, 1); // Don't upscale beyond original
+
+      canvas.style.width = `${baseWidth * baseScale * zoom}px`;
+      canvas.style.height = `${baseHeight * baseScale * zoom}px`;
+    } else {
+      // Fallback to original behavior
+      canvas.style.width = `${baseWidth * zoom}px`;
+      canvas.style.height = `${baseHeight * zoom}px`;
+    }
+
+    ctx.clearRect(0, 0, baseWidth, baseHeight);
 
     // Background
     if (showBg && currentMap.bgImage) {

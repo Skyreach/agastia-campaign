@@ -9,9 +9,9 @@ export const ToolButton = ({ icon: Icon, label, isActive, onClick }) => {
       onClick={onClick}
       active={isActive}
       title={label}
-      className="px-2 py-2"
+      className="px-3 py-2"
     >
-      <Icon size={16} />
+      <Icon size={20} />
     </Button>
   );
 };

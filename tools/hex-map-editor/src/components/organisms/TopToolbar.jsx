@@ -24,7 +24,7 @@ export const TopToolbar = ({
   onZoomReset
 }) => {
   return (
-    <div className="bg-white shadow-md p-3 flex flex-wrap gap-2 items-center text-sm border-b">
+    <div className="bg-white shadow-md p-4 flex flex-wrap gap-3 items-center text-base border-b">
       <Button
         onClick={onFileInputClick}
         variant="primary"
