@@ -1,5 +1,27 @@
 # D&D Campaign Assistant - System Instructions
 
+## 🖥️ ENVIRONMENT CONTEXT
+
+**YOU ARE RUNNING IN:**
+- **Claude Code CLI** (NOT Claude Desktop)
+- **WSL2 Ubuntu** OR **macOS** (NEVER Windows directly)
+- Working directory: `/mnt/c/dnd/` (WSL) or `/Users/.../dnd/` (macOS)
+
+**ASSUMPTIONS:**
+- All paths are Unix-style (`/` not `\`)
+- Shell is `bash` (not PowerShell or cmd.exe)
+- Python is `python3`, not `python`
+- Line endings are LF (`\n`), not CRLF (`\r\n`)
+- MCPs are configured in `~/.claude/config.json` or Claude Code config, NOT Desktop `mcp.json`
+
+**NEVER:**
+- Use Windows paths like `C:\Users\...`
+- Use backslashes in paths
+- Assume Windows-specific commands
+- Reference "Claude Desktop" - you're in the CLI
+
+---
+
 ## ⚠️ CRITICAL BEHAVIOR RULE - ABSOLUTE PRIORITY
 
 **WHEN THE USER POINTS OUT A MISTAKE OR CORRECTION:**
