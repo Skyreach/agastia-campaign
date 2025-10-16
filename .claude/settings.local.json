@@ -44,7 +44,11 @@
       "Bash(bash:*)",
       "Bash(./start_file_watcher.sh:*)",
       "Bash(./.config/SESSION_STARTUP_CHECK.sh:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Read(//home/matt-bourque/.claude/**)"
     ],
     "deny": [],
     "ask": []
