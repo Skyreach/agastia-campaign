@@ -257,8 +257,8 @@ def main():
         if not file_path.endswith('.md'):
             continue
 
-        # Skip excluded paths (infrastructure docs)
-        if '.config/' in file_path or 'README.md' in file_path or 'CLAUDE.md' in file_path:
+        # Skip excluded paths (infrastructure docs and tools)
+        if '.config/' in file_path or 'README.md' in file_path or 'CLAUDE.md' in file_path or 'tools/' in file_path:
             continue
 
         is_valid, errors, warnings = validate_file(file_path)

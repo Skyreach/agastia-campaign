@@ -27,3 +27,7 @@ Thumbs.db
 # Git and version control
 .git/**
 .gitignore
+.github/**
+
+# Tools and utilities (web apps, not campaign content)
+tools/**
