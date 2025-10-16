@@ -29,7 +29,9 @@ export const ToolsToolbar = ({
   onLoadData,
   onClearRivers,
   onClearRoads,
-  onFinishRoad
+  onFinishRoad,
+  onClearStorage,
+  onLoadDefaultMap
 }) => {
   return (
     <div className="bg-white shadow-md p-4 flex flex-wrap gap-3 items-center text-base">
@@ -203,6 +205,24 @@ export const ToolsToolbar = ({
           Finish Road
         </Button>
       )}
+
+      <Divider />
+
+      <Button
+        onClick={onLoadDefaultMap}
+        variant="primary"
+        title="Load default Agastia world map (won't affect your current work)"
+      >
+        Load Default Map
+      </Button>
+
+      <Button
+        onClick={onClearStorage}
+        variant="danger"
+        title="Clear all saved data and reset (cannot be undone)"
+      >
+        Reset All
+      </Button>
     </div>
   );
 };

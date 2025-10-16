@@ -104,3 +104,66 @@ export const loadMapData = (file) => {
     reader.readAsText(file);
   });
 };
+
+/**
+ * Save state to localStorage
+ */
+export const saveToLocalStorage = (maps, currentMapId) => {
+  try {
+    const data = {
+      maps: maps.map(map => ({
+        ...map,
+        bgImage: null,
+        bgImageData: map.bgImageData
+      })),
+      currentMapId,
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem('hex-map-editor-state', JSON.stringify(data));
+    return true;
+  } catch (err) {
+    console.error('Error saving to localStorage:', err);
+    return false;
+  }
+};
+
+/**
+ * Load state from localStorage
+ */
+export const loadFromLocalStorage = () => {
+  try {
+    const saved = localStorage.getItem('hex-map-editor-state');
+    if (!saved) return null;
+
+    const data = JSON.parse(saved);
+    const loadedMaps = data.maps.map(map => {
+      if (map.bgImageData) {
+        const img = new Image();
+        img.src = map.bgImageData;
+        return { ...map, bgImage: img };
+      }
+      return map;
+    });
+
+    return {
+      maps: loadedMaps,
+      currentMapId: data.currentMapId || loadedMaps[0]?.id || 'world-1'
+    };
+  } catch (err) {
+    console.error('Error loading from localStorage:', err);
+    return null;
+  }
+};
+
+/**
+ * Clear localStorage
+ */
+export const clearLocalStorage = () => {
+  try {
+    localStorage.removeItem('hex-map-editor-state');
+    return true;
+  } catch (err) {
+    console.error('Error clearing localStorage:', err);
+    return false;
+  }
+};

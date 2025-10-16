@@ -3,12 +3,14 @@ import { useMapState } from './hooks/useMapState';
 import { TopToolbar, ToolsToolbar, HexCanvas, HexEditModal, ExtractModal, StatusBar } from './components/organisms';
 import { pixelToHex, findClosestEdge, calculateHexSize } from './utils/hexGeometry';
 import { getHexesInRect, getHexNumberingBase, createHex } from './utils/hexHelpers';
-import { exportMapImage, saveMapData, loadMapData } from './utils/mapExport';
+import { exportMapImage, saveMapData, loadMapData, saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from './utils/mapExport';
 import { createRegionalMap } from './utils/regionExtraction';
+import { loadDefaultWorldMap } from './utils/defaultMap';
 
 export default function HexMapEditor() {
   // Map state
   const { maps, setMaps, currentMapId, setCurrentMapId, currentMap, updateCurrentMap, addMap } = useMapState();
+  const [isLoading, setIsLoading] = useState(true);
 
   // UI state
   const [zoom, setZoom] = useState(1);
@@ -32,6 +34,35 @@ export default function HexMapEditor() {
   const [extractPreview, setExtractPreview] = useState(null);
 
   const fileInputRef = useRef(null);
+
+  // Load from localStorage on mount, or load default world map
+  useEffect(() => {
+    const loadInitialState = async () => {
+      const saved = loadFromLocalStorage();
+      if (saved) {
+        setMaps(saved.maps);
+        setCurrentMapId(saved.currentMapId);
+      } else {
+        // Load default world map
+        try {
+          const defaultMap = await loadDefaultWorldMap();
+          setMaps([defaultMap]);
+          setCurrentMapId(defaultMap.id);
+        } catch (err) {
+          console.error('Failed to load default map:', err);
+        }
+      }
+      setIsLoading(false);
+    };
+    loadInitialState();
+  }, []);
+
+  // Auto-save to localStorage whenever maps or currentMapId changes
+  useEffect(() => {
+    if (!isLoading && maps.length > 0) {
+      saveToLocalStorage(maps, currentMapId);
+    }
+  }, [maps, currentMapId, isLoading]);
 
   // Auto-recalculate hex size when grid dimensions or image changes
   useEffect(() => {
@@ -327,6 +358,33 @@ export default function HexMapEditor() {
     setCurrentRoad(null);
   };
 
+  const handleClearStorage = () => {
+    if (confirm('Clear all saved data and reset to default map? This cannot be undone.')) {
+      clearLocalStorage();
+      window.location.reload();
+    }
+  };
+
+  const handleLoadDefaultMap = async () => {
+    if (confirm('Load default Agastia world map? This will not affect your current work.')) {
+      try {
+        const defaultMap = await loadDefaultWorldMap();
+        addMap(defaultMap);
+        setCurrentMapId(defaultMap.id);
+      } catch (err) {
+        alert('Failed to load default map: ' + err.message);
+      }
+    }
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-xl">Loading hex map editor...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <TopToolbar
@@ -377,6 +435,8 @@ export default function HexMapEditor() {
           setCurrentRoad(null);
         }}
         onFinishRoad={finishRoad}
+        onClearStorage={handleClearStorage}
+        onLoadDefaultMap={handleLoadDefaultMap}
       />
 
       <div className="flex-1 overflow-auto p-4 relative">
