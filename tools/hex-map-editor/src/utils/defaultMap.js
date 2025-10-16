@@ -8,8 +8,8 @@ export const loadDefaultWorldMap = () => {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => {
-      const hexCols = 20;
-      const hexRows = 15;
+      const hexCols = 80;
+      const hexRows = 60;
       const hexSize = calculateHexSize(img.width, img.height, hexCols, hexRows);
 
       resolve({
