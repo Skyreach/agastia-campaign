@@ -53,9 +53,23 @@ else
     echo "   ⚠️  File watcher not detected"
 fi
 
-# Check 5: Workflow Recovery (PHASE 4)
+# Check 5: Git Hooks (PHASE 3)
 echo
-echo "5️⃣  Checking for active workflows..."
+echo "5️⃣  Checking git hooks..."
+HOOK_STATUS=$("$SCRIPT_DIR/git-hooks/check-hooks-installed.sh")
+if [ "$HOOK_STATUS" = "INSTALLED" ]; then
+    echo "   ✅ Git hooks installed"
+elif [ "$HOOK_STATUS" = "MISSING" ]; then
+    echo "   ⚠️  Git hooks NOT installed"
+    echo "   Run: ./.config/git-hooks/install-git-hooks.sh"
+elif [ "$HOOK_STATUS" = "NOT_EXECUTABLE" ]; then
+    echo "   ⚠️  Git hooks not executable"
+    echo "   Run: chmod +x .git/hooks/pre-commit"
+fi
+
+# Check 6: Workflow Recovery (PHASE 4)
+echo
+echo "6️⃣  Checking for active workflows..."
 python3 "$SCRIPT_DIR/workflow_recovery.py" || {
     # workflow_recovery.py returns non-zero if workflows need attention
     # This is informational, not a failure
