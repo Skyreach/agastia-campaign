@@ -48,7 +48,9 @@
       "Bash(git fetch:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
-      "Read(//home/matt-bourque/.claude/**)"
+      "Read(//home/matt-bourque/.claude/**)",
+      "Bash(mkdir:*)",
+      "Bash(dos2unix:*)"
     ],
     "deny": [],
     "ask": []
