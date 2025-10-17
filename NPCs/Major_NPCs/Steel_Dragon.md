@@ -188,3 +188,126 @@ The dragon follows a predictable pattern:
 - **Mid-Campaign:** Investigation intensifies
 - **Late Campaign:** Dragon identity revealed, final confrontation
 - **Epilogue:** Aftermath and reincarnation concerns
+
+---
+
+## Level-Appropriate Threats & Interactions
+
+### Levels 2-3: Crime Scenes & Rumors
+**Threat Type:** Investigation hooks, artistic murder aftermath, cult foot soldiers
+
+**Encounters:**
+- Artistic murder crime scenes (investigation-focused)
+- Rumors of mysterious deaths in high society
+- Chaos Cult initiates protecting evidence (CR 1/2 - 1)
+- Witnesses who saw "something strange" but not the dragon
+- First clues to signature artistic style
+
+**Party Interaction:**
+- Hired by Merit Council to investigate murders
+- Stumble upon crime scene during other business
+- Interview witnesses and suspects
+- Collect evidence of pattern
+- NOT yet aware of dragon involvement
+
+**Dragon Status:** Stage 1 - Individual artistic murders, hidden identity active in society
+
+---
+
+### Levels 4-5: Pattern Recognition & Cult Protection
+**Threat Type:** Serial killer investigation, cult interference, first dragon hints
+
+**Encounters:**
+- Multiple connected crime scenes revealing pattern
+- Chaos Cult priests (CR 2-4) actively covering dragon's tracks
+- Brother Matthias's name surfaces in investigation
+- Dragon cultists protecting "the artist" (CR 2-3)
+- Evidence suggesting non-human perpetrator
+
+**Party Interaction:**
+- Merit Council escalates investigation priority
+- Party connects murders to Chaos Cult
+- First hints dragon may be involved (scales, claw marks, heat damage)
+- Political pressure to solve case
+- High-merit suspect emerges (dragon's human identity)
+
+**Dragon Status:** Stage 1 transitioning to Stage 2 - Group killings begin, escalation visible
+
+---
+
+### Levels 6-7: Dragon Revelation & Group Murders
+**Threat Type:** Mass murder scenes, dragon sightings, cult protection squads
+
+**Encounters:**
+- Group killing scenes ("group art" phase)
+- Steel dragon sightings near Agastia (flight, distant roars)
+- Brother Matthias (CR 5-6) actively aiding dragon
+- Chaos Cult strike teams protecting dragon's identity (CR 4-6)
+- Merit Council officials obstructing investigation (dragon's influence)
+
+**Party Interaction:**
+- Dragon identity as high-merit individual confirmed
+- First potential encounter with dragon in human form (social/combat)
+- Evidence linking specific Merit official to crimes
+- Cult's corruption of dragon becomes clear
+- Political crisis as dragon's merit makes them untouchable legally
+
+**Dragon Status:** Stage 2 - Group killings in full effect, preparing for mass events
+
+---
+
+### Levels 8-9: Mass Destruction & Dragon Confrontation
+**Threat Type:** Public massacres, dragon in full power, apocalyptic events
+
+**Encounters:**
+- Mass destruction spectacles (Stage 3 activated)
+- Steel Dragon in dragon form (Adult/Ancient stats, CR 13-17)
+- Brother Matthias fully empowered by dragon alliance (CR 7-8)
+- Chaos Cult army deployed to enable dragon
+- City-wide panic and evacuation
+
+**Party Interaction:**
+- Racing to stop mass destruction events
+- Direct combat with Steel Dragon (first major battle)
+- Attempting to break Chaos Cult's hold on dragon
+- Protecting civilians during attacks
+- Political fallout from dragon's revealed identity
+
+**Dragon Status:** Stage 3 - Mass destruction, preparing Final Act (consume Agastia)
+
+---
+
+### Level 10+: Final Act & Aftermath
+**Threat Type:** City-destroying dragon assault, final confrontation, reincarnation
+
+**Encounters:**
+- Steel Dragon's assault on Agastia castle town (Ancient Dragon stats)
+- Brother Matthias and cult leadership supporting dragon (CR 8-10)
+- Multi-phase dragon battle across city
+- Lair confrontation in dragon's hidden base
+- Potential redemption vs destruction choice
+
+**Party Interaction:**
+- Epic final battle to save Agastia
+- Choice: Kill dragon or free from corruption
+- Confronting anonymous supporters/reincarnation network
+- Aftermath: Rebuilding city and preventing return
+- Post-death: Dealing with reincarnation cycle
+
+**Dragon Status:** Stage 4 - Final Act, all-or-nothing city assault
+
+---
+
+## Important Notes
+
+**Dragon's Own Agenda:**
+- Steel Dragon's artistic murder escalation is INDEPENDENT of other plots
+- Chaos Cult is INFLUENCING, not creating this behavior
+- Dragon would be dangerous without cult, but cult makes it worse
+- Murder pattern follows dragon's artistic vision, not random portents
+
+**Investigation Focus:**
+- Early levels are detective work, not combat
+- Dragon is CR 13-17, far above early party capabilities
+- Cult members are the appropriate-level threats
+- Social/political complications drive mid-level play
