@@ -128,20 +128,29 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 
 ---
 
-## Codex Design (Needs Documentation)
+## Codex Design - COMPLETE
 
-### Current Concept
-- **Single artifact** used by good/neutral faction for protection
-- **Protects Temporal Bloodline Tribe** (hiding in temporal stasis)
-- **Temporal Bloodline protects Brand's people** (in Underdark/stasis)
-- **Removal causes explosion** → fragments scatter (fetch quest)
+**Full Documentation:** [Artifact_Codex_of_Peace.md](../Artifacts/Artifact_Codex_of_Peace.md)
 
-### Open Questions
-1. What faction currently uses Codex?
-2. Where is Codex located?
-3. What are mechanical effects of protection?
-4. How does explosion/fragmentation work?
-5. What happens to protected groups when removed?
+### Summary
+- **Artifact:** Book of Peace with 7 metal pages, bound to pedestal
+- **Guardian Faction:** Temporal Bloodline Tribe
+- **Location:** Garrek's Falls (Underdark) - hidden healing sanctuary
+- **Protection Effect:** Zone preventing ill will, violence, and evil acts
+- **Removal Trigger:** Keyword required; forced removal causes explosion
+- **Fragmentation:** 7 pages scatter as blue energy through Underdark tunnels
+- **Quest Hook:** Fragment recovery using bindings as compass
+
+### Garrek's Falls Features
+- **Healing Aura:** Continuous *lesser restoration* from moisture in air
+- **Healing Waters:** Single draught regrows limbs, restores HP, cures disease, raises dead (<72hrs)
+- **Danger:** Highly addictive water (DC 12 Wis save or drown trying to consume more)
+- **Evidence:** Skeletal remains in pool (DC 20 Perception)
+
+### Player Hooks
+- **Manny:** Legendary artifact for study, fragment recovery quest
+- **Nikki:** Temporal Bloodline sanctuary connection, potential ally
+- **Brand/Josh:** Temporal Bloodline may know about his ancestor civilization
 
 ---
 
@@ -154,14 +163,22 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 - **File:** `NPCs/Location_NPCs/NPC_Torvin_Greycask.md`
 
 ### Thava Thornscale
-- **Role:** Agastia patron (Merit Council - Office of Artifact Preservation)
-- **Function:** Hires party for Keeper's Sanctuary mission
-- **Payment:** 50 gp upfront, 150 gp completion, lodging covered (200 gp total)
+- **Role:** Patron (Merit Council - Office of Artifact Preservation)
+- **Function:** Hires party to clear corruption from Meridian's Rest (Rakash's hometown)
+- **Payment:** 500 gp for clearing corruption
 - **Initial Reaction:** Suspicious (rolled 6 on reaction table)
 - **File:** `NPCs/Location_NPCs/NPC_Thava_Thornscale.md`
 
+### Thorne "The Bear" Kallister
+- **Role:** Mayor of Meridian's Rest (retired adventurer)
+- **Function:** Three-quest structure for party income and trust-building
+- **Quest 1:** Monster Hunt (50 gp - tests competence)
+- **Quest 2:** Defend Against Moon's Assault (earns trust)
+- **Quest 3:** Investigate Garrek's Falls rumors (personal quest, leads to Codex)
+- **Backstory:** Former party member Garrek discovered the Falls 20+ years ago, died before exploring it
+- **File:** `NPCs/Location_NPCs/NPC_Thorne_Kallister.md`
+
 ### Pending NPCs
-- **Mayor of Meridian's Rest** - Quest giver, local authority
 - **Harren (Dock Worker)** - Entry node for Geist investigation
 - **Mira Saltwind (Merchant)** - Entry node for Geist investigation
 - **Rival Smuggler** - Entry node for Geist investigation
@@ -196,26 +213,72 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 
 ---
 
-## Session 2 Structure (Placeholder)
+## Session 2 Structure
 
-### Arrival in Agastia
-- Meet Thava Thornscale (patron)
-- Receive Keeper's Sanctuary mission
-- Lodging at The Scholar's Rest inn
+### Opening: Corruption Already Cleared
+- **Status:** Party successfully cleared corruption from Meridian's Rest (Session 1 completion)
+- **Patron:** Thava Thornscale arrives to acknowledge success and pay reward
+- **Payment:** 500 gp from Thava for corruption-clearing mission
+- **Location:** Meridian's Rest (now safe, entering recovery period)
+- **Party Status:** Downtime period begins - town grateful, opportunities available
 
-### Player Hint Distribution
-- **Kyle:** Rumors about Geist (entry nodes available)
-- **Manny/Nikki:** Codex-related clues (TBD)
-- **Josh:** Civilization hints (TBD)
-- **Ian:** Storm Giant information (TBD)
+### Downtime Period: Thorne's Quest Opportunities
 
-### Main Quest: Keeper's Sanctuary
-- (Details pending - awaits quest design)
+**Context:** With corruption cleared, Meridian's Rest is rebuilding. Mayor Thorne offers work to capable adventurers who just saved his town.
 
-### Side Opportunities
-- Hunt/defense quest for income
-- Downtime for crafting
-- Investigation opportunities for each PC
+### Thorne's Quest Structure (Income + Trust Building)
+
+**Quest 1: Monster Hunt**
+- Practical income: 50 gp for killing creature on trade road
+- Tests party's combat capability
+- Thorne evaluates their tactics and teamwork
+
+**Quest 2: Defend Against Moon's Assault**
+- Town defense scenario (lycanthropes, berserkers)
+- No pay, but earns Thorne's deep trust
+- Thorne fights alongside party (limited due to old injury)
+- Party receives tactical advice during battle
+
+**Quest 3: Investigate Garrek's Falls (Unlocks After Quests 1 & 2)**
+- Personal quest: Thorne reveals his friend Garrek discovered healing waterfall 20+ years ago
+- Provides Garrek's partially burned journal (map fragment, warnings about addictive water)
+- Payment: 100 gp + "anything Garrek left behind is yours"
+- **Actual Discovery:** Leads to Garrek's Falls, Temporal Bloodline Tribe, Codex of Peace
+- **Clue System:** Journal provides hints for Manny (mentions book) and Nikki (mentions "time seems wrong")
+
+### Downtime Activities
+
+**Crafting System:** See `.config/DOWNTIME_CRAFTING_SYSTEM.md` for full rules
+
+**The Rest as Crafting Hub:**
+- Population: ~2000 (half transient travelers)
+- Function: Resupply hub for adventurers heading to/from Agastia
+- Ingredients: Available in nearby forests and caves
+- NPCs: Greta Moss (apothecary), Aldwin Quill (scribe) offer 15-20% discounts (gratitude)
+
+**Crafting Options:**
+- Healing Potions: 1 day, 25 gp (or 12 gp if gather moonbell flowers)
+- Greater Healing: 2 days, 100 gp (or 50 gp if gather silverleaf + cave crystals)
+- Scrolls: 1-3 days, 15-250 gp depending on spell level
+- Other consumables: Antitoxin, Alchemist's Fire, etc.
+
+**Time Available:**
+- Quest 1 → Quest 2: 2-3 days (craft 2 common or 1 uncommon item)
+- Quest 2 → Quest 3: 1-2 days (finish in-progress items)
+- Post-Quest 3: Extended time if party wants to prep for Garrek's Falls
+
+**Personal Investigations:**
+- Kyle: Geist rumors in Agastia
+- Manny/Nikki: Study Garrek's journal (Quest 3 reward)
+- Josh/Brand: Talk with Thorne about elemental ancestors
+- Ian/Rakash: Storm Giant information, town recovery
+
+### Player Hint Distribution (During Downtime)
+- **Kyle/Nameless:** Rumors about Geist operation in Agastia (prepare for future travel)
+- **Manny:** Garrek's journal mentions ancient book at waterfall (from Quest 3)
+- **Nikki:** Garrek's journal mentions "time seems wrong" near Falls (from Quest 3)
+- **Josh/Brand:** Thorne's war stories may reference elemental ancestors
+- **Ian/Rakash:** Storm Giant information from Thorne's adventuring days
 
 ---
 
