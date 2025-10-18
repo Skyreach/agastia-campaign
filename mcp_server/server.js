@@ -9,6 +9,7 @@ import path from 'path';
 import frontMatter from 'front-matter';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import { generateRevelationStructure, generateStrategyExamples, proactiveBackups } from './revelation_generator.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -924,6 +925,41 @@ This page contains:
                 }
               }
             }
+          },
+          {
+            name: 'generate_revelation',
+            description: 'Generate node-based clue system using Three Clue Rule for discovery/investigation scenarios. Works in cities, travel, and dungeons.',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                revelation: {
+                  type: 'string',
+                  description: 'What the PCs should discover (e.g., "Geist is hiding in the warehouse district")'
+                },
+                clue_count: {
+                  type: 'number',
+                  description: 'Number of clues to generate (default: 3, range: 3-8)',
+                  minimum: 3,
+                  maximum: 8,
+                  default: 3
+                },
+                context: {
+                  type: 'string',
+                  enum: ['city', 'travel', 'dungeon', 'mixed'],
+                  description: 'Where the investigation takes place (affects clue types)',
+                  default: 'mixed'
+                },
+                pc_name: {
+                  type: 'string',
+                  description: 'Which PC this revelation is for (optional - helps contextualize)'
+                },
+                workflow_id: {
+                  type: 'string',
+                  description: 'Workflow ID from workflow-enforcer MCP (required for workflow enforcement)'
+                }
+              },
+              required: ['revelation']
+            }
           }
         ]
       };
@@ -969,6 +1005,9 @@ This page contains:
 
         case 'generate_quest':
           return await this.generateQuest(args);
+
+        case 'generate_revelation':
+          return await this.generateRevelation(args);
 
         default:
           throw new Error(`Unknown tool: ${name}`);
@@ -2591,6 +2630,90 @@ ${this.suggestEnemies(xpBudget)}`;
     mermaid += '```';
 
     return mermaid;
+  }
+
+  async generateRevelation(args) {
+    const revelation = args.revelation;
+    const clueCount = args.clue_count || 3;
+    const context = args.context || 'mixed';
+    const pcName = args.pc_name;
+
+    // Get campaign entities for token replacement
+    const campaignEntities = {
+      factions: this.campaignState.activeFactions.map(f => f.name),
+      npcs: this.campaignState.activeNPCs.map(n => n.name),
+      locations: this.campaignState.locations.map(l => l.name)
+    };
+
+    // Generate structure
+    const structure = generateRevelationStructure(revelation, clueCount, context, campaignEntities);
+
+    // Generate strategy examples
+    const strategies = generateStrategyExamples(revelation);
+
+    // Generate proactive backups
+    const backupContext = proactiveBackups[context] || proactiveBackups.mixed;
+    const backupTypes = Object.keys(backupContext);
+    const backup1Type = backupTypes[0];
+    const backup2Type = backupTypes[Math.min(1, backupTypes.length - 1)];
+    const backup1 = backupContext[backup1Type];
+    const backup2 = backupContext[backup2Type];
+
+    // Format laconic output first for user review
+    let output = `# Revelation Generator\n\n`;
+    output += `**Revelation:** ${revelation}\n`;
+    if (pcName) output += `**PC:** ${pcName}\n`;
+    output += `**Context:** ${context}\n`;
+    output += `**Clue Count:** ${clueCount}\n\n`;
+
+    output += `## Step 1: Strategy Selection\n\n`;
+    output += `Choose how clues connect:\n\n`;
+    output += `**Option A:** ${strategies.optionA.name}\n`;
+    output += `- ${strategies.optionA.description}\n`;
+    output += `- Progression: ${strategies.optionA.progression}\n\n`;
+    output += `**Option B:** ${strategies.optionB.name}\n`;
+    output += `- ${strategies.optionB.description}\n`;
+    output += `- Progression: ${strategies.optionB.progression}\n\n`;
+    output += `**Option C:** ${strategies.optionC.name}\n`;
+    output += `- ${strategies.optionC.description}\n`;
+    output += `- Progression: ${strategies.optionC.progression}\n\n`;
+
+    output += `## Step 2: Laconic Structure (Generated)\n\n`;
+    structure.nodes.forEach((node, i) => {
+      output += `**${node.id}:** ${node.category} clue\n`;
+      output += `- Scene Type: ${node.sceneType}\n`;
+      output += `- Skill: ${node.skill} DC ${node.dc || 'Auto'}\n`;
+      output += `- Preview: "${node.clue.substring(0, 60)}..."\n\n`;
+    });
+
+    output += `**Variety Check:**\n`;
+    output += `- Categories: ${structure.categoriesUsed.join(', ')}\n`;
+    output += `- Scene Types: ${[...new Set(structure.sceneTypes)].join(', ')}\n\n`;
+
+    output += `## Step 3: Nearby Entities\n\n`;
+    output += `**Available NPCs:** ${campaignEntities.npcs.length > 0 ? campaignEntities.npcs.join(', ') : 'None loaded'}\n`;
+    output += `**Available Locations:** ${campaignEntities.locations.length > 0 ? campaignEntities.locations.join(', ') : 'None loaded'}\n`;
+    output += `**Available Factions:** ${campaignEntities.factions.length > 0 ? campaignEntities.factions.join(', ') : 'None loaded'}\n\n`;
+    output += `*For each node, you'll decide if it uses existing entities or generates new ones.*\n\n`;
+
+    output += `## Step 4: Proactive Backups\n\n`;
+    output += `**Backup Option A (${backup1Type}):**\n${backup1}\n\n`;
+    output += `**Backup Option B (${backup2Type}):**\n${backup2}\n\n`;
+
+    output += `## Next Steps\n\n`;
+    output += `1. Select strategy (A, B, or C)\n`;
+    output += `2. For each node, specify scene entity (existing or new)\n`;
+    output += `3. Review full clue details\n`;
+    output += `4. Select proactive backup\n`;
+    output += `5. Approve final structure\n`;
+    output += `6. Save to session document\n`;
+
+    return {
+      content: [{
+        type: 'text',
+        text: output
+      }]
+    };
   }
 
   async run() {
