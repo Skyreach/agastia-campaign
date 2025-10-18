@@ -50,7 +50,8 @@
       "Bash(git stash:*)",
       "Read(//home/matt-bourque/.claude/**)",
       "Bash(mkdir:*)",
-      "Bash(dos2unix:*)"
+      "Bash(dos2unix:*)",
+      "Bash(git rev-parse --show-toplevel)"
     ],
     "deny": [],
     "ask": []
