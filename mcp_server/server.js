@@ -2633,6 +2633,11 @@ ${this.suggestEnemies(xpBudget)}`;
   }
 
   async generateRevelation(args) {
+    // If no revelation provided, this is step 1: present options
+    if (!args.revelation) {
+      return await this.presentRevelationOptions(args);
+    }
+
     const revelation = args.revelation;
     const clueCount = args.clue_count || 3;
     const context = args.context || 'mixed';
@@ -2645,11 +2650,8 @@ ${this.suggestEnemies(xpBudget)}`;
       locations: this.campaignState.locations.map(l => l.name)
     };
 
-    // Generate structure
+    // Generate structure (always using Chain approach)
     const structure = generateRevelationStructure(revelation, clueCount, context, campaignEntities);
-
-    // Generate strategy examples
-    const strategies = generateStrategyExamples(revelation);
 
     // Generate proactive backups
     const backupContext = proactiveBackups[context] || proactiveBackups.mixed;
@@ -2664,49 +2666,72 @@ ${this.suggestEnemies(xpBudget)}`;
     output += `**Revelation:** ${revelation}\n`;
     if (pcName) output += `**PC:** ${pcName}\n`;
     output += `**Context:** ${context}\n`;
-    output += `**Clue Count:** ${clueCount}\n\n`;
+    output += `**Clue Count:** ${clueCount}\n`;
+    output += `**Structure:** Chain (each clue leads to next scene)\n\n`;
 
-    output += `## Step 1: Strategy Selection\n\n`;
-    output += `Choose how clues connect:\n\n`;
-    output += `**Option A:** ${strategies.optionA.name}\n`;
-    output += `- ${strategies.optionA.description}\n`;
-    output += `- Progression: ${strategies.optionA.progression}\n\n`;
-    output += `**Option B:** ${strategies.optionB.name}\n`;
-    output += `- ${strategies.optionB.description}\n`;
-    output += `- Progression: ${strategies.optionB.progression}\n\n`;
-    output += `**Option C:** ${strategies.optionC.name}\n`;
-    output += `- ${strategies.optionC.description}\n`;
-    output += `- Progression: ${strategies.optionC.progression}\n\n`;
-
-    output += `## Step 2: Laconic Structure (Generated)\n\n`;
+    output += `## Laconic Structure (Generated)\n\n`;
     structure.nodes.forEach((node, i) => {
       output += `**${node.id}:** ${node.category} clue\n`;
       output += `- Scene Type: ${node.sceneType}\n`;
       output += `- Skill: ${node.skill} DC ${node.dc || 'Auto'}\n`;
-      output += `- Preview: "${node.clue.substring(0, 60)}..."\n\n`;
+      output += `- Preview: "${node.clue.substring(0, 60)}..."\n`;
+      output += `- Leads to: ${i < structure.nodes.length - 1 ? `Node ${i + 2}` : 'Revelation'}\n\n`;
     });
+
+    output += `**Investigation Path:** Node 1`;
+    for (let i = 1; i < structure.nodes.length; i++) {
+      output += ` → Node ${i + 1}`;
+    }
+    output += ` → Revelation\n\n`;
 
     output += `**Variety Check:**\n`;
     output += `- Categories: ${structure.categoriesUsed.join(', ')}\n`;
     output += `- Scene Types: ${[...new Set(structure.sceneTypes)].join(', ')}\n\n`;
 
-    output += `## Step 3: Nearby Entities\n\n`;
+    output += `## Nearby Entities\n\n`;
     output += `**Available NPCs:** ${campaignEntities.npcs.length > 0 ? campaignEntities.npcs.join(', ') : 'None loaded'}\n`;
     output += `**Available Locations:** ${campaignEntities.locations.length > 0 ? campaignEntities.locations.join(', ') : 'None loaded'}\n`;
     output += `**Available Factions:** ${campaignEntities.factions.length > 0 ? campaignEntities.factions.join(', ') : 'None loaded'}\n\n`;
-    output += `*For each node, you'll decide if it uses existing entities or generates new ones.*\n\n`;
+    output += `*For each node, you'll specify if it uses existing entities or generates new ones.*\n\n`;
 
-    output += `## Step 4: Proactive Backups\n\n`;
+    output += `## Proactive Backups\n\n`;
     output += `**Backup Option A (${backup1Type}):**\n${backup1}\n\n`;
     output += `**Backup Option B (${backup2Type}):**\n${backup2}\n\n`;
 
     output += `## Next Steps\n\n`;
-    output += `1. Select strategy (A, B, or C)\n`;
-    output += `2. For each node, specify scene entity (existing or new)\n`;
-    output += `3. Review full clue details\n`;
-    output += `4. Select proactive backup\n`;
-    output += `5. Approve final structure\n`;
-    output += `6. Save to session document\n`;
+    output += `1. For each node, specify scene entity (existing or new)\n`;
+    output += `2. Review full clue details\n`;
+    output += `3. Select proactive backup\n`;
+    output += `4. Approve final structure\n`;
+    output += `5. Save to session document\n`;
+
+    return {
+      content: [{
+        type: 'text',
+        text: output
+      }]
+    };
+  }
+
+  async presentRevelationOptions(args) {
+    const pcName = args.pc_name;
+    const context = args.context || 'city';
+
+    // TODO: Generate 3-4 contextual revelation options based on PC goals
+    // For now, return error message to implement properly
+    let output = `# Revelation Options\n\n`;
+    output += `**PC:** ${pcName || 'Unknown'}\n`;
+    output += `**Context:** ${context}\n\n`;
+    output += `## ERROR: This step not yet implemented\n\n`;
+    output += `You must provide a \`revelation\` parameter when calling this tool.\n\n`;
+    output += `**Usage:**\n`;
+    output += `\`\`\`\n`;
+    output += `generate_revelation({\n`;
+    output += `  revelation: "what PCs should discover",\n`;
+    output += `  pc_name: "${pcName || 'PC name'}",\n`;
+    output += `  context: "${context}"\n`;
+    output += `})\n`;
+    output += `\`\`\`\n`;
 
     return {
       content: [{
