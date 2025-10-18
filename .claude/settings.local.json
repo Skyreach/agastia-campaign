@@ -52,7 +52,8 @@
       "Bash(mkdir:*)",
       "Bash(dos2unix:*)",
       "Bash(git rev-parse --show-toplevel)",
-      "mcp__dnd-campaign__generate_npc"
+      "mcp__dnd-campaign__generate_npc",
+      "mcp__dnd-campaign__roll_reaction"
     ],
     "deny": [],
     "ask": []
