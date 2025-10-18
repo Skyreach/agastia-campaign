@@ -2662,59 +2662,62 @@ ${this.suggestEnemies(xpBudget)}`;
     const backup2 = backupContext[backup2Type];
 
     // Format laconic output first for user review
-    let output = `# Revelation Generator\n\n`;
+    let output = `# Revelation Generator (3-3-3-1 Web Structure)\n\n`;
     output += `**Revelation:** ${revelation}\n`;
     if (pcName) output += `**PC:** ${pcName}\n`;
     output += `**Context:** ${context}\n`;
-    output += `**Clue Count:** ${clueCount}\n`;
-    output += `**Structure:** Chain (each clue leads to next scene)\n\n`;
+    output += `**Structure:** 3 Entry Nodes → 3 Locations → 9 Clues Total → 1 Revelation\n\n`;
 
-    output += `## Laconic Structure (Generated)\n\n`;
-    structure.nodes.forEach((node, i) => {
-      output += `**${node.id}:** ${node.category} clue\n`;
-      output += `- Scene Type: ${node.sceneType}\n`;
-      output += `- Skill: ${node.skill} DC ${node.dc || 'Auto'}\n`;
-      output += `- Preview: "${node.clue.substring(0, 60)}..."\n`;
-      output += `- Leads to: ${i < structure.nodes.length - 1 ? `Node ${i + 2}` : 'Revelation'}\n\n`;
+    output += `## Entry Nodes (NPCs/Hooks)\n\n`;
+    structure.entryNodes.forEach((entry, i) => {
+      output += `**${entry.id}:** ${entry.category} clue\n`;
+      output += `- Scene Type: ${entry.sceneType}\n`;
+      output += `- Skill: ${entry.skill} DC ${entry.dc}\n`;
+      output += `- Preview: "${entry.clue.substring(0, 60)}..."\n`;
+      output += `- Leads to: ${entry.leadsTo}\n\n`;
     });
 
-    output += `**Investigation Path:** Node 1`;
-    for (let i = 1; i < structure.nodes.length; i++) {
-      output += ` → Node ${i + 1}`;
-    }
-    output += ` → Revelation\n\n`;
+    output += `## Locations & Clues\n\n`;
+    structure.locations.forEach((location, locIdx) => {
+      output += `### ${location.id}: ${location.name}\n\n`;
+      location.clues.forEach((clue, clueIdx) => {
+        output += `**${clue.id}:** ${clue.category} clue\n`;
+        output += `- Skill: ${clue.skill} DC ${clue.dc || 'Auto'}\n`;
+        output += `- Preview: "${clue.clue.substring(0, 50)}..."\n`;
+        output += `- Leads to: ${clue.leadsTo}\n\n`;
+      });
+    });
+
+    output += `## Investigation Paths\n\n`;
+    output += `\`\`\`\n`;
+    output += `Entry 1 → Location 1 → 3 clues → Revelation\n`;
+    output += `Entry 2 → Location 2 → 3 clues → Revelation\n`;
+    output += `Entry 3 → Location 3 → 3 clues → Revelation\n`;
+    output += `\`\`\`\n\n`;
+
+    output += `**Redundancy:** 9 total clues all pointing to same revelation (Three Clue Rule × 3)\n\n`;
 
     output += `**Variety Check:**\n`;
-    output += `- Categories: ${structure.categoriesUsed.join(', ')}\n`;
-    output += `- Scene Types: ${[...new Set(structure.sceneTypes)].join(', ')}\n\n`;
+    output += `- Categories: ${structure.categoriesUsed.join(', ')}\n\n`;
 
-    output += `## Generated Scenes\n\n`;
-    output += `*All nodes use new entities by default. Suggest existing entities if desired.*\n\n`;
+    output += `## Generated Entities\n\n`;
+    output += `*All entities are new by default. Suggest existing ones if desired.*\n\n`;
 
-    // Generate scene suggestions for each node
-    structure.nodes.forEach((node, i) => {
-      output += `**${node.id} Scene Suggestion:**\n`;
-      const sceneType = node.sceneType.toLowerCase();
-
-      if (sceneType === 'person') {
-        output += `- New NPC: [Generate based on clue context]\n`;
-      } else if (sceneType === 'location') {
-        output += `- New Location: [Generate based on clue context]\n`;
-      } else if (sceneType === 'activity') {
-        output += `- New Activity/Event: [Generate based on clue context]\n`;
-      } else if (sceneType === 'organization') {
-        output += `- New Organization: [Generate based on clue context]\n`;
-      } else if (sceneType === 'event') {
-        output += `- New Event: [Generate based on clue context]\n`;
-      } else {
-        output += `- New Scene: [Generate based on clue context]\n`;
-      }
-      output += `\n`;
+    output += `**Entry Node NPCs (3):**\n`;
+    structure.entryNodes.forEach((entry, i) => {
+      output += `- ${entry.id}: New NPC [to be named based on clue context]\n`;
     });
+    output += `\n`;
 
-    output += `**Available for substitution if needed:**\n`;
-    output += `- NPCs: ${campaignEntities.npcs.length > 0 ? campaignEntities.npcs.join(', ') : 'None loaded'}\n`;
-    output += `- Locations: ${campaignEntities.locations.length > 0 ? campaignEntities.locations.join(', ') : 'None loaded'}\n\n`;
+    output += `**Locations (3):**\n`;
+    structure.locations.forEach((location, i) => {
+      output += `- ${location.id}: New Location [to be named based on context]\n`;
+    });
+    output += `\n`;
+
+    output += `**Available for substitution:**\n`;
+    output += `- NPCs: ${campaignEntities.npcs.length > 0 ? campaignEntities.npcs.join(', ') : 'None'}\n`;
+    output += `- Locations: ${campaignEntities.locations.length > 0 ? campaignEntities.locations.join(', ') : 'None'}\n\n`;
 
     output += `## Proactive Backups\n\n`;
     output += `**Backup Option A (${backup1Type}):**\n${backup1}\n\n`;

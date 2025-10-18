@@ -198,51 +198,83 @@ function assignDC(category, clueIndex, totalClues, context) {
 }
 
 // ============================================================================
-// Main Generator
+// Main Generator - 3-3-3-1 Web Structure
 // ============================================================================
 
 export function generateRevelationStructure(revelation, clueCount, context, campaignEntities) {
+  // Structure: 3 Entry Nodes → 3 Locations → 3 Clues per Location → 1 Revelation
   const categories = Object.keys(variantPools);
-  const used = new Set();
-  const nodes = [];
 
-  // Ensure variety - no monoclonal pattern
-  while (nodes.length < clueCount) {
-    const available = categories.filter(c => !used.has(c));
-    if (!available.length && used.size < clueCount) {
-      // Allow reuse if we need more clues than categories
-      used.clear();
-      continue;
-    }
-    if (!available.length) break;
+  // Generate 3 entry nodes (NPCs/hooks)
+  const entryNodes = [];
+  const entryCategories = ['social', 'social', 'social']; // Entry nodes are always NPCs
 
-    const category = rand(available);
-    used.add(category);
-
-    const clueData = buildClue(category, revelation, campaignEntities);
-    const sceneType = rand(sceneTypes[context] || sceneTypes.mixed);
-    const dcLevel = assignDC(category, nodes.length, clueCount, context);
-    const skill = rand(skillsByCategory[category]);
-
-    nodes.push({
-      id: `Node ${nodes.length + 1}`,
-      category,
-      sceneType,
+  for (let i = 0; i < 3; i++) {
+    const clueData = buildClue(entryCategories[i], revelation, campaignEntities);
+    entryNodes.push({
+      id: `Entry ${i + 1}`,
+      type: 'entry',
+      category: entryCategories[i],
+      sceneType: 'Person',
       clue: clueData.clue,
-      skill,
-      dcLevel,
-      dc: dcLevels[dcLevel].dc,
-      dcLabel: dcLevels[dcLevel].label,
-      entities: clueData.entities
+      skill: 'Persuasion',
+      dcLevel: i === 0 ? 'easy' : 'moderate',
+      dc: i === 0 ? 10 : 13,
+      dcLabel: i === 0 ? 'Easy' : 'Moderate',
+      entities: clueData.entities,
+      leadsTo: `Location ${i + 1}`
     });
+  }
+
+  // Generate 3 locations (each entry node leads to one location)
+  const locations = [];
+  for (let i = 0; i < 3; i++) {
+    locations.push({
+      id: `Location ${i + 1}`,
+      type: 'location',
+      name: `[Location ${i + 1} - to be named]`,
+      clues: []
+    });
+  }
+
+  // Generate 3 clues per location (9 total clues)
+  const usedCategories = new Set();
+
+  for (let locIdx = 0; locIdx < 3; locIdx++) {
+    for (let clueIdx = 0; clueIdx < 3; clueIdx++) {
+      // Get category - ensure variety
+      const available = categories.filter(c => !usedCategories.has(c));
+      const category = available.length > 0 ? rand(available) : rand(categories);
+      if (available.length > 0) usedCategories.add(category);
+
+      const clueData = buildClue(category, revelation, campaignEntities);
+      const sceneType = rand(sceneTypes[context] || sceneTypes.mixed);
+      const dcLevel = assignDC(category, clueIdx, 3, context);
+      const skill = rand(skillsByCategory[category]);
+
+      locations[locIdx].clues.push({
+        id: `Clue ${locIdx * 3 + clueIdx + 1}`,
+        category,
+        sceneType,
+        clue: clueData.clue,
+        skill,
+        dcLevel,
+        dc: dcLevels[dcLevel].dc,
+        dcLabel: dcLevels[dcLevel].label,
+        entities: clueData.entities,
+        leadsTo: 'Revelation'
+      });
+    }
   }
 
   return {
     revelation,
     context,
-    nodes,
-    categoriesUsed: [...used],
-    sceneTypes: nodes.map(n => n.sceneType)
+    structure: '3-3-3-1',
+    entryNodes,
+    locations,
+    totalClues: 9,
+    categoriesUsed: [...usedCategories]
   };
 }
 
