@@ -42,12 +42,14 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 ### Active Goals
 - **Protect Manny during Codex retrieval** [Primary] - Main responsibility
 - **Retrieve the Dominion Evolution Codex** [Primary] - Mission from Professor Zero
+- **Seek members of Temporal Bloodline** [Primary] - Quest for people with temporal manipulation abilities
 - **Master thief skills** [Personal] - Ongoing development (sleight of hand, lockpicking, stealth)
 - **Rediscover Italian cuisine/pasta** [Personal] - Unexplained fascination
 
 ### Potential Future Goals
 - Question loyalty to Professor Zero
 - Investigate past before memory wipe
+- Understand connection between Temporal Bloodline and Codex mission
 
 ### Completed Goals
 - Survived shadow dungeon in Session 1
@@ -68,7 +70,7 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - **Decimate Siblings:** Shares all connections with Manny (Trinity, Tetran, Quincy, Hexus, Septimus, Octavia, Decum)
 
 ### Factions
-- **Decimate Project:** Member (Subject #8)
+- **Decimate Project:** Member (Subject #2)
 
 ## Skills & Combat Focus
 - **Expertise:** Sleight of hand, lockpicking, stealth
@@ -112,6 +114,8 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Loyalty crisis when learning truth about Professor Zero
 - Relationship development with Nona
 - Moral choice: Professor Zero vs. Manny's safety
+- Discovery of Temporal Bloodline members and their connection to Codex mission
+- Learning why Professor Zero wants her to find these people
 
 ### Character Development Notes
 - Protective instinct may conflict with Professor Zero's orders
