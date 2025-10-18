@@ -2688,22 +2688,43 @@ ${this.suggestEnemies(xpBudget)}`;
     output += `- Categories: ${structure.categoriesUsed.join(', ')}\n`;
     output += `- Scene Types: ${[...new Set(structure.sceneTypes)].join(', ')}\n\n`;
 
-    output += `## Nearby Entities\n\n`;
-    output += `**Available NPCs:** ${campaignEntities.npcs.length > 0 ? campaignEntities.npcs.join(', ') : 'None loaded'}\n`;
-    output += `**Available Locations:** ${campaignEntities.locations.length > 0 ? campaignEntities.locations.join(', ') : 'None loaded'}\n`;
-    output += `**Available Factions:** ${campaignEntities.factions.length > 0 ? campaignEntities.factions.join(', ') : 'None loaded'}\n\n`;
-    output += `*For each node, you'll specify if it uses existing entities or generates new ones.*\n\n`;
+    output += `## Generated Scenes\n\n`;
+    output += `*All nodes use new entities by default. Suggest existing entities if desired.*\n\n`;
+
+    // Generate scene suggestions for each node
+    structure.nodes.forEach((node, i) => {
+      output += `**${node.id} Scene Suggestion:**\n`;
+      const sceneType = node.sceneType.toLowerCase();
+
+      if (sceneType === 'person') {
+        output += `- New NPC: [Generate based on clue context]\n`;
+      } else if (sceneType === 'location') {
+        output += `- New Location: [Generate based on clue context]\n`;
+      } else if (sceneType === 'activity') {
+        output += `- New Activity/Event: [Generate based on clue context]\n`;
+      } else if (sceneType === 'organization') {
+        output += `- New Organization: [Generate based on clue context]\n`;
+      } else if (sceneType === 'event') {
+        output += `- New Event: [Generate based on clue context]\n`;
+      } else {
+        output += `- New Scene: [Generate based on clue context]\n`;
+      }
+      output += `\n`;
+    });
+
+    output += `**Available for substitution if needed:**\n`;
+    output += `- NPCs: ${campaignEntities.npcs.length > 0 ? campaignEntities.npcs.join(', ') : 'None loaded'}\n`;
+    output += `- Locations: ${campaignEntities.locations.length > 0 ? campaignEntities.locations.join(', ') : 'None loaded'}\n\n`;
 
     output += `## Proactive Backups\n\n`;
     output += `**Backup Option A (${backup1Type}):**\n${backup1}\n\n`;
     output += `**Backup Option B (${backup2Type}):**\n${backup2}\n\n`;
 
     output += `## Next Steps\n\n`;
-    output += `1. For each node, specify scene entity (existing or new)\n`;
-    output += `2. Review full clue details\n`;
+    output += `1. Review and approve generated scenes (or suggest existing entities to substitute)\n`;
+    output += `2. Review full clue details with scene context\n`;
     output += `3. Select proactive backup\n`;
-    output += `4. Approve final structure\n`;
-    output += `5. Save to session document\n`;
+    output += `4. Save to session document\n`;
 
     return {
       content: [{
