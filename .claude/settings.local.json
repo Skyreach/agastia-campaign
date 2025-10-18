@@ -51,7 +51,8 @@
       "Read(//home/matt-bourque/.claude/**)",
       "Bash(mkdir:*)",
       "Bash(dos2unix:*)",
-      "Bash(git rev-parse --show-toplevel)"
+      "Bash(git rev-parse --show-toplevel)",
+      "mcp__dnd-campaign__generate_npc"
     ],
     "deny": [],
     "ask": []

@@ -77,6 +77,33 @@ python3 "$SCRIPT_DIR/workflow_recovery.py" || {
     echo "   ℹ️  See workflow recovery information above"
 }
 
+# Check 7: Hook Error Logs
+echo
+echo "7️⃣  Checking hook error logs..."
+HOOK_ERRORS=0
+
+# Check each hook log for recent errors (last 10 lines)
+for LOG in ~/.claude/debug/stop-hook.log ~/.claude/debug/post-tool-hook.log ~/.claude/debug/session-start-hook.log ~/.claude/debug/pretool-hook.log; do
+    if [[ -f "$LOG" ]]; then
+        # Look for FATAL ERROR or EXCEPTION in last 10 lines
+        if tail -10 "$LOG" 2>/dev/null | grep -q "FATAL ERROR\|EXCEPTION:"; then
+            HOOK_ERRORS=$((HOOK_ERRORS + 1))
+            HOOK_NAME=$(basename "$LOG" .log)
+            echo "   ⚠️  Errors found in $HOOK_NAME"
+            echo "      Last error:"
+            tail -10 "$LOG" | grep -A 2 "FATAL ERROR\|EXCEPTION:" | head -3 | sed 's/^/      /'
+        fi
+    fi
+done
+
+if [ $HOOK_ERRORS -eq 0 ]; then
+    echo "   ✅ No hook errors detected"
+else
+    echo
+    echo "   ⚠️  Found errors in $HOOK_ERRORS hook log(s)"
+    echo "   Check logs: ls -la ~/.claude/debug/*.log"
+fi
+
 echo
 echo "============================================================"
 echo "✅ STARTUP CHECK PASSED"

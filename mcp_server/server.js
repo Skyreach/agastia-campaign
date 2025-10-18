@@ -1845,56 +1845,202 @@ This encounter is designed to drain ${encounter.resource_focus === 'mixed' ? 'mu
     }
   }
 
+  randomOf(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  fillTemplate(template, data) {
+    return template.replace(/\{\{(.*?)\}\}/g, (_, key) => this.randomOf(data[key]) || key);
+  }
+
   createNPCDetails(type, role, faction, location) {
-    // Generate random NPC details
-    const races = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Dragonborn', 'Half-Orc', 'Gnome'];
-    const genders = ['Male', 'Female', 'Non-binary'];
-    
-    const names = {
-      Human: ['Marcus', 'Elena', 'Theron', 'Lydia', 'Kai'],
-      Elf: ['Silvain', 'Miriel', 'Caelum', 'Aelara', 'Zephyr'],
-      Dwarf: ['Thorin', 'Dura', 'Grimli', 'Kilda', 'Ori'],
-      Halfling: ['Bilbo', 'Rosie', 'Merry', 'Pearl', 'Sam'],
-      Tiefling: ['Damakos', 'Makaria', 'Morthos', 'Nemeia', 'Kai'],
-      Dragonborn: ['Balasar', 'Kava', 'Donaar', 'Thava', 'Rhogar'],
-      'Half-Orc': ['Grok', 'Shel', 'Thokk', 'Emen', 'Morg'],
-      Gnome: ['Boddynock', 'Nyx', 'Warryn', 'Breena', 'Zook']
+    // Generate random NPC details with uniqueness tracking
+    if (!this.usedCombinations) {
+      this.usedCombinations = new Set();
+    }
+
+    // Modular race system
+    const races = {
+      core: ['Human', 'Elf', 'Dwarf', 'Halfling', 'Tiefling', 'Dragonborn', 'Half-Orc', 'Gnome'],
+      subrace: {
+        Elf: ['High Elf', 'Wood Elf', 'Drow', 'Eladrin'],
+        Dwarf: ['Hill Dwarf', 'Mountain Dwarf', 'Duergar'],
+        Halfling: ['Lightfoot Halfling', 'Stout Halfling'],
+        Dragonborn: ['Red Dragonborn', 'Blue Dragonborn', 'Silver Dragonborn', 'Gold Dragonborn', 'Bronze Dragonborn'],
+        Gnome: ['Rock Gnome', 'Forest Gnome', 'Deep Gnome']
+      },
+      culturalFlair: [
+        'from the frozen north',
+        'born among desert nomads',
+        'raised in a bustling city',
+        'from a reclusive mountain clan',
+        'with celestial ancestry',
+        'who grew up among pirates',
+        'from a merchant family',
+        'raised in scholarly circles',
+        'with ties to ancient nobility',
+        'who survived a war-torn homeland'
+      ]
     };
 
-    const race = races[Math.floor(Math.random() * races.length)];
-    const gender = genders[Math.floor(Math.random() * genders.length)];
-    const name = names[race][Math.floor(Math.random() * names[race].length)];
-
-    const personalities = [
-      'Gruff but kind-hearted',
-      'Nervously enthusiastic',
-      'Quietly confident',
-      'Boisterously friendly',
-      'Mysteriously aloof',
-      'Pragmatically cautious'
+    const genders = [
+      { label: 'Male', pronouns: { subject: 'he', object: 'him', possessive: 'his' } },
+      { label: 'Female', pronouns: { subject: 'she', object: 'her', possessive: 'her' } },
+      { label: 'Non-binary', pronouns: { subject: 'they', object: 'them', possessive: 'their' } }
     ];
 
-    const quirks = [
-      'Constantly fidgets with a lucky charm',
-      'Speaks in third person when nervous',
-      'Has an unusual pet',
-      'Collects strange objects',
-      'Afraid of a common thing',
-      'Laughs at inappropriate times'
+    const names = {
+      Human: ['Marcus', 'Elena', 'Theron', 'Lydia', 'Kai', 'Aldric', 'Mira', 'Cassius', 'Nora'],
+      Elf: ['Silvain', 'Miriel', 'Caelum', 'Aelara', 'Zephyr', 'Thalion', 'Elessar'],
+      Dwarf: ['Thorin', 'Dura', 'Grimli', 'Kilda', 'Ori', 'Balin', 'Thrain'],
+      Halfling: ['Bilbo', 'Rosie', 'Merry', 'Pearl', 'Sam', 'Pippin', 'Tilly'],
+      Tiefling: ['Damakos', 'Makaria', 'Morthos', 'Nemeia', 'Zariel', 'Vassago'],
+      Dragonborn: ['Balasar', 'Kava', 'Donaar', 'Thava', 'Rhogar', 'Kriv'],
+      'Half-Orc': ['Grok', 'Shel', 'Thokk', 'Emen', 'Morg', 'Dench'],
+      Gnome: ['Boddynock', 'Nyx', 'Warryn', 'Breena', 'Zook', 'Glim']
+    };
+
+    // Modular personality system (tone + attitude)
+    const personalityTones = ['Gruff', 'Cheerful', 'Solemn', 'Cynical', 'Polite', 'Irritable', 'Optimistic', 'Nervous', 'Quiet', 'Boisterous', 'Mysterious', 'Pragmatic'];
+    const personalityAttitudes = [
+      'but deeply compassionate',
+      'and overly curious about strangers',
+      'who hides pain behind jokes',
+      'with a strict sense of duty',
+      'and always searching for meaning',
+      'but secretly fears failure',
+      'and loyal to a fault',
+      'who values honesty above all',
+      'and methodical in approach',
+      'but quick to trust'
     ];
+
+    // Modular quirk system (trigger + behavior + object)
+    const quirkTriggers = [
+      'When nervous,',
+      'In tense situations,',
+      'When relaxed,',
+      'Every morning,',
+      'Whenever excited,',
+      'Before important decisions,'
+    ];
+    const quirkBehaviors = [
+      'fidgets with {{object}}',
+      'talks to themselves softly',
+      'starts humming an old tune',
+      'quotes obscure proverbs',
+      'adjusts their clothing compulsively',
+      'mumbles a prayer to an unknown god',
+      'taps a specific rhythm',
+      'polishes {{object}}',
+      'checks {{object}} obsessively'
+    ];
+    const quirkObjects = [
+      'a lucky charm',
+      'a silver coin',
+      'a withered flower',
+      'a smooth stone',
+      'a glass bead',
+      'a bone carving',
+      'an old compass',
+      'a faded letter'
+    ];
+
+    // Modular secret system (subject + action + filler)
+    const secretSubjects = ['Secretly', 'Unknown to others,', 'Quietly', 'Behind the scenes,'];
+    const secretActions = [
+      'working for {{faction}}',
+      'hiding their true identity as {{identity}}',
+      'searching for {{object}}',
+      'cursed by {{entity}}',
+      'in debt to {{villain}}',
+      'protecting {{someone}}',
+      'planning to betray {{faction}}',
+      'haunted by {{pastEvent}}'
+    ];
+    const secretFillers = {
+      faction: ['a rival guild', 'a mysterious cabal', 'the local thieves den', 'a royal court', 'a dragon cult', 'the Merit Council', 'the Chaos Cult'],
+      identity: ['a noble heir', 'a runaway', 'a spy', 'a changeling', 'a war criminal', 'a former assassin'],
+      object: ['a lost relic', 'their sibling', 'a legendary weapon', 'an ancient artifact', 'a stolen heirloom'],
+      entity: ['a forgotten god', 'a demon', 'the spirits of the dead', 'a fey bargain', 'temporal magic'],
+      villain: ['a crime lord', 'a lich', 'a mercenary band', 'a corrupt official', 'a vengeful dragon'],
+      someone: ['a wanted fugitive', 'their true love', 'an innocent child', 'a dangerous experiment'],
+      pastEvent: ['a massacre they witnessed', 'a betrayal they committed', 'the loss of their family', 'a promise they broke']
+    };
+
+    // Generate unique combination using modular system
+    let attempts = 0;
+    let baseRace, subrace, culturalFlair, gender, personality, quirk, secret, name, pronouns;
+
+    do {
+      // Generate modular components
+      baseRace = this.randomOf(races.core);
+      subrace = races.subrace[baseRace] ? this.randomOf(races.subrace[baseRace]) : baseRace;
+      culturalFlair = this.randomOf(races.culturalFlair);
+
+      const genderObj = this.randomOf(genders);
+      gender = genderObj.label;
+      pronouns = genderObj.pronouns;
+
+      const personalityTone = this.randomOf(personalityTones);
+      const personalityAttitude = this.randomOf(personalityAttitudes);
+      personality = `${personalityTone} ${personalityAttitude}`;
+
+      const quirkTrigger = this.randomOf(quirkTriggers);
+      const quirkBehavior = this.fillTemplate(this.randomOf(quirkBehaviors), { object: quirkObjects });
+      quirk = `${quirkTrigger} ${quirkBehavior}`;
+
+      const secretSubject = this.randomOf(secretSubjects);
+      const secretAction = this.randomOf(secretActions);
+      secret = this.fillTemplate(`${secretSubject} ${secretAction}`, secretFillers);
+
+      const combo = `${subrace}-${gender}-${personality}-${quirk}-${secret}`;
+
+      if (!this.usedCombinations.has(combo)) {
+        this.usedCombinations.add(combo);
+        name = this.randomOf(names[baseRace]);
+        break;
+      }
+
+      attempts++;
+    } while (attempts < 100);
+
+    // Clear cache if we're running out of combinations
+    if (attempts >= 100) {
+      this.usedCombinations.clear();
+      baseRace = this.randomOf(races.core);
+      subrace = races.subrace[baseRace] ? this.randomOf(races.subrace[baseRace]) : baseRace;
+      culturalFlair = this.randomOf(races.culturalFlair);
+      const genderObj = this.randomOf(genders);
+      gender = genderObj.label;
+      pronouns = genderObj.pronouns;
+      const personalityTone = this.randomOf(personalityTones);
+      const personalityAttitude = this.randomOf(personalityAttitudes);
+      personality = `${personalityTone} ${personalityAttitude}`;
+      const quirkTrigger = this.randomOf(quirkTriggers);
+      const quirkBehavior = this.fillTemplate(this.randomOf(quirkBehaviors), { object: quirkObjects });
+      quirk = `${quirkTrigger} ${quirkBehavior}`;
+      const secretSubject = this.randomOf(secretSubjects);
+      const secretAction = this.randomOf(secretActions);
+      secret = this.fillTemplate(`${secretSubject} ${secretAction}`, secretFillers);
+      name = this.randomOf(names[baseRace]);
+    }
 
     return {
       name,
-      race,
+      race: subrace,
+      baseRace,
+      culturalFlair,
       gender,
+      pronouns,
       type,
       role,
       faction: faction || 'Independent',
       location: location || 'Wandering',
-      personality: personalities[Math.floor(Math.random() * personalities.length)],
-      quirk: quirks[Math.floor(Math.random() * quirks.length)],
+      personality,
+      quirk,
       motivation: this.generateMotivation(role),
-      secret: this.generateSecret(type, role)
+      secret
     };
   }
 
@@ -1977,6 +2123,7 @@ This encounter is designed to drain ${encounter.resource_focus === 'mixed' ? 'mu
 
   formatNPC(npc, includeStats) {
     const date = new Date().toISOString().split('T')[0];
+    const raceName = npc.race.toLowerCase().replace(/\s+/g, '-');
     let content = `---
 name: ${npc.name}
 type: NPC
@@ -1984,25 +2131,26 @@ npc_type: ${npc.type}
 role: ${npc.role}
 race: ${npc.race}
 gender: ${npc.gender}
+pronouns: "${npc.pronouns.subject}/${npc.pronouns.object}/${npc.pronouns.possessive}"
 faction: ${npc.faction}
 location: ${npc.location}
 status: Active
 date_created: ${date}
-tags: [npc, ${npc.type}, ${npc.role}, ${npc.race.toLowerCase()}]
+tags: [npc, ${npc.type}, ${npc.role}, ${raceName}]
 ---
 
 # ${npc.name}
 
 ## Basic Information
 - **Name:** ${npc.name}
-- **Race:** ${npc.race}
-- **Gender:** ${npc.gender}
+- **Race:** ${npc.race} ${npc.culturalFlair}
+- **Gender:** ${npc.gender} (${npc.pronouns.subject}/${npc.pronouns.object}/${npc.pronouns.possessive})
 - **Role:** ${npc.role}
 - **Faction:** ${npc.faction}
 - **Location:** ${npc.location}
 
 ## Appearance
-*[Generate based on race and role]*
+*[Generate based on ${npc.race} ${npc.culturalFlair} and ${npc.role} role]*
 
 ## Personality
 - **Trait:** ${npc.personality}

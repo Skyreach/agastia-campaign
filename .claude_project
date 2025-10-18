@@ -8,5 +8,12 @@
     "If either fails, STOP and report to user",
     "Read CLAUDE.md for complete instructions"
   ],
-  "workingDirectory": "/mnt/e/dnd/agastia-campaign"
+  "workingDirectory": "/mnt/e/dnd/agastia-campaign",
+  "autoApprove": {
+    "tools": [
+      "mcp__dnd-campaign__*",
+      "mcp__workflow-enforcer__*",
+      "mcp__format-validator__*"
+    ]
+  }
 }
