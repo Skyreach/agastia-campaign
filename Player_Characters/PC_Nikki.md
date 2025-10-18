@@ -42,14 +42,15 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 ### Active Goals
 - **Protect Manny during Codex retrieval** [Primary] - Main responsibility
 - **Retrieve the Dominion Evolution Codex** [Primary] - Mission from Professor Zero
-- **Seek members of Temporal Bloodline** [Primary] - Quest for people with temporal manipulation abilities
+- **Locate Mistkin (Temporal Bloodline tribe)** [Primary] - Professor Zero's orders; report their location back to him
 - **Master thief skills** [Personal] - Ongoing development (sleight of hand, lockpicking, stealth)
 - **Rediscover Italian cuisine/pasta** [Personal] - Unexplained fascination
 
 ### Potential Future Goals
 - Question loyalty to Professor Zero
 - Investigate past before memory wipe
-- Understand connection between Temporal Bloodline and Codex mission
+- Discover why Professor Zero wants the Mistkin location (doesn't question orders yet)
+- Learn what happens to people she reports to Zero
 
 ### Completed Goals
 - Survived shadow dungeon in Session 1
@@ -105,7 +106,10 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - **Memory Wipe:** Kidnapped and memory-wiped at age 10 by Professor Zero
 - **Unconscious Memory:** Food fascination is residual memory of family business
 - **Parents' Fate:** Unknown - restaurant may still exist
-- **Higher Number = Longer Service:** Has served Professor Zero for 8 years
+- **Subject #2 = Second Newest:** Newer recruit, less experienced than higher numbers
+- **Not Mistkin:** Nikki has NO connection to Temporal Bloodline - just following Zero's orders to find them
+- **Doesn't Care About Mistkin:** They're just a target/mission objective to her
+- **Unaware of Consequences:** Doesn't know reporting Mistkin location could endanger them
 
 ### Future Hooks
 - Rediscovering family restaurant
@@ -114,12 +118,17 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Loyalty crisis when learning truth about Professor Zero
 - Relationship development with Nona
 - Moral choice: Professor Zero vs. Manny's safety
-- Discovery of Temporal Bloodline members and their connection to Codex mission
-- Learning why Professor Zero wants her to find these people
+- Locating Mistkin at Garrek's Falls - mission accomplished, reports to Zero
+- Brand's connection to Mistkin (Storm Lords are their allies) creates party tension
+- Learning what Professor Zero does with people she reports to him
+- Realizing her reconnaissance missions endanger innocent people
+- Does she care more about Brand (party member) than completing Zero's mission?
 
 ### Character Development Notes
 - Protective instinct may conflict with Professor Zero's orders
 - Food connection can be slow-burn emotional storyline
-- Skill mastery reflects 8 years of training
-- Age 18 means legally adult but emotionally stunted from memory loss
-- Number 8 means more experienced than Manny but less than Nona
+- Subject #2 = newer recruit, still proving herself
+- Currently sees Mistkin as just another mission objective (emotionally detached)
+- Brand's connection to Mistkin creates party conflict: Friend vs. mission
+- Doesn't question Zero's orders yet - loyal and obedient
+- Character growth: From blind obedience → realizing consequences of her actions
