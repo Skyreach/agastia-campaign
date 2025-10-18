@@ -41,7 +41,6 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 
 ### Active Goals
 - **Master the giant's 8-foot axe** [Short-term] - Claimed from Ratterdan
-- **Understand the axe's temporal powers** [Short-term] - Weapon pulses with strange magic
 - **Track down Zhaask the traitor** [Medium-term] - Betrayer must pay
 - **Kill the storm giant** [Long-term] - Primary revenge goal
 - **Collect 11 gem types for beholder earring** [Side quest] - Ongoing collection
@@ -89,7 +88,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Purpose of completed earring unknown
 
 ### Special Equipment
-- **Giant's 8-foot Axe** - Claimed from Ratterdan ruins, pulses with temporal magic
+- **Giant's 8-foot Axe** - Claimed from Ratterdan ruins
 
 ## Combat Style
 - **Previous:** Self-taught rapier fighter

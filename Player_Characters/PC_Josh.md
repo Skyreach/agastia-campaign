@@ -71,6 +71,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 
 ### The Demonic Markings
 - **Location:** Upper and lower body
+- **Nature:** Elemental (thunder/lightning)
 - **Behavior:** Sometimes tingle near certain places
   - Cave entrances
   - Ancient symbols in Scholar Quarter match markings
@@ -154,19 +155,21 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 6. **Warning** about returning threat
 
 ### Campaign Integration
-- **Ratterdan Connection:** Temporal distortions from giant's axe might trigger markings
+- **Ratterdan Connection:** Ancient ruins may have elemental wards matching his markings
 - **Codex Connection:** Ancient text might reference his people
 - **Underdark Arc:** Mid-late campaign major location
 - **Civilization Discovery:** Could be major campaign milestone
 - **Desert Traders:** Have seen similar symbols (lead to follow)
 - **Scholar Quarter:** Research available in Agastia libraries
+- **Thunder/Lightning Theme:** Markings react to elemental magic, storms, or related artifacts
 
 ### Location Reactions Planned
-- **Ratterdan Ruins:** Mild tingling (Feywild pocket connection)
+- **Ratterdan Ruins:** Mild tingling (elemental wards or ancient magic)
 - **Scholar Quarter Library:** Strong reaction to specific text
 - **Desert Cliffs:** Symbols match ancient homeland
 - **Specific Cave System:** Entrance to Underdark passage
 - **[Hidden Location]:** Homeland or major civilization site
+- **Storm/Thunder Events:** Markings glow or pulse during electrical storms
 
 ### NPC Recognition
 - **Ancient Scholars:** Might recognize marking style
