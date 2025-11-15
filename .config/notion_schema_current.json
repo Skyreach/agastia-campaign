@@ -59,6 +59,18 @@
           "name": "Inactive",
           "color": "purple",
           "description": null
+        },
+        {
+          "id": "1aa8b778-f832-4820-9b24-5b47cd058c4a",
+          "name": "Archived",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "7014e19d-c52b-485c-883e-a9985bfeeaee",
+          "name": "Testing",
+          "color": "yellow",
+          "description": null
         }
       ]
     }
@@ -869,6 +881,648 @@
           "id": "81f2d3a6-c798-48ec-96f7-0659407693c4",
           "name": "world-building",
           "color": "gray",
+          "description": null
+        },
+        {
+          "id": "824dbdb0-5c47-4d0d-9794-e6952109d71b",
+          "name": "session1",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "4760a4f1-9fe9-494d-bb04-87efdedbf5dc",
+          "name": "quest-target",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "b74f751e-46b5-47b3-be79-59e6f13ef0b0",
+          "name": "blood-magic",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "fb9e48b5-2e61-49a8-8545-5d4daa582bb4",
+          "name": "session0",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "62751d56-eff3-4c3e-af80-fcd4d1165430",
+          "name": "reference",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "2ba4293b-e5ac-4ab2-ac46-eb38f4066a07",
+          "name": "session-1",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "53ae8fa2-8bfa-4ed4-94b8-04fc6f910550",
+          "name": "resource",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "deb4a017-bbd4-47fc-813f-7ebca3b4906b",
+          "name": "encounters",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "6f357002-4533-4a2d-af99-467487ee5485",
+          "name": "combat",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "f07a9d6d-23cb-430d-8f43-947c87094c53",
+          "name": "design",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "63c8f6a5-13e4-440c-9d50-168555547a21",
+          "name": "resource-management",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "9ce72bf5-3970-498e-8366-0c4c117af223",
+          "name": "reactions",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "73ccaed8-7fa2-4347-82d6-c2cb34d8ac17",
+          "name": "social",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "0bd8c58f-a35f-49fc-844f-49ce2dd09583",
+          "name": "fey",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "abdf8bde-43f1-41d1-8a55-ca09ab122bda",
+          "name": "heartstone",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "8f367639-f792-408c-a2b0-544bf786678b",
+          "name": "feat-granting",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "926cd66d-da22-4155-b21b-7f5bf931b814",
+          "name": "cursed",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "efbd08bc-e0a2-461d-998f-356c7264644d",
+          "name": "unknown",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "ebcc73dd-93a1-472a-a451-6d90a0768eac",
+          "name": "location",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "6b207cfc-9cf6-43ce-9c1c-8575245a2f83",
+          "name": "octavia",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "af866d0f-87b0-40a1-a72f-3140eb4188b3",
+          "name": "shadow-dungeon",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "e8de0edb-acf3-4bc4-bd65-ec6b69ab4d5b",
+          "name": "subject3",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "b1e8fc05-19ca-4f25-87c1-a9a0b671316a",
+          "name": "gnome",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "c1c860a7-0caa-42d0-987d-9473f146e208",
+          "name": "infiltrator",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "e157d0d9-08f3-414a-b6cd-d25c3515e4b7",
+          "name": "subject4",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "45fbfe8e-de95-43b0-b19c-9e986cd53f73",
+          "name": "wood-elf",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "1a2d0421-0ad6-4ae1-8de6-c84f1bfeeb4d",
+          "name": "subject5",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "c49be6d6-7b84-46ea-9065-a660e128cfd0",
+          "name": "goliath",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "4144924d-7da0-42b3-a2a8-04147b4c5f65",
+          "name": "subject6",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "fb6ccfb7-b8d9-4984-ac9c-a1e93290e19e",
+          "name": "human",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "5672f30e-ee75-462c-8065-d242c55b4c02",
+          "name": "gunslinger",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "bf8b999c-130b-4096-9b9c-3e3e9c71f8ae",
+          "name": "subject7",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "f2991afb-8d67-4b33-b1fc-8aabf37c26f3",
+          "name": "dragonborn",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "5af967ed-c0ce-4cb7-ad62-76474dbfdc44",
+          "name": "subject8",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "d14d7289-403e-4d4f-ab7d-a46c2b2d4bb3",
+          "name": "drow",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "0fab9e40-f1f9-4008-935e-7b5ea0e63274",
+          "name": "warlock",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "9100be01-77b2-4a76-9547-633a28135777",
+          "name": "patron-level",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "952704e9-f357-4732-b585-c227edfce2ce",
+          "name": "ratterdan-mastermind",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "af49f163-aab3-4c61-8538-b1b20fe3bffa",
+          "name": "subject9",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "29368af0-b95e-4415-930a-855abef7d38a",
+          "name": "half-elf",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "cc10a2f2-3a70-48ed-a8bd-cb57445fb4bb",
+          "name": "bard",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "3b831e7a-204d-4c4a-83ac-ddc3dc62e9c2",
+          "name": "subject10",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "5e436b26-ef32-4623-b4be-a9e292d8ffe7",
+          "name": "high-elf",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "0053fa2f-788a-470d-a512-faaccb58fc41",
+          "name": "wizard",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "fade5553-1459-4308-9a88-f6eefaca06d6",
+          "name": "eldest",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "9ee7a74e-b1d7-4a6e-8426-d0203e8161af",
+          "name": "template",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "a709c5b4-089f-43f7-b191-53ce54331b5b",
+          "name": "test",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "f6a87c33-ec4b-4485-b335-6b15fbe4fe1d",
+          "name": "dungeon",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "cf750e55-8de3-4db1-8fdb-7d1414817596",
+          "name": "toggle-test",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "c69ec754-876a-4d53-9035-d5b3e50d6646",
+          "name": "companion",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "db57dd05-2d75-4d4d-ab7e-053adb17c978",
+          "name": "transformation",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "5d17f8b9-47af-4256-98bd-dab7186f6f29",
+          "name": "demonic-cat",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "c2631a6a-ead0-4ce4-bde4-34b29814c1fb",
+          "name": "crystalline",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "e6deb04b-be7e-42e4-a55e-698baa2c9b13",
+          "name": "item",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "5f35d299-c877-4854-b1ff-f642f8535cd2",
+          "name": "giant-weapon",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "4d431c6d-b021-4a56-9932-8093f78ee23f",
+          "name": "temporal-magic",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "dc51ae9a-d88a-42ec-9db0-232efb84b7c8",
+          "name": "rakash",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "dcd7be6c-6584-4ae3-8c74-9a6b5e441816",
+          "name": "giants-axe",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "f5566b40-ad83-420b-9331-7cc93f8ceed6",
+          "name": "strike-of-giants",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "c806f80a-3415-462e-a8b8-ac308216e063",
+          "name": "inspiring-leader",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "5542f0a7-6b74-4b07-aacb-f0c0e32d5493",
+          "name": "brand-althor",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "b3774cc0-7df8-4360-8a10-7c975828f1f4",
+          "name": "eldritch-adept",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "0ee29b98-8784-458a-9539-cdbff7a85df8",
+          "name": "metallic-dragon-gift",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "9ec25689-679b-4d17-99ff-f97313b8e867",
+          "name": "bloody-companion",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "459ead07-b9d8-4025-8407-f8120c60ef53",
+          "name": "octavia-recognition",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "93669a2c-a63c-4de6-9b72-000de17057db",
+          "name": "session2",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "55e27675-a475-4be7-be26-39ea4f4c44d9",
+          "name": "wip",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "f48b7b9c-2d01-49c5-8ae9-d9fd3396dfae",
+          "name": "campaign-fronts",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "59d822d6-5b82-4915-8677-7cb8f95358ec",
+          "name": "rakash-patron",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "3a4fbba1-6a02-4e11-9ce1-8d19b9ac5a6b",
+          "name": "nameless-bandits",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "71354d8f-85c6-427d-8f11-6668b187071b",
+          "name": "brand-civilization",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "3dc1bcb6-0547-42ba-b89d-04b55821eb4e",
+          "name": "fronts",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "d834d9bf-f591-4b98-b5bb-798bc6c88c27",
+          "name": "bandits",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "89429719-3aff-462d-b554-a3a9281955f8",
+          "name": "criminals",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "79b803b5-4e6e-424e-88ca-71060e029b45",
+          "name": "smuggling",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "1fee6eea-beb3-4d8e-9a94-9030bb727178",
+          "name": "kidnapping",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "3ae16401-2c81-4db3-8a74-bf20de460ee4",
+          "name": "geist",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "b7df3e22-2c0c-49cb-8004-e0a3cf8a04d4",
+          "name": "kaelborn",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "a062c6a9-b21f-4d14-a4b1-83e2fc90fbab",
+          "name": "warlock-patron",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "7d9dbd1d-4ab8-49eb-9aa3-7bfd0c84d935",
+          "name": "tools",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "8246971e-c894-44c6-b686-2b5d526443dd",
+          "name": "mercenaries",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "a7a7d8ac-1893-4282-b267-8844cbecbe3e",
+          "name": "location-npc",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "e36c2245-a5ec-40d8-92f0-5b9f714c0999",
+          "name": "meridians-rest",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "c040f9dc-84b4-44b2-aca9-3124fd1ce0dc",
+          "name": "information-broker",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "639688ce-f441-45ab-91c1-9507abed767f",
+          "name": "niletrix-connection",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "7b282432-ac0a-4960-a7bf-c17ba38f5de3",
+          "name": "rakash-contact",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "7f91a0e9-d22f-4325-8b9f-f9b1e3cc1821",
+          "name": "minor",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "f2e8b588-af65-4f80-973e-cd172faa0940",
+          "name": "agastia",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "0845581d-03ed-48a6-8771-1839d4578024",
+          "name": "artifact-specialist",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "6c90e990-4898-4b45-990f-943553ce92c5",
+          "name": "player-hints",
+          "color": "pink",
+          "description": null
+        },
+        {
+          "id": "c7e58734-d8a7-4222-a1bc-c69e8e856406",
+          "name": "revelation-system",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "45cc51fa-1753-41b6-9584-dc669fd68806",
+          "name": "geist-investigation",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "59784837-a9e0-4e36-8b67-e6b360ff271b",
+          "name": "temporal-bloodline",
+          "color": "brown",
+          "description": null
+        },
+        {
+          "id": "c355eb4d-304d-42c5-bfe8-ac9dcb9cf572",
+          "name": "garreks-falls",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "4c5f03fb-bce8-4903-a737-627d0481ce10",
+          "name": "book-of-peace",
+          "color": "yellow",
+          "description": null
+        },
+        {
+          "id": "ff025a0e-ff38-40bf-8482-36588a4b40c7",
+          "name": "protection-magic",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "557dcac1-c2c3-42ef-9246-84ae546a473b",
+          "name": "mayor",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "01d624a9-682f-4d67-bb21-259f8f0d515a",
+          "name": "retired-adventurer",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "7f5063b8-5492-4100-8a0e-28be76c50720",
+          "name": "artifacts",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "0d9862de-c2cb-44ab-addf-618a80ba2555",
+          "name": "magic-items",
+          "color": "default",
+          "description": null
+        },
+        {
+          "id": "05042696-9874-4d9a-9ad9-9e6a08704cc9",
+          "name": "legendary",
+          "color": "purple",
+          "description": null
+        },
+        {
+          "id": "dfdef7b3-7738-4981-84b5-52a63972a6e6",
+          "name": "campaign-items",
+          "color": "blue",
+          "description": null
+        },
+        {
+          "id": "3597faf7-b6ad-4d17-9a3b-06445e7b3d41",
+          "name": "major",
+          "color": "gray",
+          "description": null
+        },
+        {
+          "id": "a8847e2d-8f03-4f79-83a1-ed09d8afc92a",
+          "name": "mistkin",
+          "color": "red",
+          "description": null
+        },
+        {
+          "id": "14f2ec84-ebf7-4163-8663-1159dd5cd451",
+          "name": "archaeologist",
+          "color": "green",
+          "description": null
+        },
+        {
+          "id": "8529628a-f737-491a-b2c1-63f7e7f8724d",
+          "name": "future-sight",
+          "color": "orange",
+          "description": null
+        },
+        {
+          "id": "d50d5ac8-51db-4ae2-957f-29b6d2e72c89",
+          "name": "impending-doom",
+          "color": "brown",
           "description": null
         }
       ]

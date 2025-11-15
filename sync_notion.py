@@ -10,6 +10,10 @@ from notion_client import Client
 from pathlib import Path
 import frontmatter
 
+# Import sync state manager for timestamp tracking
+sys.path.insert(0, str(Path(__file__).parent / '.config'))
+from sync_state_manager import record_push_to_notion
+
 # Load Notion API key
 def load_notion_key():
     key_file = Path('.config/notion_key.txt')
@@ -470,6 +474,9 @@ def sync_to_notion(file_path, entry_type):
             notion.blocks.children.append(block_id=new_page['id'], children=batch)
 
         print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (archived old, created new with {len(content_blocks)} blocks)")
+
+        # Record timestamp for push tracking
+        record_push_to_notion(str(file_path), new_page['id'])
     else:
         # Create new page with content
         new_page = notion.pages.create(
@@ -484,6 +491,9 @@ def sync_to_notion(file_path, entry_type):
             notion.blocks.children.append(block_id=new_page['id'], children=batch)
 
         print(f"✨ Created: {post.get('name', Path(file_path).stem)} ({len(content_blocks)} blocks)")
+
+        # Record timestamp for push tracking
+        record_push_to_notion(str(file_path), new_page['id'])
 
 def sync_all():
     """Sync all campaign files to Notion - dynamically discovers all markdown files"""

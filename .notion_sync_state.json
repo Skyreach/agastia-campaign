@@ -1,0 +1,17 @@
+{
+  "sessions": {
+    "Sessions/Session_0_Character_Creation.md": {
+      "notion_page_id": "283693f0c6b48154a631f077040d6104",
+      "last_pulled_from_notion": "2025-11-15T22:24:47.483614+00:00"
+    },
+    "Sessions/Session_1_Caravan_to_Ratterdan.md": {
+      "notion_page_id": "283693f0c6b481968533d7385aa69147",
+      "last_pulled_from_notion": "2025-11-15T22:24:57.383097+00:00"
+    },
+    "Sessions/Session_2_WIP_Planning.md": {
+      "notion_page_id": "290693f0c6b481cd871de99979ce666b",
+      "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00"
+    }
+  },
+  "entities": {}
+}
