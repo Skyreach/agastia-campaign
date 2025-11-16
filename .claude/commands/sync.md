@@ -1,29 +1,34 @@
-# Sync Command
+Run complete synchronization pipeline: file organization, format validation, Notion sync, and git push.
 
-Complete synchronization workflow: organize files, validate formats, sync to Notion, and push to GitHub.
+Process:
+1. File Organization (file-organizer MCP):
+   - Check all files are in correct directories
+   - Validate filename conventions
+   - Report any misplaced files
 
-## Process:
-1. Run file-organizer to ensure proper directory structure
-2. Run format-validator to check all entity files
-3. Sync all changes to Notion database
-4. Git add, commit, and push to remote
+2. Format Validation (format-validator MCP):
+   - Run format_compliance_check on all entity files
+   - Auto-fix common issues with auto_fix_format.py
+   - Report any remaining violations
 
-## What Gets Synced:
-- All markdown files in campaign directories
-- Entity format validation and auto-fixes
-- Notion database updates (creates/updates pages)
-- Git commits with sync metadata
+3. Notion Sync (dnd-campaign MCP):
+   - Run sync_notion('all') to sync all markdown files
+   - Creates/updates pages in Notion database
+   - Verify sync with verify_sync_status.py
 
-## Parameters:
-None - runs complete sync pipeline
+4. Git Operations (dnd-campaign MCP):
+   - Run commit_and_push with message: "sync: Complete sync pipeline"
+   - Auto-sync is enabled (will trigger Notion sync again via pre-commit hook)
+   - Verify push succeeded
 
-## Example Usage:
-```
-/sync
-```
+5. Report Results:
+   - Files organized: X
+   - Format issues fixed: Y
+   - Notion pages synced: Z
+   - Git commit: [hash]
+   - Push status: Success/Failed
 
-## Output:
-- File organization report
-- Format validation results (with auto-fixes if needed)
-- Notion sync status (files synced, pages created/updated)
-- Git commit hash and push confirmation
+Error Handling:
+- If format validation fails, report errors and stop
+- If Notion sync fails, report but continue to git
+- If git push fails, report and suggest manual resolution
