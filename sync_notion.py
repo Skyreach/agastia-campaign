@@ -443,10 +443,10 @@ def sync_to_notion(file_path, entry_type):
         tags_list.append(entry_type.lower())
         properties["Tags"] = {"multi_select": [{"name": tag} for tag in tags_list]}
 
-    # Check if entry exists
+    # Check if entry exists - match by File Path, not Name
     results = notion.databases.query(
         database_id=DATABASES['entities'],
-        filter={"property": "Name", "title": {"equals": post.get('name', Path(file_path).stem)}}
+        filter={"property": "File Path", "rich_text": {"equals": str(file_path)}}
     )
 
     # Convert markdown content to Notion blocks
