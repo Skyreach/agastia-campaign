@@ -1,36 +1,60 @@
-# Planning Command
+Track and classify the current conversation using conversation-classifier and conversation-tracker MCPs.
 
-Track and classify the current conversation for campaign planning and organization.
+⚠️ CRITICAL: Before planning encounter content, MUST read .config/ENCOUNTER_EXPECTATIONS.md
+- NEVER suggest encounter frequencies
+- ALWAYS provide complete encounter tables only
+- Respect DM authority over gameplay decisions
 
-## Process:
-1. Use conversation-classifier to identify conversation type
-2. Use conversation-tracker to log the conversation
-3. Generate planning summary with:
-   - Conversation classification (session planning, worldbuilding, npc creation, etc.)
-   - Key decisions made
-   - Action items created
-   - Files created/modified
-   - Next steps
+Process:
+1. Conversation Classification (conversation-classifier MCP):
+   - Analyze current conversation thread
+   - Classify type: session_planning | worldbuilding | npc_creation | encounter_design |
+                    quest_development | rules_discussion | campaign_continuity | other
+   - Identify primary topic and subtopics
+   - Extract key themes
 
-## What Gets Tracked:
-- Conversation type and topic
-- Decisions made during planning
-- Entities created (NPCs, locations, factions, etc.)
-- Session plans and prep notes
-- Worldbuilding discussions
-- Campaign continuity notes
+2. Conversation Tracking (conversation-tracker MCP):
+   - Log conversation metadata (timestamp, type, participants)
+   - Track decisions made during discussion
+   - Record entities created/modified
+   - Note action items and next steps
+   - Create cross-references to related content
 
-## Parameters:
-None - analyzes current conversation context
+3. Generate Planning Summary:
+   **Conversation Type:** [Classification]
+   **Primary Topic:** [Main focus of discussion]
+   **Duration:** [Conversation length]
 
-## Example Usage:
-```
-/plan
-```
+   **Key Decisions:**
+   - [Decision 1]
+   - [Decision 2]
 
-## Output:
-- Conversation classification
-- Summary of key points discussed
-- Action items and next steps
-- Related entities and cross-references
-- Planning notes for future sessions
+   **Entities Created/Modified:**
+   - NPCs: [List]
+   - Locations: [List]
+   - Factions: [List]
+   - Sessions: [List]
+
+   **Action Items:**
+   - [ ] [Action 1]
+   - [ ] [Action 2]
+
+   **Cross-References:**
+   - Related sessions: [Links]
+   - Related NPCs: [Links]
+   - Related locations: [Links]
+
+   **Next Steps:**
+   - [Next step 1]
+   - [Next step 2]
+
+   **Campaign Continuity Notes:**
+   [Important details for future reference]
+
+4. Save Planning Notes:
+   - Append to .working/planning_log.md
+   - Update relevant entity files with cross-references
+   - Tag with conversation classification
+
+Output Format:
+Clear, actionable summary with links to all relevant entities and files.

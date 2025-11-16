@@ -37,6 +37,14 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - Determined to find lost people
 - [Other traits to be developed]
 
+### Known Personality Traits
+- **Driven by Heritage:** Deeply motivated to discover the truth about lost civilization
+- **Natural Leader:** Inspiring Leader feat reflects ability to rally others with rousing speeches
+- **Mysterious:** Conceals demonic markings to avoid discovery and persecution
+- **Cautious:** Aware that revealing markings could lead to being outcast or killed
+- **Determined:** Won't give up on finding family and people despite challenges
+- **Curious About Magic:** Investigates reactions of markings to locations and symbols
+
 ## Current Goals
 
 ### Active Goals
@@ -81,23 +89,39 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - **Recognition:** Some may recognize their significance
 
 ### Civilization Clues
-- People believed to have fled to Underdark
+- Kingdom of [INSERT NAME] destroyed by demonic invasion 500 years ago
+- Survivors fled to Underdark after great-grandfather sealed portal
 - Ancient symbols in Agastia's Scholar Quarter match markings
 - Desert traders have similar route symbols
-- Something destroyed or displaced them (unknown catastrophe)
+- Demonic invasion triggered by ancestral betrayal
 
 ### Open Questions
-- What destroyed/displaced his people?
-- Are they really in the Underdark?
-- What do the markings mean?
-- Connection to demonic/arcane forces?
-- Why do markings react to specific locations?
-- Is there a map hidden in the markings?
+- What is the exact name of the lost kingdom?
+- What is the nature of the demonic markings? (curse, contract, bloodline?)
+- How do storm/elemental markings protect against demonic curse?
+- Is the demon portal seal still holding?
+- Where exactly in the Underdark did survivors resettle?
+- Is the Underdark settlement still alive and guarding the seal?
+- Why did Storm Guardians choose to help Josh's people?
+- Can Josh redeem his family name?
+- Are demons still trying to break through the seal?
 
-## Special Abilities
+## Special Items & Abilities
+
+### Abilities
 - **Feat:** Inspiring Leader - Grants temporary hit points to party via rousing speeches
 - **Sorcerer Powers:** [Specific subclass and abilities TBD]
-- **Marking Reactions:** Tingle near significant locations
+- **Marking Reactions:** Demonic markings tingle near significant locations (cave entrances, ancient symbols, storm events)
+
+### Special Items
+- **"Bloody" (Heartstone Familiar):** Crystalline red demonic cat
+  - Transformed from heartstone in Session 1 shadow dungeon
+  - Companion and familiar
+  - Properties TBD
+
+### Equipment
+- Standard adventuring gear
+- [To be expanded as equipment is acquired]
 
 ## Session History
 
@@ -118,15 +142,36 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 ## DM Notes
 
 ### Secrets & Hidden Info
-- **True Origin:** [To be determined by DM]
-- **Marking Purpose:** Potentially a map, key, or bloodline marker
-- **Civilization's Fate:** [To be determined - Underdark? Destroyed? Transformed?]
-- **Family Status:** [To be determined]
-- **Connection to Main Plot:** Possible link to:
-  - The Codex (Professor Zero's target)
-  - Steel Dragon's activities
-  - Ancient magic in the region
-  - Chaos Cult's true origins
+- **True Origin:** Kingdom of [INSERT NAME] on Island of Tenibris
+- **Kingdom Destroyed:** 500 years ago by demonic invasion
+- **The Betrayal:** Josh's great-great-grandfather betrayed kingdom to demons
+  - Made deal with demons/devils out of despair
+  - Gave demons the kingdom's secrets and defensive weaknesses
+  - Kingdom fell, survivors scattered
+- **The Seal:** Josh's great-grandfather rallied surviving mages
+  - Sacrificed themselves to seal demon portal (TEMPORARY seal)
+  - Led survivors to resettle in Underdark
+  - Current fate of settlement unknown
+- **Family Curse:** Name tainted by betrayer's actions
+  - Ancestors faced constant insults from their own people
+  - Settled in Agastia as farmers, traders, craftsmen
+- **Demonic Markings:** Inherited curse from betrayer's deal
+  - NOT actual etchings/tattoos in skin
+  - Can be concealed but visible
+  - Discovery = outcast at best, killed at worst
+- **Elemental Markings:** Thunder/lightning (storm-marked)
+  - Protections placed BY the Storm Guardians (Lyria's people)
+  - Relationship to demonic markings unclear (defense vs curse?)
+- **Storm Guardians:** Lyria's people sheltered Josh's ancestors AFTER the fall
+  - Lyria may have personally helped (she's 500+ years old)
+  - Applied protective elemental magic to descendants
+- **Underdark Settlement:** Great-grandfather's refugees
+  - May still be guarding the temporarily sealed demon portal
+  - Settlement status unknown
+- **Connection to Main Plot:**
+  - Sealed portal may be weakening
+  - Demons may return
+  - Josh may have responsibility to fix ancestor's mistake
 
 ### Future Hooks
 - Scholar Quarter research revealing marking meaning

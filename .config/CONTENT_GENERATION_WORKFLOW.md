@@ -138,6 +138,12 @@ Assistant: "Room 1 reactive skill checks..."
 3. **Resource Focus** - What it drains (2-3 options if combat)
 4. **Narrative Hooks** - How it connects to story (2-3 options)
 
+**⚠️ CRITICAL: Encounter Frequency Protocol**
+- See `.config/ENCOUNTER_EXPECTATIONS.md` for complete requirements
+- NEVER suggest encounter frequencies or when to roll
+- ALWAYS provide full encounter tables (programmatically copy from tier/terrain files)
+- DM decides all usage of encounter content
+
 ### Quest Generation
 
 **Always present options for:**
@@ -320,6 +326,7 @@ Update status as each option set is approved.
 ## See Also
 
 - `.config/DATA_PARITY_PROTOCOL.md` - File editing safety rules
+- `.config/ENCOUNTER_EXPECTATIONS.md` - **CRITICAL:** DM authority protocol (never suggest frequencies)
 - `.config/NOTION_SYNC_LESSONS.md` - Notion integration workflow
 - `.config/SESSION_FORMAT_SPEC.md` - Session document structure requirements
 - `Resources/So-You-Want-to-Be-a-Game-Master_Text.md` - Dungeon keying reference

@@ -1,28 +1,46 @@
-# Encounter Generation Command
+Start workflow-enforcer for encounter generation workflow, then present 3-4 encounter options for user to choose from.
 
-Generate a new encounter using the workflow-enforced process.
+⚠️ CRITICAL: Read .config/ENCOUNTER_EXPECTATIONS.md before generating encounter content
+- NEVER suggest encounter frequencies or when to roll
+- Provide encounter options only, DM decides usage
+- Respect DM authority over gameplay decisions
 
-## Process:
-1. Start workflow-enforcer for encounter generation
-2. Present 3-4 encounter options with:
-   - Encounter type (combat, environmental, social, trap, mixed)
-   - Difficulty (Easy, Medium, Hard, Deadly)
-   - Location (optional)
-   - Resource focus (spell_slots, hit_dice, abilities, mixed)
-3. Get user selection
-4. Generate encounter with selected parameters
-5. Show preview and get approval
-6. Save to Encounters/ directory and sync to Notion
+Use dnd-campaign MCP's generate_encounter tool with workflow enforcement.
 
-## Parameters (all optional):
-- **encounter_type**: combat | environmental | social | trap | mixed
-- **difficulty**: Easy | Medium | Hard | Deadly
-- **location**: Where the encounter takes place
-- **resource_focus**: spell_slots | hit_dice | abilities | mixed
+Parameters available (all optional):
+- encounter_type: combat | environmental | social | trap | mixed
+- difficulty: Easy | Medium | Hard | Deadly (default: Medium)
+- location: Where the encounter takes place
+- resource_focus: spell_slots | hit_dice | abilities | mixed (default: mixed)
 
-## Example Usage:
-```
-/encounter
-/encounter encounter_type=combat difficulty=Hard
-/encounter encounter_type=mixed location="Ratterdan Ruins" difficulty=Medium
-```
+Process:
+1. Start workflow: workflow-enforcer start_workflow(workflow_type="encounter_generation")
+2. Generate 3-4 encounter concept options with different combinations
+   - Include option: "Roll on Inspiring Encounter Tables"
+3. User selects one
+4. If user selected "inspiring encounter":
+   - Call /inspired-encounter with current location and auto_accept=false
+   - Present rolled encounter with re-theming options if needed
+   - User selects preferred version
+   - Integrate into encounter workflow
+5. Transition to generate_content stage
+6. Call generate_encounter with workflow_id and selected parameters
+7. Show preview with resource drain mechanics and tactics
+8. Get approval
+9. Save to Encounters/ directory and sync to Notion
+10. Complete workflow
+
+Inspired Encounter Integration:
+- When presenting options, always include "inspiring tables" as one option
+- If selected, use /inspired-encounter to roll and present
+- Re-theme as needed for current location
+- Preserve all mechanics (DCs, stats, rewards) from inspiring tables
+- Inject the selected inspiring encounter into the encounter document
+
+When Integrating Encounters into Sessions:
+- If adding to existing session file, follow SESSION_FORMAT_SPEC.md
+- Add encounter as H3 node under "## Nodes" section
+- Include all stat blocks inline or in **Toggle:** sections
+- Use tiered DC format for scene descriptions
+- Add creatures/NPCs to Quick Reference toggles
+- Keep self-contained for Notion compatibility (no external references)
