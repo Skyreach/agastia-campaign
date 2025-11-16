@@ -113,6 +113,42 @@ def get_notion_page_id(file_path: str) -> Optional[str]:
     file_state = state.get(category, {}).get(file_path, {})
     return file_state.get('notion_page_id')
 
+def needs_push_to_notion(file_path: str, buffer_seconds: int = 5) -> bool:
+    """
+    Determine if we should push to Notion based on file modification time.
+
+    Args:
+        file_path: Relative path from repo root
+        buffer_seconds: Minimum seconds since last push to consider re-syncing (default 5)
+
+    Returns:
+        True if file was modified after our last push (or never pushed)
+    """
+    import os
+
+    last_push = get_last_push_time(file_path)
+
+    # Full path to file
+    full_path = get_campaign_root() / file_path
+
+    # If file doesn't exist, skip
+    if not full_path.exists():
+        return False
+
+    # Get file modification time
+    file_mtime = datetime.fromtimestamp(os.path.getmtime(full_path), tz=timezone.utc)
+
+    # If we've never pushed, we should push
+    if last_push is None:
+        return True
+
+    # Calculate time difference (file mtime - last push)
+    diff = file_mtime - last_push
+    diff_seconds = diff.total_seconds()
+
+    # Only push if file was modified after last push (with buffer)
+    return diff_seconds > buffer_seconds
+
 def needs_pull_from_notion(file_path: str, notion_last_edited: datetime, buffer_hours: int = 1) -> bool:
     """
     Determine if we should pull from Notion based on timestamps.

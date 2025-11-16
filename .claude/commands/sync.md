@@ -1,4 +1,6 @@
-Run complete synchronization pipeline: verify sync status, sync all files to Notion, and commit/push changes.
+Run complete synchronization pipeline: verify sync status and commit/push changes.
+
+The pre-commit hook automatically handles Notion syncing intelligently (skips already-synced files).
 
 Process:
 
@@ -7,40 +9,32 @@ Process:
    - Reports local files vs Notion pages
    - Shows files needing sync
 
-2. **Sync All Files to Notion:**
-   - Run: `.config/safe_resync_all.sh`
-   - Syncs all campaign entities to Notion database
-   - Updates existing pages (never deletes)
-   - Categories: PCs, NPCs, Factions, Locations, Resources, Campaign Core, Sessions
-
-3. **Verify Sync Completed:**
-   - Run: `python3 .config/verify_sync_status.py` again
-   - Confirm all files now synced
-   - Report any remaining issues
-
-4. **Git Operations:**
+2. **Git Operations:**
    - Check status: `git status`
    - If changes exist:
      - Stage all: `git add .`
-     - Commit: `git commit -m "sync: Complete sync pipeline"`
+     - Commit: `git commit -m "sync: Sync campaign to Notion"`
      - Push: `git push` (in same command chain with commit)
-   - Pre-commit hook will run and sync to Notion automatically
+   - Pre-commit hook will:
+     - Check which files need syncing (based on mtime vs last push)
+     - Sync only modified files to Notion
+     - Auto-stage .notion_sync_state.json
    - Verify push succeeded
 
-5. **Report Results:**
+3. **Report Results:**
    - Files verified: X
-   - Files synced to Notion: Y
+   - Files synced by pre-commit: Y (only those needing sync)
+   - Files skipped: Z (already synced)
    - Git changes committed: Yes/No
    - Git push status: Success/Failed
    - Notion database URL: https://notion.so/281693f0c6b480be87c3f56fef9cc2b9
 
 Error Handling:
 - If verify_sync_status.py fails, report error and stop
-- If safe_resync_all.sh fails, report which file failed and stop
 - If git push fails, report error and suggest checking network/permissions
 - If no changes to commit, skip git operations and report "No changes"
 
 Notes:
-- File watcher (start_file_watcher.sh) should already be running
-- Pre-commit hook auto-syncs on every commit
-- This command is for manual full sync verification
+- Pre-commit hook intelligently skips already-synced files (checks mtime vs last push)
+- .notion_sync_state.json automatically staged/committed by pre-commit hook
+- File watcher (start_file_watcher.sh) should already be running for real-time sync

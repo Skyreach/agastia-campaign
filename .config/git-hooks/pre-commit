@@ -114,9 +114,26 @@ if ! python3 -c "import notion_client, frontmatter" 2>/dev/null; then
 fi
 
 SYNC_ERRORS=0
+SYNCED_COUNT=0
+SKIPPED_COUNT=0
+
 for file in $STAGED_FILES; do
     # Sync campaign markdown files
     if [[ $file =~ ^(Player_Characters|NPCs|Factions|Locations|Quests|Items|Sessions|Campaign_Core)/.*\.md$ ]]; then
+        # Check if file needs syncing using Python helper
+        NEEDS_SYNC=$(python3 -c "
+import sys
+sys.path.insert(0, '$CONFIG_DIR')
+from sync_state_manager import needs_push_to_notion
+print('true' if needs_push_to_notion('$file') else 'false')
+" 2>/dev/null)
+
+        if [ "$NEEDS_SYNC" != "true" ]; then
+            echo -e "${BLUE}   ⏭️  Skipping: $file (already synced)${NC}"
+            SKIPPED_COUNT=$((SKIPPED_COUNT + 1))
+            continue
+        fi
+
         # Determine entity type
         ENTITY_TYPE=""
         if [[ $file =~ ^Player_Characters/ ]]; then
@@ -138,9 +155,10 @@ for file in $STAGED_FILES; do
         fi
 
         if [ -n "$ENTITY_TYPE" ]; then
-            echo -e "${BLUE}   Syncing: $file (type: $ENTITY_TYPE)${NC}"
+            echo -e "${BLUE}   📤 Syncing: $file (type: $ENTITY_TYPE)${NC}"
             if python3 "$REPO_ROOT/sync_notion.py" "$file" "$ENTITY_TYPE" 2>&1 | grep -q "Created:\|Updated:"; then
                 echo -e "${GREEN}   ✅ Synced${NC}"
+                SYNCED_COUNT=$((SYNCED_COUNT + 1))
             else
                 echo -e "${YELLOW}   ⚠️  Sync failed (non-blocking)${NC}"
                 SYNC_ERRORS=$((SYNC_ERRORS + 1))
@@ -148,6 +166,22 @@ for file in $STAGED_FILES; do
         fi
     fi
 done
+
+# Auto-stage .notion_sync_state.json if it was modified
+if [ -f "$REPO_ROOT/.notion_sync_state.json" ]; then
+    if git diff --name-only .notion_sync_state.json | grep -q ".notion_sync_state.json"; then
+        echo -e "${BLUE}   📝 Auto-staging .notion_sync_state.json${NC}"
+        git add .notion_sync_state.json
+    fi
+fi
+
+if [ $SYNCED_COUNT -gt 0 ]; then
+    echo -e "${GREEN}   ✅ Synced $SYNCED_COUNT files${NC}"
+fi
+
+if [ $SKIPPED_COUNT -gt 0 ]; then
+    echo -e "${BLUE}   ⏭️  Skipped $SKIPPED_COUNT already-synced files${NC}"
+fi
 
 if [ $SYNC_ERRORS -gt 0 ]; then
     echo -e "${YELLOW}   ⚠️  $SYNC_ERRORS sync warnings (non-blocking)${NC}"

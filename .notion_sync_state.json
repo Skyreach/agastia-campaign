@@ -11,9 +11,9 @@
       "last_pushed_to_notion": "2025-11-16T01:36:03.546461+00:00"
     },
     "Sessions/Session_2_Road_to_Agastia.md": {
-      "notion_page_id": "2ad693f0c6b481de8ed7ef1ed8fa54aa",
+      "notion_page_id": "2ad693f0c6b481b487fce1c19dfa93f7",
       "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00",
-      "last_pushed_to_notion": "2025-11-16T01:48:31.000407+00:00"
+      "last_pushed_to_notion": "2025-11-16T13:51:20.552427+00:00"
     }
   },
   "entities": {
@@ -22,8 +22,8 @@
       "last_pushed_to_notion": "2025-11-16T01:30:19.522457+00:00"
     },
     "Player_Characters/PC_Josh.md": {
-      "notion_page_id": "2ad693f0c6b48146b65ec6d08e8e7677",
-      "last_pushed_to_notion": "2025-11-16T01:30:24.944304+00:00"
+      "notion_page_id": "2ad693f0c6b481bca0fcd5d6bfd77e7d",
+      "last_pushed_to_notion": "2025-11-16T13:51:02.890033+00:00"
     },
     "Player_Characters/PC_Kyle_Nameless.md": {
       "notion_page_id": "2ad693f0c6b481ce9fd3c1c1df2a359f",
@@ -168,6 +168,34 @@
     "Campaign_Core/The_Codex.md": {
       "notion_page_id": "2ad693f0c6b48169b317c96d0b4adfc9",
       "last_pushed_to_notion": "2025-11-16T01:35:39.406695+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Corvin_Tradewise.md": {
+      "notion_page_id": "2ad693f0c6b4811fafb3fa29f2f51e8f",
+      "last_pushed_to_notion": "2025-11-16T13:49:17.468077+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Harren_Dock_Worker.md": {
+      "notion_page_id": "2ad693f0c6b481eda7c1fd7a3fee8448",
+      "last_pushed_to_notion": "2025-11-16T13:49:25.248565+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Kex_the_Fence.md": {
+      "notion_page_id": "2ad693f0c6b4816cb49ceaf78e691342",
+      "last_pushed_to_notion": "2025-11-16T13:49:30.754429+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Mira_Saltwind.md": {
+      "notion_page_id": "2ad693f0c6b481eaa9f6efd818c04f81",
+      "last_pushed_to_notion": "2025-11-16T13:49:43.501817+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Mirella_Stonemark.md": {
+      "notion_page_id": "2ad693f0c6b4815aa8e7fd37c2e6e2de",
+      "last_pushed_to_notion": "2025-11-16T13:50:11.834690+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Veridian_Scrollkeeper.md": {
+      "notion_page_id": "2ad693f0c6b481b28761cbaf1b13d89c",
+      "last_pushed_to_notion": "2025-11-16T13:50:24.816043+00:00"
+    },
+    "NPCs/Major_NPCs/NPC_Krythak_Stormbringer.md": {
+      "notion_page_id": "2ad693f0c6b481c896abee851e629777",
+      "last_pushed_to_notion": "2025-11-16T13:50:47.475216+00:00"
     }
   }
 }
