@@ -1,13 +1,13 @@
 ---
 date: TBD
-name: Session 2 - Meridian's Rest
+name: Session 2 - Road to Agastia
 session_number: 2
 status: Planning
 version: "1.0.0"
 tags: [session2, meridians-rest, thorne-kallister, garreks-falls, downtime, crafting]
 ---
 
-# Session 2: Meridian's Rest - DM Guide
+# Session 2: Road to Agastia - DM Guide
 
 **Party:** Level 2 (5 PCs, corruption cleared) | **Duration:** 3-4 hours | **Type:** Quest hub + downtime
 
