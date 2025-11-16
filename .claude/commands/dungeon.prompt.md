@@ -46,3 +46,13 @@ Dungeon Design Principles:
 - Defensive logic: Why traps exist, who maintains them
 - Restocking rules: What happens when factions are eliminated
 - Monster lore: Behavior based on official sources
+
+When Integrating Dungeons into Sessions:
+- If adding to session file (session_number provided), follow SESSION_FORMAT_SPEC.md
+- Add dungeon rooms as H3 nodes under "## Nodes" section
+- Use AREA X: Room Name format for room headers
+- Include all stat blocks inline or in **Toggle:** sections
+- Use tiered DC format for room descriptions
+- Add key NPCs/monsters to Quick Reference toggles
+- Keep self-contained for Notion compatibility (no external references)
+- Use hierarchical structure builder for complex nested dungeons

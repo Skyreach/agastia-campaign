@@ -41,9 +41,29 @@ Inspired Encounter Integration for Sessions:
 - Inject as formatted encounter blocks within session document
 - Preserve tiered DC format and SESSION_FORMAT_SPEC.md compliance
 
-Session Format Requirements:
-- Must follow SESSION_FORMAT_SPEC.md structure
-- All scenes use tiered DC format (DC 10/13/16/19/22)
-- Collapsible sections for NPCs, items, rules
-- Mermaid flowchart showing session flow
-- Post-session debrief questions
+Session Format Requirements (SESSION_FORMAT_SPEC.md):
+
+**Required Sections (In Order):**
+1. Frontmatter (YAML: name, session_number, status, version, tags)
+2. H1 Title + Party Line
+3. Session Flowchart (Mermaid - MUST be before Quick Reference)
+4. Quick Reference (4-6 toggle categories: Flow, NPCs, Rewards, Items, Hints)
+5. Nodes (All under single H2 "Nodes", each node as H3, separated by ---)
+6. Post-Session Debrief (required section)
+
+**Critical Requirements:**
+- Self-contained: All NPCs inline with stats/DCs (no external file references)
+- All stat blocks inline or in toggles
+- All skill check DCs specified
+- Tiered DC format for all scene descriptions (| opening, DC 10/14/17/20)
+- Notion-compatible: No HTML tags, use **Toggle:** format
+- Planning notes go to .working/Session_X_Planning_Notes.md (separate file)
+
+**Before Marking status: Ready:**
+- [ ] All required sections present
+- [ ] All NPCs described inline
+- [ ] All combat encounters have stat blocks
+- [ ] All DCs specified
+- [ ] Nodes under single H2
+- [ ] Planning notes separated to .working/
+- [ ] File runnable from Notion (no external dependencies)

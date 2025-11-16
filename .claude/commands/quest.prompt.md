@@ -33,3 +33,11 @@ Quest Structure:
 - Node-based progression with travel/completion times
 - Success/failure/abandon outcomes for each node
 - Impending doom if quest abandoned
+
+When Integrating Quests into Sessions:
+- If adding to existing session file, follow SESSION_FORMAT_SPEC.md
+- Add quest as H3 node under "## Nodes" section
+- Include all NPCs inline with stats/DCs (no external references)
+- Use tiered DC format for descriptions
+- Add to Quick Reference toggles (NPCs, Rewards, Items)
+- Keep self-contained for Notion compatibility

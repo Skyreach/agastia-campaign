@@ -31,3 +31,11 @@ Inspired Encounter Integration:
 - Re-theme as needed for current location
 - Preserve all mechanics (DCs, stats, rewards) from inspiring tables
 - Inject the selected inspiring encounter into the encounter document
+
+When Integrating Encounters into Sessions:
+- If adding to existing session file, follow SESSION_FORMAT_SPEC.md
+- Add encounter as H3 node under "## Nodes" section
+- Include all stat blocks inline or in **Toggle:** sections
+- Use tiered DC format for scene descriptions
+- Add creatures/NPCs to Quick Reference toggles
+- Keep self-contained for Notion compatibility (no external references)
