@@ -1,7 +1,8 @@
 #!/bin/bash
 # Fix hardcoded paths in all Python scripts
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Hardcoded paths to prevent nested directory issues
+SCRIPT_DIR="/mnt/e/dnd/agastia-campaign/.config"
 
 # List of files to fix
 FILES=(

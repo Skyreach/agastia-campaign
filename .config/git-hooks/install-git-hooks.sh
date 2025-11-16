@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+# Hardcoded paths to prevent nested directory issues
+REPO_ROOT="/mnt/e/dnd/agastia-campaign"
+SCRIPT_DIR="$REPO_ROOT/.config/git-hooks"
 GIT_HOOKS_DIR="$REPO_ROOT/.git/hooks"
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

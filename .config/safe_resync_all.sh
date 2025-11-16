@@ -5,8 +5,8 @@ echo "=== SAFE RE-SYNC OF ALL CAMPAIGN ENTITIES ==="
 echo "This script will UPDATE existing entities, not delete anything"
 echo ""
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CAMPAIGN_ROOT="$(dirname "$SCRIPT_DIR")"
+# Hardcoded paths to prevent nested directory issues
+CAMPAIGN_ROOT="/mnt/e/dnd/agastia-campaign"
 cd "$CAMPAIGN_ROOT"
 
 echo "PCs (5):"

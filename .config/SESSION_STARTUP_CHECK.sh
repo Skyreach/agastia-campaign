@@ -4,8 +4,12 @@
 
 set -e  # Exit on any error
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CAMPAIGN_ROOT="$(dirname "$SCRIPT_DIR")"
+# Hardcoded paths to prevent nested directory issues
+CAMPAIGN_ROOT="/mnt/e/dnd/agastia-campaign"
+SCRIPT_DIR="$CAMPAIGN_ROOT/.config"
+
+# Ensure we're in the correct directory
+cd "$CAMPAIGN_ROOT"
 
 echo "============================================================"
 echo "🔍 SESSION STARTUP CHECK"

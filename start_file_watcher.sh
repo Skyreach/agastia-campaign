@@ -1,7 +1,8 @@
 #!/bin/bash
 # Start the file watcher in the background
 
-cd "$(dirname "$0")"
+# Hardcoded path to prevent nested directory issues
+cd "/mnt/e/dnd/agastia-campaign"
 
 # Check if already running
 if pgrep -f "file_watcher.js" > /dev/null; then

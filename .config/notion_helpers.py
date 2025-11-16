@@ -26,13 +26,12 @@ DB_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
 LANDING_PAGE_ID = '281693f0c6b480369eadc2ba40e70f77'
 
 def get_campaign_root():
-    """Get campaign root directory (parent of .config)"""
-    config_dir = Path(__file__).parent
-    return config_dir.parent
+    """Get campaign root directory - hardcoded to prevent nested directory issues"""
+    return Path("/mnt/e/dnd/agastia-campaign")
 
 def get_config_dir():
-    """Get .config directory path"""
-    return Path(__file__).parent
+    """Get .config directory path - hardcoded to prevent nested directory issues"""
+    return Path("/mnt/e/dnd/agastia-campaign/.config")
 
 def load_notion_key():
     """Load Notion API key from .config/notion_key.txt"""

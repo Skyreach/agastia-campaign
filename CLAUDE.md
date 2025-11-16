@@ -85,6 +85,12 @@ This installs critical behavior hooks to `~/.claude/` that enforce git push requ
 
 **BEFORE DOING ANYTHING ELSE, RUN THESE COMMANDS IN ORDER:**
 
+0. **Ensure Correct Working Directory:**
+```bash
+cd /mnt/e/dnd/agastia-campaign && pwd
+```
+**CRITICAL:** All scripts use hardcoded paths to `/mnt/e/dnd/agastia-campaign`. Always verify you're in the correct directory before running any commands.
+
 1. **Start File Watcher (auto-syncs to Notion):**
 ```bash
 ./start_file_watcher.sh
