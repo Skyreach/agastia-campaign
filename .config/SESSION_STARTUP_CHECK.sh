@@ -77,9 +77,29 @@ python3 "$SCRIPT_DIR/workflow_recovery.py" || {
     echo "   ℹ️  See workflow recovery information above"
 }
 
-# Check 7: Hook Error Logs
+# Check 7: Slash Commands Symlink
 echo
-echo "7️⃣  Checking hook error logs..."
+echo "7️⃣  Checking slash commands symlink..."
+PARENT_DIR="$(dirname "$CAMPAIGN_ROOT")"
+COMMANDS_LINK="$PARENT_DIR/.claude/commands"
+if [[ ! -L "$COMMANDS_LINK" ]]; then
+    echo "   ❌ FAIL: Slash commands symlink missing at $COMMANDS_LINK"
+    echo "   Run: cd $PARENT_DIR && mkdir -p .claude && ln -sf \"\$(pwd)/agastia-campaign/.claude/commands\" .claude/commands"
+    exit 1
+elif [[ "$(readlink -f "$COMMANDS_LINK")" != "$CAMPAIGN_ROOT/.claude/commands" ]]; then
+    echo "   ❌ FAIL: Slash commands symlink points to wrong location"
+    echo "   Expected: $CAMPAIGN_ROOT/.claude/commands"
+    echo "   Got: $(readlink -f "$COMMANDS_LINK")"
+    exit 1
+else
+    echo "   ✅ Slash commands symlink OK"
+    NUM_COMMANDS=$(ls "$COMMANDS_LINK"/*.md 2>/dev/null | grep -v "\.prompt\.md$" | wc -l)
+    echo "   ℹ️  $NUM_COMMANDS commands available"
+fi
+
+# Check 8: Hook Error Logs
+echo
+echo "8️⃣  Checking hook error logs..."
 HOOK_ERRORS=0
 
 # Check each hook log for recent errors (last 10 lines)
