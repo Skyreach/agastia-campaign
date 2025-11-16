@@ -1,16 +1,19 @@
 {
   "sessions": {
     "Sessions/Session_0_Character_Creation.md": {
-      "notion_page_id": "283693f0c6b48154a631f077040d6104",
-      "last_pulled_from_notion": "2025-11-15T22:24:47.483614+00:00"
+      "notion_page_id": "2ac693f0c6b4817c9baef5c594ac9e78",
+      "last_pulled_from_notion": "2025-11-15T22:24:47.483614+00:00",
+      "last_pushed_to_notion": "2025-11-15T22:27:56.077262+00:00"
     },
     "Sessions/Session_1_Caravan_to_Ratterdan.md": {
-      "notion_page_id": "283693f0c6b481968533d7385aa69147",
-      "last_pulled_from_notion": "2025-11-15T22:24:57.383097+00:00"
+      "notion_page_id": "2ac693f0c6b48101b72cc369bf50032d",
+      "last_pulled_from_notion": "2025-11-15T22:24:57.383097+00:00",
+      "last_pushed_to_notion": "2025-11-15T22:28:06.986107+00:00"
     },
-    "Sessions/Session_2_WIP_Planning.md": {
-      "notion_page_id": "290693f0c6b481cd871de99979ce666b",
-      "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00"
+    "Sessions/Session_2_Road_to_Agastia.md": {
+      "notion_page_id": "2ac693f0c6b481b0be3ee3f857e5cbbe",
+      "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00",
+      "last_pushed_to_notion": "2025-11-15T23:37:11.104886+00:00"
     }
   },
   "entities": {}

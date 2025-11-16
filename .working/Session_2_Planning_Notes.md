@@ -1,23 +1,15 @@
----
-name: Session 2 - Planning (WIP)
-type: Session
-session_number: 2
-status: Planning
-version: "0.2.0"
-date: TBD
-tags: [session2, wip, player-hints, revelation-system, geist-investigation]
----
+# Session 2 - Planning Notes (Meta)
 
-# Session 2: Planning (Work In Progress)
-
-**Status:** Designing player hint/clue systems
-**Date:** 2025-01-20 (updated 2025-10-18)
+**Status:** Moved from main session file to keep session runnable
+**Date Created:** 2025-01-20
+**Last Updated:** 2025-10-18
 
 ---
 
-## Current TODOs
+## Session 2 TODOs
 
 ### High Priority
+
 1. **Document Codex design in artifact file** - Define complete artifact mechanics
 2. **Create NPC: Mayor of Meridian's Rest** - Session 2 quest giver
 3. **Update Session 2 notes with NPCs and hook** - Integrate Thava + Torvin
@@ -26,17 +18,19 @@ tags: [session2, wip, player-hints, revelation-system, geist-investigation]
 6. **Propose Session 2 magical plots** - Fantastic element integration
 
 ### Player Hint Systems (In Progress)
-7. **Design hints for Nameless: Geist/Kaelborn investigation leads** - 3-3-3-1 web structure (IN PROGRESS)
-8. **Design hints for Manny: Codex location clues** - Three Clue Rule application
-9. **Design hints for Nikki: Temporal Bloodline leads** - NPC/location discovery
-10. **Design hints for Josh: Ancestor/civilization clues** - Elemental marking connections
-11. **Design hints for Ian: Storm Giant brigade information** - Revenge arc progression
+
+1. **Design hints for Nameless: Geist/Kaelborn investigation leads** - 3-3-3-1 web structure (IN PROGRESS)
+2. **Design hints for Manny: Codex location clues** - Three Clue Rule application
+3. **Design hints for Nikki: Temporal Bloodline leads** - NPC/location discovery
+4. **Design hints for Josh: Ancestor/civilization clues** - Elemental marking connections
+5. **Design hints for Ian: Storm Giant brigade information** - Revenge arc progression
 
 ### Session Structure
-12. **Design hunt/defense quest for group income** - Money-making opportunity
-13. **Design downtime opportunity in Session 2** - Rest/craft/research time
-14. **Design crafting system introduction (potions/scrolls)** - Unlock crafting mechanics
-15. **Design 3 indirect quests leading to Keeper's Sanctuary hook** - Main quest setup
+
+1. **Design hunt/defense quest for group income** - Money-making opportunity
+2. **Design downtime opportunity in Session 2** - Rest/craft/research time
+3. **Design crafting system introduction (potions/scrolls)** - Unlock crafting mechanics
+4. **Design 3 indirect quests leading to Keeper's Sanctuary hook** - Main quest setup
 
 ---
 
@@ -130,9 +124,10 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 
 ## Codex Design - COMPLETE
 
-**Full Documentation:** [Artifact_Codex_of_Peace.md](../Artifacts/Artifact_Codex_of_Peace.md)
+**Full Documentation:** `Artifacts/Artifact_Codex_of_Peace.md`
 
 ### Summary
+
 - **Artifact:** Book of Peace with 7 metal pages, bound to pedestal
 - **Guardian Faction:** Temporal Bloodline Tribe
 - **Location:** Garrek's Falls (Underdark) - hidden healing sanctuary
@@ -142,61 +137,35 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 - **Quest Hook:** Fragment recovery using bindings as compass
 
 ### Garrek's Falls Features
+
 - **Healing Aura:** Continuous *lesser restoration* from moisture in air
 - **Healing Waters:** Single draught regrows limbs, restores HP, cures disease, raises dead (<72hrs)
 - **Danger:** Highly addictive water (DC 12 Wis save or drown trying to consume more)
 - **Evidence:** Skeletal remains in pool (DC 20 Perception)
 
 ### Player Hooks
+
 - **Manny:** Legendary artifact for study, fragment recovery quest
 - **Nikki:** Temporal Bloodline sanctuary connection, potential ally
 - **Brand/Josh:** Temporal Bloodline may know about his ancestor civilization
 
 ---
 
-## NPCs Created for Session 2
-
-### Torvin Greycask
-- **Role:** Rakash's contact in Meridian's Rest
-- **Function:** Provides introduction letter to Agastia patron
-- **Payment:** 5 gp for letter + basic intel
-- **File:** `NPCs/Location_NPCs/NPC_Torvin_Greycask.md`
-
-### Thava Thornscale
-- **Role:** Patron (Merit Council - Office of Artifact Preservation)
-- **Function:** Hires party to clear corruption from Meridian's Rest (Rakash's hometown)
-- **Payment:** 500 gp for clearing corruption
-- **Initial Reaction:** Suspicious (rolled 6 on reaction table)
-- **File:** `NPCs/Location_NPCs/NPC_Thava_Thornscale.md`
-
-### Thorne "The Bear" Kallister
-- **Role:** Mayor of Meridian's Rest (retired adventurer)
-- **Function:** Three-quest structure for party income and trust-building
-- **Quest 1:** Monster Hunt (50 gp - tests competence)
-- **Quest 2:** Defend Against Moon's Assault (earns trust)
-- **Quest 3:** Investigate Garrek's Falls rumors (personal quest, leads to Codex)
-- **Backstory:** Former party member Garrek discovered the Falls 20+ years ago, died before exploring it
-- **File:** `NPCs/Location_NPCs/NPC_Thorne_Kallister.md`
-
-### Pending NPCs
-- **Harren (Dock Worker)** - Entry node for Geist investigation
-- **Mira Saltwind (Merchant)** - Entry node for Geist investigation
-- **Rival Smuggler** - Entry node for Geist investigation
-
----
-
 ## Player Character Corrections Made
 
 ### Nikki (PC_Nikki.md)
+
 - **Fixed:** Subject number from #8 to #2
 - **Added:** "Seek members of Temporal Bloodline" to active goals
 - **Clarified:** She is SEEKING people with temporal ability, not possessing it herself
 
 ### Rakash (PC_Ian_Rakash.md)
+
 - **Removed:** Temporal powers from giant's axe (was incorrect assumption)
 - **Simplified:** Axe is just a giant weapon, no magical properties (yet)
 
 ### Brand/Josh (PC_Josh.md)
+
 - **Added:** Elemental nature (thunder/lightning) to demonic markings
 - **Removed:** Any temporal magic associations
 - **Clarified:** Markings react to elemental magic, storms, electrical phenomena
@@ -206,6 +175,7 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 ## Faction Updates
 
 ### Geist & Kaelborn's Bandit Network
+
 - **Geist:** Now public figure with Merit Council position (Trade Inspector)
 - **Operating Method:** Uses official authority to protect criminal operations
 - **Safe House:** Disguised as legitimate "confiscated goods warehouse"
@@ -213,89 +183,30 @@ Path C: Rival → Informants → Testimonial evidence → Revelation
 
 ---
 
-## Session 2 Structure
-
-### Opening: Corruption Already Cleared
-- **Status:** Party successfully cleared corruption from Meridian's Rest (Session 1 completion)
-- **Patron:** Thava Thornscale arrives to acknowledge success and pay reward
-- **Payment:** 500 gp from Thava for corruption-clearing mission
-- **Location:** Meridian's Rest (now safe, entering recovery period)
-- **Party Status:** Downtime period begins - town grateful, opportunities available
-
-### Downtime Period: Thorne's Quest Opportunities
-
-**Context:** With corruption cleared, Meridian's Rest is rebuilding. Mayor Thorne offers work to capable adventurers who just saved his town.
-
-### Thorne's Quest Structure (Income + Trust Building)
-
-**Quest 1: Monster Hunt**
-- Practical income: 50 gp for killing creature on trade road
-- Tests party's combat capability
-- Thorne evaluates their tactics and teamwork
-
-**Quest 2: Defend Against Moon's Assault**
-- Town defense scenario (lycanthropes, berserkers)
-- No pay, but earns Thorne's deep trust
-- Thorne fights alongside party (limited due to old injury)
-- Party receives tactical advice during battle
-
-**Quest 3: Investigate Garrek's Falls (Unlocks After Quests 1 & 2)**
-- Personal quest: Thorne reveals his friend Garrek discovered healing waterfall 20+ years ago
-- Provides Garrek's partially burned journal (map fragment, warnings about addictive water)
-- Payment: 100 gp + "anything Garrek left behind is yours"
-- **Actual Discovery:** Leads to Garrek's Falls, Temporal Bloodline Tribe, Codex of Peace
-- **Clue System:** Journal provides hints for Manny (mentions book) and Nikki (mentions "time seems wrong")
-
-### Downtime Activities
-
-**Crafting System:** See `.config/DOWNTIME_CRAFTING_SYSTEM.md` for full rules
-
-**The Rest as Crafting Hub:**
-- Population: ~2000 (half transient travelers)
-- Function: Resupply hub for adventurers heading to/from Agastia
-- Ingredients: Available in nearby forests and caves
-- NPCs: Greta Moss (apothecary), Aldwin Quill (scribe) offer 15-20% discounts (gratitude)
-
-**Crafting Options:**
-- Healing Potions: 1 day, 25 gp (or 12 gp if gather moonbell flowers)
-- Greater Healing: 2 days, 100 gp (or 50 gp if gather silverleaf + cave crystals)
-- Scrolls: 1-3 days, 15-250 gp depending on spell level
-- Other consumables: Antitoxin, Alchemist's Fire, etc.
-
-**Time Available:**
-- Quest 1 → Quest 2: 2-3 days (craft 2 common or 1 uncommon item)
-- Quest 2 → Quest 3: 1-2 days (finish in-progress items)
-- Post-Quest 3: Extended time if party wants to prep for Garrek's Falls
-
-**Personal Investigations:**
-- Kyle: Geist rumors in Agastia
-- Manny/Nikki: Study Garrek's journal (Quest 3 reward)
-- Josh/Brand: Talk with Thorne about elemental ancestors
-- Ian/Rakash: Storm Giant information, town recovery
-
-### Player Hint Distribution (During Downtime)
-- **Kyle/Nameless:** Rumors about Geist operation in Agastia (prepare for future travel)
-- **Manny:** Garrek's journal mentions ancient book at waterfall (from Quest 3)
-- **Nikki:** Garrek's journal mentions "time seems wrong" near Falls (from Quest 3)
-- **Josh/Brand:** Thorne's war stories may reference elemental ancestors
-- **Ian/Rakash:** Storm Giant information from Thorne's adventuring days
-
----
-
 ## Technical Notes
 
 ### MCP Tools Used
+
 - `generate_npc` - Created Torvin and Thava with modular system
 - `generate_revelation` - (In testing) 3-3-3-1 web structure for clue systems
 - `roll_reaction` - Generated Thava's initial suspicious attitude
 
 ### File Watcher Status
+
 - Active and syncing to Notion
 - All entity changes automatically synced
 - Pre-commit hooks enforce format validation
 
 ---
 
+## Random Session Notes
+
+- Rakash wants to pay back the group in services
+- TODO: give 2 scholar names for Monomi's artifact
+
+---
+
 **Version History:**
 - 2025-01-20: Initial brainstorming session, 6 campaign fronts proposed
 - 2025-10-18: Pivoted to player hint systems, 3-3-3-1 revelation structure, Geist investigation design
+- 2025-11-15: Extracted planning notes from main session file (Session 2 restructure)

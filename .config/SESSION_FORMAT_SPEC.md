@@ -362,11 +362,76 @@ DC 14: As above and: Corruption pulses through it, reality warps nearby
 
 ---
 
+## Content Guidelines: What Belongs Where
+
+### ✅ INCLUDE in Session Files (Runnable Content)
+
+**Must be self-contained for Notion use:**
+- All NPCs appearing in this session (inline descriptions with stats/DCs)
+- All stat blocks for combat encounters (inline or in toggles)
+- All DCs for skill checks
+- Quest objectives and rewards
+- Read-aloud text for atmosphere
+- Flowcharts showing session structure
+- Quick reference toggles
+- Post-session debrief section
+
+**Example inline stat block:**
+```markdown
+**Shadow Guard:** AC 14, HP 30, ATK +5 (1d8+3 necrotic), Special: Resistance to non-magical damage
+```
+
+### ❌ EXCLUDE from Session Files (Planning Content)
+
+**Move to `.working/Session_X_Planning_Notes.md` instead:**
+- Planning notes and TODOs
+- Design discussion and alternatives considered
+- Revelation system implementation details (3-3-3-1 web structures)
+- Technical notes about MCP tools
+- Version history and changelog
+- Faction/world lore not directly relevant to running the session
+- Player hint systems design documentation
+- NPC design notes and alternatives
+- Random session notes and brainstorming
+
+**Why:** Session files must be runnable from Notion without external references. Planning content clutters the DM guide.
+
+---
+
+## Post-Session Debrief (Required Section)
+
+**ALL session files MUST include this final section:**
+
+```markdown
+## Post-Session Debrief
+
+**Toggle: Debrief Questions**
+
+**Ask player/DM after session:**
+1. Did X critical event happen?
+2. What did players choose at Y decision point?
+3. Which PCs pursued personal quests?
+4. Any major consequences or complications?
+5. Which NPCs did players interact with?
+
+**Then update:**
+- PC knowledge sections with new discoveries
+- Campaign state files with world changes
+- Faction relationships if affected
+- NPC files with relationship changes
+- Prepare Session X+1 based on player choices
+```
+
+**Purpose:** Maintains campaign continuity and tracks session outcomes.
+
+---
+
 ## File Checklist Before Syncing to Notion
 
-- [ ] Frontmatter present with all required fields
+- [ ] Frontmatter present with all required fields (name, session_number, status, version, tags)
 - [ ] Mermaid flowchart appears FIRST (before Quick Reference)
 - [ ] Quick Reference uses toggles, not HTML details
+- [ ] Quick Reference has 4-6 toggle categories
 - [ ] All nodes under single "## Nodes" H2
 - [ ] Nodes separated by `---`
 - [ ] Descriptions use tiered DC format (pipe | for opening, DC tiers below)
@@ -374,6 +439,27 @@ DC 14: As above and: Corruption pulses through it, reality warps nearby
 - [ ] Toggles formatted as `**Toggle: Title**` on own line
 - [ ] Code blocks use triple backticks with language
 - [ ] All emphasis uses markdown (**bold**, *italic*, `code`)
+- [ ] All NPCs described inline (no external file references)
+- [ ] All stat blocks inline or in toggles
+- [ ] Post-Session Debrief section present
+- [ ] Planning notes moved to `.working/` directory
+- [ ] File is self-contained (runnable from Notion)
+
+---
+
+## Validation Checklist Before Marking `status: Ready`
+
+Before changing `status: Planning` → `status: Ready`:
+
+- [ ] All required sections present (frontmatter, flowchart, quick reference, nodes, debrief)
+- [ ] All NPCs in session have inline descriptions with relevant stats/DCs
+- [ ] All combat encounters have stat blocks (inline or toggles)
+- [ ] All skill check DCs specified
+- [ ] All nodes have clear objectives
+- [ ] All scene descriptions use tiered DC format
+- [ ] File passes format checklist above
+- [ ] Planning notes separated to `.working/` directory
+- [ ] Session can be run using only this file (no external dependencies)
 
 ---
 
