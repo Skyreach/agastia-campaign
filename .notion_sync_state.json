@@ -1,20 +1,173 @@
 {
   "sessions": {
     "Sessions/Session_0_Character_Creation.md": {
-      "notion_page_id": "2ac693f0c6b4817c9baef5c594ac9e78",
+      "notion_page_id": "2ad693f0c6b481b99b7ee8f35f3c5004",
       "last_pulled_from_notion": "2025-11-15T22:24:47.483614+00:00",
-      "last_pushed_to_notion": "2025-11-15T22:27:56.077262+00:00"
+      "last_pushed_to_notion": "2025-11-16T01:35:57.240565+00:00"
     },
     "Sessions/Session_1_Caravan_to_Ratterdan.md": {
-      "notion_page_id": "2ac693f0c6b48101b72cc369bf50032d",
+      "notion_page_id": "2ad693f0c6b481ca9a3de97499e399d3",
       "last_pulled_from_notion": "2025-11-15T22:24:57.383097+00:00",
-      "last_pushed_to_notion": "2025-11-15T22:28:06.986107+00:00"
+      "last_pushed_to_notion": "2025-11-16T01:36:03.546461+00:00"
     },
     "Sessions/Session_2_Road_to_Agastia.md": {
-      "notion_page_id": "2ad693f0c6b481ae8a4eeed7cdb1e557",
+      "notion_page_id": "2ad693f0c6b4813d823ac8e9f2168b5a",
       "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00",
-      "last_pushed_to_notion": "2025-11-16T00:53:35.742032+00:00"
+      "last_pushed_to_notion": "2025-11-16T01:36:09.528312+00:00"
     }
   },
-  "entities": {}
+  "entities": {
+    "Player_Characters/PC_Ian_Rakash.md": {
+      "notion_page_id": "2ad693f0c6b4812a8d8ac01607159e2d",
+      "last_pushed_to_notion": "2025-11-16T01:30:19.522457+00:00"
+    },
+    "Player_Characters/PC_Josh.md": {
+      "notion_page_id": "2ad693f0c6b48146b65ec6d08e8e7677",
+      "last_pushed_to_notion": "2025-11-16T01:30:24.944304+00:00"
+    },
+    "Player_Characters/PC_Kyle_Nameless.md": {
+      "notion_page_id": "2ad693f0c6b481ce9fd3c1c1df2a359f",
+      "last_pushed_to_notion": "2025-11-16T01:30:30.555702+00:00"
+    },
+    "Player_Characters/PC_Manny.md": {
+      "notion_page_id": "2ad693f0c6b4817ea948cea00b3c91ef",
+      "last_pushed_to_notion": "2025-11-16T01:30:39.319828+00:00"
+    },
+    "Player_Characters/PC_Nikki.md": {
+      "notion_page_id": "2ad693f0c6b481a68cf5c94a70267771",
+      "last_pushed_to_notion": "2025-11-16T01:30:43.241089+00:00"
+    },
+    "NPCs/Faction_NPCs/Decimate_Project_Subjects.md": {
+      "notion_page_id": "2ad693f0c6b4812f9a9acaaa00431b0e",
+      "last_pushed_to_notion": "2025-11-16T01:30:59.311883+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Decum_Subject10.md": {
+      "notion_page_id": "2ad693f0c6b481939ee5df0adcb73467",
+      "last_pushed_to_notion": "2025-11-16T01:31:03.346367+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Hexus_Subject6.md": {
+      "notion_page_id": "2ad693f0c6b4814296c5db47057e47e1",
+      "last_pushed_to_notion": "2025-11-16T01:31:06.545730+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Nona_Subject9.md": {
+      "notion_page_id": "2ad693f0c6b4816eaf0efc66d85b8281",
+      "last_pushed_to_notion": "2025-11-16T01:31:09.819986+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Octavia_Subject8.md": {
+      "notion_page_id": "2ad693f0c6b481cbbe44ed61f71ab125",
+      "last_pushed_to_notion": "2025-11-16T01:31:15.990508+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Quincy_Subject5.md": {
+      "notion_page_id": "2ad693f0c6b4814fb2b7ebeda8a1b6a6",
+      "last_pushed_to_notion": "2025-11-16T01:31:18.905500+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Septimus_Subject7.md": {
+      "notion_page_id": "2ad693f0c6b4812ebc30deda407d7614",
+      "last_pushed_to_notion": "2025-11-16T01:31:26.509989+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Tetran_Subject4.md": {
+      "notion_page_id": "2ad693f0c6b4814dbbecc427bd81e6ba",
+      "last_pushed_to_notion": "2025-11-16T01:31:28.325087+00:00"
+    },
+    "NPCs/Faction_NPCs/NPC_Trinity_Subject3.md": {
+      "notion_page_id": "2ad693f0c6b4815cbf1adeb3041d876b",
+      "last_pushed_to_notion": "2025-11-16T01:31:39.344377+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Thava_Thornscale.md": {
+      "notion_page_id": "2ad693f0c6b481a59eacc056a01b513b",
+      "last_pushed_to_notion": "2025-11-16T01:31:46.427341+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Torvin_Greycask.md": {
+      "notion_page_id": "2ad693f0c6b4817d8da5cf623ab05dc5",
+      "last_pushed_to_notion": "2025-11-16T01:32:09.940102+00:00"
+    },
+    "NPCs/Major_NPCs/Professor_Zero.md": {
+      "notion_page_id": "2ad693f0c6b481cfb427e54ccd28acd4",
+      "last_pushed_to_notion": "2025-11-16T01:32:15.631018+00:00"
+    },
+    "NPCs/Major_NPCs/Steel_Dragon.md": {
+      "notion_page_id": "2ad693f0c6b4810dae36d5bc5f9801c4",
+      "last_pushed_to_notion": "2025-11-16T01:32:26.512541+00:00"
+    },
+    "NPCs/Major_NPCs/The_Patron.md": {
+      "notion_page_id": "2ad693f0c6b4816b8f4fc8bc4995b7f1",
+      "last_pushed_to_notion": "2025-11-16T01:32:44.136678+00:00"
+    },
+    "NPCs/Mystery_NPCs/Blood_Target_Unknown.md": {
+      "notion_page_id": "2ad693f0c6b4815aa755c8e30484c229",
+      "last_pushed_to_notion": "2025-11-16T01:32:49.395327+00:00"
+    },
+    "Factions/Faction_Bandit_Network_Geist_Kaelborn.md": {
+      "notion_page_id": "2ad693f0c6b48190a868e1a98ba18d90",
+      "last_pushed_to_notion": "2025-11-16T01:32:56.322243+00:00"
+    },
+    "Factions/Faction_Chaos_Cult.md": {
+      "notion_page_id": "2ad693f0c6b481c4a22de0ce9f83e87b",
+      "last_pushed_to_notion": "2025-11-16T01:33:01.222992+00:00"
+    },
+    "Factions/Faction_Decimate_Project.md": {
+      "notion_page_id": "2ad693f0c6b481059995d87590e2c5e8",
+      "last_pushed_to_notion": "2025-11-16T01:33:09.389136+00:00"
+    },
+    "Factions/Faction_Dispossessed.md": {
+      "notion_page_id": "2ad693f0c6b4811e9869fc5da856c559",
+      "last_pushed_to_notion": "2025-11-16T01:33:15.887203+00:00"
+    },
+    "Factions/Faction_Merit_Council.md": {
+      "notion_page_id": "2ad693f0c6b4812e81e5c39f805889b1",
+      "last_pushed_to_notion": "2025-11-16T01:33:19.640691+00:00"
+    },
+    "Factions/Faction_Storm_Giant_Warband.md": {
+      "notion_page_id": "2ad693f0c6b48163b806d548524c2ccb",
+      "last_pushed_to_notion": "2025-11-16T01:33:28.649106+00:00"
+    },
+    "Locations/Cities/Agastia_City.md": {
+      "notion_page_id": "2ad693f0c6b481c19b61c153ba509f52",
+      "last_pushed_to_notion": "2025-11-16T01:33:34.570307+00:00"
+    },
+    "Locations/Districts/Government_Complex.md": {
+      "notion_page_id": "2ad693f0c6b4819cabfdd7b821e8d9ba",
+      "last_pushed_to_notion": "2025-11-16T01:34:03.962971+00:00"
+    },
+    "Locations/Districts/Merchant_District.md": {
+      "notion_page_id": "2ad693f0c6b4814d8c61e20a1eb0fb06",
+      "last_pushed_to_notion": "2025-11-16T01:34:07.979969+00:00"
+    },
+    "Locations/Districts/Scholar_Quarter.md": {
+      "notion_page_id": "2ad693f0c6b4812b869fc708f810ea92",
+      "last_pushed_to_notion": "2025-11-16T01:34:23.838386+00:00"
+    },
+    "Locations/Regions/Agastia_Region.md": {
+      "notion_page_id": "2ad693f0c6b481e1b892e2024039e79b",
+      "last_pushed_to_notion": "2025-11-16T01:34:31.227535+00:00"
+    },
+    "Locations/Towns/Meridians_Rest.md": {
+      "notion_page_id": "2ad693f0c6b4817e9728d4f433197d74",
+      "last_pushed_to_notion": "2025-11-16T01:34:36.600630+00:00"
+    },
+    "Locations/Wilderness/Infinite_Forest.md": {
+      "notion_page_id": "2ad693f0c6b48114b670e631d917fbc6",
+      "last_pushed_to_notion": "2025-11-16T01:34:50.291596+00:00"
+    },
+    "Locations/Wilderness/Ratterdan_Ruins.md": {
+      "notion_page_id": "2ad693f0c6b481b1a680cb70fbeb7b2c",
+      "last_pushed_to_notion": "2025-11-16T01:35:01.575971+00:00"
+    },
+    "Campaign_Core/Animated_Heartstone_Artifact.md": {
+      "notion_page_id": "2ad693f0c6b481fba614ec2bd5b009d7",
+      "last_pushed_to_notion": "2025-11-16T01:35:14.346367+00:00"
+    },
+    "Campaign_Core/Campaign_Overview.md": {
+      "notion_page_id": "2ad693f0c6b481b6b3c1e975742f7699",
+      "last_pushed_to_notion": "2025-11-16T01:35:18.549914+00:00"
+    },
+    "Campaign_Core/Giant_Axe_Artifact.md": {
+      "notion_page_id": "2ad693f0c6b481b08c03c1b9a042af21",
+      "last_pushed_to_notion": "2025-11-16T01:35:24.771924+00:00"
+    },
+    "Campaign_Core/The_Codex.md": {
+      "notion_page_id": "2ad693f0c6b48169b317c96d0b4adfc9",
+      "last_pushed_to_notion": "2025-11-16T01:35:39.406695+00:00"
+    }
+  }
 }
