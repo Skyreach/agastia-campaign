@@ -8,7 +8,7 @@ The Hex Map Editor is configured to deploy automatically to GitHub Pages wheneve
 
 Once deployed, the tool will be available at:
 ```
-https://skyreach.github.io/agastia-campaign/tools/hex-map-editor/
+https://skyreach.github.io/agastia-campaign/
 ```
 
 Repository: https://github.com/Skyreach/agastia-campaign
@@ -70,11 +70,11 @@ The GitHub Actions workflow (`.github/workflows/deploy-hex-editor.yml`) automati
 ```js
 export default defineConfig({
   plugins: [react()],
-  base: '/agastia-campaign/tools/hex-map-editor/',
+  base: '/agastia-campaign/',
 })
 ```
 
-The `base` path ensures assets load correctly on GitHub Pages.
+The `base` path ensures assets load correctly on GitHub Pages. Since the workflow deploys the `dist/` folder to the root of the GitHub Pages site, the base should match the repository name only.
 
 ## Manual Deployment
 
@@ -156,7 +156,7 @@ npm run preview
 
 ### Live Production
 ```
-https://<username>.github.io/agastia-campaign/tools/hex-map-editor/
+https://<username>.github.io/agastia-campaign/
 # Deployed version
 # Updated on every push to main
 # Optimized build

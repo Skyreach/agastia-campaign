@@ -32,7 +32,7 @@ Then open http://localhost:5173 in your browser.
 ## Live Demo
 
 Access the deployed version at:
-**https://skyreach.github.io/agastia-campaign/tools/hex-map-editor/**
+**https://skyreach.github.io/agastia-campaign/**
 
 GitHub Repository: https://github.com/Skyreach/agastia-campaign
 

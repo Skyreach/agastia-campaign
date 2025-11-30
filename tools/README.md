@@ -39,7 +39,7 @@ See [DEPLOYMENT.md](hex-map-editor/DEPLOYMENT.md) for full instructions.
 **Quick version:**
 1. Enable GitHub Pages in repo settings (Source: GitHub Actions)
 2. Push to main branch
-3. Tool auto-deploys to `https://<username>.github.io/agastia-campaign/tools/hex-map-editor/`
+3. Tool auto-deploys to `https://<username>.github.io/agastia-campaign/`
 
 ### Documentation
 
@@ -57,7 +57,7 @@ See [DEPLOYMENT.md](hex-map-editor/DEPLOYMENT.md) for full instructions.
 
 ### Live Demo
 
-Live demo: **https://skyreach.github.io/agastia-campaign/tools/hex-map-editor/**
+Live demo: **https://skyreach.github.io/agastia-campaign/**
 
 Repository: https://github.com/Skyreach/agastia-campaign
 
