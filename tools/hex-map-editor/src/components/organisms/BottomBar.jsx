@@ -1,6 +1,6 @@
 import { Crop, Hash } from 'lucide-react';
 import { Button } from '../atoms';
-import { VisibilityToggles, ZoomControls } from '../molecules';
+import { VisibilityToggles, ZoomControls, SaveStatusIndicator } from '../molecules';
 
 /**
  * Bottom bar with view controls and status
@@ -14,6 +14,9 @@ export const BottomBar = ({
   currentMap,
   maps,
   currentRoad,
+  saveStatus,
+  lastSaveTime,
+  saveError,
   onToggleExtractMode,
   onToggleBg,
   onToggleGrid,
@@ -72,6 +75,14 @@ export const BottomBar = ({
           {currentMap.name} • {currentMap.hexCols}×{currentMap.hexRows} •
           {currentMap.hexes.length} hexes • {maps.length} maps
         </div>
+
+        <div className="h-6 w-px bg-gray-300" />
+
+        <SaveStatusIndicator
+          status={saveStatus}
+          lastSaveTime={lastSaveTime}
+          error={saveError}
+        />
 
         <div className="h-6 w-px bg-gray-300" />
 

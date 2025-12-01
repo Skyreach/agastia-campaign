@@ -1,16 +1,21 @@
 import { useState, useRef, useEffect } from 'react';
 import { useMapState } from './hooks/useMapState';
+import { useAutoSave } from './hooks/useAutoSave';
 import { TopBar, LeftSidebar, RightPanel, BottomBar, HexCanvas, HexEditModal, ExtractModal } from './components/organisms';
 import { pixelToHex, findClosestEdge, calculateHexSize } from './utils/hexGeometry';
 import { getHexesInRect, getHexNumberingBase, createHex } from './utils/hexHelpers';
 import { exportMapImage, saveMapData, loadMapData, saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from './utils/mapExport';
 import { createRegionalMap } from './utils/regionExtraction';
 import { loadDefaultWorldMap } from './utils/defaultMap';
+import { saveToIndexedDB, loadFromIndexedDB, clearIndexedDB, clearLocalStorageBackup } from './utils/storage/storageManager';
 
 export default function HexMapEditor() {
   // Map state
   const { maps, setMaps, currentMapId, setCurrentMapId, currentMap, updateCurrentMap, addMap, deleteMap } = useMapState();
   const [isLoading, setIsLoading] = useState(true);
+
+  // Auto-save with debouncing
+  const { saveStatus, lastSaveTime, saveError } = useAutoSave(maps, currentMapId, isLoading);
 
   // UI state
   const [zoom, setZoom] = useState(1);
@@ -35,10 +40,17 @@ export default function HexMapEditor() {
 
   const fileInputRef = useRef(null);
 
-  // Load from localStorage on mount, or load default world map
+  // Load from IndexedDB on mount (with localStorage fallback), or load default world map
   useEffect(() => {
     const loadInitialState = async () => {
-      const saved = loadFromLocalStorage();
+      // Try IndexedDB first
+      let saved = await loadFromIndexedDB();
+
+      // Fallback to localStorage if IndexedDB empty
+      if (!saved) {
+        saved = loadFromLocalStorage();
+      }
+
       if (saved) {
         setMaps(saved.maps);
         setCurrentMapId(saved.currentMapId);
@@ -57,12 +69,7 @@ export default function HexMapEditor() {
     loadInitialState();
   }, []);
 
-  // Auto-save to localStorage whenever maps or currentMapId changes
-  useEffect(() => {
-    if (!isLoading && maps.length > 0) {
-      saveToLocalStorage(maps, currentMapId);
-    }
-  }, [maps, currentMapId, isLoading]);
+  // Auto-save is handled by useAutoSave hook (debounced, with status indicator)
 
   // Auto-recalculate hex size when grid dimensions or image changes
   useEffect(() => {
@@ -76,6 +83,27 @@ export default function HexMapEditor() {
       updateCurrentMap({ hexSize: newSize });
     }
   }, [currentMap.hexCols, currentMap.hexRows, currentMap.bgImage]);
+
+  // Keyboard shortcuts for zoom
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      // Only handle if not typing in an input
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return;
+      }
+
+      if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        setZoom(prev => Math.min(10, prev + 0.25));
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        setZoom(prev => Math.max(0.25, prev - 0.25));
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
 
   // Handlers
   const handleImageUpload = (e) => {
@@ -140,11 +168,32 @@ export default function HexMapEditor() {
     const canvas = e.target;
     const rect = canvas.getBoundingClientRect();
 
-    // Account for both zoom AND the scale between displayed size and internal canvas resolution
+    // Get click position relative to canvas
+    const clickX = e.clientX - rect.left;
+    const clickY = e.clientY - rect.top;
+
+    // Convert from display coordinates to internal canvas coordinates
     const scaleX = canvas.width / rect.width;
     const scaleY = canvas.height / rect.height;
-    const x = (e.clientX - rect.left) * scaleX;
-    const y = (e.clientY - rect.top) * scaleY;
+    const x = clickX * scaleX;
+    const y = clickY * scaleY;
+
+    console.log('Click Debug:', {
+      clientX: e.clientX,
+      clientY: e.clientY,
+      rectLeft: rect.left,
+      rectTop: rect.top,
+      rectWidth: rect.width,
+      rectHeight: rect.height,
+      canvasWidth: canvas.width,
+      canvasHeight: canvas.height,
+      clickX,
+      clickY,
+      scaleX,
+      scaleY,
+      finalX: x,
+      finalY: y
+    });
 
     // Extraction mode
     if (extractMode) {
@@ -366,9 +415,11 @@ export default function HexMapEditor() {
     setCurrentRoad(null);
   };
 
-  const handleClearStorage = () => {
+  const handleClearStorage = async () => {
     if (confirm('Clear all saved data and reset to default map? This cannot be undone.')) {
+      await clearIndexedDB();
       clearLocalStorage();
+      clearLocalStorageBackup();
       window.location.reload();
     }
   };
@@ -478,6 +529,9 @@ export default function HexMapEditor() {
         currentMap={currentMap}
         maps={maps}
         currentRoad={currentRoad}
+        saveStatus={saveStatus}
+        lastSaveTime={lastSaveTime}
+        saveError={saveError}
         onToggleExtractMode={() => {
           setExtractMode(!extractMode);
           setExtractCorner1(null);
@@ -487,7 +541,7 @@ export default function HexMapEditor() {
         onToggleGrid={() => setShowGrid(!showGrid)}
         onToggleIcons={() => setShowIcons(!showIcons)}
         onNumberAllHexes={numberAllHexes}
-        onZoomIn={() => setZoom(Math.min(3, zoom + 0.25))}
+        onZoomIn={() => setZoom(Math.min(10, zoom + 0.25))}
         onZoomOut={() => setZoom(Math.max(0.25, zoom - 0.25))}
         onZoomReset={() => setZoom(1)}
         onFinishRoad={finishRoad}

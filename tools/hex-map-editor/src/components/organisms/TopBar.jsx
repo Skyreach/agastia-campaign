@@ -1,7 +1,7 @@
 import { Upload, Trash2, Download, Save, FolderOpen, RotateCcw, Map } from 'lucide-react';
 import { Button, Input, Select, Divider } from '../atoms';
 import { GridControls } from '../molecules';
-import { MAP_SCALES } from '../../constants/mapDefaults';
+import { MAP_SCALES, SCALE_INFO } from '../../constants/mapDefaults';
 
 /**
  * Top bar with file operations and map info
@@ -94,12 +94,15 @@ export const TopBar = ({
         value={currentMapId}
         onChange={(e) => onMapSelect(e.target.value)}
         title="Switch between maps"
-        renderOption={(map) => (
-          <option key={map.id} value={map.id}>
-            {map.name} ({map.scale === MAP_SCALES.WORLD ? '24mi' : '3mi'})
-            {map.parentMapId && ` ← ${maps.find(m => m.id === map.parentMapId)?.name || 'Parent'}`}
-          </option>
-        )}
+        renderOption={(map) => {
+          const scaleInfo = SCALE_INFO[map.scale] || { milesPerHex: '?' };
+          return (
+            <option key={map.id} value={map.id}>
+              {map.name} ({scaleInfo.milesPerHex}mi)
+              {map.parentMapId && ` ← ${maps.find(m => m.id === map.parentMapId)?.name || 'Parent'}`}
+            </option>
+          );
+        }}
         options={maps}
       />
 
@@ -134,13 +137,17 @@ export const TopBar = ({
         onRowsChange={(val) => onGridChange({ hexRows: val })}
       />
 
-      {currentMap.scale === MAP_SCALES.REGION && (
+      {(currentMap.scale === MAP_SCALES.REGION || currentMap.scale === MAP_SCALES.ZONE) && (
         <Input
           value={currentMap.parentHex}
           onChange={(e) => onGridChange({ parentHex: e.target.value })}
           placeholder="Parent Hex #"
           className="w-32"
-          title="Which world hex does this region map?"
+          title={
+            currentMap.scale === MAP_SCALES.REGION
+              ? "Which world hex does this region map?"
+              : "Which region hex does this zone map?"
+          }
         />
       )}
 
