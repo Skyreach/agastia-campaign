@@ -44,7 +44,7 @@ export const useCanvasRenderer = ({
       const containerHeight = container.clientHeight - 32;
       const scaleX = containerWidth / baseWidth;
       const scaleY = containerHeight / baseHeight;
-      const baseScale = Math.min(scaleX, scaleY, 1); // Don't upscale beyond original
+      const baseScale = Math.min(scaleX, scaleY); // Use full available viewport space
 
       canvas.style.width = `${baseWidth * baseScale * zoom}px`;
       canvas.style.height = `${baseHeight * baseScale * zoom}px`;

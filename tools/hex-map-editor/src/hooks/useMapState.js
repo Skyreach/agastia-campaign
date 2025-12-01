@@ -28,6 +28,17 @@ export const useMapState = () => {
     setMaps(prev => [...prev, newMap]);
   }, []);
 
+  const deleteMap = useCallback((mapId) => {
+    setMaps(prev => {
+      const filtered = prev.filter(m => m.id !== mapId);
+      // If we deleted the current map, switch to the first available map
+      if (mapId === currentMapId && filtered.length > 0) {
+        setCurrentMapId(filtered[0].id);
+      }
+      return filtered;
+    });
+  }, [currentMapId]);
+
   return {
     maps,
     setMaps,
@@ -35,6 +46,7 @@ export const useMapState = () => {
     setCurrentMapId,
     currentMap,
     updateCurrentMap,
-    addMap
+    addMap,
+    deleteMap
   };
 };

@@ -9,7 +9,7 @@ import { loadDefaultWorldMap } from './utils/defaultMap';
 
 export default function HexMapEditor() {
   // Map state
-  const { maps, setMaps, currentMapId, setCurrentMapId, currentMap, updateCurrentMap, addMap } = useMapState();
+  const { maps, setMaps, currentMapId, setCurrentMapId, currentMap, updateCurrentMap, addMap, deleteMap } = useMapState();
   const [isLoading, setIsLoading] = useState(true);
 
   // UI state
@@ -107,7 +107,11 @@ export default function HexMapEditor() {
     const allNumbered = currentMap.hexes.length > 0 && currentMap.hexes.length === (currentMap.hexRows * currentMap.hexCols);
 
     if (allNumbered) {
-      updateCurrentMap({ hexes: [] });
+      // Remove numbers but preserve hex data (icons, labels, events, factions)
+      const hexesWithoutNumbers = currentMap.hexes
+        .map(h => ({ ...h, number: undefined }))
+        .filter(h => h.icon || h.label || h.events || h.faction !== null);
+      updateCurrentMap({ hexes: hexesWithoutNumbers });
       return;
     }
 
@@ -135,8 +139,12 @@ export default function HexMapEditor() {
   const handleCanvasClick = (e) => {
     const canvas = e.target;
     const rect = canvas.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / zoom;
-    const y = (e.clientY - rect.top) / zoom;
+
+    // Account for both zoom AND the scale between displayed size and internal canvas resolution
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
 
     // Extraction mode
     if (extractMode) {
@@ -397,6 +405,7 @@ export default function HexMapEditor() {
         onFileInputClick={() => fileInputRef.current.click()}
         onImageUpload={handleImageUpload}
         onMapSelect={setCurrentMapId}
+        onMapDelete={deleteMap}
         onMapNameChange={(name) => updateCurrentMap({ mapName: name, name: name || currentMap.name })}
         onIconLabelChange={setIconLabel}
         onGridChange={(updates) => updateCurrentMap(updates)}

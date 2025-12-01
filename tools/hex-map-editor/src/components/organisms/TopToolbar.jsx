@@ -1,4 +1,4 @@
-import { Upload } from 'lucide-react';
+import { Upload, Trash2 } from 'lucide-react';
 import { Button, Input, Divider, Select } from '../atoms';
 import { GridControls, ZoomControls } from '../molecules';
 import { MAP_SCALES } from '../../constants/mapDefaults';
@@ -16,6 +16,7 @@ export const TopToolbar = ({
   onFileInputClick,
   onImageUpload,
   onMapSelect,
+  onMapDelete,
   onMapNameChange,
   onIconLabelChange,
   onGridChange,
@@ -55,6 +56,21 @@ export const TopToolbar = ({
         )}
         options={maps}
       />
+
+      {maps.length > 1 && (
+        <Button
+          onClick={() => {
+            if (confirm(`Delete "${currentMap.name}"? This cannot be undone.`)) {
+              onMapDelete(currentMapId);
+            }
+          }}
+          variant="danger"
+          icon={Trash2}
+          title="Delete current map"
+        >
+          Delete Map
+        </Button>
+      )}
 
       <Input
         value={currentMap.mapName}
