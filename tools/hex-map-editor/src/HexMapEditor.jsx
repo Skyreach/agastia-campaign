@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useMapState } from './hooks/useMapState';
-import { TopToolbar, ToolsToolbar, HexCanvas, HexEditModal, ExtractModal, StatusBar } from './components/organisms';
+import { TopBar, LeftSidebar, RightPanel, BottomBar, HexCanvas, HexEditModal, ExtractModal } from './components/organisms';
 import { pixelToHex, findClosestEdge, calculateHexSize } from './utils/hexGeometry';
 import { getHexesInRect, getHexNumberingBase, createHex } from './utils/hexHelpers';
 import { exportMapImage, saveMapData, loadMapData, saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from './utils/mapExport';
@@ -395,11 +395,10 @@ export default function HexMapEditor() {
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
-      <TopToolbar
+      <TopBar
         maps={maps}
         currentMapId={currentMapId}
         currentMap={currentMap}
-        zoom={zoom}
         iconLabel={iconLabel}
         fileInputRef={fileInputRef}
         onFileInputClick={() => fileInputRef.current.click()}
@@ -409,32 +408,6 @@ export default function HexMapEditor() {
         onMapNameChange={(name) => updateCurrentMap({ mapName: name, name: name || currentMap.name })}
         onIconLabelChange={setIconLabel}
         onGridChange={(updates) => updateCurrentMap(updates)}
-        onZoomIn={() => setZoom(Math.min(3, zoom + 0.25))}
-        onZoomOut={() => setZoom(Math.max(0.25, zoom - 0.25))}
-        onZoomReset={() => setZoom(1)}
-      />
-
-      <ToolsToolbar
-        selectedTool={selectedTool}
-        selectedFaction={selectedFaction}
-        roadType={roadType}
-        currentRoad={currentRoad}
-        extractMode={extractMode}
-        showBg={showBg}
-        showGrid={showGrid}
-        showIcons={showIcons}
-        onToolSelect={setSelectedTool}
-        onFactionSelect={setSelectedFaction}
-        onRoadTypeChange={setRoadType}
-        onNumberAllHexes={numberAllHexes}
-        onToggleExtractMode={() => {
-          setExtractMode(!extractMode);
-          setExtractCorner1(null);
-          setExtractCorner2(null);
-        }}
-        onToggleBg={() => setShowBg(!showBg)}
-        onToggleGrid={() => setShowGrid(!showGrid)}
-        onToggleIcons={() => setShowIcons(!showIcons)}
         onExportMap={(includeBackground) => exportMapImage(currentMap, includeBackground, showBg)}
         onSaveData={() => saveMapData(maps, currentMapId)}
         onLoadData={handleLoadData}
@@ -443,50 +416,81 @@ export default function HexMapEditor() {
           updateCurrentMap({ roads: [] });
           setCurrentRoad(null);
         }}
-        onFinishRoad={finishRoad}
         onClearStorage={handleClearStorage}
         onLoadDefaultMap={handleLoadDefaultMap}
       />
 
-      <div className="flex-1 overflow-auto p-4 relative">
-        <HexCanvas
-          currentMap={currentMap}
-          zoom={zoom}
-          showBg={showBg}
-          showGrid={showGrid}
-          showIcons={showIcons}
-          extractMode={extractMode}
-          extractCorner1={extractCorner1}
-          extractCorner2={extractCorner2}
-          currentRoad={currentRoad}
-          onCanvasClick={handleCanvasClick}
+      <div className="flex flex-1 overflow-hidden">
+        <LeftSidebar
+          selectedTool={selectedTool}
+          onToolSelect={setSelectedTool}
         />
 
-        <HexEditModal
-          hex={editingHex}
-          labelInput={labelInput}
-          eventsInput={eventsInput}
-          onLabelChange={setLabelInput}
-          onEventsChange={setEventsInput}
-          onSave={saveHexData}
-          onClose={closeHexEdit}
-        />
-
-        {showExtractModal && (
-          <ExtractModal
-            extractPreview={extractPreview}
-            onConfirm={confirmExtraction}
-            onCancel={cancelExtraction}
+        <div className="flex-1 overflow-auto p-4 relative">
+          <HexCanvas
+            currentMap={currentMap}
+            zoom={zoom}
+            showBg={showBg}
+            showGrid={showGrid}
+            showIcons={showIcons}
+            extractMode={extractMode}
+            extractCorner1={extractCorner1}
+            extractCorner2={extractCorner2}
+            currentRoad={currentRoad}
+            onCanvasClick={handleCanvasClick}
           />
-        )}
+
+          <HexEditModal
+            hex={editingHex}
+            labelInput={labelInput}
+            eventsInput={eventsInput}
+            onLabelChange={setLabelInput}
+            onEventsChange={setEventsInput}
+            onSave={saveHexData}
+            onClose={closeHexEdit}
+          />
+
+          {showExtractModal && (
+            <ExtractModal
+              extractPreview={extractPreview}
+              onConfirm={confirmExtraction}
+              onCancel={cancelExtraction}
+            />
+          )}
+        </div>
+
+        <RightPanel
+          selectedTool={selectedTool}
+          selectedFaction={selectedFaction}
+          roadType={roadType}
+          onFactionSelect={setSelectedFaction}
+          onRoadTypeChange={setRoadType}
+          onClose={() => setSelectedTool('number')}
+        />
       </div>
 
-      <StatusBar
+      <BottomBar
         extractMode={extractMode}
-        currentRoad={currentRoad}
+        showBg={showBg}
+        showGrid={showGrid}
+        showIcons={showIcons}
+        zoom={zoom}
         currentMap={currentMap}
         maps={maps}
-        zoom={zoom}
+        currentRoad={currentRoad}
+        onToggleExtractMode={() => {
+          setExtractMode(!extractMode);
+          setExtractCorner1(null);
+          setExtractCorner2(null);
+        }}
+        onToggleBg={() => setShowBg(!showBg)}
+        onToggleGrid={() => setShowGrid(!showGrid)}
+        onToggleIcons={() => setShowIcons(!showIcons)}
+        onNumberAllHexes={numberAllHexes}
+        onZoomIn={() => setZoom(Math.min(3, zoom + 0.25))}
+        onZoomOut={() => setZoom(Math.max(0.25, zoom - 0.25))}
+        onZoomReset={() => setZoom(1)}
+        onFinishRoad={finishRoad}
       />
     </div>
   );
