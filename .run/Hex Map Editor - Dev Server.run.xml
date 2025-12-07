@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Hex Map Editor - Dev Server" type="js.build_tools.npm">
-    <package-json value="$PROJECT_DIR$/tools/hex-map-editor/package.json" />
+    <package-json value="$PROJECT_DIR$/agastia-campaign/tools/hex-map-editor/package.json" />
     <command value="run" />
     <scripts>
       <script value="dev" />
