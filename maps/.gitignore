@@ -1,0 +1,11 @@
+# Hex map exports (can be large)
+hex-maps-*.json
+
+# POI data files
+*_pois.json
+
+# Keep this .gitignore
+!.gitignore
+
+# Exception: If you have a canonical/master map, commit it
+!agastia-world-master.json
