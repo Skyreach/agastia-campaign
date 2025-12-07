@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useMapState } from './hooks/useMapState';
 import { useAutoSave } from './hooks/useAutoSave';
 import { useResponsiveContext } from './hooks/useResponsiveContext';
-import { TopBar, LeftSidebar, RightPanel, BottomBar, HexCanvas, HexEditModal, ExtractModal } from './components/organisms';
+import { TopBar, ResponsiveToolbar, ContextPanel, BottomBar, HexCanvas, HexEditModal, ExtractModal } from './components/organisms';
 import { pixelToHex, findClosestEdge, calculateHexSize } from './utils/hexGeometry';
 import { getHexesInRect, getHexNumberingBase, createHex } from './utils/hexHelpers';
 import { exportMapImage, saveMapData, loadMapData, saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from './utils/mapExport';
@@ -489,7 +489,7 @@ export default function HexMapEditor() {
       />
 
       <div className="flex flex-1 overflow-hidden">
-        <LeftSidebar
+        <ResponsiveToolbar
           selectedTool={selectedTool}
           onToolSelect={setSelectedTool}
         />
@@ -527,7 +527,7 @@ export default function HexMapEditor() {
           )}
         </div>
 
-        <RightPanel
+        <ContextPanel
           selectedTool={selectedTool}
           selectedFaction={selectedFaction}
           roadType={roadType}

@@ -8,3 +8,10 @@ export { HexEditModal } from './HexEditModal';
 export { ExtractModal } from './ExtractModal';
 export { StatusBar } from './StatusBar';
 export { HexCanvas } from './HexCanvas';
+
+// Responsive components (Phase 2)
+export { ResponsiveToolbar } from './ResponsiveToolbar';
+export { DesktopSidebar } from './DesktopSidebar';
+export { CollapsibleSidebar } from './CollapsibleSidebar';
+export { FloatingToolbar } from './FloatingToolbar';
+export { ContextPanel } from './ContextPanel';

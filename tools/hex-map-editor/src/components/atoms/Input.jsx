@@ -1,5 +1,7 @@
+import { useResponsiveContext } from '../../hooks/useResponsiveContext';
+
 /**
- * Reusable input component
+ * Reusable input component with responsive touch-friendly sizing
  */
 export const Input = ({
   type = 'text',
@@ -11,6 +13,13 @@ export const Input = ({
   max,
   ...props
 }) => {
+  const { isTouchDevice } = useResponsiveContext();
+
+  // Touch-friendly input sizing (minimum 44px height)
+  const touchClasses = isTouchDevice
+    ? 'px-4 py-3 text-base min-h-[44px]'  // Touch: 44px minimum height
+    : 'px-4 py-2 text-base';               // Mouse: standard
+
   return (
     <input
       type={type}
@@ -19,7 +28,7 @@ export const Input = ({
       placeholder={placeholder}
       min={min}
       max={max}
-      className={`border rounded px-4 py-2 text-base ${className}`}
+      className={`border rounded ${touchClasses} ${className}`}
       {...props}
     />
   );

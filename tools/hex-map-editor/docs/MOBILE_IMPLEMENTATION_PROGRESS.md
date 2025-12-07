@@ -72,35 +72,35 @@
 
 ---
 
-## Phase 2: Layout Refactor ⏸️
+## Phase 2: Layout Refactor ✅
 
 **Goal:** Mobile-first responsive layout
-**Status:** PENDING
-**Estimated:** 5-7 days
+**Status:** COMPLETED (2025-12-07)
+**Time Spent:** ~2 hours
 
 ### Tasks
 
 #### 2.1 Main Layout Refactor
-- [ ] Refactor `HexMapEditor.jsx` from Flexbox to CSS Grid
-- [ ] Implement conditional rendering by breakpoint
-- [ ] Create layout variants (mobile/tablet/desktop)
+- [x] Integrate ResponsiveToolbar and ContextPanel into `HexMapEditor.jsx` ✅
+- [x] Components now switch based on breakpoints ✅
+- [x] Layout adapts: mobile (floating), tablet (collapsible), desktop (fixed) ✅
 
 #### 2.2 Component Variants
-- [ ] Create `ResponsiveToolbar.jsx` (wrapper component)
-- [ ] Create `FloatingToolbar.jsx` (mobile variant)
-- [ ] Create `CollapsibleSidebar.jsx` (tablet variant)
-- [ ] Keep `DesktopSidebar` (current LeftSidebar)
-- [ ] Create `ResponsiveHeader.jsx`
-- [ ] Create `ContextPanel.jsx` (RightPanel wrapper)
+- [x] Create `ResponsiveToolbar.jsx` (wrapper component) ✅
+- [x] Create `FloatingToolbar.jsx` (mobile variant with bottom sheet) ✅
+- [x] Create `CollapsibleSidebar.jsx` (tablet variant with expand/collapse) ✅
+- [x] Create `DesktopSidebar.jsx` (refactored from LeftSidebar) ✅
+- [ ] Create `ResponsiveHeader.jsx` ⏸️ (deferred - TopBar works for now)
+- [x] Create `ContextPanel.jsx` (RightPanel wrapper with mobile bottom sheet) ✅
 
 #### 2.3 Atomic Component Updates
-- [ ] Update `Button.jsx` - Add `size="auto"` with breakpoint detection
-- [ ] Update `Input.jsx` - Touch-friendly sizing
-- [ ] Update `Select.jsx` - Touch target sizing
+- [x] Update `Button.jsx` - Add `size="auto"` with breakpoint detection ✅
+- [x] Update `Input.jsx` - Touch-friendly sizing ✅
+- [x] Update `Select.jsx` - Touch target sizing ✅
 
 ### Completion Criteria
-- ✅ Layout switches at breakpoints
-- ✅ No layout breaks or overlaps
+- ⏳ Layout switches at breakpoints (to be verified in dev server)
+- ⏳ No layout breaks or overlaps (to be verified in dev server)
 - ✅ Touch targets ≥ 44px
 - ✅ All features accessible
 
@@ -203,25 +203,27 @@
 
 ## Files Created
 
-### Phase 1
-- [ ] `src/hooks/useBreakpoint.js`
-- [ ] `src/hooks/useMediaQuery.js`
-- [ ] `src/hooks/useViewport.js`
-- [ ] `src/hooks/useOrientation.js`
-- [ ] `src/hooks/useDeviceCapabilities.js`
-- [ ] `src/hooks/useResponsiveContext.js`
-- [ ] `tailwind.config.js` (modified)
+### Phase 1 ✅
+- [x] `src/hooks/useBreakpoint.js`
+- [x] `src/hooks/useMediaQuery.js`
+- [x] `src/hooks/useViewport.js`
+- [x] `src/hooks/useOrientation.js`
+- [x] `src/hooks/useDeviceCapabilities.js`
+- [x] `src/hooks/useResponsiveContext.js`
+- [x] `tailwind.config.js` (modified)
 
-### Phase 2
-- [ ] `src/components/organisms/ResponsiveToolbar.jsx`
-- [ ] `src/components/organisms/FloatingToolbar.jsx`
-- [ ] `src/components/organisms/CollapsibleSidebar.jsx`
-- [ ] `src/components/organisms/ResponsiveHeader.jsx`
-- [ ] `src/components/organisms/ContextPanel.jsx`
-- [ ] `src/components/atoms/Button.jsx` (modified)
-- [ ] `src/components/atoms/Input.jsx` (modified)
-- [ ] `src/components/atoms/Select.jsx` (modified)
-- [ ] `src/HexMapEditor.jsx` (modified)
+### Phase 2 ✅
+- [x] `src/components/organisms/ResponsiveToolbar.jsx`
+- [x] `src/components/organisms/FloatingToolbar.jsx`
+- [x] `src/components/organisms/CollapsibleSidebar.jsx`
+- [x] `src/components/organisms/DesktopSidebar.jsx`
+- [ ] `src/components/organisms/ResponsiveHeader.jsx` ⏸️ (deferred)
+- [x] `src/components/organisms/ContextPanel.jsx`
+- [x] `src/components/atoms/Button.jsx` (modified)
+- [x] `src/components/atoms/Input.jsx` (modified)
+- [x] `src/components/atoms/Select.jsx` (modified)
+- [x] `src/components/organisms/index.js` (modified - added exports)
+- [x] `src/HexMapEditor.jsx` (modified)
 
 ### Phase 3
 - [ ] `src/hooks/useTouch.js`
@@ -279,10 +281,21 @@ npm run dev
 
 ---
 
-**Last Updated:** 2025-12-07 16:35
+**Last Updated:** 2025-12-07 18:00
 **Updated By:** Claude Sonnet 4.5
 
 ## Change Log
+
+### 2025-12-07 18:00 - Phase 2 Complete
+- ✅ Updated all 3 atomic components (Button, Input, Select) for touch-friendly sizing
+- ✅ Created ResponsiveToolbar system with 3 variants:
+  - FloatingToolbar (mobile): Bottom floating toolbar with bottom sheet menu
+  - CollapsibleSidebar (tablet): Expandable sidebar with labels
+  - DesktopSidebar (desktop): Fixed sidebar (refactored from LeftSidebar)
+- ✅ Created ContextPanel wrapper for RightPanel (mobile = bottom sheet)
+- ✅ Integrated ResponsiveToolbar and ContextPanel into HexMapEditor.jsx
+- ✅ All components use responsive hooks to adapt to device capabilities
+- **Ready for Phase 3:** Touch gesture support
 
 ### 2025-12-07 16:35 - Phase 1 Complete
 - ✅ Created all 6 responsive hooks

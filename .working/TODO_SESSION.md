@@ -79,7 +79,28 @@ Last updated: 2025-12-07 15:45
   - Added console.log debugging for responsive behavior
   - Phase 1 COMPLETE - ready for Phase 2
 
-## 📋 Future Topics
+## 📋 Future Topics - Hex Map Editor Mobile Responsive
+
+### Immediate Next Steps (Phase 2)
+- [ ] Phase 2: Layout Refactor (mobile-first Grid system)
+  - Status: Ready to start
+  - Location: tools/hex-map-editor/
+  - Guide: docs/MOBILE_IMPLEMENTATION_PROGRESS.md
+  - Estimated: 5-7 days
+  - Key tasks:
+    * Refactor HexMapEditor.jsx from Flexbox to CSS Grid
+    * Create ResponsiveToolbar component wrapper
+    * Create FloatingToolbar (mobile), CollapsibleSidebar (tablet), DesktopSidebar
+    * Update Button/Input/Select atoms for touch targets (44px min)
+
+### Future Phases (3-7)
+- [ ] Phase 3: Touch Interactions (pinch-zoom, gestures)
+- [ ] Phase 4: Mobile Modals (ResponsiveModal component)
+- [ ] Phase 5: Performance & Accessibility
+- [ ] Phase 6: Cross-device Testing
+- [ ] Phase 7: Documentation
+
+### Other Future Topics
 - [ ] Connect hex-map POIs to session planning workflow
   - Context: Use hex terrain to auto-suggest encounter types for sessions
   - Low priority until MCP is working
