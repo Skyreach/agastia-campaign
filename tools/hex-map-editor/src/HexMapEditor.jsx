@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useMapState } from './hooks/useMapState';
 import { useAutoSave } from './hooks/useAutoSave';
+import { useResponsiveContext } from './hooks/useResponsiveContext';
 import { TopBar, LeftSidebar, RightPanel, BottomBar, HexCanvas, HexEditModal, ExtractModal } from './components/organisms';
 import { pixelToHex, findClosestEdge, calculateHexSize } from './utils/hexGeometry';
 import { getHexesInRect, getHexNumberingBase, createHex } from './utils/hexHelpers';
@@ -10,12 +11,28 @@ import { loadDefaultWorldMap } from './utils/defaultMap';
 import { saveToIndexedDB, loadFromIndexedDB, clearIndexedDB, clearLocalStorageBackup } from './utils/storage/storageManager';
 
 export default function HexMapEditor() {
+  // Responsive context (for testing Phase 1 implementation)
+  const responsive = useResponsiveContext();
+
   // Map state
   const { maps, setMaps, currentMapId, setCurrentMapId, currentMap, updateCurrentMap, addMap, deleteMap } = useMapState();
   const [isLoading, setIsLoading] = useState(true);
 
   // Auto-save with debouncing
   const { saveStatus, lastSaveTime, saveError } = useAutoSave(maps, currentMapId, isLoading);
+
+  // Log responsive context for testing (Phase 1 verification)
+  useEffect(() => {
+    console.log('📱 Responsive Context:', {
+      breakpoint: responsive.breakpoint,
+      isMobile: responsive.isMobile,
+      isTablet: responsive.isTablet,
+      isDesktop: responsive.isDesktop,
+      isTouchDevice: responsive.isTouchDevice,
+      viewportWidth: responsive.viewport.width,
+      orientation: responsive.orientation.type
+    });
+  }, [responsive.breakpoint, responsive.viewport.width]);
 
   // UI state
   const [zoom, setZoom] = useState(1);
