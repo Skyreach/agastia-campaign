@@ -1,4 +1,4 @@
-import { CANVAS_DEFAULTS, REGION_SCALE_FACTOR } from '../constants/mapDefaults';
+import { CANVAS_DEFAULTS, SUBDIVISION_FACTOR } from '../constants/mapDefaults';
 import { getRegionalHexesForWorldHex } from './hexHelpers';
 
 /**
@@ -33,8 +33,8 @@ export const createRegionalMap = (currentMap, extractPreview, maps, currentMapId
     croppedImageData = null;
   }
 
-  // Calculate regional hex size
-  const regionalHexSize = currentMap.hexSize / REGION_SCALE_FACTOR;
+  // Calculate regional hex size (each world hex subdivides into 8x8 regional hexes)
+  const regionalHexSize = currentMap.hexSize / SUBDIVISION_FACTOR;
 
   // Calculate new grid dimensions
   const newHexCols = Math.ceil(width / (regionalHexSize * 1.5));
