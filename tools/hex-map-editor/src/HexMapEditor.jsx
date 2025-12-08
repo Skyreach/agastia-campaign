@@ -3,6 +3,7 @@ import { useMapState } from './hooks/useMapState';
 import { useAutoSave } from './hooks/useAutoSave';
 import { useResponsiveContext } from './hooks/useResponsiveContext';
 import { TopBar, ResponsiveToolbar, ContextPanel, BottomBar, HexCanvas, HexEditModal, ExtractModal } from './components/organisms';
+import { TouchZoomIndicator } from './components/molecules';
 import { pixelToHex, findClosestEdge, calculateHexSize } from './utils/hexGeometry';
 import { getHexesInRect, getHexNumberingBase, createHex } from './utils/hexHelpers';
 import { exportMapImage, saveMapData, loadMapData, saveToLocalStorage, loadFromLocalStorage, clearLocalStorage } from './utils/mapExport';
@@ -506,6 +507,14 @@ export default function HexMapEditor() {
             extractCorner2={extractCorner2}
             currentRoad={currentRoad}
             onCanvasClick={handleCanvasClick}
+          />
+
+          {/* Touch zoom indicator (mobile only) */}
+          <TouchZoomIndicator
+            zoom={zoom}
+            onZoomIn={() => setZoom(Math.min(5, zoom + 0.25))}
+            onZoomOut={() => setZoom(Math.max(0.25, zoom - 0.25))}
+            onZoomReset={() => setZoom(1)}
           />
 
           <HexEditModal
