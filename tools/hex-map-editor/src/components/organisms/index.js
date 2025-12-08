@@ -15,3 +15,6 @@ export { DesktopSidebar } from './DesktopSidebar';
 export { CollapsibleSidebar } from './CollapsibleSidebar';
 export { FloatingToolbar } from './FloatingToolbar';
 export { ContextPanel } from './ContextPanel';
+
+// Responsive modals (Phase 4)
+export { ResponsiveModal } from './ResponsiveModal';
