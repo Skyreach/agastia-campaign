@@ -15,6 +15,36 @@ A powerful React-based hex map editor for D&D campaign mapping with multi-scale 
 - **Export Options**: Generate full DM maps or player-friendly maps without background
 - **Save/Load**: JSON-based save system preserves all maps and relationships
 
+## 📱 Mobile Features (NEW!)
+
+**Fully responsive and mobile-optimized!** The editor now works seamlessly on phones, tablets, and desktops.
+
+### Touch Gestures
+- 🤏 **Pinch to Zoom**: Use two fingers to zoom in/out (0.25x - 5x)
+- 👆 **Double Tap**: Quick toggle between 1x and 2x zoom
+- 👉 **Pan**: Drag with one finger when zoomed in
+- 📍 **Tap to Select**: Tap any hex to edit its properties
+
+### Adaptive Layouts
+- **Phone (< 640px)**: Floating toolbar with bottom sheet menu
+- **Tablet (768px - 1279px)**: Collapsible sidebar with expand/collapse
+- **Desktop (≥ 1280px)**: Fixed sidebar with full controls
+
+### Mobile-Optimized UI
+- ✅ Touch-friendly buttons (44px minimum touch targets)
+- ✅ Bottom sheet modals on mobile (slide-up animation)
+- ✅ Centered dialog modals on desktop
+- ✅ Gesture tutorial overlay on first mobile visit
+- ✅ Floating zoom controls (mobile only)
+
+### Browser Support
+- Chrome 90+ (mobile & desktop)
+- Safari 14+ (iOS & macOS)
+- Firefox 90+ (mobile & desktop)
+- Edge 90+ (Chromium)
+
+📖 **Full mobile guide:** [docs/MOBILE_GUIDE.md](./docs/MOBILE_GUIDE.md)
+
 ## Installation
 
 ```bash
