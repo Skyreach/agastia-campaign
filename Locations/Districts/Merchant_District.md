@@ -23,7 +23,7 @@ The sounds of haggling, the smell of exotic spices and fresh bread, the constant
 **Brightcoin Emergency Supplies**
 The party's source for starting equipment. This well-stocked shop specializes in outfitting adventurers and travelers with practical gear. The proprietor, Marcus Brightcoin, maintains surprising contacts with various factions and always seems to have exactly what's needed - sometimes before customers know they need it.
 
-**The Delizioso Trattoria**
+**Il Drago Rosso**
 An authentic Italian restaurant run by Nikki's parents (the Biago family). Known for excellent food and a welcoming atmosphere that crosses social boundaries. The restaurant serves as neutral ground where people from different merit levels and factions can meet informally. The Biagos somehow remain uninvolved in factional politics while being aware of everything happening in the district.
 
 **The Gilded Scale**

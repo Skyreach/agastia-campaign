@@ -38,7 +38,7 @@ tags: [npcs, agastia, validation, locations, campaign-audit]
 - **Placement Quality:** Excellent - ties to multiple factions, neutral broker role
 
 #### 2. Papa & Mama Biago (Nikki's Family)
-- **Location:** The Delizioso Trattoria, Merchant District (Tier 4)
+- **Location:** Il Drago Rosso, Merchant District (Tier 4)
 - **File:** `/mnt/e/dnd/agastia-campaign/Locations/Cities/Agastia/Shop_The_Delizioso_Trattoria.md`
 - **Status:** COMPLETE - Full establishment with both NPCs documented
 - **Role:** Neutral ground operators, Nikki's parents
@@ -390,7 +390,7 @@ tags: [npcs, agastia, validation, locations, campaign-audit]
 ### ✅ FULLY DOCUMENTED ESTABLISHMENTS
 
 1. **Brightcoin Emergency Supplies** (Tier 4) - Marcus Brightcoin
-2. **The Delizioso Trattoria** (Tier 4) - Papa & Mama Biago
+2. **Il Drago Rosso** (Tier 4) - Papa & Mama Biago
 3. **Archive of Lost Histories** (Tier 3) - Veridian Scrollkeeper
 4. **Stonemark Antiquities** (Tier 4) - Mirella Stonemark
 5. **The Rusty Anchor** (Tier 6) - Harren frequents

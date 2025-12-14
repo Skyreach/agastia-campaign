@@ -150,13 +150,13 @@ The commercial heart of Agastia, where goods from across the realm change hands.
 **Key Services:**
 - Equipment: The Wanderer's Pack (adventuring gear, Common/Uncommon)
 - Supplies: Brightcoin Emergency Supplies (party starting shop)
-- Food: The Delizioso Trattoria (Nikki's family, neutral ground)
+- Food: Il Drago Rosso (Nikki's family, neutral ground)
 - Trade: The Gilded Scale (Merchant Guild HQ)
 - Healing: Public Temple (Lesser Restoration, mid-level spells)
 
 **Notable Establishments:**
 - Brightcoin Emergency Supplies (information broker Marcus Brightcoin)
-- The Delizioso Trattoria (Italian restaurant, faction neutral space)
+- Il Drago Rosso (Italian restaurant, faction neutral space)
 - The Gilded Scale (guild membership, trade intelligence)
 - The Exchange (massive marketplace)
 </details>
