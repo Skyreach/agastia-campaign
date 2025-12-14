@@ -122,8 +122,8 @@
       "last_pushed_to_notion": "2025-11-16T01:33:28.649106+00:00"
     },
     "Locations/Cities/Agastia_City.md": {
-      "notion_page_id": "2ad693f0c6b481c19b61c153ba509f52",
-      "last_pushed_to_notion": "2025-11-16T01:33:34.570307+00:00"
+      "notion_page_id": "2c9693f0c6b4813c95dde60ffb7d1d9e",
+      "last_pushed_to_notion": "2025-12-14T14:11:31.777869+00:00"
     },
     "Locations/Districts/Government_Complex.md": {
       "notion_page_id": "2ad693f0c6b4819cabfdd7b821e8d9ba",
@@ -216,6 +216,78 @@
     "Locations/Cities/Agastia/Inn_The_Hidden_Door.md": {
       "notion_page_id": "2ad693f0c6b481c0ac1af72ad83c160e",
       "last_pushed_to_notion": "2025-11-16T14:42:06.470337+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Blades_of_Glory.md": {
+      "notion_page_id": "2c9693f0c6b481639b67f343afd1c5bf",
+      "last_pushed_to_notion": "2025-12-14T14:08:45.036868+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Brightcoin_Emergency_Supplies.md": {
+      "notion_page_id": "2c9693f0c6b4817d8ac8e16aa6606da1",
+      "last_pushed_to_notion": "2025-12-14T14:08:55.242706+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Public_Temple.md": {
+      "notion_page_id": "2c9693f0c6b48156983edcb7566db6f5",
+      "last_pushed_to_notion": "2025-12-14T14:09:27.048016+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Sawbones_Surgery.md": {
+      "notion_page_id": "2c9693f0c6b4816f9f41e6dfef6d1563",
+      "last_pushed_to_notion": "2025-12-14T14:09:32.233808+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Shadows_Edge_Armory.md": {
+      "notion_page_id": "2c9693f0c6b48190ab45fe90db00f057",
+      "last_pushed_to_notion": "2025-12-14T14:09:41.506983+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Stonewick_Herbalist.md": {
+      "notion_page_id": "2c9693f0c6b481438a12f70a91c6b43a",
+      "last_pushed_to_notion": "2025-12-14T14:10:02.701911+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_The_Delizioso_Trattoria.md": {
+      "notion_page_id": "2c9693f0c6b4814fae3bfb9b14dfd8bc",
+      "last_pushed_to_notion": "2025-12-14T14:10:35.144380+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_The_Desperates_Refuge.md": {
+      "notion_page_id": "2c9693f0c6b481dbaa71eeee1d4218bc",
+      "last_pushed_to_notion": "2025-12-14T14:10:45.961773+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_The_Gilded_Scale.md": {
+      "notion_page_id": "2c9693f0c6b481b9b1bbc9bf89004ba1",
+      "last_pushed_to_notion": "2025-12-14T14:10:54.008496+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_The_Grand_Cathedral.md": {
+      "notion_page_id": "2c9693f0c6b481d38506d8d825e0a1cb",
+      "last_pushed_to_notion": "2025-12-14T14:11:05.837293+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Tidecaller_Armory.md": {
+      "notion_page_id": "2c9693f0c6b4810cbebbc3c28d064352",
+      "last_pushed_to_notion": "2025-12-14T14:11:11.322997+00:00"
+    },
+    "Locations/Cities/Agastia/Shop_Working_Class_Armory.md": {
+      "notion_page_id": "2c9693f0c6b48171a746d4e84342498a",
+      "last_pushed_to_notion": "2025-12-14T14:11:20.316426+00:00"
+    },
+    "Locations/Districts/Dock_District.md": {
+      "notion_page_id": "2c9693f0c6b4815ab52ee4c4160289a2",
+      "last_pushed_to_notion": "2025-12-14T14:11:36.890808+00:00"
+    },
+    "Locations/Districts/Lower_Residential_District.md": {
+      "notion_page_id": "2c9693f0c6b4815d98d1c20c3e9eadea",
+      "last_pushed_to_notion": "2025-12-14T14:11:40.187382+00:00"
+    },
+    "Locations/Districts/Noble_Quarter.md": {
+      "notion_page_id": "2c9693f0c6b48155a75decdbf1c2c393",
+      "last_pushed_to_notion": "2025-12-14T14:11:47.544276+00:00"
+    },
+    "Locations/Districts/Research_Quarter.md": {
+      "notion_page_id": "2c9693f0c6b481498ef8e8ccf36db8e3",
+      "last_pushed_to_notion": "2025-12-14T14:11:52.551794+00:00"
+    },
+    "Locations/Districts/The_Castle.md": {
+      "notion_page_id": "2c9693f0c6b4819d836feaf1f185cebc",
+      "last_pushed_to_notion": "2025-12-14T14:12:27.713335+00:00"
+    },
+    "Locations/Districts/The_Depths.md": {
+      "notion_page_id": "2c9693f0c6b48119a79be026fac84d8b",
+      "last_pushed_to_notion": "2025-12-14T14:12:33.179816+00:00"
     }
   }
 }
