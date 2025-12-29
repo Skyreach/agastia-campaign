@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Sync markdown files to Notion with hierarchical nesting support.
+Headings become toggleable blocks with nested children.
+"""
 import os
 import sys
 import json
@@ -14,29 +18,24 @@ import frontmatter
 sys.path.insert(0, str(Path(__file__).parent / '.config'))
 from sync_state_manager import record_push_to_notion
 
-# Load Notion API key
+# Database IDs
+DATABASES = {
+    'entities': '281693f0-c6b4-80be-87c3-f56fef9cc2b9',
+}
+
 def load_notion_key():
     key_file = Path('.config/notion_key.txt')
     if not key_file.exists():
         print("❌ Please create .config/notion_key.txt with your Notion API key")
-        print("   Get your key from: https://www.notion.so/my-integrations")
-        print("   ⚠️  SECURITY: Remember to clear your chat history after providing the key!")
         sys.exit(1)
     return key_file.read_text().strip()
 
-# Initialize Notion client
 def get_notion_client():
     try:
         return Client(auth=load_notion_key())
     except Exception as e:
         print(f"❌ Failed to connect to Notion: {e}")
-        print("   Check your API key in .config/notion_key.txt")
         sys.exit(1)
-
-# Database IDs
-DATABASES = {
-    'entities': '281693f0-c6b4-80be-87c3-f56fef9cc2b9',  # D&D Campaign Entities database
-}
 
 def load_notionignore():
     """Load .notionignore file and return list of patterns"""
@@ -48,7 +47,6 @@ def load_notionignore():
     with open(ignore_file, 'r') as f:
         for line in f:
             line = line.strip()
-            # Skip empty lines and comments
             if line and not line.startswith('#'):
                 patterns.append(line)
     return patterns
@@ -58,32 +56,31 @@ def should_ignore(file_path, ignore_patterns):
     file_str = str(file_path)
 
     for pattern in ignore_patterns:
-        # Handle directory patterns (ending with /**)
         if pattern.endswith('/**'):
-            dir_pattern = pattern[:-3]  # Remove /**
+            dir_pattern = pattern[:-3]
             if file_str.startswith(dir_pattern):
                 return True
-        # Handle wildcard patterns
         elif '*' in pattern:
             if fnmatch.fnmatch(file_str, pattern):
                 return True
-        # Handle exact matches
         elif pattern in file_str or file_str.endswith(pattern):
             return True
 
     return False
 
-def parse_rich_text(text):
-    """Parse markdown formatting (bold, italic, code) into Notion rich_text format"""
+def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000):
+    """
+    Parse markdown formatting (bold, italic, code, wikilinks) into Notion rich_text format
+    Supports [[wikilink]] syntax that links to other pages in the database
+    """
     if not text:
         return []
 
     rich_text = []
-    remaining = text[:2000]  # Notion limit
+    remaining = text[:max_length]
 
-    # Pattern to match **bold**, *italic*, `code`
-    # Process in order: code, bold, italic to avoid conflicts
-    pattern = r'(`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*)'
+    # Pattern to match [[wikilink]], **bold**, *italic*, `code`, ~~strikethrough~~
+    pattern = r'(\[\[([^\]]+)\]\]|`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*|~~[^~]+~~)'
 
     last_end = 0
     for match in re.finditer(pattern, remaining):
@@ -95,8 +92,36 @@ def parse_rich_text(text):
 
         matched_text = match.group()
 
+        # Wikilink [[page name]]
+        if matched_text.startswith('[[') and matched_text.endswith(']]'):
+            link_text = match.group(2)  # Extract text inside [[]]
+
+            # Try to resolve wikilink to page ID
+            page_id = None
+            if notion_client and database_id:
+                try:
+                    results = notion_client.databases.query(
+                        database_id=database_id,
+                        filter={"property": "Name", "title": {"equals": link_text}}
+                    )
+                    if results['results']:
+                        page_id = results['results'][0]['id']
+                except:
+                    pass  # If lookup fails, just use plain text
+
+            if page_id:
+                # Create mention link to page
+                rich_text.append({
+                    'type': 'mention',
+                    'mention': {'type': 'page', 'page': {'id': page_id}},
+                    'plain_text': link_text
+                })
+            else:
+                # Fallback to plain text with brackets
+                rich_text.append({'type': 'text', 'text': {'content': f'[[{link_text}]]'}})
+
         # Code (inline)
-        if matched_text.startswith('`') and matched_text.endswith('`'):
+        elif matched_text.startswith('`') and matched_text.endswith('`'):
             rich_text.append({
                 'type': 'text',
                 'text': {'content': matched_text[1:-1]},
@@ -116,304 +141,317 @@ def parse_rich_text(text):
                 'text': {'content': matched_text[1:-1]},
                 'annotations': {'italic': True}
             })
+        # Strikethrough
+        elif matched_text.startswith('~~') and matched_text.endswith('~~'):
+            rich_text.append({
+                'type': 'text',
+                'text': {'content': matched_text[2:-2]},
+                'annotations': {'strikethrough': True}
+            })
 
         last_end = match.end()
 
-    # Add remaining plain text
+    # Remaining text
     if last_end < len(remaining):
-        plain = remaining[last_end:]
-        if plain:
-            rich_text.append({'type': 'text', 'text': {'content': plain}})
+        rich_text.append({'type': 'text', 'text': {'content': remaining[last_end:]}})
 
-    return rich_text if rich_text else [{'type': 'text', 'text': {'content': remaining}}]
+    return rich_text if rich_text else [{'type': 'text', 'text': {'content': ''}}]
 
-def markdown_to_notion_blocks(content):
-    """Convert markdown content to Notion blocks with toggle support"""
+
+def get_heading_level(line):
+    """Return heading level (1-3) or None"""
+    if line.startswith('### '):
+        return 3
+    elif line.startswith('## '):
+        return 2
+    elif line.startswith('# '):
+        return 1
+    return None
+
+
+def parse_single_block(lines, idx, notion_client=None, database_id=None):
+    """Parse a single non-heading block. Returns (block_or_list, next_idx)"""
+    if idx >= len(lines):
+        return None, idx
+
+    line = lines[idx]
+
+    if not line.strip():
+        return None, idx + 1
+
+    # Code blocks
+    if line.startswith('```'):
+        language = line[3:].strip() or 'plain text'
+        # Detect mermaid
+        if language.lower() in ['mermaid', 'graph']:
+            language = 'mermaid'
+
+        code_lines = []
+        i = idx + 1
+        while i < len(lines) and not lines[i].startswith('```'):
+            code_lines.append(lines[i])
+            i += 1
+
+        code_text = '\n'.join(code_lines)[:2000]
+        return ({
+            'object': 'block',
+            'type': 'code',
+            'code': {
+                'rich_text': [{'type': 'text', 'text': {'content': code_text}}],
+                'language': language
+            }
+        }, i + 1)
+
+    # Blockquotes
+    if line.startswith('> '):
+        quote_lines = []
+        i = idx
+        while i < len(lines) and lines[i].startswith('> '):
+            quote_lines.append(lines[i][2:])
+            i += 1
+        return ({
+            'object': 'block',
+            'type': 'quote',
+            'quote': {'rich_text': parse_rich_text(' '.join(quote_lines), notion_client, database_id)}
+        }, i)
+
+    # Bulleted lists
+    if line.startswith('- ') or line.startswith('* '):
+        return ({
+            'object': 'block',
+            'type': 'bulleted_list_item',
+            'bulleted_list_item': {'rich_text': parse_rich_text(line[2:], notion_client, database_id)}
+        }, idx + 1)
+
+    # Numbered lists
+    if re.match(r'^\d+\.\s', line):
+        match = re.match(r'^\d+\.\s(.*)$', line)
+        return ({
+            'object': 'block',
+            'type': 'numbered_list_item',
+            'numbered_list_item': {'rich_text': parse_rich_text(match.group(1), notion_client, database_id)}
+        }, idx + 1)
+
+    # Tables - convert to Notion table blocks
+    if '|' in line and idx + 1 < len(lines) and '---' in lines[idx + 1]:
+        # For now, convert to simple list representation
+        # Full Notion table API is complex
+        header = [cell.strip() for cell in line.split('|')[1:-1]]
+        table_blocks = [{
+            'object': 'block',
+            'type': 'paragraph',
+            'paragraph': {'rich_text': parse_rich_text('**' + ' | '.join(header) + '**', notion_client, database_id)}
+        }]
+
+        i = idx + 2
+        while i < len(lines) and '|' in lines[i] and lines[i].strip():
+            row = [cell.strip() for cell in lines[i].split('|')[1:-1]]
+            table_blocks.append({
+                'object': 'block',
+                'type': 'bulleted_list_item',
+                'bulleted_list_item': {'rich_text': parse_rich_text(' | '.join(row), notion_client, database_id)}
+            })
+            i += 1
+        return (table_blocks, i)
+
+    # Toggle markers - handled specially in collect_until_heading
+    if line.startswith('**Toggle:'):
+        return None, idx
+
+    # Regular paragraph
+    return ({
+        'object': 'block',
+        'type': 'paragraph',
+        'paragraph': {'rich_text': parse_rich_text(line, notion_client, database_id)}
+    }, idx + 1)
+
+
+def collect_until_heading(lines, start_idx, parent_level, notion_client=None, database_id=None):
+    """Collect blocks until we hit a heading of same or higher level"""
     blocks = []
-    lines = content.split('\n')
-    i = 0
+    i = start_idx
 
     while i < len(lines):
         line = lines[i]
+        level = get_heading_level(line)
 
+        # Stop if we hit a same/higher level heading
+        if level is not None and level <= parent_level:
+            break
+
+        # If it's a lower-level heading, parse it with its children
+        if level is not None and level > parent_level:
+            heading_info, i = parse_heading_section(lines, i, notion_client, database_id)
+            if heading_info:
+                blocks.append(heading_info)
+            continue
+
+        # Special handling for toggle markers
+        if line.startswith('**Toggle:'):
+            toggle_title = line.replace('**Toggle:', '').replace('**', '').strip()
+            i += 1
+
+            # Collect content until next toggle or heading
+            toggle_children = []
+            while i < len(lines):
+                next_level = get_heading_level(lines[i])
+                if next_level is not None and next_level <= parent_level:
+                    break
+                if lines[i].startswith('**Toggle:'):
+                    break
+
+                block, i = parse_single_block(lines, i, notion_client, database_id)
+                if block:
+                    if isinstance(block, list):
+                        for b in block:
+                            toggle_children.append({'block': b, 'children': []})
+                    elif block is not None:
+                        toggle_children.append({'block': block, 'children': []})
+
+            toggle_block = {
+                'object': 'block',
+                'type': 'toggle',
+                'toggle': {'rich_text': parse_rich_text(toggle_title, notion_client, database_id)}
+            }
+            blocks.append({'block': toggle_block, 'children': toggle_children})
+            continue
+
+        # Parse regular block
+        block, i = parse_single_block(lines, i, notion_client, database_id)
+        if block:
+            if isinstance(block, list):
+                for b in block:
+                    blocks.append({'block': b, 'children': []})
+            else:
+                blocks.append({'block': block, 'children': []})
+
+    return blocks, i
+
+
+def parse_heading_section(lines, idx, notion_client=None, database_id=None):
+    """
+    Parse a heading and collect all content until next same-level heading.
+    Returns (section_info, next_idx) where section_info has 'block' and 'children' keys.
+    """
+    line = lines[idx]
+    level = get_heading_level(line)
+
+    if level is None:
+        return None, idx
+
+    # Extract heading text
+    if level == 1:
+        heading_text = line[2:].strip()
+        block_type = 'heading_1'
+    elif level == 2:
+        heading_text = line[3:].strip()
+        block_type = 'heading_2'
+    else:
+        heading_text = line[4:].strip()
+        block_type = 'heading_3'
+
+    # Collect children
+    children, next_idx = collect_until_heading(lines, idx + 1, level, notion_client, database_id)
+
+    # Create heading block
+    heading_block = {
+        'object': 'block',
+        'type': block_type,
+        block_type: {
+            'rich_text': parse_rich_text(heading_text, notion_client, database_id),
+            'is_toggleable': True
+        }
+    }
+
+    return {'block': heading_block, 'children': children}, next_idx
+
+
+def markdown_to_notion_blocks(content, notion_client=None, database_id=None):
+    """
+    Convert markdown to hierarchical Notion block structure.
+    Returns list of sections with 'block' and 'children' keys.
+    """
+    lines = content.split('\n')
+    sections = []
+    i = 0
+
+    while i < len(lines):
         # Skip empty lines at start
-        if not blocks and not line.strip():
+        if not sections and not lines[i].strip():
             i += 1
             continue
 
-        # Handle <details> blocks - convert to Notion toggles
-        if line.strip().startswith('<details>'):
-            i += 1
-            # Find the summary line
-            summary_text = "Toggle"
-            toggle_content = []
+        # Check for heading
+        level = get_heading_level(lines[i])
+        if level is not None:
+            section, i = parse_heading_section(lines, i, notion_client, database_id)
+            if section:
+                sections.append(section)
+        else:
+            # Top-level content
+            block, i = parse_single_block(lines, i, notion_client, database_id)
+            if block:
+                if isinstance(block, list):
+                    for b in block:
+                        sections.append({'block': b, 'children': []})
+                else:
+                    sections.append({'block': block, 'children': []})
 
-            while i < len(lines) and not lines[i].strip().startswith('</details>'):
-                if lines[i].strip().startswith('<summary>'):
-                    # Extract summary text (remove HTML tags)
-                    summary_line = lines[i].strip()
-                    summary_line = summary_line.replace('<summary>', '').replace('</summary>', '')
-                    summary_line = summary_line.replace('<b>', '').replace('</b>', '')
-                    summary_text = summary_line.strip()
-                elif not lines[i].strip().startswith('<') and lines[i].strip():
-                    # This is content inside the toggle
-                    toggle_content.append(lines[i])
-                i += 1
+    return sections
 
-            # Create toggle block with nested content
-            toggle_children = []
-            for content_line in toggle_content:
-                if content_line.startswith('# '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'heading_1',
-                        'heading_1': {'rich_text': parse_rich_text(content_line[2:].strip())}
-                    })
-                elif content_line.startswith('## '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'heading_2',
-                        'heading_2': {'rich_text': parse_rich_text(content_line[3:].strip())}
-                    })
-                elif content_line.startswith('### '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'heading_3',
-                        'heading_3': {'rich_text': parse_rich_text(content_line[4:].strip())}
-                    })
-                elif content_line.strip().startswith('- ') or content_line.strip().startswith('* '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'bulleted_list_item',
-                        'bulleted_list_item': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
-                    })
-                elif content_line.strip().startswith('> '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'quote',
-                        'quote': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
-                    })
-                elif content_line.strip():
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'paragraph',
-                        'paragraph': {'rich_text': parse_rich_text(content_line)}
-                    })
 
-            blocks.append({
-                'object': 'block',
-                'type': 'toggle',
-                'toggle': {
-                    'rich_text': parse_rich_text(summary_text),
-                    'children': toggle_children[:100] if toggle_children else []
-                }
-            })
+def upload_blocks_with_children(notion, parent_id, sections, depth=0):
+    """
+    Upload blocks in batches, handling nested children recursively.
+    """
+    indent = "  " * depth
 
-        # Skip HTML tags and horizontal rules
-        elif line.strip().startswith('<') or line.strip() == '---':
-            pass
+    # Separate blocks with and without children
+    blocks_without_children = []
+    blocks_with_children = []
 
-        # Handle headers
-        elif line.startswith('# '):
-            blocks.append({
-                'object': 'block',
-                'type': 'heading_1',
-                'heading_1': {
-                    'rich_text': parse_rich_text(line[2:].strip()),
-                    'is_toggleable': True
-                }
-            })
-        elif line.startswith('## '):
-            blocks.append({
-                'object': 'block',
-                'type': 'heading_2',
-                'heading_2': {
-                    'rich_text': parse_rich_text(line[3:].strip()),
-                    'is_toggleable': True
-                }
-            })
-        elif line.startswith('### '):
-            blocks.append({
-                'object': 'block',
-                'type': 'heading_3',
-                'heading_3': {
-                    'rich_text': parse_rich_text(line[4:].strip()),
-                    'is_toggleable': True
-                }
-            })
-        # Handle code blocks (including mermaid)
-        elif line.strip().startswith('```'):
-            code_lines = []
-            i += 1
-            language = line.strip()[3:].strip() or 'plain text'
-            while i < len(lines) and not lines[i].strip().startswith('```'):
-                code_lines.append(lines[i])
-                i += 1
-            blocks.append({
-                'object': 'block',
-                'type': 'code',
-                'code': {
-                    'rich_text': [{'type': 'text', 'text': {'content': '\n'.join(code_lines)[:2000]}}],
-                    'language': 'plain text' if language == 'mermaid' else language
-                }
-            })
-        # Handle blockquotes
-        elif line.strip().startswith('> '):
-            blocks.append({
-                'object': 'block',
-                'type': 'quote',
-                'quote': {'rich_text': parse_rich_text(line.strip()[2:].strip())}
-            })
-        # Handle Toggle blocks (detect **Toggle: Title** pattern)
-        elif line.strip().startswith('**Toggle:') and '**' in line.strip()[9:]:
-            # Extract toggle title (find closing **)
-            text_after_toggle = line.strip()[9:]  # Remove **Toggle:
-            end_pos = text_after_toggle.find('**')
-            toggle_title = text_after_toggle[:end_pos].strip() if end_pos != -1 else text_after_toggle.strip()
+    for section in sections:
+        if section['children']:
+            blocks_with_children.append(section)
+        else:
+            blocks_without_children.append(section['block'])
 
-            # Collect content until next heading or toggle
-            toggle_content = []
-            i += 1
-            while i < len(lines):
-                next_line = lines[i]
-                # Stop at next heading, toggle, or horizontal rule
-                if (next_line.startswith('#') or
-                    next_line.strip().startswith('**Toggle:') or
-                    next_line.strip() == '---'):
-                    i -= 1  # Back up so main loop processes this line
-                    break
-                if next_line.strip():
-                    toggle_content.append(next_line)
-                i += 1
+    # Batch upload blocks without children (up to 100 at a time)
+    if blocks_without_children:
+        for i in range(0, len(blocks_without_children), 100):
+            batch = blocks_without_children[i:i+100]
+            notion.blocks.children.append(
+                block_id=parent_id,
+                children=batch
+            )
 
-            # Create toggle block with children (recursively parse for nested toggles)
-            toggle_children = []
-            j = 0
-            while j < len(toggle_content):
-                content_line = toggle_content[j]
+    # Upload blocks with children one at a time, then recursively upload their children
+    for section in blocks_with_children:
+        block = section['block']
+        children = section['children']
 
-                # Check for nested toggle
-                if content_line.strip().startswith('**Toggle:') and '**' in content_line.strip()[9:]:
-                    # Extract nested toggle title
-                    text_after = content_line.strip()[9:]
-                    end_pos = text_after.find('**')
-                    nested_title = text_after[:end_pos].strip()
+        response = notion.blocks.children.append(
+            block_id=parent_id,
+            children=[block]
+        )
 
-                    # Collect nested toggle content
-                    nested_content = []
-                    j += 1
-                    while j < len(toggle_content):
-                        next_line = toggle_content[j]
-                        # Stop at next toggle at same level
-                        if next_line.strip().startswith('**Toggle:'):
-                            j -= 1
-                            break
-                        if next_line.strip():
-                            nested_content.append(next_line)
-                        j += 1
+        created_block = response['results'][0]
+        block_id = created_block['id']
 
-                    # Create nested toggle children
-                    nested_children = []
-                    for nc_line in nested_content:
-                        if nc_line.strip().startswith('- ') or nc_line.strip().startswith('* '):
-                            nested_children.append({
-                                'object': 'block',
-                                'type': 'bulleted_list_item',
-                                'bulleted_list_item': {'rich_text': parse_rich_text(nc_line.strip()[2:].strip())}
-                            })
-                        elif nc_line.strip().startswith('> '):
-                            nested_children.append({
-                                'object': 'block',
-                                'type': 'quote',
-                                'quote': {'rich_text': parse_rich_text(nc_line.strip()[2:].strip())}
-                            })
-                        elif nc_line.strip():
-                            nested_children.append({
-                                'object': 'block',
-                                'type': 'paragraph',
-                                'paragraph': {'rich_text': parse_rich_text(nc_line)}
-                            })
+        # Recursively upload children
+        upload_blocks_with_children(notion, block_id, children, depth + 1)
 
-                    # Add nested toggle
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'toggle',
-                        'toggle': {
-                            'rich_text': parse_rich_text(nested_title),
-                            'children': nested_children[:100]
-                        }
-                    })
-                elif content_line.startswith('### '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'heading_3',
-                        'heading_3': {'rich_text': parse_rich_text(content_line[4:].strip()), 'is_toggleable': True}
-                    })
-                elif content_line.strip().startswith('- ') or content_line.strip().startswith('* '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'bulleted_list_item',
-                        'bulleted_list_item': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
-                    })
-                elif content_line.strip().startswith('> '):
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'quote',
-                        'quote': {'rich_text': parse_rich_text(content_line.strip()[2:].strip())}
-                    })
-                elif content_line.strip():
-                    toggle_children.append({
-                        'object': 'block',
-                        'type': 'paragraph',
-                        'paragraph': {'rich_text': parse_rich_text(content_line)}
-                    })
+    return True
 
-                j += 1
-
-            blocks.append({
-                'object': 'block',
-                'type': 'toggle',
-                'toggle': {
-                    'rich_text': parse_rich_text(toggle_title),
-                    'children': toggle_children[:100] if toggle_children else []
-                }
-            })
-
-        # Handle bulleted lists
-        elif line.strip().startswith('- ') or line.strip().startswith('* '):
-            blocks.append({
-                'object': 'block',
-                'type': 'bulleted_list_item',
-                'bulleted_list_item': {'rich_text': parse_rich_text(line.strip()[2:].strip())}
-            })
-        # Handle numbered lists
-        elif line.strip() and line.strip()[0].isdigit() and '. ' in line:
-            content = line.strip().split('. ', 1)[1] if '. ' in line else line
-            blocks.append({
-                'object': 'block',
-                'type': 'numbered_list_item',
-                'numbered_list_item': {'rich_text': parse_rich_text(content)}
-            })
-        # Regular paragraph
-        elif line.strip():
-            blocks.append({
-                'object': 'block',
-                'type': 'paragraph',
-                'paragraph': {'rich_text': parse_rich_text(line)}
-            })
-
-        i += 1
-
-    return blocks
 
 def sync_to_notion(file_path, entry_type):
-    """Sync a markdown file to Notion database with full content"""
+    """Sync a markdown file to Notion database with hierarchical nesting"""
     notion = get_notion_client()
 
     with open(file_path, 'r') as f:
         post = frontmatter.load(f)
 
-    # Map to actual Notion properties (based on schema query)
+    # Map to actual Notion properties
     properties = {
         "Name": {"title": [{"text": {"content": post.get('name', Path(file_path).stem)}}]},
         "Tags": {"multi_select": [{"name": tag} for tag in post.get('tags', [])]},
@@ -424,16 +462,12 @@ def sync_to_notion(file_path, entry_type):
     # Add optional properties if they exist in frontmatter
     if 'version' in post:
         properties["Version"] = {"rich_text": [{"text": {"content": post.get('version', '')}}]}
-
     if 'player' in post:
         properties["Player"] = {"rich_text": [{"text": {"content": post.get('player', '')}}]}
-
     if 'session_number' in post:
         properties["Session Number"] = {"number": post.get('session_number')}
-
     if 'location_type' in post:
         properties["Location Type"] = {"select": {"name": post.get('location_type')}}
-
     if 'progress_clock' in post:
         properties["Progress Clock"] = {"rich_text": [{"text": {"content": post.get('progress_clock', '')}}]}
 
@@ -443,101 +477,82 @@ def sync_to_notion(file_path, entry_type):
         tags_list.append(entry_type.lower())
         properties["Tags"] = {"multi_select": [{"name": tag} for tag in tags_list]}
 
-    # Check if entry exists - match by File Path, not Name
+    # Check if entry exists - match by File Path
     results = notion.databases.query(
         database_id=DATABASES['entities'],
         filter={"property": "File Path", "rich_text": {"equals": str(file_path)}}
     )
 
-    # Convert markdown content to Notion blocks
-    content_blocks = markdown_to_notion_blocks(post.content)
+    # Convert markdown content to hierarchical Notion blocks (with wikilink support)
+    content_sections = markdown_to_notion_blocks(post.content, notion, DATABASES['entities'])
 
     if results['results']:
         # Archive existing page
         old_page_id = results['results'][0]['id']
+        notion.pages.update(page_id=old_page_id, archived=True)
 
-        notion.pages.update(
-            page_id=old_page_id,
-            archived=True
-        )
-
-        # Create new page with fresh content
+        # Create new page
         new_page = notion.pages.create(
             parent={"database_id": DATABASES['entities']},
             properties=properties
         )
 
-        # Add content in batches
-        batch_size = 100
-        for i in range(0, len(content_blocks), batch_size):
-            batch = content_blocks[i:i+batch_size]
-            notion.blocks.children.append(block_id=new_page['id'], children=batch)
+        # Upload content with nested children
+        upload_blocks_with_children(notion, new_page['id'], content_sections)
 
-        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (archived old, created new with {len(content_blocks)} blocks)")
-
-        # Record timestamp for push tracking
+        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (archived old, created new with nesting)")
         record_push_to_notion(str(file_path), new_page['id'])
     else:
-        # Create new page with content
+        # Create new page
         new_page = notion.pages.create(
             parent={"database_id": DATABASES['entities']},
             properties=properties
         )
 
-        # Add content in batches
-        batch_size = 100
-        for i in range(0, len(content_blocks), batch_size):
-            batch = content_blocks[i:i+batch_size]
-            notion.blocks.children.append(block_id=new_page['id'], children=batch)
+        # Upload content with nested children
+        upload_blocks_with_children(notion, new_page['id'], content_sections)
 
-        print(f"✨ Created: {post.get('name', Path(file_path).stem)} ({len(content_blocks)} blocks)")
-
-        # Record timestamp for push tracking
+        print(f"✨ Created: {post.get('name', Path(file_path).stem)} (with nesting)")
         record_push_to_notion(str(file_path), new_page['id'])
+
 
 def sync_all():
     """Sync all campaign files to Notion - dynamically discovers all markdown files"""
-
     sync_mappings = [
         ('Player_Characters/**/*.md', 'PC'),
         ('NPCs/**/*.md', 'NPC'),
         ('Factions/**/*.md', 'Faction'),
         ('Locations/**/*.md', 'Location'),
-        # Resources excluded - reference material for content generation, not table use
         ('Campaign_Core/**/*.md', 'Artifact'),
         ('Sessions/**/*.md', 'Session'),
-        ('.working/conversation_logs/**/*.md', 'Conversation'),
+        ('Resources/**/*.md', 'Resource'),
     ]
 
-    # Load ignore patterns
     ignore_patterns = load_notionignore()
 
-    synced_count = 0
-    skipped_count = 0
-
-    for pattern, entry_type in sync_mappings:
-        for file_path in Path('.').glob(pattern):
-            # Skip files starting with underscore
-            if file_path.name.startswith('_'):
+    for pattern, entity_type in sync_mappings:
+        files = Path('.').glob(pattern)
+        for file in files:
+            if should_ignore(file, ignore_patterns):
+                print(f"⏭️  Skipped (ignored): {file}")
                 continue
 
-            # Check if file should be ignored
-            if should_ignore(file_path, ignore_patterns):
-                skipped_count += 1
-                print(f"⏭️  Skipped (ignored): {file_path}")
-                continue
+            try:
+                sync_to_notion(str(file), entity_type)
+            except Exception as e:
+                print(f"❌ Failed to sync {file}: {e}")
 
-            sync_to_notion(file_path, entry_type)
-            synced_count += 1
 
-    print(f"🎲 Synced {synced_count} files to Notion ({skipped_count} skipped via .notionignore)")
+if __name__ == '__main__':
+    import sys
+    if len(sys.argv) < 2:
+        print("Usage: python sync_notion.py <file_path> <entity_type>")
+        print("   or: python sync_notion.py all")
+        sys.exit(1)
 
-if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        if sys.argv[1] == 'all':
-            sync_all()
-        else:
-            sync_to_notion(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else 'Unknown')
+    if sys.argv[1] == 'all':
+        sync_all()
     else:
-        print("Usage: ./sync_notion.py [all|filepath] [type]")
-        print("Example: ./sync_notion.py Player_Characters/PC_Manny.md PC")
+        file_path = sys.argv[1]
+        entry_type = sys.argv[2] if len(sys.argv) > 2 else 'Unknown'
+        sync_to_notion(file_path, entry_type)
