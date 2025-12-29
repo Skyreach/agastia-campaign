@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject6, human, gunslinger]
 threat_level: High
 ---
 
-# Hexus "Tex" - [[Decimate Project]] Subject #6
+# [[Hexus (Subject #6)]] "Tex" - [[Decimate Project]] Subject #6
 
-**Hexus** (nickname "Tex") is a human gunslinger and Subject #6, with ~4 years of service. Age ~14. Firearm expertise makes him unique among subjects. Quick draw specialist, precision and focus, cool under pressure.
+**[[Hexus (Subject #6)]]** (nickname "Tex") is a human gunslinger and Subject #6, with ~4 years of service. Age ~14. Firearm expertise makes him unique among subjects. Quick draw specialist, precision and focus, cool under pressure.
 
 **Appearance:** Human, likely carries custom firearms, western/frontier style (if Tex nickname accurate).
 

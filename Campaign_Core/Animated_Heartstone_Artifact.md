@@ -84,7 +84,7 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 - Corruption seed breaks/dissolves
 - Giant's axe transforms into evolving weapon
 - Heartstone is freed but now bound to party
-- Octavia begins tracking the party
+- [[Octavia (Subject #8)]] begins tracking the party
 
 ---
 
@@ -110,9 +110,9 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 - Multiple factions want to re-seal or destroy
 - **Pursuing Faction:** Planar guardians and concerned fey
 
-### Why Octavia Wanted It
+### Why [[Octavia (Subject #8)]] Wanted It
 
-**Octavia's Warlock Pact:**
+**[[Octavia (Subject #8)]]'s Warlock Pact:**
 - Her patron is connected to the imprisoned archfey
 - Either wants to:
   - **Free the archfey** (patron is ally/servant of archfey)
@@ -126,7 +126,7 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 4. **FAILED:** Party found it first
 
 **Current Status:**
-- Octavia is tracking the party
+- [[Octavia (Subject #8)]] is tracking the party
 - Will attempt to steal or negotiate for Heartstone
 - May become ally or enemy depending on party's intentions
 - First Decimate subject the party encounters
@@ -172,7 +172,7 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 - Heartstone awakens and joins party (as item/NPC)
 - Bad omens begin affecting nearby areas
 - Axe transforms into usable weapon
-- Octavia begins pursuit (future sessions)
+- [[Octavia (Subject #8)]] begins pursuit (future sessions)
 
 **Party Choices:**
 - Keep Heartstone (power + protection + curse)
@@ -187,9 +187,9 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 ### Story Hooks
 - Pursuing factions arrive seeking Heartstone
 - Archfey manipulates party toward its own goals
-- Connection to Feywild and Kyle's background
+- Connection to Feywild and [[Kyle/Nameless]]'s background
 - Moral dilemma: power vs. consequences
-- Octavia's agenda and [[Decimate Project]] connection
+- [[Octavia (Subject #8)]]'s agenda and [[Decimate Project]] connection
 
 ### Mechanical Balance
 - Feats provide early power boost for level 1 party
@@ -214,5 +214,5 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 - Luck saves should feel earned, not cheap
 - Archfey personality: ancient, patient, manipulative
 - Pursuing faction arrives in 2-3 sessions
-- Octavia encounter planned for mid-campaign
+- [[Octavia (Subject #8)]] encounter planned for mid-campaign
 - Keep archfey's true nature ambiguous initially

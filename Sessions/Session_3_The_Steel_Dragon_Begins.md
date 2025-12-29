@@ -31,7 +31,7 @@ graph TD
 
 **Toggle: Session Flow**
 1.  **Travel to Agastia:** 2-3 day journey with themed encounters.
-2.  **Kyle's Hook:** An encounter on the road that points Kyle towards the docks and Geist.
+2.  **[[Kyle/Nameless]]'s Hook:** An encounter on the road that points [[Kyle/Nameless]] towards the docks and Geist.
 3.  **Player Choice Encounter:** An encounter that can be resolved in multiple ways.
 4.  **Arrival in Agastia:** First impressions of the city.
 5.  **Job Board:** Introduction to the system for gaining money and merit.
@@ -91,7 +91,7 @@ graph TD
 | **16** | **Green Dragon's Domain** |
 | | The forest grows unnaturally quiet and dark. Acrid fog rolls between the trees. A green dragon wyrmling watches from a high branch, studying the party with ancient, intelligent eyes. It speaks, offering a "trade"—”information for secrets, or safe passage for tribute. **Variation:** The wyrmling is genuinely curious and might become a recurring NPC if treated well, or it's setting up an ambush with goblin allies hidden nearby. **Non-Combat:** Clever negotiation, offering valuable information (secrets about local politics, treasure locations), or appealing to its vanity can result in the wyrmling letting the party pass or even granting a warning about nearby dangers. The wyrmling might demand one magic item or 50 gp in tribute.
 
-### Day 1: The Bloody Crate (Kyle's Hook)
+### Day 1: The Bloody Crate ([[Kyle/Nameless]]'s Hook)
 
 **Encounter:** The party comes across an overturned cart on the side of the road. A wounded man is hiding nearby.
 
@@ -104,7 +104,7 @@ graph TD
 - **The Crate:** Contains mundane goods, but has a small, almost invisible symbol of a coiled serpent on it. This is a marker for [[Geist]]'s operation.
 
 **DM Notes:**
-- This provides a direct hook for Kyle (Nameless) to the docks and Warehouse 7.
+- This provides a direct hook for [[Kyle/Nameless]] (Nameless) to the docks and Warehouse 7.
 - The symbol on the crate can be used to identify other parts of the smuggling operation in [[Agastia]].
 
 ### Day 2: Player's Choice

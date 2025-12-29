@@ -61,13 +61,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #3: Trinity
+## Subject #3: [[Trinity (Subject #3)]]
 
 ### Player Summary
-**Trinity** is a female gnome/human (mixed heritage) and Subject #3. Little is known about their current whereabouts or specialization.
+**[[Trinity (Subject #3)]]** is a female gnome/human (mixed heritage) and Subject #3. Little is known about their current whereabouts or specialization.
 
 ### Basic Information
-- **Name:** Trinity
+- **Name:** [[Trinity (Subject #3)]]
 - **Number:** #3
 - **Race:** Gnome/Human (mixed or uncertain)
 - **Class:** Unknown
@@ -76,7 +76,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Age:** ~13-14 years old
 
 ### DM Notes
-- **Name Significance:** "Trinity" suggests three/triple theme
+- **Name Significance:** "[[Trinity (Subject #3)]]" suggests three/triple theme
   - Three personalities?
   - Three specializations?
   - Third of original experimental trio?
@@ -92,13 +92,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #4: Tetran
+## Subject #4: [[Tetran (Subject #4)]]
 
 ### Player Summary
-**Tetran** is a wood elf ranger and Subject #4, with approximately 6 years of service. His ranger skills make him an expert tracker and wilderness operative.
+**[[Tetran (Subject #4)]]** is a wood elf ranger and Subject #4, with approximately 6 years of service. His ranger skills make him an expert tracker and wilderness operative.
 
 ### Basic Information
-- **Name:** Tetran
+- **Name:** [[Tetran (Subject #4)]]
 - **Number:** #4
 - **Race:** Wood Elf
 - **Class:** Ranger
@@ -121,7 +121,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Plot Hooks:**
   - May be tracking party
   - Forest elf community searching for him
-  - Natural enemy of Kyle's bandits
+  - Natural enemy of [[Kyle/Nameless]]'s bandits
   - Could guide party through [[Infinite Forest]]
 - **Specialization:**
   - Survival expert
@@ -130,13 +130,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #5: Quincy
+## Subject #5: [[Quincy (Subject #5)]]
 
 ### Player Summary
-**Quincy** is a goliath barbarian and Subject #5, with approximately 5 years of service. His size and strength make him the physical powerhouse of the [[Decimate Project]].
+**[[Quincy (Subject #5)]]** is a goliath barbarian and Subject #5, with approximately 5 years of service. His size and strength make him the physical powerhouse of the [[Decimate Project]].
 
 ### Basic Information
-- **Name:** Quincy
+- **Name:** [[Quincy (Subject #5)]]
 - **Number:** #5
 - **Race:** Goliath
 - **Class:** Barbarian
@@ -159,7 +159,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Plot Hooks:**
   - Goliath tribe searching for lost child
   - Mountain region missions
-  - Connection to giant plots (Rakash's revenge)
+  - Connection to giant plots ([[Ian/Rakash]]'s revenge)
   - Might sympathize with party
 - **Character Arc Potential:**
   - Most physically imposing
@@ -169,13 +169,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #6: Hexus/Tex
+## Subject #6: [[Hexus (Subject #6)]]/Tex
 
 ### Player Summary
-**Hexus** (sometimes called "Tex") is a human gunslinger and Subject #6, with approximately 4 years of service. His firearm expertise makes him unique among the subjects.
+**[[Hexus (Subject #6)]]** (sometimes called "Tex") is a human gunslinger and Subject #6, with approximately 4 years of service. His firearm expertise makes him unique among the subjects.
 
 ### Basic Information
-- **Name:** Hexus (nickname: Tex)
+- **Name:** [[Hexus (Subject #6)]] (nickname: Tex)
 - **Number:** #6
 - **Race:** Human
 - **Class:** Gunslinger (Matt Mercer homebrew)
@@ -213,13 +213,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #7: Septimus
+## Subject #7: [[Septimus (Subject #7)]]
 
 ### Player Summary
-**Septimus** is a dragonborn sorcerer and Subject #7, with approximately 3 years of service. His draconic heritage and magical abilities make him a powerful asset.
+**[[Septimus (Subject #7)]]** is a dragonborn sorcerer and Subject #7, with approximately 3 years of service. His draconic heritage and magical abilities make him a powerful asset.
 
 ### Basic Information
-- **Name:** Septimus
+- **Name:** [[Septimus (Subject #7)]]
 - **Number:** #7
 - **Race:** Dragonborn
 - **Class:** Sorcerer
@@ -238,7 +238,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
   - Draconic Bloodline sorcerer?
   - Which dragon type/color?
   - Connection to [[Steel Dragon]] plot?
-  - [[Manny]] wants to meet real dragon - Septimus is part dragon
+  - [[Manny]] wants to meet real dragon - [[Septimus (Subject #7)]] is part dragon
 - **Potential Roles:**
   - Magical artillery
   - Diplomatic envoy (dragonborn presence)
@@ -256,13 +256,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #8: Octavia
+## Subject #8: [[Octavia (Subject #8)]]
 
 ### Player Summary
-**Octavia** is a drow warlock and Subject #8 - one of the three patron-level subjects. Witch-like and mysterious, she is the most experienced field operative with dark magical powers and her own agendas.
+**[[Octavia (Subject #8)]]** is a drow warlock and Subject #8 - one of the three patron-level subjects. Witch-like and mysterious, she is the most experienced field operative with dark magical powers and her own agendas.
 
 ### Basic Information
-- **Name:** Octavia
+- **Name:** [[Octavia (Subject #8)]]
 - **Number:** #8 (patron-level, one of strongest three)
 - **Race:** Drow (Dark Elf)
 - **Class:** Warlock
@@ -284,7 +284,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - May have orchestrated Ratterdan's destruction (DM secret)
 
 ### DM Notes - RATTERDAN MASTERMIND
-- **Secret Role:** Octavia hired the storm giant to destroy Ratterdan
+- **Secret Role:** [[Octavia (Subject #8)]] hired the storm giant to destroy Ratterdan
 - **Motive:** Heartstone buried beneath Ratterdan (fey artifact for power)
 - **Method:** Used warlock connections to manipulate giant
 - **Current Status:** Tracking party to recover Heartstone
@@ -311,13 +311,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #9: Nona
+## Subject #9: [[Nona (Subject #9)]]
 
 ### Player Summary
-**Nona** is a half-elf bard and Subject #9 - one of the three patron-level subjects. Despite being protective and nurturing to younger subjects like [[Manny]], she is a strategic coordinator with significant power and influence.
+**[[Nona (Subject #9)]]** is a half-elf bard and Subject #9 - one of the three patron-level subjects. Despite being protective and nurturing to younger subjects like [[Manny]], she is a strategic coordinator with significant power and influence.
 
 ### Basic Information
-- **Name:** Nona
+- **Name:** [[Nona (Subject #9)]]
 - **Number:** #9 (patron-level, one of strongest three)
 - **Race:** Half-Elf
 - **Class:** Bard
@@ -341,7 +341,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ### DM Notes
 - **One of Three Patrons:**
-  - Equal in rank to Octavia (#8) and Decum (#10)
+  - Equal in rank to [[Octavia (Subject #8)]] (#8) and [[Decum (Subject #10)]] (#10)
   - Handles subject coordination and loyalty
   - May know more about Zero's plans than she reveals
   - Protective nature is genuine but also tactical
@@ -367,13 +367,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ---
 
-## Subject #10: Decum
+## Subject #10: [[Decum (Subject #10)]]
 
 ### Player Summary
-**Decum** is a high elf wizard and Subject #10 - the eldest and most powerful Decimate subject. One of three patron-level operatives, he keeps to himself and handles [[Professor Zero]]'s most dangerous missions.
+**[[Decum (Subject #10)]]** is a high elf wizard and Subject #10 - the eldest and most powerful Decimate subject. One of three patron-level operatives, he keeps to himself and handles [[Professor Zero]]'s most dangerous missions.
 
 ### Basic Information
-- **Name:** Decum
+- **Name:** [[Decum (Subject #10)]]
 - **Number:** #10 (patron-level, eldest and strongest)
 - **Race:** High Elf
 - **Class:** Wizard
@@ -422,16 +422,16 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ### Pairs & Relationships
 - **#1 & #2:** [[Manny]] and [[Nikki]] travel together (Codex mission, both PCs)
-- **#8, #9, #10:** The Three Patrons (Octavia, Nona, Decum) - most powerful
-- **Nona's Protection:** "Big sister" role toward [[Manny]] (#1) and [[Nikki]] (#2)
+- **#8, #9, #10:** The Three Patrons ([[Octavia (Subject #8)]], [[Nona (Subject #9)]], Decum) - most powerful
+- **[[Nona (Subject #9)]]'s Protection:** "Big sister" role toward [[Manny]] (#1) and [[Nikki]] (#2)
 - **Hierarchy:** Higher numbers command lower numbers
 
 ### Potential Alliances
-- **The Patrons:** Octavia (#8), Nona (#9), Decum (#10) - own agendas
-- **The Loyal:** Possibly Trinity (#3), Septimus (#7)
+- **The Patrons:** [[Octavia (Subject #8)]] (#8), [[Nona (Subject #9)]] (#9), [[Decum (Subject #10)]] (#10) - own agendas
+- **The Loyal:** Possibly [[Trinity (Subject #3)]] (#3), [[Septimus (Subject #7)]] (#7)
 - **The Questioning:** [[Manny]] (#1), [[Nikki]] (#2) - PCs discovering truth
-- **The Wild Cards:** Hexus (#6), Tetran (#4)
-- **The Dangerous:** Octavia (#8), Quincy (#5)
+- **The Wild Cards:** [[Hexus (Subject #6)]] (#6), [[Tetran (Subject #4)]] (#4)
+- **The Dangerous:** [[Octavia (Subject #8)]] (#8), [[Quincy (Subject #5)]] (#5)
 
 ### Possible Subplots
 - **Rebellion Arc:** Some subjects plan escape
@@ -444,7 +444,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ### Early Campaign
 - References in letters to [[Manny]]/[[Nikki]]
-- Nona mentioned as contact at lab
+- [[Nona (Subject #9)]] mentioned as contact at lab
 - Rumors of other skilled young operatives
 
 ### Mid Campaign
@@ -461,9 +461,9 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 ## DM Notes
 
 ### Subject Deployment (Current)
-- **At Lab (Keth):** Likely Nona (#9), overseeing younger subjects
-- **Independent Missions:** Decum (#10) on Zero's critical tasks, Octavia (#8) pursuing Heartstone
-- **Field Missions:** Trinity (#3), Tetran (#4), Quincy (#5), Hexus (#6), Septimus (#7)
+- **At Lab (Keth):** Likely [[Nona (Subject #9)]] (#9), overseeing younger subjects
+- **Independent Missions:** [[Decum (Subject #10)]] (#10) on Zero's critical tasks, [[Octavia (Subject #8)]] (#8) pursuing Heartstone
+- **Field Missions:** [[Trinity (Subject #3)]] (#3), [[Tetran (Subject #4)]] (#4), [[Quincy (Subject #5)]] (#5), [[Hexus (Subject #6)]] (#6), [[Septimus (Subject #7)]] (#7)
 - **With Party (PCs):** [[Manny]] (#1), [[Nikki]] (#2) on Codex retrieval mission
 
 ### Story Potential

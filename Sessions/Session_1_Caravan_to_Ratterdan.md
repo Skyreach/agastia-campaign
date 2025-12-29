@@ -40,7 +40,7 @@ graph TD
 
     CorruptionBreak --> Surface[Return to Surface]
 
-    Surface --> RakashClaim[Rakash Claims Axe<br/>Weapon Transforms]
+    Surface --> RakashClaim[[[Ian/Rakash]] Claims Axe<br/>Weapon Transforms]
 
     RakashClaim --> TravelChoice{Long Rest Needed?}
 
@@ -60,14 +60,14 @@ graph TD
   1. **Node 1: Cloud Compass Skill Challenge** → Find underground entrance
   1. **Node 2: Shadow Dungeon (3 rooms)** → Resource-draining combat
   1. **Node 3: Heartstone Cutscene** → Feats granted, corruption breaks
-  1. **Node 4: Rakash Claims Axe** → Weapon transforms
+  1. **Node 4: [[Ian/Rakash]] Claims Axe** → Weapon transforms
   1. **Node 5: Travel to [[Agastia]]** → Ad-hoc ([[Meridian's Rest]] if needed)
 **Toggle: Key NPCs & Factions**
   - **None this session** - Solo exploration
-  - **Hidden Mastermind:** Octavia (Subject #8, unknown to party)
+  - **Hidden Mastermind:** [[Octavia (Subject #8)]] (Subject #8, unknown to party)
 **Toggle: Important Items**
   - **Animated Heartstone:** Grants feats, breaks axe corruption
-  - **Giant's Axe:** Too large/cursed until cleansed, then Rakash claims it
+  - **Giant's Axe:** Too large/cursed until cleansed, then [[Ian/Rakash]] claims it
   - **Zhaask Symbols:** Draconic writing on axe (partial translation possible)
 
 ## Nodes
@@ -77,7 +77,7 @@ graph TD
   - 30
   Light sensitivity
   1. 22 - Shadow
-  1. 15 - Nameless
+  1. 15 - [[Kyle/Nameless]]
   1. 11 - Biago
   1. 11 - Monomi
   1. 6 - Rahk-ash
@@ -155,7 +155,7 @@ Shadow Creatures
 - [x]  AC 12 | HP  7
 - [x]  AC 12 | HP  7
 
-1. 23 - Nameless
+1. 23 - [[Kyle/Nameless]]
 1. 14 - Shadow Creatures
 1. 14 - Rack ash
 1. 13 - Biago
@@ -194,7 +194,7 @@ Shadow Creatures
 **AREA 2: CORRUPTION NEXUS**
 1. Rackash
 1. Biago
-1. Nameless
+1. [[Kyle/Nameless]]
 1. Monomi
 1. Shadow Guard 1 - 43
 - [x]  Shadow Guard 2 - 40
@@ -282,7 +282,7 @@ This room has **no final guardian** this time. Party must navigate:
 > **[To each PC individually]:** You see a vision of your deepest desire...
 > - **[[Manny]]:** Blade and magic becoming one
 > - **[[Nikki]]:** Shadow and arcane merging
-> - **Rakash:** Primal fury perfected
+> - **[[Ian/Rakash]]:** Primal fury perfected
 > - **Kyle:** Rainbow spectrum expanding
 > - **[[Josh]]:** Markings glowing with purpose
    >
@@ -305,9 +305,9 @@ This room has **no final guardian** this time. Party must navigate:
 >  As you emerge from the underground chamber, you see immediate changes. The dark corruption pulsing through the giant's axe has SHATTERED - the weapon now gleams with clean, bluish-silver light. The storm cloud dissipates, finally free.
 **DC 10:** The reality warps around Ratterdan fade. The upward-falling leaves drift normally. Time stabilizes.
 **DC 14:** As above and: The axe pulses with clean fey energy, no longer corrupted. It seems... smaller? Or perhaps just less menacing.
-**[To Rakash only]:** You feel an overwhelming compulsion pulling you toward the weapon. Something deep within recognizes this axe as YOURS.
+**[To [[Ian/Rakash]] only]:** You feel an overwhelming compulsion pulling you toward the weapon. Something deep within recognizes this axe as YOURS.
 **The Claiming Event:**
-**When Rakash approaches and touches the axe:**
+**When [[Ian/Rakash]] approaches and touches the axe:**
 > As your hand makes contact with the weapon, it SHRINKS. The massive 20-foot giant's axe reduces in size, transforming into a weapon perfectly sized for you to wield. The bluish-silver metal gleams, free of corruption.
 >
 > You feel dormant power within it - the Storm Bond ability, waiting to activate when lightning strikes.
@@ -315,12 +315,12 @@ This room has **no final guardian** this time. Party must navigate:
 - **Before:** Giant-sized (unusable), cursed, corrupted
 - **After:** Medium-sized (usable), cleansed, evolving weapon
 - **Storm Bond:** Dormant but present (see Giant_Axe_Artifact.md)
-- **Rakash:** Can now wield as primary weapon
+- **[[Ian/Rakash]]:** Can now wield as primary weapon
 **Toggle: DM Questions (Answer During Session)**
 - What shape did Heartstone take when animated?
 - Did Heartstone go dormant or stay animated?
 - Did party take Heartstone with them?
-- How did Rakash's player react to the compulsion/axe claiming?
+- How did [[Ian/Rakash]]'s player react to the compulsion/axe claiming?
 
 ### Node 4: Travel to [[Agastia]]
 

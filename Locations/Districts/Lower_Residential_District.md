@@ -28,7 +28,7 @@ Unlike higher tiers' competitive striving or lower tiers' desperation, the [[Low
 
 ### Notable Establishments
 
-**The Copper Mug**
+**[[The Copper Mug (Tavern)]]**
 Working-class tavern serving simple meals and cheap ale. Run by Marta Brennan, the tavern functions as community gathering place where residents share news, offer mutual support, and occasionally organize collective action. Basic lodging available (3cp/meal, 1sp/night shared room). The Mug represents the district's heart - unpretentious, welcoming, and fundamentally decent.
 
 **Ironhand Repairs**
@@ -61,7 +61,7 @@ Midday: Streets quieter as most work elsewhere. Elderly residents, parents with 
 
 Afternoon: Children return from schools or apprenticeships. Shops serving local needs see peak traffic. Neighbors chat while running errands. Community starts transitioning from work to home life.
 
-Evening: Workers return home tired but satisfied. Families share meals. The Copper Mug fills with those seeking company and relaxation. Streets alive with conversation and laughter. Community bonds strengthen through casual socializing.
+Evening: Workers return home tired but satisfied. Families share meals. [[The Copper Mug (Tavern)]] fills with those seeking company and relaxation. Streets alive with conversation and laughter. Community bonds strengthen through casual socializing.
 
 Night: District quiets as residents rest for next day's work. Neighborhood watch volunteers patrol informally. Those working night shifts depart for employment elsewhere. Sense of security from knowing neighbors watch out for each other.
 
@@ -84,7 +84,7 @@ Secret network of residents with higher-tier connections who assist community me
 ### Key NPCs
 
 **Marta Brennan**
-Proprietor of The Copper Mug and unofficial community leader. Wise, compassionate, fiercely protective of neighborhood. Knows everyone's business but keeps confidences carefully. Recognizes signs of chaos cult recruitment and subtly intervenes. Has connections reaching surprisingly high through customers who've risen from working class roots. Offers party member [[Nikki]] motherly advice and practical support.
+Proprietor of [[The Copper Mug (Tavern)]] and unofficial community leader. Wise, compassionate, fiercely protective of neighborhood. Knows everyone's business but keeps confidences carefully. Recognizes signs of chaos cult recruitment and subtly intervenes. Has connections reaching surprisingly high through customers who've risen from working class roots. Offers party member [[Nikki]] motherly advice and practical support.
 
 **Garrett Ironhand**
 Repair shop owner and backbone of community's practical infrastructure. Skilled craftsman who could work in higher tiers but prefers living among "real people." Quietly wealthy from careful savings and wise investments, uses resources to help neighbors during crises. Secret funder of workers' collective. Knows which officials can be reasoned with and which require pressure.

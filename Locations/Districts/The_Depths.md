@@ -30,8 +30,8 @@ Sound carries strangely in confined spaces. Whispered conversations echo. Argume
 
 ### Notable Establishments
 
-**The Hidden Door**
-Underground inn and safe house run by Senna Darkwell (see establishment file). Provides floor space (1cp/night), basic protection, and functioning as communication hub for [[Dispossessed]]. No questions asked about past or present activities. Senna maintains strict neutrality, making The Hidden Door one of few spaces relatively safe from violence. Despite rough conditions, represents genuine community support in harsh environment.
+**[[The Hidden Door (Inn)]]**
+Underground inn and safe house run by Senna Darkwell (see establishment file). Provides floor space (1cp/night), basic protection, and functioning as communication hub for [[Dispossessed]]. No questions asked about past or present activities. Senna maintains strict neutrality, making [[The Hidden Door (Inn)]] one of few spaces relatively safe from violence. Despite rough conditions, represents genuine community support in harsh environment.
 
 **Underground Market**
 Black market operating in shifting locations throughout [[The Depths]]. [[Kex the Fence]] runs largest operation, buying anything without questions (10% of value) and selling stolen goods, illegal items, and questionable "salvage." Poisoned weapons (illegal in [[Agastia]], 50gp for 3 doses), "liberated" magic items (authenticity uncertain), broken artifacts (might work if repaired?). Pure buyer-beware environment but only source for some goods.
@@ -69,7 +69,7 @@ Trust develops slowly and remains fragile. Too many betrayals for easy faith. Bu
 
 **Afternoon:** Early workers return. Market activity increases. Information sharing about surface opportunities or threats. Planning criminal activities for evening.
 
-**Evening:** Peak activity period. The Hidden Door fills with residents seeking company. Gathering Stone hosts community discussions. Black market operations accelerate. Those working night shifts depart.
+**Evening:** Peak activity period. [[The Hidden Door (Inn)]] fills with residents seeking company. Gathering Stone hosts community discussions. Black market operations accelerate. Those working night shifts depart.
 
 **Night:** Reduced activity as residents rest. Some areas go nearly dark to save fuel. Criminal operations continue. Guard rotations watch for threats from both surface authorities and other underground groups. Chaos cult activities intensify (they prefer darkness).
 
@@ -92,7 +92,7 @@ Hidden collection documenting merit system's failures, abuses, and injustices. P
 ### Key NPCs
 
 **Senna Darkwell**
-Proprietor of The Hidden Door and community leader among the Resigned faction. Former Tier 4 merchant who lost everything through competitor's sabotage disguised as legitimate competition. Rather than destroy herself through bitterness, channels energy into helping others survive. Maintains network of informants throughout [[Agastia]]. Knows everyone in [[The Depths]] personally. Protects community fiercely while avoiding direct confrontation with authorities. Secret supporter of Underground Railroad.
+Proprietor of [[The Hidden Door (Inn)]] and community leader among the Resigned faction. Former Tier 4 merchant who lost everything through competitor's sabotage disguised as legitimate competition. Rather than destroy herself through bitterness, channels energy into helping others survive. Maintains network of informants throughout [[Agastia]]. Knows everyone in [[The Depths]] personally. Protects community fiercely while avoiding direct confrontation with authorities. Secret supporter of Underground Railroad.
 
 **[[Kex the Fence]]**
 Primary black market operator and representative of Criminal faction. Amoral but fair in dealings - no scams, agreed prices honored, stolen goods only sold to those knowing what they're buying. Former thief who fell not through failure but after refusing to betray partner. Maintains code of honor unusual in criminal world. Unknowingly fences some chaos cult materials among normal stolen goods. Would be horrified if he understood what he's facilitating.

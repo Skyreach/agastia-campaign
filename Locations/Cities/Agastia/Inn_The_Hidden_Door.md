@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 ---
 
-# The Hidden Door
+# [[The Hidden Door (Inn)]]
 
 ## Overview
 
@@ -20,7 +20,7 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 
 **Clientele:** [[Dispossessed]], fugitives (not all guilty), people hiding from someone, underground network members, anyone needing to disappear for a while
 
-**Reputation:** "If you need to not be found, go see Senna." Absolute discretion. No one talks about who stays at The Hidden Door. Ever.
+**Reputation:** "If you need to not be found, go see Senna." Absolute discretion. No one talks about who stays at [[The Hidden Door (Inn)]]. Ever.
 
 **Atmosphere:** Dim oil lamps, stone walls, low ceilings. Smells of mushroom stew, damp stone, and lamp oil. Quiet - people here don't want to draw attention. Surprisingly clean despite location. Feels like a cave made comfortable. Safe, secret, hidden from the world above.
 
@@ -38,15 +38,15 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 **Motivation:** [[The Depths]] saved her life when she had nothing. Now she provides the same sanctuary for others. Believes everyone deserves a place to sleep safely, no matter what brought them there.
 
 **Quest Hook - The Fugitive's Dilemma:**
-- **Need:** A guest named Darin is hiding at The Hidden Door - he's accused of theft from a [[Merit Council]] official. Claims he's innocent, was framed. Senna believes him, but [[Merit Council]] guards are asking questions in [[The Depths]].
+- **Need:** A guest named Darin is hiding at [[The Hidden Door (Inn)]] - he's accused of theft from a [[Merit Council]] official. Claims he's innocent, was framed. Senna believes him, but [[Merit Council]] guards are asking questions in [[The Depths]].
 - **Problem:** Senna can't keep Darin hidden forever. She needs someone to investigate what really happened and clear his name (or at minimum, get evidence he was framed so [[Merit Council]] backs off).
 - **Reward:** In exchange for clearing Darin's name or proving the frameup:
-  - Free lodging at The Hidden Door whenever needed (private, secure, off the grid)
+  - Free lodging at [[The Hidden Door (Inn)]] whenever needed (private, secure, off the grid)
   - Access to [[Dispossessed]] information network (what happens in [[The Depths]], who's hiding, who's looking)
   - Senna's personal protection (she has connections and isn't afraid to use them)
   - Safe house services (hide someone, store contraband, no questions)
   - Introduction to [[Dispossessed]] faction leaders (potential allies against Merit Council)
-- **Difficulty:** Moderate - Requires investigation, possibly confronting [[Merit Council]] official, gathering evidence. If official is corrupt, could be dangerous. Likely connects to broader corruption (possibly Kaelborn/Geist related).
+- **Difficulty:** Moderate - Requires investigation, possibly confronting [[Merit Council]] official, gathering evidence. If official is corrupt, could be dangerous. Likely connects to broader corruption (possibly [[Kaelborn (Bandit Boss)]]/[[Geist (Bandit Lieutenant)]] related).
 
 ## Day-to-Day Operations
 
@@ -95,7 +95,7 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 - **Medical supplies:** Basic first aid, Senna has Medicine skill (donation-based)
 - **Discrete exit:** Back entrance to underground tunnels (free for guests if needed urgently)
 
-**Rules of The Hidden Door:**
+**Rules of [[The Hidden Door (Inn)]]:**
 1. No violence inside (enforced absolutely)
 2. No selling out other guests (betrayal = permanent ban + worse)
 3. Pay what you can, when you can (honor system for desperate)
@@ -153,7 +153,7 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 
 **Plot Hooks:**
 - **Safe base in [[The Depths]]:** Party needs place to stay off-grid, plan in secret, hide from pursuers
-- **Fugitive quest:** Investigating Darin's frameup likely connects to corrupt [[Merit Council]] official (possibly Kaelborn network)
+- **Fugitive quest:** Investigating Darin's frameup likely connects to corrupt [[Merit Council]] official (possibly [[Kaelborn (Bandit Boss)]] network)
 - **[[Dispossessed]] information:** Senna's network knows everything happening in lower [[Agastia]]
 - **Political sanctuary:** Party members targeted by [[Merit Council]] can hide here
 - **Underground contacts:** Meet [[Dispossessed]] leaders, resistance members, learn about inequality in [[Agastia]]
@@ -168,7 +168,7 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 
 **Connection to Campaign:**
 - **[[Dispossessed]] faction:** Direct access to faction leaders and perspective
-- **[[Merit Council]] corruption:** Many here are victims of Kaelborn/Geist operations
+- **[[Merit Council]] corruption:** Many here are victims of [[Kaelborn (Bandit Boss)]]/[[Geist (Bandit Lieutenant)]] operations
 - **Information network:** Knows what's really happening in [[Agastia]]'s underbelly
 - **Thematic relevance:** Inequality, justice, who gets protection and who doesn't
 - **Safe planning space:** Party can operate outside [[Merit Council]] surveillance
@@ -189,5 +189,5 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 - Accused of stealing from [[Merit Council]] official's office
 - Actually discovered evidence of corruption, official framed him to discredit
 - Evidence still exists if party can find it
-- Official is mid-level (not Kaelborn, but connected to same network)
+- Official is mid-level (not [[Kaelborn (Bandit Boss)]], but connected to same network)
 - Clearing Darin exposes corruption, makes [[Merit Council]] enemies, gains [[Dispossessed]] allies

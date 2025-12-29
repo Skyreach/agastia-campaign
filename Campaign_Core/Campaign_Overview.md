@@ -100,7 +100,7 @@ The [[Steel Dragon]] represents the ultimate expression of merit taken to its da
 - **Current State:** Storm giant left axe at Ratterdan
 - **Player Impact:** First session mystery, potential ongoing threat
 
-### Bandit Network
+### [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]]
 - **Role:** Opportunistic criminals exploiting social chaos
 - **Activities:** Preying on travelers, smuggling, information brokering
 - **Organization:** Loose connections rather than unified group
@@ -161,7 +161,7 @@ During Session 0, players contributed numerous world-building elements:
 - **Story Style:** Light narrative with moral dilemmas
 
 ### Character Connections (Established)
-- **Kyle saved Rakash:** Pre-existing relationship
+- **[[Kyle/Nameless]] saved [[Ian/Rakash]]:** Pre-existing relationship
 - **[[Manny]] and [[Nikki]] together:** Traveling companions or partners
 - **[Other connections from Session 0]**
 

@@ -70,7 +70,7 @@ related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 
 ### Potential Connections
 - **[[Manny]]:** Potential customer for Garrek's journal pages
-- **Kyle:** Could provide information about black market/Geist if approached
+- **[[Kyle/Nameless]]:** Could provide information about black market/[[Geist (Bandit Lieutenant)]] if approached
 
 ## [[Stonemark Antiquities]]
 
@@ -224,9 +224,9 @@ When [[Manny]] asks about the Codex or ancient artifacts:
 
 **Black Market Ties:**
 - Knows [[Kex the Fence]] (rival smuggler)
-- Aware of Geist's operation (stays neutral)
+- Aware of [[Geist (Bandit Lieutenant)]]'s operation (stays neutral)
 - Fences goods for various parties
-- Useful contact for Kyle's investigation
+- Useful contact for [[Kyle/Nameless]]'s investigation
 
 ### Secrets
 - **Academic Rivalry:** Philosophical disagreement with Veridian
@@ -234,7 +234,7 @@ When [[Manny]] asks about the Codex or ancient artifacts:
   - Mutual professional respect
   - Occasionally compete for acquisitions
 - **Council Bribes:** Pays modest fees to avoid inspections
-  - Not involved with Geist (different territory)
+  - Not involved with [[Geist (Bandit Lieutenant)]] (different territory)
   - Legitimate enough to avoid major scrutiny
 - **Garrek Theory:** Suspects he found something valuable and died for it
   - Hopes someone finds it so she can buy/fence

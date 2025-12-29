@@ -65,10 +65,10 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 
 ### NPCs
 - **[[Professor Zero]]:** Current patron, seeks approval from
-- **Nona (#9):** Looks up to her as role model
-- **Octavia (#3):** Recognized her distinctive laugh in Session 1
+- **[[Nona (Subject #9)]] (#9):** Looks up to her as role model
+- **[[Octavia (Subject #8)]] (#3):** Recognized her distinctive laugh in Session 1
 - **Parents:** Owned Italian restaurant in [[Agastia]] (fate unknown, pre-memory)
-- **Decimate Siblings:** Shares all connections with [[Manny]] (Trinity, Tetran, Quincy, Hexus, Septimus, Octavia, Decum)
+- **Decimate Siblings:** Shares all connections with [[Manny]] ([[Trinity (Subject #3)]], [[Tetran (Subject #4)]], [[Quincy (Subject #5)]], [[Hexus (Subject #6)]], [[Septimus (Subject #7)]], [[Octavia (Subject #8)]], Decum)
 
 ### Factions
 - **[[Decimate Project]]:** Member (Subject #2)
@@ -95,7 +95,7 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Entered shadow dungeon beneath Ratterdan
 - Defeated shadow creatures
 - Heartstone transformed into "Bloody" (crystalline red demonic cat)
-- Heard Octavia's distinctive laugh during dungeon (triggered memory)
+- Heard [[Octavia (Subject #8)]]'s distinctive laugh during dungeon (triggered memory)
 - Reached level 2
 - Found map to Lonely Mountain
 
@@ -116,7 +116,7 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Finding parents (alive? dead? searching for lost child?)
 - Italian food triggering memories
 - Loyalty crisis when learning truth about [[Professor Zero]]
-- Relationship development with Nona
+- Relationship development with [[Nona (Subject #9)]]
 - Moral choice: [[Professor Zero]] vs. [[Manny]]'s safety
 - Locating Mistkin at Garrek's Falls - mission accomplished, reports to Zero
 - Brand's connection to Mistkin (Storm Lords are their allies) creates party tension

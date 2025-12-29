@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject7, dragonborn, sorcerer]
 threat_level: High
 ---
 
-# Septimus - [[Decimate Project]] Subject #7
+# [[Septimus (Subject #7)]] - [[Decimate Project]] Subject #7
 
-**Septimus** is a dragonborn sorcerer and Subject #7, with ~3 years of service. Age ~13. Draconic heritage and magical abilities make him a powerful asset. Natural magic user, possibly charismatic, proud draconic heritage.
+**[[Septimus (Subject #7)]]** is a dragonborn sorcerer and Subject #7, with ~3 years of service. Age ~13. Draconic heritage and magical abilities make him a powerful asset. Natural magic user, possibly charismatic, proud draconic heritage.
 
 **Appearance:** Dragonborn features (scales, breath weapon), distinctive among subjects.
 
@@ -22,7 +22,7 @@ threat_level: High
 **Dragon Connections:**
 - Which dragon type/color?
 - Connection to [[Steel Dragon]] plot?
-- **[[Manny]] wants to meet real dragon** - Septimus is part dragon
+- **[[Manny]] wants to meet real dragon** - [[Septimus (Subject #7)]] is part dragon
 - Draconic Bloodline sorcerer abilities
 
 **Potential Roles:**
@@ -43,6 +43,6 @@ threat_level: High
 - Unpredictable in combat
 - Dangerous to Zero's plans (control issues)
 
-**Dragon Plot Integration:** [[Manny]]'s dragon goal + Septimus dragonborn + [[Steel Dragon]] = potential three-way interaction
+**Dragon Plot Integration:** [[Manny]]'s dragon goal + [[Septimus (Subject #7)]] dragonborn + [[Steel Dragon]] = potential three-way interaction
 
 **Current Status:** Location unknown, likely magical/diplomatic missions, presumed loyal to [[Professor Zero]]

@@ -58,8 +58,8 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 ### NPCs
 - **[[Professor Zero]]:** Captor/patron who wiped his memory at age 10, sends him on missions
 - **Isiliva:** Silver dragonborn who raised him at "Solace of Sterling" magic shop (pre-memory wipe, unknown to Manny)
-- **Nona (#9):** Half-elf bard, protective "big sister" figure in [[Decimate Project]]
-- **Other Decimate Siblings:** Trinity (#2), Tetran (#4), Quincy (#5), Hexus (#6), Septimus (#7), Octavia (#3), Decum (#1)
+- **[[Nona (Subject #9)]] (#9):** Half-elf bard, protective "big sister" figure in [[Decimate Project]]
+- **Other Decimate Siblings:** [[Trinity (Subject #3)]] (#2), [[Tetran (Subject #4)]] (#4), [[Quincy (Subject #5)]] (#5), [[Hexus (Subject #6)]] (#6), [[Septimus (Subject #7)]] (#7), [[Octavia (Subject #8)]] (#3), [[Decum (Subject #10)]] (#1)
 
 ### Factions
 - **[[Decimate Project]]:** Member (Subject #10)

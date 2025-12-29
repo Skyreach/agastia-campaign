@@ -40,14 +40,14 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 
 1. **Monomi "[[Manny]]"** - Male half-orc eldritch knight (PC, newest/weakest)
 2. **Biago "[[Nikki]]"** - Male tiefling arcane trickster (PC, second newest)
-3. **Trinity** - Female gnome/human (unknown class)
-4. **Tetran** - Male wood elf ranger
-5. **Quincy** - Male goliath barbarian
-6. **Hexus/Tex** - Male human gunslinger
-7. **Septimus** - Male dragonborn sorcerer
-8. **Octavia** - Female drow warlock (PATRON - pursuing own agenda)
-9. **Nona** - Female half-elf bard (PATRON - protective coordinator)
-10. **Decum** - Male high elf wizard (PATRON - eldest/strongest, Zero's right hand)
+3. **[[Trinity (Subject #3)]]** - Female gnome/human (unknown class)
+4. **[[Tetran (Subject #4)]]** - Male wood elf ranger
+5. **[[Quincy (Subject #5)]]** - Male goliath barbarian
+6. **[[Hexus (Subject #6)]]/Tex** - Male human gunslinger
+7. **[[Septimus (Subject #7)]]** - Male dragonborn sorcerer
+8. **[[Octavia (Subject #8)]]** - Female drow warlock (PATRON - pursuing own agenda)
+9. **[[Nona (Subject #9)]]** - Female half-elf bard (PATRON - protective coordinator)
+10. **[[Decum (Subject #10)]]** - Male high elf wizard (PATRON - eldest/strongest, Zero's right hand)
 
 ### Project Purpose
 - True goal unknown even to most subjects
@@ -65,11 +65,11 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 ### [[Decimate Project Subjects]]
 - **[[Manny]] (#10):** Newest subject, dispatched for Codex
 - **[[Nikki]] (#8):** Loyal subject, protecting [[Manny]]
-- **Nona (#9):** Protective guardian role over younger subjects
+- **[[Nona (Subject #9)]] (#9):** Protective guardian role over younger subjects
 - **Others (#1-#7):** Status and locations unknown
 
 ### External Connections
-- **Rakash:** Knows [[Professor Zero]] "a little" through Niletrix work
+- **[[Ian/Rakash]]:** Knows [[Professor Zero]] "a little" through Niletrix work
 - **Niletrix:** Dragon connection (nature unclear)
 - **Beholder:** Sometimes collaborates
 - **Agastian Authorities:** Likely unknown to them
@@ -123,7 +123,7 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 - Can be sympathetic (good intentions) or purely evil
 - Memory wipes might be reversible
 - Each subject has tragic pre-capture story
-- Nona's protective role suggests some subjects retain humanity
+- [[Nona (Subject #9)]]'s protective role suggests some subjects retain humanity
 - "Zero" name significant? Tenth experiment? Reset point?
 
 ### Combat Considerations
@@ -136,7 +136,7 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 
 ### Campaign Integration
 - **Codex Quest:** Central to [[Manny]]/[[Nikki]] arc
-- **Rakash Connection:** Through Niletrix (unexplored)
+- **[[Ian/Rakash]] Connection:** Through Niletrix (unexplored)
 - **Beholder Link:** Collaborates sometimes - why?
 - **Keth Location:** Hidden lab could be dungeon
 - **Memory Magic:** Could tie to [[Steel Dragon]], [[Chaos Cult]]

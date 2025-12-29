@@ -16,7 +16,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 
 ## Player Summary
 
-**Krythak the Stormbringer** is a storm giant warlord who leads a fortified warband from a base on Lonely Mountain. Once a noble storm giant who valued order and justice, Krythak has been corrupted by Octavia's manipulation and now believes he is building a "perfect society" through conquest. His warband raids coastal towns for supplies and slaves, leaving destruction in their wake.
+**Krythak the Stormbringer** is a storm giant warlord who leads a fortified warband from a base on Lonely Mountain. Once a noble storm giant who valued order and justice, Krythak has been corrupted by [[Octavia (Subject #8)]]'s manipulation and now believes he is building a "perfect society" through conquest. His warband raids coastal towns for supplies and slaves, leaving destruction in their wake.
 
 ### Basic Information
 - **Race:** Storm Giant
@@ -48,7 +48,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Raids coastal towns for supplies, slaves, and weapons
 - Commands force of 25-30 combatants (giants, ogres, trolls, goblinoids)
 - Builds and maintains fortified war camp with defensive positions
-- Meets periodically with Octavia for "strategic counsel"
+- Meets periodically with [[Octavia (Subject #8)]] for "strategic counsel"
 - Plans expansion of "ordered society" through conquest
 
 ### Personality & Behavior
@@ -62,7 +62,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 ## Relationships
 
 ### Manipulator
-- **Octavia (Subject #8):** Sees her as philosophical advisor and fellow visionary; completely unaware she's using him as tool for [[Decimate Project]]
+- **[[Octavia (Subject #8)]] (Subject #8):** Sees her as philosophical advisor and fellow visionary; completely unaware she's using him as tool for [[Decimate Project]]
 
 ### Warband
 - **2 Giant Lieutenants:** Trusted commanders of his forces
@@ -141,7 +141,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Fishing boats seized
 - 20+ civilians taken as slaves
 
-## Octavia's Manipulation
+## [[Octavia (Subject #8)]]'s Manipulation
 
 ### The Corruption
 **Background:**
@@ -149,7 +149,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Valued order, justice, protection of weak
 - Became disillusioned with "chaos" of humanoid societies
 
-**Octavia's Approach (Subject #8):**
+**[[Octavia (Subject #8)]]'s Approach (Subject #8):**
 - Posed as philosophical advisor/ally
 - Convinced Krythak that "order through strength" is necessary
 - Manipulated his desire for justice into tyrannical control
@@ -163,7 +163,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Weak and chaotic must be ruled by strong and orderly
 - Genuinely thinks he's the hero
 
-### Octavia's Goals
+### [[Octavia (Subject #8)]]'s Goals
 **Using Krythak to:**
 - Destabilize [[Merit Council]] coastal holdings
 - Create chaos for [[Decimate Project]] experiments
@@ -172,10 +172,10 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Distract authorities from other Decimate activities
 
 **Relationship:**
-- Octavia visits camp periodically
+- [[Octavia (Subject #8)]] visits camp periodically
 - Provides magical aid and strategic counsel
 - Krythak doesn't know about [[Decimate Project]]
-- Believes Octavia is fellow visionary
+- Believes [[Octavia (Subject #8)]] is fellow visionary
 - Would be devastated to learn he's being used
 
 ## Connection to [[Ian/Rakash]]
@@ -205,7 +205,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 3. **Mercenary Allies:** Hire experienced adventurers
 4. **[[Merit Council]] Support:** Official military operation
 5. **Diplomatic Challenge:** Duel Krythak for axe (likely death)
-6. **Octavia Route:** Discover manipulation, turn Krythak
+6. **[[Octavia (Subject #8)]] Route:** Discover manipulation, turn Krythak
 
 ## Combat Statistics
 
@@ -239,14 +239,14 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 
 ### Krythak's Role
 - **Major Villain:** End-game boss for Ian's personal quest
-- **Octavia Tool:** Demonstrates [[Decimate Project]] manipulation
+- **[[Octavia (Subject #8)]] Tool:** Demonstrates [[Decimate Project]] manipulation
 - **Moral Complexity:** Corrupted hero, not pure evil
 - **Military Challenge:** Requires party to think strategically
 
 ### Redemption Possibility
-**If Party Exposes Octavia's Manipulation:**
+**If Party Exposes [[Octavia (Subject #8)]]'s Manipulation:**
 - Krythak could be redeemed
-- Would turn against Octavia
+- Would turn against [[Octavia (Subject #8)]]
 - Might release slaves, disband warband
 - Could become ally against [[Decimate Project]]
 - Requires proof and persuasion (very difficult)
@@ -278,9 +278,9 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Mid: Party disrupts raids, rescues slaves
 - Late: Full assault on Lonely Mountain base
 
-### Octavia's Involvement
+### [[Octavia (Subject #8)]]'s Involvement
 **If Party Attacks War Camp:**
-- Octavia may appear to defend her "investment"
+- [[Octavia (Subject #8)]] may appear to defend her "investment"
 - Provides magical support to Krythak
 - Escapes if battle turns against her
 - Abandons Krythak if he's clearly losing (pragmatic)
@@ -306,13 +306,13 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 ### Future Hooks
 - Surviving raiders provide intel
 - Rescued slaves have camp information
-- Octavia's involvement hints at larger plot
+- [[Octavia (Subject #8)]]'s involvement hints at larger plot
 - Giant's axe may have additional significance
 - Other [[Decimate Project]] subjects may have similar tools
 
 ### Connection to Campaign
 - Demonstrates [[Decimate Project]] reach
-- Shows Octavia's manipulation abilities
+- Shows [[Octavia (Subject #8)]]'s manipulation abilities
 - Provides military/tactical challenge
 - Connects to [[Merit Council]] regional politics
 - Personal quest for Ian's character development

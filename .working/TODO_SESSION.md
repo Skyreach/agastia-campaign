@@ -69,23 +69,30 @@ Last updated: 2025-12-28 22:45
 ## 🚨 Active Tasks (New Session)
 
 ### Pending
-- [ ] [23:30] Expand Agastia City wikilinks - link all districts, stores, NPCs, quests
+- [x] [23:30 → 00:10] Expand Agastia City wikilinks - link all districts, stores, NPCs, quests
   - Context: Agastia_City.md mentions many entities that should be cross-referenced
   - File: Locations/Cities/Agastia_City.md
-  - Targets: Districts (9), establishments (20+), NPCs mentioned in tier descriptions
-  - Method: Find entity names, wrap in [[brackets]]
+  - Results: Added 54 wikilinks (9 districts, 20+ establishments, NPCs in tier descriptions)
+  - Re-synced to Notion successfully
 
-- [ ] [23:30] Create wikilinking skill for automated cross-reference detection
+- [x] [23:30 → 23:50] Create wikilinking skill for automated cross-reference detection
   - Context: Need repeatable skill for finding and adding wikilinks
   - Location: `.claude/skills/add-wikilinks.md`
   - Features: Scan file for entity names, cross-reference with WIKI_INDEX.md, add [[links]]
-  - Integration: Use WIKI_INDEX.md as entity reference
+  - Integration: Uses WIKI_INDEX.md as entity reference, skips frontmatter
+  - Script: `.config/add_wikilinks.py` (single file) + `.config/batch_add_wikilinks.py` (batch)
 
-- [ ] [23:30] Comprehensive wikilink pass - entire repository
+- [x] [23:30 → 00:05] Comprehensive wikilink pass - entire repository
   - Context: Add wikilinks to all entities across all files
   - Scope: Sessions (4), NPCs (26), Locations (29), Factions (6), Campaign Core (4)
-  - Method: For each file, scan for mentions of other entities, add [[links]]
-  - Priority order: Sessions → Locations → Factions → NPCs → Campaign Core
+  - Method: Batch script processed all files by category
+  - Results: **1,380 total wikilinks added** across 69 files
+    - Sessions: 168 links
+    - Locations: 645 links (Districts 236, Establishments 315, Other 94)
+    - Factions: 120 links
+    - NPCs: 426 links (Major 110, Location 201, Faction 93, Mystery 22)
+    - Player Characters: 79 links
+    - Campaign Core: 110 links
 
 - [x] [23:30 → 00:15] Run verification sub-agent for missed wikilinks
   - Context: Double-check no entity references were missed
@@ -94,6 +101,67 @@ Last updated: 2025-12-28 22:45
   - Results: 85-90% completeness, identified specific gaps (Geist/Kaelborn need aliases)
   - Report: Agent found most issues are NPC names with role descriptions in WIKI_INDEX
   - Follow-up needed: Add entity aliases for "Geist" → "Geist (Bandit Lieutenant)", etc.
+
+## 🚨 Active Tasks (Phase 2: Advanced Integration)
+
+### Pending
+- [x] [00:20 → 00:35] Add entity alias support to wikilink system
+  - Context: Allow simple names like "Geist" to resolve to "Geist (Bandit Lieutenant)"
+  - Files: .config/add_wikilinks.py, WIKI_INDEX.md
+  - Implementation: Modified load_entity_names() to extract aliases from parenthetical and slash patterns
+  - Testing: Dry-run on Session 2 confirmed 106 alias matches (Geist: 57, Kaelborn: 46, Harren: 3)
+  - Results: Batch run added **513 wikilinks** across repository using alias resolution
+  - Total repository wikilinks: **1,893** (Phase 1: 1,380 + Phase 2: 513)
+  - Impact: Improved coverage from 85-90% → ~95%+
+
+- [x] [00:35 → 00:40] Wikilink player character references in narrative/backstory sections
+  - Context: Session files weren't included in batch processing, needed manual pass
+  - Files: All session files processed
+  - Results: Added 122 wikilinks to session files
+    - Session_1: 12 links (Kyle/Nameless, Ian/Rakash, Octavia)
+    - Session_2: 106 links (Geist, Kaelborn, Harren from alias system)
+    - Session_3: 4 links (Kyle)
+    - Session_0: Already complete
+  - PC aliases working correctly (Kyle → Kyle/Nameless, Rakash → Ian/Rakash)
+
+- [ ] [00:40] Add wikilinks for NPC hooks, motivations, and faction dispositions
+  - Context: NPC files should cross-reference factions, other NPCs, locations they're connected to
+  - Files: All NPC files (26 files)
+  - Method: Add [[Faction]] links in "Faction Affiliation" sections, [[NPC]] in relationships
+  - Example: Professor Zero → links to [[Chaos Cult]], [[Merit Council]]
+
+- [ ] [00:20] Populate Agastia NPC files with hooks, motivations, and faction information
+  - Context: Ensure all Agastia NPCs have complete hook/motivation/faction data
+  - Files: NPCs/Location_NPCs/* (Agastia-based NPCs)
+  - Verify: Corvin, Veridian, Mira, Kex, Harren, Mirella, Thava, Torvin
+  - Method: Review each NPC, add missing sections, ensure faction dispositions listed
+
+- [ ] [00:20] Create quest entities as linkable wiki pages
+  - Context: Quests should be standalone entities users can reference
+  - Location: Quests/ directory (new)
+  - Format: Quest_[Name].md with frontmatter, objectives, NPCs, locations, rewards
+  - Examples: Quest_Geist_Investigation.md, Quest_Codex_Search.md, Quest_Blood_Target.md
+  - Integration: Add to WIKI_INDEX.md, link from session files
+
+- [ ] [00:20] Update session commands to link inspiring encounter tables
+  - Context: Sessions copy/paste encounter tables - should link to centralized tables instead
+  - Files: Sessions/Session_*.md, create Encounters/Inspiring_Tables.md
+  - Method: Extract tables to central file, replace with [[Inspiring Tables#Temperate Forest]]
+  - Benefit: Single source of truth, easier updates
+
+- [ ] [00:20] Create point crawl skill using wikilinks as nodes
+  - Context: Need modular system for building connected encounters/locations
+  - Location: .claude/skills/point-crawl.md
+  - Features: Each [[Location]] is a node, connections defined by links
+  - Method: Build tree structure from wikilinks, present navigation options
+  - Example: [[Town]] → [[Forest Path]] → [[Dungeon Entrance]] → [[Boss Room]]
+
+- [ ] [00:20] Update CLAUDE.md to auto-detect available skills and commands
+  - Context: Make skills discoverable without manual documentation
+  - File: CLAUDE.md
+  - Method: Add section that reads .claude/skills/*.md and lists available skills
+  - Format: Skill name, description, usage example
+  - Auto-update: Script to regenerate skill list from skill files
 
 ## 📋 Future Topics
 

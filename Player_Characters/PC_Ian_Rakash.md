@@ -12,11 +12,11 @@ location: Traveling (formerly Ratterdan)
 related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero]
 ---
 
-# Rakash (Ian's Character)
+# [[Ian/Rakash]] (Ian's Character)
 
 ## Player Summary
 
-**Rakash** is a goblin barbarian with prosthetic limbs, sole survivor of Ratterdan's destruction by a storm giant. Saved by Kyle after the attack, he now seeks revenge against the giant and the traitor who betrayed his village. A self-taught rapier fighter turned barbarian, Rakash carries the weight of his lost home and the mystery of his survival.
+**[[Ian/Rakash]]** is a goblin barbarian with prosthetic limbs, sole survivor of Ratterdan's destruction by a storm giant. Saved by Kyle after the attack, he now seeks revenge against the giant and the traitor who betrayed his village. A self-taught rapier fighter turned barbarian, [[Ian/Rakash]] carries the weight of his lost home and the mystery of his survival.
 
 ### Basic Information
 - **Player:** Player 3 (Ian)
@@ -61,7 +61,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 ## Relationships
 
 ### Party Members
-- **[[Kyle/Nameless]]:** Saved Rakash after village destruction, traveling together
+- **[[Kyle/Nameless]]:** Saved [[Ian/Rakash]] after village destruction, traveling together
 
 ### NPCs
 - **Niletrix:** Former paranoid dragon employer (worked 10 years)
@@ -119,12 +119,12 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Gained Strike of the Giants feat
 - Reached level 2
 - Found map to Lonely Mountain
-- Witnessed Octavia's laugh (recognized by Nikki)
+- Witnessed [[Octavia (Subject #8)]]'s laugh (recognized by Nikki)
 
 ## DM Notes
 
 ### Secrets & Hidden Info
-- **Beholder Hired Giant:** The beholder who employed Rakash actually hired the storm giant to destroy Ratterdan (player doesn't know)
+- **Beholder Hired Giant:** The beholder who employed [[Ian/Rakash]] actually hired the storm giant to destroy Ratterdan (player doesn't know)
 - **Zhaask's Role:** Traitor provided information to enable the attack
 - **[[Professor Zero]] Connection:** Nature of "knowing a little" through Niletrix unclear - potential plot thread
 - **Giant's Motive:** Why target a goblin village? Connected to beholder's plans

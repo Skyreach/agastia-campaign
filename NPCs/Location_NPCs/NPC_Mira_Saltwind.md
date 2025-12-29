@@ -16,7 +16,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 
 ## Player Summary
 
-**[[Mira Saltwind]]** runs Saltwind Imports, a legitimate import business in [[Agastia]]'s [[Merchant District]]. She appears perpetually stressed, juggling inventory and dealing with constant "inspection fees" that drain her profits. Mira is one of many merchants extorted by Inspector Geist, paying protection money disguised as official fees to keep her business running.
+**[[Mira Saltwind]]** runs Saltwind Imports, a legitimate import business in [[Agastia]]'s [[Merchant District]]. She appears perpetually stressed, juggling inventory and dealing with constant "inspection fees" that drain her profits. Mira is one of many merchants extorted by Inspector [[Geist (Bandit Lieutenant)]], paying protection money disguised as official fees to keep her business running.
 
 ### Basic Information
 - **Race:** Half-Elf
@@ -43,7 +43,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 ### Known Activities
 - Runs Saltwind Imports daily in [[Merchant District]]
 - Imports textiles, spices, rare reagents, and luxury goods
-- Pays monthly extortion fees to Inspector Geist
+- Pays monthly extortion fees to Inspector [[Geist (Bandit Lieutenant)]]
 - Maintains hidden ledger documenting payments
 - Struggles to keep business profitable under financial pressure
 - Refuses husband's advice to close shop (family business)
@@ -63,14 +63,14 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 
 ### Business Contacts
 - **[[Corvin Tradewise]]:** Owes her a favor; she helped him with delayed shipment
-- **Other merchant victims:** Knows several others paying Geist's fees, whispered conversations
+- **Other merchant victims:** Knows several others paying [[Geist (Bandit Lieutenant)]]'s fees, whispered conversations
 
 ### Adversaries
-- **Inspector Geist:** Monthly extortion victim, bitter resentment
-- **Loan sharks:** In debt to multiple sources beyond Geist's fees
+- **Inspector [[Geist (Bandit Lieutenant)]]:** Monthly extortion victim, bitter resentment
+- **Loan sharks:** In debt to multiple sources beyond [[Geist (Bandit Lieutenant)]]'s fees
 
 ### Potential Allies
-- **Kyle/Party:** Will testify if Geist's power is broken and she's protected
+- **[[Kyle/Nameless]]/Party:** Will testify if [[Geist (Bandit Lieutenant)]]'s power is broken and she's protected
 
 ## Saltwind Imports
 
@@ -99,29 +99,29 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - Business barely breaking even
 - Mira considering closing shop
 
-## Knowledge About Geist
+## Knowledge About [[Geist (Bandit Lieutenant)]]
 
 ### Personal Experience
 **Monthly Extortion:**
-- Inspector Geist visits when shipments arrive
+- Inspector [[Geist (Bandit Lieutenant)]] visits when shipments arrive
 - Demands "inspection fee" to approve goods
 - Threatens to find "irregularities" if unpaid
 - Shuts down shipments for weeks if refused
 
 **What She Knows:**
-- Geist is [[Merit Council]] Trade Inspector (official position)
+- [[Geist (Bandit Lieutenant)]] is [[Merit Council]] Trade Inspector (official position)
 - Other merchants also pay (whispered conversations)
 - Can't fight him - he has Council authority
-- Reporting to Council does nothing (Geist has protection)
+- Reporting to Council does nothing ([[Geist (Bandit Lieutenant)]] has protection)
 - He operates from warehouse near docks
 
 **What She's Witnessed:**
-- Geist wearing [[Merit Council]] uniform during collections
+- [[Geist (Bandit Lieutenant)]] wearing [[Merit Council]] uniform during collections
 - His guards/enforcers accompany him
 - Official paperwork is fake (no Council seal verification)
 - Goods marked "confiscated" are resold through his operation
 
-## Interaction with Kyle (Investigation)
+## Interaction with [[Kyle/Nameless]] (Investigation)
 
 ### Finding Mira
 **Location:** Saltwind Imports, [[Merchant District]]
@@ -133,7 +133,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 ### Getting Information
 **Investigation DC 13** (moderate - hidden ledger required)
 
-**If Kyle Investigates Shop:**
+**If [[Kyle/Nameless]] Investigates Shop:**
 - Notice stressed demeanor (Insight DC 10)
 - See ledger in back office (Perception DC 13 or Stealth DC 12)
 - Discover payment pattern to "Inspector G"
@@ -147,7 +147,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 >
 > She wrings her hands, conflict clear on her face.
 >
-> "Inspector G... Geist. He comes every month. 'Inspection fees,' he calls it. Pay or he shuts down my shipments—claims 'irregularities.'"
+> "Inspector G... [[Geist (Bandit Lieutenant)]]. He comes every month. 'Inspection fees,' he calls it. Pay or he shuts down my shipments—claims 'irregularities.'"
 >
 > She looks defeated.
 >
@@ -160,27 +160,27 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - Pattern of arrivals = payment demands
 
 **Testimony:**
-- Will testify IF Geist's protection collapses
+- Will testify IF [[Geist (Bandit Lieutenant)]]'s protection collapses
 - Too afraid to go first
 - Needs assurance she won't be retaliated against
 
 **Information:**
 - Other victimized merchants (names if pressed)
-- General location of Geist's operation
+- General location of [[Geist (Bandit Lieutenant)]]'s operation
 - How extortion scheme works
 
-## Role in Geist Investigation (3-3-3-1 Web)
+## Role in [[Geist (Bandit Lieutenant)]] Investigation (3-3-3-1 Web)
 
 ### Entry Node 2
 **Function:** Provides documentary evidence of extortion
 **Information Given:**
-1. Geist's monthly extortion scheme (pattern)
+1. [[Geist (Bandit Lieutenant)]]'s monthly extortion scheme (pattern)
 2. [[Merit Council]] Records connection (official position)
 3. Multiple victims (systemic corruption)
 
 **Leads To:**
 - Investigation Location 2 ([[Merit Council]] Records Office)
-- Confirms Geist abuses legitimate position
+- Confirms [[Geist (Bandit Lieutenant)]] abuses legitimate position
 - Provides evidence for potential prosecution
 
 ### Evidence Quality
@@ -194,27 +194,27 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 ### Mira's Role
 - **Moderate Difficulty:** Requires investigation to discover
 - **Evidence Source:** Documentary proof of corruption
-- **Victim Perspective:** Shows human cost of Geist's operation
+- **Victim Perspective:** Shows human cost of [[Geist (Bandit Lieutenant)]]'s operation
 - **Potential Ally:** Will help if protected
 
 ### If Party Helps Mira
-**After Geist is Removed:**
+**After [[Geist (Bandit Lieutenant)]] is Removed:**
 - Business begins recovering
 - Grateful to party, offers discounts
 - Can become regular supplier
 - Spreads positive word about party in merchant circles
 
 **If Party Protects Her:**
-- Will testify against Geist
+- Will testify against [[Geist (Bandit Lieutenant)]]
 - Rallies other merchants to speak out
 - Provides ongoing intel on dock corruption
 - Becomes valuable merchant contact
 
 ### Secrets
-- **Deeper Financial Trouble:** Beyond Geist's fees
+- **Deeper Financial Trouble:** Beyond [[Geist (Bandit Lieutenant)]]'s fees
   - Took loan from wrong people to cover payments
   - Debts to multiple sources
-  - Business may fail even if Geist stops
+  - Business may fail even if [[Geist (Bandit Lieutenant)]] stops
 - **Family Pressure:** Husband wants her to close shop
   - Safer to quit than fight
   - Mira refuses to give up family business
@@ -226,7 +226,7 @@ If party asks, Mira can name:
 3. **Three other merchants** in [[Merchant District]]
 - All pay similar "fees"
 - All too afraid to organize resistance
-- Would join complaint if party breaks Geist's power
+- Would join complaint if party breaks [[Geist (Bandit Lieutenant)]]'s power
 
 ### Future Hooks
 - Regular supplier for party needs

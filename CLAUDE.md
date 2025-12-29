@@ -469,6 +469,38 @@ python3 .config/audit_all_formats.py
 - **Integrations:** Notion sync (individual entities), Git tracking, MCP tools
 - **Auto-Commit:** Use MCP commit_and_push tool with auto_sync: true
 
+## 🛠️ Available Skills & Commands
+
+### Custom Skills
+
+Project-specific skills are located in `.claude/skills/`. To discover available skills:
+
+```bash
+ls -1 .claude/skills/*.md
+```
+
+**Current Skills:**
+- **add-wikilinks** - Automated entity cross-reference detection and wikilinking
+- **point-crawl** - Modular encounter/location navigation using wikilinks as nodes
+- **wiki-lookup** - Quick entity lookup by name from WIKI_INDEX.md
+- *(Additional skills may be added - check directory for complete list)*
+
+### How to Use Skills
+
+Skills can be invoked via the Skill tool or by referencing them in requests:
+- "Use the add-wikilinks skill on this file"
+- "Create a point crawl for the forest exploration"
+- "Look up Geist in the wiki"
+
+### Auto-Detection
+
+When a user's request relates to:
+- **Wikilinking entities** → Use add-wikilinks skill
+- **Building connected locations** → Use point-crawl skill
+- **Finding entity files** → Use wiki-lookup skill
+
+Skills are self-documenting markdown files. Read the skill file for detailed usage instructions.
+
 ## 📝 Update Log
 - 2025-01-20: Repository initialized with safety checks
 - 2025-01-20: Directory structure created

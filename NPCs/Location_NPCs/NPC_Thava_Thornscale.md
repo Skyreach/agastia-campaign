@@ -180,7 +180,7 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 ### What He Doesn't Know
 - [[Professor Zero]]'s identity or [[Decimate Project]] existence
 - [[Steel Dragon]]'s human form identity
-- Octavia's role in Ratterdan destruction
+- [[Octavia (Subject #8)]]'s role in Ratterdan destruction
 - Full nature of the Codex (knows Sanctuary guards something major)
 - That [[Manny]] and [[Nikki]] are on mission to steal the Codex
 

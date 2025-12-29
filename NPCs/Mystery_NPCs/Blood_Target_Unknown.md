@@ -9,7 +9,7 @@ faction: Unknown
 related_entities: [Professor Zero, Nikki, Decimate Project]
 ---
 
-# Blood Target (Unknown)
+# [[Blood Target (Unknown)]] (Unknown)
 
 ## Player Summary
 

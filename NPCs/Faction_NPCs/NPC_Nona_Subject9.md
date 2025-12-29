@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject9, half-elf, bard, patron-level]
 threat_level: High
 ---
 
-# Nona - [[Decimate Project]] Subject #9 (PATRON-LEVEL)
+# [[Nona (Subject #9)]] - [[Decimate Project]] Subject #9 (PATRON-LEVEL)
 
-**Nona** is a half-elf bard and Subject #9 - **one of the three patron-level subjects**. Age ~18-19, with ~8-9 years of service. Despite being protective and nurturing to younger subjects like [[Manny]], she is a strategic coordinator with significant power and influence.
+**[[Nona (Subject #9)]]** is a half-elf bard and Subject #9 - **one of the three patron-level subjects**. Age ~18-19, with ~8-9 years of service. Despite being protective and nurturing to younger subjects like [[Manny]], she is a strategic coordinator with significant power and influence.
 
 **Appearance:** Half-elf features, musically talented, approachable "big sister" presence.
 
@@ -24,7 +24,7 @@ threat_level: High
 ## DM Notes
 
 **One of Three Patrons:**
-- Equal in rank to Octavia (#8) and Decum (#10)
+- Equal in rank to [[Octavia (Subject #8)]] (#8) and [[Decum (Subject #10)]] (#10)
 - Handles subject coordination and loyalty
 - May know more about Zero's plans than she reveals
 - Protective nature is genuine but also tactical

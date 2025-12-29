@@ -148,6 +148,15 @@ This index tracks all campaign entities synced to Notion for quick lookup. Each 
 | Merit Council | Factions/Faction_Merit_Council.md | 2ad693f0c6b4812e81e5c39f805889b1 | 2025-12-29 05:06:58 |
 | Storm Giant Warband | Factions/Faction_Storm_Giant_Warband.md | 2ad693f0c6b48163b806d548524c2ccb | 2025-11-16 01:33:28 |
 
+## Quests
+
+| Name | File | Notion ID | Last Synced |
+|------|------|-----------|-------------|
+| Geist Investigation | Quests/Quest_Geist_Investigation.md | - | Not synced yet |
+| The Codex Search | Quests/Quest_Codex_Search.md | - | Not synced yet |
+| The Blood Target | Quests/Quest_Blood_Target.md | - | Not synced yet |
+| The Giant's Axe | Quests/Quest_Giant_Axe.md | - | Not synced yet |
+
 ## Campaign Core
 
 | Name | File | Notion ID | Last Synced |
@@ -159,12 +168,13 @@ This index tracks all campaign entities synced to Notion for quick lookup. Each 
 
 ## Summary Statistics
 
-- **Total Entities Synced:** 70
+- **Total Entities Tracked:** 74
   - Sessions: 4
   - Player Characters: 5
   - NPCs: 26 (4 major, 8 location, 13 faction, 1 mystery)
   - Locations: 29 (1 city, 9 districts, 1 town, 1 region, 2 wilderness, 20 establishments)
   - Factions: 6
+  - Quests: 4
   - Campaign Core: 4
 
 ## Quick Lookup

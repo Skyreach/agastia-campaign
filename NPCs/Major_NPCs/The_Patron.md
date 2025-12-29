@@ -179,15 +179,15 @@ A cheerful, almost whimsical figure who deals in possibilities and probabilities
 - **Option 2:** Codex threatens reality if misused
 - **Option 3:** Knows where Codex is, might bargain information
 
-#### Rakash (Giant Revenge)
+#### [[Ian/Rakash]] (Giant Revenge)
 - **Option 1:** Giant attack fits larger pattern of violence
 - **Option 2:** Giant unwittingly caused reality damage
 - **Option 3:** Can provide info on giant's location for price
 
-#### Kyle (Bandit Hunt)
+#### [[Kyle/Nameless]] (Bandit Hunt)
 - **Option 1:** Bandits connected to larger criminal pattern
 - **Option 2:** Bandit network threatens temporal stability somehow
-- **Option 3:** Knows exactly where Kaelborn and Geist are
+- **Option 3:** Knows exactly where [[Kaelborn (Bandit Boss)]] and [[Geist (Bandit Lieutenant)]] are
 
 #### [[Josh]] (Lost People)
 - **Option 1:** Markings are key to pattern understanding

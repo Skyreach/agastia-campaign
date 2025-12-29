@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject8, drow, warlock, patron-level, ratterdan-m
 threat_level: Extreme
 ---
 
-# Octavia - [[Decimate Project]] Subject #8 (PATRON-LEVEL)
+# [[Octavia (Subject #8)]] - [[Decimate Project]] Subject #8 (PATRON-LEVEL)
 
-**Octavia** is a drow warlock and Subject #8 - **one of the three patron-level subjects**. Age ~17-18, with ~7-8 years of service. Witch-like and mysterious, she is the most experienced field operative with dark magical powers and her own agendas.
+**[[Octavia (Subject #8)]]** is a drow warlock and Subject #8 - **one of the three patron-level subjects**. Age ~17-18, with ~7-8 years of service. Witch-like and mysterious, she is the most experienced field operative with dark magical powers and her own agendas.
 
 **Appearance:** Drow features (dark skin, white hair, distinctive), witch-like presence, mysterious aura.
 
@@ -21,7 +21,7 @@ threat_level: Extreme
 
 ## DM Notes - RATTERDAN MASTERMIND
 
-**SECRET ROLE:** Octavia hired the storm giant to destroy Ratterdan
+**SECRET ROLE:** [[Octavia (Subject #8)]] hired the storm giant to destroy Ratterdan
 
 **Motive:** Heartstone buried beneath Ratterdan (fey artifact for power boost)
 
@@ -52,6 +52,6 @@ May betray [[Professor Zero]] if it serves her patron's goals
 - May recognize [[Josh]]'s markings from Underdark lore
 - Potential boss fight or uneasy alliance
 
-**Session 1 Integration:** Party recovers Heartstone, Octavia wants it. Conflict or negotiation opportunity.
+**Session 1 Integration:** Party recovers Heartstone, [[Octavia (Subject #8)]] wants it. Conflict or negotiation opportunity.
 
 **Loyalty Status:** QUESTIONABLE - serves patron first, Zero second, own agenda always

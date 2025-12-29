@@ -16,7 +16,7 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 
 ## Player Summary
 
-**[[Corvin Tradewise]]** leads a five-wagon merchant caravan that travels the routes between [[Agastia]] and outlying settlements. Jovial and business-minded, Corvin has seen his profits drained by Inspector Geist's "fees" but maintains his cheerful demeanor. He's willing to trade, share news, and warn travelers about dangers - both the legitimate kind and the corrupt ones.
+**[[Corvin Tradewise]]** leads a five-wagon merchant caravan that travels the routes between [[Agastia]] and outlying settlements. Jovial and business-minded, Corvin has seen his profits drained by Inspector [[Geist (Bandit Lieutenant)]]'s "fees" but maintains his cheerful demeanor. He's willing to trade, share news, and warn travelers about dangers - both the legitimate kind and the corrupt ones.
 
 ### Basic Information
 - **Race:** Human
@@ -43,7 +43,7 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 ### Known Activities
 - Leads merchant caravan on bi-weekly route between [[Agastia]] and [[Meridian's Rest]]
 - Trades in textiles, tools, foodstuffs, and miscellaneous goods
-- Pays extortion fees to Inspector Geist at [[Agastia]] docks
+- Pays extortion fees to Inspector [[Geist (Bandit Lieutenant)]] at [[Agastia]] docks
 - Occasionally moves gray market goods (nothing seriously illegal)
 - Treats employees and guards well, fair employer
 - Shares road news and rumors with fellow travelers
@@ -63,13 +63,13 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 - **2 Drivers and Cook/Helper:** Fair employer, good working conditions
 
 ### Business Contacts
-- **[[Mira Saltwind]]:** Owes her a favor; would testify about Geist if she does
+- **[[Mira Saltwind]]:** Owes her a favor; would testify about [[Geist (Bandit Lieutenant)]] if she does
 
 ### Adversaries
-- **Inspector Geist:** Extortion victim (10-15gp per trip); philosophical resignation rather than active resistance
+- **Inspector [[Geist (Bandit Lieutenant)]]:** Extortion victim (10-15gp per trip); philosophical resignation rather than active resistance
 
 ### Potential Allies
-- **Party:** Would be extremely grateful if Geist removed; offers discounts and reliable services
+- **Party:** Would be extremely grateful if [[Geist (Bandit Lieutenant)]] removed; offers discounts and reliable services
 
 ## The Caravan
 
@@ -119,11 +119,11 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 - Testing centers busier than ever
 - [[Dispossessed]] population growing
 
-## Knowledge About Geist
+## Knowledge About [[Geist (Bandit Lieutenant)]]
 
 ### Personal Experience
 **Extortion Victim:**
-- Pays "inspection fees" to Inspector Geist
+- Pays "inspection fees" to Inspector [[Geist (Bandit Lieutenant)]]
 - Fees applied when entering/leaving [[Agastia]] docks
 - Must pay or cargo gets "delayed" for weeks
 
@@ -141,7 +141,7 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 >
 > "Costs me 10-15 gold every trip. Adds up, cuts into profits. But what can you do? He's official, we're just merchants."
 
-### Details About Geist
+### Details About [[Geist (Bandit Lieutenant)]]
 - Inspector at [[Agastia]] docks
 - Shakes down multiple merchants (not just Corvin)
 - Has been operating this way for "couple years at least"
@@ -181,7 +181,7 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 **Information Exchange:**
 - Corvin shares [[Agastia]] news
 - Warns about dock district troubles
-- If Kyle asks about Geist, provides lead
+- If [[Kyle/Nameless]] asks about [[Geist (Bandit Lieutenant)]], provides lead
 
 **Future Contact:**
 - Party can hire him for return trip
@@ -193,7 +193,7 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 ### Corvin's Role
 - **Friendly Encounter:** Non-combat travel interaction
 - **Service Provider:** Practical merchant services
-- **Information Source:** Casual Geist lead if investigated
+- **Information Source:** Casual [[Geist (Bandit Lieutenant)]] lead if investigated
 - **Recurring NPC:** Can appear in future sessions
 
 ### Guards (If Combat Somehow Occurs)
@@ -204,8 +204,8 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 
 **Note:** Combat with Corvin unlikely - he's friendly and helpful
 
-### If Party Helps with Geist
-**After Geist Falls:**
+### If Party Helps with [[Geist (Bandit Lieutenant)]]
+**After [[Geist (Bandit Lieutenant)]] Falls:**
 - Extremely grateful (saves him 200+ gp/year)
 - Offers permanent discount (10% off all goods)
 - Spreads positive word about party
@@ -215,10 +215,10 @@ related_entities: [Geist, Party, Meridians Rest, Agastia]
 - **Modest Smuggler:** Occasionally moves "gray market" goods
   - Nothing seriously illegal
   - Avoids official manifests for certain items
-  - Pays Geist partly to ignore this
+  - Pays [[Geist (Bandit Lieutenant)]] partly to ignore this
 - **Debt to Mira:** Owes [[Mira Saltwind]] a favor
   - She helped him once when shipment was delayed
-  - Would testify about Geist if she does
+  - Would testify about [[Geist (Bandit Lieutenant)]] if she does
 
 ### Future Hooks
 - Regular supplier for party between sessions

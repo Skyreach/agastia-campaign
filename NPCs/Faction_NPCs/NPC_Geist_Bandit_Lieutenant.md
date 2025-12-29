@@ -7,15 +7,15 @@ tags: [npc, bandit-network, lieutenant, human, rogue]
 threat_level: Medium
 ---
 
-# Geist - Bandit Network Lieutenant
+# [[Geist (Bandit Lieutenant)]] - [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]] Lieutenant
 
-**Geist** is a human rogue, a cunning and ruthless lieutenant within the Bandit Network. He is responsible for coordinating smaller raids and managing local cells. Mentioned 59 times in Session 2.
+**[[Geist (Bandit Lieutenant)]]** is a human rogue, a cunning and ruthless lieutenant within the [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]]. He is responsible for coordinating smaller raids and managing local cells. Mentioned 59 times in Session 2.
 
 **Appearance:** Lean and wiry, often clad in dark, practical leather armor. Quick movements, sharp eyes that miss nothing. Has a distinctive scar over his left eyebrow.
 
-**Personality:** Cautious but ambitious, loyal to his superiors within the Bandit Network but always looking for opportunities to advance his own standing. He is cruel when necessary, but pragmatic.
+**Personality:** Cautious but ambitious, loyal to his superiors within the [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]] but always looking for opportunities to advance his own standing. He is cruel when necessary, but pragmatic.
 
-**Role:** Lieutenant within the Bandit Network, responsible for organizing and executing smaller criminal operations, intelligence gathering, and managing lower-ranking bandits.
+**Role:** Lieutenant within the [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]], responsible for organizing and executing smaller criminal operations, intelligence gathering, and managing lower-ranking bandits.
 
 **Current Location:** Operates primarily in the shadowed alleyways and abandoned districts of [[Agastia]], often using forgotten sewers or dilapidated buildings as temporary bases.
 
@@ -24,12 +24,12 @@ threat_level: Medium
 ## DM Notes
 
 **Key Lieutenant:**
-- One of the more trusted lieutenants in Kaelborn's network.
+- One of the more trusted lieutenants in [[Kaelborn (Bandit Boss)]]'s network.
 - Knowledgeable about various illicit operations in [[Agastia]].
-- Can be a source of information (if coerced) about the Bandit Network's structure and plans.
+- Can be a source of information (if coerced) about the [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]]'s structure and plans.
 
 **Connections:**
-- Reports directly to Kaelborn.
+- Reports directly to [[Kaelborn (Bandit Boss)]].
 - Oversees several smaller bandit cells.
 
 **Plot Hooks:**
@@ -38,4 +38,4 @@ threat_level: Medium
 - Could be a target for a bounty hunter quest.
 - Might offer information for his own safety if cornered.
 
-**Loyalty Status:** Loyal to Kaelborn, but his loyalty can be swayed by promises of power or wealth.
+**Loyalty Status:** Loyal to [[Kaelborn (Bandit Boss)]], but his loyalty can be swayed by promises of power or wealth.

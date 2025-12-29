@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, lower-residential, tavern, food, drink, gossip]
 ---
 
-# The Copper Mug
+# [[The Copper Mug (Tavern)]]
 
 ## Overview
 
@@ -45,7 +45,7 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
   - Marta's regulars will share information freely (dock gossip, artisan rumors, lower district happenings)
   - Safe meeting place - Marta will provide private back room for planning
   - Introduction to honest working folk network (hirelings, laborers who'll help party)
-- **Difficulty:** Moderate - Thugs are dangerous but not highly skilled. Real challenge is finding out who's backing them and whether it connects to bigger criminal network (possibly Geist's operation).
+- **Difficulty:** Moderate - Thugs are dangerous but not highly skilled. Real challenge is finding out who's backing them and whether it connects to bigger criminal network (possibly [[Geist (Bandit Lieutenant)]]'s operation).
 
 ## Day-to-Day Operations
 
@@ -74,7 +74,7 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 - **Information gathering:** Regulars know everything happening in lower districts
 - **Safe meeting place:** Marta provides back room for private conversations
 - **Local connections:** Meet working-class folk, hire laborers, find services
-- **Dock district news:** Dockworkers share what they see (including Geist's activities)
+- **Dock district news:** Dockworkers share what they see (including [[Geist (Bandit Lieutenant)]]'s activities)
 - **Warm atmosphere:** Restful social space after grim work
 
 ## Services & Inventory
@@ -126,13 +126,13 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 ## Connections
 
 **District Integration:**
-- Heart of Lower Residential community - everyone knows The Copper Mug
+- Heart of Lower Residential community - everyone knows [[The Copper Mug (Tavern)]]
 - Artisans trade services for meals (barrel repairs, leather work, carpentry)
 - Dockworkers stop here before going home (social tradition)
 - Serves as informal community center - news, gossip, job postings
 
 **Related NPCs:**
-- **Harren (Dock Worker):** Regular customer, drinks here most evenings before The Rusty Anchor
+- **[[Harren (Dock Worker)]] (Dock Worker):** Regular customer, drinks here most evenings before The Rusty Anchor
 - **Local artisans:** Cooper, carpenter, leatherworker - trade services for meals
 - **Off-duty guards:** Low-rank soldiers provide informal security by presence
 - **Elderly locals:** Community memory, know everyone's business
@@ -141,13 +141,13 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 - **Working Folk Network:** Informal connections to honest laborers throughout Tier 5-6
 - **[[Dispossessed]] (sympathetic):** Marta feeds those who've lost everything when she can afford it
 - **[[Merit Council]] (distrustful):** Doesn't trust them to help poor folk, avoids official channels
-- **Geist's protection racket (victim):** Currently being extorted
+- **[[Geist (Bandit Lieutenant)]]'s protection racket (victim):** Currently being extorted
 
 ## DM Notes
 
 **Plot Hooks:**
 - Perfect base of operations for party in [[Agastia]] (affordable, welcoming, central to lower districts)
-- Protection racket quest connects to Geist investigation (if party helps Marta, they learn about wider criminal network)
+- Protection racket quest connects to [[Geist (Bandit Lieutenant)]] investigation (if party helps Marta, they learn about wider criminal network)
 - Information hub - regulars know everything happening in Tiers 5-7
 - Warm roleplaying location - NPCs with personality, community feel
 - Marta can provide contacts for honest labor, services, hirelings
@@ -160,7 +160,7 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 - Hums while cooking, whole tavern knows the tunes
 
 **Connection to Campaign:**
-- Protection racket likely connects to Geist's operation (Tier 6 thugs expanding to Tier 5)
+- Protection racket likely connects to [[Geist (Bandit Lieutenant)]]'s operation (Tier 6 thugs expanding to Tier 5)
 - Dockworkers here have information about warehouse district activities
 - Regulars can provide perspective on [[Merit Council]]'s treatment of lower districts (theme: inequality)
 - Safe place for party to rest, plan, gather information without upper-tier scrutiny

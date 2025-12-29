@@ -39,7 +39,7 @@ The patron has hired the party to:
 ## DM Notes
 
 ### True Nature
-The giant's axe was cursed by Octavia (Decimate Subject #8) and planted to drain the Animated Heartstone's power. The storm giant was hired/manipulated to destroy Ratterdan and leave the cursed axe behind. The axe's power transformed into a "corruption seed" that burrowed underground to battle the Heartstone.
+The giant's axe was cursed by [[Octavia (Subject #8)]] (Decimate Subject #8) and planted to drain the Animated Heartstone's power. The storm giant was hired/manipulated to destroy Ratterdan and leave the cursed axe behind. The axe's power transformed into a "corruption seed" that burrowed underground to battle the Heartstone.
 
 **When Party Recovers Heartstone:** The corruption seed breaks, and the axe transforms into an evolving weapon usable by the party (specifically Rakash).
 
@@ -89,7 +89,7 @@ Each PC might receive unique insights based on background:
 
 - **[[Manny]]:** Recognition of craftsmanship beyond normal giant smithing, techniques that suggest ancient traditions
 - **[[Nikki]] (Biago):** Arcane signatures feel familiar, like something from their past or training
-- **Rakash:** Instinctive understanding of the giant's emotional state when it left - purposeful, not fearful
+- **[[Ian/Rakash]]:** Instinctive understanding of the giant's emotional state when it left - purposeful, not fearful
 - **[[Kyle/Nameless]]:** Rainbow nature resonates with planar bleeding, uncomfortable familiarity
 - **[[Josh]]:** Mysterious markings might glow, tingle, or react to temporal distortions
 
@@ -191,7 +191,7 @@ At level 1, PCs can determine:
 - Corruption seed dissolves
 - Axe shrinks to usable size (can be wielded by Medium creatures)
 - Curse breaks, becomes evolving weapon
-- Rakash can wield it effectively
+- [[Ian/Rakash]] can wield it effectively
 
 ### Weapon Statistics (Initial)
 
@@ -220,7 +220,7 @@ At level 1, PCs can determine:
 
 ### Evolution Potential
 
-As Rakash gains levels and the weapon awakens:
+As [[Ian/Rakash]] gains levels and the weapon awakens:
 - Additional storm-themed abilities
 - Increased damage or magical bonus
 - Extended range for Storm Bond

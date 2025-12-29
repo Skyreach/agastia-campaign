@@ -34,9 +34,9 @@ The [[Decimate Project]] is a highly secretive program led by the mysterious [[P
   - Treats subjects as tools, not people
 
 **Patrons (Strongest Subjects):**
-- **Subject #8 - Octavia:** Drow Warlock, witch-like, most experienced field operative
-- **Subject #9 - Nona:** Half-Elf Bard, protective guardian role, strategic coordinator
-- **Subject #10 - Decum:** High Elf Wizard, eldest subject, keeps to himself, most missions for Zero
+- **Subject #8 - [[Octavia (Subject #8)]]:** Drow Warlock, witch-like, most experienced field operative
+- **Subject #9 - [[Nona (Subject #9)]]:** Half-Elf Bard, protective guardian role, strategic coordinator
+- **Subject #10 - [[Decum (Subject #10)]]:** High Elf Wizard, eldest subject, keeps to himself, most missions for Zero
 
 *Note: These three subjects are the most powerful and capable, giving them patron-level influence within the Project's operations. Lower numbers = newer/weaker subjects.*
 
@@ -174,7 +174,7 @@ All subjects detailed in `/mnt/c/dnd/NPCs/Faction_NPCs/Decimate_Project_Subjects
 
 **Party Interaction ([[Manny]] & Nikki):**
 - Missions from [[Professor Zero]] (Codex retrieval primary)
-- Meeting other subjects (Octavia, Nona, others)
+- Meeting other subjects ([[Octavia (Subject #8)]], [[Nona (Subject #9)]], others)
 - Choosing between orders and party's interests
 - Discovering inconsistencies in implanted memories
 - Building loyalty to party vs. [[Professor Zero]]
@@ -190,13 +190,13 @@ All subjects detailed in `/mnt/c/dnd/NPCs/Faction_NPCs/Decimate_Project_Subjects
 - Memory manipulation side effects intensifying
 - Other subjects competing for Codex fragments
 - [[Professor Zero]]'s increasing pressure
-- Octavia directly opposing party (Heartstone conflict)
+- [[Octavia (Subject #8)]] directly opposing party (Heartstone conflict)
 - Evidence of memory tampering discovered
 
 **Party Interaction:**
 - [[Manny]]/[[Nikki]] questioning their past
-- Confrontation with Octavia over Heartstone
-- Meeting Nona (potential ally or handler)
+- Confrontation with [[Octavia (Subject #8)]] over Heartstone
+- Meeting [[Nona (Subject #9)]] (potential ally or handler)
 - [[Professor Zero]]'s threats if orders not followed
 - First clues about true nature of Project
 
@@ -208,7 +208,7 @@ All subjects detailed in `/mnt/c/dnd/NPCs/Faction_NPCs/Decimate_Project_Subjects
 **Threat Type:** [[Professor Zero]]'s agents, memory restoration dangers, internal conflicts
 
 **Encounters:**
-- Patron-level subjects (Octavia, Nona, Decum) deployed CR 7-9
+- Patron-level subjects ([[Octavia (Subject #8)]], [[Nona (Subject #9)]], Decum) deployed CR 7-9
 - Attempts to forcibly retrieve [[Manny]]/[[Nikki]]
 - Memory restoration opportunities (risky)
 - Evidence of other victims beyond the Ten
@@ -283,7 +283,7 @@ All subjects detailed in `/mnt/c/dnd/NPCs/Faction_NPCs/Decimate_Project_Subjects
 
 **Subject Dynamics:**
 - Lower numbers (1-2) = [[Manny]] & [[Nikki]] (newest/weakest)
-- Higher numbers (8-10) = Octavia, Nona, Decum (patron-level)
+- Higher numbers (8-10) = [[Octavia (Subject #8)]], [[Nona (Subject #9)]], [[Decum (Subject #10)]] (patron-level)
 - Subjects have complex relationships with each other
 - Not all subjects are loyal to [[Professor Zero]]
 

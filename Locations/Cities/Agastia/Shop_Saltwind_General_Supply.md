@@ -38,15 +38,15 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 **Motivation:** Retired from sea after leg injury. Opened shop to serve honest sailors - the people he worked with for 40 years. Wants to protect his community from corruption creeping into the docks.
 
 **Quest Hook - The Inspection Harassment:**
-- **Need:** "Inspector Geist" has been targeting Olric's shop for repeated "inspections." Every time, Geist finds minor violations (real or fabricated) and demands "fines" - really bribes. Olric can't afford this much longer.
-- **Problem:** Geist has threatened to confiscate Olric's entire inventory for "safety violations" if he doesn't pay 50 gp immediately. Olric knows it's extortion but can't prove it. He needs evidence of Geist's corruption or a way to stop the harassment.
-- **Reward:** In exchange for stopping Geist's harassment (with proof or permanent solution):
+- **Need:** "Inspector [[Geist (Bandit Lieutenant)]]" has been targeting Olric's shop for repeated "inspections." Every time, [[Geist (Bandit Lieutenant)]] finds minor violations (real or fabricated) and demands "fines" - really bribes. Olric can't afford this much longer.
+- **Problem:** [[Geist (Bandit Lieutenant)]] has threatened to confiscate Olric's entire inventory for "safety violations" if he doesn't pay 50 gp immediately. Olric knows it's extortion but can't prove it. He needs evidence of [[Geist (Bandit Lieutenant)]]'s corruption or a way to stop the harassment.
+- **Reward:** In exchange for stopping [[Geist (Bandit Lieutenant)]]'s harassment (with proof or permanent solution):
   - 15% permanent discount on all maritime supplies
   - Access to "sailor's network" information (what ships have seen, where they've been, rumors from other ports)
   - Quality rope and canvas guaranteed - Olric personally tests every coil
   - Introduction to honest dock captains (potential ship passage, information, allies)
   - Hidden storage space in shop for party's gear (secure, no questions asked)
-- **Difficulty:** Moderate to High - Directly connected to Kyle's Geist investigation. Gathering evidence on Geist is challenging and potentially dangerous.
+- **Difficulty:** Moderate to High - Directly connected to [[Kyle/Nameless]]'s [[Geist (Bandit Lieutenant)]] investigation. Gathering evidence on [[Geist (Bandit Lieutenant)]] is challenging and potentially dangerous.
 
 ## Day-to-Day Operations
 
@@ -59,7 +59,7 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 - Morning rush: Sailors buying supplies before departures, ship captains placing bulk orders
 - Midday: Deliveries, repairs, custom orders (sail mending, rope splicing)
 - Afternoon: Arriving ships' crews replacing used supplies
-- Evening: Close shop, prepare next day's orders, worry about Geist
+- Evening: Close shop, prepare next day's orders, worry about [[Geist (Bandit Lieutenant)]]
 
 **Regular Customers:**
 - **Ship crews:** Replacing used supplies, stocking for voyages
@@ -73,7 +73,7 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 - **Rope quality:** Olric's rope is tested - climbers and delvers trust it
 - **Information:** Sailors gossip - Olric hears news from distant ports, sea monster sightings, political rumors
 - **Safe storage:** Hidden compartment for party's gear (not advertised, but offered to allies)
-- **Geist investigation:** Olric is victim and can provide testimony/evidence about protection racket
+- **[[Geist (Bandit Lieutenant)]] investigation:** Olric is victim and can provide testimony/evidence about protection racket
 - **Ship passage:** Olric knows honest captains who'll give fair prices for passage
 
 ## Services & Inventory
@@ -140,24 +140,24 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 - Essential service for entire [[Dock District]] - sailors depend on Olric
 - Competes with cheaper (lower quality) suppliers, but reputation keeps him in business
 - Informal hub for sailor gossip and information exchange
-- Victim of Geist's protection racket (like many dock businesses)
+- Victim of [[Geist (Bandit Lieutenant)]]'s protection racket (like many dock businesses)
 
 **Related NPCs:**
 - **[[Mira Saltwind]]:** Niece - runs Saltwind Imports in [[Merchant District]] (different business, same family)
-- **Geist:** Primary antagonist - extorting Olric's shop for "inspection fees"
+- **[[Geist (Bandit Lieutenant)]]:** Primary antagonist - extorting Olric's shop for "inspection fees"
 - **Honest ship captains:** Olric's contacts from decades at sea, trust him completely
-- **Harren (Dock Worker):** Regular customer, buys work gloves and rope, shares dock gossip
+- **[[Harren (Dock Worker)]] (Dock Worker):** Regular customer, buys work gloves and rope, shares dock gossip
 
 **Faction Ties:**
 - **Sailor's Informal Network:** Respected member, decades of relationships
-- **Dock Merchants (honest ones):** Allied against Geist's corruption
-- **[[Merit Council]] (victim of):** Geist uses Council authority to extort Olric
+- **Dock Merchants (honest ones):** Allied against [[Geist (Bandit Lieutenant)]]'s corruption
+- **[[Merit Council]] (victim of):** [[Geist (Bandit Lieutenant)]] uses Council authority to extort Olric
 - No criminal ties - Olric is aggressively honest
 
 ## DM Notes
 
 **Plot Hooks:**
-- **Direct connection to Kyle's Geist investigation** - Olric is victim and willing to help gather evidence
+- **Direct connection to [[Kyle/Nameless]]'s [[Geist (Bandit Lieutenant)]] investigation** - Olric is victim and willing to help gather evidence
 - Source of quality rope for party (climbing, dungeons, etc.)
 - Information from sailors: distant lands, sea monsters, political news
 - Ship passage: Olric can arrange affordable, safe transport via trusted captains
@@ -171,7 +171,7 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 - Remembers every ship he sailed on, every port he visited
 
 **Connection to Campaign:**
-- **Geist investigation:** Olric provides victim testimony and evidence of protection racket
+- **[[Geist (Bandit Lieutenant)]] investigation:** Olric provides victim testimony and evidence of protection racket
 - **[[Mira Saltwind]] connection:** Family tie to [[Merchant District]], creates cross-tier relationship
 - **Information network:** Sailors bring news from across the world
 - **Practical supplies:** Party needs rope, climbing gear, waterproof containers for adventures
@@ -183,7 +183,7 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 - Shop feels lived-in, practical - this is a workplace, not a showroom
 - Casual racism against Olric (half-elf in human-dominated docks) - he handles it with tired grace
 
-**Evidence Against Geist (Available Here):**
+**Evidence Against [[Geist (Bandit Lieutenant)]] (Available Here):**
 - Olric keeps receipts of all "inspection fines" with dates
 - Can testify about threats and harassment
 - Knows other shop owners being extorted (can point party to them)

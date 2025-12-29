@@ -13,7 +13,7 @@ related_entities:
   - Octavia's Warlock Patron
 ---
 
-# [[Storm Giant Warband]] (Octavia's Tool)
+# [[Storm Giant Warband]] ([[Octavia (Subject #8)]]'s Tool)
 
 ## Player Summary
 
@@ -22,12 +22,12 @@ A storm giant and their warband, operating as mercenaries-for-hire. Recently des
 ## DM Notes
 
 ### Overview
-This is NOT an independent faction with complex motivations. The Storm Giant and their warband are a TOOL wielded by Octavia (Decimate Subject #8) on behalf of her warlock patron. Their agenda is simple: follow orders, acquire artifacts, eliminate obstacles.
+This is NOT an independent faction with complex motivations. The Storm Giant and their warband are a TOOL wielded by [[Octavia (Subject #8)]] (Decimate Subject #8) on behalf of her warlock patron. Their agenda is simple: follow orders, acquire artifacts, eliminate obstacles.
 
 ### The Truth
-- **Hired by Octavia:** Storm giant contracted to destroy Ratterdan
+- **Hired by [[Octavia (Subject #8)]]:** Storm giant contracted to destroy Ratterdan
 - **Motive:** Retrieve Heartstone buried beneath village
-- **Patron's Goal:** Octavia's warlock entity wanted Heartstone awakened
+- **Patron's Goal:** [[Octavia (Subject #8)]]'s warlock entity wanted Heartstone awakened
 - **Payment:** Unknown (arcane knowledge? Power? Future favors?)
 - **Current Status:** Contract complete, but Heartstone taken by party
 
@@ -37,7 +37,7 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Mercenary commander, not a schemer
 - Follows contracts to the letter
 - Honorable in a "deal is a deal" sense
-- No personal grudge against Rakash or goblins
+- No personal grudge against [[Ian/Rakash]] or goblins
 - Will complete job, then move on
 
 **Simple Motivation:**
@@ -67,31 +67,31 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Retrieve Heartstone ✗ (party took it)
 
 **Active:**
-- Report back to Octavia about Heartstone location
+- Report back to [[Octavia (Subject #8)]] about Heartstone location
 - Possibly: Recover Heartstone from party
 - Possibly: Other artifact retrieval jobs
 
 **Pending:**
-- Unknown future contracts from Octavia
+- Unknown future contracts from [[Octavia (Subject #8)]]
 - May be tasked with eliminating party
 
 ### Relationships
 
 **Employer:**
-- **Octavia:** Current contractor, warlock with unknown patron
+- **[[Octavia (Subject #8)]]:** Current contractor, warlock with unknown patron
 - Relationship is professional, transactional
 - No loyalty beyond payment
 
 **Enemies:**
-- **Rakash/Ian:** Sole survivor of Ratterdan, seeking revenge
-- **Party:** Possess Heartstone Octavia wants
+- **[[Ian/Rakash]]/Ian:** Sole survivor of Ratterdan, seeking revenge
+- **Party:** Possess Heartstone [[Octavia (Subject #8)]] wants
 - Anyone who interferes with contracts
 
 **Neutral:**
 - **[[Merit Council]]:** Not hostile unless they interfere
 - **Other Factions:** Warband is mercenary, not ideological
 
-### Octavia's Warlock Patron
+### [[Octavia (Subject #8)]]'s Warlock Patron
 
 **Unknown Entity Wants:**
 - Heartstone (fey artifact for power boost)
@@ -103,20 +103,20 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Destruction when needed
 - No questions asked about why
 
-### Rakash Connection
+### [[Ian/Rakash]] Connection
 
 **What Happened at Ratterdan:**
 - Storm Giant hired to destroy village
 - Zhaask (goblin traitor) provided intel
 - Giant smashed Ratterdan, retrieved Heartstone
-- Rakash survived, took giant's 8-foot axe
-- Giant doesn't care about Rakash personally (just business)
+- [[Ian/Rakash]] survived, took giant's 8-foot axe
+- Giant doesn't care about [[Ian/Rakash]] personally (just business)
 
-**Rakash's Revenge Arc:**
+**[[Ian/Rakash]]'s Revenge Arc:**
 - Giant is legitimate target for vengeance
 - BUT giant was just following contract
-- Real villain: Octavia (and her patron)
-- Rakash won't know this initially
+- Real villain: [[Octavia (Subject #8)]] (and her patron)
+- [[Ian/Rakash]] won't know this initially
 
 ### Goals & Progress Clocks
 
@@ -127,8 +127,8 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Execute recovery
 - Current Progress: Knows party has it
 
-**Complete Octavia's Contracts** [Ongoing]
-- Follow orders from Octavia
+**Complete [[Octavia (Subject #8)]]'s Contracts** [Ongoing]
+- Follow orders from [[Octavia (Subject #8)]]
 - Report findings
 - Accept payment
 - Move to next job
@@ -139,25 +139,25 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Storm Giant is powerful but not invincible (CR 13)
 - No ideological loyalty - could switch sides for better pay
 - Simple tactics - overwhelming force, not clever strategy
-- If Octavia stops paying, warband dissolves
+- If [[Octavia (Subject #8)]] stops paying, warband dissolves
 
 ### Future Hooks
 
-- Rakash's confrontation with Storm Giant
-- Discovery that Octavia hired them
+- [[Ian/Rakash]]'s confrontation with Storm Giant
+- Discovery that [[Octavia (Subject #8)]] hired them
 - Warband pursuing party for Heartstone
 - Possible negotiation (they're mercenaries, not fanatics)
-- Learning about Octavia's warlock patron
+- Learning about [[Octavia (Subject #8)]]'s warlock patron
 - Giant's 8-foot axe mysteries (why does it have temporal magic?)
 
 ### Secrets
 
-- Octavia hired them, party doesn't know yet
+- [[Octavia (Subject #8)]] hired them, party doesn't know yet
 - Heartstone retrieval was the ONLY reason Ratterdan destroyed
-- Zhaask betrayed Ratterdan for payment from Octavia
-- Storm Giant doesn't know Octavia's full plan
+- Zhaask betrayed Ratterdan for payment from [[Octavia (Subject #8)]]
+- Storm Giant doesn't know [[Octavia (Subject #8)]]'s full plan
 - Giant's axe has temporal magic (was this expected? Side effect?)
-- Warband may abandon contract if Octavia can't pay
+- Warband may abandon contract if [[Octavia (Subject #8)]] can't pay
 
 ---
 
@@ -174,7 +174,7 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Ratterdan investigation reveals giant involvement
 
 **Party Interaction:**
-- Rakash investigates Ratterdan destruction
+- [[Ian/Rakash]] investigates Ratterdan destruction
 - First hints warband is tracking them
 - Evidence giant was hired (not random attack)
 - Discovery of Zhaask's betrayal
@@ -192,13 +192,13 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Combined force of ogres/trolls and hobgoblins
 - Tactical ambushes with giant support
 - Negotiation attempts (offer payment for Heartstone)
-- Evidence trail leading to Octavia
+- Evidence trail leading to [[Octavia (Subject #8)]]
 
 **Party Interaction:**
 - First confrontation with giant-tier threat
 - Offered payment to hand over Heartstone (peaceful resolution possible)
-- Learning Octavia's name as employer
-- Rakash faces choice: revenge vs. bigger picture
+- Learning [[Octavia (Subject #8)]]'s name as employer
+- [[Ian/Rakash]] faces choice: revenge vs. bigger picture
 - Party realizes they're in over their heads
 
 **Warband Status:** Active retrieval operations, escalating force
@@ -213,12 +213,12 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Full warband deployed (cloud giants, ogres, hobgoblins)
 - Siege tactics if party is fortified
 - Final negotiation offer before violence
-- Octavia may appear as contractor
+- [[Octavia (Subject #8)]] may appear as contractor
 
 **Party Interaction:**
-- Rakash's moment of truth: face giant who destroyed Ratterdan
+- [[Ian/Rakash]]'s moment of truth: face giant who destroyed Ratterdan
 - Party must survive CR 13 threat (run, negotiate, or clever tactics)
-- Octavia's role revealed
+- [[Octavia (Subject #8)]]'s role revealed
 - Choice: Fight impossible odds, surrender Heartstone, or third option
 - Understanding warband is tool, not true enemy
 
@@ -226,24 +226,24 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 
 ---
 
-### Levels 8-9: Octavia Confrontation & Warband Resolution
-**Threat Type:** Octavia directly involved, warlock patron's agenda revealed
+### Levels 8-9: [[Octavia (Subject #8)]] Confrontation & Warband Resolution
+**Threat Type:** [[Octavia (Subject #8)]] directly involved, warlock patron's agenda revealed
 
 **Encounters:**
-- **Octavia** (CR 8-9 Warlock) with warband support
-- Storm Giant and cloud giants as Octavia's bodyguards
+- **[[Octavia (Subject #8)]]** (CR 8-9 Warlock) with warband support
+- Storm Giant and cloud giants as [[Octavia (Subject #8)]]'s bodyguards
 - Warlock magic combined with giant muscle
 - Revelation of patron's true goals
 - Heartstone's curse mechanics revealed (Rime of Ancient Mariner)
 
 **Party Interaction:**
-- Confronting Octavia, not just warband
+- Confronting [[Octavia (Subject #8)]], not just warband
 - Learning warlock patron's identity/goals
-- Storm Giant may switch sides if Octavia falls
-- Rakash's revenge arc resolution
+- Storm Giant may switch sides if [[Octavia (Subject #8)]] falls
+- [[Ian/Rakash]]'s revenge arc resolution
 - Heartstone curse becomes major plot point
 
-**Warband Status:** Following Octavia's final orders or abandoning contract
+**Warband Status:** Following [[Octavia (Subject #8)]]'s final orders or abandoning contract
 
 ---
 
@@ -260,7 +260,7 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Possible alliance with Storm Giant (they're mercenaries)
 - Hiring warband for own purposes
 - Giant social/political complications
-- Rakash's emotional resolution
+- [[Ian/Rakash]]'s emotional resolution
 
 **Warband Status:** Arc complete, contract ended
 
@@ -272,19 +272,19 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Storm Giant faction = muscle for hire
 - No complex motivations or grand plans
 - "Get artifact, smash obstacles, get paid"
-- Octavia is the schemer, giant is the hammer
+- [[Octavia (Subject #8)]] is the schemer, giant is the hammer
 
-**Octavia's Tool:**
-- Giant doesn't know Octavia's full plan
+**[[Octavia (Subject #8)]]'s Tool:**
+- Giant doesn't know [[Octavia (Subject #8)]]'s full plan
 - Just following contract terms
 - Would work for anyone who pays
 - No ideological commitment
 
-**Rakash's Arc:**
+**[[Ian/Rakash]]'s Arc:**
 - Giant is legitimate revenge target
 - But giant isn't the mastermind
 - Killing giant is satisfying but doesn't solve root problem
-- Octavia is the real enemy
+- [[Octavia (Subject #8)]] is the real enemy
 
 **Appropriate Level Threat:**
 - Storm Giant is CR 13 (deadly for low-level party)
@@ -296,4 +296,4 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Can be negotiated with
 - Money talks
 - Not fanatics who fight to death
-- Possible to turn against Octavia if she can't pay
+- Possible to turn against [[Octavia (Subject #8)]] if she can't pay

@@ -77,7 +77,7 @@ graph TD
   - **Temporal Bloodline Tribe:** Guardians of the Falls (potential allies)
 
 **Toggle: Player Hints (Distribute During Downtime)**
-  - **[[Kyle/Nameless]]:** Rumors about Geist's smuggling operation in [[Agastia]]
+  - **[[Kyle/Nameless]]:** Rumors about [[Geist (Bandit Lieutenant)]]'s smuggling operation in [[Agastia]]
   - **[[Manny]]:** Garrek's journal mentions ancient book at the Falls
   - **[[Nikki]]:** Journal notes "time seems wrong" near Falls (temporal magic)
   - **[[Josh]]/Brand:** Thorne's war stories may reference elemental ancestors
@@ -268,8 +268,8 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 **Toggle: Personal Investigations**
 
 **[[Kyle/Nameless]]:**
-- Investigate Geist rumors (Persuasion/Investigation DC 12)
-- Learn Geist has [[Merit Council]] position in [[Agastia]]
+- Investigate [[Geist (Bandit Lieutenant)]] rumors (Persuasion/Investigation DC 12)
+- Learn [[Geist (Bandit Lieutenant)]] has [[Merit Council]] position in [[Agastia]]
 - Rumors of smuggling operation in dock district
 
 **[[Manny]]:**
@@ -346,7 +346,7 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
   - Willing to trade supplies at normal prices (potions, rope, rations, etc.)
   - Offers information: "Roads safe near [[Agastia]], but bandit trouble up north"
   - Can be hired for future transport (50gp round trip to Meridian's Rest)
-  - **If Kyle asks about dock inspections/Geist:** "Yeah, 'Inspector G' they call him. Real piece of work. [[Merit Council]] badge, but everyone knows he's crooked. Protection fees, delayed shipments... Can't prove it though. He's got the Council's backing."
+  - **If Kyle asks about dock inspections/[[Geist (Bandit Lieutenant)]]:** "Yeah, 'Inspector G' they call him. Real piece of work. [[Merit Council]] badge, but everyone knows he's crooked. Protection fees, delayed shipments... Can't prove it though. He's got the Council's backing."
 
 ---
 
@@ -403,11 +403,11 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 - Less affluent but respectable
 
 **Tier 6: Docks/Warehouse District**
-- **Warehouse 7, Pier District:** Geist's smuggling operation
+- **Warehouse 7, Pier District:** [[Geist (Bandit Lieutenant)]]'s smuggling operation
 - Import docks, trade ships
 - Fishmonger's Row
 - Sailor taverns (rough clientele, good information)
-- **The Rusty Anchor:** Dock worker tavern (Harren drinks here)
+- **The Rusty Anchor:** Dock worker tavern ([[Harren (Dock Worker)]] drinks here)
 
 **Tier 7 (Bottom): [[The Depths]]**
 - **[[Dispossessed]] Housing:** Overcrowded, poor conditions
@@ -467,30 +467,30 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 
 ---
 
-#### Kyle's Quest: Kaelborn/Geist Investigation
+#### Kyle's Quest: [[Kaelborn (Bandit Boss)]]/[[Geist (Bandit Lieutenant)]] Investigation
 
 **Quest State from [[Meridian's Rest]]:**
-- Kyle knows: "Kaelborn is easy to find but hard to access"
-- Kyle knows: "Geist is hard to find but easy to access"
+- Kyle knows: "[[Kaelborn (Bandit Boss)]] is easy to find but hard to access"
+- Kyle knows: "[[Geist (Bandit Lieutenant)]] is hard to find but easy to access"
 
 **The Correct Dynamic:**
-- **Kaelborn** = Public [[Merit Council]] official (known location, requires rank/leverage to access)
-- **Geist** = Hidden enforcer (must locate, but easy to approach once found)
+- **[[Kaelborn (Bandit Boss)]]** = Public [[Merit Council]] official (known location, requires rank/leverage to access)
+- **[[Geist (Bandit Lieutenant)]]** = Hidden enforcer (must locate, but easy to approach once found)
 
 **Kyle can pursue either path:**
 
 ---
 
-##### Path 1: Access Kaelborn (Direct Route)
+##### Path 1: Access [[Kaelborn (Bandit Boss)]] (Direct Route)
 
-**Objective:** Gain access to Kaelborn, a high-ranking [[Merit Council]] official
+**Objective:** Gain access to [[Kaelborn (Bandit Boss)]], a high-ranking [[Merit Council]] official
 
-**Revelation:** Kyle needs access to Kaelborn, who runs an illicit smuggling network under official cover. Kaelborn is publicly known but protected by rank and bureaucracy.
+**Revelation:** Kyle needs access to [[Kaelborn (Bandit Boss)]], who runs an illicit smuggling network under official cover. [[Kaelborn (Bandit Boss)]] is publicly known but protected by rank and bureaucracy.
 
 **Access Options:**
 1. Gain credentials/rank to meet him officially
 2. Find leverage to force a meeting
-3. Locate Geist and use him as a route to Kaelborn
+3. Locate [[Geist (Bandit Lieutenant)]] and use him as a route to [[Kaelborn (Bandit Boss)]]
 
 ###### Entry Node 1: [[Merit Council]] Clerk
 
@@ -501,12 +501,12 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 > A harried clerk shuffles papers behind a desk. When asked about accessing high officials, they sigh.
 
 **What They Share:**
-- Kaelborn's official role: Trade Oversight Division
+- [[Kaelborn (Bandit Boss)]]'s official role: Trade Oversight Division
 - Public record: Spotless, highly ranked in Merit system
 - Access requirements: "You'll need an appointment. His schedule is booked months in advance."
 - Alternative: "Unless you have urgent official business... or significant Merit rank yourself."
 
-**Leads To:** Location 1 (Kaelborn's Office - Bureaucratic Route)
+**Leads To:** Location 1 ([[Kaelborn (Bandit Boss)]]'s Office - Bureaucratic Route)
 
 ###### Entry Node 2: Dock Merchants
 
@@ -517,10 +517,10 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 > Several merchants, when asked about dock trade issues, exchange nervous glances. One eventually speaks quietly.
 
 **What They Share:**
-- "Kaelborn controls all dock trade. Nothing moves without his approval."
-- "We pay... extra fees. Kaelborn's people collect them."
+- "[[Kaelborn (Bandit Boss)]] controls all dock trade. Nothing moves without his approval."
+- "We pay... extra fees. [[Kaelborn (Bandit Boss)]]'s people collect them."
 - "There's someone who handles the collections - we don't know his name, but he's dangerous."
-- "Complain to the [[Merit Council]]? Kaelborn IS the [[Merit Council]]!"
+- "Complain to the [[Merit Council]]? [[Kaelborn (Bandit Boss)]] IS the [[Merit Council]]!"
 
 **Leads To:** Location 2 (Merchant Network - Evidence Gathering)
 
@@ -530,71 +530,71 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 **Skill Check:** Streetwise DC 13
 
 **Hook:**
-> An underground informant, when asked about illicit trade, mentions a name: Geist.
+> An underground informant, when asked about illicit trade, mentions a name: [[Geist (Bandit Lieutenant)]].
 
 **What They Share:**
-- "Geist is Kaelborn's shadow - does the dirty work while the boss stays clean."
-- Geist runs protection rackets, smuggling, enforcement
+- "[[Geist (Bandit Lieutenant)]] is [[Kaelborn (Bandit Boss)]]'s shadow - does the dirty work while the boss stays clean."
+- [[Geist (Bandit Lieutenant)]] runs protection rackets, smuggling, enforcement
 - "Operates out of somewhere in the dock district. Hidden. You'll have to search."
-- "Get to Geist, you might get to Kaelborn. Maybe."
+- "Get to [[Geist (Bandit Lieutenant)]], you might get to [[Kaelborn (Bandit Boss)]]. Maybe."
 
-**Leads To:** Location 3 (Find Geist - Alternative Route)
+**Leads To:** Location 3 (Find [[Geist (Bandit Lieutenant)]] - Alternative Route)
 
-###### Investigation Location 1: Kaelborn's Office (Bureaucratic Route)
+###### Investigation Location 1: [[Kaelborn (Bandit Boss)]]'s Office (Bureaucratic Route)
 
 **3 Clues Available:**
 
 **Toggle: Clue 1 (Observation) - DC 12 Perception**
-- Kaelborn's office in [[Government Complex]] is well-guarded
+- [[Kaelborn (Bandit Boss)]]'s office in [[Government Complex]] is well-guarded
 - Appointment book is FULL for months (deliberately)
 - Guards turn away visitors without proper credentials
 - "Emergencies" are denied unless you have significant rank
 
 **Toggle: Clue 2 (Records) - DC 14 Investigation**
-- Kaelborn's public record is suspiciously perfect
+- [[Kaelborn (Bandit Boss)]]'s public record is suspiciously perfect
 - All trade disputes resolved "in favor of efficiency"
 - Complaints against dock inspections dismissed systematically
 - Pattern suggests corruption, but no proof
 
 **Toggle: Clue 3 (Insider Info) - DC 16 Persuasion (bribe clerk 10gp)**
-- "Kaelborn only sees people with Merit Rank 5+ or official summons"
+- "[[Kaelborn (Bandit Boss)]] only sees people with Merit Rank 5+ or official summons"
 - "Or... if you have information he wants. Something valuable."
 - "I've heard he meets people privately sometimes. Different location. But I don't know where."
 
-**Revelation:** Direct access to Kaelborn requires high Merit rank or leverage
+**Revelation:** Direct access to [[Kaelborn (Bandit Boss)]] requires high Merit rank or leverage
 
 ###### Investigation Location 2: Merchant Network (Evidence Gathering)
 
 **3 Clues Available:**
 
 **Toggle: Clue 1 (Testimonial) - DC 11 Persuasion**
-- Multiple merchants confirm "unofficial fees" to Kaelborn's operation
-- Payments go to collectors, not Kaelborn directly
+- Multiple merchants confirm "unofficial fees" to [[Kaelborn (Bandit Boss)]]'s operation
+- Payments go to collectors, not [[Kaelborn (Bandit Boss)]] directly
 - Pattern of extortion across entire dock district
 - No merchant will testify (too afraid, too connected)
 
 **Toggle: Clue 2 (Documentary) - DC 13 Investigation**
 - Merchant ledgers show payments to "Trade Office" beyond official taxes
 - Amounts are 10-15% of shipment value (systematic)
-- One ledger mentions "K's fees" - likely Kaelborn
+- One ledger mentions "K's fees" - likely [[Kaelborn (Bandit Boss)]]
 - Evidence of organized racket
 
 **Toggle: Clue 3 (Collector Identity) - DC 14 Investigation**
-- Collectors mention someone called "Geist"
-- Geist works for Kaelborn (confirmed by multiple sources)
+- Collectors mention someone called "[[Geist (Bandit Lieutenant)]]"
+- [[Geist (Bandit Lieutenant)]] works for [[Kaelborn (Bandit Boss)]] (confirmed by multiple sources)
 - Operates from hidden location in dock district
-- Finding Geist might provide route to Kaelborn
+- Finding [[Geist (Bandit Lieutenant)]] might provide route to [[Kaelborn (Bandit Boss)]]
 
-**Revelation:** Kaelborn runs protection racket through hidden enforcer (Geist)
+**Revelation:** [[Kaelborn (Bandit Boss)]] runs protection racket through hidden enforcer (Geist)
 
-###### Investigation Location 3: Find Geist (Alternative Route to Kaelborn)
+###### Investigation Location 3: Find [[Geist (Bandit Lieutenant)]] (Alternative Route to Kaelborn)
 
-**The Challenge:** Geist is HIDDEN - must be found
+**The Challenge:** [[Geist (Bandit Lieutenant)]] is HIDDEN - must be found
 
 **Search Methods:**
 
 **Method 1: Ask Dock Workers (DC 12 Investigation)**
-- Workers have seen Geist but don't know where he's based
+- Workers have seen [[Geist (Bandit Lieutenant)]] but don't know where he's based
 - "Warehouse district, somewhere. But which warehouse?"
 - Descriptions: Human, wears inspector's uniform sometimes
 
@@ -604,18 +604,18 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 - Requires stakeout to confirm
 
 **Method 3: Underground Intel (DC 13 Streetwise)**
-- Black market knows about Geist
+- Black market knows about [[Geist (Bandit Lieutenant)]]
 - "Warehouse 7, Pier District - that's his base"
 - "Easy to approach once you know where. Just walk in."
 
-**3 Clues Available (Once Geist Found):**
+**3 Clues Available (Once [[Geist (Bandit Lieutenant)]] Found):**
 
 **Toggle: Clue 1 (Surveillance) - DC 12 Stealth**
-- Geist operates from Warehouse 7, Pier District
-- Mentions "Kaelborn's orders" when giving instructions
+- [[Geist (Bandit Lieutenant)]] operates from Warehouse 7, Pier District
+- Mentions "[[Kaelborn (Bandit Boss)]]'s orders" when giving instructions
 
 **Toggle: Clue 2 (Confrontation) - Intimidation DC 14 or Combat**
-- If intimidated or captured: "I work for Kaelborn!"
+- If intimidated or captured: "I work for [[Kaelborn (Bandit Boss)]]!"
 - "You want to meet him? You'll need leverage. He doesn't just talk to anyone."
 
 **Toggle: Clue 3 (Documents) - DC 15 Investigation (search warehouse)**
@@ -623,24 +623,24 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 - Correspondence mentions meeting locations
 - Evidence of their criminal partnership
 
-**Revelation:** Geist is the route to Kaelborn if you have leverage
+**Revelation:** [[Geist (Bandit Lieutenant)]] is the route to [[Kaelborn (Bandit Boss)]] if you have leverage
 
-###### Final Options to Access Kaelborn:
+###### Final Options to Access [[Kaelborn (Bandit Boss)]]:
 
 **Option 1: Gain Merit Rank**
 - Achieve Rank 5+ through official testing/deeds
 - TIME: Months of effort
-- RESULT: Legitimate access, but Kaelborn prepared
+- RESULT: Legitimate access, but [[Kaelborn (Bandit Boss)]] prepared
 
 **Option 2: Gather Evidence, Force Meeting**
-- Collect proof of Kaelborn's corruption
+- Collect proof of [[Kaelborn (Bandit Boss)]]'s corruption
 - Threaten exposure unless he meets
-- RISK: Kaelborn may strike first
+- RISK: [[Kaelborn (Bandit Boss)]] may strike first
 
-**Option 3: Through Geist**
-- Find Geist, capture/intimidate/negotiate
-- Use Geist to arrange meeting
-- RESULT: Meeting happens, but Kaelborn controls terms
+**Option 3: Through [[Geist (Bandit Lieutenant)]]**
+- Find [[Geist (Bandit Lieutenant)]], capture/intimidate/negotiate
+- Use [[Geist (Bandit Lieutenant)]] to arrange meeting
+- RESULT: Meeting happens, but [[Kaelborn (Bandit Boss)]] controls terms
 
 **Option 4: Infiltrate Operation**
 - Pose as smuggler/corrupt official
@@ -649,31 +649,31 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 
 **Option 5: Report to [[Merit Council]]**
 - Present evidence to Council authorities
-- DOWNSIDE: Kaelborn may escape through connections
+- DOWNSIDE: [[Kaelborn (Bandit Boss)]] may escape through connections
 
 ---
 
-##### Path 2: Investigate Geist (Enforcer Route)
+##### Path 2: Investigate [[Geist (Bandit Lieutenant)]] (Enforcer Route)
 
-**Objective:** Locate and investigate Geist's smuggling operation
+**Objective:** Locate and investigate [[Geist (Bandit Lieutenant)]]'s smuggling operation
 
-**Revelation:** Geist operates smuggling safehouse under cover of [[Merit Council]] Trade Inspector position.
+**Revelation:** [[Geist (Bandit Lieutenant)]] operates smuggling safehouse under cover of [[Merit Council]] Trade Inspector position.
 
 **Key Details:**
-- Geist = [[Merit Council]] Trade Inspector (uses position as cover)
-- Kaelborn = The real boss (Geist takes orders from him)
+- [[Geist (Bandit Lieutenant)]] = [[Merit Council]] Trade Inspector (uses position as cover)
+- [[Kaelborn (Bandit Boss)]] = The real boss ([[Geist (Bandit Lieutenant)]] takes orders from him)
 - Safehouse = Warehouse 7, disguised as "confiscated goods warehouse"
 
-###### Entry Node 1: Harren (Dock Worker)
+###### Entry Node 1: [[Harren (Dock Worker)]] (Dock Worker)
 
 **Location:** The Rusty Anchor tavern, [[Dock District]] (Tier 6)
 **Skill Check:** Persuasion DC 10 (easy—first clue should be accessible)
 
 **Hook:**
-> A weathered dock worker named Harren sits at the bar, nursing ale. If approached and asked about "inspections" or "dock corruption," he'll talk after 1-2 drinks (2gp).
+> A weathered dock worker named [[Harren (Dock Worker)]] sits at the bar, nursing ale. If approached and asked about "inspections" or "dock corruption," he'll talk after 1-2 drinks (2gp).
 
 **What He Shares:**
-- "Inspector Geist? Yeah, I seen him. Takes 'fees' from smugglers."
+- "Inspector [[Geist (Bandit Lieutenant)]]? Yeah, I seen him. Takes 'fees' from smugglers."
 - "Warehouse 7, down by Pier District—that's where he does business."
 - "Got the Council badge, so nobody touches him. Protected."
 
@@ -701,12 +701,12 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 **Skill Check:** Intimidation OR Persuasion DC 13
 
 **Hook:**
-> Kex is a small-time smuggler operating in the black market. Geist shut down his competition using Merit authority. He's bitter and willing to talk.
+> Kex is a small-time smuggler operating in the black market. [[Geist (Bandit Lieutenant)]] shut down his competition using Merit authority. He's bitter and willing to talk.
 
 **What He Shares:**
-- "Geist ain't just corrupt—he's the BOSS of smuggling here."
+- "[[Geist (Bandit Lieutenant)]] ain't just corrupt—he's the BOSS of smuggling here."
 - "Uses his [[Merit Council]] position to eliminate rivals like me."
-- "Works with someone higher up—never seen him, but Geist takes orders."
+- "Works with someone higher up—never seen him, but [[Geist (Bandit Lieutenant)]] takes orders."
 - "Warehouse 7, Pier District. That's the safehouse."
 
 **Leads To:** Location 3 (Black Market / Informant Network)
@@ -721,62 +721,62 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 - But workers are too nervous, look like criminals, not officials
 
 **Toggle: Clue 2 (Physical) - DC 14 Stealth to get close**
-- Geist himself is present, wearing [[Merit Council]] inspector uniform
+- [[Geist (Bandit Lieutenant)]] himself is present, wearing [[Merit Council]] inspector uniform
 - Directing smugglers, collecting payments
 - "Make sure the shipment gets through—Council inspection is covered."
 
 **Toggle: Clue 3 (Documentary) - DC 15 Investigation (break-in or bribe)**
 - Shipping manifests show contraband (weapons, drugs, forbidden goods)
 - Schedules indicate when inspections are "bypassed"
-- One manifest references "K's orders"—Kaelborn
+- One manifest references "K's orders"—[[Kaelborn (Bandit Boss)]]
 
-**Revelation:** Geist is using his official position as cover for smuggling operation. Warehouse 7 is the safehouse.
+**Revelation:** [[Geist (Bandit Lieutenant)]] is using his official position as cover for smuggling operation. Warehouse 7 is the safehouse.
 
 ##### Investigation Location 2: [[Merit Council]] Records Office
 
 **3 Clues Available:**
 
 **Toggle: Clue 1 (Documentary) - DC 13 Investigation (public records)**
-- Geist IS officially a Trade Inspector (legitimate position)
+- [[Geist (Bandit Lieutenant)]] IS officially a Trade Inspector (legitimate position)
 - Assigned to [[Dock District]] inspections
 - Records show suspiciously clean inspection history (too perfect)
 
 **Toggle: Clue 2 (Property Records) - DC 14 Investigation**
 - Warehouse 7 is registered as "[[Merit Council]] Confiscated Goods Storage"
-- Lease holder: Trade Inspector Geist
+- Lease holder: Trade Inspector [[Geist (Bandit Lieutenant)]]
 - Officially sanctioned facility (explains why no one questions it)
 
 **Toggle: Clue 3 (Financial) - DC 16 Investigation (bribe clerk 10gp)**
-- "Inspection fees" collected by Geist are NOT reported to Council
+- "Inspection fees" collected by [[Geist (Bandit Lieutenant)]] are NOT reported to Council
 - Personal enrichment, not official revenue
 - Amounts suggest protection racket (merchants paying bribes)
 
-**Revelation:** Geist holds legitimate [[Merit Council]] position, which he's abusing for smuggling and extortion.
+**Revelation:** [[Geist (Bandit Lieutenant)]] holds legitimate [[Merit Council]] position, which he's abusing for smuggling and extortion.
 
 ##### Investigation Location 3: Black Market / Informant Network
 
 **3 Clues Available:**
 
 **Toggle: Clue 1 (Social/Testimonial) - DC 11 Persuasion (street contacts)**
-- Multiple witnesses confirm Geist runs protection racket
+- Multiple witnesses confirm [[Geist (Bandit Lieutenant)]] runs protection racket
 - "Pay him or your goods 'disappear' during inspection"
 - Everyone knows, but he's untouchable ([[Merit Council]] badge)
 
 **Toggle: Clue 2 (Rumors) - DC 13 Investigation (ask around)**
-- Geist works for someone called "Kaelborn"
-- "Kaelborn's the real boss—Geist is just the front man"
-- No one's seen Kaelborn, but he gives the orders
+- [[Geist (Bandit Lieutenant)]] works for someone called "[[Kaelborn (Bandit Boss)]]"
+- "[[Kaelborn (Bandit Boss)]]'s the real boss—[[Geist (Bandit Lieutenant)]] is just the front man"
+- No one's seen [[Kaelborn (Bandit Boss)]], but he gives the orders
 
 **Toggle: Clue 3 (Location Intel) - DC 12 Streetwise (informants)**
 - Warehouse 7 is definitely the safehouse
-- "Geist is there most evenings, managing operations"
+- "[[Geist (Bandit Lieutenant)]] is there most evenings, managing operations"
 - Best time to catch him: Night, when shipments arrive
 
-**Revelation:** Geist is the public face of a smuggling operation run by the mysterious Kaelborn.
+**Revelation:** [[Geist (Bandit Lieutenant)]] is the public face of a smuggling operation run by the mysterious [[Kaelborn (Bandit Boss)]].
 
-##### Confronting Geist (If Party Acts)
+##### Confronting [[Geist (Bandit Lieutenant)]] (If Party Acts)
 
-**Geist's Stats:** Use Bandit Captain (CR 2)
+**[[Geist (Bandit Lieutenant)]]'s Stats:** Use Bandit Captain (CR 2)
 **Location:** Warehouse 7 (can be infiltrated or approached openly)
 **Guards:** 2d4 Thugs (CR 1/2 each)
 
@@ -785,28 +785,28 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 **Toggle: Option 1 - Gather Evidence First**
 - Collect 3+ clues from investigation
 - Report to [[Merit Council]] with proof
-- Council investigates, Geist arrested (bureaucratic solution)
-- **Result:** Geist removed, but Kaelborn escapes
+- Council investigates, [[Geist (Bandit Lieutenant)]] arrested (bureaucratic solution)
+- **Result:** [[Geist (Bandit Lieutenant)]] removed, but [[Kaelborn (Bandit Boss)]] escapes
 
-**Toggle: Option 2 - Confront Geist Directly**
-- Combat encounter (Geist + thugs)
-- Geist tries to flee if losing
+**Toggle: Option 2 - Confront [[Geist (Bandit Lieutenant)]] Directly**
+- Combat encounter ([[Geist (Bandit Lieutenant)]] + thugs)
+- [[Geist (Bandit Lieutenant)]] tries to flee if losing
 - Can be captured and interrogated
-- **Result:** Learn Kaelborn's location (next quest hook)
+- **Result:** Learn [[Kaelborn (Bandit Boss)]]'s location (next quest hook)
 
 **Toggle: Option 3 - Infiltrate and Steal Evidence**
 - Stealth mission (DC 15 group Stealth check)
 - Steal manifests, ledgers, proof of corruption
-- Geist doesn't know who did it (anonymous justice)
+- [[Geist (Bandit Lieutenant)]] doesn't know who did it (anonymous justice)
 - **Result:** Evidence delivered to Council or rivals
 
-**Geist's Information (If Interrogated):**
-- "Kaelborn pays me to run this operation."
+**[[Geist (Bandit Lieutenant)]]'s Information (If Interrogated):**
+- "[[Kaelborn (Bandit Boss)]] pays me to run this operation."
 - "I don't know where he is—we communicate through drops."
 - "He's got connections high up in the [[Merit Council]]."
 - "You can't touch him—he's protected."
 
-**DM Note:** Geist doesn't know Kaelborn's location (he's insulated). Finding Kaelborn requires further investigation (future session).
+**DM Note:** [[Geist (Bandit Lieutenant)]] doesn't know [[Kaelborn (Bandit Boss)]]'s location (he's insulated). Finding [[Kaelborn (Bandit Boss)]] requires further investigation (future session).
 
 ---
 

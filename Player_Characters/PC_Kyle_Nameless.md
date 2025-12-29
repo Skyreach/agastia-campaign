@@ -13,11 +13,11 @@ faction: Feywild Military
 related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Beans]
 ---
 
-# Nameless (Kyle's Character)
+# [[Kyle/Nameless]] (Kyle's Character)
 
 ## Player Summary
 
-**Nameless** is a ranger/rogue with distinctive rainbow-colored hair, currently on leave from 100 years of service to Feywild Lord Zaos Yllalar. Kidnapped by bandits at age 3 for their unique appearance, they escaped after ~20 years and found new purpose in the Feywild military. Now hunting the bandit leaders who stole their childhood, Nameless balances duty to the Fey with personal vengeance.
+**[[Kyle/Nameless]]** is a ranger/rogue with distinctive rainbow-colored hair, currently on leave from 100 years of service to Feywild Lord Zaos Yllalar. Kidnapped by bandits at age 3 for their unique appearance, they escaped after ~20 years and found new purpose in the Feywild military. Now hunting the bandit leaders who stole their childhood, [[Kyle/Nameless]] balances duty to the Fey with personal vengeance.
 
 ### Basic Information
 - **Player:** Player 4 (Kyle)
@@ -42,12 +42,12 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ## Current Goals
 
 ### Active Goals
-- **Hunt down Kaelborn (elf sorcerer) and Geist (dwarf assassin)** [Major] - Bandit leaders who kidnapped him
+- **Hunt down [[Kaelborn (Bandit Boss)]] (elf sorcerer) and [[Geist (Bandit Lieutenant)]] (dwarf assassin)** [Major] - Bandit leaders who kidnapped him
 - **Monitor for Feywild threats** [Ongoing] - Duty while on leave
 - **Collect and return Fey artifacts legitimately** [Ongoing] - Service to Lord Zaos
 
 ### Current Leads
-- Intercepted message proves Kaelborn and Geist are alive
+- Intercepted message proves [[Kaelborn (Bandit Boss)]] and [[Geist (Bandit Lieutenant)]] are alive
 - Message was headed to Agastian capital
 - Bandits believed dead but clearly operating
 
@@ -66,13 +66,13 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 
 ### Feywild Connections
 - **Lord Zaos Yllalar:** Fey Lord employer, granted 100-year service leave
-- **Lady Eliyen:** Zaos's daughter, gave him name "Nameless" and magical fiddle after he rescued her
+- **Lady Eliyen:** Zaos's daughter, gave him name "[[Kyle/Nameless]]" and magical fiddle after he rescued her
 - **Feywild Military:** Honorably serving member on authorized leave
 
 ### Enemies
-- **Kaelborn:** Elf sorcerer bandit leader (primary target)
-- **Geist:** Dwarf assassin bandit leader (primary target)
-- **Bandit Network:** Unknown size and scope
+- **[[Kaelborn (Bandit Boss)]]:** Elf sorcerer bandit leader (primary target)
+- **[[Geist (Bandit Lieutenant)]]:** Dwarf assassin bandit leader (primary target)
+- **[[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]]:** Unknown size and scope
 
 ### Other Connections
 - **Beans:** Previous acquaintance (nature unclear)
@@ -92,7 +92,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ## Background Details
 
 ### Timeline
-- **Age ~3:** Kidnapped by Kaelborn and Geist for rainbow hair
+- **Age ~3:** Kidnapped by [[Kaelborn (Bandit Boss)]] and [[Geist (Bandit Lieutenant)]] for rainbow hair
 - **Ages 3-23:** Held captive by bandits (~20 years)
 - **Age ~23:** Escaped to [[Infinite Forest]]
 - **Ages 23-123:** Served Feywild military (100 years)
@@ -101,7 +101,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ### Feywild Service
 - 100 years in Lord Zaos Yllalar's military
 - Rescued Lady Eliyen during service
-- Earned name "Nameless" from her
+- Earned name "[[Kyle/Nameless]]" from her
 - Received magical fiddle as reward
 - Granted leave to pursue personal justice
 
@@ -123,15 +123,15 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ## DM Notes
 
 ### Secrets & Hidden Info
-- **Bandit Network Still Active:** Kaelborn and Geist running operations near/in [[Agastia]]
+- **[[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]] Still Active:** [[Kaelborn (Bandit Boss)]] and [[Geist (Bandit Lieutenant)]] running operations near/in [[Agastia]]
 - **Message Intercept:** Contents and destination could reveal larger conspiracy
-- **True Name:** "Nameless" is the name Eliyen gave; birth name lost/unknown
+- **True Name:** "[[Kyle/Nameless]]" is the name Eliyen gave; birth name lost/unknown
 - **Feywild Time:** 100 years for him = different time passage for others
 - **Rainbow Hair Origin:** Homebrew race - could tie to Feywild, magic bloodline, or curse
 - **Why Kidnapped:** Rainbow hair had specific value to bandits (collect? sell? ritual?)
 
 ### Future Hooks
-- Confronting Kaelborn and Geist (major combat encounter)
+- Confronting [[Kaelborn (Bandit Boss)]] and [[Geist (Bandit Lieutenant)]] (major combat encounter)
 - Discovering bandit network extent
 - Feywild duty vs. personal vengeance conflict
 - Lady Eliyen subplot (romance? friendship? debt?)
@@ -154,10 +154,10 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 - Eldritch Adept feat adds magical option
 - Fiddle may have bardic or utility magic
 - Feywild training = unconventional tactics
-- Kaelborn (sorcerer) and Geist (assassin) are high-skill enemies
+- [[Kaelborn (Bandit Boss)]] (sorcerer) and [[Geist (Bandit Lieutenant)]] (assassin) are high-skill enemies
 
 ### Bandit Leaders (Major Antagonists)
-- **Kaelborn:** Elf sorcerer, charismatic leader
-- **Geist:** Dwarf assassin, brutal enforcer
+- **[[Kaelborn (Bandit Boss)]]:** Elf sorcerer, charismatic leader
+- **[[Geist (Bandit Lieutenant)]]:** Dwarf assassin, brutal enforcer
 - **Network:** Operating near [[Agastia]] (maybe infiltrated city)
 - **Threat Level:** Mid-campaign boss encounters

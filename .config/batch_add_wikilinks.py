@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Batch add wikilinks to all markdown files in the repository.
+Now with entity alias support!
 """
 
 import subprocess

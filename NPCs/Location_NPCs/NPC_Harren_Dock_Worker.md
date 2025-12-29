@@ -12,11 +12,11 @@ threat_level: None
 related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 ---
 
-# Harren
+# [[Harren (Dock Worker)]]
 
 ## Player Summary
 
-**Harren** is a weathered dock worker who spends his evenings at The Rusty Anchor tavern in [[Agastia]]'s dock district. Years of loading cargo and witnessing the corruption around the docks have made him cynical but willing to talk - especially after a few drinks. He's seen Inspector Geist's operation firsthand and knows where the real business happens.
+**[[Harren (Dock Worker)]]** is a weathered dock worker who spends his evenings at The Rusty Anchor tavern in [[Agastia]]'s dock district. Years of loading cargo and witnessing the corruption around the docks have made him cynical but willing to talk - especially after a few drinks. He's seen Inspector [[Geist (Bandit Lieutenant)]]'s operation firsthand and knows where the real business happens.
 
 ### Basic Information
 - **Race:** Human
@@ -44,7 +44,7 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 - Works as dock laborer loading and unloading cargo
 - Drinks at The Rusty Anchor most evenings after work
 - Lives with wife and two children in lower district
-- Witnesses Geist's extortion operations regularly
+- Witnesses [[Geist (Bandit Lieutenant)]]'s extortion operations regularly
 - Talks with other dock workers about corruption (quietly)
 - Avoids direct confrontation with authority
 
@@ -59,53 +59,53 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 ## Relationships
 
 ### Family
-- **Wife and two children:** Lives in lower district, main reason he won't testify against Geist
+- **Wife and two children:** Lives in lower district, main reason he won't testify against [[Geist (Bandit Lieutenant)]]
 
 ### Work Connections
 - **Fellow dock workers:** Protective of them, shares information within community
 - **The Rusty Anchor regulars:** Known face in local tavern
 
 ### Adversaries
-- **Geist:** Fear and resentment toward corrupt inspector who extorted his crew
+- **[[Geist (Bandit Lieutenant)]]:** Fear and resentment toward corrupt inspector who extorted his crew
 
-## Knowledge About Geist
+## Knowledge About [[Geist (Bandit Lieutenant)]]
 
-### What Harren Has Seen
+### What [[Harren (Dock Worker)]] Has Seen
 **Direct Observation:**
-- Seen Inspector Geist collecting "fees" from smugglers at docks
+- Seen Inspector [[Geist (Bandit Lieutenant)]] collecting "fees" from smugglers at docks
 - Watched crates marked "confiscated goods" moved to Warehouse 7
 - Noticed workers at Warehouse 7 are NOT [[Merit Council]] employees
-- Observed Geist wearing official uniform while running criminal operations
+- Observed [[Geist (Bandit Lieutenant)]] wearing official uniform while running criminal operations
 
 **Dock Gossip:**
-- Everyone knows Geist is corrupt
-- Other inspectors avoid Warehouse 7 (Geist's territory)
+- Everyone knows [[Geist (Bandit Lieutenant)]] is corrupt
+- Other inspectors avoid Warehouse 7 ([[Geist (Bandit Lieutenant)]]'s territory)
 - Merchants pay protection fees to avoid "problems"
-- Geist has [[Merit Council]] backing - untouchable
+- [[Geist (Bandit Lieutenant)]] has [[Merit Council]] backing - untouchable
 
 **Warehouse 7:**
 - Located in Pier District (specific location)
-- Geist does business there most evenings
+- [[Geist (Bandit Lieutenant)]] does business there most evenings
 - Guards posted, but pretend to be legitimate workers
 - "Confiscated goods storage" - official cover story
 
 ### What He Doesn't Know
-- Who Geist's boss is (hasn't heard name Kaelborn)
+- Who [[Geist (Bandit Lieutenant)]]'s boss is (hasn't heard name Kaelborn)
 - Full extent of smuggling network
-- Geist's connections within [[Merit Council]]
+- [[Geist (Bandit Lieutenant)]]'s connections within [[Merit Council]]
 - How long operation has been running
 
-## Interaction with Kyle (Investigation)
+## Interaction with [[Kyle/Nameless]] (Investigation)
 
-### Finding Harren
+### Finding [[Harren (Dock Worker)]]
 **Location:** The Rusty Anchor, dock district (Tier 6)
 - Seedy tavern frequented by dock workers
-- Harren is there most evenings after work
+- [[Harren (Dock Worker)]] is there most evenings after work
 - Known locally, easy to identify
 
 **Approach:**
 - Asking about "dock inspections" or "corruption" gets attention
-- Mentioning Geist's name makes him wary
+- Mentioning [[Geist (Bandit Lieutenant)]]'s name makes him wary
 - Casual conversation about dock work builds trust
 
 ### Getting Information
@@ -115,9 +115,9 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 Makes him more talkative, lowers DC to 8
 
 **What He Shares:**
-> Harren glances around, then leans in close.
+> [[Harren (Dock Worker)]] glances around, then leans in close.
 >
-> "Inspector Geist? Yeah, I seen him. Takes 'fees' from smugglers right there on the docks. Bold as brass."
+> "Inspector [[Geist (Bandit Lieutenant)]]? Yeah, I seen him. Takes 'fees' from smugglers right there on the docks. Bold as brass."
 >
 > He takes a long drink.
 >
@@ -138,45 +138,45 @@ Makes him more talkative, lowers DC to 8
 - Won't go on record, too dangerous
 - Can point others to witness, though
 
-## Role in Geist Investigation (3-3-3-1 Web)
+## Role in [[Geist (Bandit Lieutenant)]] Investigation (3-3-3-1 Web)
 
 ### Entry Node 1
-**Function:** Provides first accessible clue about Geist
+**Function:** Provides first accessible clue about [[Geist (Bandit Lieutenant)]]
 **Information Given:**
-1. Geist takes bribes at docks (direct observation)
+1. [[Geist (Bandit Lieutenant)]] takes bribes at docks (direct observation)
 2. Warehouse 7 location (where business happens)
 3. [[Merit Council]] protection (why no one stops him)
 
 **Leads To:**
 - Investigation Location 1 (Warehouse District)
-- Confirms Geist is corrupt [[Merit Council]] inspector
+- Confirms [[Geist (Bandit Lieutenant)]] is corrupt [[Merit Council]] inspector
 - Provides specific target for surveillance/investigation
 
 ### Reliability
-- **Truthful:** Everything Harren says is accurate
+- **Truthful:** Everything [[Harren (Dock Worker)]] says is accurate
 - **Limited Scope:** Only knows what he's seen personally
-- **Will Not Act:** Too afraid to confront Geist himself
+- **Will Not Act:** Too afraid to confront [[Geist (Bandit Lieutenant)]] himself
 - **Repeat Contact:** Can be questioned again for clarifications
 
 ## DM Notes
 
-### Harren's Role
+### [[Harren (Dock Worker)]]'s Role
 - **Easy Entry Point:** Low DC, accessible first clue
-- **Establishes Geist:** Confirms corruption and location
+- **Establishes [[Geist (Bandit Lieutenant)]]:** Confirms corruption and location
 - **Moral Baseline:** Shows impact on regular people
-- **Safe Source:** Won't endanger himself, but won't betray Kyle either
+- **Safe Source:** Won't endanger himself, but won't betray [[Kyle/Nameless]] either
 
-### If Party Helps Harren
-**After Geist is Dealt With:**
+### If Party Helps [[Harren (Dock Worker)]]
+**After [[Geist (Bandit Lieutenant)]] is Dealt With:**
 - Grateful but quiet about it
 - Dock work becomes safer
 - May offer party discount on cargo transport
 - Spreads quiet word that party are "good folk"
 
 ### Secrets
-- **Extortion Victim:** Harren's crew was threatened once
+- **Extortion Victim:** [[Harren (Dock Worker)]]'s crew was threatened once
   - Paid "dock tax" to avoid broken legs
-  - Source of his personal grudge against Geist
+  - Source of his personal grudge against [[Geist (Bandit Lieutenant)]]
 - **Family:** Has wife and two kids in lower district
   - Main reason he won't testify
   - Fears retaliation
@@ -185,4 +185,4 @@ Makes him more talkative, lowers DC to 8
 - Contact for dock district rumors
 - Can identify suspicious cargo/shipments
 - Knows other workers who might talk
-- Potential witness if Geist's protection collapses
+- Potential witness if [[Geist (Bandit Lieutenant)]]'s protection collapses

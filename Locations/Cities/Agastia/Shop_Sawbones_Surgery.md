@@ -144,7 +144,7 @@ tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 - Treated by community with mix of suspicion and gratitude
 
 **Related NPCs:**
-- **Harren (dock worker):** Regular patient, work injuries, drinks at Rusty Anchor
+- **[[Harren (Dock Worker)]] (dock worker):** Regular patient, work injuries, drinks at Rusty Anchor
 - **Olric Saltwind:** Occasionally sends injured workers to Doc
 - **Rusty Anchor Tavern:** Below Doc's surgery, source of many bar-fight patients
 - **[[Kex the Fence]]:** Sends criminals who need discrete medical care
