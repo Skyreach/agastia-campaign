@@ -159,8 +159,12 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
 
 
 def get_heading_level(line):
-    """Return heading level (1-3) or None"""
-    if line.startswith('### '):
+    """Return heading level (1-6) for parsing. Notion will convert 4+ to H3."""
+    if line.startswith('##### '):
+        return 5
+    elif line.startswith('#### '):
+        return 4
+    elif line.startswith('### '):
         return 3
     elif line.startswith('## '):
         return 2
@@ -258,6 +262,10 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
     if line.startswith('**Toggle:'):
         return None, idx
 
+    # HTML details/summary tags - skip them (handled in collect_until_heading)
+    if line.strip().startswith('<details>') or line.strip().startswith('</details>') or line.strip().startswith('<summary>') or line.strip().startswith('</summary>'):
+        return None, idx + 1
+
     # Regular paragraph
     return ({
         'object': 'block',
@@ -284,6 +292,49 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
             heading_info, i = parse_heading_section(lines, i, notion_client, database_id)
             if heading_info:
                 blocks.append(heading_info)
+            continue
+
+        # Special handling for <details> HTML tags
+        if line.strip().startswith('<details>'):
+            i += 1
+            # Find summary line
+            toggle_title = "Toggle"
+            while i < len(lines) and not lines[i].strip().startswith('<summary>'):
+                i += 1
+
+            if i < len(lines) and lines[i].strip().startswith('<summary>'):
+                # Extract summary text (remove HTML tags)
+                summary_line = lines[i].strip()
+                summary_line = summary_line.replace('<summary>', '').replace('</summary>', '')
+                summary_line = summary_line.replace('<b>', '').replace('</b>', '')
+                toggle_title = summary_line.strip()
+                i += 1
+
+            # Collect content until </details>
+            toggle_children = []
+            while i < len(lines) and not lines[i].strip().startswith('</details>'):
+                next_level = get_heading_level(lines[i])
+                if next_level is not None and next_level <= parent_level:
+                    break
+
+                block, i = parse_single_block(lines, i, notion_client, database_id)
+                if block:
+                    if isinstance(block, list):
+                        for b in block:
+                            toggle_children.append({'block': b, 'children': []})
+                    elif block is not None:
+                        toggle_children.append({'block': block, 'children': []})
+
+            # Skip </details> tag
+            if i < len(lines) and lines[i].strip().startswith('</details>'):
+                i += 1
+
+            toggle_block = {
+                'object': 'block',
+                'type': 'toggle',
+                'toggle': {'rich_text': parse_rich_text(toggle_title, notion_client, database_id)}
+            }
+            blocks.append({'block': toggle_block, 'children': toggle_children})
             continue
 
         # Special handling for toggle markers
@@ -332,6 +383,9 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None):
     """
     Parse a heading and collect all content until next same-level heading.
     Returns (section_info, next_idx) where section_info has 'block' and 'children' keys.
+
+    H1-H3: Notion headings (toggleable)
+    H4+: Bold paragraph wrapped in toggle (Notion limitation)
     """
     line = lines[idx]
     level = get_heading_level(line)
@@ -340,30 +394,41 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None):
         return None, idx
 
     # Extract heading text
-    if level == 1:
-        heading_text = line[2:].strip()
-        block_type = 'heading_1'
-    elif level == 2:
-        heading_text = line[3:].strip()
-        block_type = 'heading_2'
-    else:
-        heading_text = line[4:].strip()
-        block_type = 'heading_3'
+    heading_text = line.lstrip('#').strip()
 
     # Collect children
     children, next_idx = collect_until_heading(lines, idx + 1, level, notion_client, database_id)
 
-    # Create heading block
-    heading_block = {
-        'object': 'block',
-        'type': block_type,
-        block_type: {
-            'rich_text': parse_rich_text(heading_text, notion_client, database_id),
-            'is_toggleable': True
-        }
-    }
+    # H1-H3: Use Notion heading blocks
+    if level <= 3:
+        if level == 1:
+            block_type = 'heading_1'
+        elif level == 2:
+            block_type = 'heading_2'
+        else:
+            block_type = 'heading_3'
 
-    return {'block': heading_block, 'children': children}, next_idx
+        heading_block = {
+            'object': 'block',
+            'type': block_type,
+            block_type: {
+                'rich_text': parse_rich_text(heading_text, notion_client, database_id),
+                'is_toggleable': True
+            }
+        }
+        return {'block': heading_block, 'children': children}, next_idx
+
+    # H4+: Use toggle with bold paragraph (Notion only supports 3 heading levels)
+    else:
+        # Create toggle block with bold heading text
+        toggle_block = {
+            'object': 'block',
+            'type': 'toggle',
+            'toggle': {
+                'rich_text': parse_rich_text(f'**{heading_text}**', notion_client, database_id)
+            }
+        }
+        return {'block': toggle_block, 'children': children}, next_idx
 
 
 def markdown_to_notion_blocks(content, notion_client=None, database_id=None):
