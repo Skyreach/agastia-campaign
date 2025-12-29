@@ -122,13 +122,13 @@ graph TD
 
 ### Day 3: Arrival in Agastia
 
-> The road crests a hill, and the city of Agastia unfolds before you. A tiered metropolis of stone and ambition, with the towering Northern Wall and the sky-piercing Inverse Tower. Airships drift lazily from the upper docks, their magical sails aglow.
+> The road crests a hill, and the city of [[Agastia]] unfolds before you. A tiered metropolis of stone and ambition, with the towering Northern Wall and the sky-piercing Inverse Tower. Airships drift lazily from the upper docks, their magical sails aglow.
 
 ## Welcome to Agastia
 
 ### The Job Board (Money & Notoriety)
 
-**Location:** A large, well-maintained board in the central plaza of the Merchant District (Tier 4).
+**Location:** A large, well-maintained board in the central plaza of the [[Merchant District]] (Tier 4).
 
 **The Clerk:** A bored but efficient Merit Council clerk sits at a nearby desk.
 
@@ -146,7 +146,7 @@ graph TD
 
 ### The First Cut: The Steel Dragon's Debut
 
-**Location:** A quiet alleyway in the Merchant District, not far from the Job Board.
+**Location:** A quiet alleyway in the [[Merchant District]], not far from the Job Board.
 
 > A crowd has gathered, held back by a pair of city guards. Inside the alley, a scene of gruesome artistry is revealed. A wealthy merchant, dressed in fine silks, is slumped against a wall, a single, clean cut across his throat. His blood has been used to paint an intricate, draconic-looking symbol on the wall behind him. His coin purse is untouched.
 
@@ -165,13 +165,13 @@ graph TD
 
 ### Manny (Monomi) - The Codex Quest
 
-- The Job Board has a request from a scholar in the Scholar Quarter (Tier 3) to retrieve a rare book from a dangerous ruin. This could be a lead to the Archive of Lost Histories.
-- A rumor overheard in a tavern mentions a strange, ancient elf named Veridian who knows everything about Agastia's history.
+- The Job Board has a request from a scholar in the [[Scholar Quarter]] (Tier 3) to retrieve a rare book from a dangerous ruin. This could be a lead to the [[Archive of Lost Histories]].
+- A rumor overheard in a tavern mentions a strange, ancient elf named Veridian who knows everything about [[Agastia]]'s history.
 
 ### Nikki (Biago) - Family and Friends
 
-- Nikki's family restaurant, "Il Drago Rosso", is a source of information and a safe haven.
-- A job on the board asks for someone to discreetly investigate a new, aggressive faction trying to strong-arm businesses in the Merchant District, potentially threatening her family's restaurant.
+- Nikki's family restaurant, [[Il Drago Rosso]], is a source of information and a safe haven.
+- A job on the board asks for someone to discreetly investigate a new, aggressive faction trying to strong-arm businesses in the [[Merchant District]], potentially threatening her family's restaurant.
 
 ## Session End
 
