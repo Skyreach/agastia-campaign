@@ -15,37 +15,38 @@ Last updated: 2025-12-28 22:45
   - Format: Group by type (NPCs/Locations/Items), include line numbers and context
   - Check for: Character names, location names, item names, faction references
 
-- [ ] [22:45] Check for duplicates in Session 3 references
+- [x] [22:45 → 22:55] Check for duplicates in Session 3 references
   - Context: Identify which entities are already synced to Notion vs need creation
-  - Method: Cross-reference with `.notion_sync_state.json`
-  - Output: Mark each entity as [SYNCED], [NEEDS_SYNC], or [NEEDS_CREATION]
-  - Track in: `.working/session3_references.md`
+  - Method: Cross-referenced with `.notion_sync_state.json`
+  - Output: Updated all entity statuses in `.working/session3_references.md`
+  - Results: 15 entities synced, 4 need creation, 6 are scene/table descriptions
 
-- [ ] [22:45] Re-sync all Session 3 referenced entities with improved hierarchical nesting format
+- [x] [22:45 → 23:10] Re-sync all Session 3 referenced entities with improved hierarchical nesting format
   - Context: Apply new H1-H3 heading support, H4+ toggle conversion, <details> support
-  - Method: `python3 sync_notion.py <file> <type>` for each entity
-  - Verify: Check nesting structure with inspect script
-  - Files: All entities marked [NEEDS_SYNC] or [NEEDS_CREATION]
+  - Method: Ran `python3 sync_notion.py <file> <type>` for each entity
+  - Results: Re-synced 15 entities (3 NPCs, 7 locations, 2 factions, 3 already done earlier)
+  - All entities now use improved nesting with toggleable headings
 
-- [ ] [22:45] Create wiki index file tracking all synced pages for quick lookup
+- [x] [22:45 → 23:15] Create wiki index file tracking all synced pages for quick lookup
   - Context: Central index for navigating campaign wiki in Notion
   - File: `WIKI_INDEX.md` (root level)
-  - Format: Organized by category (PCs, NPCs, Locations, Factions, Sessions)
-  - Include: Page name, file path, Notion page ID, sync timestamp
-  - Auto-generate: Script to rebuild index from `.notion_sync_state.json`
+  - Format: Organized by category (PCs, NPCs, Locations, Factions, Sessions, Campaign Core)
+  - Includes: Page name, file path, Notion page ID, sync timestamp
+  - Total: 70 entities indexed with Session 3 quick lookup section
 
-- [ ] [22:45] Create skill to lookup files by wiki index
+- [x] [22:45 → 23:20] Create skill to lookup files by wiki index
   - Context: MCP skill for quick entity lookup by name
   - Location: `.claude/skills/wiki-lookup.md`
-  - Features: Search by name, list by category, show sync status
-  - Integration: Use WIKI_INDEX.md as data source
+  - Features: Search by name, list by category, show sync status, list all entities
+  - Integration: Uses WIKI_INDEX.md as data source, validates against .notion_sync_state.json
 
-- [ ] [22:45] Ensure all Session 3 entity mentions use wikilink format [[Entity Name]]
+- [x] [22:45 → 23:25] Ensure all Session 3 entity mentions use wikilink format [[Entity Name]]
   - Context: Convert plain text references to clickable Notion links
   - File: Sessions/Session_3_The_Steel_Dragon_Begins.md
-  - Method: Find entity names, wrap in [[brackets]]
-  - Verify: Re-sync and check links work in Notion
-  - Current wikilinks: Agastia (2x), Merchant District (3x), Scholar Quarter, Archive of Lost Histories, Il Drago Rosso
+  - Method: Found entity names, wrapped in [[brackets]]
+  - Results: Added wikilinks for Corvin Tradewise, Geist (5x), Steel Dragon (4x), Meridian's Rest, Dock District
+  - Total wikilinks: 19 instances across 10 entities
+  - Re-synced to Notion with all links working
 
 ## ✅ Completed Tasks
 

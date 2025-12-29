@@ -39,10 +39,10 @@ graph TD
 7.  **Player Quest Hooks:** Opportunities for Manny and Nikki to get involved in their quests.
 
 **Toggle: Key NPCs**
-- **Corvin Tradewise:** Merchant caravan leader who can provide information about Geist.
-- **Wounded Smuggler:** An NPC who provides a direct hook to Geist and the docks.
+- **[[Corvin Tradewise]]:** Merchant caravan leader who can provide information about [[Geist]].
+- **Wounded Smuggler:** An NPC who provides a direct hook to [[Geist]] and the docks.
 - **Job Board Clerk:** An NPC who explains the job board and merit system.
-- **City Guard Captain:** The NPC who is investigating the first Steel Dragon murder.
+- **City Guard Captain:** The NPC who is investigating the first [[Steel Dragon]] murder.
 
 **Toggle: Important Items & Locations**
 - **Bloody Crate:** A crate with a strange symbol, pointing to a smuggling operation.
@@ -51,7 +51,7 @@ graph TD
 
 ## Travel to Agastia (2-3 Days)
 
-**Route:** Meridian's Rest → Agastia
+**Route:** [[Meridian's Rest]] → [[Agastia]]
 **Distance:** ~48 miles (2 hexes at 24mi/hex world scale)
 **Travel Time:** 2-3 days at normal pace (24 mi/day)
 **Terrain:** Temperate Forests
@@ -99,13 +99,13 @@ graph TD
 
 **The Wounded Man:**
 - A low-level smuggler, ambushed by rivals.
-- He was supposed to deliver the crate to "Geist" at the Agastia docks.
-- He is dying and will only be able to utter a few words: "Geist... Warehouse 7... Docks...".
-- **The Crate:** Contains mundane goods, but has a small, almost invisible symbol of a coiled serpent on it. This is a marker for Geist's operation.
+- He was supposed to deliver the crate to "[[Geist]]" at the [[Agastia]] docks.
+- He is dying and will only be able to utter a few words: "[[Geist]]... Warehouse 7... Docks...".
+- **The Crate:** Contains mundane goods, but has a small, almost invisible symbol of a coiled serpent on it. This is a marker for [[Geist]]'s operation.
 
 **DM Notes:**
 - This provides a direct hook for Kyle (Nameless) to the docks and Warehouse 7.
-- The symbol on the crate can be used to identify other parts of the smuggling operation in Agastia.
+- The symbol on the crate can be used to identify other parts of the smuggling operation in [[Agastia]].
 
 ### Day 2: Player's Choice
 
@@ -157,9 +157,9 @@ graph TD
 - He is willing to deputize the party if they show interest and competence (this can be a job from the job board).
 
 **DM Notes:**
-- This is the first "artistic" murder by the Steel Dragon, a step up from his previous work.
+- This is the first "artistic" murder by the [[Steel Dragon]], a step up from his previous work.
 - The victim is a merchant, but the motive is clearly not robbery.
-- The symbol is the Steel Dragon's signature.
+- The symbol is the [[Steel Dragon]]'s signature.
 
 ## Player Quest Hooks
 
@@ -175,8 +175,8 @@ graph TD
 
 ## Session End
 
-The session ends with the party in Agastia, with several open threads:
-- Investigating the Steel Dragon's murder.
-- Following the lead to Geist and the docks.
+The session ends with the party in [[Agastia]], with several open threads:
+- Investigating the [[Steel Dragon]]'s murder.
+- Following the lead to [[Geist]] and the [[Dock District]].
 - Taking a job from the job board.
 - Pursuing their personal quests.
