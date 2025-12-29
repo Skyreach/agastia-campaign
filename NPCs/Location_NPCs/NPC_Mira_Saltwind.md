@@ -12,18 +12,18 @@ threat_level: None
 related_entities: [Geist, Kyle, Merit Council, Merchant District]
 ---
 
-# Mira Saltwind
+# [[Mira Saltwind]]
 
 ## Player Summary
 
-**Mira Saltwind** runs Saltwind Imports, a legitimate import business in Agastia's Merchant District. She appears perpetually stressed, juggling inventory and dealing with constant "inspection fees" that drain her profits. Mira is one of many merchants extorted by Inspector Geist, paying protection money disguised as official fees to keep her business running.
+**[[Mira Saltwind]]** runs Saltwind Imports, a legitimate import business in [[Agastia]]'s [[Merchant District]]. She appears perpetually stressed, juggling inventory and dealing with constant "inspection fees" that drain her profits. Mira is one of many merchants extorted by Inspector Geist, paying protection money disguised as official fees to keep her business running.
 
 ### Basic Information
 - **Race:** Half-Elf
 - **Gender:** Female
 - **Age:** Middle-aged (60s, appears 40s)
 - **Occupation:** Import Merchant (textiles, spices, specialty goods)
-- **Location:** Saltwind Imports, Merchant District (Tier 4)
+- **Location:** Saltwind Imports, [[Merchant District]] (Tier 4)
 - **Personality:** Stressed, cautious, secretly angry
 
 ### Appearance
@@ -41,7 +41,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - Fearful of retaliation if she speaks out
 
 ### Known Activities
-- Runs Saltwind Imports daily in Merchant District
+- Runs Saltwind Imports daily in [[Merchant District]]
 - Imports textiles, spices, rare reagents, and luxury goods
 - Pays monthly extortion fees to Inspector Geist
 - Maintains hidden ledger documenting payments
@@ -62,7 +62,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - **Husband:** Wants her to close shop for safety; she refuses
 
 ### Business Contacts
-- **Corvin Tradewise:** Owes her a favor; she helped him with delayed shipment
+- **[[Corvin Tradewise]]:** Owes her a favor; she helped him with delayed shipment
 - **Other merchant victims:** Knows several others paying Geist's fees, whispered conversations
 
 ### Adversaries
@@ -90,7 +90,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - Shows monthly payments to "Inspector G"
 - Labeled as "Inspection Fees" but amounts are excessive
 - Payments coincide with shipment arrivals
-- No official Merit Council receipts provided
+- No official [[Merit Council]] receipts provided
 - Pattern going back 18 months
 
 **Financial Impact:**
@@ -109,14 +109,14 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - Shuts down shipments for weeks if refused
 
 **What She Knows:**
-- Geist is Merit Council Trade Inspector (official position)
+- Geist is [[Merit Council]] Trade Inspector (official position)
 - Other merchants also pay (whispered conversations)
 - Can't fight him - he has Council authority
 - Reporting to Council does nothing (Geist has protection)
 - He operates from warehouse near docks
 
 **What She's Witnessed:**
-- Geist wearing Merit Council uniform during collections
+- Geist wearing [[Merit Council]] uniform during collections
 - His guards/enforcers accompany him
 - Official paperwork is fake (no Council seal verification)
 - Goods marked "confiscated" are resold through his operation
@@ -124,7 +124,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 ## Interaction with Kyle (Investigation)
 
 ### Finding Mira
-**Location:** Saltwind Imports, Merchant District
+**Location:** Saltwind Imports, [[Merchant District]]
 **Approach:**
 - Shop is public, easy to find
 - Mira is there during business hours
@@ -151,7 +151,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 >
 > She looks defeated.
 >
-> "Other merchants pay too. We can't fight him—he's Merit Council. He works out of a warehouse near the docks, but what can we do?"
+> "Other merchants pay too. We can't fight him—he's [[Merit Council]]. He works out of a warehouse near the docks, but what can we do?"
 
 ### What She Can Provide
 **Evidence:**
@@ -175,11 +175,11 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 **Function:** Provides documentary evidence of extortion
 **Information Given:**
 1. Geist's monthly extortion scheme (pattern)
-2. Merit Council Records connection (official position)
+2. [[Merit Council]] Records connection (official position)
 3. Multiple victims (systemic corruption)
 
 **Leads To:**
-- Investigation Location 2 (Merit Council Records Office)
+- Investigation Location 2 ([[Merit Council]] Records Office)
 - Confirms Geist abuses legitimate position
 - Provides evidence for potential prosecution
 
@@ -187,7 +187,7 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 - **Documentary:** Ledgers are hard evidence
 - **Pattern:** 18 months of payments shows system
 - **Corroboration:** Can name other victims
-- **Legal:** Usable in Merit Council investigation
+- **Legal:** Usable in [[Merit Council]] investigation
 
 ## DM Notes
 
@@ -221,9 +221,9 @@ related_entities: [Geist, Kyle, Merit Council, Merchant District]
 
 ### Other Merchant Victims
 If party asks, Mira can name:
-1. **Corvin Tradewise** (caravan leader - knows about Geist)
-2. **Tam Quickcount** (Meridian's Rest supplier)
-3. **Three other merchants** in Merchant District
+1. **[[Corvin Tradewise]]** (caravan leader - knows about Geist)
+2. **Tam Quickcount** ([[Meridian's Rest]] supplier)
+3. **Three other merchants** in [[Merchant District]]
 - All pay similar "fees"
 - All too afraid to organize resistance
 - Would join complaint if party breaks Geist's power

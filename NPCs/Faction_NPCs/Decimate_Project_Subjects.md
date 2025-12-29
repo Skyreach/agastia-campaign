@@ -8,11 +8,11 @@ faction: Decimate Project
 related_entities: [Professor Zero, Manny, Nikki]
 ---
 
-# Decimate Project - All Ten Subjects
+# [[Decimate Project]] - All Ten Subjects
 
 ## Overview
 
-Professor Zero's experimental program using ten kidnapped children, all memory-wiped at age 10. **Lower numbers = newer/weaker subjects. Higher numbers = older/stronger subjects.** Subjects #1 (Manny) and #2 (Nikki) are player characters.
+[[Professor Zero]]'s experimental program using ten kidnapped children, all memory-wiped at age 10. **Lower numbers = newer/weaker subjects. Higher numbers = older/stronger subjects.** Subjects #1 (Manny) and #2 (Nikki) are player characters.
 
 ## The Numbering System
 
@@ -25,15 +25,15 @@ Professor Zero's experimental program using ten kidnapped children, all memory-w
 
 ---
 
-## Subject #1: Monomi "Manny"
+## Subject #1: Monomi "[[Manny]]"
 
 ### Player Summary
 See `/Player_Characters/PC_Manny.md` for full details.
 
-**Manny** is a PC - half-orc eldritch knight, newest and weakest subject, seeking Codex.
+**[[Manny]]** is a PC - half-orc eldritch knight, newest and weakest subject, seeking Codex.
 
 ### Basic Information
-- **Name:** Monomi "Manny"
+- **Name:** Monomi "[[Manny]]"
 - **Number:** #1 (newest/weakest)
 - **Race:** Half-Orc
 - **Class:** Eldritch Knight (Fighter)
@@ -43,15 +43,15 @@ See `/Player_Characters/PC_Manny.md` for full details.
 
 ---
 
-## Subject #2: Biago "Nikki"
+## Subject #2: Biago "[[Nikki]]"
 
 ### Player Summary
 See `/Player_Characters/PC_Nikki.md` for full details.
 
-**Nikki** is a PC - tiefling arcane trickster, second newest subject, protecting Manny and seeking Codex.
+**[[Nikki]]** is a PC - tiefling arcane trickster, second newest subject, protecting [[Manny]] and seeking Codex.
 
 ### Basic Information
-- **Name:** Biago "Nikki"
+- **Name:** Biago "[[Nikki]]"
 - **Number:** #2 (second newest/weakest)
 - **Race:** Tiefling
 - **Class:** Arcane Trickster (Rogue)
@@ -88,7 +88,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Plot Hooks:**
   - Gnome heritage = tinker/inventor skills
   - Human blend = fitting in anywhere
-  - May be in Agastia undercover
+  - May be in [[Agastia]] undercover
 
 ---
 
@@ -122,7 +122,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
   - May be tracking party
   - Forest elf community searching for him
   - Natural enemy of Kyle's bandits
-  - Could guide party through Infinite Forest
+  - Could guide party through [[Infinite Forest]]
 - **Specialization:**
   - Survival expert
   - Ambush tactician
@@ -133,7 +133,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 ## Subject #5: Quincy
 
 ### Player Summary
-**Quincy** is a goliath barbarian and Subject #5, with approximately 5 years of service. His size and strength make him the physical powerhouse of the Decimate Project.
+**Quincy** is a goliath barbarian and Subject #5, with approximately 5 years of service. His size and strength make him the physical powerhouse of the [[Decimate Project]].
 
 ### Basic Information
 - **Name:** Quincy
@@ -237,8 +237,8 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Dragon Connections:**
   - Draconic Bloodline sorcerer?
   - Which dragon type/color?
-  - Connection to Steel Dragon plot?
-  - Manny wants to meet real dragon - Septimus is part dragon
+  - Connection to [[Steel Dragon]] plot?
+  - [[Manny]] wants to meet real dragon - Septimus is part dragon
 - **Potential Roles:**
   - Magical artillery
   - Diplomatic envoy (dragonborn presence)
@@ -247,8 +247,8 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Plot Hooks:**
   - Dragonborn clan searching for him
   - Breath weapon makes him distinctive
-  - May be drawn to Steel Dragon
-  - Could recognize Manny's pseudo-dragon
+  - May be drawn to [[Steel Dragon]]
+  - Could recognize [[Manny]]'s pseudo-dragon
 - **Sorcerer Wild Magic?:**
   - Memory wipe caused magical instability?
   - Unpredictable in combat
@@ -277,7 +277,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - Potentially darkest personality
 - Independent and calculating
 
-### Role in Decimate Project
+### Role in [[Decimate Project]]
 - **PATRON-LEVEL SUBJECT:** Has enough power for independent operations
 - Most experienced field operative
 - Handles dangerous/occult missions
@@ -289,32 +289,32 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Method:** Used warlock connections to manipulate giant
 - **Current Status:** Tracking party to recover Heartstone
 - **Warlock Patron:** Entity that wanted the Heartstone awakened
-- May betray Professor Zero if it serves her patron's goals
+- May betray [[Professor Zero]] if it serves her patron's goals
 
 - **Warlock Patron Options:**
   - Fey entity connected to Heartstone
   - Archfey who imprisoned the artifact
-  - Professor Zero themselves
+  - [[Professor Zero]] themselves
   - Hidden patron manipulating entire Project
 
 - **Drow Implications:**
   - Kidnapped from Underdark or surface?
   - Underground network access
-  - Connection to Josh's lost people plot?
+  - Connection to [[Josh]]'s lost people plot?
   - Drow family/house may be searching
 
 - **Plot Hooks:**
   - First Decimate subject party encounters
   - Could be ally or antagonist for Heartstone
   - Warlock patron's agenda conflicts with Zero
-  - May recognize Josh's markings from Underdark lore
+  - May recognize [[Josh]]'s markings from Underdark lore
 
 ---
 
 ## Subject #9: Nona
 
 ### Player Summary
-**Nona** is a half-elf bard and Subject #9 - one of the three patron-level subjects. Despite being protective and nurturing to younger subjects like Manny, she is a strategic coordinator with significant power and influence.
+**Nona** is a half-elf bard and Subject #9 - one of the three patron-level subjects. Despite being protective and nurturing to younger subjects like [[Manny]], she is a strategic coordinator with significant power and influence.
 
 ### Basic Information
 - **Name:** Nona
@@ -332,7 +332,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - Uses empathy as manipulation tool
 - Musically talented
 
-### Role in Decimate Project
+### Role in [[Decimate Project]]
 - **PATRON-LEVEL SUBJECT:** Strategic coordinator for operations
 - Guardian/handler for younger subjects
 - Information network coordinator
@@ -356,7 +356,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
   - First friendly Decimate contact
   - Ally or obstacle depending on loyalties
   - Tragic figure torn between subjects and Zero
-  - Emotional confrontation with Manny/Nikki
+  - Emotional confrontation with [[Manny]]/[[Nikki]]
 
 - **Plot Hooks:**
   - Knows location of all subjects
@@ -370,7 +370,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 ## Subject #10: Decum
 
 ### Player Summary
-**Decum** is a high elf wizard and Subject #10 - the eldest and most powerful Decimate subject. One of three patron-level operatives, he keeps to himself and handles Professor Zero's most dangerous missions.
+**Decum** is a high elf wizard and Subject #10 - the eldest and most powerful Decimate subject. One of three patron-level operatives, he keeps to himself and handles [[Professor Zero]]'s most dangerous missions.
 
 ### Basic Information
 - **Name:** Decum
@@ -385,10 +385,10 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - Most experienced and knowledgeable
 - Keeps to himself
 - Wizardly precision and intellect
-- Possibly Professor Zero's right hand
+- Possibly [[Professor Zero]]'s right hand
 - Significant autonomy in operations
 
-### Role in Decimate Project
+### Role in [[Decimate Project]]
 - **PATRON-LEVEL SUBJECT:** Eldest, most powerful, most trusted
 - Handles Zero's most critical missions
 - May oversee lab when Zero is absent
@@ -397,18 +397,18 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ### DM Notes
 - **Potential Roles:**
-  - Lab overseer when Professor Zero is away
+  - Lab overseer when [[Professor Zero]] is away
   - Mission leader for other subjects
   - Memory manipulation specialist
   - Secret rebel planning to free others
   - OR completely loyal enforcer
 
 - **Plot Hooks:**
-  - Knows the most about Professor Zero
+  - Knows the most about [[Professor Zero]]
   - Has seen all ten subjects recruited
   - May remember fragments from before memory wipe
   - Could be greatest ally or most dangerous enemy
-  - Might be testing Manny and Nikki
+  - Might be testing [[Manny]] and [[Nikki]]
 
 - **Magical Power:**
   - Likely 8th-9th level wizard
@@ -421,15 +421,15 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 ## Group Dynamics
 
 ### Pairs & Relationships
-- **#1 & #2:** Manny and Nikki travel together (Codex mission, both PCs)
+- **#1 & #2:** [[Manny]] and [[Nikki]] travel together (Codex mission, both PCs)
 - **#8, #9, #10:** The Three Patrons (Octavia, Nona, Decum) - most powerful
-- **Nona's Protection:** "Big sister" role toward Manny (#1) and Nikki (#2)
+- **Nona's Protection:** "Big sister" role toward [[Manny]] (#1) and [[Nikki]] (#2)
 - **Hierarchy:** Higher numbers command lower numbers
 
 ### Potential Alliances
 - **The Patrons:** Octavia (#8), Nona (#9), Decum (#10) - own agendas
 - **The Loyal:** Possibly Trinity (#3), Septimus (#7)
-- **The Questioning:** Manny (#1), Nikki (#2) - PCs discovering truth
+- **The Questioning:** [[Manny]] (#1), [[Nikki]] (#2) - PCs discovering truth
 - **The Wild Cards:** Hexus (#6), Tetran (#4)
 - **The Dangerous:** Octavia (#8), Quincy (#5)
 
@@ -437,13 +437,13 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **Rebellion Arc:** Some subjects plan escape
 - **Family Search:** Parents/clans seeking lost children
 - **Memory Recovery:** Gradual recall of pre-wipe lives
-- **Loyalty Crisis:** When Professor Zero's true nature revealed
+- **Loyalty Crisis:** When [[Professor Zero]]'s true nature revealed
 - **Reunion:** Party meets other subjects (ally or enemy?)
 
 ## Campaign Integration
 
 ### Early Campaign
-- References in letters to Manny/Nikki
+- References in letters to [[Manny]]/[[Nikki]]
 - Nona mentioned as contact at lab
 - Rumors of other skilled young operatives
 
@@ -454,7 +454,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 
 ### Late Campaign
 - Multiple subjects involved in climax
-- Rebellion against Professor Zero
+- Rebellion against [[Professor Zero]]
 - Some side with Zero, some with party
 - Rescue/redemption opportunities
 
@@ -464,7 +464,7 @@ See `/Player_Characters/PC_Nikki.md` for full details.
 - **At Lab (Keth):** Likely Nona (#9), overseeing younger subjects
 - **Independent Missions:** Decum (#10) on Zero's critical tasks, Octavia (#8) pursuing Heartstone
 - **Field Missions:** Trinity (#3), Tetran (#4), Quincy (#5), Hexus (#6), Septimus (#7)
-- **With Party (PCs):** Manny (#1), Nikki (#2) on Codex retrieval mission
+- **With Party (PCs):** [[Manny]] (#1), [[Nikki]] (#2) on Codex retrieval mission
 
 ### Story Potential
 Each subject offers:

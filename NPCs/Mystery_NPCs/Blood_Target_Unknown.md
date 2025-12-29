@@ -18,19 +18,19 @@ related_entities: [Professor Zero, Nikki, Decimate Project]
 ## DM Notes
 
 ### Overview
-This individual is the subject of a critical mission assigned to Nikki (Subject #8) by Professor Zero. Their blood is described as "key to Zero's plan," suggesting they possess unique biological, magical, or hereditary properties essential to the Decimate Project's ultimate goals.
+This individual is the subject of a critical mission assigned to [[Nikki]] (Subject #8) by [[Professor Zero]]. Their blood is described as "key to Zero's plan," suggesting they possess unique biological, magical, or hereditary properties essential to the [[Decimate Project]]'s ultimate goals.
 
 ### What We Know
 - **Bloodline Type:** TEMPORAL BLOODLINE - Descendants of lost civilization
 - **Hidden Ability:** Blood can anchor/manipulate time
 - **Connection:** Ties to Ratterdan ruins and temporal distortion themes
 - **Why Their Blood:** Can stabilize the Dominion Evolution Codex's temporal manipulation properties
-- **Search Status:** Active - Nikki tasked with finding them
+- **Search Status:** Active - [[Nikki]] tasked with finding them
 - **Urgency:** Critical (assigned as primary mission)
 
 ### What We Don't Know (Yet)
 - **Identity:** Name, race, age - completely unknown
-- **Location:** Somewhere in Agastia (hasn't left the city)
+- **Location:** Somewhere in [[Agastia]] (hasn't left the city)
 - **Awareness:** Unknown if they know they're being sought
 - **Self-Awareness:** Likely doesn't understand their own gift
 
@@ -42,7 +42,7 @@ This individual is the subject of a critical mission assigned to Nikki (Subject 
 - Genetic memory of pre-destruction timeline
 - Natural resistance to temporal distortions
 
-**Observable Traits (How Nikki Can Find Them):**
+**Observable Traits (How [[Nikki]] Can Find Them):**
 - Experiences unexplained déjà vu episodes (remembers "alternate timelines")
 - Family history has gaps, inconsistencies, or contradictions
 - Looks younger or older than they should for their age
@@ -50,7 +50,7 @@ This individual is the subject of a critical mission assigned to Nikki (Subject 
 - Dreams of events that "haven't happened yet" or "happened differently"
 - Knows things about Ratterdan's history that aren't in any book
 
-**Why Professor Zero Needs Their Blood:**
+**Why [[Professor Zero]] Needs Their Blood:**
 - Codex manipulation requires temporal stabilization
 - Their blood can "anchor" reality during evolution transformations
 - Prevents timeline fracturing during Dominion Evolution
@@ -78,18 +78,18 @@ This individual is the subject of a critical mission assigned to Nikki (Subject 
 
 ### Search Parameters
 
-**What Nikki Knows (From Zero's Orders):**
+**What [[Nikki]] Knows (From Zero's Orders):**
 - Seek someone who "carries the old timeline in their veins"
 - They experience temporal anomalies (déjà vu, prophetic dreams, age discrepancies)
 - Likely doesn't understand their gift (thinks they're going mad)
 - Young adult (15-25 years old, easier to control)
-- In Agastia (hasn't left the city)
+- In [[Agastia]] (hasn't left the city)
 - May have connection to Ratterdan or old families
 
 **What Zero Hasn't Told Her:**
 - True purpose: Stabilizing Codex's timeline manipulation
 - What happens to target after extraction (probably fatal)
-- Why Nikki specifically was chosen (test of loyalty? distraction from Manny?)
+- Why [[Nikki]] specifically was chosen (test of loyalty? distraction from [[Manny]]?)
 - Connection between Codex quest and blood quest (they're the SAME quest)
 - Other subjects may also be searching (competition or cooperation?)
 
@@ -108,9 +108,9 @@ This individual is the subject of a critical mission assigned to Nikki (Subject 
 - Target is already dead/captured?
 
 **Personal Stakes:**
-- Target is Nikki's family member?
-- Target is Manny's connection?
-- Target knows truth about Decimate Project?
+- Target is [[Nikki]]'s family member?
+- Target is [[Manny]]'s connection?
+- Target knows truth about [[Decimate Project]]?
 - Target can restore memories?
 
 ### Integration Points
@@ -149,7 +149,7 @@ Fellow traveler mentions cousin in Temple archives:
 Patron casually warns about temporal anomalies:
 - "I know someone who 'remembers' Ratterdan before it fell"
 - "Probably mad, but descriptions match ancient texts"
-- "Works in Scholar Quarter - you'll know them by the headaches"
+- "Works in [[Scholar Quarter]] - you'll know them by the headaches"
 
 **LEAD C - Gate Guards:**
 Overheard discussion:
@@ -161,13 +161,13 @@ Overheard discussion:
 Kid selling information:
 - "Someone pays for old Ratterdan maps, says they're 'wrong'"
 - "Too young to have memories of the city, but draws details perfectly"
-- "Hangs around Scholar Quarter, near temporal magic section"
+- "Hangs around [[Scholar Quarter]], near temporal magic section"
 
 **Long-term Quest:**
 - Parallel to Codex retrieval
 - May require both to complete Zero's plan
-- Creates tension: protect Manny vs. find target
-- Opportunity for Nikki character development
+- Creates tension: protect [[Manny]] vs. find target
+- Opportunity for [[Nikki]] character development
 
 ### Questions to Answer (For Session Prep)
 
@@ -183,7 +183,7 @@ Kid selling information:
 4. **What does Zero want it for?** [CAN REVEAL LATER]
    - True purpose (evolution? ritual? weapon?)
 
-5. **How will Nikki find them?** [NEEDS ANSWER FOR TONIGHT]
+5. **How will [[Nikki]] find them?** [NEEDS ANSWER FOR TONIGHT]
    - Clues, rumors, magical tracking, informants?
 
 6. **What happens when found?** [CAN REVEAL LATER]
@@ -191,8 +191,8 @@ Kid selling information:
 
 ### Related Quests
 - **Retrieve Dominion Evolution Codex** - May be linked
-- **Professor Zero's Ultimate Plan** - This is a key component
-- **Nikki's Loyalty Arc** - Will test her morals
+- **[[Professor Zero]]'s Ultimate Plan** - This is a key component
+- **[[Nikki]]'s Loyalty Arc** - Will test her morals
 
 ### Future Reveals
 - Identity of target creates emotional impact
@@ -207,7 +207,7 @@ Kid selling information:
 
 ### Session 1 Prep Needed
 - Decide target's identity
-- Determine initial clues for Nikki
+- Determine initial clues for [[Nikki]]
 - Plan first lead/encounter
 - Consider whether target appears in Session 1
 

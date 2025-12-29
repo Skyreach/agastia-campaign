@@ -10,15 +10,15 @@ version: "1.0.0"
 tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossessed]
 ---
 
-# Shadow's Edge Armory
+# [[Shadow's Edge Armory]]
 
 ## Overview
 
 **Type & Specialty:** Black market weapons dealer - illegal arms, improvised weapons, and stolen military equipment for those who can't get weapons through legal channels
 
-**Location:** The Depths (Tier 7), shifting location in underground tunnels - you need to know someone to find it
+**Location:** [[The Depths]] (Tier 7), shifting location in underground tunnels - you need to know someone to find it
 
-**Clientele:** Dispossessed preparing for resistance, criminals, desperate people who need protection, those planning illegal activities
+**Clientele:** [[Dispossessed]] preparing for resistance, criminals, desperate people who need protection, those planning illegal activities
 
 **Reputation:** "When the law won't protect you, Scar will arm you." Known as dangerous necessity - buying here is a crime, but sometimes it's the only option for survival.
 
@@ -31,7 +31,7 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 **Personality:**
 - Intense and bitter - the system betrayed him and he won't forgive it
 - Ideologically driven - believes violent revolution is necessary and coming
-- Protective of his people - trains Dispossessed because they deserve to fight back
+- Protective of his people - trains [[Dispossessed]] because they deserve to fight back
 - Dangerously vulnerable to manipulation - chaos cult could easily frame their goals as "true revolution"
 
 **Appearance:** Tall, muscular build maintained through constant training. Jagged scar runs from left temple to jaw (origin of nickname). Short-cropped dark hair going gray. Wears practical dark clothing, always armed. Military bearing despite years underground. Cold, calculating eyes that miss nothing.
@@ -44,7 +44,7 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 - **Reward:** In exchange for delivering evidence to the right person (and proving it's being used):
   - Access to the Resistance Cache (military-grade equipment)
   - Training in combat tactics (+1 to attack rolls for one combat encounter, once per week)
-  - Intelligence network among Dispossessed (rumors, guard patrol information)
+  - Intelligence network among [[Dispossessed]] (rumors, guard patrol information)
   - Weapons at cost (no markup)
   - Warning if authorities are coming for the party
 - **Difficulty:** Hard - Finding trustworthy recipient for evidence is challenging. Council will hunt anyone who has it. Scar may be walking party into trap if evidence exposes wrong people. Chaos cult wants this evidence to weaponize for recruitment.
@@ -55,7 +55,7 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 - Irregular (varies by day): Scar moves location to avoid detection
 - Must know current location through network contacts
 - Emergency access possible if you prove yourself trustworthy
-- Never operates when guard patrols increase in The Depths
+- Never operates when guard patrols increase in [[The Depths]]
 
 **Typical Day:**
 - Morning: Closed - Scar trains resistance fighters in hidden location
@@ -64,7 +64,7 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 - Night: Closed - Scar conducts surveillance or acquires new inventory
 
 **Regular Customers:**
-- **Dispossessed fighters:** Those training for eventual uprising
+- **[[Dispossessed]] fighters:** Those training for eventual uprising
 - **Criminals:** Thieves and smugglers needing untraceable weapons
 - **Desperate survivors:** People who need protection but have no legal options
 - **Revolutionaries:** True believers planning to challenge the system
@@ -103,7 +103,7 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 **Inventory:**
 
 **Toggle: Always Available (Illegal But Common)**
-- **Poisoned blades:** 50 gp for 3 doses (illegal in Agastia, apply to weapon for +1d4 poison damage)
+- **Poisoned blades:** 50 gp for 3 doses (illegal in [[Agastia]], apply to weapon for +1d4 poison damage)
 - **Sharpened chains:** 5 gp (improvised weapon, 1d6 slashing, 10 ft reach, can be concealed)
 - **Concealed daggers:** 10 gp (as dagger but advantage on Sleight of Hand to hide)
 - **Boot knife:** 3 gp (as dagger, hidden in boot, advantage on checks to conceal)
@@ -140,30 +140,30 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 ## Connections
 
 **District Integration:**
-- Central figure in Bitter faction of Dispossessed
-- Trains resistance fighters in secret locations throughout The Depths
+- Central figure in Bitter faction of [[Dispossessed]]
+- Trains resistance fighters in secret locations throughout [[The Depths]]
 - Stockpiles weapons in hidden Resistance Cache
 - Building network of sympathizers in higher tiers
-- Merit Council considers him dangerous revolutionary (if they knew his identity)
+- [[Merit Council]] considers him dangerous revolutionary (if they knew his identity)
 
 **Related NPCs:**
 - **Senna Darkwell (The Hidden Door):** Neutral relationship - she knows he's dangerous but respects his principles
-- **Kex the Fence:** Occasional business - Kex fences stolen weapons to Scar
+- **[[Kex the Fence]]:** Occasional business - Kex fences stolen weapons to Scar
 - **Mother Cass:** She tries to counsel him away from violence, he respects her but disagrees
 - **Elara Truthseeker (The Historian):** Shares corruption evidence, mutual support
-- **Dispossessed Leadership Council:** Mixed views - some support revolution, others fear it will bring crackdown
+- **[[Dispossessed]] Leadership Council:** Mixed views - some support revolution, others fear it will bring crackdown
 
 **Faction Ties:**
-- **Dispossessed (Bitter Faction):** Leader and primary arms supplier
-- **Chaos Cult:** (Unknowingly vulnerable) Cult sees him as useful tool for destabilization
+- **[[Dispossessed]] (Bitter Faction):** Leader and primary arms supplier
+- **[[Chaos Cult]]:** (Unknowingly vulnerable) Cult sees him as useful tool for destabilization
 - **Underground Railroad:** Provides weapons for protection during escapes
-- **Merit Council:** Wanted for sedition (if they knew his real identity and activities)
+- **[[Merit Council]]:** Wanted for sedition (if they knew his real identity and activities)
 
 ## DM Notes
 
 **Plot Hooks:**
 - Source for illegal weapons if party needs them
-- Contact point for Dispossessed resistance movement
+- Contact point for [[Dispossessed]] resistance movement
 - Quest giver for corruption evidence delivery
 - Potential ally against chaos cult (if he learns they're manipulating him)
 - Tragic figure whose justified anger could lead to disaster
@@ -174,9 +174,9 @@ tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossesse
 - Stands at military attention unconsciously when thinking
 - Refers to customers by rank assessments ("soldier," "civilian," "liability")
 - Tests everyone's commitment with challenging questions about the system
-- Has detailed maps of Agastia's military installations (obsessive planning)
+- Has detailed maps of [[Agastia]]'s military installations (obsessive planning)
 - Won't sell to anyone who seems like Council plant or chaos cultist (but could be fooled)
-- Refuses to profit from revolution - prices at cost for Dispossessed fighters
+- Refuses to profit from revolution - prices at cost for [[Dispossessed]] fighters
 - Keeps evidence of corruption in waterproof case on his person at all times
 
 **Connection to Campaigns:**
@@ -192,7 +192,7 @@ Scar is neither villain nor hero. The system genuinely wronged him - he was puni
 
 Party must decide: Is Scar's revolution necessary? Heroic? Doomed? Should they help, hinder, or redirect his energy toward reform instead? Can someone this betrayed by the system ever trust peaceful change? What happens to justified anger when the peaceful path seems blocked?
 
-**Chaos Cult Vulnerability:**
+**[[Chaos Cult]] Vulnerability:**
 Scar is EXTREMELY vulnerable to chaos cult manipulation:
 - Believes system is fundamentally broken (aligns with chaos message)
 - Wants violent overthrow (chaos loves destabilization)
@@ -220,7 +220,7 @@ If party befriends Scar, warning him about chaos cult becomes critical mission.
 - **Gender:** Male
 - **Age:** Late 30s (37)
 - **Occupation:** Black market weapons dealer / Revolutionary leader
-- **Location:** Shadow's Edge Armory, The Depths (Tier 7), Agastia
+- **Location:** [[Shadow's Edge Armory]], [[The Depths]] (Tier 7), [[Agastia]]
 
 **Physical Description:**
 - **Height/Build:** 6'2", muscular and well-maintained through constant training
@@ -238,10 +238,10 @@ If party befriends Scar, warning him about chaos cult becomes critical mission.
 - **Speech Pattern:** Clipped, military precision, refers to people by tactical assessments
 
 **Background:**
-- **Origin:** Agastia military officer, rose to Captain through merit and competence
+- **Origin:** [[Agastia]] military officer, rose to Captain through merit and competence
 - **Defining Moment:** Refused illegal order to massacre civilians during border conflict
 - **Betrayal:** Threatened to expose corruption, was instead court-martialed on false charges
-- **Fall:** Stripped of rank, status, and honor - cast down to The Depths
+- **Fall:** Stripped of rank, status, and honor - cast down to [[The Depths]]
 - **Current Mission:** Planning armed uprising to overthrow merit system
 
 **Combat Stats (If Needed):**
@@ -255,21 +255,21 @@ If party befriends Scar, warning him about chaos cult becomes critical mission.
 **Goals & Motivations:**
 - **Primary Goal:** Overthrow merit system through armed revolution
 - **Secondary Goal:** Expose military corruption that destroyed his career
-- **Personal Goal:** Protect Dispossessed from exploitation and oppression
+- **Personal Goal:** Protect [[Dispossessed]] from exploitation and oppression
 - **Hidden Desire:** Wants to prove he was right to refuse illegal orders
-- **Fear:** That his revolution will fail and Dispossessed will suffer worse crackdown
+- **Fear:** That his revolution will fail and [[Dispossessed]] will suffer worse crackdown
 
 **Relationships:**
-- **Allies:** Dispossessed fighters he trains, Elara Truthseeker (shares corruption evidence)
-- **Neutral:** Senna Darkwell (respects her, she worries about him), Kex the Fence (business relationship)
+- **Allies:** [[Dispossessed]] fighters he trains, Elara Truthseeker (shares corruption evidence)
+- **Neutral:** Senna Darkwell (respects her, she worries about him), [[Kex the Fence]] (business relationship)
 - **Tension:** Mother Cass (she counsels non-violence, he disagrees but respects her)
-- **Enemies:** Merit Council (if they knew his identity), corrupt military officers
+- **Enemies:** [[Merit Council]] (if they knew his identity), corrupt military officers
 - **Vulnerable To:** Chaos cult manipulation (they could frame themselves as revolutionary allies)
 
 **Resources:**
-- Shadow's Edge Armory (black market weapons shop)
+- [[Shadow's Edge Armory]] (black market weapons shop)
 - Resistance Cache (hidden armory with military equipment)
-- Network of trained fighters throughout The Depths
+- Network of trained fighters throughout [[The Depths]]
 - Intelligence network tracking guard patrols and Council activities
 - Detailed maps of military installations
 - Documentary evidence of military corruption
@@ -294,7 +294,7 @@ If party befriends Scar, warning him about chaos cult becomes critical mission.
 - Party must decide whether to support, redirect, or oppose his plans
 
 **Session Appearances:**
-- *Available for future sessions in The Depths*
+- *Available for future sessions in [[The Depths]]*
 
 **Notable Quotes:**
 - "The system didn't fail me. The system worked exactly as designed - to protect the powerful and punish those who challenge them."

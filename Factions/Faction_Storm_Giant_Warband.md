@@ -13,7 +13,7 @@ related_entities:
   - Octavia's Warlock Patron
 ---
 
-# Storm Giant Warband (Octavia's Tool)
+# [[Storm Giant Warband]] (Octavia's Tool)
 
 ## Player Summary
 
@@ -88,7 +88,7 @@ This is NOT an independent faction with complex motivations. The Storm Giant and
 - Anyone who interferes with contracts
 
 **Neutral:**
-- **Merit Council:** Not hostile unless they interfere
+- **[[Merit Council]]:** Not hostile unless they interfere
 - **Other Factions:** Warband is mercenary, not ideological
 
 ### Octavia's Warlock Patron

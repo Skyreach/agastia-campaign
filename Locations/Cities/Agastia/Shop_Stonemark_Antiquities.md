@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, manny-codex-alternative, mirella]
 ---
 
-# Stonemark Antiquities
+# [[Stonemark Antiquities]]
 
 ## Overview
 
-**Type & Specialty:** A cramped, dust-filled shop overflowing with ancient artifacts, strange curios, and forgotten relics from across Agastia and beyond. Mirella specializes in acquiring and identifying items of historical and magical significance.
+**Type & Specialty:** A cramped, dust-filled shop overflowing with ancient artifacts, strange curios, and forgotten relics from across [[Agastia]] and beyond. Mirella specializes in acquiring and identifying items of historical and magical significance.
 
-**Location:** Merchant District, Agastia (likely a less prominent, perhaps slightly out-of-the-way street)
+**Location:** [[Merchant District]], [[Agastia]] (likely a less prominent, perhaps slightly out-of-the-way street)
 
 **Clientele:** Wealthy collectors, aspiring mages, historians, and adventurers seeking unique gear or lost knowledge. Mirella has a knack for finding what people don't even know they're looking for.
 
@@ -26,15 +26,15 @@ tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, man
 
 ## Proprietor
 
-### Mirella Stonemark
-**Role:** Owner and Head Antiquarian of Stonemark Antiquities
+### [[Mirella Stonemark]]
+**Role:** Owner and Head Antiquarian of [[Stonemark Antiquities]]
 **Faction:** Independent (Primarily loyal to her own interests and the pursuit of rare items)
 
 **Background:**
 - A skilled identifier and appraiser of ancient artifacts.
 - Has a vast network of contacts for acquiring unique items, some legitimate, some less so.
-- Views Manny's quest for the Codex with a mix of academic interest and mercantile opportunity.
-- Her shop is an alternative information source for Manny's Codex quest.
+- Views [[Manny]]'s quest for the Codex with a mix of academic interest and mercantile opportunity.
+- Her shop is an alternative information source for [[Manny]]'s Codex quest.
 
 **Goals:**
 - Short-term: Acquire the next truly extraordinary artifact to add to her collection.
@@ -84,16 +84,16 @@ tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, man
 - **Relics of Forgotten Civilizations:** Pottery shards, broken statues, rusted tools.
 - **Magical Trinkets:** Minor enchanted items, often with peculiar or unpredictable effects.
 - **Curious Oddities:** Taxidermied exotic creatures, strange musical instruments, unidentifiable mechanisms.
-- **Manny's Codex Information:** Mirella may have records, maps, or even fragments relating to the Codex's history or potential locations.
+- **[[Manny]]'s Codex Information:** Mirella may have records, maps, or even fragments relating to the Codex's history or potential locations.
 
 ## Connections
 
 **District Integration:**
-- A unique presence in the Merchant District, attracting a niche clientele.
+- A unique presence in the [[Merchant District]], attracting a niche clientele.
 - Often trades information with other shopkeepers (especially those dealing in books or magical supplies).
 
 **Related NPCs:**
-- **Manny:** A recurring client, seeking information for his Codex quest.
+- **[[Manny]]:** A recurring client, seeking information for his Codex quest.
 - **Professor Alden (Grand Academy):** A frequent, respected customer and academic rival.
 - **Silas the Smuggler:** A key source for Mirella's more "unconventional" acquisitions.
 
@@ -116,7 +116,7 @@ tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, man
 - Reward: Mirella's favor, access to her network, or a unique, possibly magical, item.
 
 **The Curious Client:**
-- A mysterious, cloaked figure frequently visits Stonemark Antiquities, asking unusual questions about a specific type of artifact (perhaps related to the Codex).
+- A mysterious, cloaked figure frequently visits [[Stonemark Antiquities]], asking unusual questions about a specific type of artifact (perhaps related to the Codex).
 - Mirella suspects something is amiss and asks the party to observe or investigate the client.
 - Reward: Uncovering a secret society, a new quest lead, or preventing a dangerous plot.
 
@@ -132,8 +132,8 @@ tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, man
 - Mirella often knows the true magical or historical significance of an item far beyond its apparent worth.
 - She sometimes "buries" powerful artifacts in plain sight, waiting for the right person or moment.
 
-**Manny's Family Connection:**
-- Mirella knows Manny's family has a long history of interest in certain ancient texts, possibly including the Codex.
+**[[Manny]]'s Family Connection:**
+- Mirella knows [[Manny]]'s family has a long history of interest in certain ancient texts, possibly including the Codex.
 - She has subtly guided him, believing he might be the one to truly understand its purpose.
 
 **A Hidden Compartment:**

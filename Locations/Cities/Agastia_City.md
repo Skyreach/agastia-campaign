@@ -10,11 +10,11 @@ version: "1.0.0"
 tags: [city, starting-location, merit-council, civilization, capital, tier-system]
 ---
 
-# Agastia - The Merit City
+# [[Agastia]] - The Merit City
 
 ## Player Summary
 
-Agastia is the gleaming capital of the Merit Council's domain, a city where your worth is measured by your achievements rather than your birth. The city rises in tiers and districts, each reflecting different aspects of the meritocratic ideal. Imposing giant stone statues of ancient heroes watch over the streets, and the massive Northern Wall protects the city from threats emerging from the Infinite Forest.
+[[Agastia]] is the gleaming capital of the [[Merit Council]]'s domain, a city where your worth is measured by your achievements rather than your birth. The city rises in tiers and districts, each reflecting different aspects of the meritocratic ideal. Imposing giant stone statues of ancient heroes watch over the streets, and the massive Northern Wall protects the city from threats emerging from the [[Infinite Forest]].
 
 ### Distinctive Features
 
@@ -22,17 +22,17 @@ Agastia is the gleaming capital of the Merit Council's domain, a city where your
 Enormous statues of legendary figures stand throughout the city, their origins lost to time. Some claim they predate the Merit Council itself. The statues depict warriors, scholars, and leaders frozen in moments of triumph.
 
 **The Northern Wall**
-A massive fortification protecting Agastia from threats from the Infinite Forest. Guard towers dot the wall, and Merit Council soldiers maintain constant vigilance.
+A massive fortification protecting [[Agastia]] from threats from the [[Infinite Forest]]. Guard towers dot the wall, and [[Merit Council]] soldiers maintain constant vigilance.
 
 **Airship Docks**
-Magical airships connect Agastia to distant cities, serving as both transportation and symbols of the Council's technological achievement. The docks are a marvel of engineering perched on the city's upper tiers.
+Magical airships connect [[Agastia]] to distant cities, serving as both transportation and symbols of the Council's technological achievement. The docks are a marvel of engineering perched on the city's upper tiers.
 
 **The Three-Generation Rule**
 Families can maintain their merit status for up to three generations before descendants must re-prove themselves through testing. This prevents hereditary privilege while allowing some stability.
 
 ### City Districts
 
-Agastia is organized into 9 major districts spread across 7 tiers. Districts in higher tiers offer more fantastical and magical services, while lower tiers provide practical, survival-focused options.
+[[Agastia]] is organized into 9 major districts spread across 7 tiers. Districts in higher tiers offer more fantastical and magical services, while lower tiers provide practical, survival-focused options.
 
 #### Tier 1: The Castle
 
@@ -75,14 +75,14 @@ Magical and academic elite district. Universities, mage towers, exclusive librar
 - Divination consultations for major decisions
 
 **Key Services:**
-- Equipment: Blades of Glory (Very Rare/Legendary weapons)
-- Healing: The Grand Cathedral (Raise Dead, Regenerate, Greater Restoration)
+- Equipment: [[Blades of Glory]] (Very Rare/Legendary weapons)
+- Healing: [[The Grand Cathedral]] (Raise Dead, Regenerate, Greater Restoration)
 - Magic Research: Resonance Library, Magewright Consortium
 - Divination: Augury Spire (prophecy and future sight)
 
 **Notable Establishments:**
-- Blades of Glory (premium magic weapons, 25,000gp signature items)
-- The Grand Cathedral (high-level divine healing)
+- [[Blades of Glory]] (premium magic weapons, 25,000gp signature items)
+- [[The Grand Cathedral]] (high-level divine healing)
 - The Resonance Library (exclusive magical knowledge)
 </details>
 
@@ -112,7 +112,7 @@ Political and wealth elite district. Luxurious estates, exclusive social clubs, 
 #### Tier 4: The Masses' Ceiling
 
 **Scholar Quarter**
-Libraries, universities, testing centers, and academic institutions fill this district. Endless debates echo from coffee houses, and students hurry between lectures. Strange symbols adorn many buildings - Josh recognizes similar markings on his own body.
+Libraries, universities, testing centers, and academic institutions fill this district. Endless debates echo from coffee houses, and students hurry between lectures. Strange symbols adorn many buildings - [[Josh]] recognizes similar markings on his own body.
 
 <details>
 <summary><b>Daily Life & Services</b></summary>
@@ -131,12 +131,12 @@ Libraries, universities, testing centers, and academic institutions fill this di
 
 **Notable Locations:**
 - The Grand Academy (open to qualified students)
-- Archive of Lost Histories (where Veridian works)
+- [[Archive of Lost Histories]] (where Veridian works)
 - Inkwell & Quill (magical writing supplies)
 </details>
 
 **Merchant District**
-The commercial heart of Agastia, where goods from across the realm change hands. Includes Brightcoin Emergency Supplies (the party's starting equipment source) and countless other shops and services. Nikki's parents run a popular Italian restaurant here.
+The commercial heart of [[Agastia]], where goods from across the realm change hands. Includes [[Brightcoin Emergency Supplies]] (the party's starting equipment source) and countless other shops and services. [[Nikki]]'s parents run a popular Italian restaurant here.
 
 <details>
 <summary><b>Daily Life & Services</b></summary>
@@ -148,16 +148,16 @@ The commercial heart of Agastia, where goods from across the realm change hands.
 - Guild meetings and business planning
 
 **Key Services:**
-- Equipment: The Wanderer's Pack (adventuring gear, Common/Uncommon)
-- Supplies: Brightcoin Emergency Supplies (party starting shop)
-- Food: Il Drago Rosso (Nikki's family, neutral ground)
-- Trade: The Gilded Scale (Merchant Guild HQ)
-- Healing: Public Temple (Lesser Restoration, mid-level spells)
+- Equipment: [[The Wanderer's Pack]] (adventuring gear, Common/Uncommon)
+- Supplies: [[Brightcoin Emergency Supplies]] (party starting shop)
+- Food: [[Il Drago Rosso]] ([[Nikki]]'s family, neutral ground)
+- Trade: [[The Gilded Scale]] (Merchant Guild HQ)
+- Healing: [[Public Temple]] (Lesser Restoration, mid-level spells)
 
 **Notable Establishments:**
-- Brightcoin Emergency Supplies (information broker Marcus Brightcoin)
-- Il Drago Rosso (Italian restaurant, faction neutral space)
-- The Gilded Scale (guild membership, trade intelligence)
+- [[Brightcoin Emergency Supplies]] (information broker Marcus Brightcoin)
+- [[Il Drago Rosso]] (Italian restaurant, faction neutral space)
+- [[The Gilded Scale]] (guild membership, trade intelligence)
 - The Exchange (massive marketplace)
 </details>
 
@@ -197,13 +197,13 @@ Working-class housing and community spaces. Honest labor, modest living, and str
 **Key Services:**
 - Food: The Copper Mug (working-class tavern, 3cp meals, 1sp lodging)
 - Repairs: Ironhand Repairs (general repairs, emergency loans)
-- Healing: Stonewick Herbalist (poultices 10gp, Potions 50gp)
+- Healing: [[Stonewick Herbalist]] (poultices 10gp, Potions 50gp)
 - Equipment: Working-Class Armory (mundane weapons, basic repairs)
 - Community: The Daily Board (job postings, mutual aid)
 
 **Notable Establishments:**
 - The Copper Mug (community gathering place, Marta Brennan)
-- Stonewick Herbalist (affordable healing, Nessa Stonewick)
+- [[Stonewick Herbalist]] (affordable healing, Nessa Stonewick)
 - Working-Class Armory (practical weapons, Torvin Hammerstead)
 </details>
 
@@ -223,17 +223,17 @@ Maritime workers and those seeking to regain lost merit. Rough but determined at
 
 **Key Services:**
 - Food: The Rusty Anchor (dock workers' tavern, rough but cheap)
-- Supplies: Saltwind General Supply (maritime goods, salvage)
-- Equipment: Tidecaller Armory (maritime weapons, waterproofing)
-- Healing: Sawbones Surgery (risky surgery 25gp, folk medicine)
+- Supplies: [[Saltwind General Supply]] (maritime goods, salvage)
+- Equipment: [[Tidecaller Armory]] (maritime weapons, waterproofing)
+- Healing: [[Sawbones Surgery]] (risky surgery 25gp, folk medicine)
 
 **Notable Establishments:**
-- Saltwind General Supply (Olric Saltwind, salvaged goods)
-- Tidecaller Armory ("Iron Tooth" Margret, boarding axes, harpoons)
-- Sawbones Surgery (Doc Harrow, questionable medical practices)
+- [[Saltwind General Supply]] (Olric Saltwind, salvaged goods)
+- [[Tidecaller Armory]] ("Iron Tooth" Margret, boarding axes, harpoons)
+- [[Sawbones Surgery]] (Doc Harrow, questionable medical practices)
 </details>
 
-#### Tier 7: The Dispossessed
+#### Tier 7: The [[Dispossessed]]
 
 **The Depths** (See [District File](../Districts/The_Depths.md))
 Underground warrens housing those with no merit status. Survival-focused community operating in gray areas and black markets. Desperation breeds both solidarity and exploitation.
@@ -245,19 +245,19 @@ Underground warrens housing those with no merit status. Survival-focused communi
 - Survival through gray/black market work
 - Community protection and mutual defense
 - Information trading and rumor mongering
-- Chaos Cult recruitment (resisted by most)
+- [[Chaos Cult]] recruitment (resisted by most)
 
 **Key Services:**
 - Lodging: The Hidden Door (underground inn, floor space 2cp)
 - Trade: Underground Market (black market, Kex the Fence)
-- Equipment: Shadow's Edge Armory (illegal weapons, stolen military gear)
-- Healing: The Desperate's Refuge (mystery tonics, lamplight surgery)
+- Equipment: [[Shadow's Edge Armory]] (illegal weapons, stolen military gear)
+- Healing: [[The Desperate's Refuge]] (mystery tonics, lamplight surgery)
 - Community: The Gathering Stone (meeting area, mutual aid)
 
 **Notable Establishments:**
 - The Hidden Door (Senna Darkwell, underground sanctuary)
-- Shadow's Edge Armory ("Scar"/Darius Stone, revolution planning)
-- The Desperate's Refuge (Mother Cass, unlicensed healing)
+- [[Shadow's Edge Armory]] ("Scar"/Darius Stone, revolution planning)
+- [[The Desperate's Refuge]] (Mother Cass, unlicensed healing)
 </details>
 
 ### Social Structure
@@ -265,7 +265,7 @@ Underground warrens housing those with no merit status. Survival-focused communi
 **Merit Rankings**
 Citizens carry official documentation of their qualifications, achievements, and merit level. Higher ranks provide better housing, services, and opportunities. Testing centers offer chances for advancement.
 
-**The Dispossessed**
+**The [[Dispossessed]]**
 Those who failed testing, refuse to participate, or cannot meet merit standards. They occupy the lower districts and harbor growing resentment toward the system.
 
 **Common Services**
@@ -279,11 +279,11 @@ Those who failed testing, refuse to participate, or cannot meet merit standards.
 
 ### Hidden Truths
 
-**The Chaos Cult's Presence**
-Multiple Chaos Cult cells operate within the city, particularly recruiting among the Dispossessed. Professor Zero has infiltrated the cult to monitor their activities, though his true allegiance remains ambiguous.
+**The [[Chaos Cult]]'s Presence**
+Multiple [[Chaos Cult]] cells operate within the city, particularly recruiting among the [[Dispossessed]]. [[Professor Zero]] has infiltrated the cult to monitor their activities, though his true allegiance remains ambiguous.
 
 **The Ancient Statues**
-The giant stone statues are actually dormant constructs from a pre-Council civilization. They can be awakened under specific conditions - knowledge the Chaos Cult actively seeks.
+The giant stone statues are actually dormant constructs from a pre-Council civilization. They can be awakened under specific conditions - knowledge the [[Chaos Cult]] actively seeks.
 
 **The Inverse Tower**
 The tower extends thirteen levels beneath the surface, with the deepest levels containing sealed artifacts and forbidden knowledge from before the Merit Council's rise.
@@ -296,13 +296,13 @@ Originally designed to prevent dynasties, the rule now creates a class of "gener
 **Scholar Quarter Secrets**
 - Hidden research into the Codex and ancient magical theories
 - Underground meetings where academics question Merit Council doctrine
-- Josh's markings match symbols in restricted archive sections
+- [[Josh]]'s markings match symbols in restricted archive sections
 - Secret society of scholars investigating pre-Council history
 
 **Merchant District Dynamics**
 - Black market operations beneath legitimate businesses
-- Brightcoin Emergency Supplies has connections to multiple factions
-- Nikki's family restaurant serves as neutral ground for information exchange
+- [[Brightcoin Emergency Supplies]] has connections to multiple factions
+- [[Nikki]]'s family restaurant serves as neutral ground for information exchange
 - Smuggling routes through the sewers and delivery tunnels
 
 **Government Complex Operations**
@@ -311,17 +311,17 @@ Originally designed to prevent dynasties, the rule now creates a class of "gener
 - Testing centers sometimes rig results for political purposes
 - The Inverse Tower's lower levels are forbidden to all but highest authorities
 
-### Notable NPCs in Agastia
+### Notable NPCs in [[Agastia]]
 - Council Members (various specializations and political alignments)
-- Professor Zero (academic with secret cult connections)
-- Dispossessed leaders (organizing resistance)
+- [[Professor Zero]] (academic with secret cult connections)
+- [[Dispossessed]] leaders (organizing resistance)
 - Merchant Guild representatives (economic power brokers)
-- The Patron (whoever is selected for Session 1)
+- [[The Patron]] (whoever is selected for Session 1)
 
 ### City Threats & Hooks
 
 **Immediate Dangers**
-- Chaos Cult sabotage and recruitment
+- [[Chaos Cult]] sabotage and recruitment
 - Merit enforcement patrols questioning low-status individuals
 - Social unrest in lower districts
 - Occasional monster incursions from the north
@@ -329,13 +329,13 @@ Originally designed to prevent dynasties, the rule now creates a class of "gener
 **Adventure Opportunities**
 - Political intrigue within the Council
 - Investigating cult activity
-- Helping or exploiting the Dispossessed
+- Helping or exploiting the [[Dispossessed]]
 - Academic mysteries in the Scholar Quarter
 - Underground faction conflicts
 - Proving merit through official challenges
 
 ### Campaign Significance
-Agastia serves as the party's home base and represents the established order they'll either support, oppose, or try to reform. The city's conflicts in miniature reflect the larger campaign themes of order versus chaos, merit versus privilege, and individual worth versus systemic failure.
+[[Agastia]] serves as the party's home base and represents the established order they'll either support, oppose, or try to reform. The city's conflicts in miniature reflect the larger campaign themes of order versus chaos, merit versus privilege, and individual worth versus systemic failure.
 
 ### Resources Available
 - **Information:** Extensive libraries and public records

@@ -44,13 +44,13 @@ graph TD
 
     RakashClaim --> TravelChoice{Long Rest Needed?}
 
-    TravelChoice -->|Yes| Meridian[Stop at Meridian's Rest<br/>Choose Encounter]
-    TravelChoice -->|No| AgastiaDirect[Travel Direct to Agastia]
+    TravelChoice -->|Yes| Meridian[Stop at [[Meridian's Rest]]<br/>Choose Encounter]
+    TravelChoice -->|No| AgastiaDirect[Travel Direct to [[Agastia]]]
 
-    Meridian --> Agastia[Arrive at Agastia]
-    AgastiaDirect --> Agastia
+    Meridian --> [[Agastia]][Arrive at [[Agastia]]]
+    AgastiaDirect --> [[Agastia]]
 
-    Agastia --> End([Session 1 Complete])
+    [[Agastia]] --> End([Session 1 Complete])
 ```
 
 ## Quick Reference
@@ -61,7 +61,7 @@ graph TD
   1. **Node 2: Shadow Dungeon (3 rooms)** → Resource-draining combat
   1. **Node 3: Heartstone Cutscene** → Feats granted, corruption breaks
   1. **Node 4: Rakash Claims Axe** → Weapon transforms
-  1. **Node 5: Travel to Agastia** → Ad-hoc (Meridian's Rest if needed)
+  1. **Node 5: Travel to [[Agastia]]** → Ad-hoc ([[Meridian's Rest]] if needed)
 **Toggle: Key NPCs & Factions**
   - **None this session** - Solo exploration
   - **Hidden Mastermind:** Octavia (Subject #8, unknown to party)
@@ -280,11 +280,11 @@ This room has **no final guardian** this time. Party must navigate:
 > Purple light EXPLODES from the Heartstone, washing over each of you.
    >
 > **[To each PC individually]:** You see a vision of your deepest desire...
-> - **Manny:** Blade and magic becoming one
-> - **Nikki:** Shadow and arcane merging
+> - **[[Manny]]:** Blade and magic becoming one
+> - **[[Nikki]]:** Shadow and arcane merging
 > - **Rakash:** Primal fury perfected
 > - **Kyle:** Rainbow spectrum expanding
-> - **Josh:** Markings glowing with purpose
+> - **[[Josh]]:** Markings glowing with purpose
    >
 > The power manifests within you - you gain a new feat immediately!
    >
@@ -322,20 +322,20 @@ This room has **no final guardian** this time. Party must navigate:
 - Did party take Heartstone with them?
 - How did Rakash's player react to the compulsion/axe claiming?
 
-### Node 4: Travel to Agastia
+### Node 4: Travel to [[Agastia]]
 
 **Toggle: Travel Options (Ad-hoc)**
-**Option A: Direct to Agastia**
+**Option A: Direct to [[Agastia]]**
 - Party pushes through without rest
 - Narrate travel, arrive exhausted but safe
-- Session ends at Agastia arrival
-**Option B: Stop at Meridian's Rest**
+- Session ends at [[Agastia]] arrival
+**Option B: Stop at [[Meridian's Rest]]**
 - Party needs long rest after dungeon
 - Choose encounter type:
 - **Dream Sequence:** Visions related to Heartstone/feats
 - **Night Attack:** 2-4 bandits/wolves (CR 1/8)
-- **Social at Inn:** Meet NPC, foreshadow Agastia
-- Then travel to Agastia
+- **Social at Inn:** Meet NPC, foreshadow [[Agastia]]
+- Then travel to [[Agastia]]
 
 ## Post-Session Debrief
 

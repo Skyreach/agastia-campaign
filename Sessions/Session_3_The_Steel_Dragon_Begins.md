@@ -36,7 +36,7 @@ graph TD
 4.  **Arrival in Agastia:** First impressions of the city.
 5.  **Job Board:** Introduction to the system for gaining money and merit.
 6.  **The Steel Dragon:** The first murder scene is discovered.
-7.  **Player Quest Hooks:** Opportunities for Manny and Nikki to get involved in their quests.
+7.  **Player Quest Hooks:** Opportunities for [[Manny]] and [[Nikki]] to get involved in their quests.
 
 **Toggle: Key NPCs**
 - **[[Corvin Tradewise]]:** Merchant caravan leader who can provide information about [[Geist]].
@@ -130,7 +130,7 @@ graph TD
 
 **Location:** A large, well-maintained board in the central plaza of the [[Merchant District]] (Tier 4).
 
-**The Clerk:** A bored but efficient Merit Council clerk sits at a nearby desk.
+**The Clerk:** A bored but efficient [[Merit Council]] clerk sits at a nearby desk.
 
 > "Welcome to Agastia. If you're looking for work, you've come to the right place. Complete a job, get paid, and earn merit. The more merit you have, the higher you climb. Simple as that."
 
@@ -163,14 +163,14 @@ graph TD
 
 ## Player Quest Hooks
 
-### Manny (Monomi) - The Codex Quest
+### [[Manny]] (Monomi) - [[The Codex]] Quest
 
 - The Job Board has a request from a scholar in the [[Scholar Quarter]] (Tier 3) to retrieve a rare book from a dangerous ruin. This could be a lead to the [[Archive of Lost Histories]].
 - A rumor overheard in a tavern mentions a strange, ancient elf named Veridian who knows everything about [[Agastia]]'s history.
 
-### Nikki (Biago) - Family and Friends
+### [[Nikki]] (Biago) - Family and Friends
 
-- Nikki's family restaurant, [[Il Drago Rosso]], is a source of information and a safe haven.
+- [[Nikki]]'s family restaurant, [[Il Drago Rosso]], is a source of information and a safe haven.
 - A job on the board asks for someone to discreetly investigate a new, aggressive faction trying to strong-arm businesses in the [[Merchant District]], potentially threatening her family's restaurant.
 
 ## Session End

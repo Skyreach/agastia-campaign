@@ -61,19 +61,19 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 ## Relationships
 
 ### Party Members
-- **Kyle/Nameless:** Saved Rakash after village destruction, traveling together
+- **[[Kyle/Nameless]]:** Saved Rakash after village destruction, traveling together
 
 ### NPCs
 - **Niletrix:** Former paranoid dragon employer (worked 10 years)
 - **Zhaask:** Goblin traitor who betrayed Ratterdan to the giant
 - **Storm Giant:** Destroyer of Ratterdan (primary target)
 - **Beholder:** Former employer, abandoned Feywild place
-- **Professor Zero:** Knows "a little bit" through Niletrix work
+- **[[Professor Zero]]:** Knows "a little bit" through Niletrix work
 - **Dwarven Tinkerers (IdleCreek):** Created and maintain prosthetics
 
 ### Factions
 - Formerly worked for Niletrix (dragon)
-- Connection to Professor Zero (unclear nature)
+- Connection to [[Professor Zero]] (unclear nature)
 
 ## Special Items & Circumstances
 
@@ -126,7 +126,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 ### Secrets & Hidden Info
 - **Beholder Hired Giant:** The beholder who employed Rakash actually hired the storm giant to destroy Ratterdan (player doesn't know)
 - **Zhaask's Role:** Traitor provided information to enable the attack
-- **Professor Zero Connection:** Nature of "knowing a little" through Niletrix unclear - potential plot thread
+- **[[Professor Zero]] Connection:** Nature of "knowing a little" through Niletrix unclear - potential plot thread
 - **Giant's Motive:** Why target a goblin village? Connected to beholder's plans
 - **Prosthetics Origin:** Dwarves of IdleCreek have questions about the attack
 
@@ -136,7 +136,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Tracking and fighting storm giant (high-level encounter)
 - Completing beholder earring (magical item reward)
 - Prosthetics may have hidden features or tracking
-- Professor Zero connection through Niletrix
+- [[Professor Zero]] connection through Niletrix
 - Rebuilding Ratterdan or honoring the dead
 
 ### Character Development Notes

@@ -1,317 +1,317 @@
 {
   "sessions": {
     "Sessions/Session_0_Character_Creation.md": {
-      "notion_page_id": "2ad693f0c6b481b99b7ee8f35f3c5004",
+      "notion_page_id": "2d8693f0c6b481c3bf23f0827dead9e7",
       "last_pulled_from_notion": "2025-11-15T22:24:47.483614+00:00",
-      "last_pushed_to_notion": "2025-11-16T01:35:57.240565+00:00"
+      "last_pushed_to_notion": "2025-12-29T16:35:56.043761+00:00"
     },
     "Sessions/Session_1_Caravan_to_Ratterdan.md": {
-      "notion_page_id": "2ad693f0c6b481ca9a3de97499e399d3",
+      "notion_page_id": "2d8693f0c6b4816498ffc933ee4ca946",
       "last_pulled_from_notion": "2025-11-15T22:24:57.383097+00:00",
-      "last_pushed_to_notion": "2025-11-16T01:36:03.546461+00:00"
+      "last_pushed_to_notion": "2025-12-29T16:36:46.667512+00:00"
     },
     "Sessions/Session_2_Road_to_Agastia.md": {
-      "notion_page_id": "2ad693f0c6b481b487fce1c19dfa93f7",
+      "notion_page_id": "2d8693f0c6b4810897bcd5a3c3e80c77",
       "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00",
-      "last_pushed_to_notion": "2025-11-16T13:51:20.552427+00:00"
+      "last_pushed_to_notion": "2025-12-29T16:40:30.080707+00:00"
     },
     "Sessions/Session_3_The_Steel_Dragon_Begins.md": {
-      "notion_page_id": "2d8693f0c6b48108a0c5ee3b95de4f26",
-      "last_pushed_to_notion": "2025-12-29T05:14:46.057397+00:00"
+      "notion_page_id": "2d8693f0c6b481eb9ee0e8da2d51f306",
+      "last_pushed_to_notion": "2025-12-29T16:41:23.159718+00:00"
     }
   },
   "entities": {
     "Player_Characters/PC_Ian_Rakash.md": {
-      "notion_page_id": "2ad693f0c6b4812a8d8ac01607159e2d",
-      "last_pushed_to_notion": "2025-11-16T01:30:19.522457+00:00"
+      "notion_page_id": "2d8693f0c6b481eda677cff7debade60",
+      "last_pushed_to_notion": "2025-12-29T16:30:55.578270+00:00"
     },
     "Player_Characters/PC_Josh.md": {
-      "notion_page_id": "2ad693f0c6b481bca0fcd5d6bfd77e7d",
-      "last_pushed_to_notion": "2025-11-16T13:51:02.890033+00:00"
+      "notion_page_id": "2d8693f0c6b481b39ef9dcac8a40aeb4",
+      "last_pushed_to_notion": "2025-12-29T16:32:05.030938+00:00"
     },
     "Player_Characters/PC_Kyle_Nameless.md": {
-      "notion_page_id": "2ad693f0c6b481ce9fd3c1c1df2a359f",
-      "last_pushed_to_notion": "2025-11-16T01:30:30.555702+00:00"
+      "notion_page_id": "2d8693f0c6b4814388d6d4b81244dbf2",
+      "last_pushed_to_notion": "2025-12-29T16:33:19.715038+00:00"
     },
     "Player_Characters/PC_Manny.md": {
-      "notion_page_id": "2ad693f0c6b4817ea948cea00b3c91ef",
-      "last_pushed_to_notion": "2025-11-16T01:30:39.319828+00:00"
+      "notion_page_id": "2d8693f0c6b481df8d3fff197c4ca1ea",
+      "last_pushed_to_notion": "2025-12-29T16:34:07.337159+00:00"
     },
     "Player_Characters/PC_Nikki.md": {
-      "notion_page_id": "2ad693f0c6b481a68cf5c94a70267771",
-      "last_pushed_to_notion": "2025-11-16T01:30:43.241089+00:00"
+      "notion_page_id": "2d8693f0c6b48154b034e542a7816a52",
+      "last_pushed_to_notion": "2025-12-29T16:35:26.397048+00:00"
     },
     "NPCs/Faction_NPCs/Decimate_Project_Subjects.md": {
-      "notion_page_id": "2ad693f0c6b4812f9a9acaaa00431b0e",
-      "last_pushed_to_notion": "2025-11-16T01:30:59.311883+00:00"
+      "notion_page_id": "2d8693f0c6b481e9b9b6ee378c519181",
+      "last_pushed_to_notion": "2025-12-29T16:10:50.824740+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Decum_Subject10.md": {
-      "notion_page_id": "2ad693f0c6b481939ee5df0adcb73467",
-      "last_pushed_to_notion": "2025-11-16T01:31:03.346367+00:00"
+      "notion_page_id": "2d8693f0c6b481f48688c94264a2ead3",
+      "last_pushed_to_notion": "2025-12-29T16:11:06.024479+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Hexus_Subject6.md": {
-      "notion_page_id": "2ad693f0c6b4814296c5db47057e47e1",
-      "last_pushed_to_notion": "2025-11-16T01:31:06.545730+00:00"
+      "notion_page_id": "2d8693f0c6b48105bca8c2b9e2d1b1aa",
+      "last_pushed_to_notion": "2025-12-29T16:11:22.138811+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Nona_Subject9.md": {
-      "notion_page_id": "2ad693f0c6b4816eaf0efc66d85b8281",
-      "last_pushed_to_notion": "2025-11-16T01:31:09.819986+00:00"
+      "notion_page_id": "2d8693f0c6b481bb968ad0a5788f28e5",
+      "last_pushed_to_notion": "2025-12-29T16:11:47.077177+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Octavia_Subject8.md": {
-      "notion_page_id": "2ad693f0c6b481cbbe44ed61f71ab125",
-      "last_pushed_to_notion": "2025-11-16T01:31:15.990508+00:00"
+      "notion_page_id": "2d8693f0c6b4810f8ff7e90b7f98fe77",
+      "last_pushed_to_notion": "2025-12-29T16:11:53.866652+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Quincy_Subject5.md": {
-      "notion_page_id": "2ad693f0c6b4814fb2b7ebeda8a1b6a6",
-      "last_pushed_to_notion": "2025-11-16T01:31:18.905500+00:00"
+      "notion_page_id": "2d8693f0c6b48108a6faf64306b1c760",
+      "last_pushed_to_notion": "2025-12-29T16:12:01.631169+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Septimus_Subject7.md": {
-      "notion_page_id": "2ad693f0c6b4812ebc30deda407d7614",
-      "last_pushed_to_notion": "2025-11-16T01:31:26.509989+00:00"
+      "notion_page_id": "2d8693f0c6b4811ea222f2d0903607ed",
+      "last_pushed_to_notion": "2025-12-29T16:12:09.247878+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Tetran_Subject4.md": {
-      "notion_page_id": "2ad693f0c6b4814dbbecc427bd81e6ba",
-      "last_pushed_to_notion": "2025-11-16T01:31:28.325087+00:00"
+      "notion_page_id": "2d8693f0c6b481a3a632cbb6907003c0",
+      "last_pushed_to_notion": "2025-12-29T16:12:16.409171+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Trinity_Subject3.md": {
-      "notion_page_id": "2ad693f0c6b4815cbf1adeb3041d876b",
-      "last_pushed_to_notion": "2025-11-16T01:31:39.344377+00:00"
+      "notion_page_id": "2d8693f0c6b48102b036f2d4ba96a37c",
+      "last_pushed_to_notion": "2025-12-29T16:12:28.335163+00:00"
     },
     "NPCs/Location_NPCs/NPC_Thava_Thornscale.md": {
-      "notion_page_id": "2ad693f0c6b481a59eacc056a01b513b",
-      "last_pushed_to_notion": "2025-11-16T01:31:46.427341+00:00"
+      "notion_page_id": "2d8693f0c6b481c9a52fc113c6bc257b",
+      "last_pushed_to_notion": "2025-12-29T16:20:17.082750+00:00"
     },
     "NPCs/Location_NPCs/NPC_Torvin_Greycask.md": {
-      "notion_page_id": "2ad693f0c6b4817d8da5cf623ab05dc5",
-      "last_pushed_to_notion": "2025-11-16T01:32:09.940102+00:00"
+      "notion_page_id": "2d8693f0c6b481dd9ec6c6d9cbe56f80",
+      "last_pushed_to_notion": "2025-12-29T16:21:52.770023+00:00"
     },
     "NPCs/Major_NPCs/Professor_Zero.md": {
-      "notion_page_id": "2ad693f0c6b481cfb427e54ccd28acd4",
-      "last_pushed_to_notion": "2025-11-16T01:32:15.631018+00:00"
+      "notion_page_id": "2d8693f0c6b4810d895ff40ed22023a7",
+      "last_pushed_to_notion": "2025-12-29T16:25:48.066585+00:00"
     },
     "NPCs/Major_NPCs/Steel_Dragon.md": {
-      "notion_page_id": "2d8693f0c6b48137bbb9cd963caff10f",
-      "last_pushed_to_notion": "2025-12-29T05:08:33.670848+00:00"
+      "notion_page_id": "2d8693f0c6b481fcae7ecb7cf71145f9",
+      "last_pushed_to_notion": "2025-12-29T16:27:25.895594+00:00"
     },
     "NPCs/Major_NPCs/The_Patron.md": {
-      "notion_page_id": "2ad693f0c6b4816b8f4fc8bc4995b7f1",
-      "last_pushed_to_notion": "2025-11-16T01:32:44.136678+00:00"
+      "notion_page_id": "2d8693f0c6b481ff90ecdd7e94b07f11",
+      "last_pushed_to_notion": "2025-12-29T16:29:20.069483+00:00"
     },
     "NPCs/Mystery_NPCs/Blood_Target_Unknown.md": {
-      "notion_page_id": "2ad693f0c6b4815aa755c8e30484c229",
-      "last_pushed_to_notion": "2025-11-16T01:32:49.395327+00:00"
+      "notion_page_id": "2d8693f0c6b4810db0f3f0c0bd19667a",
+      "last_pushed_to_notion": "2025-12-29T16:29:55.112159+00:00"
     },
     "Factions/Faction_Bandit_Network_Geist_Kaelborn.md": {
-      "notion_page_id": "2d8693f0c6b481639358c23c0653163d",
-      "last_pushed_to_notion": "2025-12-29T05:09:32.123178+00:00"
+      "notion_page_id": "2d8693f0c6b48135b610c628ab9accf3",
+      "last_pushed_to_notion": "2025-12-29T15:43:52.462123+00:00"
     },
     "Factions/Faction_Chaos_Cult.md": {
-      "notion_page_id": "2ad693f0c6b481c4a22de0ce9f83e87b",
-      "last_pushed_to_notion": "2025-11-16T01:33:01.222992+00:00"
+      "notion_page_id": "2d8693f0c6b481e49224dbdf4279c464",
+      "last_pushed_to_notion": "2025-12-29T15:44:37.348449+00:00"
     },
     "Factions/Faction_Decimate_Project.md": {
-      "notion_page_id": "2ad693f0c6b481059995d87590e2c5e8",
-      "last_pushed_to_notion": "2025-11-16T01:33:09.389136+00:00"
+      "notion_page_id": "2d8693f0c6b481dd8641c10f1d004f74",
+      "last_pushed_to_notion": "2025-12-29T15:45:39.866175+00:00"
     },
     "Factions/Faction_Dispossessed.md": {
-      "notion_page_id": "2ad693f0c6b4811e9869fc5da856c559",
-      "last_pushed_to_notion": "2025-11-16T01:33:15.887203+00:00"
+      "notion_page_id": "2d8693f0c6b481718968dbf00a267d17",
+      "last_pushed_to_notion": "2025-12-29T15:46:23.295852+00:00"
     },
     "Factions/Faction_Merit_Council.md": {
-      "notion_page_id": "2d8693f0c6b4810d8cfdfe0c64ca90fb",
-      "last_pushed_to_notion": "2025-12-29T05:06:58.165692+00:00"
+      "notion_page_id": "2d8693f0c6b481b2b209d3677440fe12",
+      "last_pushed_to_notion": "2025-12-29T15:47:07.686030+00:00"
     },
     "Factions/Faction_Storm_Giant_Warband.md": {
-      "notion_page_id": "2ad693f0c6b48163b806d548524c2ccb",
-      "last_pushed_to_notion": "2025-11-16T01:33:28.649106+00:00"
+      "notion_page_id": "2d8693f0c6b481c4ab63f134315c059b",
+      "last_pushed_to_notion": "2025-12-29T15:48:01.796677+00:00"
     },
     "Locations/Cities/Agastia_City.md": {
-      "notion_page_id": "2d8693f0c6b481de9cb7e1b6aea95850",
-      "last_pushed_to_notion": "2025-12-29T04:30:31.427477+00:00"
+      "notion_page_id": "2d8693f0c6b4810cb2f8e70752ad88b8",
+      "last_pushed_to_notion": "2025-12-29T05:24:12.707619+00:00"
     },
     "Locations/Districts/Government_Complex.md": {
-      "notion_page_id": "2ad693f0c6b4819cabfdd7b821e8d9ba",
-      "last_pushed_to_notion": "2025-11-16T01:34:03.962971+00:00"
+      "notion_page_id": "2d8693f0c6b481f2870dcedecc71da0d",
+      "last_pushed_to_notion": "2025-12-29T16:00:29.416795+00:00"
     },
     "Locations/Districts/Merchant_District.md": {
-      "notion_page_id": "2d8693f0c6b4817caeabd2636d90036c",
-      "last_pushed_to_notion": "2025-12-29T05:02:49.411746+00:00"
+      "notion_page_id": "2d8693f0c6b481f98874eaec4cd4d508",
+      "last_pushed_to_notion": "2025-12-29T16:01:54.636718+00:00"
     },
     "Locations/Districts/Scholar_Quarter.md": {
-      "notion_page_id": "2d8693f0c6b481fc95f7c817c2f09cd9",
-      "last_pushed_to_notion": "2025-12-29T05:03:33.531142+00:00"
+      "notion_page_id": "2d8693f0c6b4812ba3bec384dec32a5c",
+      "last_pushed_to_notion": "2025-12-29T16:03:50.752598+00:00"
     },
     "Locations/Regions/Agastia_Region.md": {
-      "notion_page_id": "2ad693f0c6b481e1b892e2024039e79b",
-      "last_pushed_to_notion": "2025-11-16T01:34:31.227535+00:00"
+      "notion_page_id": "2d8693f0c6b4814a8353d3a47515a223",
+      "last_pushed_to_notion": "2025-12-29T16:06:28.652109+00:00"
     },
     "Locations/Towns/Meridians_Rest.md": {
-      "notion_page_id": "2d8693f0c6b48183a38be0e33d9fe4d0",
-      "last_pushed_to_notion": "2025-12-29T05:04:56.165836+00:00"
+      "notion_page_id": "2d8693f0c6b481a38711ed46f07bfa73",
+      "last_pushed_to_notion": "2025-12-29T16:07:16.881139+00:00"
     },
     "Locations/Wilderness/Infinite_Forest.md": {
-      "notion_page_id": "2ad693f0c6b48114b670e631d917fbc6",
-      "last_pushed_to_notion": "2025-11-16T01:34:50.291596+00:00"
+      "notion_page_id": "2d8693f0c6b48163bc17f611a1f9d792",
+      "last_pushed_to_notion": "2025-12-29T16:07:47.314702+00:00"
     },
     "Locations/Wilderness/Ratterdan_Ruins.md": {
-      "notion_page_id": "2ad693f0c6b481b1a680cb70fbeb7b2c",
-      "last_pushed_to_notion": "2025-11-16T01:35:01.575971+00:00"
+      "notion_page_id": "2d8693f0c6b481b29ba5c1c1df5c3e95",
+      "last_pushed_to_notion": "2025-12-29T16:08:18.353201+00:00"
     },
     "Campaign_Core/Animated_Heartstone_Artifact.md": {
-      "notion_page_id": "2ad693f0c6b481fba614ec2bd5b009d7",
-      "last_pushed_to_notion": "2025-11-16T01:35:14.346367+00:00"
+      "notion_page_id": "2d8693f0c6b4819a91d8ef5d1dbff5bd",
+      "last_pushed_to_notion": "2025-12-29T15:39:43.416548+00:00"
     },
     "Campaign_Core/Campaign_Overview.md": {
-      "notion_page_id": "2ad693f0c6b481b6b3c1e975742f7699",
-      "last_pushed_to_notion": "2025-11-16T01:35:18.549914+00:00"
+      "notion_page_id": "2d8693f0c6b481ea939fe8f71ce97d04",
+      "last_pushed_to_notion": "2025-12-29T15:41:13.103541+00:00"
     },
     "Campaign_Core/Giant_Axe_Artifact.md": {
-      "notion_page_id": "2ad693f0c6b481b08c03c1b9a042af21",
-      "last_pushed_to_notion": "2025-11-16T01:35:24.771924+00:00"
+      "notion_page_id": "2d8693f0c6b4811db781ef08944ed76c",
+      "last_pushed_to_notion": "2025-12-29T15:42:00.842535+00:00"
     },
     "Campaign_Core/The_Codex.md": {
-      "notion_page_id": "2ad693f0c6b48169b317c96d0b4adfc9",
-      "last_pushed_to_notion": "2025-11-16T01:35:39.406695+00:00"
+      "notion_page_id": "2d8693f0c6b481a19fa0d04415d3e8d8",
+      "last_pushed_to_notion": "2025-12-29T15:42:53.322155+00:00"
     },
     "NPCs/Location_NPCs/NPC_Corvin_Tradewise.md": {
-      "notion_page_id": "2d8693f0c6b481c2bfa0e0a06f391fd5",
-      "last_pushed_to_notion": "2025-12-29T05:00:49.396962+00:00"
+      "notion_page_id": "2d8693f0c6b481b6a8f0fa69ee579e0a",
+      "last_pushed_to_notion": "2025-12-29T16:14:03.845898+00:00"
     },
     "NPCs/Location_NPCs/NPC_Harren_Dock_Worker.md": {
-      "notion_page_id": "2ad693f0c6b481eda7c1fd7a3fee8448",
-      "last_pushed_to_notion": "2025-11-16T13:49:25.248565+00:00"
+      "notion_page_id": "2d8693f0c6b48113bdefdc7338707cd5",
+      "last_pushed_to_notion": "2025-12-29T16:15:10.085693+00:00"
     },
     "NPCs/Location_NPCs/NPC_Kex_the_Fence.md": {
-      "notion_page_id": "2ad693f0c6b4816cb49ceaf78e691342",
-      "last_pushed_to_notion": "2025-11-16T13:49:30.754429+00:00"
+      "notion_page_id": "2d8693f0c6b48177b6c3c37a412ba5c6",
+      "last_pushed_to_notion": "2025-12-29T16:16:25.011904+00:00"
     },
     "NPCs/Location_NPCs/NPC_Mira_Saltwind.md": {
-      "notion_page_id": "2ad693f0c6b481eaa9f6efd818c04f81",
-      "last_pushed_to_notion": "2025-11-16T13:49:43.501817+00:00"
+      "notion_page_id": "2d8693f0c6b4816baadcc860211d2937",
+      "last_pushed_to_notion": "2025-12-29T16:17:33.511915+00:00"
     },
     "NPCs/Location_NPCs/NPC_Mirella_Stonemark.md": {
-      "notion_page_id": "2ad693f0c6b4815aa8e7fd37c2e6e2de",
-      "last_pushed_to_notion": "2025-11-16T13:50:11.834690+00:00"
+      "notion_page_id": "2d8693f0c6b481179ecae1d127fad085",
+      "last_pushed_to_notion": "2025-12-29T16:18:47.300523+00:00"
     },
     "NPCs/Location_NPCs/NPC_Veridian_Scrollkeeper.md": {
-      "notion_page_id": "2d8693f0c6b481d6bec1c717c4ad14c9",
-      "last_pushed_to_notion": "2025-12-29T05:02:19.423739+00:00"
+      "notion_page_id": "2d8693f0c6b4817eafacdd3630416da5",
+      "last_pushed_to_notion": "2025-12-29T16:22:54.971884+00:00"
     },
     "NPCs/Major_NPCs/NPC_Krythak_Stormbringer.md": {
-      "notion_page_id": "2ad693f0c6b481c896abee851e629777",
-      "last_pushed_to_notion": "2025-11-16T13:50:47.475216+00:00"
+      "notion_page_id": "2d8693f0c6b481e7a237c4f155ff45d1",
+      "last_pushed_to_notion": "2025-12-29T16:24:25.180880+00:00"
     },
     "Locations/Cities/Agastia/Shop_Inkwell_and_Quill.md": {
-      "notion_page_id": "2ad693f0c6b481a9ad88fba8ee101d2e",
-      "last_pushed_to_notion": "2025-11-16T14:41:31.039270+00:00"
+      "notion_page_id": "2d8693f0c6b48151a44ee076bd305c32",
+      "last_pushed_to_notion": "2025-12-29T15:52:38.790784+00:00"
     },
     "Locations/Cities/Agastia/Shop_The_Wanderers_Pack.md": {
-      "notion_page_id": "2ad693f0c6b4810fbea6ed35f82dbfff",
-      "last_pushed_to_notion": "2025-11-16T14:41:44.330668+00:00"
+      "notion_page_id": "2d8693f0c6b4811aae26d1f34440fad0",
+      "last_pushed_to_notion": "2025-12-29T15:58:11.722394+00:00"
     },
     "Locations/Cities/Agastia/Tavern_The_Copper_Mug.md": {
-      "notion_page_id": "2ad693f0c6b4812788a3e79942d8c2ec",
-      "last_pushed_to_notion": "2025-11-16T14:41:54.429960+00:00"
+      "notion_page_id": "2d8693f0c6b481d08968ce53fd8918bd",
+      "last_pushed_to_notion": "2025-12-29T15:59:27.180125+00:00"
     },
     "Locations/Cities/Agastia/Shop_Saltwind_General_Supply.md": {
-      "notion_page_id": "2ad693f0c6b4818abc7fe7da4815c1d9",
-      "last_pushed_to_notion": "2025-11-16T14:42:00.700070+00:00"
+      "notion_page_id": "2d8693f0c6b48149b203e432329452cc",
+      "last_pushed_to_notion": "2025-12-29T15:53:43.715018+00:00"
     },
     "Locations/Cities/Agastia/Inn_The_Hidden_Door.md": {
-      "notion_page_id": "2ad693f0c6b481c0ac1af72ad83c160e",
-      "last_pushed_to_notion": "2025-11-16T14:42:06.470337+00:00"
+      "notion_page_id": "2d8693f0c6b481cd886bfc7735af48e1",
+      "last_pushed_to_notion": "2025-12-29T15:48:53.660601+00:00"
     },
     "Locations/Cities/Agastia/Shop_Blades_of_Glory.md": {
-      "notion_page_id": "2c9693f0c6b481639b67f343afd1c5bf",
-      "last_pushed_to_notion": "2025-12-14T14:08:45.036868+00:00"
+      "notion_page_id": "2d8693f0c6b4811bb6acc266b2c7443c",
+      "last_pushed_to_notion": "2025-12-29T15:50:08.822505+00:00"
     },
     "Locations/Cities/Agastia/Shop_Brightcoin_Emergency_Supplies.md": {
-      "notion_page_id": "2c9693f0c6b4817d8ac8e16aa6606da1",
-      "last_pushed_to_notion": "2025-12-14T14:08:55.242706+00:00"
+      "notion_page_id": "2d8693f0c6b481309eb5f17699335c53",
+      "last_pushed_to_notion": "2025-12-29T15:51:14.402910+00:00"
     },
     "Locations/Cities/Agastia/Shop_Public_Temple.md": {
-      "notion_page_id": "2c9693f0c6b48156983edcb7566db6f5",
-      "last_pushed_to_notion": "2025-12-14T14:09:27.048016+00:00"
+      "notion_page_id": "2d8693f0c6b481e8ba22ca1eafc9a925",
+      "last_pushed_to_notion": "2025-12-29T15:53:18.114352+00:00"
     },
     "Locations/Cities/Agastia/Shop_Sawbones_Surgery.md": {
-      "notion_page_id": "2c9693f0c6b4816f9f41e6dfef6d1563",
-      "last_pushed_to_notion": "2025-12-14T14:09:32.233808+00:00"
+      "notion_page_id": "2d8693f0c6b48114b0a6cb2b4cf3ec96",
+      "last_pushed_to_notion": "2025-12-29T15:54:09.044247+00:00"
     },
     "Locations/Cities/Agastia/Shop_Shadows_Edge_Armory.md": {
-      "notion_page_id": "2c9693f0c6b48190ab45fe90db00f057",
-      "last_pushed_to_notion": "2025-12-14T14:09:41.506983+00:00"
+      "notion_page_id": "2d8693f0c6b481099b34c194a36898e4",
+      "last_pushed_to_notion": "2025-12-29T15:54:50.180910+00:00"
     },
     "Locations/Cities/Agastia/Shop_Stonewick_Herbalist.md": {
-      "notion_page_id": "2c9693f0c6b481438a12f70a91c6b43a",
-      "last_pushed_to_notion": "2025-12-14T14:10:02.701911+00:00"
+      "notion_page_id": "2d8693f0c6b4811581e9e33e0620e1f1",
+      "last_pushed_to_notion": "2025-12-29T15:56:06.992493+00:00"
     },
     "Locations/Cities/Agastia/Shop_The_Delizioso_Trattoria.md": {
       "notion_page_id": "2c9693f0c6b4814fae3bfb9b14dfd8bc",
       "last_pushed_to_notion": "2025-12-14T14:10:35.144380+00:00"
     },
     "Locations/Cities/Agastia/Shop_The_Desperates_Refuge.md": {
-      "notion_page_id": "2c9693f0c6b481dbaa71eeee1d4218bc",
-      "last_pushed_to_notion": "2025-12-14T14:10:45.961773+00:00"
+      "notion_page_id": "2d8693f0c6b481e884f0d65920b41bfe",
+      "last_pushed_to_notion": "2025-12-29T15:56:24.675724+00:00"
     },
     "Locations/Cities/Agastia/Shop_The_Gilded_Scale.md": {
-      "notion_page_id": "2c9693f0c6b481b9b1bbc9bf89004ba1",
-      "last_pushed_to_notion": "2025-12-14T14:10:54.008496+00:00"
+      "notion_page_id": "2d8693f0c6b481fead5eda92d56281eb",
+      "last_pushed_to_notion": "2025-12-29T15:57:05.470632+00:00"
     },
     "Locations/Cities/Agastia/Shop_The_Grand_Cathedral.md": {
-      "notion_page_id": "2c9693f0c6b481d38506d8d825e0a1cb",
-      "last_pushed_to_notion": "2025-12-14T14:11:05.837293+00:00"
+      "notion_page_id": "2d8693f0c6b481258a9ec15c35c21e2a",
+      "last_pushed_to_notion": "2025-12-29T15:57:33.073526+00:00"
     },
     "Locations/Cities/Agastia/Shop_Tidecaller_Armory.md": {
-      "notion_page_id": "2c9693f0c6b4810cbebbc3c28d064352",
-      "last_pushed_to_notion": "2025-12-14T14:11:11.322997+00:00"
+      "notion_page_id": "2d8693f0c6b48101b926cef91b39dba1",
+      "last_pushed_to_notion": "2025-12-29T15:58:40.027853+00:00"
     },
     "Locations/Cities/Agastia/Shop_Working_Class_Armory.md": {
-      "notion_page_id": "2c9693f0c6b48171a746d4e84342498a",
-      "last_pushed_to_notion": "2025-12-14T14:11:20.316426+00:00"
+      "notion_page_id": "2d8693f0c6b4814e94e9e3392137eb55",
+      "last_pushed_to_notion": "2025-12-29T15:59:06.596287+00:00"
     },
     "Locations/Districts/Dock_District.md": {
-      "notion_page_id": "2d8693f0c6b481a49f0ee41deaaf156a",
-      "last_pushed_to_notion": "2025-12-29T05:04:06.763793+00:00"
+      "notion_page_id": "2d8693f0c6b4818a849ad762f49622da",
+      "last_pushed_to_notion": "2025-12-29T15:59:58.563889+00:00"
     },
     "Locations/Districts/Lower_Residential_District.md": {
-      "notion_page_id": "2c9693f0c6b4815d98d1c20c3e9eadea",
-      "last_pushed_to_notion": "2025-12-14T14:11:40.187382+00:00"
+      "notion_page_id": "2d8693f0c6b48100a62fe60dbec35996",
+      "last_pushed_to_notion": "2025-12-29T16:00:56.337953+00:00"
     },
     "Locations/Districts/Noble_Quarter.md": {
-      "notion_page_id": "2c9693f0c6b48155a75decdbf1c2c393",
-      "last_pushed_to_notion": "2025-12-14T14:11:47.544276+00:00"
+      "notion_page_id": "2d8693f0c6b481a49a7af3b6b22ee84e",
+      "last_pushed_to_notion": "2025-12-29T16:02:36.423475+00:00"
     },
     "Locations/Districts/Research_Quarter.md": {
-      "notion_page_id": "2c9693f0c6b481498ef8e8ccf36db8e3",
-      "last_pushed_to_notion": "2025-12-14T14:11:52.551794+00:00"
+      "notion_page_id": "2d8693f0c6b4813abd03e3d69135a4de",
+      "last_pushed_to_notion": "2025-12-29T16:03:13.779093+00:00"
     },
     "Locations/Districts/The_Castle.md": {
-      "notion_page_id": "2c9693f0c6b4819d836feaf1f185cebc",
-      "last_pushed_to_notion": "2025-12-14T14:12:27.713335+00:00"
+      "notion_page_id": "2d8693f0c6b4815fb0b1c3c0edf3520a",
+      "last_pushed_to_notion": "2025-12-29T16:04:41.096217+00:00"
     },
     "Locations/Districts/The_Depths.md": {
-      "notion_page_id": "2c9693f0c6b48119a79be026fac84d8b",
-      "last_pushed_to_notion": "2025-12-14T14:12:33.179816+00:00"
+      "notion_page_id": "2d8693f0c6b4815dac0ce58948753a2f",
+      "last_pushed_to_notion": "2025-12-29T16:05:35.003070+00:00"
     },
     "Locations/Cities/Agastia/Location_Archive_of_Lost_Histories.md": {
-      "notion_page_id": "2d8693f0c6b481fc90ddf4afd7b81f07",
-      "last_pushed_to_notion": "2025-12-29T05:06:25.300799+00:00"
+      "notion_page_id": "2d8693f0c6b481af96e3fcc7e21a51c9",
+      "last_pushed_to_notion": "2025-12-29T15:49:28.367126+00:00"
     },
     "Locations/Cities/Agastia/Shop_Stonemark_Antiquities.md": {
-      "notion_page_id": "2c9693f0c6b4815688ccc4bd4b86e3aa",
-      "last_pushed_to_notion": "2025-12-14T14:39:29.195968+00:00"
+      "notion_page_id": "2d8693f0c6b481cfb6e3e736fa3ad36b",
+      "last_pushed_to_notion": "2025-12-29T15:55:17.944108+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Geist_Bandit_Lieutenant.md": {
-      "notion_page_id": "2d8693f0c6b48114a688d8042e725f60",
-      "last_pushed_to_notion": "2025-12-29T05:01:02.933756+00:00"
+      "notion_page_id": "2d8693f0c6b48148ac62e113c25cd3c2",
+      "last_pushed_to_notion": "2025-12-29T16:11:16.373875+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Kaelborn_Bandit_Boss.md": {
-      "notion_page_id": "2c9693f0c6b481ad93b9f945e65e65c7",
-      "last_pushed_to_notion": "2025-12-14T14:40:00.138193+00:00"
+      "notion_page_id": "2d8693f0c6b48188b4ade7d95d36cd7d",
+      "last_pushed_to_notion": "2025-12-29T16:11:38.991898+00:00"
     },
     "Locations/Cities/Agastia/Shop_Il_Drago_Rosso.md": {
-      "notion_page_id": "2d8693f0c6b481419235c7d0a06e06ed",
-      "last_pushed_to_notion": "2025-12-29T05:05:41.317570+00:00"
+      "notion_page_id": "2d8693f0c6b48138ba65eebcaff06221",
+      "last_pushed_to_notion": "2025-12-29T15:52:09.218696+00:00"
     }
   }
 }

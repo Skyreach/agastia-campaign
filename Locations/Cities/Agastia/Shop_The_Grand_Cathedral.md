@@ -10,17 +10,17 @@ version: "1.0.0"
 tags: [divine-magic, healing, research-quarter, interfaith, neutral-ground, resurrection]
 ---
 
-# The Grand Cathedral
+# [[The Grand Cathedral]]
 
 ## Overview
 
 **Type & Specialty:** Divine magic center and interfaith temple - powerful healing, restoration, resurrection, and divination services from high-level clerics representing all recognized faiths
 
-**Location:** Research Quarter (Tier 2-3), prominent position on temple plaza near district center
+**Location:** [[Research Quarter]] (Tier 2-3), prominent position on temple plaza near district center
 
 **Clientele:** Wealthy patrons, adventurers needing resurrection, nobles requiring restoration, factions seeking neutral meeting ground, emergency cases subsidized by donations
 
-**Reputation:** "Where life returns and curses break." The most powerful divine magic available in Agastia, trusted by all factions as politically neutral ground. If healing magic can save you, the Cathedral can provide it.
+**Reputation:** "Where life returns and curses break." The most powerful divine magic available in [[Agastia]], trusted by all factions as politically neutral ground. If healing magic can save you, the Cathedral can provide it.
 
 **Atmosphere:** Grand architecture blending symbols from multiple faiths. Healing chambers with soft light and peaceful incense. Main sanctuary shows religious harmony - altars to different deities arranged in circle of equals. Professional clerics move quietly between private consultation rooms. Air carries sense of sacred peace despite constant activity.
 
@@ -74,7 +74,7 @@ tags: [divine-magic, healing, research-quarter, interfaith, neutral-ground, resu
 - **Emergency cases:** Subsidized care for those who cannot afford services
 
 **Real Uses:**
-- **Resurrection Services:** Only reliable source of Raise Dead and higher resurrection magic in Agastia
+- **Resurrection Services:** Only reliable source of Raise Dead and higher resurrection magic in [[Agastia]]
 - **Restoration Magic:** Remove curses, diseases, petrification, and other afflictions
 - **Neutral Ground:** Trusted location for interfaith dialogue and faction negotiations
 - **Divination:** Spiritual guidance, commune with deities, augury for important decisions
@@ -166,7 +166,7 @@ tags: [divine-magic, healing, research-quarter, interfaith, neutral-ground, resu
 ## Connections
 
 **District Integration:**
-- Premier divine magic provider for Research Quarter
+- Premier divine magic provider for [[Research Quarter]]
 - Neutral ground trusted by academics for interfaith dialogue
 - Balances arcane focus of district with divine tradition
 - Provides healing for magical research accidents
@@ -179,7 +179,7 @@ tags: [divine-magic, healing, research-quarter, interfaith, neutral-ground, resu
 - **Lower-Tier Temple Priests:** Coordinate community healing, receive training and resources from Cathedral
 
 **Faction Ties:**
-- **Merit Council:** Respects Cathedral's neutrality, uses it for sensitive negotiations
+- **[[Merit Council]]:** Respects Cathedral's neutrality, uses it for sensitive negotiations
 - **All Major Factions:** Rely on Cathedral for resurrection services, cannot afford to antagonize it
 - **Interfaith Alliance:** Theron leads informal coordination between recognized religions
 - **No Direct Loyalty:** Cathedral maintains strict neutrality, serves all equally

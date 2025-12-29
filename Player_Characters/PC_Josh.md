@@ -12,7 +12,7 @@ location: Traveling
 related_entities: [Lost People, Family Unknown, Ancient Civilization]
 ---
 
-# Brand Al'Thor (Josh's Character)
+# Brand Al'Thor ([[Josh]]'s Character)
 
 ## Player Summary
 
@@ -82,7 +82,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - **Nature:** Elemental (thunder/lightning)
 - **Behavior:** Sometimes tingle near certain places
   - Cave entrances
-  - Ancient symbols in Scholar Quarter match markings
+  - Ancient symbols in [[Scholar Quarter]] match markings
   - Desert trader route symbols similar
 - **Origin:** Unknown
 - **Purpose:** Unknown
@@ -91,7 +91,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 ### Civilization Clues
 - Kingdom of [INSERT NAME] destroyed by demonic invasion 500 years ago
 - Survivors fled to Underdark after great-grandfather sealed portal
-- Ancient symbols in Agastia's Scholar Quarter match markings
+- Ancient symbols in [[Agastia]]'s [[Scholar Quarter]] match markings
 - Desert traders have similar route symbols
 - Demonic invasion triggered by ancestral betrayal
 
@@ -102,8 +102,8 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - Is the demon portal seal still holding?
 - Where exactly in the Underdark did survivors resettle?
 - Is the Underdark settlement still alive and guarding the seal?
-- Why did Storm Guardians choose to help Josh's people?
-- Can Josh redeem his family name?
+- Why did Storm Guardians choose to help [[Josh]]'s people?
+- Can [[Josh]] redeem his family name?
 - Are demons still trying to break through the seal?
 
 ## Special Items & Abilities
@@ -144,17 +144,17 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 ### Secrets & Hidden Info
 - **True Origin:** Kingdom of [INSERT NAME] on Island of Tenibris
 - **Kingdom Destroyed:** 500 years ago by demonic invasion
-- **The Betrayal:** Josh's great-great-grandfather betrayed kingdom to demons
+- **The Betrayal:** [[Josh]]'s great-great-grandfather betrayed kingdom to demons
   - Made deal with demons/devils out of despair
   - Gave demons the kingdom's secrets and defensive weaknesses
   - Kingdom fell, survivors scattered
-- **The Seal:** Josh's great-grandfather rallied surviving mages
+- **The Seal:** [[Josh]]'s great-grandfather rallied surviving mages
   - Sacrificed themselves to seal demon portal (TEMPORARY seal)
   - Led survivors to resettle in Underdark
   - Current fate of settlement unknown
 - **Family Curse:** Name tainted by betrayer's actions
   - Ancestors faced constant insults from their own people
-  - Settled in Agastia as farmers, traders, craftsmen
+  - Settled in [[Agastia]] as farmers, traders, craftsmen
 - **Demonic Markings:** Inherited curse from betrayer's deal
   - NOT actual etchings/tattoos in skin
   - Can be concealed but visible
@@ -162,7 +162,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - **Elemental Markings:** Thunder/lightning (storm-marked)
   - Protections placed BY the Storm Guardians (Lyria's people)
   - Relationship to demonic markings unclear (defense vs curse?)
-- **Storm Guardians:** Lyria's people sheltered Josh's ancestors AFTER the fall
+- **Storm Guardians:** Lyria's people sheltered [[Josh]]'s ancestors AFTER the fall
   - Lyria may have personally helped (she's 500+ years old)
   - Applied protective elemental magic to descendants
 - **Underdark Settlement:** Great-grandfather's refugees
@@ -171,10 +171,10 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - **Connection to Main Plot:**
   - Sealed portal may be weakening
   - Demons may return
-  - Josh may have responsibility to fix ancestor's mistake
+  - [[Josh]] may have responsibility to fix ancestor's mistake
 
 ### Future Hooks
-- Scholar Quarter research revealing marking meaning
+- [[Scholar Quarter]] research revealing marking meaning
 - Cave entrance leading to Underdark passage
 - Meeting someone who recognizes the markings
 - Discovering family member (alive or evidence of fate)
@@ -205,12 +205,12 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - **Underdark Arc:** Mid-late campaign major location
 - **Civilization Discovery:** Could be major campaign milestone
 - **Desert Traders:** Have seen similar symbols (lead to follow)
-- **Scholar Quarter:** Research available in Agastia libraries
+- **[[Scholar Quarter]]:** Research available in [[Agastia]] libraries
 - **Thunder/Lightning Theme:** Markings react to elemental magic, storms, or related artifacts
 
 ### Location Reactions Planned
-- **Ratterdan Ruins:** Mild tingling (elemental wards or ancient magic)
-- **Scholar Quarter Library:** Strong reaction to specific text
+- **[[Ratterdan Ruins]]:** Mild tingling (elemental wards or ancient magic)
+- **[[Scholar Quarter]] Library:** Strong reaction to specific text
 - **Desert Cliffs:** Symbols match ancient homeland
 - **Specific Cave System:** Entrance to Underdark passage
 - **[Hidden Location]:** Homeland or major civilization site

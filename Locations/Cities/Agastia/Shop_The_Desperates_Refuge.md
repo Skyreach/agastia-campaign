@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [healing, depths, underground, dangerous, desperate, unlicensed]
 ---
 
-# The Desperate's Refuge
+# [[The Desperate's Refuge]]
 
 ## Overview
 
 **Type & Specialty:** Unlicensed healing operation - bandaging, surgery, mystery tonics, and no-questions-asked medical care for those with nowhere else to turn
 
-**Location:** The Depths (Tier 7), hidden chamber accessible through back alleys. Location changes periodically for safety. Must ask locals for current location.
+**Location:** [[The Depths]] (Tier 7), hidden chamber accessible through back alleys. Location changes periodically for safety. Must ask locals for current location.
 
 **Clientele:** The desperate, the dispossessed, criminals, fugitives, those who can't afford licensed healers, anyone who needs healing without official scrutiny
 
@@ -49,7 +49,7 @@ tags: [healing, depths, underground, dangerous, desperate, unlicensed]
 - **Reward:** In exchange for protecting the Sanctuary or negotiating peaceful solution:
   - Mother Cass's blessing (+1d4 to death saves, permanent)
   - Access to Sanctuary as safe house when needed (no questions asked)
-  - Information network (The Depths residents trust Mother Cass and will share information)
+  - Information network ([[The Depths]] residents trust Mother Cass and will share information)
   - Emergency healing (Mother Cass will use her secret divine powers once for party if truly desperate)
   - Introduction to Underground Railroad (can help move people secretly)
 - **Difficulty:** Moderate to Hard - Gang has numbers and weapons. Negotiation requires convincing gang leader profit isn't worth angering entire Depths community. Violence risks collateral damage to patients.
@@ -72,7 +72,7 @@ tags: [healing, depths, underground, dangerous, desperate, unlicensed]
 **Regular Customers:**
 - **Gang members:** Need treatment without official questions
 - **Abuse victims:** Fleeing dangerous situations, need safe recovery
-- **Dispossessed poor:** Can't afford licensed healers
+- **[[Dispossessed]] poor:** Can't afford licensed healers
 - **Criminals:** Stabbed, beaten, poisoned - can't go to authorities
 - **Refugees:** Hiding from various threats, need care while recovering
 - **Children:** Injured in Depths, brought by frightened parents
@@ -157,9 +157,9 @@ tags: [healing, depths, underground, dangerous, desperate, unlicensed]
 - **Former patients:** Throughout all tiers - people Mother Cass saved when they were dispossessed
 
 **Faction Ties:**
-- **Dispossessed faction:** Supportive leadership role without official position
+- **[[Dispossessed]] faction:** Supportive leadership role without official position
 - **Resistance movement:** Sympathetic but prefers peaceful change
-- **Chaos Cult:** Active opponent - Mother Cass strengthens community bonds that cult tries to break
+- **[[Chaos Cult]]:** Active opponent - Mother Cass strengthens community bonds that cult tries to break
 - **Underground Railroad:** Trusted partner for evacuating vulnerable individuals
 - **Council/Authorities:** Officially unaware (or willfully ignorant). If discovered, would likely shut down unlicensed operation.
 

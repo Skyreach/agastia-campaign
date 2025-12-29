@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [commerce, merchant-district, starting-equipment, information-broker, party-connection]
 ---
 
-# Brightcoin Emergency Supplies
+# [[Brightcoin Emergency Supplies]]
 
 ## Overview
 
 **Type & Specialty:** "Everything you need when you need it" - General adventuring supplies, equipment, and information services for those heading into danger
 
-**Location:** Merchant District (Tier 4), strategically positioned near district's main gate leading to outer city
+**Location:** [[Merchant District]] (Tier 4), strategically positioned near district's main gate leading to outer city
 
 **Clientele:** Adventurers, travelers, merchants needing last-minute supplies, those seeking discreet information
 
@@ -32,14 +32,14 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 
 **Background:**
 - Tier 4 merchant who made fortune through combination of legitimate business and information trading
-- Established Brightcoin Emergency Supplies fifteen years ago after retiring from caravan trade
+- Established [[Brightcoin Emergency Supplies]] fifteen years ago after retiring from caravan trade
 - Traveled extensively in younger years, built network of contacts across the region
 - Survived situations requiring both quick thinking and good equipment
 - Reputation for discretion makes him trusted neutral party among multiple factions
 - Provided party's starting equipment (remembers exactly what everyone purchased)
 
 **Goals:**
-- Short-term: Expand information network into Research Quarter and Noble Quarter
+- Short-term: Expand information network into [[Research Quarter]] and [[Noble Quarter]]
 - Long-term: Become indispensable to all factions through information monopoly (without being controlled by any)
 
 **Personality:**
@@ -54,10 +54,10 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 **Interaction Hooks:**
 - Would seek player help with: Recovering information assets (documents, informants in danger), investigating competitors' suspicious activities, delivering messages requiring deniability, protecting key informants
 - Reluctance level: Willing but cautious (will involve party when he can maintain plausible deniability)
-- Can offer players: Information (his primary currency), discounted supplies, connections to contacts throughout Agastia, advance warning of threats, brokering meetings between factions
+- Can offer players: Information (his primary currency), discounted supplies, connections to contacts throughout [[Agastia]], advance warning of threats, brokering meetings between factions
 
 **Party Connections:**
-- Potential bonds with: All party members (he outfitted them originally), especially Nikki (fellow merchant background, appreciates cleverness), Manny (respects practical mindset)
+- Potential bonds with: All party members (he outfitted them originally), especially [[Nikki]] (fellow merchant background, appreciates cleverness), [[Manny]] (respects practical mindset)
 - Relationship type: Professional contact → could evolve to Trusted ally / Information broker partnership
 
 ## Day-to-Day Operations
@@ -165,13 +165,13 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 ## Connections
 
 **District Integration:**
-- Hub for information flowing through Merchant District
+- Hub for information flowing through [[Merchant District]]
 - Trusted by various factions as neutral party
 - Collaborates with other merchants (refers customers, shares market intelligence)
 - Pays "taxes" to both legitimate authorities and criminal networks (maintains freedom to operate)
 
 **Related NPCs:**
-- **The Biago Family:** Respectful relationship with Nikki's parents, occasionally exchanges information over meals
+- **The Biago Family:** Respectful relationship with [[Nikki]]'s parents, occasionally exchanges information over meals
 - **Kessa Ironfoot (Wanderer's Pack):** Professional cooperation, cross-referrals
 - **Guildmaster Vex Thornton:** Knows Marcus's real business, tolerates it as useful
 - **"Fingers" Mallory:** Uneasy cooperation between information broker and crime boss
@@ -179,9 +179,9 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 - **Olric Saltwind (Dock District):** Information-sharing arrangement across tiers
 
 **Faction Ties:**
-- **Merit Council:** Sells them intelligence while maintaining deniability
-- **Chaos Cult:** Unaware they have cells; would be disturbed if he knew some "clients" are cultists
-- **Dispossessed:** Sympathetic, provides information helping them survive (at reduced rates)
+- **[[Merit Council]]:** Sells them intelligence while maintaining deniability
+- **[[Chaos Cult]]:** Unaware they have cells; would be disturbed if he knew some "clients" are cultists
+- **[[Dispossessed]]:** Sympathetic, provides information helping them survive (at reduced rates)
 - **Merchant Guilds:** Member in good standing, contributes market intelligence
 - **Criminal Networks:** Pays for peace, occasionally brokers deals
 - **All Factions:** Maintains careful neutrality by serving all sides
@@ -242,7 +242,7 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 - Legitimate business provides plausible deniability
 
 **The Network:**
-- 50+ active informants throughout Agastia (all tiers)
+- 50+ active informants throughout [[Agastia]] (all tiers)
 - Includes: Servants in noble houses, dock workers, council clerks, temple acolytes, criminals
 - Marcus never reveals sources (absolute confidentiality maintains network)
 - Compartmentalized - informants don't know each other
@@ -255,7 +255,7 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 - Dead man's switch: Files release if Marcus dies suspiciously
 - Several factions aware of files' existence (deters violence against him)
 
-**The Chaos Cult Problem:**
+**The [[Chaos Cult]] Problem:**
 - Marcus suspects cult infiltration but can't confirm
 - Some information he's sold likely aided cult operations (unknowingly)
 - Wrestling with moral implications of neutral stance
@@ -296,7 +296,7 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 - Being seen entering back room signals involvement in intelligence world
 - Other factions may try using party to spy on or compromise Marcus
 
-**Chaos Cult Revelation:**
+**[[Chaos Cult]] Revelation:**
 - Eventually discovering Marcus unknowingly aided cult
 - How does he react? Maintains neutrality or takes sides?
 - Party can help him identify cult infiltration in network

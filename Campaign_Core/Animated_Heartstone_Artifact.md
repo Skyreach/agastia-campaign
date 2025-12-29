@@ -189,7 +189,7 @@ The giant's axe left a "corruption seed" that burrowed down to drain the Heartst
 - Archfey manipulates party toward its own goals
 - Connection to Feywild and Kyle's background
 - Moral dilemma: power vs. consequences
-- Octavia's agenda and Decimate Project connection
+- Octavia's agenda and [[Decimate Project]] connection
 
 ### Mechanical Balance
 - Feats provide early power boost for level 1 party

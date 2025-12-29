@@ -66,6 +66,35 @@ Last updated: 2025-12-28 22:45
   - Result: All 7 tier sections properly nested with toggle blocks
   - Verified: City Districts → Tier 1 → Daily Life & Services (3 levels deep)
 
+## 🚨 Active Tasks (New Session)
+
+### Pending
+- [ ] [23:30] Expand Agastia City wikilinks - link all districts, stores, NPCs, quests
+  - Context: Agastia_City.md mentions many entities that should be cross-referenced
+  - File: Locations/Cities/Agastia_City.md
+  - Targets: Districts (9), establishments (20+), NPCs mentioned in tier descriptions
+  - Method: Find entity names, wrap in [[brackets]]
+
+- [ ] [23:30] Create wikilinking skill for automated cross-reference detection
+  - Context: Need repeatable skill for finding and adding wikilinks
+  - Location: `.claude/skills/add-wikilinks.md`
+  - Features: Scan file for entity names, cross-reference with WIKI_INDEX.md, add [[links]]
+  - Integration: Use WIKI_INDEX.md as entity reference
+
+- [ ] [23:30] Comprehensive wikilink pass - entire repository
+  - Context: Add wikilinks to all entities across all files
+  - Scope: Sessions (4), NPCs (26), Locations (29), Factions (6), Campaign Core (4)
+  - Method: For each file, scan for mentions of other entities, add [[links]]
+  - Priority order: Sessions → Locations → Factions → NPCs → Campaign Core
+
+- [x] [23:30 → 00:15] Run verification sub-agent for missed wikilinks
+  - Context: Double-check no entity references were missed
+  - Method: Task tool with subagent_type="general-purpose"
+  - Agent task: "Review all markdown files, check WIKI_INDEX.md, report any entity mentions without [[wikilinks]]"
+  - Results: 85-90% completeness, identified specific gaps (Geist/Kaelborn need aliases)
+  - Report: Agent found most issues are NPC names with role descriptions in WIKI_INDEX
+  - Follow-up needed: Add entity aliases for "Geist" → "Geist (Bandit Lieutenant)", etc.
+
 ## 📋 Future Topics
 
 ### From Previous Session (Dec 14)

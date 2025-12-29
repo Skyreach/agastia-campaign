@@ -62,7 +62,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 ## Relationships
 
 ### Manipulator
-- **Octavia (Subject #8):** Sees her as philosophical advisor and fellow visionary; completely unaware she's using him as tool for Decimate Project
+- **Octavia (Subject #8):** Sees her as philosophical advisor and fellow visionary; completely unaware she's using him as tool for [[Decimate Project]]
 
 ### Warband
 - **2 Giant Lieutenants:** Trusted commanders of his forces
@@ -71,13 +71,13 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 
 ### Adversaries
 - **Coastal settlements:** Raids them for resources, sees inhabitants as "chaotic" elements to be controlled
-- **Merit Council:** Views as corrupt system maintaining disorder
-- **Ian/Rakash:** Possesses giant's axe that Ian seeks
+- **[[Merit Council]]:** Views as corrupt system maintaining disorder
+- **[[Ian/Rakash]]:** Possesses giant's axe that Ian seeks
 
 ### Former Self
 - **Past Krythak:** Once Lawful Good storm giant who valued justice and protection of weak; corruption has twisted these values into tyranny
 
-## The Storm Giant Warband
+## The [[Storm Giant Warband]]
 
 ### Force Composition
 **Total Force: ~25-30 Combatants**
@@ -154,7 +154,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Convinced Krythak that "order through strength" is necessary
 - Manipulated his desire for justice into tyrannical control
 - Provided magical support and tactical advice
-- Uses him as tool for Decimate Project goals
+- Uses him as tool for [[Decimate Project]] goals
 
 **Current Belief:**
 - Krythak believes he's building "perfect ordered society"
@@ -165,8 +165,8 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 
 ### Octavia's Goals
 **Using Krythak to:**
-- Destabilize Merit Council coastal holdings
-- Create chaos for Decimate Project experiments
+- Destabilize [[Merit Council]] coastal holdings
+- Create chaos for [[Decimate Project]] experiments
 - Test warband tactics for larger operations
 - Gather resources and intelligence
 - Distract authorities from other Decimate activities
@@ -174,11 +174,11 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 **Relationship:**
 - Octavia visits camp periodically
 - Provides magical aid and strategic counsel
-- Krythak doesn't know about Decimate Project
+- Krythak doesn't know about [[Decimate Project]]
 - Believes Octavia is fellow visionary
 - Would be devastated to learn he's being used
 
-## Connection to Ian/Rakash
+## Connection to [[Ian/Rakash]]
 
 ### The Giant's Axe
 **Krythak's Weapon:**
@@ -203,7 +203,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 1. **Military Assault:** Gather army, attack war camp (high casualties)
 2. **Stealth Mission:** Infiltrate, steal axe (very difficult)
 3. **Mercenary Allies:** Hire experienced adventurers
-4. **Merit Council Support:** Official military operation
+4. **[[Merit Council]] Support:** Official military operation
 5. **Diplomatic Challenge:** Duel Krythak for axe (likely death)
 6. **Octavia Route:** Discover manipulation, turn Krythak
 
@@ -239,7 +239,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 
 ### Krythak's Role
 - **Major Villain:** End-game boss for Ian's personal quest
-- **Octavia Tool:** Demonstrates Decimate Project manipulation
+- **Octavia Tool:** Demonstrates [[Decimate Project]] manipulation
 - **Moral Complexity:** Corrupted hero, not pure evil
 - **Military Challenge:** Requires party to think strategically
 
@@ -248,7 +248,7 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Krythak could be redeemed
 - Would turn against Octavia
 - Might release slaves, disband warband
-- Could become ally against Decimate Project
+- Could become ally against [[Decimate Project]]
 - Requires proof and persuasion (very difficult)
 
 **Warning:**
@@ -293,14 +293,14 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 ### Lonely Mountain Location
 **Geography:**
 - Visible from coastal settlements
-- Multi-day journey from Agastia
+- Multi-day journey from [[Agastia]]
 - Difficult mountainous terrain
 - Limited approach routes (tactical advantage)
 
 **Regional Impact:**
 - Coastal trade disrupted
 - Villages abandoned or fortified
-- Merit Council bounty posted (500gp for information)
+- [[Merit Council]] bounty posted (500gp for information)
 - Military hesitant to commit (high casualties expected)
 
 ### Future Hooks
@@ -308,11 +308,11 @@ related_entities: [Ian, Rakash, Octavia, Decimate Project, Lonely Mountain, Stor
 - Rescued slaves have camp information
 - Octavia's involvement hints at larger plot
 - Giant's axe may have additional significance
-- Other Decimate Project subjects may have similar tools
+- Other [[Decimate Project]] subjects may have similar tools
 
 ### Connection to Campaign
-- Demonstrates Decimate Project reach
+- Demonstrates [[Decimate Project]] reach
 - Shows Octavia's manipulation abilities
 - Provides military/tactical challenge
-- Connects to Merit Council regional politics
+- Connects to [[Merit Council]] regional politics
 - Personal quest for Ian's character development

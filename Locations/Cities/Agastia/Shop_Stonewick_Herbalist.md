@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 ---
 
-# Stonewick Herbalist
+# [[Stonewick Herbalist]]
 
 ## Overview
 
 **Type & Specialty:** Non-magical healing and herbal remedies - Affordable poultices, salves, antitoxins, and folk medicine passed through generations
 
-**Location:** Lower Residential District (Tier 5), corner shop near the community well, ground floor of converted residential building
+**Location:** [[Lower Residential District]] (Tier 5), corner shop near the community well, ground floor of converted residential building
 
 **Clientele:** Working-class families, laborers who can't afford magical healing, elderly seeking traditional remedies, those distrustful of magic
 
@@ -33,7 +33,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 **Background:**
 - Tier 5 resident for seventy years, born in this district
 - Learned herbalism from her grandmother, who learned from hers - unbroken lineage of healers
-- Raised six children (three still in Agastia, two moved to farms, one died in plague twenty years ago)
+- Raised six children (three still in [[Agastia]], two moved to farms, one died in plague twenty years ago)
 - Fourteen grandchildren scattered across the city
 - Survived chaos cult's early activities by strengthening community bonds
 - Taught Medicine skill to dozens of locals over the years (creates network of community healers)
@@ -189,9 +189,9 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 - **Grandchildren:** Three in city, two learning herbalism (succession plan)
 
 **Faction Ties:**
-- **Dispossessed:** Sympathetic - treats them without question or judgment
-- **Chaos Cult:** Unknown to Nessa but she's obstacle (strong community resists cult)
-- **Merit Council:** Mostly ignored, though some lower-tier members patronize shop
+- **[[Dispossessed]]:** Sympathetic - treats them without question or judgment
+- **[[Chaos Cult]]:** Unknown to Nessa but she's obstacle (strong community resists cult)
+- **[[Merit Council]]:** Mostly ignored, though some lower-tier members patronize shop
 - **Community Networks:** Unofficial leader of mutual aid system
 - **Temple Healers:** Professional respect despite different methods
 
@@ -209,7 +209,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 - Difficulty: Moderate (investigation, possible confrontation with polluter)
 
 **The Quarantine:**
-- Disease outbreak in Lower Residential District
+- Disease outbreak in [[Lower Residential District]]
 - Authorities want to quarantine entire district (trap residents inside)
 - Nessa needs help delivering medicine to sick, gathering supplies from outside
 - Players must sneak through quarantine or negotiate with authorities
@@ -222,7 +222,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 - Contains generations of herbal knowledge (irreplaceable)
 - Thief either doesn't understand value or specifically targeting community's healing ability
 - Recipe book has notes about unusual herbs with magical properties (real target)
-- Following trail reveals larger plot against Lower Residential District
+- Following trail reveals larger plot against [[Lower Residential District]]
 - Reward: Copied recipes (valuable reference), Medicine proficiency training for half cost, community legend status
 - Difficulty: Moderate (tracking thief, understanding motive, recovering book intact)
 
@@ -231,7 +231,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 - Would mean leaving district, abandoning family healing tradition
 - Nessa won't interfere with grandchild's choice but is heartbroken
 - Players might investigate Academy's true intentions or help negotiate compromise
-- Reveals Merit Council's interest in co-opting traditional knowledge
+- Reveals [[Merit Council]]'s interest in co-opting traditional knowledge
 - Alternative: Help Nessa find different apprentice, ensuring tradition continues
 - Reward: Deep personal connection with Nessa, understanding of Tier system's impact on families, potential apprentice ally
 - Difficulty: Low-Moderate (social interaction, investigation, negotiation)
@@ -287,7 +287,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 ### Integration with Campaign
 
 **Community Gateway:**
-- Nessa provides access to Lower Residential District trust
+- Nessa provides access to [[Lower Residential District]] trust
 - Earning her approval = earning community's acceptance
 - Opens doors to information, safe houses, local assistance
 - District residents will help those "Nessa's friends"
@@ -303,7 +303,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 - Challenges players' assumptions about "lesser" districts
 - Shows heroism isn't just combat - it's consistent care
 
-**Chaos Cult Resistance:**
+**[[Chaos Cult]] Resistance:**
 - Nessa's community work actively undermines cult
 - Protecting her protects district from infiltration
 - Her network provides early warning about suspicious activities
@@ -325,7 +325,7 @@ tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 
 **Teaching Opportunity:**
 - Medicine proficiency training includes cultural education
-- Learn about Lower Residential District life
+- Learn about [[Lower Residential District]] life
 - Understand Tier 5 community's values and struggles
 - Build empathy for residents Council ignores
 - Creates invested stake in district's welfare

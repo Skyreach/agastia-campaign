@@ -7,7 +7,7 @@ tags: [npc, decimate-project, subject8, drow, warlock, patron-level, ratterdan-m
 threat_level: Extreme
 ---
 
-# Octavia - Decimate Project Subject #8 (PATRON-LEVEL)
+# Octavia - [[Decimate Project]] Subject #8 (PATRON-LEVEL)
 
 **Octavia** is a drow warlock and Subject #8 - **one of the three patron-level subjects**. Age ~17-18, with ~7-8 years of service. Witch-like and mysterious, she is the most experienced field operative with dark magical powers and her own agendas.
 
@@ -31,25 +31,25 @@ threat_level: Extreme
 
 **Warlock Patron:** Entity that wanted the Heartstone awakened
 
-May betray Professor Zero if it serves her patron's goals
+May betray [[Professor Zero]] if it serves her patron's goals
 
 **Warlock Patron Options:**
 - Fey entity connected to Heartstone
 - Archfey who imprisoned the artifact
-- Professor Zero themselves (hidden patron)
+- [[Professor Zero]] themselves (hidden patron)
 - Unknown patron manipulating entire Project
 
 **Drow Implications:**
 - Kidnapped from Underdark or surface?
 - Underground network access
-- Connection to Josh's lost people plot?
+- Connection to [[Josh]]'s lost people plot?
 - Drow family/house may be searching
 
 **Plot Hooks:**
 - **First Decimate subject party encounters** (Session 1 or shortly after)
 - Could be ally or antagonist for Heartstone
 - Warlock patron's agenda conflicts with Zero
-- May recognize Josh's markings from Underdark lore
+- May recognize [[Josh]]'s markings from Underdark lore
 - Potential boss fight or uneasy alliance
 
 **Session 1 Integration:** Party recovers Heartstone, Octavia wants it. Conflict or negotiation opportunity.

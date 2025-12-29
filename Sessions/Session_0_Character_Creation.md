@@ -24,11 +24,11 @@ version: 1.0.0
 ### Characters Finalized
 
 All five player characters were created and approved:
-1. **Manny** - Half-Orc Eldritch Knight
-1. **Nikki/Biago** - Tiefling Arcane Trickster
-1. **Ian/Rakash** - Goblin Barbarian
-1. **Kyle/Nameless** - Rainbow Ranger/Rogue (homebrew race approved)
-1. **Josh** - Sorcerer with mysterious markings
+1. **[[Manny]]** - Half-Orc Eldritch Knight
+1. **[[Nikki]]/Biago** - Tiefling Arcane Trickster
+1. **[[Ian/Rakash]]** - Goblin Barbarian
+1. **[[Kyle/Nameless]]** - Rainbow Ranger/Rogue (homebrew race approved)
+1. **[[Josh]]** - Sorcerer with mysterious markings
 **Special Rules Established:**
 - All characters started at 1st level
 - Each character will receive one bonus feat during Session 1 (Heartstone discovery)
@@ -38,7 +38,7 @@ All five player characters were created and approved:
 
 **Pre-Existing Relationships:**
 - **Kyle saved Rakash:** Kyle's character rescued Rakash (Ian's goblin) from a dangerous situation in their shared background
-- **Manny and Nikki together:** Traveling companions or partners with established relationship
+- **[[Manny]] and [[Nikki]] together:** Traveling companions or partners with established relationship
 - **[Additional connections established during session]**
 **Player-Created Locations:**
 - **Italian Restaurant:** [Details to be developed]
@@ -50,7 +50,7 @@ All five player characters were created and approved:
 ### Campaign Decisions Made
 
 **System Modifications:**
-1. **3-Faction System:** Simplified to focus on Merit Council, Chaos Cult, and Dispossessed as primary factions (with Decimate Project and others as secondary)
+1. **3-Faction System:** Simplified to focus on [[Merit Council]], [[Chaos Cult]], and [[Dispossessed]] as primary factions (with [[Decimate Project]] and others as secondary)
 1. **3-2-1 Quest Structure:** Major arcs span three sessions, minor arcs two sessions, one-shot adventures as needed
 1. **Bastion Integration:** Character-focused downtime activities between adventures
 1. **Bonus Feat:** Each character will receive one additional feat during Session 1 (narrative reward)
@@ -63,7 +63,7 @@ All five player characters were created and approved:
 - **Player Contributions:** Ongoing world-building encouraged
 ### Central Conflict Established
 
-**The Steel Dragon:**
+**The [[Steel Dragon]]:**
 Players were introduced to the campaign's central antagonist:
 - Living multiple incarnations across time
 - Creating "artistic murders" that escalate to mass destruction
@@ -71,30 +71,30 @@ Players were introduced to the campaign's central antagonist:
 - Controlled/influenced by anonymous supporters across lifetimes
 - Represents merit without morality, ability without accountability
 **Supporting Elements:**
-- Chaos Cult working to corrupt and amplify the Dragon
-- Merit Council representing order vs. Dispossessed seeking equity
-- Professor Zero and the Decimate Project seeking the Dominion Evolution Codex
+- [[Chaos Cult]] working to corrupt and amplify the Dragon
+- [[Merit Council]] representing order vs. [[Dispossessed]] seeking equity
+- [[Professor Zero]] and the [[Decimate Project]] seeking the Dominion Evolution Codex
 - Giant clans and other external forces with mysterious agendas
 ### Character-Specific Elements
 
-**Manny (Half-Orc Eldritch Knight):**
+**[[Manny]] (Half-Orc Eldritch Knight):**
 - Mission #10: Connected to finding the Dominion Evolution Codex
-- Relationship with Nikki established
+- Relationship with [[Nikki]] established
 - [Additional background details from session]
-**Nikki/Biago (Tiefling Arcane Trickster):**
+**[[Nikki]]/Biago (Tiefling Arcane Trickster):**
 - Mission #8: Connected to finding the Dominion Evolution Codex
-- Traveling with Manny
+- Traveling with [[Manny]]
 - [Additional background details from session]
-**Ian/Rakash (Goblin Barbarian):**
+**[[Ian/Rakash]] (Goblin Barbarian):**
 - Saved by Kyle's character in backstory
 - [Additional background details from session]
-**Kyle/Nameless (Rainbow Ranger/Rogue):**
+**[[Kyle/Nameless]] (Rainbow Ranger/Rogue):**
 - Homebrew Rainbow race approved with mechanics
 - Rescued Rakash previously
 - [Additional background details from session]
-**Josh (Sorcerer):**
+**[[Josh]] (Sorcerer):**
 - Mysterious markings with campaign significance
-- Potential connection to Dominion Evolution Codex, Steel Dragon, or other mysteries
+- Potential connection to Dominion Evolution Codex, [[Steel Dragon]], or other mysteries
 - [Additional background details from session]
 ## Session 0 Outcomes Achieved
 
@@ -114,10 +114,10 @@ The party is prepared to begin their first adventure investigating the ruins of 
 **Player Engagement:**
 Players actively contributed to world-building, showing investment in collaborative storytelling. Their location and landmark contributions should be integrated into future sessions.
 **Character Connections:**
-The pre-existing relationships (Kyle-Rakash, Manny-Nikki) provide strong foundation. Additional connections developed during Session 0 create party cohesion.
+The pre-existing relationships (Kyle-Rakash, [[Manny]]-Nikki) provide strong foundation. Additional connections developed during Session 0 create party cohesion.
 **Homebrew Integration:**
 - Rainbow race mechanics finalized and balanced
-- Josh's mysterious markings set up as campaign mystery
+- [[Josh]]'s mysterious markings set up as campaign mystery
 - Bonus feat adds character customization without breaking balance
 - Bastion system provides downtime structure
 **Campaign Scope:**

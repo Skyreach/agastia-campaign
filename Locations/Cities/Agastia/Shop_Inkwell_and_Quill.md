@@ -16,7 +16,7 @@ tags: [commerce, scholar-quarter, scribe, books, research]
 
 **Type & Specialty:** Scribe shop and research services - copying documents, translation, calligraphy, rare ink formulations
 
-**Location:** Scholar Quarter (Tier 3), near the Archive of Lost Histories
+**Location:** [[Scholar Quarter]] (Tier 3), near the [[Archive of Lost Histories]]
 
 **Clientele:** Scholars, students, wealthy merchants needing official documents, wizards seeking spell scrolls
 
@@ -39,11 +39,11 @@ tags: [commerce, scholar-quarter, scribe, books, research]
 
 **Quest Hook - The Disputed Contract:**
 - **Need:** Two merchants are in legal dispute over contract terms. Aldwin copied the original but now both claim he made errors favoring the other party. His reputation is at stake.
-- **Problem:** Original contract was stolen from Merit Council archives. Aldwin needs someone to recover it to prove his copy is accurate.
+- **Problem:** Original contract was stolen from [[Merit Council]] archives. Aldwin needs someone to recover it to prove his copy is accurate.
 - **Reward:** In exchange for recovering the original and clearing his name, Aldwin will provide:
   - Free copying services (1 scroll/document per month for 6 months)
   - Translation services (any language he knows)
-  - Introduction to Archive of Lost Histories staff (DC reduction for research checks)
+  - Introduction to [[Archive of Lost Histories]] staff (DC reduction for research checks)
 - **Difficulty:** Moderate - requires investigation and possibly stealth/social skills. No combat expected unless thieves are encountered.
 
 ## Day-to-Day Operations
@@ -70,7 +70,7 @@ tags: [commerce, scholar-quarter, scribe, books, research]
 - **Translation:** Aldwin reads Common, Elvish, Dwarvish, Draconic
 - **Information:** Knows what other scholars are researching (discreetly)
 - **Spell Scrolls:** Can copy wizard spells if provided original (expensive)
-- **Legal Services:** Prepares official documents recognized by Merit Council
+- **Legal Services:** Prepares official documents recognized by [[Merit Council]]
 
 ## Services & Inventory
 
@@ -128,20 +128,20 @@ tags: [commerce, scholar-quarter, scribe, books, research]
 ## Connections
 
 **District Integration:**
-- Central to Scholar Quarter economy - students and researchers need his services constantly
-- Works closely with Archive of Lost Histories and University
+- Central to [[Scholar Quarter]] economy - students and researchers need his services constantly
+- Works closely with [[Archive of Lost Histories]] and University
 - Provides copies of important research for preservation
-- Merit Council recognizes his copies as legally binding
+- [[Merit Council]] recognizes his copies as legally binding
 
 **Related NPCs:**
-- **Veridian Scrollkeeper:** Regular customer, commissions copies of fragile ancient texts
+- **[[Veridian Scrollkeeper]]:** Regular customer, commissions copies of fragile ancient texts
 - **University Professors:** Commission student thesis copies
-- **Merit Council Clerks:** Refer people needing official documents
-- **Mirella Stonemark:** Occasional competitor (she sells rare books, he copies them)
+- **[[Merit Council]] Clerks:** Refer people needing official documents
+- **[[Mirella Stonemark]]:** Occasional competitor (she sells rare books, he copies them)
 
 **Faction Ties:**
-- **Merit Council:** Approved scribe for official documents
-- **Scholar Quarter Guild:** Member in good standing
+- **[[Merit Council]]:** Approved scribe for official documents
+- **[[Scholar Quarter]] Guild:** Member in good standing
 - No criminal ties - his reputation is spotless
 
 ## DM Notes
@@ -151,7 +151,7 @@ tags: [commerce, scholar-quarter, scribe, books, research]
 - Information gathering: Aldwin knows what scholars are researching
 - Spell scroll source for wizards
 - Disputed contract quest clears his name and provides ongoing benefits
-- Map to Garrek's Falls available if party asks right questions (connection to Manny's Codex quest)
+- Map to Garrek's Falls available if party asks right questions (connection to [[Manny]]'s Codex quest)
 
 **Personality Quirks:**
 - Always has ink on his fingers, even freshly washed

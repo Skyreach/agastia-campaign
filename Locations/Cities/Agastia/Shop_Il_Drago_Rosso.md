@@ -10,17 +10,17 @@ version: "1.0.0"
 tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-point, party-connection]
 ---
 
-# Il Drago Rosso
+# [[Il Drago Rosso]]
 
 ## Overview
 
 **Type & Specialty:** Authentic Italian restaurant and comfortable inn - exceptional food that brings people together across faction lines
 
-**Location:** Merchant District (Tier 4), prominent corner location on main thoroughfare near The Exchange
+**Location:** [[Merchant District]] (Tier 4), prominent corner location on main thoroughfare near The Exchange
 
 **Clientele:** Everyone - from Tier 2 nobles to Tier 5 workers. Merit levels mix here freely, united by appreciation for excellent food.
 
-**Reputation:** "If you want to meet someone without starting a war, meet them at Il Drago Rosso." Sacred neutral ground where faction politics stop at the door. Known citywide for the best Italian food in Agastia and the Biagos' uncanny ability to keep the peace.
+**Reputation:** "If you want to meet someone without starting a war, meet them at [[Il Drago Rosso]]." Sacred neutral ground where faction politics stop at the door. Known citywide for the best Italian food in [[Agastia]] and the Biagos' uncanny ability to keep the peace.
 
 **Atmosphere:** Warm, welcoming, alive with conversation and aromas. Red-checked tablecloths, candles in wine bottles, kitchen visible through archway. Papa's booming laughter mingles with sizzling garlic and rich tomato sauce. Mama moves through tables like a general surveying her domain. Everyone feels welcome, but everyone knows the rules: no violence, no weapons drawn, no faction business that disrupts the meal.
 
@@ -31,32 +31,32 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 **Faction:** None officially (Disposition: Carefully maintained strict neutrality)
 
 **Background:**
-- Immigrated to Agastia 35 years ago with nothing but family recipes and ambition
-- Built Il Drago Rosso from a single-table café to Merchant District institution
+- Immigrated to [[Agastia]] 35 years ago with nothing but family recipes and ambition
+- Built [[Il Drago Rosso]] from a single-table café to [[Merchant District]] institution
 - Remembers every customer, their favorite dishes, and family histories
 - Developed reputation for neutrality through decades of refusing to weaponize what he knows
 - Fiercely protective of the trattoria as sanctuary where all are welcome
 
 **Goals:**
 - Short-term: Keep the peace among increasingly tense faction representatives dining here
-- Long-term: Protect Nikki from the dangerous knowledge the family possesses, see her thrive
+- Long-term: Protect [[Nikki]] from the dangerous knowledge the family possesses, see her thrive
 
 **Personality:**
 - Gregarious and warm - makes everyone feel like family
 - Observant beyond belief - notices everything, forgets nothing
 - Tactful diplomat - defuses tension with humor and pasta
 - Deceptively shrewd - plays the jovial host while reading every power dynamic
-- Protective father - worries constantly about Nikki's adventuring career
+- Protective father - worries constantly about [[Nikki]]'s adventuring career
 
 **Appearance:** Human male, early 60s, robust build from decades of good eating and hard work. Always in flour-dusted apron, salt-and-pepper hair receding, magnificent mustache. Expressive hands gesture constantly while talking. Warm brown eyes that miss nothing despite the cheerful demeanor. Moves with surprising grace for his size, navigating crowded dining room like a dance.
 
 **Interaction Hooks:**
-- Would seek player help with: Protecting the neutral ground status if faction threatens it, investigating mysterious customer who makes him uneasy, resolving supplier issues affecting the restaurant, protecting Nikki when her adventures get dangerous
-- Reluctance level: Reluctant but trusting (won't involve outsiders unless absolutely necessary, but trusts Nikki's judgment about her companions)
-- Can offer players: Information from overheard conversations (carefully filtered), neutral meeting ground for sensitive negotiations, introduction to customers across all faction lines, the best meal in Agastia, emergency sanctuary if they need to disappear briefly
+- Would seek player help with: Protecting the neutral ground status if faction threatens it, investigating mysterious customer who makes him uneasy, resolving supplier issues affecting the restaurant, protecting [[Nikki]] when her adventures get dangerous
+- Reluctance level: Reluctant but trusting (won't involve outsiders unless absolutely necessary, but trusts [[Nikki]]'s judgment about her companions)
+- Can offer players: Information from overheard conversations (carefully filtered), neutral meeting ground for sensitive negotiations, introduction to customers across all faction lines, the best meal in [[Agastia]], emergency sanctuary if they need to disappear briefly
 
 **Party Connections:**
-- Potential bonds with: Nikki (daughter - complex mix of pride and worry), Manny (respects straightforward nature, reminds him of honest workers), all party members (treats them like extended family once he knows they're Nikki's companions)
+- Potential bonds with: [[Nikki]] (daughter - complex mix of pride and worry), [[Manny]] (respects straightforward nature, reminds him of honest workers), all party members (treats them like extended family once he knows they're [[Nikki]]'s companions)
 - Relationship type: Protective father figure → Could evolve to Trusted confidant / Information source / Emergency ally
 
 ### Mama Biago
@@ -64,16 +64,16 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 **Faction:** None officially (Disposition: Fiercely protective neutrality)
 
 **Background:**
-- The true architect of Il Drago Rosso's success and neutral ground status
+- The true architect of [[Il Drago Rosso]]'s success and neutral ground status
 - Possesses uncanny ability to read people - knows their intentions before they act
 - Established and rigidly enforces the "no violence" policy through force of personality alone
 - Has defused countless potential conflicts with a single look or word
 - Knows more secrets than most Council members but never weaponizes knowledge
-- Source of the family recipes that make Il Drago Rosso legendary
+- Source of the family recipes that make [[Il Drago Rosso]] legendary
 
 **Goals:**
 - Short-term: Maintain the trattoria's neutral ground status during increasing faction tensions
-- Long-term: Keep family safe from those who might target them for what they know, ensure Nikki has refuge to return to
+- Long-term: Keep family safe from those who might target them for what they know, ensure [[Nikki]] has refuge to return to
 
 **Personality:**
 - Quietly commanding - rarely raises voice but always obeyed
@@ -85,12 +85,12 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 **Appearance:** Human female, late 50s, compact and strong from decades in the kitchen. Steel-gray hair in tight bun, flour always on her cheek. Penetrating dark eyes that see through deceptions. Wears simple dress with pristine white apron (how she keeps it clean is a mystery). Small in stature but radiates authority that makes even Tier 2 nobles mind their manners. Moves with precise efficiency, every motion purposeful.
 
 **Interaction Hooks:**
-- Would seek player help with: Direct threats to family or trattoria, situations where her neutrality prevents her from acting, protecting Nikki from dangers Mama can't handle directly, investigating whether specific customer is threat to sanctuary
+- Would seek player help with: Direct threats to family or trattoria, situations where her neutrality prevents her from acting, protecting [[Nikki]] from dangers Mama can't handle directly, investigating whether specific customer is threat to sanctuary
 - Reluctance level: Extremely reluctant but decisive (will only ask when situation is critical, but expects immediate action once she does)
-- Can offer players: The most valuable information in Agastia (parceled out carefully), protection within the trattoria (her word is law here), reading of NPCs' true intentions, emergency sanctuary for family members, access to customers she trusts
+- Can offer players: The most valuable information in [[Agastia]] (parceled out carefully), protection within the trattoria (her word is law here), reading of NPCs' true intentions, emergency sanctuary for family members, access to customers she trusts
 
 **Party Connections:**
-- Potential bonds with: Nikki (daughter - deep love mixed with fear for her safety), all party members (evaluates them constantly to determine if they're good for Nikki), anyone who appreciates the sanctuary she maintains
+- Potential bonds with: [[Nikki]] (daughter - deep love mixed with fear for her safety), all party members (evaluates them constantly to determine if they're good for Nikki), anyone who appreciates the sanctuary she maintains
 - Relationship type: Protective matriarch → Could evolve to Dangerous ally when her family is threatened / Oracle of social intelligence / Last resort for critical information
 
 ## Day-to-Day Operations
@@ -103,7 +103,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 
 **Typical Day:**
 - Morning: Papa at The Exchange selecting ingredients, Mama supervising prep
-- Lunch (11am-3pm): Busy with Merchant District workers, quick business meals
+- Lunch (11am-3pm): Busy with [[Merchant District]] workers, quick business meals
 - Afternoon lull (3pm-5pm): Staff meal, prep for dinner, occasional private meetings
 - Dinner (5pm-11pm): Peak hours, faction representatives quietly dining, family celebrations, romantic meals
 - Late night: Sensitive meetings in private room, Biagos evaluating day's conversations
@@ -111,9 +111,9 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 **Regular Customers:**
 - **Faction Representatives:** Using neutral ground for unofficial negotiations
 - **Merchant Families:** Celebrating deals, hosting business dinners
-- **Merit Council Officials:** Off-duty meals where they can relax without politics
+- **[[Merit Council]] Officials:** Off-duty meals where they can relax without politics
 - **Cross-Tier Couples:** One of few places different merit levels can dine together comfortably
-- **Adventurers:** Word spreads that Nikki's family runs best restaurant in city
+- **Adventurers:** Word spreads that [[Nikki]]'s family runs best restaurant in city
 - **Everyone:** The food alone brings customers from all tiers and factions
 
 **Real Uses:**
@@ -164,7 +164,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Antipasto Misto (6sp) - Selection of cured meats and cheeses
 
 **Primi (First Course - Pasta/Risotto):**
-- Spaghetti Aglio e Olio (3sp) - Garlic, olive oil, chili flakes (Nikki's childhood favorite)
+- Spaghetti Aglio e Olio (3sp) - Garlic, olive oil, chili flakes ([[Nikki]]'s childhood favorite)
 - Fettuccine Alfredo (5sp) - Cream, butter, parmesan
 - Risotto ai Funghi (6sp) - Mushroom risotto, white wine
 - Lasagna della Casa (7sp) - Mama's secret recipe (legendarily good)
@@ -206,14 +206,14 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 ## Connections
 
 **District Integration:**
-- Cornerstone of Merchant District social life
+- Cornerstone of [[Merchant District]] social life
 - Neutral ground recognized by all factions (informal but absolute)
 - Hub for cross-faction communication without official channels
 - Suppliers rely on Papa's business (he's loyal customer and pays fairly)
 - Neighboring shops refer customers (and know to respect the sanctuary)
 
 **Related NPCs:**
-- **Nikki (Daughter):** Their pride and constant worry, adventuring career concerns them
+- **[[Nikki]] (Daughter):** Their pride and constant worry, adventuring career concerns them
 - **Marcus Brightcoin:** Respectful relationship, occasional information exchange over meals (both careful not to compromise neutrality)
 - **Kessa Ironfoot (Wanderer's Pack):** Regular customer, exchanges adventuring tales with Papa
 - **Guildmaster Vex Thornton:** Dines here frequently, respects the neutral ground
@@ -222,9 +222,9 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - **Inspector Crane (Merit Council):** Regular customer, knows Biagos see everything, respects their neutrality
 
 **Faction Ties:**
-- **Merit Council:** Members dine here, appreciate the neutral ground
-- **Chaos Cult:** Unknown cells may use it for meetings (Biagos would be horrified if they knew)
-- **Dispossessed:** Occasionally Mama "forgets" to charge someone who's hungry
+- **[[Merit Council]]:** Members dine here, appreciate the neutral ground
+- **[[Chaos Cult]]:** Unknown cells may use it for meetings (Biagos would be horrified if they knew)
+- **[[Dispossessed]]:** Occasionally Mama "forgets" to charge someone who's hungry
 - **All Factions:** Tacit agreement that Delizioso is off-limits for recruitment, violence, or pressure
 - **The Biagos:** Maintain absolute neutrality by serving everyone, threatening no one, and never weaponizing knowledge
 
@@ -239,7 +239,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Difficulty: Moderate-High (must preserve neutral ground reputation while stopping threat)
 
 **Mama's Intuition:**
-- Mama senses something wrong about new customer (Chaos Cult member)
+- Mama senses something wrong about new customer ([[Chaos Cult]] member)
 - Too dangerous for her to act without compromising neutrality
 - Asks party to investigate discreetly
 - Reward: Critical intelligence about cult operations, Mama's ongoing "readings" of NPCs
@@ -254,13 +254,13 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 
 **The Family Secret:**
 - Someone discovers how much the Biagos know, tries to exploit or silence them
-- Nikki's family in danger from their own accumulated knowledge
+- [[Nikki]]'s family in danger from their own accumulated knowledge
 - Party must protect them without the Biagos abandoning neutrality
 - Reward: Access to the Biagos' most sensitive intelligence, permanent sanctuary status
 - Difficulty: High (protecting them without compromising what makes them valuable)
 
-**Nikki's Homecoming:**
-- Party brings Nikki home between adventures
+**[[Nikki]]'s Homecoming:**
+- Party brings [[Nikki]] home between adventures
 - Mama reads them all like books, approves or disapproves
 - Papa insists on feeding them, hearing all the stories
 - Opportunity for: Character development, family dynamics, free information, refuge
@@ -274,8 +274,8 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Gestures so expansively he occasionally knocks things over
 - Calls everyone "my friend" and means it
 - Jokes loudly to defuse tension before violence can start
-- Quietly terrified every time Nikki leaves on an adventure
-- Keeps family photo shrine behind bar (Nikki's baby pictures visible)
+- Quietly terrified every time [[Nikki]] leaves on an adventure
+- Keeps family photo shrine behind bar ([[Nikki]]'s baby pictures visible)
 
 **Mama Biago:**
 - Can silence a room with a single look
@@ -283,7 +283,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Never explains how she knows things - she just knows
 - Feeds people as expression of love (refusing her food is insulting)
 - Extremely superstitious (salt over shoulder, no hats on tables, etc.)
-- Watches Nikki's friends like a hawk - evaluating if they're worthy
+- Watches [[Nikki]]'s friends like a hawk - evaluating if they're worthy
 - Has never been seen angry, only disappointed (which is worse)
 
 ### Secret Information
@@ -307,9 +307,9 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Letters contain enough damaging information to start civil war
 - Don't want to use this (would destroy the peace they've built)
 - Several faction leaders know about the letters (prevents direct action)
-- Letters are with trusted lawyer in Government Complex
+- Letters are with trusted lawyer in [[Government Complex]]
 
-**The Chaos Cult Problem:**
+**The [[Chaos Cult]] Problem:**
 - At least three cult members have used Delizioso for meetings
 - Biagos don't know (cultists skilled at deception)
 - Mama's intuition flagged them as "wrong" but couldn't identify why
@@ -318,7 +318,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
   - Abandon neutrality to fight cult (destroying what they've built)?
   - Find third option (help party without officially taking sides)?
 
-**Nikki's Inheritance:**
+**[[Nikki]]'s Inheritance:**
 - Both parents hope she'll eventually take over the restaurant
 - Fear her adventuring will get her killed before that happens
 - The accumulated knowledge is burden they don't want to pass to her
@@ -326,7 +326,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Conflicted about her finding her own path vs. continuing family legacy
 
 **The First Customer:**
-- Very first customer 35 years ago was Merit Council member
+- Very first customer 35 years ago was [[Merit Council]] member
 - Made promise that Delizioso would always be neutral ground
 - That Council member is now elderly, still honors the promise
 - Their retirement/death might end the protected status
@@ -335,18 +335,18 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 ### Integration with Campaign
 
 **Immediate Utility:**
-- Party connection through Nikki (automatic access and trust)
+- Party connection through [[Nikki]] (automatic access and trust)
 - Neutral ground for faction meetings party needs to arrange
 - Safe house if party needs to disappear briefly
 - Information source (carefully filtered through Biagos' neutrality)
-- Best food in Agastia (morale boost, mechanical long rest benefits)
+- Best food in [[Agastia]] (morale boost, mechanical long rest benefits)
 
 **Progressive Relationship:**
-- Initially: Nikki's family, welcoming but evaluating party
+- Initially: [[Nikki]]'s family, welcoming but evaluating party
 - Early trust: Free meals, casual information, social introductions
 - Established: Private room access, sensitive message delivery, Mama's readings
 - Deep trust: Critical intelligence shared, sanctuary during crises, protection offered
-- Family: Treated as Nikki's extended family, Biagos will take risks for them
+- Family: Treated as [[Nikki]]'s extended family, Biagos will take risks for them
 
 **Faction Complexity:**
 - Biagos' neutrality creates safe space in faction conflicts
@@ -354,25 +354,25 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 - Party's relationship with Biagos signals to factions that party can be trusted for negotiations
 - Being seen here frequently establishes party as "neutral actors" in city politics
 
-**Chaos Cult Revelation:**
+**[[Chaos Cult]] Revelation:**
 - Eventually discovering cult used Delizioso for meetings
 - Biagos' horror at unknowingly aiding chaos
 - Moral crisis about neutrality vs. fighting existential threat
 - Party can help them navigate this without abandoning what makes them special
 - Mama's intuition becomes weapon against cult (she can identify them now)
 
-**Nikki's Family Dynamics:**
+**[[Nikki]]'s Family Dynamics:**
 - Parents' worry about her adventuring creates character moments
 - Mama's evaluation of party (are they good for her daughter?)
-- Papa's stories about Nikki growing up
-- Family expectations vs. Nikki's independence
+- Papa's stories about [[Nikki]] growing up
+- Family expectations vs. [[Nikki]]'s independence
 - Protection of family home/legacy becomes personal stake for party
 
 **The Sanctuary Under Siege:**
 - As faction tensions escalate, neutral ground becomes more valuable
 - And more threatened by those who want to eliminate negotiation options
 - Party may need to defend Delizioso (physically or politically)
-- Success preserves one of the few spaces in Agastia where peace still exists
+- Success preserves one of the few spaces in [[Agastia]] where peace still exists
 
 **Information Economy:**
 - Biagos have information but won't sell it

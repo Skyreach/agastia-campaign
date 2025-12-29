@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [commerce, dock-district, weapons, armor, maritime, salvage, black-market]
 ---
 
-# Tidecaller Armory
+# [[Tidecaller Armory]]
 
 ## Overview
 
 **Type & Specialty:** Maritime weapons, salvaged armor, and waterproofing services - specialized combat gear for seafaring life and those who can't afford pristine equipment
 
-**Location:** Dock District (Tier 6), near the waterfront between Saltwind General Supply and The Rusty Anchor Tavern
+**Location:** [[Dock District]] (Tier 6), near the waterfront between [[Saltwind General Supply]] and The Rusty Anchor Tavern
 
 **Clientele:** Dock workers, ship guards, salvage crews, bounty hunters, fallen mercenaries, anyone needing weapons on a tight budget
 
@@ -39,7 +39,7 @@ tags: [commerce, dock-district, weapons, armor, maritime, salvage, black-market]
 **Motivation:** Once a respected mercenary sergeant, Margret was dishonorably discharged after refusing an order to burn a village she knew held only civilians. She chose principles over status. Now she arms those the city overlooks and watches for chances to expose the corruption that validates atrocities while punishing honor.
 
 **Quest Hook - The Corruption Records:**
-- **Need:** Margret has been quietly investigating the mercenary company that destroyed her career. She's learned they falsified mission reports to cover war crimes, with Merit Council oversight turning a blind eye in exchange for kickbacks.
+- **Need:** Margret has been quietly investigating the mercenary company that destroyed her career. She's learned they falsified mission reports to cover war crimes, with [[Merit Council]] oversight turning a blind eye in exchange for kickbacks.
 - **Problem:** She's traced evidence to a specific Council clerk who maintains duplicate ledgers. The real records would expose both the mercenary company and complicit Council members, but they're kept in the Civic Archives under guard.
 - **Reward:** In exchange for securing copies of the genuine records:
   - 25% permanent discount on all weapons and armor
@@ -171,17 +171,17 @@ tags: [commerce, dock-district, weapons, armor, maritime, salvage, black-market]
 - **Former Mercenaries:** Network of fallen fighters Margret maintains contact with, potential allies
 
 **Faction Ties:**
-- **Dispossessed (Passive Sympathy):** Margret exemplifies fallen-but-fighting spirit, helps those cast down by merit system
+- **[[Dispossessed]] (Passive Sympathy):** Margret exemplifies fallen-but-fighting spirit, helps those cast down by merit system
 - **Tidebreakers (Secret Support):** Trains dock workers in self-defense, arms those protecting community from exploitation
 - **Smuggler's Guild (Business Relationship):** Margret fences goods and connects buyers with restricted items, mutually profitable
 - **Mercenary Companies (Hostile):** Margret actively works against companies that commit atrocities, especially her former employer
-- **Merit Council (Antagonistic):** Seeks to expose corruption that validates war crimes while punishing honor
+- **[[Merit Council]] (Antagonistic):** Seeks to expose corruption that validates war crimes while punishing honor
 
 ## DM Notes
 
 **Plot Hooks:**
 - Essential source for maritime equipment before sea travel
-- Corruption records quest provides leverage against Merit Council
+- Corruption records quest provides leverage against [[Merit Council]]
 - Black market access enables players to fence stolen goods or acquire restricted items
 - Margret's intelligence network reveals dock district plots and dangers
 - Self-defense training sessions could be targeted by those seeking to suppress organization
@@ -197,10 +197,10 @@ tags: [commerce, dock-district, weapons, armor, maritime, salvage, black-market]
 
 **Connection to Campaigns:**
 - Can outfit party for sea travel or underwater missions
-- Corruption records quest ties into broader Merit Council critique
+- Corruption records quest ties into broader [[Merit Council]] critique
 - Margret's network provides dock district contacts and information
 - Black market services enable morally ambiguous play options
-- Fallen-but-fighting theme resonates with Dispossessed faction storyline
+- Fallen-but-fighting theme resonates with [[Dispossessed]] faction storyline
 - Training services provide mechanical character advancement opportunities
 
 **Combat Stats (If Needed):**

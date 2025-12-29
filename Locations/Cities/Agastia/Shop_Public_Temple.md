@@ -16,7 +16,7 @@ tags: [religious, scholar-quarter, healing, divine-magic, community, sanctuary]
 
 **Type & Specialty:** Public temple offering accessible divine healing, prayer services, and spiritual guidance - a community sanctuary representing multiple faiths under one roof
 
-**Location:** Scholar Quarter (Tier 4), near the district border with Merchant District, on Temple Plaza alongside smaller faith shrines
+**Location:** [[Scholar Quarter]] (Tier 4), near the district border with [[Merchant District]], on Temple Plaza alongside smaller faith shrines
 
 **Clientele:** Common folk, adventurers, scholars, those seeking spiritual guidance, people in need of healing who cannot afford the Grand Cathedral
 
@@ -185,25 +185,25 @@ The temple's main hall features dedicated alcoves for different deities:
 ## Connections
 
 **District Integration:**
-- Spiritual center for Scholar Quarter's common residents
+- Spiritual center for [[Scholar Quarter]]'s common residents
 - Works with nearby herbalist shops (refer non-magical cases)
 - Coordinates with Scholar's Guild on theological research
-- Merchant District overflow uses this temple (Grand Cathedral too expensive)
+- [[Merchant District]] overflow uses this temple (Grand Cathedral too expensive)
 
 **Related NPCs:**
 - **Cardinal Theron (Grand Cathedral):** Respectful but distant relationship - Theron appreciates Aldric's community work but disagrees with multi-faith approach
-- **Merit Council representatives:** Respect sanctuary tradition even when inconvenient
+- **[[Merit Council]] representatives:** Respect sanctuary tradition even when inconvenient
 - **Local guard captains:** Informal arrangement - temple treats injured guards at reduced cost
 - **Herbalist shops:** Cross-referrals for cases suited to each specialty
 
 **Faction Ties:**
-- **Temple Council of Agastia:** Member in good standing (coordinates with other faiths)
+- **Temple Council of [[Agastia]]:** Member in good standing (coordinates with other faiths)
 - **Community Aid Network:** Informal alliance with charity organizations
 - **No political allegiances:** Neutral ground - serves everyone regardless of faction
 
 **Sanctuary Precedents:**
 - Has sheltered political dissidents, victims of false accusations, refugees from persecution
-- Merit Council reluctantly respects sanctuary tradition (ancient city law)
+- [[Merit Council]] reluctantly respects sanctuary tradition (ancient city law)
 - Brother Aldric has faced pressure but never yielded temple protection
 
 ## Mechanical Benefits
@@ -233,18 +233,18 @@ The temple's main hall features dedicated alcoves for different deities:
 
 **Information Network:**
 - Common folk trust Brother Aldric with information they'd never tell authorities
-- Hears rumors about: Dispossessed activity, criminal operations, corrupt officials, community needs
+- Hears rumors about: [[Dispossessed]] activity, criminal operations, corrupt officials, community needs
 - Won't betray confidences but will guide party toward helping those in need
 
 **Faction Relationships:**
-- **Chaos Cult:** Would love to corrupt or discredit this symbol of community faith
-- **Dispossessed:** Some members seek shelter/healing here; Aldric sympathetic to their cause
-- **Merit Council:** Tension over sanctuary tradition but grudging respect
-- **Decimate Project:** Unknown, but temple's community knowledge might detect unusual activity
+- **[[Chaos Cult]]:** Would love to corrupt or discredit this symbol of community faith
+- **[[Dispossessed]]:** Some members seek shelter/healing here; Aldric sympathetic to their cause
+- **[[Merit Council]]:** Tension over sanctuary tradition but grudging respect
+- **[[Decimate Project]]:** Unknown, but temple's community knowledge might detect unusual activity
 
 **Plot Hooks Beyond Main Quest:**
 - Someone claiming sanctuary is actually guilty - party must decide whether to respect temple tradition
-- Disease outbreak in Scholar Quarter - temple overwhelmed, needs help
+- Disease outbreak in [[Scholar Quarter]] - temple overwhelmed, needs help
 - Corrupt official tries to violate sanctuary to arrest political dissident
 - Ancient holy relic stored in temple's hidden reliquary becomes target of theft
 - Young acolyte shows signs of unusual divine power - touched by deity or something darker?
@@ -254,7 +254,7 @@ The temple's main hall features dedicated alcoves for different deities:
 **Personality Quirks:**
 - Quotes proverbs from various faiths (sometimes mixes them humorously)
 - Insists on sharing meals with visitors (believes breaking bread builds trust)
-- Absolutely unyielding on sanctuary rights (will defy Merit Council if needed)
+- Absolutely unyielding on sanctuary rights (will defy [[Merit Council]] if needed)
 - Keeps detailed records of everyone helped (remembers names, circumstances years later)
 - Gets emotional when charity fund helps someone (never lost sense of why this matters)
 
@@ -307,7 +307,7 @@ The temple's main hall features dedicated alcoves for different deities:
 
 **Secrets:**
 - Brother Aldric once denied sanctuary to a criminal who later turned out to be innocent (haunts him)
-- The temple sits on ancient holy ground - pre-dates current Agastia (minor ley line convergence)
+- The temple sits on ancient holy ground - pre-dates current [[Agastia]] (minor ley line convergence)
 - One of the alcoves contains a dormant artifact sacred to an ancient, nearly forgotten deity
 - Aldric's adventuring past includes a dark moment he atoned for by founding this temple
 - The multi-faith approach is partly personal (he's not sure which deity answered his prayers during his crisis)

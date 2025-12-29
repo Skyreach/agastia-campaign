@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject5, goliath, barbarian]
 threat_level: High
 ---
 
-# Quincy - Decimate Project Subject #5
+# Quincy - [[Decimate Project]] Subject #5
 
-**Quincy** is a goliath barbarian and Subject #5, with ~5 years of service. Age ~15 (large for age). Physical powerhouse of the Decimate Project. Immense strength, possible gentle giant or controlled berserker.
+**Quincy** is a goliath barbarian and Subject #5, with ~5 years of service. Age ~15 (large for age). Physical powerhouse of the [[Decimate Project]]. Immense strength, possible gentle giant or controlled berserker.
 
 **Appearance:** Goliath build (7+ feet tall), mountain/tribal markings, intimidating presence despite young age.
 
@@ -35,8 +35,8 @@ threat_level: High
 - Most physically imposing subject
 - Internal conflict: rage vs. loyalty to Zero
 - Could be first to break free
-- Protective instinct toward younger subjects (Manny, Nikki)
+- Protective instinct toward younger subjects ([[Manny]], Nikki)
 
 **Giant Connection:** Subject specializing in strength, Rakash hunting giants, Ratterdan giant attack - potential intersection
 
-**Current Status:** Location unknown, likely physical/combat missions, presumed loyal to Professor Zero
+**Current Status:** Location unknown, likely physical/combat missions, presumed loyal to [[Professor Zero]]

@@ -16,9 +16,9 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 
 **Type & Specialty:** Underground inn and unofficial safe house - lodging for those who can't (or won't) stay in upper tiers, no questions asked
 
-**Location:** The Depths (Tier 7), accessed through unmarked door in abandoned warehouse basement, known only to locals
+**Location:** [[The Depths]] (Tier 7), accessed through unmarked door in abandoned warehouse basement, known only to locals
 
-**Clientele:** Dispossessed, fugitives (not all guilty), people hiding from someone, underground network members, anyone needing to disappear for a while
+**Clientele:** [[Dispossessed]], fugitives (not all guilty), people hiding from someone, underground network members, anyone needing to disappear for a while
 
 **Reputation:** "If you need to not be found, go see Senna." Absolute discretion. No one talks about who stays at The Hidden Door. Ever.
 
@@ -26,7 +26,7 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 
 ## Proprietor
 
-**Senna Darkwell** - Human female, age unclear (40s-50s?), former Dispossessed leader (current status: complicated)
+**Senna Darkwell** - Human female, age unclear (40s-50s?), former [[Dispossessed]] leader (current status: complicated)
 
 **Personality:**
 - Fiercely protective of guests - their secrets die with her
@@ -35,18 +35,18 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 
 **Appearance:** Dark skin, graying black hair in tight braids, one clouded eye (old injury), strong build. Dresses in dark practical clothing. Moves silently despite size. Always has at least two knives visible (more hidden).
 
-**Motivation:** The Depths saved her life when she had nothing. Now she provides the same sanctuary for others. Believes everyone deserves a place to sleep safely, no matter what brought them there.
+**Motivation:** [[The Depths]] saved her life when she had nothing. Now she provides the same sanctuary for others. Believes everyone deserves a place to sleep safely, no matter what brought them there.
 
 **Quest Hook - The Fugitive's Dilemma:**
-- **Need:** A guest named Darin is hiding at The Hidden Door - he's accused of theft from a Merit Council official. Claims he's innocent, was framed. Senna believes him, but Merit Council guards are asking questions in The Depths.
-- **Problem:** Senna can't keep Darin hidden forever. She needs someone to investigate what really happened and clear his name (or at minimum, get evidence he was framed so Merit Council backs off).
+- **Need:** A guest named Darin is hiding at The Hidden Door - he's accused of theft from a [[Merit Council]] official. Claims he's innocent, was framed. Senna believes him, but [[Merit Council]] guards are asking questions in [[The Depths]].
+- **Problem:** Senna can't keep Darin hidden forever. She needs someone to investigate what really happened and clear his name (or at minimum, get evidence he was framed so [[Merit Council]] backs off).
 - **Reward:** In exchange for clearing Darin's name or proving the frameup:
   - Free lodging at The Hidden Door whenever needed (private, secure, off the grid)
-  - Access to Dispossessed information network (what happens in The Depths, who's hiding, who's looking)
+  - Access to [[Dispossessed]] information network (what happens in [[The Depths]], who's hiding, who's looking)
   - Senna's personal protection (she has connections and isn't afraid to use them)
   - Safe house services (hide someone, store contraband, no questions)
-  - Introduction to Dispossessed faction leaders (potential allies against Merit Council)
-- **Difficulty:** Moderate - Requires investigation, possibly confronting Merit Council official, gathering evidence. If official is corrupt, could be dangerous. Likely connects to broader corruption (possibly Kaelborn/Geist related).
+  - Introduction to [[Dispossessed]] faction leaders (potential allies against Merit Council)
+- **Difficulty:** Moderate - Requires investigation, possibly confronting [[Merit Council]] official, gathering evidence. If official is corrupt, could be dangerous. Likely connects to broader corruption (possibly Kaelborn/Geist related).
 
 ## Day-to-Day Operations
 
@@ -63,19 +63,19 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 - Night: Senna stays up, guards the door, ensures everyone's safe
 
 **Regular Customers:**
-- **Dispossessed:** Those fallen to lowest tier, nowhere else to go
+- **[[Dispossessed]]:** Those fallen to lowest tier, nowhere else to go
 - **Fugitives:** Accused (justly or not), hiding from law/enemies
-- **Underground network:** Information brokers, resistance members, those opposing Merit Council
+- **Underground network:** Information brokers, resistance members, those opposing [[Merit Council]]
 - **Desperate travelers:** Can't afford upper-tier inns, need cheap safe space
-- **Political refugees:** Those on wrong side of Merit Council politics
+- **Political refugees:** Those on wrong side of [[Merit Council]] politics
 
 **Real Uses:**
 - **Off-the-grid lodging:** No names recorded, no questions asked, completely discreet
 - **Safe house:** Hide from pursuers, store contraband, meet in secret
-- **Information network:** Dispossessed know everything happening in lower Agastia
-- **Political refuge:** Safe from Merit Council harassment (they don't come to The Depths easily)
+- **Information network:** [[Dispossessed]] know everything happening in lower [[Agastia]]
+- **Political refuge:** Safe from [[Merit Council]] harassment (they don't come to [[The Depths]] easily)
 - **Community support:** Senna feeds those who can't pay, provides basic medical care
-- **Underground contacts:** Meet Dispossessed leaders, resistance members, information brokers
+- **Underground contacts:** Meet [[Dispossessed]] leaders, resistance members, information brokers
 
 ## Services & Inventory
 
@@ -118,45 +118,45 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 - **Hidden compartment bag:** 15 gp - looks normal, secret pocket for small valuables
 - **Escape kit:** 20 gp - rope, grappling hook, dark clothes, lock picks (for emergencies)
 - **Healing potion (minor):** 30 gp - Senna's connection to underground apothecary
-- **Information:** Variable price - Senna can find out almost anything happening in The Depths
+- **Information:** Variable price - Senna can find out almost anything happening in [[The Depths]]
 
 **Toggle: Special Items (Connections/Favors Only)**
 - **Safe passage through tunnels:** Senna guides personally or sends trusted guide
-- **Introduction to Dispossessed leaders:** If party earns her trust
-- **Protection from underground:** Senna's word carries weight in The Depths
+- **Introduction to [[Dispossessed]] leaders:** If party earns her trust
+- **Protection from underground:** Senna's word carries weight in [[The Depths]]
 - **Hidden meeting space:** Secure room for sensitive planning
 - **Warning network:** Senna's people will watch for specific person/threat and warn party
 
-**Pricing:** Extremely flexible. Senna charges wealthy fairly, charges desperate nothing. Operating costs covered by donations from those who made it out of The Depths.
+**Pricing:** Extremely flexible. Senna charges wealthy fairly, charges desperate nothing. Operating costs covered by donations from those who made it out of [[The Depths]].
 
 ## Connections
 
 **District Integration:**
-- Heart of Dispossessed community - sanctuary and symbol of resistance
+- Heart of [[Dispossessed]] community - sanctuary and symbol of resistance
 - Information hub for everything happening in Tier 7 and lower Tier 6
 - Underground economy center - black market goods move through here (carefully)
-- Safe house for those targeted by Merit Council or criminals
+- Safe house for those targeted by [[Merit Council]] or criminals
 
 **Related NPCs:**
-- **Kex the Fence:** Regular contact, provides black market goods when Senna needs them
-- **Dispossessed faction leaders:** Senna is former leader, still deeply connected
+- **[[Kex the Fence]]:** Regular contact, provides black market goods when Senna needs them
+- **[[Dispossessed]] faction leaders:** Senna is former leader, still deeply connected
 - **Underground apothecary:** Provides basic medical supplies at cost
-- **Tunnel guides:** Those who know The Depths' secret passages trust Senna
+- **Tunnel guides:** Those who know [[The Depths]]' secret passages trust Senna
 
 **Faction Ties:**
-- **Dispossessed:** Founding member, current allied status, deeply respected
-- **Merit Council (opposition):** Actively shelters those persecuted by Council
+- **[[Dispossessed]]:** Founding member, current allied status, deeply respected
+- **[[Merit Council]] (opposition):** Actively shelters those persecuted by Council
 - **Underground resistance:** Allied, provides safe meeting space
 - **Criminal networks (complicated):** Senna opposes predators, helps desperate criminals
 
 ## DM Notes
 
 **Plot Hooks:**
-- **Safe base in The Depths:** Party needs place to stay off-grid, plan in secret, hide from pursuers
-- **Fugitive quest:** Investigating Darin's frameup likely connects to corrupt Merit Council official (possibly Kaelborn network)
-- **Dispossessed information:** Senna's network knows everything happening in lower Agastia
-- **Political sanctuary:** Party members targeted by Merit Council can hide here
-- **Underground contacts:** Meet Dispossessed leaders, resistance members, learn about inequality in Agastia
+- **Safe base in [[The Depths]]:** Party needs place to stay off-grid, plan in secret, hide from pursuers
+- **Fugitive quest:** Investigating Darin's frameup likely connects to corrupt [[Merit Council]] official (possibly Kaelborn network)
+- **[[Dispossessed]] information:** Senna's network knows everything happening in lower [[Agastia]]
+- **Political sanctuary:** Party members targeted by [[Merit Council]] can hide here
+- **Underground contacts:** Meet [[Dispossessed]] leaders, resistance members, learn about inequality in [[Agastia]]
 - **Moral complexity:** Not everyone here is innocent, but all deserve safety - party must judge each case
 
 **Personality Quirks:**
@@ -167,11 +167,11 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 - Keeps tally of debts owed and paid (never mentions it, but remembers)
 
 **Connection to Campaign:**
-- **Dispossessed faction:** Direct access to faction leaders and perspective
-- **Merit Council corruption:** Many here are victims of Kaelborn/Geist operations
-- **Information network:** Knows what's really happening in Agastia's underbelly
+- **[[Dispossessed]] faction:** Direct access to faction leaders and perspective
+- **[[Merit Council]] corruption:** Many here are victims of Kaelborn/Geist operations
+- **Information network:** Knows what's really happening in [[Agastia]]'s underbelly
 - **Thematic relevance:** Inequality, justice, who gets protection and who doesn't
-- **Safe planning space:** Party can operate outside Merit Council surveillance
+- **Safe planning space:** Party can operate outside [[Merit Council]] surveillance
 
 **Atmosphere Notes:**
 - Underground feel - stone, shadows, lamp oil, quiet
@@ -181,13 +181,13 @@ tags: [commerce, the-depths, inn, underground, dispossessed, safe-house]
 - Senna's presence is reassuring, dangerous, protective all at once
 
 **Rules Enforcement:**
-- Violence inside = immediate expulsion + word spreads (never safe in The Depths again)
+- Violence inside = immediate expulsion + word spreads (never safe in [[The Depths]] again)
 - Betraying other guests = worse than expulsion (underground justice is harsh)
 - Breaking Senna's trust = permanent consequences (she has long memory and longer reach)
 
 **Darin's Frameup (Quest Details):**
-- Accused of stealing from Merit Council official's office
+- Accused of stealing from [[Merit Council]] official's office
 - Actually discovered evidence of corruption, official framed him to discredit
 - Evidence still exists if party can find it
 - Official is mid-level (not Kaelborn, but connected to same network)
-- Clearing Darin exposes corruption, makes Merit Council enemies, gains Dispossessed allies
+- Clearing Darin exposes corruption, makes [[Merit Council]] enemies, gains [[Dispossessed]] allies

@@ -16,7 +16,7 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 
 **Type & Specialty:** Working-class tavern serving affordable food, cheap ale, and serving as community gathering place for lower district residents
 
-**Location:** Lower Residential District (Tier 5), corner of Artisan Row and Cooper Street
+**Location:** [[Lower Residential District]] (Tier 5), corner of Artisan Row and Cooper Street
 
 **Clientele:** Dockworkers, artisans, laborers, off-duty city guard, struggling merchants, anyone who can't afford upper-tier prices
 
@@ -39,9 +39,9 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 
 **Quest Hook - The Protection Racket:**
 - **Need:** Thugs claiming to work for "Warehouse District interests" are demanding protection money from businesses in Tier 5. Marta refuses to pay - she barely makes ends meet as is.
-- **Problem:** The thugs are escalating. They've threatened to "accidentally" start a fire or poison her food supplies. Marta needs help dealing with them without involving Merit Council (who she doesn't trust to help poor folk).
+- **Problem:** The thugs are escalating. They've threatened to "accidentally" start a fire or poison her food supplies. Marta needs help dealing with them without involving [[Merit Council]] (who she doesn't trust to help poor folk).
 - **Reward:** In exchange for stopping the protection racket:
-  - Free meals and lodging whenever party is in Agastia (simple but filling)
+  - Free meals and lodging whenever party is in [[Agastia]] (simple but filling)
   - Marta's regulars will share information freely (dock gossip, artisan rumors, lower district happenings)
   - Safe meeting place - Marta will provide private back room for planning
   - Introduction to honest working folk network (hirelings, laborers who'll help party)
@@ -70,7 +70,7 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 - **Elderly locals:** Community elders, fountain of gossip and history
 
 **Real Uses:**
-- **Affordable meals and drink:** Cheapest food in Agastia that isn't rations
+- **Affordable meals and drink:** Cheapest food in [[Agastia]] that isn't rations
 - **Information gathering:** Regulars know everything happening in lower districts
 - **Safe meeting place:** Marta provides back room for private conversations
 - **Local connections:** Meet working-class folk, hire laborers, find services
@@ -139,14 +139,14 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 
 **Faction Ties:**
 - **Working Folk Network:** Informal connections to honest laborers throughout Tier 5-6
-- **Dispossessed (sympathetic):** Marta feeds those who've lost everything when she can afford it
-- **Merit Council (distrustful):** Doesn't trust them to help poor folk, avoids official channels
+- **[[Dispossessed]] (sympathetic):** Marta feeds those who've lost everything when she can afford it
+- **[[Merit Council]] (distrustful):** Doesn't trust them to help poor folk, avoids official channels
 - **Geist's protection racket (victim):** Currently being extorted
 
 ## DM Notes
 
 **Plot Hooks:**
-- Perfect base of operations for party in Agastia (affordable, welcoming, central to lower districts)
+- Perfect base of operations for party in [[Agastia]] (affordable, welcoming, central to lower districts)
 - Protection racket quest connects to Geist investigation (if party helps Marta, they learn about wider criminal network)
 - Information hub - regulars know everything happening in Tiers 5-7
 - Warm roleplaying location - NPCs with personality, community feel
@@ -162,7 +162,7 @@ tags: [commerce, lower-residential, tavern, food, drink, gossip]
 **Connection to Campaign:**
 - Protection racket likely connects to Geist's operation (Tier 6 thugs expanding to Tier 5)
 - Dockworkers here have information about warehouse district activities
-- Regulars can provide perspective on Merit Council's treatment of lower districts (theme: inequality)
+- Regulars can provide perspective on [[Merit Council]]'s treatment of lower districts (theme: inequality)
 - Safe place for party to rest, plan, gather information without upper-tier scrutiny
 
 **Atmosphere Notes:**

@@ -17,7 +17,7 @@ threat_level: Medium
 
 **Role:** Lieutenant within the Bandit Network, responsible for organizing and executing smaller criminal operations, intelligence gathering, and managing lower-ranking bandits.
 
-**Current Location:** Operates primarily in the shadowed alleyways and abandoned districts of Agastia, often using forgotten sewers or dilapidated buildings as temporary bases.
+**Current Location:** Operates primarily in the shadowed alleyways and abandoned districts of [[Agastia]], often using forgotten sewers or dilapidated buildings as temporary bases.
 
 **Combat (Estimated Level 5-6):** AC 15 (Leather Armor), HP ~40, Sneak Attack, Dagger proficiency, adept at hit-and-run tactics, uses environment to his advantage.
 
@@ -25,7 +25,7 @@ threat_level: Medium
 
 **Key Lieutenant:**
 - One of the more trusted lieutenants in Kaelborn's network.
-- Knowledgeable about various illicit operations in Agastia.
+- Knowledgeable about various illicit operations in [[Agastia]].
 - Can be a source of information (if coerced) about the Bandit Network's structure and plans.
 
 **Connections:**

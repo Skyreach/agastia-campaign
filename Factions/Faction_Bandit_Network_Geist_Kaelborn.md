@@ -16,12 +16,12 @@ related_entities:
 
 ## Player Summary
 
-A criminal enterprise operating in and around Agastia, led by dwarf assassin Geist and elf sorcerer Kaelborn. Known for smuggling, kidnapping, extortion, and violent enforcement. They have a history of targeting unique individuals for profit - including kidnapping Kyle/Nameless at age 3 for their rainbow hair.
+A criminal enterprise operating in and around [[Agastia]], led by dwarf assassin Geist and elf sorcerer Kaelborn. Known for smuggling, kidnapping, extortion, and violent enforcement. They have a history of targeting unique individuals for profit - including kidnapping [[Kyle/Nameless]] at age 3 for their rainbow hair.
 
 ## DM Notes
 
 ### Overview
-This is a straightforward criminal organization with magical muscle. Geist provides brutal enforcement and assassination capabilities, while Kaelborn supplies magical power and charismatic leadership. They operate through intimidation, violence, and strategic bribes to Merit Council officials who look the other way.
+This is a straightforward criminal organization with magical muscle. Geist provides brutal enforcement and assassination capabilities, while Kaelborn supplies magical power and charismatic leadership. They operate through intimidation, violence, and strategic bribes to [[Merit Council]] officials who look the other way.
 
 ### Key Leaders
 
@@ -42,7 +42,7 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 **Primary Activities:**
 - **Smuggling:** Magical contraband, stolen goods, illegal artifacts
 - **Kidnapping:** Targets with unique traits (rainbow hair, magical bloodlines, etc.)
-- **Extortion:** Protection rackets in Agastia's districts
+- **Extortion:** Protection rackets in [[Agastia]]'s districts
 - **Assassination:** Contract killing for hire
 - **Fencing:** Moving stolen goods through legitimate fronts
 
@@ -56,7 +56,7 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 ### Goals & Progress Clocks
 
 **Expand Territory** [2/6]
-- Control more Agastia districts
+- Control more [[Agastia]] districts
 - Muscle out competing criminal groups
 - Establish monopoly on certain illegal goods
 - Current Progress: Two districts under protection rackets
@@ -64,7 +64,7 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 **Avoid Law Enforcement** [3/4]
 - Maintain bribed officials
 - Eliminate witnesses
-- Stay below Merit Council's priority threshold
+- Stay below [[Merit Council]]'s priority threshold
 - Current Progress: Successfully operating but investigations increasing
 
 ### Network Structure
@@ -80,7 +80,7 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 **Foot Soldiers:** ~20-30 thugs, bandits, hired muscle
 
 **Contacts:**
-- Corrupt Merit Council officials (bribed)
+- Corrupt [[Merit Council]] officials (bribed)
 - Fence networks in multiple cities
 - Information brokers
 - Safe house operators
@@ -88,8 +88,8 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 ### Relationships
 
 **Enemies:**
-- **Kyle/Nameless:** Former victim seeking revenge
-- **Merit Council:** Law enforcement investigating them
+- **[[Kyle/Nameless]]:** Former victim seeking revenge
+- **[[Merit Council]]:** Law enforcement investigating them
 - **Rival Gangs:** Competing for territory
 - **Former Victims:** Anyone who escaped or was freed
 
@@ -102,17 +102,17 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 - Potentially connected to larger crime syndicate?
 - May have worked for bigger players in past
 
-### Kyle/Nameless History
+### [[Kyle/Nameless]] History
 
 **The Kidnapping (20+ years ago):**
 - Targeted Kyle at age 3 for rainbow hair
 - Held captive for ~20 years
 - Purpose: Rainbow hair valuable for unknown reason (ritual? collector? rare component?)
-- Kyle eventually escaped to Infinite Forest
+- Kyle eventually escaped to [[Infinite Forest]]
 
 **Current Status:**
 - Believed Kyle dead or lost
-- Intercepted message proves they're alive and operating near Agastia
+- Intercepted message proves they're alive and operating near [[Agastia]]
 - Do NOT know Kyle is hunting them
 - May have other current captives
 
@@ -137,7 +137,7 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 
 - Rainbow hair kidnapping was commissioned by someone else (client unknown)
 - They have other "special" captives currently
-- At least one Merit Council official is deeply compromised
+- At least one [[Merit Council]] official is deeply compromised
 - Planning major smuggling operation that will draw attention
 - May have information about Brand's lost civilization (smuggled artifacts)
 
@@ -261,5 +261,5 @@ This is a straightforward criminal organization with magical muscle. Geist provi
 **Appropriate Level Threat:**
 - Leaders are mid-tier threats (CR 5-6)
 - Can be primary antagonists for levels 2-7
-- NOT campaign-ending villains like Steel Dragon
+- NOT campaign-ending villains like [[Steel Dragon]]
 - Network collapses when leaders defeated

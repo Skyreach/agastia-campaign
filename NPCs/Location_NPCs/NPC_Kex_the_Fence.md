@@ -16,14 +16,14 @@ related_entities: [Geist, Kaelborn, Kyle, Underground Market, Mirella]
 
 ## Player Summary
 
-**Kex** is a small-time smuggler and fence operating in Agastia's underground market in The Depths. Once a moderately successful smuggler, his operation was systematically destroyed by Inspector Geist using Merit Council authority to eliminate competition. Bitter and resentful, Kex is willing to talk about Geist's operation - especially to someone who might bring him down.
+**Kex** is a small-time smuggler and fence operating in [[Agastia]]'s underground market in [[The Depths]]. Once a moderately successful smuggler, his operation was systematically destroyed by Inspector Geist using [[Merit Council]] authority to eliminate competition. Bitter and resentful, Kex is willing to talk about Geist's operation - especially to someone who might bring him down.
 
 ### Basic Information
 - **Race:** Halfling
 - **Gender:** Male
 - **Age:** Middle-aged (45-50)
 - **Occupation:** Smuggler / Fence / Black Market Dealer
-- **Location:** The Depths (Tier 7), moves around underground market
+- **Location:** [[The Depths]] (Tier 7), moves around underground market
 - **Personality:** Bitter, sarcastic, opportunistic
 
 ### Appearance
@@ -41,12 +41,12 @@ related_entities: [Geist, Kaelborn, Kyle, Underground Market, Mirella]
 - Grudge against Geist is obvious
 
 ### Known Activities
-- Operates as small-time fence and smuggler in The Depths
+- Operates as small-time fence and smuggler in [[The Depths]]
 - Moves questionable goods through underground market
 - Avoids dock district entirely (Geist's territory)
 - Barely surviving on small deals after operation destroyed
 - Gathers information about Geist's operation (revenge motivation)
-- Maintains connections in Dispossessed community
+- Maintains connections in [[Dispossessed]] community
 
 ### Personality & Behavior
 - Cynical and opportunistic, always looking for angles
@@ -59,15 +59,15 @@ related_entities: [Geist, Kaelborn, Kyle, Underground Market, Mirella]
 ## Relationships
 
 ### Adversaries
-- **Inspector Geist:** Destroyed Kex's operation using Merit Council authority; deep grudge
-- **Merit Council:** Distrusts all authority after Geist's abuse
+- **Inspector Geist:** Destroyed Kex's operation using [[Merit Council]] authority; deep grudge
+- **[[Merit Council]]:** Distrusts all authority after Geist's abuse
 
 ### Business Contacts
-- **Mirella Stonemark:** Sold her questionable goods in the past; she avoids him now (too risky)
-- **Underground market:** Maintains connections in The Depths
+- **[[Mirella Stonemark]]:** Sold her questionable goods in the past; she avoids him now (too risky)
+- **Underground market:** Maintains connections in [[The Depths]]
 
 ### Community
-- **Dispossessed faction:** Operates within their community, fills need for unavailable goods
+- **[[Dispossessed]] faction:** Operates within their community, fills need for unavailable goods
 
 ### Potential Allies
 - **Kyle/Party:** Common enemy in Geist; willing to provide information and minor assistance
@@ -85,11 +85,11 @@ related_entities: [Geist, Kaelborn, Kyle, Underground Market, Mirella]
 **After Geist:**
 - Operation destroyed, customers scared off
 - Barely surviving on small deals
-- Operates in shadows of The Depths
+- Operates in shadows of [[The Depths]]
 - Avoids dock district entirely (Geist's territory)
 
 **How Geist Ruined Him:**
-- Used Merit Council authority to raid Kex's warehouses
+- Used [[Merit Council]] authority to raid Kex's warehouses
 - Confiscated inventory (then resold it himself)
 - Arrested Kex's contacts and suppliers
 - Scared off customers with threat of investigation
@@ -99,8 +99,8 @@ related_entities: [Geist, Kaelborn, Kyle, Underground Market, Mirella]
 
 ### What Kex Knows (Firsthand)
 **Geist's Operation:**
-- Geist isn't just corrupt - he RUNS smuggling in Agastia
-- Uses Merit Council position to eliminate rivals
+- Geist isn't just corrupt - he RUNS smuggling in [[Agastia]]
+- Uses [[Merit Council]] position to eliminate rivals
 - Warehouse 7 in Pier District is his safehouse
 - Guards, enforcers, whole criminal network
 
@@ -125,7 +125,7 @@ related_entities: [Geist, Kaelborn, Kyle, Underground Market, Mirella]
 ## Interaction with Kyle (Investigation)
 
 ### Finding Kex
-**Location:** The Depths, underground market (Tier 7)
+**Location:** [[The Depths]], underground market (Tier 7)
 **Requirements:**
 - Ask about smugglers or black market
 - Underground informant networks know him
@@ -144,7 +144,7 @@ Once convinced to talk:
 >
 > His voice drips with bitterness.
 >
-> "Uses his Merit Council position to eliminate rivals like me. Had three warehouses and a dozen contacts. All gone."
+> "Uses his [[Merit Council]] position to eliminate rivals like me. Had three warehouses and a dozen contacts. All gone."
 >
 > He leans in closer.
 >
@@ -215,7 +215,7 @@ Once convinced to talk:
 ### Moral Complexity
 - Criminal, but victim of bigger criminal
 - Not particularly violent (smuggling, fencing)
-- Operates in Dispossessed community
+- Operates in [[Dispossessed]] community
 - Fills need for goods unavailable through Merit system
 - More sympathetic than typical criminal NPC
 
@@ -224,4 +224,4 @@ Once convinced to talk:
 - Underground information source
 - May ask party to eliminate new rivals
 - Could involve party in scheme that backfires
-- Connection to Dispossessed faction
+- Connection to [[Dispossessed]] faction

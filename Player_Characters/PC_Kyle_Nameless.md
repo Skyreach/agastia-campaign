@@ -62,7 +62,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ## Relationships
 
 ### Party Members
-- **Ian/Rakash:** Saved him after storm giant attack on Ratterdan
+- **[[Ian/Rakash]]:** Saved him after storm giant attack on Ratterdan
 
 ### Feywild Connections
 - **Lord Zaos Yllalar:** Fey Lord employer, granted 100-year service leave
@@ -94,7 +94,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ### Timeline
 - **Age ~3:** Kidnapped by Kaelborn and Geist for rainbow hair
 - **Ages 3-23:** Held captive by bandits (~20 years)
-- **Age ~23:** Escaped to Infinite Forest
+- **Age ~23:** Escaped to [[Infinite Forest]]
 - **Ages 23-123:** Served Feywild military (100 years)
 - **Current:** On authorized leave, hunting bandits
 
@@ -123,7 +123,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ## DM Notes
 
 ### Secrets & Hidden Info
-- **Bandit Network Still Active:** Kaelborn and Geist running operations near/in Agastia
+- **Bandit Network Still Active:** Kaelborn and Geist running operations near/in [[Agastia]]
 - **Message Intercept:** Contents and destination could reveal larger conspiracy
 - **True Name:** "Nameless" is the name Eliyen gave; birth name lost/unknown
 - **Feywild Time:** 100 years for him = different time passage for others
@@ -159,5 +159,5 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ### Bandit Leaders (Major Antagonists)
 - **Kaelborn:** Elf sorcerer, charismatic leader
 - **Geist:** Dwarf assassin, brutal enforcer
-- **Network:** Operating near Agastia (maybe infiltrated city)
+- **Network:** Operating near [[Agastia]] (maybe infiltrated city)
 - **Threat Level:** Mid-campaign boss encounters

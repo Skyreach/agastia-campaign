@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 ---
 
-# Saltwind General Supply
+# [[Saltwind General Supply]]
 
 ## Overview
 
 **Type & Specialty:** Sailor provisions and ship supplies - rope, canvas, tools, preserved food, navigation equipment, and everything needed for maritime work
 
-**Location:** Dock District (Tier 6), Pier Row, three buildings down from Warehouse 7
+**Location:** [[Dock District]] (Tier 6), Pier Row, three buildings down from Warehouse 7
 
 **Clientele:** Sailors, dockworkers, fishermen, ship captains, caravan guards (rope and canvas), anyone needing maritime supplies
 
@@ -137,13 +137,13 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 ## Connections
 
 **District Integration:**
-- Essential service for entire Dock District - sailors depend on Olric
+- Essential service for entire [[Dock District]] - sailors depend on Olric
 - Competes with cheaper (lower quality) suppliers, but reputation keeps him in business
 - Informal hub for sailor gossip and information exchange
 - Victim of Geist's protection racket (like many dock businesses)
 
 **Related NPCs:**
-- **Mira Saltwind:** Niece - runs Saltwind Imports in Merchant District (different business, same family)
+- **[[Mira Saltwind]]:** Niece - runs Saltwind Imports in [[Merchant District]] (different business, same family)
 - **Geist:** Primary antagonist - extorting Olric's shop for "inspection fees"
 - **Honest ship captains:** Olric's contacts from decades at sea, trust him completely
 - **Harren (Dock Worker):** Regular customer, buys work gloves and rope, shares dock gossip
@@ -151,7 +151,7 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 **Faction Ties:**
 - **Sailor's Informal Network:** Respected member, decades of relationships
 - **Dock Merchants (honest ones):** Allied against Geist's corruption
-- **Merit Council (victim of):** Geist uses Council authority to extort Olric
+- **[[Merit Council]] (victim of):** Geist uses Council authority to extort Olric
 - No criminal ties - Olric is aggressively honest
 
 ## DM Notes
@@ -172,7 +172,7 @@ tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 
 **Connection to Campaign:**
 - **Geist investigation:** Olric provides victim testimony and evidence of protection racket
-- **Mira Saltwind connection:** Family tie to Merchant District, creates cross-tier relationship
+- **[[Mira Saltwind]] connection:** Family tie to [[Merchant District]], creates cross-tier relationship
 - **Information network:** Sailors bring news from across the world
 - **Practical supplies:** Party needs rope, climbing gear, waterproof containers for adventures
 

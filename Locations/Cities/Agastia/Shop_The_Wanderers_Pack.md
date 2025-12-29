@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [commerce, merchant-district, adventuring-gear, equipment, supplies]
 ---
 
-# The Wanderer's Pack
+# [[The Wanderer's Pack]]
 
 ## Overview
 
 **Type & Specialty:** Adventuring supplies and outdoor equipment - everything needed for dungeon delving, wilderness travel, and dangerous expeditions
 
-**Location:** Merchant District (Tier 4), main shopping boulevard near The Gilded Gryphon Inn
+**Location:** [[Merchant District]] (Tier 4), main shopping boulevard near The Gilded Gryphon Inn
 
 **Clientele:** Adventurers, mercenaries, explorers, hunters, caravan guards
 
@@ -134,16 +134,16 @@ tags: [commerce, merchant-district, adventuring-gear, equipment, supplies]
 ## Connections
 
 **District Integration:**
-- Hub for adventurers and mercenaries in Merchant District
+- Hub for adventurers and mercenaries in [[Merchant District]]
 - Suppliers rely on Kessa's reputation - if she endorses a product, it sells
-- Merit Council recognizes shop as essential service for city security (adventurers handle threats)
+- [[Merit Council]] recognizes shop as essential service for city security (adventurers handle threats)
 - Frequent collaboration with weapon/armor shops nearby
 
 **Related NPCs:**
 - **Retired adventurers:** Kessa's old party members visit regularly, provide information/rumors
-- **Corvin Tradewise:** Regular customer for caravan supplies, respectful relationship
+- **[[Corvin Tradewise]]:** Regular customer for caravan supplies, respectful relationship
 - **The Gilded Gryphon Inn:** Cross-promotes with inn (adventurers stay there, shop here)
-- **Supplier network:** Contacts throughout Agastia and neighboring regions
+- **Supplier network:** Contacts throughout [[Agastia]] and neighboring regions
 
 **Faction Ties:**
 - **Merchants Guild:** Member in good standing

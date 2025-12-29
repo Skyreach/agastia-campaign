@@ -12,17 +12,17 @@ threat_level: None
 related_entities: [Rakash, Niletrix, Agastia Patron]
 ---
 
-# Torvin Greycask
+# [[Torvin Greycask]]
 
 ## Player Summary
 
-**Torvin Greycask** is a cautious dwarf information broker operating out of Meridian's Rest. He deals in rumors, intelligence, and connections - for a price. Known for his discretion and reliable information, Torvin maintains a network of contacts across the region.
+**[[Torvin Greycask]]** is a cautious dwarf information broker operating out of [[Meridian's Rest]]. He deals in rumors, intelligence, and connections - for a price. Known for his discretion and reliable information, Torvin maintains a network of contacts across the region.
 
 ### Basic Information
 - **Race:** Dwarf
 - **Gender:** Male
 - **Occupation:** Information Broker
-- **Location:** Meridian's Rest (operates from a quiet tavern corner)
+- **Location:** [[Meridian's Rest]] (operates from a quiet tavern corner)
 - **Personality:** Cautious, calculating, professional
 
 ### Appearance
@@ -59,20 +59,20 @@ related_entities: [Rakash, Niletrix, Agastia Patron]
 ## Role in Session 2
 
 ### The Encounter
-When party arrives in Meridian's Rest, Torvin approaches Rakash:
+When party arrives in [[Meridian's Rest]], Torvin approaches Rakash:
 - "Rakash? I heard you died at Ratterdan. Glad the rumors were wrong."
 - Has already done basic intel on the party (it's his job to know who's traveling through)
 - Knows about Ratterdan incident, Heartstone transformation, party composition
 
 ### Information Offered
 **For modest payment (5-10 gp):**
-- Knows someone in Agastia looking for capable people
+- Knows someone in [[Agastia]] looking for capable people
 - Situation at the Keeper's Sanctuary (temporal disturbances)
-- Safe route to Agastia and current city politics
+- Safe route to [[Agastia]] and current city politics
 - Brief on major factions and current tensions
 
 **The Introduction:**
-- Will write letter of introduction to Agastia patron
+- Will write letter of introduction to [[Agastia]] patron
 - Vouches for party's capability (especially Rakash)
 - Provides patron's name and location
 - "Tell them Torvin sent you. They'll know what it means."
@@ -101,32 +101,32 @@ When party arrives in Meridian's Rest, Torvin approaches Rakash:
 - Information sold is accurate (reputation matters)
 - Won't sell information that gets clients killed
 - Honors professional relationships (like with Rakash)
-- Won't work for Chaos Cult or obviously evil clients
+- Won't work for [[Chaos Cult]] or obviously evil clients
 
 ## What He Knows (Information Inventory)
 
-### Agastia Current Events
-- Steel Dragon murder investigation ongoing
+### [[Agastia]] Current Events
+- [[Steel Dragon]] murder investigation ongoing
 - Temporal distortions near Keeper's Sanctuary
-- Merit Council investigating multiple incidents
-- Chaos Cult activity increasing
-- Political tensions with Dispossessed rising
+- [[Merit Council]] investigating multiple incidents
+- [[Chaos Cult]] activity increasing
+- Political tensions with [[Dispossessed]] rising
 
 ### The Keeper's Sanctuary
 - Neutral faction guarding dangerous artifacts
 - Recent temporal anomalies alarming the Keepers
-- They're looking for outside help (can't trust Merit Council fully)
+- They're looking for outside help (can't trust [[Merit Council]] fully)
 - Situation is urgent but not public knowledge yet
 
 ### Regional Intelligence
-- Storm giant sightings near Agastia
+- Storm giant sightings near [[Agastia]]
 - Bandit activity (Geist/Kaelborn network) in the area
 - Feywild border instability
-- Decimate Project rumors (very fragmentary, doesn't know details)
+- [[Decimate Project]] rumors (very fragmentary, doesn't know details)
 
 ### What He Doesn't Know
-- Professor Zero's identity or full Decimate Project scope
-- Steel Dragon's human form identity
+- [[Professor Zero]]'s identity or full [[Decimate Project]] scope
+- [[Steel Dragon]]'s human form identity
 - Octavia's role in Ratterdan destruction
 - Full details of what's happening at Keeper's Sanctuary
 
@@ -135,7 +135,7 @@ When party arrives in Meridian's Rest, Torvin approaches Rakash:
 ### Secrets & Hidden Info
 - **Former Niletrix Employee:** Knows dragon's paranoid security measures
 - **Why He Left:** Niletrix became too unpredictable, Torvin retired
-- **Information Network:** Has contacts in Agastia, Meridian's Rest, and beyond
+- **Information Network:** Has contacts in [[Agastia]], [[Meridian's Rest]], and beyond
 - **The Beholder Connection:** May know about Rakash's beholder earring quest
 - **Storm Giant Intel:** Knows more about giant's activities than he's saying
 
@@ -143,7 +143,7 @@ When party arrives in Meridian's Rest, Torvin approaches Rakash:
 - Can provide information in future sessions (for payment)
 - Might have leads on Geist/Kaelborn if Kyle asks right questions
 - Could connect party to other factions
-- May have information about Decimate Project if party digs deeper
+- May have information about [[Decimate Project]] if party digs deeper
 - Knows rumors about temporal bloodline families
 
 ### Pricing Guide
@@ -167,7 +167,7 @@ When party arrives in Meridian's Rest, Torvin approaches Rakash:
 ## Session 2 Integration
 
 ### Scene Setup
-Party arrives in Meridian's Rest after Session 1, looking for supplies/rest before continuing to Agastia.
+Party arrives in [[Meridian's Rest]] after Session 1, looking for supplies/rest before continuing to [[Agastia]].
 
 **Torvin's Approach:**
 1. Spots Rakash in tavern/marketplace
@@ -178,28 +178,28 @@ Party arrives in Meridian's Rest after Session 1, looking for supplies/rest befo
 **The Conversation:**
 - Exchanged pleasantries about surviving Ratterdan
 - Torvin mentions he's heard things about the party
-- Offers information about Agastia situation
+- Offers information about [[Agastia]] situation
 - Provides introduction to patron for modest fee
-- Warns about current dangers in Agastia
+- Warns about current dangers in [[Agastia]]
 
 **What Party Learns:**
-- There's work in Agastia (Keeper's Sanctuary job)
+- There's work in [[Agastia]] (Keeper's Sanctuary job)
 - Someone needs help with temporal disturbances
 - Torvin can vouch for them to patron
-- Basic intel on Agastia's current state
+- Basic intel on [[Agastia]]'s current state
 
 ### Payment for Introduction
 **5 gp for the package:**
-- Letter of introduction to Agastia patron
+- Letter of introduction to [[Agastia]] patron
 - Basic intel on Keeper's Sanctuary situation
-- Safe travel advice to Agastia
+- Safe travel advice to [[Agastia]]
 - Brief on major faction tensions
 
 **Optional additional info** (player's choice to purchase):
 - Detailed faction breakdown (10 gp)
 - Bandit network locations (25 gp - Kyle's interest)
 - Storm giant rumors (15 gp - Rakash's interest)
-- Temporal bloodline families (20 gp - Nikki's interest)
+- Temporal bloodline families (20 gp - [[Nikki]]'s interest)
 
 ---
 

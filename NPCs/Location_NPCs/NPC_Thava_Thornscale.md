@@ -17,24 +17,24 @@ tags: [npc, minor, patron, dragonborn, merit-council, agastia, session2, artifac
 related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartstone]
 ---
 
-# Thava Thornscale
+# [[Thava Thornscale]]
 
 ## Player Summary
 
-**Thava Thornscale** is a bronze dragonborn serving as Senior Coordinator in Agastia's Office of Artifact Preservation, a Merit Council department. A gruff but compassionate mid-ranking official, Thava has built a career through steady contributions over two decades. While he doesn't live lavishly, his position and extensive network of contacts give him the ability to arrange resources, funding, and access when the situation demands it.
+**[[Thava Thornscale]]** is a bronze dragonborn serving as Senior Coordinator in [[Agastia]]'s Office of Artifact Preservation, a [[Merit Council]] department. A gruff but compassionate mid-ranking official, Thava has built a career through steady contributions over two decades. While he doesn't live lavishly, his position and extensive network of contacts give him the ability to arrange resources, funding, and access when the situation demands it.
 
 ### Basic Information
-- **Name:** Thava Thornscale
+- **Name:** [[Thava Thornscale]]
 - **Race:** Bronze Dragonborn raised in scholarly circles
 - **Gender:** Male (he/him/his)
 - **Age:** Late 40s
 - **Occupation:** Senior Coordinator, Office of Artifact Preservation
 - **Merit Rank:** Mid-tier (20+ years steady service)
-- **Location:** Agastia (offices in Scholar's Quarter)
+- **Location:** [[Agastia]] (offices in Scholar's Quarter)
 
 ### Appearance
 - Bronze scales with darker patches around eyes and jaw
-- Wears practical Merit Council robes with artifact preservation insignia
+- Wears practical [[Merit Council]] robes with artifact preservation insignia
 - Reading spectacles perched on snout
 - Leather document case always at his side
 - Faint scars on hands from years of artifact handling
@@ -45,13 +45,13 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 - **Demeanor:** Initially suspicious of outsiders, warms up when proven trustworthy
 - **Work Ethic:** Dedicated to preserving dangerous knowledge safely
 
-## Merit Council Position
+## [[Merit Council]] Position
 
 ### Role: Senior Coordinator
 **Department:** Office of Artifact Preservation
 - Coordinates recovery and containment of dangerous artifacts
 - Liaises with Keeper's Sanctuary and other neutral preservation factions
-- Advises Merit Council on artifact-related threats
+- Advises [[Merit Council]] on artifact-related threats
 - Reports to Director of Artifact Safety
 
 **Merit Ranking:**
@@ -62,7 +62,7 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 
 ### Network & Connections
 **What Thava Can Arrange:**
-- Funding for artifact recovery operations (Merit Council budget)
+- Funding for artifact recovery operations ([[Merit Council]] budget)
 - Access to restricted archives and sealed collections
 - Introductions to specialists (scholars, Keepers, field agents)
 - Temporary authorization letters for city resources
@@ -72,14 +72,14 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 - Two decades of professional relationships
 - Known for keeping his word
 - Has helped countless scholars and field agents
-- Merit Council backing for legitimate requests
+- [[Merit Council]] backing for legitimate requests
 - Reputation for discretion and competence
 
 ## Connection to Party
 
 ### How He Knows About Them
-- Torvin Greycask's letter of introduction (carries weight)
-- Merit Council intelligence reports mention Ratterdan incident
+- [[Torvin Greycask]]'s letter of introduction (carries weight)
+- [[Merit Council]] intelligence reports mention Ratterdan incident
 - Heard rumors of unusual crystalline companion
 - Professional curiosity about Heartstone transformation
 
@@ -115,12 +115,12 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 ### The Situation
 **Problem at Keeper's Sanctuary:**
 - Temporal disturbances threatening artifact containment
-- Keepers requested outside assistance (Merit Council involvement too heavy-handed)
+- Keepers requested outside assistance ([[Merit Council]] involvement too heavy-handed)
 - Office of Artifact Preservation has standing relationship with Keepers
 - Thava authorized to hire independent contractors for discrete investigation
 
 ### Why He's Hiring Outsiders
-- Merit Council official investigation would be bureaucratic and slow
+- [[Merit Council]] official investigation would be bureaucratic and slow
 - Keepers trust Office of Artifact Preservation, not enforcement
 - Temporal anomalies require fast response
 - Thava prefers competent field agents over political appointees
@@ -156,17 +156,17 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 - House several items of extreme danger (specifics classified)
 - Temporal magic involvement is deeply concerning
 
-### About Agastia Current Events
-- Steel Dragon murder investigation ongoing (not his department)
-- Chaos Cult activity increasing (artifact thefts suspected)
-- Political tensions with Dispossessed movement
-- Merit Council resources stretched thin
+### About [[Agastia]] Current Events
+- [[Steel Dragon]] murder investigation ongoing (not his department)
+- [[Chaos Cult]] activity increasing (artifact thefts suspected)
+- Political tensions with [[Dispossessed]] movement
+- [[Merit Council]] resources stretched thin
 - Several dangerous items have gone missing recently (under investigation)
 
 ### About the Heartstone
 - Rare Feywild artifact with animation/life-giving properties
 - Transformation into sentient companion is unprecedented in records
-- Others will want it (artifact collectors, Chaos Cult, research mages)
+- Others will want it (artifact collectors, [[Chaos Cult]], research mages)
 - Advises party to register it with Office (protective custody option)
 - Warns that concealing powerful artifacts can backfire
 
@@ -178,11 +178,11 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 - Speed is critical before situation escalates
 
 ### What He Doesn't Know
-- Professor Zero's identity or Decimate Project existence
-- Steel Dragon's human form identity
+- [[Professor Zero]]'s identity or [[Decimate Project]] existence
+- [[Steel Dragon]]'s human form identity
 - Octavia's role in Ratterdan destruction
 - Full nature of the Codex (knows Sanctuary guards something major)
-- That Manny and Nikki are on mission to steal the Codex
+- That [[Manny]] and [[Nikki]] are on mission to steal the Codex
 
 ## Personality Traits
 
@@ -213,7 +213,7 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 ## Secrets & Hidden Info
 
 ### What He's Not Telling Them (Yet)
-- **The Codex:** Knows Keeper's Sanctuary guards the Dominion Evolution Codex
+- **[[The Codex]]:** Knows Keeper's Sanctuary guards the Dominion Evolution Codex
 - **Recent Thefts:** Several temporal-adjacent artifacts stolen in past month
 - **His Debt:** Owes dangerous people from early career mistake (unrelated to current job)
 - **Personal Stakes:** His mentor died in temporal anomaly containment failure
@@ -222,16 +222,16 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 ### Future Hooks
 - Can become recurring patron for artifact-recovery work
 - Access to Office archives helps research player backstories
-- Connections open doors throughout Agastia's scholarly community
+- Connections open doors throughout [[Agastia]]'s scholarly community
 - May call on party when other dangerous items surface
-- Could provide political support if party needs Merit Council assistance
+- Could provide political support if party needs [[Merit Council]] assistance
 - His debt to "dangerous people" could create complications
 
 ### Character Development Potential
 **As Recurring Patron:**
 - Provides steady artifact-related work at fair rates
 - Trusts party more after successful Sanctuary mission
-- Becomes genuine ally within Merit Council structure
+- Becomes genuine ally within [[Merit Council]] structure
 - May involve party in larger preservation crisis
 
 **Personal Arc:**
@@ -246,7 +246,7 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 - **Non-combatant preference:** Avoids fights when possible
 - **Bronze Dragonborn heritage:** Lightning breath weapon (last resort)
 - **Artifact knowledge:** Knows how to activate defensive magical items
-- **City connections:** Can summon Merit Council guards quickly
+- **City connections:** Can summon [[Merit Council]] guards quickly
 - **Escape priority:** Protects artifacts first, fights second
 
 **Stats (If Needed - CR 2 equivalent):**
@@ -274,7 +274,7 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 - Explains Keeper's Sanctuary situation
 - Offers job with payment and resources
 - Provides authorization letter
-- Answers questions about Agastia and temporal magic
+- Answers questions about [[Agastia]] and temporal magic
 
 **Building Trust:**
 - If party asks good questions → respect increases
@@ -296,4 +296,4 @@ related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartston
 ---
 
 **Version History:**
-- 2025-01-21: Created for Session 2, Agastia patron and quest giver
+- 2025-01-21: Created for Session 2, [[Agastia]] patron and quest giver

@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 ---
 
-# Sawbones Surgery
+# [[Sawbones Surgery]]
 
 ## Overview
 
 **Type & Specialty:** Barber-surgeon and medical services - cheap, dangerous medieval medicine with no questions asked
 
-**Location:** Dock District (Tier 6), tucked in a back alley near the Rusty Anchor Tavern, above a pawn shop
+**Location:** [[Dock District]] (Tier 6), tucked in a back alley near the Rusty Anchor Tavern, above a pawn shop
 
 **Clientele:** Dock workers, sailors, laborers, criminals, anyone who can't afford proper healing or needs discretion
 
@@ -38,7 +38,7 @@ tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 
 **Motivation:** Lost his position as ship's surgeon to alcoholism. Now trying to do some good for people who, like him, have fallen through the cracks. Believes everyone deserves medical care, even if it's risky care.
 
-**Secret:** Knows medical secrets about half the Dock District - who's been stabbed, who's pregnant, who's sick with something contagious. This information could be valuable to the right (or wrong) people.
+**Secret:** Knows medical secrets about half the [[Dock District]] - who's been stabbed, who's pregnant, who's sick with something contagious. This information could be valuable to the right (or wrong) people.
 
 **Quest Hook - The Infection Outbreak:**
 - **Need:** Five of Doc's recent patients have developed the same unusual infection. He's terrified it's his fault - contaminated tools, bad technique, something worse. The infection isn't responding to normal treatment and is spreading.
@@ -138,7 +138,7 @@ tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 ## Connections
 
 **District Integration:**
-- Essential service for Dock District's poor and criminal population
+- Essential service for [[Dock District]]'s poor and criminal population
 - Unofficial medical examiner for suspicious deaths
 - Information hub - knows everyone's medical secrets
 - Treated by community with mix of suspicion and gratitude
@@ -147,12 +147,12 @@ tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 - **Harren (dock worker):** Regular patient, work injuries, drinks at Rusty Anchor
 - **Olric Saltwind:** Occasionally sends injured workers to Doc
 - **Rusty Anchor Tavern:** Below Doc's surgery, source of many bar-fight patients
-- **Kex the Fence:** Sends criminals who need discrete medical care
+- **[[Kex the Fence]]:** Sends criminals who need discrete medical care
 - **Senna Darkwell (The Hidden Door):** Refers fugitives who need no-questions-asked treatment
 
 **Faction Ties:**
 - **No official faction ties** - serves anyone who needs him
-- **Dispossessed sympathy:** Understands fallen status, treats them fairly
+- **[[Dispossessed]] sympathy:** Understands fallen status, treats them fairly
 - **Criminal network:** Discrete service for those who can't go to authorities
 - **Dock workers:** Informal community support network
 
@@ -210,7 +210,7 @@ tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 
 **Connection to Larger Campaign:**
 - Can identify injuries from specific factions (knows their methods)
-- May have treated Chaos Cult members unknowingly
+- May have treated [[Chaos Cult]] members unknowingly
 - Could discover magical diseases or bioweapons if outbreak occurs
 - Information about smuggling operations (treats injured smugglers)
 - Knows about ship manifests, crew deaths, maritime accidents
@@ -230,7 +230,7 @@ tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 - Fell to Tier 6 due to alcoholism and losing position
 - Doesn't care about regaining status - just wants to help people
 - Cynical about merit system ("Merit doesn't keep you from bleeding")
-- Treats Tier 7 Dispossessed with same care as higher tiers
+- Treats Tier 7 [[Dispossessed]] with same care as higher tiers
 
 **Story Potential:**
 - Doc might be the only witness to a murder (treated dying victim)

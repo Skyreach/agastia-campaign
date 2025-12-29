@@ -16,7 +16,7 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 
 ## Player Summary
 
-**Harren** is a weathered dock worker who spends his evenings at The Rusty Anchor tavern in Agastia's dock district. Years of loading cargo and witnessing the corruption around the docks have made him cynical but willing to talk - especially after a few drinks. He's seen Inspector Geist's operation firsthand and knows where the real business happens.
+**Harren** is a weathered dock worker who spends his evenings at The Rusty Anchor tavern in [[Agastia]]'s dock district. Years of loading cargo and witnessing the corruption around the docks have made him cynical but willing to talk - especially after a few drinks. He's seen Inspector Geist's operation firsthand and knows where the real business happens.
 
 ### Basic Information
 - **Race:** Human
@@ -36,7 +36,7 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 ### Demeanor
 - Speaks quietly, doesn't draw attention
 - Looks over shoulder when discussing sensitive topics
-- Cynical about Merit Council and officials
+- Cynical about [[Merit Council]] and officials
 - Protective of fellow workers
 - Won't volunteer info, but will talk if approached right
 
@@ -74,14 +74,14 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 **Direct Observation:**
 - Seen Inspector Geist collecting "fees" from smugglers at docks
 - Watched crates marked "confiscated goods" moved to Warehouse 7
-- Noticed workers at Warehouse 7 are NOT Merit Council employees
+- Noticed workers at Warehouse 7 are NOT [[Merit Council]] employees
 - Observed Geist wearing official uniform while running criminal operations
 
 **Dock Gossip:**
 - Everyone knows Geist is corrupt
 - Other inspectors avoid Warehouse 7 (Geist's territory)
 - Merchants pay protection fees to avoid "problems"
-- Geist has Merit Council backing - untouchable
+- Geist has [[Merit Council]] backing - untouchable
 
 **Warehouse 7:**
 - Located in Pier District (specific location)
@@ -92,7 +92,7 @@ related_entities: [Geist, Kaelborn, Kyle, Warehouse 7]
 ### What He Doesn't Know
 - Who Geist's boss is (hasn't heard name Kaelborn)
 - Full extent of smuggling network
-- Geist's connections within Merit Council
+- Geist's connections within [[Merit Council]]
 - How long operation has been running
 
 ## Interaction with Kyle (Investigation)
@@ -126,7 +126,7 @@ Makes him more talkative, lowers DC to 8
 ### Follow-Up Questions
 **"Where exactly is Warehouse 7?"**
 - Provides specific directions to Pier District
-- "Look for the Merit Council seal on the door - that's the cover"
+- "Look for the [[Merit Council]] seal on the door - that's the cover"
 - "Evening's when things happen. Shipments come in after dark."
 
 **"Who does he work for?"**
@@ -134,7 +134,7 @@ Makes him more talkative, lowers DC to 8
 - "Someone with power, that's for sure."
 
 **"Will you testify?"**
-- "Against a Merit Council inspector? Are you mad?"
+- "Against a [[Merit Council]] inspector? Are you mad?"
 - Won't go on record, too dangerous
 - Can point others to witness, though
 
@@ -145,11 +145,11 @@ Makes him more talkative, lowers DC to 8
 **Information Given:**
 1. Geist takes bribes at docks (direct observation)
 2. Warehouse 7 location (where business happens)
-3. Merit Council protection (why no one stops him)
+3. [[Merit Council]] protection (why no one stops him)
 
 **Leads To:**
 - Investigation Location 1 (Warehouse District)
-- Confirms Geist is corrupt Merit Council inspector
+- Confirms Geist is corrupt [[Merit Council]] inspector
 - Provides specific target for surveillance/investigation
 
 ### Reliability

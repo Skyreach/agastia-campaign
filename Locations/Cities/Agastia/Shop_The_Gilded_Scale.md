@@ -10,17 +10,17 @@ version: "1.0.0"
 tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbitration]
 ---
 
-# The Gilded Scale
+# [[The Gilded Scale]]
 
 ## Overview
 
-**Type & Specialty:** Premier merchant guild headquarters - the economic heart of Agastia's commercial empire. Major trade deals negotiated, commercial disputes arbitrated, and economic policy shaped.
+**Type & Specialty:** Premier merchant guild headquarters - the economic heart of [[Agastia]]'s commercial empire. Major trade deals negotiated, commercial disputes arbitrated, and economic policy shaped.
 
-**Location:** Merchant District (Tier 4), prominent corner building overlooking The Exchange marketplace
+**Location:** [[Merchant District]] (Tier 4), prominent corner building overlooking The Exchange marketplace
 
 **Clientele:** Master merchants, guild members, trade negotiators, foreign commercial envoys, Council officials, wealthy investors
 
-**Reputation:** "Where gold speaks louder than merit." The Gilded Scale wields enormous economic influence that sometimes rivals the Merit Council's political power. Membership is a mark of commercial success and opens doors throughout the region.
+**Reputation:** "Where gold speaks louder than merit." [[The Gilded Scale]] wields enormous economic influence that sometimes rivals the [[Merit Council]]'s political power. Membership is a mark of commercial success and opens doors throughout the region.
 
 **Atmosphere:** Opulent but calculated. Marble floors, gilded fixtures, expensive furnishings - every detail chosen to project wealth and stability. Public halls buzz with negotiation and deal-making. Private chambers host confidential arbitrations. The building smells of expensive tobacco, fine wine, and money. Power is transacted here as surely as goods.
 
@@ -31,13 +31,13 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 **Personality:**
 - Sophisticated and politically savvy - reads people and situations with uncanny accuracy
 - Always calculating the angle that maximizes profit while maintaining plausible deniability
-- Views the Merit Council as necessary partners who must be managed carefully
+- Views the [[Merit Council]] as necessary partners who must be managed carefully
 - Ruthlessly pragmatic but honors agreements to the letter
 - Charming and affable in public, cold and calculating in private
 
 **Appearance:** Impeccably dressed in expensive but understated clothing. Salt-and-pepper hair styled perfectly. Lean build, sharp features, calculating gray eyes that miss nothing. Wears guild signet ring worth more than most shops. Carries himself with quiet confidence of someone who owns the room.
 
-**Motivation:** Maintain and expand the guild's economic power while avoiding direct confrontation with the Merit Council. Believes prosperity requires stability, but Council shouldn't dictate commerce. Sees himself as defender of merchant independence against political overreach.
+**Motivation:** Maintain and expand the guild's economic power while avoiding direct confrontation with the [[Merit Council]]. Believes prosperity requires stability, but Council shouldn't dictate commerce. Sees himself as defender of merchant independence against political overreach.
 
 **Quest Hook - The Blocked Trade Route:**
 - **Need:** A vital trade route to the eastern provinces has become impassable. Caravans report attacks by organized bandits with military-grade equipment. Guild is bleeding money, members are panicking, and Council is threatening to "intervene" (read: take control).
@@ -51,7 +51,7 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 - **Difficulty:** Hard - Requires combat capability, investigation skills, and political discretion. Bandits are well-equipped and organized. Identifying backers means navigating factional politics.
 
 **Quest Hook - The Rival's Leverage:**
-- **Need:** A rival guildmaster has obtained documentation proving Vex made certain deals that, while not illegal, would destroy his reputation and position if exposed to the Merit Council.
+- **Need:** A rival guildmaster has obtained documentation proving Vex made certain deals that, while not illegal, would destroy his reputation and position if exposed to the [[Merit Council]].
 - **Problem:** The rival is using this leverage to influence guild policy and undermine Vex's authority. Vex needs the documents recovered or the rival discredited, but cannot act directly without confirming the documents' existence.
 - **Reward:** Substantial financial compensation, guild secrets about other factions, permanent powerful ally in economic circles
 - **Difficulty:** Moderate-Hard - Requires stealth, social manipulation, or creative problem-solving. Direct violence would backfire politically.
@@ -160,7 +160,7 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 ## Economic Power & Influence
 
 **Guild's Economic Reach:**
-- Controls or influences 60% of Agastia's major commerce
+- Controls or influences 60% of [[Agastia]]'s major commerce
 - Maintains trade networks throughout the region
 - Coordinates merchant response to Council regulations
 - Can effectively blockade goods or flood markets to apply pressure
@@ -173,7 +173,7 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 - Strategic donations to Council projects buy political capital
 - Information network rivals Council intelligence operations
 
-**Relationship with Merit Council:**
+**Relationship with [[Merit Council]]:**
 - Officially cooperative partnership with appropriate oversight
 - Actually tense balance of power and mutual dependence
 - Guild pushes boundaries of regulations without quite breaking them
@@ -182,18 +182,18 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 - Regular informal meetings between Vex and Council leaders
 
 **Factional Influence:**
-- **Dispossessed:** Guild officially neutral, but many members sympathetic to limiting strict merit requirements
-- **Chaos Cult:** Guild opposes chaos that disrupts commerce, but some members privately support challenging Council authority
+- **[[Dispossessed]]:** Guild officially neutral, but many members sympathetic to limiting strict merit requirements
+- **[[Chaos Cult]]:** Guild opposes chaos that disrupts commerce, but some members privately support challenging Council authority
 - **Other Guilds:** Coordinates with craft guilds on policy, sometimes rivals them commercially
 - **Foreign Powers:** Trade connections provide diplomatic channels and intelligence
 
 ## Connections
 
 **District Integration:**
-- Economic center of Merchant District's commercial activity
+- Economic center of [[Merchant District]]'s commercial activity
 - Arbitrations set precedents for district business practices
 - Guild membership is path to social advancement despite merit tier
-- Relationship with Brightcoin Emergency Supplies (Marcus Brightcoin petitioned for membership twice, denied both times - guild doesn't trust his neutrality)
+- Relationship with [[Brightcoin Emergency Supplies]] (Marcus Brightcoin petitioned for membership twice, denied both times - guild doesn't trust his neutrality)
 - Informal coordination with "Fingers" Mallory on black market boundaries (guild wants crime managed, not eliminated - too profitable)
 
 **Related NPCs:**
@@ -205,8 +205,8 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 
 **Faction Ties:**
 - **Merchant Guild:** Obviously the headquarters and center of power
-- **Merit Council:** Official partnership, actual rivalry managed carefully
-- **Dispossessed (indirect):** Some guild members quietly sympathetic
+- **[[Merit Council]]:** Official partnership, actual rivalry managed carefully
+- **[[Dispossessed]] (indirect):** Some guild members quietly sympathetic
 - **Foreign Merchant Associations:** Trade connections throughout region
 
 **Economic Connections:**
@@ -223,7 +223,7 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 - Commercial disputes can become adventures when arbitration reveals larger problems
 - Guild intelligence network provides plot information
 - Economic power struggles affect city-wide politics
-- Party's relationship with guild impacts Merchant District reputation
+- Party's relationship with guild impacts [[Merchant District]] reputation
 
 **Hidden Operations:**
 - Guild's intelligence network extensively monitors Council, other factions, and competitors
@@ -244,9 +244,9 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 **Connection to Campaigns:**
 - Major source of trade-related quests and economic intrigue
 - Vex can provide high-level political intelligence
-- Guild membership opens doors throughout Agastia
+- Guild membership opens doors throughout [[Agastia]]
 - Economic power struggles can drive major campaign arcs
-- Relationship with guild affects party's standing in Merchant District
+- Relationship with guild affects party's standing in [[Merchant District]]
 - Potential ally or antagonist depending on party's relationship with Council
 
 **Power Dynamics:**
@@ -279,7 +279,7 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 - Maintain guild's economic independence from Council control
 - Expand trade networks to increase guild influence
 - Identify and eliminate threats to commercial stability
-- Position guild as indispensable to Agastia's prosperity
+- Position guild as indispensable to [[Agastia]]'s prosperity
 - Personally: Secure enough power to retire comfortably while ensuring successor maintains his vision
 
 **Resources:**
@@ -323,23 +323,23 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 - Cuts off all guild resources and connections
 - Uses intelligence network to undermine party
 - Spreads subtle rumors damaging their reputation
-- Blocks their access to Merchant District resources
+- Blocks their access to [[Merchant District]] resources
 - If threatened directly, uses economic and political power to destroy them
 
 **Key Information He Knows:**
 - Council's internal divisions and political maneuvering
-- Economic vulnerabilities of Agastia and rival cities
+- Economic vulnerabilities of [[Agastia]] and rival cities
 - Trade routes, smuggling networks, and commercial intelligence
-- Factional activities affecting commerce (including Chaos Cult disruptions)
+- Factional activities affecting commerce (including [[Chaos Cult]] disruptions)
 - Secrets of wealthy and powerful throughout region
-- Professor Zero's activities (aware but officially ignorant)
+- [[Professor Zero]]'s activities (aware but officially ignorant)
 - Underground economy operations (tolerates what doesn't threaten stability)
 
 **Key Information He Wants:**
 - Who's backing the eastern trade route bandits
 - Council's true intentions regarding guild oversight
 - Rival Masters' plans and vulnerabilities
-- Chaos Cult's economic disruption operations
+- [[Chaos Cult]]'s economic disruption operations
 - Foreign powers' commercial and political designs
 - Any leverage over Council members
 - Information about threats to commercial stability

@@ -7,13 +7,13 @@ tags: [npc, decimate-project, subject10, high-elf, wizard, patron-level, eldest]
 threat_level: Extreme
 ---
 
-# Decum - Decimate Project Subject #10 (PATRON-LEVEL)
+# Decum - [[Decimate Project]] Subject #10 (PATRON-LEVEL)
 
-**Decum** is a high elf wizard and Subject #10 - **eldest and most powerful Decimate subject**. Age ~19-20, with ~9-10 years of service. One of three patron-level operatives, he keeps to himself and handles Professor Zero's most dangerous missions.
+**Decum** is a high elf wizard and Subject #10 - **eldest and most powerful Decimate subject**. Age ~19-20, with ~9-10 years of service. One of three patron-level operatives, he keeps to himself and handles [[Professor Zero]]'s most dangerous missions.
 
 **Appearance:** High elf features (elegant, refined), scholarly demeanor, likely carries spellbook.
 
-**Personality:** Most experienced and knowledgeable, keeps to himself, wizardly precision and intellect, possibly Professor Zero's right hand, significant autonomy in operations.
+**Personality:** Most experienced and knowledgeable, keeps to himself, wizardly precision and intellect, possibly [[Professor Zero]]'s right hand, significant autonomy in operations.
 
 **Role:** PATRON-LEVEL SUBJECT - Eldest, most powerful, most trusted. Handles Zero's most critical missions. May oversee lab when Zero is absent. Possible memory wipe specialist assisting Zero. Leader among subjects when needed.
 
@@ -22,18 +22,18 @@ threat_level: Extreme
 ## DM Notes
 
 **Potential Roles:**
-- Lab overseer when Professor Zero is away
+- Lab overseer when [[Professor Zero]] is away
 - Mission leader for other subjects
 - Memory manipulation specialist (assists with wipes)
 - Secret rebel planning to free others
 - OR completely loyal enforcer (DM choice)
 
 **Plot Hooks:**
-- Knows the most about Professor Zero
+- Knows the most about [[Professor Zero]]
 - Has seen all ten subjects recruited over the years
 - May remember fragments from before memory wipe (earliest wipe, most degraded)
 - Could be greatest ally or most dangerous enemy
-- Might be testing Manny and Nikki from afar
+- Might be testing [[Manny]] and [[Nikki]] from afar
 
 **Magical Power:**
 - Likely 9th-10th level wizard

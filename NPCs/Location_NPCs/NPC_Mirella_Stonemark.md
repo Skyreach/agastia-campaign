@@ -12,18 +12,18 @@ threat_level: Minor (black market connections)
 related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 ---
 
-# Mirella Stonemark
+# [[Mirella Stonemark]]
 
 ## Player Summary
 
-**Mirella Stonemark** runs Stonemark Antiquities in Agastia's Merchant District, a shop that deals in recovered artifacts, historical items, and occasionally questionable goods. Sharp-eyed and business-savvy, Mirella knows the value of everything that passes through her hands - and where it came from. She operates in the gray area between legitimate antiquities dealer and black market fence.
+**[[Mirella Stonemark]]** runs [[Stonemark Antiquities]] in [[Agastia]]'s [[Merchant District]], a shop that deals in recovered artifacts, historical items, and occasionally questionable goods. Sharp-eyed and business-savvy, Mirella knows the value of everything that passes through her hands - and where it came from. She operates in the gray area between legitimate antiquities dealer and black market fence.
 
 ### Basic Information
 - **Race:** Dwarf
 - **Gender:** Female
 - **Age:** Middle-aged (appears ~120-140 years for a dwarf)
 - **Occupation:** Antiquities Dealer / Fence
-- **Location:** Stonemark Antiquities, Merchant District (Tier 4), Agastia
+- **Location:** [[Stonemark Antiquities]], [[Merchant District]] (Tier 4), [[Agastia]]
 - **Personality:** Shrewd, pragmatic, always calculating value
 
 ### Appearance
@@ -44,12 +44,12 @@ related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 - Morally flexible about item origins ("I don't ask, you don't tell")
 
 ### Known Activities
-- Operates Stonemark Antiquities daily in Merchant District
+- Operates [[Stonemark Antiquities]] daily in [[Merchant District]]
 - Buys artifacts from adventurers and estate sales
 - Sells to collectors, scholars, and other merchants
 - Fences questionable goods in back room for trusted clients
 - Purchased Garrek's estate items 20 years ago
-- Maintains network of suppliers and buyers across Agastia
+- Maintains network of suppliers and buyers across [[Agastia]]
 
 ### Personality & Behavior
 - Shrewd and pragmatic in all business dealings
@@ -62,20 +62,20 @@ related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 ## Relationships
 
 ### Colleagues
-- **Veridian Scrollkeeper:** Philosophical disagreement (she profits from artifacts, he preserves them); mutual professional respect but different values
+- **[[Veridian Scrollkeeper]]:** Philosophical disagreement (she profits from artifacts, he preserves them); mutual professional respect but different values
 
 ### Business Contacts
-- **Kex the Fence:** Aware of him, rival in questionable goods market
+- **[[Kex the Fence]]:** Aware of him, rival in questionable goods market
 - **Merchants Guild:** Member in good standing (legitimate side of business)
 
 ### Potential Connections
-- **Manny:** Potential customer for Garrek's journal pages
+- **[[Manny]]:** Potential customer for Garrek's journal pages
 - **Kyle:** Could provide information about black market/Geist if approached
 
-## Stonemark Antiquities
+## [[Stonemark Antiquities]]
 
 ### The Shop
-**Location:** Well-positioned in Merchant District, Tier 4
+**Location:** Well-positioned in [[Merchant District]], Tier 4
 **Appearance:**
 - Modest storefront, reinforced door
 - Display windows show legal, attractive pieces
@@ -85,7 +85,7 @@ related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 **Inventory (Visible):**
 - Historical weapons and armor
 - Ancient coins and jewelry
-- Pre-Merit Council artifacts
+- Pre-[[Merit Council]] artifacts
 - Maps and documents (copies, mostly)
 - "Mysterious" objects of unclear origin
 
@@ -134,7 +134,7 @@ related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 
 **About the Codex:**
 - Doesn't know specific name "Dominion Evolution Codex"
-- Recognizes description if Manny provides it
+- Recognizes description if [[Manny]] provides it
 - "Metal book, seven pages, bound to stone? Matches Garrek's notes."
 - Has connected journal to a valuable artifact
 
@@ -144,14 +144,14 @@ related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 - Danger of the healing waters (addictive property)
 - How Garrek actually died (assumed Underdark hazards)
 
-## Interaction with Manny
+## Interaction with [[Manny]]
 
 ### Initial Meeting
-When Manny asks about the Codex or ancient artifacts:
+When [[Manny]] asks about the Codex or ancient artifacts:
 
 > Mirella looks up from appraising a piece of old jewelry, her green eyes sharp and assessing.
 >
-> "The Codex? Interesting choice for a young scholar."
+> "[[The Codex]]? Interesting choice for a young scholar."
 >
 > She sets down her loupe and leans forward, elbows on counter.
 >
@@ -177,19 +177,19 @@ When Manny asks about the Codex or ancient artifacts:
 - Information about significant finds
 - Promise of first refusal on future discoveries
 
-**What Manny Gets:**
+**What [[Manny]] Gets:**
 - High-quality copies of 2 journal pages
 - Garrek's name and reputation
 - General Underdark location hints
 - Confirmation that metal book exists
 
 ### Follow-Up Services
-**If Manny Buys:**
+**If [[Manny]] Buys:**
 - "Come back if you find it - I'll pay for information"
 - Offers to buy/fence any other artifacts party finds
 - May reduce prices on future purchases (good customer)
 
-**If Manny Declines:**
+**If [[Manny]] Declines:**
 - "Offer stands. I'll be here."
 - No hard feelings - business is business
 - Pages may sell to someone else eventually
@@ -203,13 +203,13 @@ When Manny asks about the Codex or ancient artifacts:
 - **Pragmatic Counterpoint:** Business approach vs Veridian's enthusiasm
 
 ### The Choice
-**If Manny Buys Pages Now (25gp):**
+**If [[Manny]] Buys Pages Now (25gp):**
 - Gets HEAD START on Codex quest
 - Can research while doing other quests
 - Thorne's journal (Quest 3) confirms/expands on info
-- Shows Manny's commitment to finding Codex
+- Shows [[Manny]]'s commitment to finding Codex
 
-**If Manny Waits:**
+**If [[Manny]] Waits:**
 - Saves 25gp for other purchases
 - Gets full journal FREE from Thorne after Quest 2
 - Delayed start on Codex investigation
@@ -223,7 +223,7 @@ When Manny asks about the Codex or ancient artifacts:
 - Buying now doesn't invalidate Thorne's quest
 
 **Black Market Ties:**
-- Knows Kex the Fence (rival smuggler)
+- Knows [[Kex the Fence]] (rival smuggler)
 - Aware of Geist's operation (stays neutral)
 - Fences goods for various parties
 - Useful contact for Kyle's investigation
@@ -244,7 +244,7 @@ When Manny asks about the Codex or ancient artifacts:
 - Regular fence for party loot
 - Source of rumors and artifact leads
 - May commission party to retrieve specific items
-- Black market connection in Agastia
+- Black market connection in [[Agastia]]
 - Could provide intel on underground economy
 
 ### If Party Returns with Codex Info

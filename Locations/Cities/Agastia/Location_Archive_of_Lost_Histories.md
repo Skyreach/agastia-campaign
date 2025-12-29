@@ -10,13 +10,13 @@ version: "1.0.0"
 tags: [location, archive, library, scholar-quarter, knowledge, quest-destination, manny-codex, veridian]
 ---
 
-# Archive of Lost Histories
+# [[Archive of Lost Histories]]
 
 ## Overview
 
-**Type & Specialty:** The largest and most ancient repository of knowledge in Agastia, focusing on forgotten lore, historical records, and obscure magical texts. Less a public library, more a secure research facility.
+**Type & Specialty:** The largest and most ancient repository of knowledge in [[Agastia]], focusing on forgotten lore, historical records, and obscure magical texts. Less a public library, more a secure research facility.
 
-**Location:** Scholar Quarter, Agastia (implied from the validation report)
+**Location:** [[Scholar Quarter]], [[Agastia]] (implied from the validation report)
 
 **Clientele:** Primarily scholars, mages, historians, and those seeking very specific, often dangerous, knowledge. Access is restricted and requires credentials or special dispensation.
 
@@ -27,14 +27,14 @@ tags: [location, archive, library, scholar-quarter, knowledge, quest-destination
 ## Staff
 
 ### Veridian
-**Role:** Chief Archivist and Guardian of the Archive of Lost Histories
+**Role:** Chief Archivist and Guardian of the [[Archive of Lost Histories]]
 **Faction:** Independent (Aligned with knowledge preservation, fiercely neutral)
 
 **Background:**
 - An ancient and exceptionally learned elf, said to have served at the Archive for centuries.
-- Possesses encyclopedic knowledge of Agastia's history and forgotten magical practices.
+- Possesses encyclopedic knowledge of [[Agastia]]'s history and forgotten magical practices.
 - Views the Archive's collection as a sacred trust, protecting it from both destruction and misuse.
-- Has a complex relationship with Manny, likely knowing more about his quest than he lets on.
+- Has a complex relationship with [[Manny]], likely knowing more about his quest than he lets on.
 
 **Goals:**
 - Short-term: Maintain the integrity and security of the Archive's collections.
@@ -65,7 +65,7 @@ tags: [location, archive, library, scholar-quarter, knowledge, quest-destination
 **Regular Visitors:**
 - High-ranking mages from the Grand Academy.
 - Historians seeking to verify obscure facts.
-- Rare, authorized agents of the Merit Council seeking historical precedents.
+- Rare, authorized agents of the [[Merit Council]] seeking historical precedents.
 
 ## Services & Inventory
 
@@ -82,18 +82,18 @@ tags: [location, archive, library, scholar-quarter, knowledge, quest-destination
 - **Vast Collection of Books & Scrolls:** Covering history, magic, philosophy, and forgotten sciences.
 - **Ancient Artifacts:** Many imbued with dormant or active magical properties, secured by powerful wards.
 - **Forbidden Texts:** Some texts are too dangerous for casual reading, locked away behind multiple layers of protection.
-- **Manny's Codex:** (Potentially housed here, or information about its location/contents can be found here)
+- **[[Manny]]'s Codex:** (Potentially housed here, or information about its location/contents can be found here)
 
 ## Connections
 
 **District Integration:**
-- Central to the scholarly life of Agastia, though largely inaccessible to the general public.
+- Central to the scholarly life of [[Agastia]], though largely inaccessible to the general public.
 - Supplies rare information to the Grand Academy.
 
 **Related NPCs:**
-- **Manny:** (Crucial connection for his Codex quest).
+- **[[Manny]]:** (Crucial connection for his Codex quest).
 - **Grand Academy Scholars:** Frequent, authorized visitors.
-- **Merit Council Archivists:** Occasional, supervised access to specific records.
+- **[[Merit Council]] Archivists:** Occasional, supervised access to specific records.
 
 **Faction Ties:**
 - Officially neutral, but its role in preserving knowledge makes it a valuable asset to any faction seeking power through information.
@@ -104,9 +104,9 @@ tags: [location, archive, library, scholar-quarter, knowledge, quest-destination
 ### Plot Hooks
 
 **The Missing Page:**
-- A critical page from Manny's Codex (or a related text) is rumored to have been stolen or lost from the Archive.
+- A critical page from [[Manny]]'s Codex (or a related text) is rumored to have been stolen or lost from the Archive.
 - Veridian needs the party to retrieve it before its contents fall into the wrong hands.
-- Reward: Direct access to the Archive's resources, Veridian's trust, key information for Manny's quest.
+- Reward: Direct access to the Archive's resources, Veridian's trust, key information for [[Manny]]'s quest.
 
 **Whispers of the Past:**
 - Strange magical phenomena or whispers emanate from a newly discovered, sealed section of the Archive.
@@ -126,11 +126,11 @@ tags: [location, archive, library, scholar-quarter, knowledge, quest-destination
 ### Secret Information
 
 **The True Purpose of the Archive:**
-- More than just a repository, it's a living archive that subtly influences Agastia's magic and history.
+- More than just a repository, it's a living archive that subtly influences [[Agastia]]'s magic and history.
 - Veridian is one of a long line of guardians, chosen not just for knowledge, but for their magical resonance.
 
-**Manny's Lineage:**
-- Veridian knows Manny's family has a deep, ancient connection to the Codex and the Archive itself.
-- Manny's quest is not just about retrieving a book, but fulfilling a destiny tied to the Archive.
+**[[Manny]]'s Lineage:**
+- Veridian knows [[Manny]]'s family has a deep, ancient connection to the Codex and the Archive itself.
+- [[Manny]]'s quest is not just about retrieving a book, but fulfilling a destiny tied to the Archive.
 
 I will now create this file.

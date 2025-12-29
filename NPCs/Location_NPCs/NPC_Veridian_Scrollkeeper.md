@@ -12,18 +12,18 @@ threat_level: None
 related_entities: [Codex of Peace, Temporal Bloodline, Garrek, Manny]
 ---
 
-# Veridian Scrollkeeper
+# [[Veridian Scrollkeeper]]
 
 ## Player Summary
 
-**Veridian Scrollkeeper** is an elderly half-elf scholar who has dedicated his life to studying ancient civilizations and lost artifacts. He works at the Archive of Lost Histories in Agastia's Scholar Quarter, surrounded by dusty tomes and fragmented texts. Known for his enthusiasm when discussing ancient lore, Veridian loves sharing knowledge with anyone genuinely interested.
+**[[Veridian Scrollkeeper]]** is an elderly half-elf scholar who has dedicated his life to studying ancient civilizations and lost artifacts. He works at the [[Archive of Lost Histories]] in [[Agastia]]'s [[Scholar Quarter]], surrounded by dusty tomes and fragmented texts. Known for his enthusiasm when discussing ancient lore, Veridian loves sharing knowledge with anyone genuinely interested.
 
 ### Basic Information
 - **Race:** Half-Elf
 - **Gender:** Male
 - **Age:** Elderly (appears ~80-90, but half-elf aging means could be 150+)
 - **Occupation:** Artifact Scholar / Archivist
-- **Location:** Archive of Lost Histories, Scholar Quarter, Agastia
+- **Location:** [[Archive of Lost Histories]], [[Scholar Quarter]], [[Agastia]]
 - **Personality:** Enthusiastic, generous with knowledge, slightly absent-minded
 
 ### Appearance
@@ -43,8 +43,8 @@ related_entities: [Codex of Peace, Temporal Bloodline, Garrek, Manny]
 - Impatient with those who waste his time
 
 ### Known Activities
-- Works daily at Archive of Lost Histories
-- Researches pre-Merit Council artifacts and civilizations
+- Works daily at [[Archive of Lost Histories]]
+- Researches pre-[[Merit Council]] artifacts and civilizations
 - Advises scholars seeking historical information
 - Has spent 40+ years studying peace-binding artifacts
 - Known in academic circles as leading expert on ancient items
@@ -62,7 +62,7 @@ related_entities: [Codex of Peace, Temporal Bloodline, Garrek, Manny]
 
 ### Area of Expertise
 **Ancient Civilizations & Artifacts:**
-- Pre-Merit Council history (specialty)
+- Pre-[[Merit Council]] history (specialty)
 - Lost magical items and their properties
 - Ancient defensive magic and binding rituals
 - Temporal anomalies and time-related artifacts
@@ -95,43 +95,43 @@ related_entities: [Codex of Peace, Temporal Bloodline, Garrek, Manny]
 ## Relationships
 
 ### Colleagues
-- **Mirella Stonemark:** Philosophical disagreement (he preserves, she profits); professional respect but different values
+- **[[Mirella Stonemark]]:** Philosophical disagreement (he preserves, she profits); professional respect but different values
 
 ### Employers
-- **Archive of Lost Histories:** Employed as senior researcher and archivist
+- **[[Archive of Lost Histories]]:** Employed as senior researcher and archivist
 
 ### Potential Connections
-- **Manny:** Will become mentor figure if Manny shares discoveries
-- **Professor Zero:** May know of him through academic circles (not confirmed)
+- **[[Manny]]:** Will become mentor figure if [[Manny]] shares discoveries
+- **[[Professor Zero]]:** May know of him through academic circles (not confirmed)
 
 ## How to Find Him
 
 ### Location
-**Archive of Lost Histories** (Scholar Quarter, Tier 3)
+**[[Archive of Lost Histories]]** ([[Scholar Quarter]], Tier 3)
 - Small, specialized library focusing on pre-Council artifacts
 - Not widely known outside academic circles
 - Open during standard hours (8am - 6pm, every day)
 - Veridian practically lives there
 
 ### Methods
-**DC 12 Investigation in Scholar Quarter:**
+**DC 12 Investigation in [[Scholar Quarter]]:**
 - Ask at any library about "artifact experts"
 - Scholars recognize the name when artifacts are mentioned
-- "Oh, you want Veridian - he's at the Archive of Lost Histories"
+- "Oh, you want Veridian - he's at the [[Archive of Lost Histories]]"
 
 **Torvin's Recommendation:**
 - If party asks Torvin about artifact scholars
-- "Veridian Scrollkeeper - old as dirt, knows twice as much"
+- "[[Veridian Scrollkeeper]] - old as dirt, knows twice as much"
 - Provides Archive location
 
-**Professor Zero Connection:**
-- Professor Zero may have mentioned Veridian in passing
+**[[Professor Zero]] Connection:**
+- [[Professor Zero]] may have mentioned Veridian in passing
 - Academic circles all know each other
 
-## Interaction with Manny
+## Interaction with [[Manny]]
 
 ### Initial Meeting
-When Manny asks about the Codex:
+When [[Manny]] asks about the Codex:
 
 > Veridian's eyes light up behind his spectacles. He sets down his current book with a soft thump.
 >
@@ -163,7 +163,7 @@ When Manny asks about the Codex:
 **FREE - No charge**
 - Veridian loves sharing knowledge
 - Seeing a young person interested in ancient lore delights him
-- May gift Manny a reference copy of relevant text
+- May gift [[Manny]] a reference copy of relevant text
 - "Just promise to tell me what you find!"
 
 ## DM Notes
@@ -185,24 +185,24 @@ When Manny asks about the Codex:
 - **Hidden Detail:** Veridian once tried to find Temporal Bloodline himself
   - Failed, gave up after 10 years
   - Still dreams of seeing the Codex before he dies
-- **Academic Rivalry:** Has mild disagreement with Mirella Stonemark
+- **Academic Rivalry:** Has mild disagreement with [[Mirella Stonemark]]
   - She sells artifacts, he preserves them
   - Professional respect, philosophical differences
 
-### If Manny Shares Discoveries
-- **Thrilled** if Manny reports back with findings
+### If [[Manny]] Shares Discoveries
+- **Thrilled** if [[Manny]] reports back with findings
 - May help decode journal pages
 - Can research specific questions between sessions
-- Potential mentor figure for Manny's scholarly interests
+- Potential mentor figure for [[Manny]]'s scholarly interests
 
 ### Connection to Session 2
-- One of two scholars providing Codex leads to Manny
+- One of two scholars providing Codex leads to [[Manny]]
 - Complements Mirella's pragmatic approach with academic enthusiasm
 - FREE information balances Mirella's paid intel
-- Can be visited during Agastia exploration
+- Can be visited during [[Agastia]] exploration
 
 ### Future Hooks
 - May ask party to retrieve specific artifacts for Archive
-- Could provide research on other mysteries (Josh's markings, etc.)
-- Academic contact in Agastia for party
+- Could provide research on other mysteries ([[Josh]]'s markings, etc.)
+- Academic contact in [[Agastia]] for party
 - Potential patron for artifact-recovery quests

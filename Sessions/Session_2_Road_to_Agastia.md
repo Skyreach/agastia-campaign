@@ -7,7 +7,7 @@ version: "1.0.0"
 tags: [session2, meridians-rest, thorne-kallister, garreks-falls, downtime, crafting]
 ---
 
-# Session 2: Road to Agastia - DM Guide
+# Session 2: Road to [[Agastia]] - DM Guide
 
 **Party:** Level 2 (5 PCs, corruption cleared) | **Duration:** 3-4 hours | **Type:** Quest hub + downtime
 
@@ -15,9 +15,9 @@ tags: [session2, meridians-rest, thorne-kallister, garreks-falls, downtime, craf
 
 ```mermaid
 graph TD
-    Start([Arrive at Meridian's Rest]) --> Payment[Thava Pays 500gp<br/>Mission Complete]
+    Start([Arrive at [[Meridian's Rest]]]) --> Payment[Thava Pays 500gp<br/>Mission Complete]
 
-    Payment --> Torvin[Meet Torvin<br/>Letter to Agastia]
+    Payment --> Torvin[Meet Torvin<br/>Letter to [[Agastia]]]
 
     Torvin --> Downtime1[Downtime Period 1<br/>Crafting/Rest]
 
@@ -37,12 +37,12 @@ graph TD
 
     Quest3 --> Discovery[Discover Codex Location<br/>Temporal Bloodline]
 
-    Discovery --> NextSession{Travel to Agastia?}
+    Discovery --> NextSession{Travel to [[Agastia]]?}
 
-    NextSession -->|Yes| Agastia[Journey to Agastia]
+    NextSession -->|Yes| [[Agastia]][Journey to [[Agastia]]]
     NextSession -->|No| Falls[Explore Garrek's Falls]
 
-    Agastia --> End([Session 2 Complete])
+    [[Agastia]] --> End([Session 2 Complete])
     Falls --> End
 ```
 
@@ -56,7 +56,7 @@ graph TD
   5. **Downtime:** Crafting, investigation, personal quests between missions
 
 **Toggle: Key NPCs**
-  - **Torvin Greycask (they):** Goblin messenger from Agastia with letter for party
+  - **[[Torvin Greycask]] (they):** Goblin messenger from [[Agastia]] with letter for party
   - **Brian Thornscale (Mayor):** Human patron who hired party for corruption quest
   - **Thorne "The Bear" Kallister:** Retired adventurer, quest giver, Garrek's friend
   - **Assistant Bellweather:** Mayor's assistant
@@ -77,11 +77,11 @@ graph TD
   - **Temporal Bloodline Tribe:** Guardians of the Falls (potential allies)
 
 **Toggle: Player Hints (Distribute During Downtime)**
-  - **Kyle/Nameless:** Rumors about Geist's smuggling operation in Agastia
-  - **Manny:** Garrek's journal mentions ancient book at the Falls
-  - **Nikki:** Journal notes "time seems wrong" near Falls (temporal magic)
-  - **Josh/Brand:** Thorne's war stories may reference elemental ancestors
-  - **Ian/Rakash:** Storm Giant information from Thorne's adventuring days
+  - **[[Kyle/Nameless]]:** Rumors about Geist's smuggling operation in [[Agastia]]
+  - **[[Manny]]:** Garrek's journal mentions ancient book at the Falls
+  - **[[Nikki]]:** Journal notes "time seems wrong" near Falls (temporal magic)
+  - **[[Josh]]/Brand:** Thorne's war stories may reference elemental ancestors
+  - **[[Ian/Rakash]]:** Storm Giant information from Thorne's adventuring days
 
 ## Nodes
 
@@ -89,25 +89,25 @@ graph TD
 
 **Thava's Payment:**
 
-> The Merit Council representative arrives at Meridian's Rest, accompanied by guards. Thava Thornscale, a dragonborn official, approaches your group with a formal bow.
+> The [[Merit Council]] representative arrives at [[Meridian's Rest]], accompanied by guards. [[Thava Thornscale]], a dragonborn official, approaches your group with a formal bow.
 >
-> "The corruption is cleared. The town is safe. The Merit Council honors its contracts."
+> "The corruption is cleared. The town is safe. The [[Merit Council]] honors its contracts."
 >
 > They produce a heavy coin purse. "500 gold pieces, as agreed."
 
 **Meeting Torvin:**
 
-After payment, a goblin messenger approaches - Torvin Greycask.
+After payment, a goblin messenger approaches - [[Torvin Greycask]].
 
 **Torvin (they):**
-- From Agastia, not wealthy district
+- From [[Agastia]], not wealthy district
 - Came from Cantel
-- Carries letter for the party: "Heard you might be traveling to Agastia. I have a letter that needs delivering to [patron name]. Pay well if you take it."
-- Payment: 5gp for delivering letter + basic intel about Agastia
+- Carries letter for the party: "Heard you might be traveling to [[Agastia]]. I have a letter that needs delivering to [patron name]. Pay well if you take it."
+- Payment: 5gp for delivering letter + basic intel about [[Agastia]]
 
 **DM Notes:**
 - Party now has substantial gold (500gp + leftover from Session 1)
-- Torvin provides hook for eventual Agastia travel
+- Torvin provides hook for eventual [[Agastia]] travel
 - Mayor Brian Thornscale and Thorne Kallister are separate NPCs
 
 ---
@@ -150,7 +150,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 >
 > "There's no pay for this. Just survival."
 
-**Objective:** Defend Meridian's Rest from attacking forces
+**Objective:** Defend [[Meridian's Rest]] from attacking forces
 
 **Combat Encounter:**
 
@@ -189,7 +189,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Garrek's Journal (Handout):**
 
 **Toggle: Journal Contents**
-  - **Map Fragment:** Partial route to Garrek's Falls from Meridian's Rest
+  - **Map Fragment:** Partial route to Garrek's Falls from [[Meridian's Rest]]
   - **Entry 1:** "The waters heal anything. Regrew Torvan's finger in minutes."
   - **Entry 2:** "Strange. Time seems... wrong near the Falls. Clocks run backward."
   - **Entry 3:** "Found a book. Seven pages, metal, bound to a pedestal. Can't read it."
@@ -211,7 +211,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - **DC 12 Wisdom Save:** On failure, compelled to drink more (will drown trying)
 - **Evidence:** Skeletal remains in pool (DC 20 Perception to notice before drinking)
 
-**The Codex of Peace:**
+**[[The Codex]] of Peace:**
 - 7 metal pages bound to stone pedestal
 - Protected by Temporal Bloodline Tribe
 - Zone prevents violence, ill will, evil acts
@@ -220,14 +220,14 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Temporal Bloodline Tribe:**
 - Guardians of the Falls and Codex
 - Possess temporal magic abilities
-- May recognize Nikki's interest in temporal power
+- May recognize [[Nikki]]'s interest in temporal power
 - Potential allies if approached peacefully
 
 **DM Notes:**
 - Party can discover Codex location without removing it
-- Temporal Bloodline connection for Nikki's arc
-- Manny's artifact quest hook
-- Josh/Brand may learn about elemental ancestors
+- Temporal Bloodline connection for [[Nikki]]'s arc
+- [[Manny]]'s artifact quest hook
+- [[Josh]]/Brand may learn about elemental ancestors
 - This location becomes important for future sessions
 
 ---
@@ -244,9 +244,9 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Toggle: Crafting System**
 
-**Meridian's Rest as Crafting Hub:**
+**[[Meridian's Rest]] as Crafting Hub:**
 - Population ~2000 (half transient travelers)
-- Function: Resupply hub for Agastia-bound adventurers
+- Function: Resupply hub for [[Agastia]]-bound adventurers
 - Grateful townsfolk offer 15-20% discounts
 
 **NPCs:**
@@ -267,36 +267,36 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Toggle: Personal Investigations**
 
-**Kyle/Nameless:**
+**[[Kyle/Nameless]]:**
 - Investigate Geist rumors (Persuasion/Investigation DC 12)
-- Learn Geist has Merit Council position in Agastia
+- Learn Geist has [[Merit Council]] position in [[Agastia]]
 - Rumors of smuggling operation in dock district
 
-**Manny:**
+**[[Manny]]:**
 - Study Garrek's journal (Investigation DC 10)
 - Identify references to ancient book (Codex)
 - Map fragment points to Underdark location
 
-**Nikki:**
+**[[Nikki]]:**
 - Study journal's temporal references (Arcana DC 13)
 - "Time seems wrong" suggests temporal magic or anomaly
 - Temporal Bloodline Tribe may have answers
 
-**Josh/Brand:**
+**[[Josh]]/Brand:**
 - Talk with Thorne about his adventuring days (no check)
 - Thorne mentions elemental phenomenon in Underdark
 - Old legends about civilization with elemental powers
 
-**Ian/Rakash:**
+**[[Ian/Rakash]]:**
 - Ask Thorne about Storm Giants (History/Persuasion DC 10)
 - Thorne heard of Storm Giant brigade near coastal regions
 - May have information about Rakash's revenge quest
 
 ---
 
-### Travel to Agastia (If Party Chooses)
+### Travel to [[Agastia]] (If Party Chooses)
 
-**Route:** Meridian's Rest → Agastia
+**Route:** [[Meridian's Rest]] → [[Agastia]]
 **Distance:** ~48 miles (2 hexes at 24mi/hex world scale)
 **Travel Time:** 2 days at normal pace (24 mi/day)
 
@@ -340,23 +340,23 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 | | The forest grows unnaturally quiet and dark. Acrid fog rolls between the trees. A green dragon wyrmling watches from a high branch, studying the party with ancient, intelligent eyes. It speaks, offering a "trade"—information for secrets, or safe passage for tribute. **Variation:** The wyrmling is genuinely curious and might become a recurring NPC if treated well, or it's setting up an ambush with goblin allies hidden nearby. **Non-Combat:** Clever negotiation, offering valuable information (secrets about local politics, treasure locations), or appealing to its vanity can result in the wyrmling letting the party pass or even granting a warning about nearby dangers. The wyrmling might demand one magic item or 50 gp in tribute. |
 
 **Notable NPCs on Route:**
-- **Corvin Tradewise:** Merchant caravan leader (see NPCs/Location_NPCs/NPC_Corvin_Tradewise.md)
+- **[[Corvin Tradewise]]:** Merchant caravan leader (see NPCs/Location_NPCs/NPC_Corvin_Tradewise.md)
   - Leads caravan of 5 wagons with 4 guards (Veterans)
-  - Traveling toward Meridian's Rest when party encounters him
+  - Traveling toward [[Meridian's Rest]] when party encounters him
   - Willing to trade supplies at normal prices (potions, rope, rations, etc.)
-  - Offers information: "Roads safe near Agastia, but bandit trouble up north"
+  - Offers information: "Roads safe near [[Agastia]], but bandit trouble up north"
   - Can be hired for future transport (50gp round trip to Meridian's Rest)
-  - **If Kyle asks about dock inspections/Geist:** "Yeah, 'Inspector G' they call him. Real piece of work. Merit Council badge, but everyone knows he's crooked. Protection fees, delayed shipments... Can't prove it though. He's got the Council's backing."
+  - **If Kyle asks about dock inspections/Geist:** "Yeah, 'Inspector G' they call him. Real piece of work. [[Merit Council]] badge, but everyone knows he's crooked. Protection fees, delayed shipments... Can't prove it though. He's got the Council's backing."
 
 ---
 
-### Agastia Arrival
+### [[Agastia]] Arrival
 
 **Day 2, Evening:**
 
-> The road climbs a gentle rise, and suddenly Agastia sprawls before you. The city rises in tiers—districts stacked like a wedding cake, each level connected by broad staircases and ramps. Enormous stone statues of ancient heroes tower over streets and plazas, their weathered faces watching all who enter.
+> The road climbs a gentle rise, and suddenly [[Agastia]] sprawls before you. The city rises in tiers—districts stacked like a wedding cake, each level connected by broad staircases and ramps. Enormous stone statues of ancient heroes tower over streets and plazas, their weathered faces watching all who enter.
 >
-> The Northern Wall dominates the skyline—a massive fortification protecting the city from threats emerging from the distant Infinite Forest. Guard towers dot the wall, and Merit Council soldiers stand watch.
+> The Northern Wall dominates the skyline—a massive fortification protecting the city from threats emerging from the distant [[Infinite Forest]]. Guard towers dot the wall, and [[Merit Council]] soldiers stand watch.
 >
 > To the north, you see airship docks perched on the upper tiers—magical vessels tethered like ships at harbor, their sails glowing with arcane energy.
 >
@@ -366,11 +366,11 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - Guards ask for names and purpose of visit (routine check)
 - No merit papers required for entry, just identification
 - Torvin's letter destination: [Patron name to be determined]
-- Party can enter freely—Agastia is open to travelers
+- Party can enter freely—[[Agastia]] is open to travelers
 
 ---
 
-### Agastia: City Layout
+### [[Agastia]]: City Layout
 
 **Tiered Structure (Top to Bottom):**
 
@@ -378,22 +378,22 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - Engineering marvel, magical vessels
 - Upper tier access requires wealth or merit
 
-**Tier 2: Government Complex**
+**Tier 2: [[Government Complex]]**
 - Inverse Tower (extends downward)
-- Merit Council chambers
+- [[Merit Council]] chambers
 - Administrative offices
 
-**Tier 3: Scholar Quarter & Residential (Merit)**
-- **Archive of Lost Histories:** Veridian Scrollkeeper's workplace
+**Tier 3: [[Scholar Quarter]] & Residential (Merit)**
+- **[[Archive of Lost Histories]]:** [[Veridian Scrollkeeper]]'s workplace
 - Public libraries, research facilities
 - Universities and academies
 - Testing centers for merit advancement
 - Housing for successful citizens
 
-**Tier 4: Merchant District (Main Entry Point)**
-- **Stonemark Antiquities:** Mirella's artifact shop
+**Tier 4: [[Merchant District]] (Main Entry Point)**
+- **[[Stonemark Antiquities]]:** Mirella's artifact shop
 - **The Gilded Gryphon Inn:** Quality lodging (5gp/night)
-- **Il Drago Rosso (The Red Dragon):** Nikki's family restaurant
+- **[[Il Drago Rosso]] (The Red Dragon):** [[Nikki]]'s family restaurant
 - Markets, shops, equipment vendors
 - Torvin's letter destination [TBD]
 
@@ -409,31 +409,31 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - Sailor taverns (rough clientele, good information)
 - **The Rusty Anchor:** Dock worker tavern (Harren drinks here)
 
-**Tier 7 (Bottom): The Depths**
-- **Dispossessed Housing:** Overcrowded, poor conditions
+**Tier 7 (Bottom): [[The Depths]]**
+- **[[Dispossessed]] Housing:** Overcrowded, poor conditions
 - Underground/black market goods
 - **Storm Shrine:** Small temple to elemental gods
 - Resistance hideouts (secret meeting places)
-- **Informant networks:** Kex the Fence operates here
+- **Informant networks:** [[Kex the Fence]] operates here
 
 **Navigation:**
-- **Lifts (Paid):** 1cp per tier, Merit Council operated
+- **Lifts (Paid):** 1cp per tier, [[Merit Council]] operated
 - **Staircases (Free):** 15 minutes per tier at normal pace
 - **Carts/Horses:** Not allowed on upper tiers (too crowded)
 
 ---
 
-### Agastia: Player Quest Nodes
+### [[Agastia]]: Player Quest Nodes
 
-#### Manny's Quest: Finding the Codex
+#### [[Manny]]'s Quest: Finding the Codex
 
 **Objective:** Locate information about the Dominion Evolution Codex
 
 **Entry Points:**
 
-**Toggle: Option 1 - Visit Veridian Scrollkeeper (Free)**
-- **Location:** Archive of Lost Histories, Scholar Quarter (Tier 3)
-- **How to Find:** DC 12 Investigation in Scholar Quarter, or ask at any library about "artifact experts"
+**Toggle: Option 1 - Visit [[Veridian Scrollkeeper]] (Free)**
+- **Location:** [[Archive of Lost Histories]], [[Scholar Quarter]] (Tier 3)
+- **How to Find:** DC 12 Investigation in [[Scholar Quarter]], or ask at any library about "artifact experts"
 - **What He Shares:**
   > "Ah, the Dominion Evolution Codex! A fascinating legend. Seven metal pages, bound to stone, supposedly capable of enforcing peace itself. The old texts say it was placed in a sanctuary where time flows... strangely. Healing waters, if the stories are true. Look for the Temporal Bloodline—they were the guardians, last I heard."
 - **Information Provided:**
@@ -443,11 +443,11 @@ After payment, a goblin messenger approaches - Torvin Greycask.
   - Points toward Temporal Bloodline legends
   - Mentions "healing sanctuaries" in old explorer journals
 
-**Toggle: Option 2 - Visit Mirella Stonemark (25gp or Trade)**
-- **Location:** Stonemark Antiquities, Merchant District (Tier 4)
+**Toggle: Option 2 - Visit [[Mirella Stonemark]] (25gp or Trade)**
+- **Location:** [[Stonemark Antiquities]], [[Merchant District]] (Tier 4)
 - **How to Find:** DC 10 Investigation (well-known shop), any merchant can direct party
 - **What She Offers:**
-  > "The Codex? Interesting choice. I don't have the artifact itself, but I DO have journal pages from an adventurer who found something like it. Twenty years old, from a dwarf named Garrek. Mentions a metal book bound to stone, wouldn't budge. Near underground waterfalls. Time got 'weird' there, he said. I'll part with copies for... let's say 25 gold. Or if you've got something INTERESTING to trade..."
+  > "[[The Codex]]? Interesting choice. I don't have the artifact itself, but I DO have journal pages from an adventurer who found something like it. Twenty years old, from a dwarf named Garrek. Mentions a metal book bound to stone, wouldn't budge. Near underground waterfalls. Time got 'weird' there, he said. I'll part with copies for... let's say 25 gold. Or if you've got something INTERESTING to trade..."
 - **Information Provided (if purchased):**
   - 2 pages from Garrek's journal (same journal Thorne will give in Quest 3)
   - One mentions "metal book that won't open" near waterfalls
@@ -457,7 +457,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Toggle: Option 3 - Wait for Quest 3 (Free, Later)**
 - Thorne gives Garrek's full journal after Quest 2
 - Contains map fragment and more details
-- No cost but requires completing quests at Meridian's Rest first
+- No cost but requires completing quests at [[Meridian's Rest]] first
 
 **Revelation:**
 - Codex is at Garrek's Falls (Underdark)
@@ -469,12 +469,12 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 #### Kyle's Quest: Kaelborn/Geist Investigation
 
-**Quest State from Meridian's Rest:**
+**Quest State from [[Meridian's Rest]]:**
 - Kyle knows: "Kaelborn is easy to find but hard to access"
 - Kyle knows: "Geist is hard to find but easy to access"
 
 **The Correct Dynamic:**
-- **Kaelborn** = Public Merit Council official (known location, requires rank/leverage to access)
+- **Kaelborn** = Public [[Merit Council]] official (known location, requires rank/leverage to access)
 - **Geist** = Hidden enforcer (must locate, but easy to approach once found)
 
 **Kyle can pursue either path:**
@@ -483,7 +483,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 ##### Path 1: Access Kaelborn (Direct Route)
 
-**Objective:** Gain access to Kaelborn, a high-ranking Merit Council official
+**Objective:** Gain access to Kaelborn, a high-ranking [[Merit Council]] official
 
 **Revelation:** Kyle needs access to Kaelborn, who runs an illicit smuggling network under official cover. Kaelborn is publicly known but protected by rank and bureaucracy.
 
@@ -492,9 +492,9 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 2. Find leverage to force a meeting
 3. Locate Geist and use him as a route to Kaelborn
 
-###### Entry Node 1: Merit Council Clerk
+###### Entry Node 1: [[Merit Council]] Clerk
 
-**Location:** Government Complex (Tier 2), Public Records Office
+**Location:** [[Government Complex]] (Tier 2), Public Records Office
 **Skill Check:** Persuasion DC 10
 
 **Hook:**
@@ -510,7 +510,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 ###### Entry Node 2: Dock Merchants
 
-**Location:** Merchant District (Tier 4) or Docks (Tier 6)
+**Location:** [[Merchant District]] (Tier 4) or Docks (Tier 6)
 **Skill Check:** Investigation DC 12
 
 **Hook:**
@@ -520,13 +520,13 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - "Kaelborn controls all dock trade. Nothing moves without his approval."
 - "We pay... extra fees. Kaelborn's people collect them."
 - "There's someone who handles the collections - we don't know his name, but he's dangerous."
-- "Complain to the Merit Council? Kaelborn IS the Merit Council!"
+- "Complain to the [[Merit Council]]? Kaelborn IS the [[Merit Council]]!"
 
 **Leads To:** Location 2 (Merchant Network - Evidence Gathering)
 
 ###### Entry Node 3: Underground Informant
 
-**Location:** The Depths (Tier 7), black market contacts
+**Location:** [[The Depths]] (Tier 7), black market contacts
 **Skill Check:** Streetwise DC 13
 
 **Hook:**
@@ -545,7 +545,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **3 Clues Available:**
 
 **Toggle: Clue 1 (Observation) - DC 12 Perception**
-- Kaelborn's office in Government Complex is well-guarded
+- Kaelborn's office in [[Government Complex]] is well-guarded
 - Appointment book is FULL for months (deliberately)
 - Guards turn away visitors without proper credentials
 - "Emergencies" are denied unless you have significant rank
@@ -647,7 +647,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - Get recruited into network
 - RISK: Deep cover, dangerous
 
-**Option 5: Report to Merit Council**
+**Option 5: Report to [[Merit Council]]**
 - Present evidence to Council authorities
 - DOWNSIDE: Kaelborn may escape through connections
 
@@ -657,16 +657,16 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Objective:** Locate and investigate Geist's smuggling operation
 
-**Revelation:** Geist operates smuggling safehouse under cover of Merit Council Trade Inspector position.
+**Revelation:** Geist operates smuggling safehouse under cover of [[Merit Council]] Trade Inspector position.
 
 **Key Details:**
-- Geist = Merit Council Trade Inspector (uses position as cover)
+- Geist = [[Merit Council]] Trade Inspector (uses position as cover)
 - Kaelborn = The real boss (Geist takes orders from him)
 - Safehouse = Warehouse 7, disguised as "confiscated goods warehouse"
 
 ###### Entry Node 1: Harren (Dock Worker)
 
-**Location:** The Rusty Anchor tavern, Dock District (Tier 6)
+**Location:** The Rusty Anchor tavern, [[Dock District]] (Tier 6)
 **Skill Check:** Persuasion DC 10 (easy—first clue should be accessible)
 
 **Hook:**
@@ -679,9 +679,9 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Leads To:** Location 1 (Warehouse District investigation)
 
-##### Entry Node 2: Mira Saltwind (Extorted Merchant)
+##### Entry Node 2: [[Mira Saltwind]] (Extorted Merchant)
 
-**Location:** Saltwind Imports, Merchant District (Tier 4)
+**Location:** Saltwind Imports, [[Merchant District]] (Tier 4)
 **Skill Check:** Investigation DC 13 (moderate—hidden ledger)
 
 **Hook:**
@@ -690,14 +690,14 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **What She Shares (if persuaded):**
 - "Inspector G comes every month. 'Inspection fees,' he calls it."
 - "Pay or he shuts down my shipments—claims 'irregularities.'"
-- "Other merchants pay too. We can't fight him—he's Merit Council."
+- "Other merchants pay too. We can't fight him—he's [[Merit Council]]."
 - "He works out of a warehouse near the docks."
 
-**Leads To:** Location 2 (Merit Council Records Office)
+**Leads To:** Location 2 ([[Merit Council]] Records Office)
 
-##### Entry Node 3: Kex the Fence (Rival Smuggler)
+##### Entry Node 3: [[Kex the Fence]] (Rival Smuggler)
 
-**Location:** Underground informant network / black market (The Depths, Tier 7)
+**Location:** Underground informant network / black market ([[The Depths]], Tier 7)
 **Skill Check:** Intimidation OR Persuasion DC 13
 
 **Hook:**
@@ -705,7 +705,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **What He Shares:**
 - "Geist ain't just corrupt—he's the BOSS of smuggling here."
-- "Uses his Merit Council position to eliminate rivals like me."
+- "Uses his [[Merit Council]] position to eliminate rivals like me."
 - "Works with someone higher up—never seen him, but Geist takes orders."
 - "Warehouse 7, Pier District. That's the safehouse."
 
@@ -717,11 +717,11 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Toggle: Clue 1 (Environmental) - DC 12 Perception**
 - Observe workers moving crates at odd hours (night operations)
-- Crates marked "Merit Council—Confiscated Goods"
+- Crates marked "[[Merit Council]]—Confiscated Goods"
 - But workers are too nervous, look like criminals, not officials
 
 **Toggle: Clue 2 (Physical) - DC 14 Stealth to get close**
-- Geist himself is present, wearing Merit Council inspector uniform
+- Geist himself is present, wearing [[Merit Council]] inspector uniform
 - Directing smugglers, collecting payments
 - "Make sure the shipment gets through—Council inspection is covered."
 
@@ -732,17 +732,17 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Revelation:** Geist is using his official position as cover for smuggling operation. Warehouse 7 is the safehouse.
 
-##### Investigation Location 2: Merit Council Records Office
+##### Investigation Location 2: [[Merit Council]] Records Office
 
 **3 Clues Available:**
 
 **Toggle: Clue 1 (Documentary) - DC 13 Investigation (public records)**
 - Geist IS officially a Trade Inspector (legitimate position)
-- Assigned to Dock District inspections
+- Assigned to [[Dock District]] inspections
 - Records show suspiciously clean inspection history (too perfect)
 
 **Toggle: Clue 2 (Property Records) - DC 14 Investigation**
-- Warehouse 7 is registered as "Merit Council Confiscated Goods Storage"
+- Warehouse 7 is registered as "[[Merit Council]] Confiscated Goods Storage"
 - Lease holder: Trade Inspector Geist
 - Officially sanctioned facility (explains why no one questions it)
 
@@ -751,7 +751,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 - Personal enrichment, not official revenue
 - Amounts suggest protection racket (merchants paying bribes)
 
-**Revelation:** Geist holds legitimate Merit Council position, which he's abusing for smuggling and extortion.
+**Revelation:** Geist holds legitimate [[Merit Council]] position, which he's abusing for smuggling and extortion.
 
 ##### Investigation Location 3: Black Market / Informant Network
 
@@ -760,7 +760,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Toggle: Clue 1 (Social/Testimonial) - DC 11 Persuasion (street contacts)**
 - Multiple witnesses confirm Geist runs protection racket
 - "Pay him or your goods 'disappear' during inspection"
-- Everyone knows, but he's untouchable (Merit Council badge)
+- Everyone knows, but he's untouchable ([[Merit Council]] badge)
 
 **Toggle: Clue 2 (Rumors) - DC 13 Investigation (ask around)**
 - Geist works for someone called "Kaelborn"
@@ -784,7 +784,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 **Toggle: Option 1 - Gather Evidence First**
 - Collect 3+ clues from investigation
-- Report to Merit Council with proof
+- Report to [[Merit Council]] with proof
 - Council investigates, Geist arrested (bureaucratic solution)
 - **Result:** Geist removed, but Kaelborn escapes
 
@@ -803,7 +803,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Geist's Information (If Interrogated):**
 - "Kaelborn pays me to run this operation."
 - "I don't know where he is—we communicate through drops."
-- "He's got connections high up in the Merit Council."
+- "He's got connections high up in the [[Merit Council]]."
 - "You can't touch him—he's protected."
 
 **DM Note:** Geist doesn't know Kaelborn's location (he's insulated). Finding Kaelborn requires further investigation (future session).
@@ -817,7 +817,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Entry Points:**
 
 **Toggle: Option 1 - Military Contacts (DC 12 Persuasion)**
-- Merit Council soldiers know of Storm Giant raids
+- [[Merit Council]] soldiers know of Storm Giant raids
 - "Warband operating from Lonely Mountain"
 - "They've fortified a position—can't just walk in"
 - "Raiding coastal towns for supplies and slaves"
@@ -825,7 +825,7 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 **Toggle: Option 2 - Mercenary Guilds (DC 10 Investigation)**
 - Bounty board notice: "Storm Giant Brigade—DO NOT ENGAGE ALONE"
 - Reward: 500gp for information leading to warband's destruction
-- Contact: Captain Torrhen, Merit Council Military
+- Contact: Captain Torrhen, [[Merit Council]] Military
 
 **Toggle: Option 3 - Tavern Rumors (DC 13 Persuasion + Drinks 5gp)**
 - Retired adventurers know the Storm Giant
@@ -846,35 +846,35 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 
 ---
 
-#### Josh's Quest: Ancestor Group
+#### [[Josh]]'s Quest: Ancestor Group
 
 **Objective:** Discover which group sheltered his ancestors
 
 **Entry Points:**
 
-**Toggle: Option 1 - Scholar Quarter Research (DC 14 History)**
+**Toggle: Option 1 - [[Scholar Quarter]] Research (DC 14 History)**
 - Ancient records mention Elemental Orders
 - Civilization with thunder/lightning magic
 - Protected by "guardians" during a cataclysm
 - References to Lyria's people (not named directly)
 
-**Toggle: Option 2 - Thorne's War Stories (During Meridian's Rest Downtime)**
+**Toggle: Option 2 - Thorne's War Stories (During [[Meridian's Rest]] Downtime)**
 - Thorne mentions legends of elemental civilizations
 - "Met a woman once—silver hair, lightning in her veins"
 - "She spoke of protecting 'the last of the storm-marked'"
 - Thorne doesn't know her name, but matches Lyria's description
 
 **Toggle: Option 3 - Temple of the Storm (DC 12 Religion)**
-- Small shrine in The Depths (Tier 7)
+- Small shrine in [[The Depths]] (Tier 7)
 - Priest knows legends of "The Storm Guardians"
 - "Protectors of those marked by elemental power"
 - "They're said to still exist, watching over descendants"
 
 **Revelation:**
-- Josh's ancestors were protected by an Elemental Order
+- [[Josh]]'s ancestors were protected by an Elemental Order
 - The Storm Guardians (Lyria's people) sheltered them
 - Lyria herself may have been involved (she's ancient)
-- The markings on Josh are inherited protections
+- The markings on [[Josh]] are inherited protections
 
 **Next Steps:**
 - Find the Storm Guardians (requires investigation)
@@ -894,11 +894,11 @@ After payment, a goblin messenger approaches - Torvin Greycask.
 4. What did players craft during downtime?
 5. Which personal investigations did PCs pursue?
 6. Did anyone drink the healing waters? (CRITICAL - addiction check)
-7. What's the party's next move - Agastia or deeper investigation?
+7. What's the party's next move - [[Agastia]] or deeper investigation?
 
 **Then update:**
 - PC knowledge sections with new discoveries
 - Codex location now known (if Quest 3 completed)
 - Temporal Bloodline Tribe relationship status
 - Track any addictions to healing waters
-- Prepare Session 3 based on party choice (Agastia vs Garrek's Falls)
+- Prepare Session 3 based on party choice ([[Agastia]] vs Garrek's Falls)

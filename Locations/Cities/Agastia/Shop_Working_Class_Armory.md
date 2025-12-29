@@ -16,7 +16,7 @@ tags: [commerce, lower-residential, weapons, armor, repairs, community]
 
 **Type & Specialty:** Mundane weapons and armor - practical, affordable equipment for laborers, guards, and working folk who need reliable protection without the price tag
 
-**Location:** Lower Residential District (Tier 5), corner shop near the worker's market, ground floor of a converted tenement
+**Location:** [[Lower Residential District]] (Tier 5), corner shop near the worker's market, ground floor of a converted tenement
 
 **Clientele:** Factory workers, dock laborers, caravan guards, militia volunteers, struggling adventurers, local families
 
@@ -146,7 +146,7 @@ tags: [commerce, lower-residential, weapons, armor, repairs, community]
 **District Integration:**
 - Anchor of the Lower Residential community - everyone knows Torvin
 - Informally partnered with local workers' collective (provides equipment, they send business)
-- Respected by Merit Council for keeping district armed against crime
+- Respected by [[Merit Council]] for keeping district armed against crime
 - Tolerated by higher-tier smiths (serves different market, not competition)
 
 **Related NPCs:**
@@ -158,8 +158,8 @@ tags: [commerce, lower-residential, weapons, armor, repairs, community]
 
 **Faction Ties:**
 - **Workers' Collective:** Informal alliance - Torvin gives discounts, they recommend his shop
-- **Merit Council:** Neutral respect - appreciates community service, concerned about "good enough" quality
-- **Dispossessed:** Sympathetic - has hired reformed gang members as apprentices, provides equipment on credit
+- **[[Merit Council]]:** Neutral respect - appreciates community service, concerned about "good enough" quality
+- **[[Dispossessed]]:** Sympathetic - has hired reformed gang members as apprentices, provides equipment on credit
 - **Iron Thumb Gang:** HOSTILE - refuses to pay protection money, actively resisting
 
 ## DM Notes
@@ -209,7 +209,7 @@ tags: [commerce, lower-residential, weapons, armor, repairs, community]
 ## Toggle: Lower District Context
 
 **Why This Shop Matters:**
-Most working folk can't afford The Wanderer's Pack or Blades of Glory. They need basic protection - a knife to walk home safely, cheap chainmail for militia duty, a repaired sword that'll last another season. Torvin fills that gap. He's not getting rich, but he's keeping his neighbors alive.
+Most working folk can't afford [[The Wanderer's Pack]] or [[Blades of Glory]]. They need basic protection - a knife to walk home safely, cheap chainmail for militia duty, a repaired sword that'll last another season. Torvin fills that gap. He's not getting rich, but he's keeping his neighbors alive.
 
 **Social Function:**
 The shop is more than commerce - it's a community hub. Workers stop by after shifts, share news, warn each other about dangers. Torvin knows who's struggling, who needs help, who can be trusted. He's the neighborhood's quiet guardian, arming them against both literal and economic threats.

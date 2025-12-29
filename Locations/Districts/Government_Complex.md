@@ -9,14 +9,14 @@ version: "1.0.0"
 tags: [district, government, merit-council, power, bureaucracy]
 ---
 
-# Government Complex
+# [[Government Complex]]
 
 ## Player Summary
 
-The Government Complex is the beating heart of Merit Council authority in Agastia. Imposing architecture demonstrates the power and permanence of meritocratic rule, while endless streams of officials, petitioners, and clerks flow through halls of polished stone. Everything here operates according to established procedure, documented protocol, and certified authority.
+The [[Government Complex]] is the beating heart of [[Merit Council]] authority in [[Agastia]]. Imposing architecture demonstrates the power and permanence of meritocratic rule, while endless streams of officials, petitioners, and clerks flow through halls of polished stone. Everything here operates according to established procedure, documented protocol, and certified authority.
 
 ### Atmosphere
-Formal, orderly, and somewhat intimidating. Guards in Merit Council uniforms stand at regular intervals. Citizens wait in designated areas for their appointments. Every conversation seems measured and official. The air carries the smell of parchment, sealing wax, and the faint anxiety of those hoping to advance their merit status or avoid censure.
+Formal, orderly, and somewhat intimidating. Guards in [[Merit Council]] uniforms stand at regular intervals. Citizens wait in designated areas for their appointments. Every conversation seems measured and official. The air carries the smell of parchment, sealing wax, and the faint anxiety of those hoping to advance their merit status or avoid censure.
 
 ### The Inverse Tower
 
@@ -49,7 +49,7 @@ The Complex's most distinctive feature is the famous Inverse Tower - a structure
 ### Notable Locations
 
 **The Council Chamber**
-Where the Merit Council convenes for official sessions. Tiered seating allows all Council members to see each other, symbolizing equality of merit. Public galleries permit citizens to observe governance in action.
+Where the [[Merit Council]] convenes for official sessions. Tiered seating allows all Council members to see each other, symbolizing equality of merit. Public galleries permit citizens to observe governance in action.
 
 **The Merit Registry**
 Massive archives containing documentation of every citizen's qualifications, test results, and merit ranking. Clerks constantly update records. Citizens can petition to review their own files but rarely get the full picture.
@@ -58,10 +58,10 @@ Massive archives containing documentation of every citizen's qualifications, tes
 Multiple facilities where citizens take examinations for merit advancement. Tests are supposedly standardized and fair, though rumors of favoritism and manipulation persist.
 
 **The Department of Investigation**
-Merit Council's official law enforcement and intelligence agency. Offices here coordinate responses to Chaos Cult activity, criminal investigations, and internal affairs.
+[[Merit Council]]'s official law enforcement and intelligence agency. Offices here coordinate responses to [[Chaos Cult]] activity, criminal investigations, and internal affairs.
 
 **The Petitioner's Plaza**
-Open courtyard where citizens wait to present requests, appeals, or complaints to various departments. Long waits are common. The plaza features statues of legendary Merit Council founders.
+Open courtyard where citizens wait to present requests, appeals, or complaints to various departments. Long waits are common. The plaza features statues of legendary [[Merit Council]] founders.
 
 ## DM Notes
 
@@ -72,7 +72,7 @@ The sealed levels (11-13) are real and contain genuinely dangerous materials:
 - Pre-Council artifacts that could destabilize current power structures
 - Forbidden magical research into reality manipulation
 - The original texts that inspired the Codex (or copies thereof)
-- Evidence that the Merit Council's foundation involved suppressing earlier truths
+- Evidence that the [[Merit Council]]'s foundation involved suppressing earlier truths
 - Ancient weapons and bound entities
 
 Only three current Council members know the full extent of what's sealed below. Others suspect but lack access or proof.
@@ -89,30 +89,30 @@ Not all officials are corrupt - many genuinely believe in merit principles - but
 
 **The Surveillance Network**
 The Department of Investigation operates extensive monitoring:
-- Informants throughout Agastia report on potential subversion
+- Informants throughout [[Agastia]] report on potential subversion
 - Magical scrying observes key locations and individuals
 - Mail and communications intercepted when deemed necessary
 - Travel and associations tracked for suspicious patterns
 
-This surveillance targets Chaos Cult activity primarily, but also monitors potential political threats, academic dissidents, and anyone questioning the system too loudly.
+This surveillance targets [[Chaos Cult]] activity primarily, but also monitors potential political threats, academic dissidents, and anyone questioning the system too loudly.
 
 **Factional Struggles**
-The Merit Council is not unified. Internal factions compete for influence:
+The [[Merit Council]] is not unified. Internal factions compete for influence:
 - **Hardliners:** Believe in strict enforcement and rigid standards
-- **Reformists:** Want to address Dispossessed concerns and system flaws
+- **Reformists:** Want to address [[Dispossessed]] concerns and system flaws
 - **Pragmatists:** Focus on maintaining power through flexibility
 - **Idealists:** Genuinely pursue pure meritocratic principles
-- **Secret Sympathizers:** Some officials quietly aid Chaos Cult or Dispossessed
+- **Secret Sympathizers:** Some officials quietly aid [[Chaos Cult]] or [[Dispossessed]]
 
 These divisions create opportunities for manipulation and occasionally paralysis on critical issues.
 
 ### Key NPCs
 
 **High Councilor Mareth Brightforge**
-Current leader of the Merit Council. A genuine believer in merit principles who struggles with evidence of systemic failures. Trying to balance reform with maintaining authority. Unaware of some deepest secrets.
+Current leader of the [[Merit Council]]. A genuine believer in merit principles who struggles with evidence of systemic failures. Trying to balance reform with maintaining authority. Unaware of some deepest secrets.
 
 **Security Director Kael Ironscript**
-Head of the Department of Investigation. Ruthlessly effective at rooting out Chaos Cult activity. Uses questionable methods that sometimes create new enemies. Knows about the sealed levels but not what they contain.
+Head of the Department of Investigation. Ruthlessly effective at rooting out [[Chaos Cult]] activity. Uses questionable methods that sometimes create new enemies. Knows about the sealed levels but not what they contain.
 
 **Archivist-General Senna Vale**
 Controls access to the Merit Registry and official records. Appears to be a dedicated bureaucrat but actually manipulates information for personal power. Sells access to certain files to multiple factions.
@@ -121,7 +121,7 @@ Controls access to the Merit Registry and official records. Appears to be a dedi
 Oversees the testing system. Outwardly the embodiment of merit principles, secretly alters results for influential patrons. Growing paranoid that his corruption will be exposed.
 
 **Councilor Rhen Darkwood**
-Reform faction leader who genuinely wants to address legitimate grievances. Opposed by hardliners who view reform as weakness. Some suspect Chaos Cult manipulation, but Darkwood's commitment to orderly change is genuine.
+Reform faction leader who genuinely wants to address legitimate grievances. Opposed by hardliners who view reform as weakness. Some suspect [[Chaos Cult]] manipulation, but Darkwood's commitment to orderly change is genuine.
 
 ### Adventure Hooks
 
@@ -141,7 +141,7 @@ Reform faction leader who genuinely wants to address legitimate grievances. Oppo
 
 **Investigation Missions**
 - Working for or against the Department of Investigation
-- Hunting Chaos Cult infiltrators in the bureaucracy
+- Hunting [[Chaos Cult]] infiltrators in the bureaucracy
 - Uncovering specific corruption or conspiracies
 - Protecting or assassinating key officials
 - Gathering intelligence on Council plans
@@ -149,9 +149,9 @@ Reform faction leader who genuinely wants to address legitimate grievances. Oppo
 **The Sealed Levels**
 - Discovering what's actually stored below
 - Preventing or enabling access to forbidden materials
-- Chaos Cult operations targeting the deepest levels
+- [[Chaos Cult]] operations targeting the deepest levels
 - Ancient artifacts breaking containment
-- Truth about Merit Council's origins
+- Truth about [[Merit Council]]'s origins
 
 ### Hidden Locations
 

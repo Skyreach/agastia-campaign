@@ -80,27 +80,27 @@ The giant's axe was cursed by Octavia (Decimate Subject #8) and planted to drain
 Draconic runes that might translate to:
 - Location coordinates or planar addresses
 - Warning messages or prophecy
-- Names (Steel Dragon? Giant's identity?)
+- Names ([[Steel Dragon]]? Giant's identity?)
 - Instructions for those who know how to read them
 - Temporal markers or countdown
 
 ### Personal Clues by Character
 Each PC might receive unique insights based on background:
 
-- **Manny:** Recognition of craftsmanship beyond normal giant smithing, techniques that suggest ancient traditions
-- **Nikki (Biago):** Arcane signatures feel familiar, like something from their past or training
+- **[[Manny]]:** Recognition of craftsmanship beyond normal giant smithing, techniques that suggest ancient traditions
+- **[[Nikki]] (Biago):** Arcane signatures feel familiar, like something from their past or training
 - **Rakash:** Instinctive understanding of the giant's emotional state when it left - purposeful, not fearful
-- **Kyle/Nameless:** Rainbow nature resonates with planar bleeding, uncomfortable familiarity
-- **Josh:** Mysterious markings might glow, tingle, or react to temporal distortions
+- **[[Kyle/Nameless]]:** Rainbow nature resonates with planar bleeding, uncomfortable familiarity
+- **[[Josh]]:** Mysterious markings might glow, tingle, or react to temporal distortions
 
 ### Connection to Campaign Mysteries
 
 **Potential Links:**
-- **Steel Dragon:** Temporal distortion could relate to reincarnation mechanism
-- **The Codex:** Might the Dominion Evolution Codex explain or control such artifacts?
-- **Decimate Project:** Is Professor Zero seeking reality-bleeding phenomena?
-- **Josh's Markings:** Reaction to temporal/planar energies suggests deeper connection
-- **Chaos Cult:** Would they exploit or amplify these reality-warping effects?
+- **[[Steel Dragon]]:** Temporal distortion could relate to reincarnation mechanism
+- **[[The Codex]]:** Might the Dominion Evolution Codex explain or control such artifacts?
+- **[[Decimate Project]]:** Is [[Professor Zero]] seeking reality-bleeding phenomena?
+- **[[Josh]]'s Markings:** Reaction to temporal/planar energies suggests deeper connection
+- **[[Chaos Cult]]:** Would they exploit or amplify these reality-warping effects?
 - **Giant Clans:** Part of larger giant operation across multiple sites?
 
 ### Session 1 Encounters & Challenges
@@ -129,7 +129,7 @@ The patron's motivation should connect to their identity:
 - **Academic:** Studying unprecedented planar phenomena
 - **Safety Concern:** Preventing artifact from falling into wrong hands
 - **Personal Connection:** Related to patron's background or secret knowledge
-- **Faction Directive:** Merit Council, Decimate Project, or other orders
+- **Faction Directive:** [[Merit Council]], [[Decimate Project]], or other orders
 - **Hidden Agenda:** Knows more about giant's plan than revealed
 
 ### Current Status (Level 2 Party)
@@ -160,7 +160,7 @@ The patron's motivation should connect to their identity:
 - Key to understanding storm giant plots
 - Evidence of cross-planar conspiracy
 - Component for larger magical working
-- Connection to Steel Dragon's reincarnation
+- Connection to [[Steel Dragon]]'s reincarnation
 - Part of network of similar artifacts
 
 **Decision Point:**

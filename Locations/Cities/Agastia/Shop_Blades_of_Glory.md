@@ -10,17 +10,17 @@ version: "1.0.0"
 tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 ---
 
-# Blades of Glory
+# [[Blades of Glory]]
 
 ## Overview
 
 **Type & Specialty:** Premium magical arms and armor - Very Rare and Legendary enchanted weapons, armor, and custom commissions for elite warriors
 
-**Location:** Research Quarter (Tier 2-3), elevated terrace overlooking the city, near Augury Spire
+**Location:** [[Research Quarter]] (Tier 2-3), elevated terrace overlooking the city, near Augury Spire
 
 **Clientele:** Elite warriors, Council champions, high-level adventurers, noble house guards, heroes of renown
 
-**Reputation:** "Where legends arm themselves." The finest magical weaponsmith in Agastia, perhaps the entire region. Every piece a masterwork combining enchantment theory with battlefield-tested practicality.
+**Reputation:** "Where legends arm themselves." The finest magical weaponsmith in [[Agastia]], perhaps the entire region. Every piece a masterwork combining enchantment theory with battlefield-tested practicality.
 
 **Atmosphere:** More gallery than shop. Enchanted weapons displayed in warded alcoves, each lit to highlight craftsmanship. Soft magical lighting. Air charged with ambient arcane energy. Hushed conversations - this is sacred space for warriors who understand what they're viewing. Viewing areas separated from forge (audible rhythmic hammering and arcane chanting from below).
 
@@ -28,13 +28,13 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 
 ### Master Enchanter Kaelith Brightspark
 **Role:** Proprietor and master weaponsmith
-**Faction:** Merit Council (Disposition: Aligned on principle, independent in practice)
+**Faction:** [[Merit Council]] (Disposition: Aligned on principle, independent in practice)
 
 **Background:**
 - Tier 2 merit holder through magical innovation achievement
 - Studied enchanting at Grand Academy, exceeded all instructors by age 25
 - Spent decade traveling, studying different magical traditions and weapon styles
-- Established Blades of Glory fifteen years ago with Council grant for excellence
+- Established [[Blades of Glory]] fifteen years ago with Council grant for excellence
 - Created several magical weapons now legendary in their own right
 - Personally fields-tests experimental designs (accomplished duelist despite scholarly appearance)
 
@@ -55,7 +55,7 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 - Can offer players: Custom enchantments at cost, prototype weapons for testing, introductions to Council officials, magical theory consultation
 
 **Party Connections:**
-- Potential bonds with: Manny (fellow weapon specialist, understanding of practical combat needs), any PC with enchanting interest
+- Potential bonds with: [[Manny]] (fellow weapon specialist, understanding of practical combat needs), any PC with enchanting interest
 - Relationship type: Master craftsman / Discerning client → could evolve to Mentor / Professional respect
 
 ## Day-to-Day Operations
@@ -79,14 +79,14 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 4. **By Purchase:** Minimum 1,000gp purchase just to browse (refunded toward first item)
 
 **Regular Customers:**
-- **Council Champions:** Elite warriors serving Merit Council directly
+- **Council Champions:** Elite warriors serving [[Merit Council]] directly
 - **Noble House Guards:** Commanders protecting Tier 2-3 estates
 - **Renowned Adventurers:** Those whose deeds warrant finest equipment
 - **Master Duelists:** Competitors in high-society dueling circuits
 - **Artifact Collectors:** Wealthy individuals acquiring legendary pieces
 
 **Real Uses:**
-- **Access to Legendary Items:** Only source in Agastia for Very Rare/Legendary magic weapons
+- **Access to Legendary Items:** Only source in [[Agastia]] for Very Rare/Legendary magic weapons
 - **Custom Commissions:** Work with master enchanter to create specific desired properties
 - **Item Identification:** Kaelith automatically succeeds, provides complete item history
 - **Restoration Services:** Repair legendary items other enchanters can't handle
@@ -209,7 +209,7 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 ## Connections
 
 **District Integration:**
-- Prestige establishment showcasing Research Quarter's magical excellence
+- Prestige establishment showcasing [[Research Quarter]]'s magical excellence
 - Collaborates with Augury Spire (divinations on optimal enchantment timing)
 - Sources materials through Magewright Consortium connections
 - Trains apprentices from Grand Academy (highly selective)
@@ -218,12 +218,12 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 - **Archmage Tessarine:** Professional respect, occasional consultation on advanced theory
 - **Council Champions:** Regular customers, provide feedback on weapon performance
 - **High Diviner Seraph:** Coordinates on prophecy-related commissions
-- **Noble Quarter elite:** Armor customers for house guards
+- **[[Noble Quarter]] elite:** Armor customers for house guards
 
 **Faction Ties:**
-- **Merit Council:** Officially sanctioned, receives some research funding
+- **[[Merit Council]]:** Officially sanctioned, receives some research funding
 - **Magewright Consortium:** Guild member, contributes to magical infrastructure
-- **Research Quarter Community:** Respected peer among academic elite
+- **[[Research Quarter]] Community:** Respected peer among academic elite
 - **Anti-Chaos Operations:** Quietly develops weapons specifically effective against chaos-touched entities
 
 ## DM Notes
@@ -238,7 +238,7 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 - Difficulty: Moderate-High (acquiring materials dangerous, testing requires real combat)
 
 **The Rival Enchanter:**
-- New shop in Noble Quarter producing "equivalent quality" at half price
+- New shop in [[Noble Quarter]] producing "equivalent quality" at half price
 - Kaelith skeptical - either using inferior methods or dangerous shortcuts
 - Rumors suggest items contain hidden flaws/curses discovered after purchase
 - Needs investigation: Are they frauds, using forbidden techniques, or legitimately innovative?
@@ -295,7 +295,7 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 - Walking edge where brilliance borders on obsession
 
 **Noble Connections:**
-- Several Noble Quarter families commission exclusively from Kaelith
+- Several [[Noble Quarter]] families commission exclusively from Kaelith
 - These relationships create political obligations she'd prefer to avoid
 - Sometimes pressured to prioritize influential clients over worthy heroes
 - Struggles balancing commercial success with personal principles
@@ -314,7 +314,7 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 - Established: Guild membership consideration, custom commissions
 - Deep connection: Trusted with secret projects, anti-chaos research
 
-**Chaos Cult Connection:**
+**[[Chaos Cult]] Connection:**
 - Cult wants Kaelith's anti-chaos research (to counter or corrupt it)
 - Her weapons specifically threaten their operations
 - Potential assassination/kidnapping target

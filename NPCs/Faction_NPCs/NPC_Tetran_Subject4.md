@@ -7,7 +7,7 @@ tags: [npc, decimate-project, subject4, wood-elf, ranger]
 threat_level: Medium
 ---
 
-# Tetran - Decimate Project Subject #4
+# Tetran - [[Decimate Project]] Subject #4
 
 **Tetran** is a wood elf ranger and Subject #4, with ~6 years of service. Age ~16. Expert tracker and wilderness operative. Nature-connected despite memory wipe. Quiet, observant outdoor specialist.
 
@@ -23,7 +23,7 @@ threat_level: Medium
 - May be tracking party through wilderness
 - Wood elf community searching for him
 - Natural enemy of Kyle's bandits (ranger vs. bandit)
-- Could guide party through Infinite Forest or hunt them
+- Could guide party through [[Infinite Forest]] or hunt them
 - Possible beast companion
 
 **Encounter Ideas:**
@@ -32,8 +32,8 @@ threat_level: Medium
 - Captured by wood elf clan trying to restore memory
 - Beast companion recognizes something familiar
 
-**Infinite Forest Connection:** Expert in forest terrain, may patrol near Agastia, connection to fey elements
+**[[Infinite Forest]] Connection:** Expert in forest terrain, may patrol near [[Agastia]], connection to fey elements
 
 **Story Arc Potential:** Wood elf family searching, memory fragments in nature, choice between Zero and freedom
 
-**Current Status:** Location unknown (possibly Infinite Forest region), wilderness operations likely, presumed loyal to Professor Zero
+**Current Status:** Location unknown (possibly [[Infinite Forest]] region), wilderness operations likely, presumed loyal to [[Professor Zero]]

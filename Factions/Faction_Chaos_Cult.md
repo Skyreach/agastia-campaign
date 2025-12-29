@@ -13,7 +13,7 @@ related_entities:
   - Merit Council
 ---
 
-# Chaos Cult
+# [[Chaos Cult]]
 
 ## Player Summary
 
@@ -22,10 +22,10 @@ A dangerous cult dedicated to spreading chaos and disrupting the established ord
 ## DM Notes
 
 ### Overview
-The Chaos Cult operates with a dual purpose: ideological chaos for its own sake (artistic escalation) and profit from the resulting instability. They've successfully infiltrated legitimate businesses, creating a network that both funds their operations and provides cover for their activities.
+The [[Chaos Cult]] operates with a dual purpose: ideological chaos for its own sake (artistic escalation) and profit from the resulting instability. They've successfully infiltrated legitimate businesses, creating a network that both funds their operations and provides cover for their activities.
 
 ### Key Members
-- **Brother Matthias** - Dragon handler, directly involved in feeding Steel Dragon's corruption
+- **Brother Matthias** - Dragon handler, directly involved in feeding [[Steel Dragon]]'s corruption
 - **Veridian Ashworth** - Chaos profiteer leading mercenary operations, profits from instability
 - **Aldara Brightcoin** - Unwitting enabler who provides emergency supplies, doesn't know she's helping the cult create the emergencies she responds to
 
@@ -45,20 +45,20 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 
 ### Operations
 - **Infiltration:** Legitimate business fronts provide cover and funding
-- **Dragon Corruption:** Actively feeding Steel Dragon's descent into chaos
+- **Dragon Corruption:** Actively feeding [[Steel Dragon]]'s descent into chaos
 - **Instability Creation:** Orchestrate crises to sell emergency solutions
 - **Emergency Supply Monopolies:** Control aid distribution through unwitting partners like Aldara
 - **Mercenary Networks:** Veridian's forces available for hire while advancing cult goals
 
 ### Relationships
-- **Enemies:** Merit Council, law enforcement, stability-seeking factions
-- **Manipulation Targets:** The Dispossessed (recruiting extremists)
+- **Enemies:** [[Merit Council]], law enforcement, stability-seeking factions
+- **Manipulation Targets:** The [[Dispossessed]] (recruiting extremists)
 - **Unwitting Tools:** Merchants like Aldara, emergency responders
-- **Corruption Victims:** Steel Dragon, other dragons in region
+- **Corruption Victims:** [[Steel Dragon]], other dragons in region
 
 ### Future Hooks
 - What happens when Aldara discovers she's enabling the crises she responds to?
-- How far will Brother Matthias go to corrupt Steel Dragon?
+- How far will Brother Matthias go to corrupt [[Steel Dragon]]?
 - What is Veridian's ultimate profit target?
 - Are there other legitimate businesses the cult has infiltrated?
 - What happens when their "artistic escalation" goes too far?
@@ -85,7 +85,7 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 - First hints of organized pattern behind random chaos
 
 **Party Interaction:**
-- Hired by Merit Council to investigate disturbances
+- Hired by [[Merit Council]] to investigate disturbances
 - Caught in chaos event, must respond
 - Track cultists back to safehouses
 - Discover cult symbols/evidence
@@ -100,7 +100,7 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 - Cult priests/mages (CR 2-4) leading operations
 - Veridian's elite mercenaries (veterans, gladiators)
 - Orchestrated disasters (building collapses, fires, poisonings)
-- False-flag operations blaming Dispossessed
+- False-flag operations blaming [[Dispossessed]]
 - Evidence of emergency supply profiteering
 
 **Party Interaction:**
@@ -108,7 +108,7 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 - Investigate connection between chaos and profit
 - Confront mid-level cultists
 - Discover Brother Matthias's name (not yet identity)
-- Learn cult is manipulating Dispossessed
+- Learn cult is manipulating [[Dispossessed]]
 
 ---
 
@@ -118,7 +118,7 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 **Encounters:**
 - Brother Matthias (CR 5-6 priest/warlock) orchestrating dragon corruption
 - Veridian Ashworth (CR 6-7 mercenary captain) and his company
-- Chaos events tied to Steel Dragon's artistic murders
+- Chaos events tied to [[Steel Dragon]]'s artistic murders
 - Large-scale disasters (district fires, mass panic, riots)
 - Aldara's crisis of conscience (she's discovered the truth)
 
@@ -126,8 +126,8 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 - Direct confrontation with named cultists
 - Racing to stop major chaos event
 - Aldara seeks party's help to escape/expose cult
-- Evidence linking cult to Steel Dragon corruption
-- Merit Council mobilizes against cult (party as agents)
+- Evidence linking cult to [[Steel Dragon]] corruption
+- [[Merit Council]] mobilizes against cult (party as agents)
 
 ---
 
@@ -136,15 +136,15 @@ The Chaos Cult operates with a dual purpose: ideological chaos for its own sake 
 
 **Encounters:**
 - Cult Hierophant (CR 8-10) directing all operations
-- Brother Matthias fully empowered by corrupted Steel Dragon
+- Brother Matthias fully empowered by corrupted [[Steel Dragon]]
 - Veridian's mercenary army deployed
 - City-wide catastrophe (plague, dimensional rifts, mass destruction)
-- Steel Dragon actively working with cult
+- [[Steel Dragon]] actively working with cult
 
 **Party Interaction:**
 - Assault on cult headquarters
 - Preventing apocalyptic ritual/event
-- Breaking Brother Matthias's hold on Steel Dragon
+- Breaking Brother Matthias's hold on [[Steel Dragon]]
 - Dismantling emergency supply monopoly
 - Final confrontation with cult leadership
 

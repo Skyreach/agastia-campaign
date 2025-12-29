@@ -10,30 +10,30 @@ threat_level: Extreme
 related_entities: [Chaos Cult, Brother Matthias, Merit Council]
 ---
 
-# The Steel Dragon
+# The [[Steel Dragon]]
 
 ## Player Summary
 
-**The Steel Dragon** is a metallic dragon living multiple incarnations, currently focused on what they consider "artistic" murders that will eventually escalate to mass destruction. The dragon thrives in Agastia's meritocracy system, having achieved significant political influence. Unknown to the dragon, they are being corrupted and guided by the Chaos Cult toward catastrophic violence.
+**The [[Steel Dragon]]** is a metallic dragon living multiple incarnations, currently focused on what they consider "artistic" murders that will eventually escalate to mass destruction. The dragon thrives in [[Agastia]]'s meritocracy system, having achieved significant political influence. Unknown to the dragon, they are being corrupted and guided by the [[Chaos Cult]] toward catastrophic violence.
 
 ### Basic Information
 - **Type:** Metallic Dragon (Steel - unique)
 - **Status:** Active, escalating danger
 - **Current Form:** Unknown (has human form)
-- **Location:** Operating in/around Agastia
+- **Location:** Operating in/around [[Agastia]]
 - **Threat Level:** Campaign-ending if unchecked
 
 ### Known Activities
 - **Stage 1 (Current):** Individual "artistic" murders
 - **Stage 2 (Planned):** Group killings
 - **Stage 3 (Planned):** Mass destruction events
-- **Final Stage:** Consume entire castle town of Agastia
+- **Final Stage:** Consume entire castle town of [[Agastia]]
 
 ### Personality & Behavior
 - Views murders as "art"
 - Charismatic and influential in humanoid form
 - Thrives in meritocracy (achieves high status legitimately)
-- May not realize being manipulated by Chaos Cult
+- May not realize being manipulated by [[Chaos Cult]]
 - Multiple lifetimes of experience
 
 ## Reincarnation Nature
@@ -57,7 +57,7 @@ The dragon follows a predictable pattern:
 1. **Artistic Murders:** Solo kills presented as "masterpieces"
 2. **Group Art:** Multiple victims in orchestrated scenes
 3. **Mass Events:** Spectacles of destruction
-4. **Final Act:** Total annihilation of Agastia castle town
+4. **Final Act:** Total annihilation of [[Agastia]] castle town
 
 ### Political Influence
 - High merit ranking in Agastian society
@@ -67,13 +67,13 @@ The dragon follows a predictable pattern:
 
 ## Relationships
 
-### Chaos Cult
+### [[Chaos Cult]]
 - **Brother Matthias:** Primary handler/corruptor
 - **Cult Goal:** Guide dragon to mass destruction
 - **Dragon's Knowledge:** May not realize being manipulated
 - **Corruption Method:** Feeding violent impulses
 
-### Merit Council
+### [[Merit Council]]
 - **Status:** Under investigation (murders noticed)
 - **Challenge:** Dragon's legitimate merit makes targeting difficult
 - **Infiltration:** Likely has allies/agents in government
@@ -82,7 +82,7 @@ The dragon follows a predictable pattern:
 - **Cross-Lifetime Network:** Work across dragon's incarnations
 - **Purpose:** Control and direct dragon's motives
 - **Identity:** Unknown
-- **May be:** Chaos Cult predecessors, dragon cult, other immortals
+- **May be:** [[Chaos Cult]] predecessors, dragon cult, other immortals
 
 ## DM Notes
 
@@ -93,42 +93,42 @@ The dragon follows a predictable pattern:
 - **Reincarnation Mechanism:** How does it work? Voluntary? Automatic?
 - **Memory Between Lives:** Full, partial, or guided memories?
 - **Anonymous Supporters:** Who are they? Why do this?
-- **Steel Dragon Origin:** Unique metallic type - experimental? Mutation? Ancient bloodline?
+- **[[Steel Dragon]] Origin:** Unique metallic type - experimental? Mutation? Ancient bloodline?
 
 ### Campaign Role
 - **Primary BBEG:** Main campaign antagonist
 - **Long-Term Threat:** Escalates throughout levels 2-9+
 - **Multi-Phase Battle:** Multiple encounters at different power levels
-- **Moral Complexity:** Is dragon victim of Chaos Cult manipulation?
+- **Moral Complexity:** Is dragon victim of [[Chaos Cult]] manipulation?
 
 ### Murder Investigation Arc
 
 #### Stage 1: Individual Murders (Levels 2-4)
 - PCs may investigate artistic crime scenes
 - Clues point to dragon involvement
-- Merit Council hires adventurers
+- [[Merit Council]] hires adventurers
 - Cult connection hints emerge
 
 #### Stage 2: Group Killings (Levels 5-6)
 - Escalation becomes obvious
 - Dragon's pattern recognized
 - Political complications as suspect is high-merit individual
-- Chaos Cult involvement confirmed
+- [[Chaos Cult]] involvement confirmed
 
 #### Stage 3: Mass Destruction (Levels 7-8)
 - Public spectacles of violence
 - Dragon identity may be revealed
-- Confrontation with Chaos Cult
+- Confrontation with [[Chaos Cult]]
 - Race to stop Final Act
 
 #### Stage 4: Final Confrontation (Level 9+)
-- Dragon's assault on Agastia
+- Dragon's assault on [[Agastia]]
 - Multiple-session epic battle
-- Chaos Cult final moves
+- [[Chaos Cult]] final moves
 - City-saving stakes
 
 ### Possible Human Forms
-1. **Merit Council Member:** High-ranking official
+1. **[[Merit Council]] Member:** High-ranking official
 2. **Renowned Artist:** Uses art as cover for murders
 3. **Military Commander:** Has resources and authority
 4. **Wealthy Merchant:** Funds operations legitimately
@@ -136,8 +136,8 @@ The dragon follows a predictable pattern:
 6. **Justice Official:** Investigates own crimes
 
 ### Redemption vs. Destruction
-- **Redemption Path:** Dragon can be freed from Chaos Cult influence
-- **Destruction Path:** Must be killed to save Agastia
+- **Redemption Path:** Dragon can be freed from [[Chaos Cult]] influence
+- **Destruction Path:** Must be killed to save [[Agastia]]
 - **Reincarnation Consequence:** If killed, will they return eventually?
 - **PC Choice:** Major moral decision for party
 
@@ -145,15 +145,15 @@ The dragon follows a predictable pattern:
 - **Multiple Encounters:** Not one-and-done boss
 - **Dragon Form:** Full ancient/adult dragon stats
 - **Human Form:** Still powerful caster/combatant
-- **Lair Actions:** Various locations around Agastia
+- **Lair Actions:** Various locations around [[Agastia]]
 - **Cult Support:** Brother Matthias and agents assist
 - **Artistic Tactics:** Theatrical combat style
 - **Steel Unique Abilities:** [DM to determine special metallic traits]
 
-### Chaos Cult Connection
+### [[Chaos Cult]] Connection
 - **Brother Matthias:** See Faction_Chaos_Cult.md
 - **Corruption Method:** Feeding artistic murder impulses
-- **True Goal:** Use dragon to destabilize Agastia completely
+- **True Goal:** Use dragon to destabilize [[Agastia]] completely
 - **Profit Angle:** Chaos creates business opportunities (Veridian Ashworth)
 - **Long Game:** May want dragon reincarnation controlled permanently
 
@@ -169,17 +169,17 @@ The dragon follows a predictable pattern:
 - Discovering dragon's human identity
 - Uncovering anonymous supporters' purpose
 - First direct encounter with dragon
-- Chaos Cult confrontation
-- Merit Council political complications
+- [[Chaos Cult]] confrontation
+- [[Merit Council]] political complications
 - Preventing mass destruction event
-- Final battle for Agastia
+- Final battle for [[Agastia]]
 - Post-defeat reincarnation consequences
 
-### Steel Dragon Lore
+### [[Steel Dragon]] Lore
 - **Metallic Type:** Rare or unique steel variant
 - **Alignment:** Typically good (corrupted in this life)
 - **Breath Weapon:** [DM to determine - piercing shards? Force?]
-- **Lair:** Hidden near Agastia (mountain cave? underground?)
+- **Lair:** Hidden near [[Agastia]] (mountain cave? underground?)
 - **Hoard:** Collected "art" including murder trophies
 - **Age Category:** [Ancient for high-level threat]
 
@@ -199,12 +199,12 @@ The dragon follows a predictable pattern:
 **Encounters:**
 - Artistic murder crime scenes (investigation-focused)
 - Rumors of mysterious deaths in high society
-- Chaos Cult initiates protecting evidence (CR 1/2 - 1)
+- [[Chaos Cult]] initiates protecting evidence (CR 1/2 - 1)
 - Witnesses who saw "something strange" but not the dragon
 - First clues to signature artistic style
 
 **Party Interaction:**
-- Hired by Merit Council to investigate murders
+- Hired by [[Merit Council]] to investigate murders
 - Stumble upon crime scene during other business
 - Interview witnesses and suspects
 - Collect evidence of pattern
@@ -219,14 +219,14 @@ The dragon follows a predictable pattern:
 
 **Encounters:**
 - Multiple connected crime scenes revealing pattern
-- Chaos Cult priests (CR 2-4) actively covering dragon's tracks
+- [[Chaos Cult]] priests (CR 2-4) actively covering dragon's tracks
 - Brother Matthias's name surfaces in investigation
 - Dragon cultists protecting "the artist" (CR 2-3)
 - Evidence suggesting non-human perpetrator
 
 **Party Interaction:**
-- Merit Council escalates investigation priority
-- Party connects murders to Chaos Cult
+- [[Merit Council]] escalates investigation priority
+- Party connects murders to [[Chaos Cult]]
 - First hints dragon may be involved (scales, claw marks, heat damage)
 - Political pressure to solve case
 - High-merit suspect emerges (dragon's human identity)
@@ -240,10 +240,10 @@ The dragon follows a predictable pattern:
 
 **Encounters:**
 - Group killing scenes ("group art" phase)
-- Steel dragon sightings near Agastia (flight, distant roars)
+- Steel dragon sightings near [[Agastia]] (flight, distant roars)
 - Brother Matthias (CR 5-6) actively aiding dragon
-- Chaos Cult strike teams protecting dragon's identity (CR 4-6)
-- Merit Council officials obstructing investigation (dragon's influence)
+- [[Chaos Cult]] strike teams protecting dragon's identity (CR 4-6)
+- [[Merit Council]] officials obstructing investigation (dragon's influence)
 
 **Party Interaction:**
 - Dragon identity as high-merit individual confirmed
@@ -261,15 +261,15 @@ The dragon follows a predictable pattern:
 
 **Encounters:**
 - Mass destruction spectacles (Stage 3 activated)
-- Steel Dragon in dragon form (Adult/Ancient stats, CR 13-17)
+- [[Steel Dragon]] in dragon form (Adult/Ancient stats, CR 13-17)
 - Brother Matthias fully empowered by dragon alliance (CR 7-8)
-- Chaos Cult army deployed to enable dragon
+- [[Chaos Cult]] army deployed to enable dragon
 - City-wide panic and evacuation
 
 **Party Interaction:**
 - Racing to stop mass destruction events
-- Direct combat with Steel Dragon (first major battle)
-- Attempting to break Chaos Cult's hold on dragon
+- Direct combat with [[Steel Dragon]] (first major battle)
+- Attempting to break [[Chaos Cult]]'s hold on dragon
 - Protecting civilians during attacks
 - Political fallout from dragon's revealed identity
 
@@ -281,14 +281,14 @@ The dragon follows a predictable pattern:
 **Threat Type:** City-destroying dragon assault, final confrontation, reincarnation
 
 **Encounters:**
-- Steel Dragon's assault on Agastia castle town (Ancient Dragon stats)
+- [[Steel Dragon]]'s assault on [[Agastia]] castle town (Ancient Dragon stats)
 - Brother Matthias and cult leadership supporting dragon (CR 8-10)
 - Multi-phase dragon battle across city
 - Lair confrontation in dragon's hidden base
 - Potential redemption vs destruction choice
 
 **Party Interaction:**
-- Epic final battle to save Agastia
+- Epic final battle to save [[Agastia]]
 - Choice: Kill dragon or free from corruption
 - Confronting anonymous supporters/reincarnation network
 - Aftermath: Rebuilding city and preventing return
@@ -301,8 +301,8 @@ The dragon follows a predictable pattern:
 ## Important Notes
 
 **Dragon's Own Agenda:**
-- Steel Dragon's artistic murder escalation is INDEPENDENT of other plots
-- Chaos Cult is INFLUENCING, not creating this behavior
+- [[Steel Dragon]]'s artistic murder escalation is INDEPENDENT of other plots
+- [[Chaos Cult]] is INFLUENCING, not creating this behavior
 - Dragon would be dangerous without cult, but cult makes it worse
 - Murder pattern follows dragon's artistic vision, not random portents
 
