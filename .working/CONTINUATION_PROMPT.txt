@@ -1,0 +1,43 @@
+═══════════════════════════════════════════════════════════════
+AGASTIA CITY COMPLETION PROJECT - CONTINUATION PROMPT
+═══════════════════════════════════════════════════════════════
+
+Read this file first: /mnt/e/dnd/agastia-campaign/.working/AGASTIA_CITY_COMPLETION_PROJECT.md
+
+This file contains the complete project scope, progress, and specifications for building out Agastia city (our campaign hub) with all 7 tiers, districts, services, and establishments.
+
+CURRENT STATUS:
+- Phase 1: Structure & Inventory (COMPLETE)
+- Phase 2: Service Design (COMPLETE)
+- Phase 3: Content Creation (READY TO START)
+
+WHAT'S BEEN COMPLETED:
+✅ Tier hierarchy defined (1-7, Castle to Depths)
+✅ All districts mapped to tiers
+✅ Service categories defined (13 types)
+✅ Mechanical differences framework complete (Equipment, Healing, Magic, Food/Lodging)
+✅ Blades of Glory selected as Tier 2-3 premium shop
+✅ Comprehensive creation priority list (6 districts, 18+ establishments, 13 NPCs)
+
+WHAT NEEDS TO BE DONE:
+See the file's "CREATION PRIORITY LIST" section for full details.
+
+Priority items include:
+- 6 district detail files (Castle, Research Quarter, Noble Quarter, Lower Residential, Dock, Depths)
+- 18+ establishment files (Brightcoin Emergency Supplies, Delizioso Trattoria, Gilded Scale, etc.)
+- 13 NPC files for mentioned characters
+- Service variation shops across tiers (armories, temples, healers, etc.)
+
+NEXT STEPS:
+1. Read the project file thoroughly
+2. Update the TodoWrite tool with current checklist from the file
+3. Ask user which content to create first, OR
+4. Begin creating Priority 1 establishments (user's choice)
+
+IMPORTANT REMINDERS:
+- Update BOTH TodoWrite tool AND the project file as tasks complete
+- Follow the mechanical differences framework when creating services
+- Use ENTITY_FORMAT_SPECS.md for proper file formatting
+- Not many peasants in Agastia - it's a meritocracy (design principle)
+
+═══════════════════════════════════════════════════════════════

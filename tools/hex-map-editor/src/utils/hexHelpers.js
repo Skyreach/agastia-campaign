@@ -56,7 +56,6 @@ export const createHex = (row, col, number, overrides = {}) => {
     col,
     number,
     icon: null,
-    faction: null,
     label: '',
     events: '',
     iconLabel: '',

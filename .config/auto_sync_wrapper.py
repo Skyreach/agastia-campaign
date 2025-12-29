@@ -21,7 +21,12 @@ def sync_if_campaign_file(filepath):
         'Resources/': 'Resource',
         'Campaign_Core/': 'Artifact',
         'Dungeon_Ecologies/': 'Ecology',
-        'Session_Flows/': 'Session'
+        'Session_Flows/': 'Flow',
+        '.working/conversation_logs/': 'Conversation',
+        # Technical documentation (source materials for sync improvements)
+        '.config/NOTION_SYNC_IMPROVEMENTS.md': 'Documentation',
+        '.config/SYNC_COMMAND_REFERENCE.md': 'Documentation',
+        '.config/test_markdown_features.md': 'Test',
     }
 
     for pattern, entity_type in campaign_patterns.items():

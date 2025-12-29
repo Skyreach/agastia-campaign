@@ -4,6 +4,10 @@
 # Development and Infrastructure work
 .working/development/**
 .config/**/*.md
+# EXCEPT: Technical documentation (source materials for sync system)
+!.config/NOTION_SYNC_IMPROVEMENTS.md
+!.config/SYNC_COMMAND_REFERENCE.md
+!.config/test_markdown_features.md
 README.md
 CLAUDE.md
 COMMANDS.md

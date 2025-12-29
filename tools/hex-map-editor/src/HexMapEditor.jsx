@@ -39,11 +39,9 @@ export default function HexMapEditor() {
   const [zoom, setZoom] = useState(1);
   const [currentRoad, setCurrentRoad] = useState(null);
   const [roadType, setRoadType] = useState('trail');
-  const [showBg, setShowBg] = useState(true);
   const [showGrid, setShowGrid] = useState(true);
   const [showIcons, setShowIcons] = useState(true);
   const [selectedTool, setSelectedTool] = useState('number');
-  const [selectedFaction, setSelectedFaction] = useState(0);
   const [editingHex, setEditingHex] = useState(null);
   const [labelInput, setLabelInput] = useState('');
   const [eventsInput, setEventsInput] = useState('');
@@ -55,8 +53,6 @@ export default function HexMapEditor() {
   const [extractCorner2, setExtractCorner2] = useState(null);
   const [showExtractModal, setShowExtractModal] = useState(false);
   const [extractPreview, setExtractPreview] = useState(null);
-
-  const fileInputRef = useRef(null);
 
   // Load from IndexedDB on mount (with localStorage fallback), or load default world map
   useEffect(() => {
@@ -89,19 +85,6 @@ export default function HexMapEditor() {
 
   // Auto-save is handled by useAutoSave hook (debounced, with status indicator)
 
-  // Auto-recalculate hex size when grid dimensions or image changes
-  useEffect(() => {
-    if (currentMap.bgImage) {
-      const newSize = calculateHexSize(
-        currentMap.bgImage.width,
-        currentMap.bgImage.height,
-        currentMap.hexCols,
-        currentMap.hexRows
-      );
-      updateCurrentMap({ hexSize: newSize });
-    }
-  }, [currentMap.hexCols, currentMap.hexRows, currentMap.bgImage]);
-
   // Keyboard shortcuts for zoom
   useEffect(() => {
     const handleKeyPress = (e) => {
@@ -124,39 +107,14 @@ export default function HexMapEditor() {
   }, []);
 
   // Handlers
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const img = new Image();
-        img.onload = () => {
-          const newSize = calculateHexSize(
-            img.width,
-            img.height,
-            currentMap.hexCols,
-            currentMap.hexRows
-          );
-          updateCurrentMap({
-            bgImage: img,
-            bgImageData: event.target.result,
-            hexSize: newSize
-          });
-        };
-        img.src = event.target.result;
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
   const numberAllHexes = () => {
     const allNumbered = currentMap.hexes.length > 0 && currentMap.hexes.length === (currentMap.hexRows * currentMap.hexCols);
 
     if (allNumbered) {
-      // Remove numbers but preserve hex data (icons, labels, events, factions)
+      // Remove numbers but preserve hex data (icons, labels, events)
       const hexesWithoutNumbers = currentMap.hexes
         .map(h => ({ ...h, number: undefined }))
-        .filter(h => h.icon || h.label || h.events || h.faction !== null);
+        .filter(h => h.icon || h.label || h.events);
       updateCurrentMap({ hexes: hexesWithoutNumbers });
       return;
     }
@@ -270,28 +228,6 @@ export default function HexMapEditor() {
       return;
     }
 
-    // Faction tool
-    if (selectedTool === 'faction') {
-      const { row, col } = pixelToHex(x, y, currentMap.hexSize);
-      const hexKey = `${row},${col}`;
-
-      const existing = currentMap.hexes.find(h => h.key === hexKey);
-      if (existing) {
-        updateCurrentMap({
-          hexes: currentMap.hexes.map(h =>
-            h.key === hexKey ? { ...h, faction: selectedFaction } : h
-          )
-        });
-      } else {
-        const baseNumber = getHexNumberingBase(currentMap.scale);
-        const nextNum = Math.max(baseNumber - 1, ...currentMap.hexes.map(h => h.number || baseNumber - 1)) + 1;
-        updateCurrentMap({
-          hexes: [...currentMap.hexes, createHex(row, col, nextNum, { faction: selectedFaction })]
-        });
-      }
-      return;
-    }
-
     // Edit tool
     if (selectedTool === 'edit') {
       const { row, col } = pixelToHex(x, y, currentMap.hexSize);
@@ -324,13 +260,9 @@ export default function HexMapEditor() {
         const baseNumber = getHexNumberingBase(currentMap.scale);
         const nextNum = Math.max(baseNumber - 1, ...currentMap.hexes.map(h => h.number || baseNumber - 1)) + 1;
 
-        const existingHex = currentMap.hexes.find(h => h.row === row && h.col === col);
-        const inheritedFaction = existingHex ? existingHex.faction : null;
-
         updateCurrentMap({
           hexes: [...currentMap.hexes, createHex(row, col, nextNum, {
             icon: selectedTool === 'number' ? null : selectedTool,
-            faction: inheritedFaction,
             iconLabel: iconLabel
           })]
         });
@@ -339,7 +271,7 @@ export default function HexMapEditor() {
   };
 
   const prepareExtraction = (corner2) => {
-    if (!extractCorner1 || !currentMap.bgImage) return;
+    if (!extractCorner1) return;
 
     try {
       const hexesInRegion = getHexesInRect(
@@ -469,15 +401,12 @@ export default function HexMapEditor() {
         currentMapId={currentMapId}
         currentMap={currentMap}
         iconLabel={iconLabel}
-        fileInputRef={fileInputRef}
-        onFileInputClick={() => fileInputRef.current.click()}
-        onImageUpload={handleImageUpload}
         onMapSelect={setCurrentMapId}
         onMapDelete={deleteMap}
         onMapNameChange={(name) => updateCurrentMap({ mapName: name, name: name || currentMap.name })}
         onIconLabelChange={setIconLabel}
         onGridChange={(updates) => updateCurrentMap(updates)}
-        onExportMap={(includeBackground) => exportMapImage(currentMap, includeBackground, showBg)}
+        onExportMap={(includeBackground) => exportMapImage(currentMap, includeBackground, false)}
         onSaveData={() => saveMapData(maps, currentMapId)}
         onLoadData={handleLoadData}
         onClearRivers={() => updateCurrentMap({ riverEdges: [] })}
@@ -499,7 +428,6 @@ export default function HexMapEditor() {
           <HexCanvas
             currentMap={currentMap}
             zoom={zoom}
-            showBg={showBg}
             showGrid={showGrid}
             showIcons={showIcons}
             extractMode={extractMode}
@@ -526,21 +454,11 @@ export default function HexMapEditor() {
             onSave={saveHexData}
             onClose={closeHexEdit}
           />
-
-          {showExtractModal && (
-            <ExtractModal
-              extractPreview={extractPreview}
-              onConfirm={confirmExtraction}
-              onCancel={cancelExtraction}
-            />
-          )}
         </div>
 
         <ContextPanel
           selectedTool={selectedTool}
-          selectedFaction={selectedFaction}
           roadType={roadType}
-          onFactionSelect={setSelectedFaction}
           onRoadTypeChange={setRoadType}
           onClose={() => setSelectedTool('number')}
         />
@@ -548,7 +466,6 @@ export default function HexMapEditor() {
 
       <BottomBar
         extractMode={extractMode}
-        showBg={showBg}
         showGrid={showGrid}
         showIcons={showIcons}
         zoom={zoom}
@@ -563,7 +480,6 @@ export default function HexMapEditor() {
           setExtractCorner1(null);
           setExtractCorner2(null);
         }}
-        onToggleBg={() => setShowBg(!showBg)}
         onToggleGrid={() => setShowGrid(!showGrid)}
         onToggleIcons={() => setShowIcons(!showIcons)}
         onNumberAllHexes={numberAllHexes}
@@ -572,6 +488,15 @@ export default function HexMapEditor() {
         onZoomReset={() => setZoom(1)}
         onFinishRoad={finishRoad}
       />
+
+      {/* Modals rendered at root level to avoid z-index stacking issues */}
+      {showExtractModal && (
+        <ExtractModal
+          extractPreview={extractPreview}
+          onConfirm={confirmExtraction}
+          onCancel={cancelExtraction}
+        />
+      )}
     </div>
   );
 }

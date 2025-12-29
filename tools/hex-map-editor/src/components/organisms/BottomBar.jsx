@@ -7,7 +7,6 @@ import { VisibilityToggles, ZoomControls, SaveStatusIndicator } from '../molecul
  */
 export const BottomBar = ({
   extractMode,
-  showBg,
   showGrid,
   showIcons,
   zoom,
@@ -18,7 +17,6 @@ export const BottomBar = ({
   lastSaveTime,
   saveError,
   onToggleExtractMode,
-  onToggleBg,
   onToggleGrid,
   onToggleIcons,
   onNumberAllHexes,
@@ -31,10 +29,8 @@ export const BottomBar = ({
     <div className="bg-white border-t border-gray-200 p-3 flex items-center justify-between text-sm">
       <div className="flex items-center gap-3">
         <VisibilityToggles
-          showBg={showBg}
           showGrid={showGrid}
           showIcons={showIcons}
-          onToggleBg={onToggleBg}
           onToggleGrid={onToggleGrid}
           onToggleIcons={onToggleIcons}
         />

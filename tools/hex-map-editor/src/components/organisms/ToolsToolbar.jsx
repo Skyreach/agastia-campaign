@@ -1,6 +1,6 @@
 import { Trash2, FileText, Crop, Hash, Download } from 'lucide-react';
 import { Button, Divider, Select } from '../atoms';
-import { ToolButton, TextToolButton, FactionPalette, VisibilityToggles } from '../molecules';
+import { ToolButton, TextToolButton, VisibilityToggles } from '../molecules';
 import { ICON_TYPES } from '../../constants/icons';
 import { ROAD_TYPES } from '../../constants/roads';
 
@@ -9,19 +9,15 @@ import { ROAD_TYPES } from '../../constants/roads';
  */
 export const ToolsToolbar = ({
   selectedTool,
-  selectedFaction,
   roadType,
   currentRoad,
   extractMode,
-  showBg,
   showGrid,
   showIcons,
   onToolSelect,
-  onFactionSelect,
   onRoadTypeChange,
   onNumberAllHexes,
   onToggleExtractMode,
-  onToggleBg,
   onToggleGrid,
   onToggleIcons,
   onExportMap,
@@ -61,13 +57,6 @@ export const ToolsToolbar = ({
         />
 
         <TextToolButton
-          label="Faction"
-          isActive={selectedTool === 'faction'}
-          onClick={() => onToolSelect('faction')}
-          title="Paint faction territory"
-        />
-
-        <TextToolButton
           label="River"
           isActive={selectedTool === 'river'}
           onClick={() => onToolSelect('river')}
@@ -101,16 +90,6 @@ export const ToolsToolbar = ({
         />
       </div>
 
-      {selectedTool === 'faction' && (
-        <>
-          <Divider />
-          <FactionPalette
-            selectedFaction={selectedFaction}
-            onSelectFaction={onFactionSelect}
-          />
-        </>
-      )}
-
       <Divider />
 
       <Button
@@ -134,10 +113,8 @@ export const ToolsToolbar = ({
       <Divider />
 
       <VisibilityToggles
-        showBg={showBg}
         showGrid={showGrid}
         showIcons={showIcons}
-        onToggleBg={onToggleBg}
         onToggleGrid={onToggleGrid}
         onToggleIcons={onToggleIcons}
       />

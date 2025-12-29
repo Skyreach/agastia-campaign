@@ -90,7 +90,7 @@ This session contains the most extensive Agastia location references.
 | **Archive of Lost Histories** | Library/Research | Line 387, 435 (Veridian's workplace) | ❌ NO | **MISSING** |
 | **Stonemark Antiquities** | Artifact Shop | Line 394, 447 (Mirella's shop) | ❌ NO | **MISSING** |
 | **The Gilded Gryphon Inn** | Inn | Line 395 (quality lodging, 5gp/night) | ✅ YES | Needs verification |
-| **Il Drago Rosso (The Red Dragon)** | Restaurant | Line 396 (Nikki's family restaurant) | ✅ YES | Named "The Delizioso Trattoria" in files |
+| **Il Drago Rosso (The Red Dragon)** | Restaurant | Line 396 (Nikki's family restaurant) | ✅ YES | Consistency fixed |
 
 **TIER 6: DOCK DISTRICT**
 
@@ -222,13 +222,13 @@ This session contains the most extensive Agastia location references.
 
 **Issue:** Nikki's Family Restaurant
 - **Session 2 Name:** "Il Drago Rosso (The Red Dragon)" (Line 396)
-- **File Name:** "The Delizioso Trattoria" (`Shop_The_Delizioso_Trattoria.md`)
+- **File Name:** "Il Drago Rosso" (`Shop_Il_Drago_Rosso.md`)
 - **Impact:** Moderate - could confuse players
 - **Recommendation:** CHOOSE ONE CANONICAL NAME and update all references
 
 **Options:**
 1. Use "Il Drago Rosso" (Session 2 name, more thematic to Nikki's tiefling heritage)
-2. Use "The Delizioso Trattoria" (existing file name, more generic Italian)
+2. Use "Il Drago Rosso" (consistent file name)
 3. Combine: "Il Drago Rosso Trattoria" or "The Delizioso (Il Drago Rosso)"
 
 **Suggested Resolution:** Update file to match Session 2 reference "Il Drago Rosso"
@@ -314,7 +314,7 @@ This session contains the most extensive Agastia location references.
 ### 1. Restaurant Name Inconsistency (MODERATE)
 **Issue:** Nikki's family restaurant has two different names
 **Session Reference:** "Il Drago Rosso (The Red Dragon)"
-**File Name:** "The Delizioso Trattoria"
+**File Name:** "Il Drago Rosso"
 **Resolution Needed:** Choose canonical name and update all references
 
 ### 2. No Major Continuity Errors Found

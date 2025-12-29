@@ -1,6 +1,5 @@
 import { getHexCoords, getEdgeMidpoint, drawHexagon, getHexVertices } from './hexGeometry';
 import { ICON_TYPES } from '../constants/icons';
-import { FACTIONS } from '../constants/factions';
 
 /**
  * Draw smooth paths (rivers/roads) on canvas
@@ -101,17 +100,10 @@ export const drawHexGrid = (ctx, hexRows, hexCols, hexSize) => {
 };
 
 /**
- * Draw hex with faction, number, label, icon
+ * Draw hex with number, label, icon, and events indicator
  */
 export const drawHex = (ctx, hex, hexSize) => {
   const { x, y } = getHexCoords(hex.row, hex.col, hexSize);
-
-  // Faction background
-  if (hex.faction !== null && hex.faction !== undefined) {
-    ctx.fillStyle = FACTIONS[hex.faction].color;
-    drawHexagon(ctx, x, y, hexSize);
-    ctx.fill();
-  }
 
   // Semi-transparent background for content
   if (hex.number || hex.label || hex.icon) {

@@ -72,23 +72,36 @@ export const ResponsiveModal = ({
   // Desktop: Centered dialog
   if (resolvedVariant === 'dialog') {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center">
+      <div
+        className="fixed z-[9999]"
+        style={{
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '1rem'
+        }}
+      >
         {/* Backdrop */}
         <div
-          className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+          className="absolute inset-0 bg-black/70 backdrop-blur-sm"
           onClick={closeOnBackdrop ? onClose : undefined}
         />
 
         {/* Modal */}
         <div
           ref={modalRef}
-          className={`relative bg-white rounded-lg shadow-2xl max-w-2xl w-full mx-4 max-h-[90vh] flex flex-col ${className}`}
+          className={`relative rounded-lg shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col border-2 border-gray-800 ${className}`}
+          style={{ backgroundColor: '#ffffff' }}
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-title"
         >
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white">
             <h2 id="modal-title" className="text-xl font-semibold text-gray-800">
               {title}
             </h2>
@@ -104,13 +117,13 @@ export const ResponsiveModal = ({
           </div>
 
           {/* Content */}
-          <div className="flex-1 overflow-y-auto px-6 py-4">
+          <div className="flex-1 overflow-y-auto px-6 py-4 bg-white">
             {children}
           </div>
 
           {/* Footer */}
           {footer && (
-            <div className="px-6 py-4 border-t border-gray-200 flex justify-end gap-3">
+            <div className="px-6 py-4 border-t border-gray-200 flex justify-end gap-3 bg-white">
               {footer}
             </div>
           )}

@@ -17,7 +17,6 @@ export const useCanvasRenderer = ({
   canvasRef,
   currentMap,
   zoom,
-  showBg,
   showGrid,
   showIcons,
   extractMode,
@@ -30,8 +29,8 @@ export const useCanvasRenderer = ({
     if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
-    const baseWidth = currentMap.bgImage ? currentMap.bgImage.width : CANVAS_DEFAULTS.width;
-    const baseHeight = currentMap.bgImage ? currentMap.bgImage.height : CANVAS_DEFAULTS.height;
+    const baseWidth = CANVAS_DEFAULTS.width;
+    const baseHeight = CANVAS_DEFAULTS.height;
 
     // Set actual canvas resolution (for rendering quality)
     canvas.width = baseWidth;
@@ -55,11 +54,6 @@ export const useCanvasRenderer = ({
     }
 
     ctx.clearRect(0, 0, baseWidth, baseHeight);
-
-    // Background
-    if (showBg && currentMap.bgImage) {
-      ctx.drawImage(currentMap.bgImage, 0, 0);
-    }
 
     // Extraction selection
     if (extractMode) {
@@ -90,7 +84,6 @@ export const useCanvasRenderer = ({
     canvasRef,
     currentMap,
     zoom,
-    showBg,
     showGrid,
     showIcons,
     extractMode,

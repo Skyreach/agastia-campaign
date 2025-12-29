@@ -7,7 +7,6 @@ import { useCanvasRenderer } from '../../hooks/useCanvasRenderer';
 export const HexCanvas = ({
   currentMap,
   zoom,
-  showBg,
   showGrid,
   showIcons,
   extractMode,
@@ -22,7 +21,6 @@ export const HexCanvas = ({
     canvasRef,
     currentMap,
     zoom,
-    showBg,
     showGrid,
     showIcons,
     extractMode,

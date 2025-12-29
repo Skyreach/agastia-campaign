@@ -1,4 +1,4 @@
-import { Upload, Trash2, Download, Save, FolderOpen, RotateCcw, Map } from 'lucide-react';
+import { Trash2, Download, Save, FolderOpen, RotateCcw, Map } from 'lucide-react';
 import { Button, Input, Select, Divider } from '../atoms';
 import { GridControls } from '../molecules';
 import { MAP_SCALES, SCALE_INFO } from '../../constants/mapDefaults';
@@ -11,9 +11,6 @@ export const TopBar = ({
   currentMapId,
   currentMap,
   iconLabel,
-  fileInputRef,
-  onFileInputClick,
-  onImageUpload,
   onMapSelect,
   onMapDelete,
   onMapNameChange,
@@ -30,22 +27,6 @@ export const TopBar = ({
   return (
     <div className="bg-white shadow-sm border-b border-gray-200 p-3 flex flex-wrap gap-3 items-center text-sm">
       {/* File Operations */}
-      <Button
-        onClick={onFileInputClick}
-        variant="primary"
-        icon={Upload}
-        title="Upload background map image"
-      >
-        Upload Map
-      </Button>
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept="image/*"
-        onChange={onImageUpload}
-        className="hidden"
-      />
-
       <Button
         onClick={onSaveData}
         variant="success"

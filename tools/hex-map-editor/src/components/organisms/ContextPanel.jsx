@@ -1,7 +1,6 @@
 import { X } from 'lucide-react';
 import { useResponsiveContext } from '../../hooks/useResponsiveContext';
 import { Select } from '../atoms';
-import { FactionPalette } from '../molecules';
 import { ROAD_TYPES } from '../../constants/roads';
 
 /**
@@ -11,16 +10,14 @@ import { ROAD_TYPES } from '../../constants/roads';
  */
 export const ContextPanel = ({
   selectedTool,
-  selectedFaction,
   roadType,
-  onFactionSelect,
   onRoadTypeChange,
   onClose
 }) => {
   const { isMobile } = useResponsiveContext();
 
   // Don't show if tool doesn't need context panel
-  if (selectedTool !== 'faction' && selectedTool !== 'road') {
+  if (selectedTool !== 'road') {
     return null;
   }
 
@@ -43,7 +40,7 @@ export const ContextPanel = ({
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-lg font-semibold text-gray-800">
-                {selectedTool === 'faction' ? 'Faction Colors' : 'Road Type'}
+                Road Type
               </h3>
               <button
                 onClick={onClose}
@@ -55,30 +52,21 @@ export const ContextPanel = ({
             </div>
 
             {/* Content */}
-            {selectedTool === 'faction' && (
-              <FactionPalette
-                selectedFaction={selectedFaction}
-                onSelectFaction={onFactionSelect}
+            <div>
+              <Select
+                value={roadType}
+                onChange={(e) => onRoadTypeChange(e.target.value)}
+                title="Select road type"
+                options={Object.entries(ROAD_TYPES).map(([key, style]) => ({
+                  value: key,
+                  label: style.label
+                }))}
+                className="mb-4"
               />
-            )}
-
-            {selectedTool === 'road' && (
-              <div>
-                <Select
-                  value={roadType}
-                  onChange={(e) => onRoadTypeChange(e.target.value)}
-                  title="Select road type"
-                  options={Object.entries(ROAD_TYPES).map(([key, style]) => ({
-                    value: key,
-                    label: style.label
-                  }))}
-                  className="mb-4"
-                />
-                <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded-lg">
-                  Click hex centers to add waypoints. Click the last hex again to finish the road.
-                </p>
-              </div>
-            )}
+              <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded-lg">
+                Click hex centers to add waypoints. Click the last hex again to finish the road.
+              </p>
+            </div>
           </div>
         </div>
       </>
@@ -90,7 +78,7 @@ export const ContextPanel = ({
     <div className="w-64 bg-white border-l border-gray-200 p-4 flex flex-col">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold text-gray-800">
-          {selectedTool === 'faction' ? 'Faction Colors' : 'Road Type'}
+          Road Type
         </h3>
         <button
           onClick={onClose}
@@ -101,29 +89,20 @@ export const ContextPanel = ({
         </button>
       </div>
 
-      {selectedTool === 'faction' && (
-        <FactionPalette
-          selectedFaction={selectedFaction}
-          onSelectFaction={onFactionSelect}
+      <div>
+        <Select
+          value={roadType}
+          onChange={(e) => onRoadTypeChange(e.target.value)}
+          title="Select road type"
+          options={Object.entries(ROAD_TYPES).map(([key, style]) => ({
+            value: key,
+            label: style.label
+          }))}
         />
-      )}
-
-      {selectedTool === 'road' && (
-        <div>
-          <Select
-            value={roadType}
-            onChange={(e) => onRoadTypeChange(e.target.value)}
-            title="Select road type"
-            options={Object.entries(ROAD_TYPES).map(([key, style]) => ({
-              value: key,
-              label: style.label
-            }))}
-          />
-          <p className="text-xs text-gray-500 mt-2">
-            Click hex centers to add waypoints. Click the last hex again to finish the road.
-          </p>
-        </div>
-      )}
+        <p className="text-xs text-gray-500 mt-2">
+          Click hex centers to add waypoints. Click the last hex again to finish the road.
+        </p>
+      </div>
     </div>
   );
 };
