@@ -74,8 +74,8 @@ graph TD
 | | A flash of silver-white catches the corner of someone's eye—”a unicorn stands at the forest's edge, watching the party with intelligent eyes. It bolts immediately, but those who saw it feel blessed (advantage on their next saving throw). **Variation:** If the party can track it (DC 16 Survival check with disadvantage—”it's very fast), they find it wounded by goblin arrows, creating a moral choice. **Non-Combat:** Healing the unicorn (or choosing not to pursue it) grants a more powerful blessing: the unicorn's horn glows and leaves behind a single silver hair that can cure one disease or poison (no action required). |
 | **8** | **Goblin Ambush Site** |
 | | The forest goes silent. Worg tracks and goblin footprints surround a freshly dug pit covered with branches and leaves. Crude wooden spikes line the bottom (2d6 piercing damage, DC 12 Dex save to avoid). Goblins watch from the bushes, hoping their trap succeeds. **Variation:** Instead of a few goblins, a bugbear leads the ambush party, using the goblins as expendable shock troops. **Non-Combat:** Keen-eyed characters (DC 14 Perception) spot the trap before triggering it and can either avoid it, disarm it, or turn it against pursuers. |
-| **9** | **Spider's Hunting Ground** |
-| | Massive webs stretch between ancient oaks, glistening with dew. Giant wolf spiders lurk in the canopy, and cocooned corpses dangle from branches—”some still twitching. An ettercap commands the spiders from a higher perch, chittering orders. **Variation:** One cocoon contains a still-living noble who will pay handsomely for rescue (or the spiders are defending egg sacs that will hatch in days, flooding the forest). **Non-Combat:** Sneaking through (DC 15 Stealth group check) or using fire to clear a safe path avoids the fight; investigating cocoons yields 2d20 gp in valuables. |
+| **9** | **Bandit Toll Station** |
+| | A crude barricade blocks the road ahead, constructed from felled trees and lashed-together logs. Four bandits lounge nearby, weapons close at hand, while their leader—a scarred woman in patchwork armor—steps forward with false hospitality. "Toll's 10 gold per head. King's Road Tax. Pay up or turn around." She's lying; this is pure extortion. **Variation:** The bandits are actually desperate refugees who turned to crime after losing their homes to monster attacks; or they're scouts for a larger bandit army camped nearby. **Non-Combat:** Intimidation (DC 14) or Deception (DC 16) to bluff past them; Persuasion (DC 18) with a sob story might earn sympathy; or pay the "toll" (50 gp total) and move on. Investigating their camp reveals stolen goods worth 3d20 gp. |
 | **10** | **Territorial Owlbear** |
 | | The earth shakes with heavy footfalls. An owlbear crashes through the underbrush, feathers bristling and beak clacking. It's protecting its nearby nest and views all intruders as threats. **Variation:** The owlbear is diseased or maddened by corrupted water, making it even more aggressive and unpredictable (add 10 HP, disadvantage to calm it). **Non-Combat:** A successful DC 16 Animal Handling check or offering 3 days of rations as a peace offering makes it back down; the party can choose to investigate the nest (containing a shiny obsidian egg worth 50 gp to collectors). |
 | **11** | **Stirge Storm** |
@@ -162,6 +162,37 @@ graph TD
 - The symbol is the [[Steel Dragon]]'s signature.
 
 ## Player Quest Hooks
+
+### The Ghost of Elaris (NEW - Emerged from Travel Encounter)
+
+**Setup:** During the long rest after saving the noble elf from the spider's hunting ground, the party is visited by the ghost of the young elf found dead in the cocoons.
+
+> As you settle into your rest, the temperature drops sharply. A translucent figure materializes near the fire—a young elf, their form flickering like candlelight. They look at you with desperate, hollow eyes.
+
+**The Ghost's Plea:**
+- Name: **Elaris Moonwhisper**, child of the noble elf **Lord Thalorien Moonwhisper** (whom the party rescued)
+- Elaris was traveling with their father when the spiders attacked
+- Before dying, Elaris saw something disturbing: "The spiders... they weren't hunting. They were herding us. Driving us toward the old hollow."
+- **Quest Goal:** Investigate the "old hollow" and discover what was controlling the spiders
+
+**Investigation Path:**
+1. **Track the Pattern:** DC 14 Survival check reveals the spider webs formed a deliberate funnel, driving travelers west
+2. **The Old Hollow:** A corrupted grove 1 hour west of the road
+   - Ancient oak split and oozing shadow (similar to encounter #14 but more advanced)
+   - A **Wood Woad** corrupted by shadow magic guards the tree
+   - At the tree's base: A ritual circle and evidence someone has been feeding the tree victims
+3. **The Culprit:** Investigation reveals signs of a robed figure visiting regularly (Chaos Cult member experimenting with corruption magic)
+
+**Rewards:**
+- **Elaris's Blessing:** Once per long rest, a character can call upon Elaris for advantage on a death saving throw
+- **Lord Thalorien's Gratitude:** 150 gp reward and an invitation to House Moonwhisper in Agastia (Tier 2 Noble Quarter)
+- **Information:** Evidence of Chaos Cult activity in the forest (connects to larger campaign)
+
+**DM Notes:**
+- This quest can be completed before or after arriving in Agastia
+- Lord Thalorien will not know his child is dead until the party tells him (emotional scene)
+- The Chaos Cult connection can be discovered via Religion/Arcana DC 15 on the ritual circle
+- Wood Woad stats: AC 18, HP 75, resistant to bludgeoning/piercing
 
 ### [[Manny]] (Monomi) - [[The Codex]] Quest
 
