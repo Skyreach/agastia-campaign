@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject10, high-elf, wizard, patron-level, eldest]
 threat_level: Extreme
 ---
 
-# [[Decum (Subject #10)]] - [[Decimate Project]] Subject #10 (PATRON-LEVEL)
+# Decum (Subject #10) - [[Decimate Project]] Subject #10 (PATRON-LEVEL)
 
-**[[Decum (Subject #10)]]** is a high elf wizard and Subject #10 - **eldest and most powerful Decimate subject**. Age ~19-20, with ~9-10 years of service. One of three patron-level operatives, he keeps to himself and handles [[Professor Zero]]'s most dangerous missions.
+**Decum (Subject #10)** is a high elf wizard and Subject #10 - **eldest and most powerful Decimate subject**. Age ~19-20, with ~9-10 years of service. One of three patron-level operatives, he keeps to himself and handles [[Professor Zero]]'s most dangerous missions.
 
 **Appearance:** High elf features (elegant, refined), scholarly demeanor, likely carries spellbook.
 

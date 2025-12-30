@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, dock-district, medical, surgery, barber-surgeon, risky-healing]
 ---
 
-# [[Sawbones Surgery]]
+# Sawbones Surgery
 
 ## Overview
 

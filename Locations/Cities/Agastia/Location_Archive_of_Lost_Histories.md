@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [location, archive, library, scholar-quarter, knowledge, quest-destination, manny-codex, veridian]
 ---
 
-# [[Archive of Lost Histories]]
+# Archive of Lost Histories
 
 ## Overview
 
@@ -27,7 +27,7 @@ tags: [location, archive, library, scholar-quarter, knowledge, quest-destination
 ## Staff
 
 ### Veridian
-**Role:** Chief Archivist and Guardian of the [[Archive of Lost Histories]]
+**Role:** Chief Archivist and Guardian of the Archive of Lost Histories
 **Faction:** Independent (Aligned with knowledge preservation, fiercely neutral)
 
 **Background:**

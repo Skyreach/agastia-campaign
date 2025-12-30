@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, merchant-district, adventuring-gear, equipment, supplies]
 ---
 
-# [[The Wanderer's Pack]]
+# The Wanderer's Pack
 
 ## Overview
 

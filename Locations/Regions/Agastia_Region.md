@@ -9,11 +9,11 @@ version: "1.0.0"
 tags: [region, merit-council, starting-area, kingdom]
 ---
 
-# [[Agastia Region]]
+# Agastia Region
 
 ## Player Summary
 
-The [[Agastia Region]] is the heartland of the [[Merit Council]]'s domain, a kingdom where advancement is earned through demonstrated competence rather than birthright. The region centers around the grand city of [[Agastia]], surrounded by varied terrain including the mysterious [[Infinite Forest]] to the north and various settlements and ruins throughout.
+The Agastia Region is the heartland of the [[Merit Council]]'s domain, a kingdom where advancement is earned through demonstrated competence rather than birthright. The region centers around the grand city of [[Agastia]], surrounded by varied terrain including the mysterious [[Infinite Forest]] to the north and various settlements and ruins throughout.
 
 ### Geography
 - **Capital:** [[Agastia]] City - The gleaming metropolis of meritocracy
@@ -51,7 +51,7 @@ The region reflects [[Merit Council]] values - ordered, efficient, and achieveme
 - **Social Pressure:** Growing inequality between merit achievers and those left behind
 
 ### Strategic Significance
-The [[Agastia Region]] serves as the primary setting for early campaign adventures, representing the [[Merit Council]]'s sphere of influence and the tensions that drive the campaign's central conflicts.
+The Agastia Region serves as the primary setting for early campaign adventures, representing the [[Merit Council]]'s sphere of influence and the tensions that drive the campaign's central conflicts.
 
 ### Key Locations by Type
 

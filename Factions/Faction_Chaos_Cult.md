@@ -13,7 +13,7 @@ related_entities:
   - Merit Council
 ---
 
-# [[Chaos Cult]]
+# Chaos Cult
 
 ## Player Summary
 
@@ -22,7 +22,7 @@ A dangerous cult dedicated to spreading chaos and disrupting the established ord
 ## DM Notes
 
 ### Overview
-The [[Chaos Cult]] operates with a dual purpose: ideological chaos for its own sake (artistic escalation) and profit from the resulting instability. They've successfully infiltrated legitimate businesses, creating a network that both funds their operations and provides cover for their activities.
+The Chaos Cult operates with a dual purpose: ideological chaos for its own sake (artistic escalation) and profit from the resulting instability. They've successfully infiltrated legitimate businesses, creating a network that both funds their operations and provides cover for their activities.
 
 ### Key Members
 - **Brother Matthias** - Dragon handler, directly involved in feeding [[Steel Dragon]]'s corruption

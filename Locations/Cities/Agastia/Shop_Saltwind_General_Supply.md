@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, dock-district, sailor, ship-supplies, maritime]
 ---
 
-# [[Saltwind General Supply]]
+# Saltwind General Supply
 
 ## Overview
 

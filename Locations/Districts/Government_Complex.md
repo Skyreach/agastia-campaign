@@ -9,11 +9,11 @@ version: "1.0.0"
 tags: [district, government, merit-council, power, bureaucracy]
 ---
 
-# [[Government Complex]]
+# Government Complex
 
 ## Player Summary
 
-The [[Government Complex]] is the beating heart of [[Merit Council]] authority in [[Agastia]]. Imposing architecture demonstrates the power and permanence of meritocratic rule, while endless streams of officials, petitioners, and clerks flow through halls of polished stone. Everything here operates according to established procedure, documented protocol, and certified authority.
+The Government Complex is the beating heart of [[Merit Council]] authority in [[Agastia]]. Imposing architecture demonstrates the power and permanence of meritocratic rule, while endless streams of officials, petitioners, and clerks flow through halls of polished stone. Everything here operates according to established procedure, documented protocol, and certified authority.
 
 ### Atmosphere
 Formal, orderly, and somewhat intimidating. Guards in [[Merit Council]] uniforms stand at regular intervals. Citizens wait in designated areas for their appointments. Every conversation seems measured and official. The air carries the smell of parchment, sealing wax, and the faint anxiety of those hoping to advance their merit status or avoid censure.

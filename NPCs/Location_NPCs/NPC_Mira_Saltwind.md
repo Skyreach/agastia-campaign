@@ -12,11 +12,11 @@ threat_level: None
 related_entities: [Geist, Kyle, Merit Council, Merchant District]
 ---
 
-# [[Mira Saltwind]]
+# Mira Saltwind
 
 ## Player Summary
 
-**[[Mira Saltwind]]** runs Saltwind Imports, a legitimate import business in [[Agastia]]'s [[Merchant District]]. She appears perpetually stressed, juggling inventory and dealing with constant "inspection fees" that drain her profits. Mira is one of many merchants extorted by Inspector [[Geist (Bandit Lieutenant)]], paying protection money disguised as official fees to keep her business running.
+**Mira Saltwind** runs Saltwind Imports, a legitimate import business in [[Agastia]]'s [[Merchant District]]. She appears perpetually stressed, juggling inventory and dealing with constant "inspection fees" that drain her profits. Mira is one of many merchants extorted by Inspector [[Geist (Bandit Lieutenant)]], paying protection money disguised as official fees to keep her business running.
 
 ### Basic Information
 - **Race:** Half-Elf

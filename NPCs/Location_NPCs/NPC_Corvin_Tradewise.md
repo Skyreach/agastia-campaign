@@ -12,11 +12,11 @@ threat_level: None
 related_entities: [Geist, Party, Meridians Rest, Agastia]
 ---
 
-# [[Corvin Tradewise]]
+# Corvin Tradewise
 
 ## Player Summary
 
-**[[Corvin Tradewise]]** leads a five-wagon merchant caravan that travels the routes between [[Agastia]] and outlying settlements. Jovial and business-minded, Corvin has seen his profits drained by Inspector [[Geist (Bandit Lieutenant)]]'s "fees" but maintains his cheerful demeanor. He's willing to trade, share news, and warn travelers about dangers - both the legitimate kind and the corrupt ones.
+**Corvin Tradewise** leads a five-wagon merchant caravan that travels the routes between [[Agastia]] and outlying settlements. Jovial and business-minded, Corvin has seen his profits drained by Inspector [[Geist (Bandit Lieutenant)]]'s "fees" but maintains his cheerful demeanor. He's willing to trade, share news, and warn travelers about dangers - both the legitimate kind and the corrupt ones.
 
 ### Basic Information
 - **Race:** Human

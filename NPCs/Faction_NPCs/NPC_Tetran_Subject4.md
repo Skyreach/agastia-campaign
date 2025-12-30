@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject4, wood-elf, ranger]
 threat_level: Medium
 ---
 
-# [[Tetran (Subject #4)]] - [[Decimate Project]] Subject #4
+# Tetran (Subject #4) - [[Decimate Project]] Subject #4
 
-**[[Tetran (Subject #4)]]** is a wood elf ranger and Subject #4, with ~6 years of service. Age ~16. Expert tracker and wilderness operative. Nature-connected despite memory wipe. Quiet, observant outdoor specialist.
+**Tetran (Subject #4)** is a wood elf ranger and Subject #4, with ~6 years of service. Age ~16. Expert tracker and wilderness operative. Nature-connected despite memory wipe. Quiet, observant outdoor specialist.
 
 **Appearance:** Wood elf features (slender, pointed ears), wilderness-worn, carries ranger equipment.
 

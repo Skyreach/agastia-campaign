@@ -12,7 +12,7 @@ related_entities:
   - Three-Generation Rule
 ---
 
-# [[Merit Council]]
+# Merit Council
 
 ## Player Summary
 
@@ -21,7 +21,7 @@ The governing body that believes in advancement and power based on demonstrated 
 ## DM Notes
 
 ### Overview
-The [[Merit Council]] is a meritocratic government that replaced hereditary aristocracy. While their ideals are noble, their strict standards have created unintended consequences, including the [[Dispossessed]] movement. They're currently fighting on multiple fronts: investigating [[Steel Dragon]]'s murders, combating [[Chaos Cult]] infiltration, and trying to maintain system integrity against growing criticism.
+The Merit Council is a meritocratic government that replaced hereditary aristocracy. While their ideals are noble, their strict standards have created unintended consequences, including the [[Dispossessed]] movement. They're currently fighting on multiple fronts: investigating [[Steel Dragon]]'s murders, combating [[Chaos Cult]] infiltration, and trying to maintain system integrity against growing criticism.
 
 ### Philosophy & Core Systems
 - **Meritocracy:** All positions earned through demonstrated competence

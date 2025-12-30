@@ -1,5 +1,5 @@
 ---
-name: Monomi "Manny"
+name: Manny
 type: PC
 player: Player 1
 race: Half-Orc

@@ -7,9 +7,9 @@ tags: [npc, decimate-project, subject5, goliath, barbarian]
 threat_level: High
 ---
 
-# [[Quincy (Subject #5)]] - [[Decimate Project]] Subject #5
+# Quincy (Subject #5) - [[Decimate Project]] Subject #5
 
-**[[Quincy (Subject #5)]]** is a goliath barbarian and Subject #5, with ~5 years of service. Age ~15 (large for age). Physical powerhouse of the [[Decimate Project]]. Immense strength, possible gentle giant or controlled berserker.
+**Quincy (Subject #5)** is a goliath barbarian and Subject #5, with ~5 years of service. Age ~15 (large for age). Physical powerhouse of the [[Decimate Project]]. Immense strength, possible gentle giant or controlled berserker.
 
 **Appearance:** Goliath build (7+ feet tall), mountain/tribal markings, intimidating presence despite young age.
 

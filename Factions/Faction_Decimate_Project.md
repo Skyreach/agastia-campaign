@@ -12,7 +12,7 @@ related_entities:
   - All 10 Subjects
 ---
 
-# [[Decimate Project]]
+# Decimate Project
 
 ## Player Summary
 
@@ -21,7 +21,7 @@ related_entities:
 ## DM Notes
 
 ### Overview
-The [[Decimate Project]] is a highly secretive program led by the mysterious [[Professor Zero]], whose true identity remains unknown. The Project created ten subjects through memory manipulation and trained them as child soldiers for unknown purposes. Their current active goal is acquiring the Dominion Evolution Codex, but this appears to be only one step in a much larger, still-unrevealed plan.
+The Decimate Project is a highly secretive program led by the mysterious [[Professor Zero]], whose true identity remains unknown. The Project created ten subjects through memory manipulation and trained them as child soldiers for unknown purposes. Their current active goal is acquiring the Dominion Evolution Codex, but this appears to be only one step in a much larger, still-unrevealed plan.
 
 ### Leadership
 

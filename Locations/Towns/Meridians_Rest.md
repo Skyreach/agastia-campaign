@@ -10,11 +10,11 @@ version: "1.0.0"
 tags: [settlement, waystation, travel, border-town, temporal-theme]
 ---
 
-# [[Meridian's Rest]]
+# Meridian's Rest
 
 ## Player Summary
 
-[[Meridian's Rest]] is a small waystation settlement positioned at a strategic crossroads between [[Agastia]] City and the dangerous northern territories near the [[Infinite Forest]]. The town serves travelers, merchants, and those brave or desperate enough to venture toward the wilderness. Its most distinctive feature is an ancient sundial monument in the town square that seems to function strangely - casting shadows that don't quite match the sun's position.
+Meridian's Rest is a small waystation settlement positioned at a strategic crossroads between [[Agastia]] City and the dangerous northern territories near the [[Infinite Forest]]. The town serves travelers, merchants, and those brave or desperate enough to venture toward the wilderness. Its most distinctive feature is an ancient sundial monument in the town square that seems to function strangely - casting shadows that don't quite match the sun's position.
 
 ### The Settlement
 
@@ -22,7 +22,7 @@ tags: [settlement, waystation, travel, border-town, temporal-theme]
 A modest town of a few hundred permanent residents, swelling with transient travelers during peak seasons. The population is pragmatic and hardy - those who live here have made peace with danger and uncertainty.
 
 **Primary Function**
-[[Meridian's Rest]] exists to serve travelers:
+Meridian's Rest exists to serve travelers:
 - Inn and taverns for overnight accommodation
 - Stables and wagon repair services
 - Provisions and emergency supplies
@@ -57,7 +57,7 @@ Small office where licensed guides offer services for forest travel. Guides are 
 ### The Town's Secret
 
 **Temporal Anomaly Zone**
-[[Meridian's Rest]] sits on a subtle temporal distortion. Time flows slightly differently here than surrounding areas, making it a natural "rest point" where travelers recover more quickly and certain magical effects behave strangely.
+Meridian's Rest sits on a subtle temporal distortion. Time flows slightly differently here than surrounding areas, making it a natural "rest point" where travelers recover more quickly and certain magical effects behave strangely.
 
 The sundial doesn't malfunction - it actually displays correct time, while normal clocks in the area run inconsistently. Locals have adapted to this without fully understanding it.
 
@@ -79,7 +79,7 @@ Halfling merchant who knows everyone's business and uses information as currency
 Matriarch of the Brighthorn family, elderly human with uncanny rapport with animals. Her horses handle forest phenomena better than normal stock (she selectively breeds for temporal resistance without understanding the mechanism). Suspicious of outsiders but fiercely loyal to those who earn trust.
 
 **Moss (sometimes)**
-The forest guide Moss uses [[Meridian's Rest]] as a base between expeditions. Taciturn and professional, but will share basic survival information over drinks. Knows more about forest secrets than anyone admits.
+The forest guide Moss uses Meridian's Rest as a base between expeditions. Taciturn and professional, but will share basic survival information over drinks. Knows more about forest secrets than anyone admits.
 
 **Scholar Terin**
 A young academic who came to study the sundial and ended up staying. Fascinated by the temporal phenomena but struggles to get official support for research. Has developed theories connecting the sundial to the broader boundary stone network, though he doesn't realize how close to truth he's gotten.
@@ -96,7 +96,7 @@ Several cult sympathizers among the population, drawn by the temporal anomalies 
 Some residents are refugees from the merit system. The town offers relative freedom from merit ranking pressure, attracting those who couldn't or wouldn't compete.
 
 **Neutral Ground**
-Like the Biago family restaurant in [[Agastia]], [[Meridian's Rest]] maintains informal neutrality. Factions don't attack each other here because everyone needs the services. Sergeant Kess enforces this with surprising effectiveness.
+Like the Biago family restaurant in [[Agastia]], Meridian's Rest maintains informal neutrality. Factions don't attack each other here because everyone needs the services. Sergeant Kess enforces this with surprising effectiveness.
 
 ### Adventure Hooks
 
@@ -145,7 +145,7 @@ One stable building at the edge of the Brighthorn property experiences temporal 
 ### Campaign Integration
 
 **Caravan Route**
-For Session 1, [[Meridian's Rest]] could serve as:
+For Session 1, Meridian's Rest could serve as:
 - **Starting Point:** Where the patron hires the party
 - **Waystation:** Stop along the route to Ratterdan
 - **Destination:** Alternative endpoint if Ratterdan seems too dangerous for level 1
@@ -180,4 +180,4 @@ The sundial connects to larger mysteries about:
 
 ### Resources
 
-[[Meridian's Rest]] offers practical frontier resources rather than urban sophistication. Access to guides, information about northern territories, temporal anomaly insights, and a relatively safe base for dangerous work. The town's greatest resource is its people - survivors who know how to operate on civilization's edge.
+Meridian's Rest offers practical frontier resources rather than urban sophistication. Access to guides, information about northern territories, temporal anomaly insights, and a relatively safe base for dangerous work. The town's greatest resource is its people - survivors who know how to operate on civilization's edge.

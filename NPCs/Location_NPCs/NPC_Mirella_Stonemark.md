@@ -12,11 +12,11 @@ threat_level: Minor (black market connections)
 related_entities: [Garrek, Codex of Peace, Manny, Black Market]
 ---
 
-# [[Mirella Stonemark]]
+# Mirella Stonemark
 
 ## Player Summary
 
-**[[Mirella Stonemark]]** runs [[Stonemark Antiquities]] in [[Agastia]]'s [[Merchant District]], a shop that deals in recovered artifacts, historical items, and occasionally questionable goods. Sharp-eyed and business-savvy, Mirella knows the value of everything that passes through her hands - and where it came from. She operates in the gray area between legitimate antiquities dealer and black market fence.
+**Mirella Stonemark** runs [[Stonemark Antiquities]] in [[Agastia]]'s [[Merchant District]], a shop that deals in recovered artifacts, historical items, and occasionally questionable goods. Sharp-eyed and business-savvy, Mirella knows the value of everything that passes through her hands - and where it came from. She operates in the gray area between legitimate antiquities dealer and black market fence.
 
 ### Basic Information
 - **Race:** Dwarf

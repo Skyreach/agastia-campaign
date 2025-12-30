@@ -55,41 +55,8 @@ graph TD
 **Distance:** ~48 miles (2 hexes at 24mi/hex world scale)
 **Travel Time:** 2-3 days at normal pace (24 mi/day)
 **Terrain:** Temperate Forests
-## TEMPERATE FORESTS (Tier 1)
-**Roll 2d8**
 
-| 2d8 | Encounter Theme |
-|-----|-----------------|
-| **2** | **Helpful Sprite Circle** |
-| | A ring of mushrooms glows faintly in a moonlit glade where sprites feast on honeyed cakes and fermented berry wine. They're jovial and welcoming—”offering the party rest, food, and magical guidance in exchange for stories or songs. The sprites can point toward nearby points of interest, warn of dangers ahead, or grant a minor blessing (advantage on next Survival check). **Variation:** One sprite is actually a disguised pixie with access to polymorph and confusion, testing the party's worthiness. **Non-Combat:** The sprites offer to become allies if the party plants enchanted acorns at three specific locations, creating new faerie rings across the forest. |
-| **3** | **Lost Mastiff** |
-| | A skeletal, starving mastiff watches the party from the undergrowth, too scared to approach. It wears a rotted leather collar with a noble family's crest. If offered food, it bonds with whoever feeds it first and becomes fiercely loyal. **Variation:** The dog is being tracked by a bugbear who wants to eat it—”the bugbear arrives in 1d4 rounds after the party encounters the dog. **Non-Combat:** Following the collar's crest leads to a ruined estate where the dog's original owners were killed by bandits; treasure remains hidden in the wreckage. |
-| **4** | **Awakened Shrub Choir** |
-| | The party stumbles into a clearing where awakened shrubs sway and sing in terrible, off-key harmony. They're practicing for the Seasonal Celebration and desperately want an audience. The shrubs are harmless but incredibly annoying. **Variation:** One shrub is actually a twig blight spy sent by a gulthias tree—”it tries to lead the party into a trap. **Non-Combat:** If the party gives honest (even critical) feedback and helps them practice, the shrubs share knowledge of a nearby hidden spring that grants temporary hit points when drunk (1d8+1 temp HP, lasts until next rest). |
-| **5** | **Pseudodragon Quarrel** |
-| | Two pseudodragons are locked in an aerial squabble over a shiny object (a silver locket). They dive and snap at each other, occasionally crashing into trees. Neither wants to back down from this territorial dispute. **Variation:** The locket is actually cursed—”whoever touches it becomes the next target of their conflict until it's returned to its resting place (an old grave nearby). **Non-Combat:** The party can adjudicate the dispute; the grateful winner becomes a temporary companion for 1d4 days, or both pseudodragons flee, dropping the locket (worth 25 gp, or more if returned to rightful owner's family). |
-| **6** | **Wandering Druid** |
-| | An elderly druid sits by a babbling brook, smoking a pipe carved from oak root. She's monitoring the health of the forest and notes that "something dark stirs in the old hollow." She can provide healing, identify plants, and share rumors. **Variation:** She's actually a green hag in disguise, testing the party's intentions—”if they're cruel to nature, she becomes hostile. **Non-Combat:** If the party helps her gather medicinal herbs or clear corruption from a nearby grove, she grants them a charm that allows one free casting of *speak with animals*. |
-| **7** | **Unicorn Sighting** |
-| | A flash of silver-white catches the corner of someone's eye—”a unicorn stands at the forest's edge, watching the party with intelligent eyes. It bolts immediately, but those who saw it feel blessed (advantage on their next saving throw). **Variation:** If the party can track it (DC 16 Survival check with disadvantage—”it's very fast), they find it wounded by goblin arrows, creating a moral choice. **Non-Combat:** Healing the unicorn (or choosing not to pursue it) grants a more powerful blessing: the unicorn's horn glows and leaves behind a single silver hair that can cure one disease or poison (no action required). |
-| **8** | **Goblin Ambush Site** |
-| | The forest goes silent. Worg tracks and goblin footprints surround a freshly dug pit covered with branches and leaves. Crude wooden spikes line the bottom (2d6 piercing damage, DC 12 Dex save to avoid). Goblins watch from the bushes, hoping their trap succeeds. **Variation:** Instead of a few goblins, a bugbear leads the ambush party, using the goblins as expendable shock troops. **Non-Combat:** Keen-eyed characters (DC 14 Perception) spot the trap before triggering it and can either avoid it, disarm it, or turn it against pursuers. |
-| **9** | **Bandit Toll Station** |
-| | A crude barricade blocks the road ahead, constructed from felled trees and lashed-together logs. Four bandits lounge nearby, weapons close at hand, while their leader—a scarred woman in patchwork armor—steps forward with false hospitality. "Toll's 10 gold per head. King's Road Tax. Pay up or turn around." She's lying; this is pure extortion. **Variation:** The bandits are actually desperate refugees who turned to crime after losing their homes to monster attacks; or they're scouts for a larger bandit army camped nearby. **Non-Combat:** Intimidation (DC 14) or Deception (DC 16) to bluff past them; Persuasion (DC 18) with a sob story might earn sympathy; or pay the "toll" (50 gp total) and move on. Investigating their camp reveals stolen goods worth 3d20 gp. |
-| **10** | **Territorial Owlbear** |
-| | The earth shakes with heavy footfalls. An owlbear crashes through the underbrush, feathers bristling and beak clacking. It's protecting its nearby nest and views all intruders as threats. **Variation:** The owlbear is diseased or maddened by corrupted water, making it even more aggressive and unpredictable (add 10 HP, disadvantage to calm it). **Non-Combat:** A successful DC 16 Animal Handling check or offering 3 days of rations as a peace offering makes it back down; the party can choose to investigate the nest (containing a shiny obsidian egg worth 50 gp to collectors). |
-| **11** | **Stirge Storm** |
-| | A high-pitched buzzing fills the air as a thirst of stirges drops from the canopy like a crimson cloud. They're ravenous, having fed on a dying deer nearby. Blood frenzy makes them fearless. **Variation:** So many stirges descend that they count as two swarms instead of individual creatures; or they're fleeing from something even worse (a young green dragon arrives in 1d6 rounds). **Non-Combat:** Characters who immediately drop prone and cover themselves can avoid the initial assault (DC 13 Dex save); smoke or fire drives them off without a fight. |
-| **12** | **Grick Ambush** |
-| | Stone outcroppings line the forest path—”except they're not stone. Gricks slither from rocky crevices, their tentacles probing for prey. They've been starving and desperate for weeks. **Variation:** One grick is much larger (use grick alpha stats if available, or double HP), the alpha of the pack. **Non-Combat:** Tossing fresh meat (3 rations worth) into the rocks distracts them long enough to flee; following their trails leads to a cave filled with bones and 3d20 gp in coins. |
-| **13** | **Hobgoblin Hunting Party** |
-| | The crack of branches and barked orders in Goblin heralds the approach of disciplined hobgoblin scouts. They're tracking a thief who stole from their war band—”an urchin who nabbed food to feed his starving siblings. **Variation:** The hobgoblins are led by a captain who carries a banner marked with the symbol of a distant warlord—”killing him draws attention from a larger force. **Non-Combat:** The party can negotiate (hobgoblins respect strength and honesty), hand over the thief, hide the thief and bluff (DC 15 Deception), or learn the thief's location is in a nearby hollow tree. |
-| **14** | **Corrupted Grove** |
-| | A massive oak dominates a darkened grove, its trunk split and oozing shadow. Needle blights, twig blights, and vine blights emerge from the corruption, attacking mindlessly. At the center, liquid shadow bubbles from the tree's wound. **Variation:** The corruption is spreading—”a young gulthias tree is taking root, and if not destroyed, will spawn more blights weekly. **Non-Combat:** A DC 14 Nature or Religion check reveals the corruption can be cleansed with holy water and fire; doing so without fighting requires stealth (DC 16) but destroys the threat permanently. |
-| **15** | **Ankheg Eruption** |
-| | The ground trembles and explodes upward as an ankheg bursts from below, mandibles clacking. Its carapace bears strange metal tags—”someone has been studying it. **Variation:** The ankheg is protecting its burrowed eggs (3 eggs worth 100 gp each to scholars or tamers). **Non-Combat:** Investigations reveal the tags bear a wizard's mark; following the trail leads to an eccentric researcher who will pay 50 gp for information on the ankheg's behavior and location. |
-| **16** | **Green Dragon's Domain** |
-| | The forest grows unnaturally quiet and dark. Acrid fog rolls between the trees. A green dragon wyrmling watches from a high branch, studying the party with ancient, intelligent eyes. It speaks, offering a "trade"—”information for secrets, or safe passage for tribute. **Variation:** The wyrmling is genuinely curious and might become a recurring NPC if treated well, or it's setting up an ambush with goblin allies hidden nearby. **Non-Combat:** Clever negotiation, offering valuable information (secrets about local politics, treasure locations), or appealing to its vanity can result in the wyrmling letting the party pass or even granting a warning about nearby dangers. The wyrmling might demand one magic item or 50 gp in tribute.
+**Encounter Table:** See [[Inspiring Tables#Temperate Forests (Tier 1)]]
 
 ### Day 1: The Bloody Crate ([[Kyle/Nameless]]'s Hook)
 
@@ -126,40 +93,109 @@ graph TD
 
 ## Welcome to Agastia
 
-### The Job Board (Money & Notoriety)
+**The party arrives at Agastia**, the campaign's central city and seat of power in the region.
 
-**Location:** A large, well-maintained board in the central plaza of the [[Merchant District]] (Tier 4).
+**City Overview:** See [[Agastia]] for complete city details, tier structure, all nine districts, key locations, and navigation.
 
-**The Clerk:** A bored but efficient [[Merit Council]] clerk sits at a nearby desk.
+### Locations Visited This Session
 
-> "Welcome to Agastia. If you're looking for work, you've come to the right place. Complete a job, get paid, and earn merit. The more merit you have, the higher you climb. Simple as that."
+The party will visit or hear about these locations during Session 3, organized by Agastia's tier system:
 
-**How it Works:**
-- Jobs are posted with a description, a reward (gold), and a merit value.
-- Completing jobs increases a character's Merit Rank, which unlocks access to higher tiers and more opportunities.
-- This is the primary way for outsiders to gain standing in Agastia.
+#### Tier 4 - [[Merchant District]]
+
+**Overview:** Mid-tier commercial hub, accessible to most citizens and visitors. Where the session's main activities occur.
+
+**Central Plaza - Job Board**
+- **What:** Large, well-maintained board displaying available jobs and rewards
+- **Who:** [[Merit Council]] clerk manages postings (bored but efficient)
+- **System:** Complete jobs → earn gold + merit → unlock higher tier access
+- **Clerk's Pitch:** *"Welcome to Agastia. If you're looking for work, you've come to the right place. Complete a job, get paid, and earn merit. The more merit you have, the higher you climb. Simple as that."*
 
 **Sample Jobs:**
 - **Rat Extermination (Tier 5):** 10gp, 1 Merit
 - **Guard a Caravan (Tier 4):** 50gp, 5 Merit
 - **Investigate Missing Person (Tier 3):** 100gp, 10 Merit
 
-### The First Cut: The Steel Dragon's Debut
+**Murder Scene Alleyway - Steel Dragon Investigation**
+- **What:** Quiet alleyway near Job Board, crime scene of latest [[Steel Dragon]] murder
+- **Victim:** Wealthy merchant in fine silks, single clean throat cut, blood used to paint draconic symbol
+- **Investigator:** Captain Valerius (grizzled city guard veteran)
+- **Captain's Notes:** *"Another one. Third this month. Same symbol, same clean cut. This one is different though... more... artistic."*
+- **Opportunity:** Captain will deputize competent party members (can be job board quest)
 
-**Location:** A quiet alleyway in the [[Merchant District]], not far from the Job Board.
-
-> A crowd has gathered, held back by a pair of city guards. Inside the alley, a scene of gruesome artistry is revealed. A wealthy merchant, dressed in fine silks, is slumped against a wall, a single, clean cut across his throat. His blood has been used to paint an intricate, draconic-looking symbol on the wall behind him. His coin purse is untouched.
-
-**The City Guard Captain:**
-- A grizzled veteran named **Captain Valerius**.
-- He is pragmatic and overwhelmed.
-- "Another one. Third this month. Same symbol, same clean cut. This one is different though... more... artistic."
-- He is willing to deputize the party if they show interest and competence (this can be a job from the job board).
+**[[Il Drago Rosso]] - Nikki's Family Restaurant**
+- **What:** [[Nikki]]'s family establishment, information hub and safe haven
+- **Hook:** Job board posting about aggressive faction threatening businesses in district
+- **Connection:** Potential threat to Nikki's family restaurant
 
 **DM Notes:**
-- This is the first "artistic" murder by the [[Steel Dragon]], a step up from his previous work.
-- The victim is a merchant, but the motive is clearly not robbery.
-- The symbol is the [[Steel Dragon]]'s signature.
+- First "artistic" [[Steel Dragon]] murder (step up from previous work)
+- Motive clearly not robbery (coin purse untouched)
+- Symbol is killer's signature
+
+#### Tier 3 - [[Scholar Quarter]]
+
+**Overview:** Academic district with libraries, archives, and research institutions.
+
+**[[Archive of Lost Histories]]**
+- **What:** Repository of ancient texts and forgotten lore
+- **Hook:** Job board request from scholar to retrieve rare book from dangerous ruin
+- **Connection:** [[Manny]]'s [[The Codex]] quest lead
+
+**[[Veridian Scrollkeeper]]'s Location**
+- **What:** Rumored expert on [[Agastia]]'s history
+- **Hook:** Tavern rumor about ancient elf who "knows everything"
+- **Connection:** Another potential [[Codex]] lead for [[Manny]]
+
+#### Tier 2 - [[Noble Quarter]]
+
+**Overview:** Upper-tier district housing wealthy families and estates.
+
+**House Moonwhisper**
+- **What:** Lord Thalorien Moonwhisper's residence
+- **Connection:** Reward location for completing Ghost of Elaris quest
+- **Reward:** 150 gp + invitation to noble house (opens Tier 2 access)
+
+#### Tier 6 - [[Dock District]]
+
+**Overview:** Lowest tier, waterfront district with smuggling and criminal activity.
+
+**Smuggling Operations**
+- **What:** [[Geist]]'s territory and criminal network
+- **Hook:** Bloody crate encounter from Day 1 travel points here
+- **Connection:** [[Kyle/Nameless]]'s personal quest to track down [[Geist]]
+
+### Navigation & Connections
+
+**Point Crawl System:** See `Resources/Point_Crawl_Network.md` for complete network with all connections and path descriptions.
+
+**Key Navigation Nodes:**
+
+**At Central Plaza (Job Board):**
+> "Standing in Central Plaza where the Job Board is posted, do you:
+> - Walk south to the murder scene (2 blocks, past silk merchant and bakery)?
+> - Go west on Market Street to Il Drago Rosso (3 blocks, past armory and tavern)?
+> - Head east toward the docks (4 blocks, descending on Merchant's Way)?
+> - Travel north toward Scholar's Gate (5 blocks on Academy Avenue)?"
+
+**Moving from Job Board to Il Drago Rosso:**
+> "You walk west on Market Street. You pass Shadow's Edge Armory where a blacksmith hammers at an anvil, then a curiosity dealer's window full of strange trinkets, and finally a crowded tavern where laughter spills into the street. Three blocks from the plaza, you spot the red dragon banner hanging above a warm, inviting doorway."
+
+**Moving from Job Board to Murder Scene:**
+> "You walk south past the silk merchant's colorful awnings and the warm smell of fresh bread from Goldwheat Bakery. Between them, a narrow alley opens to your right - dark and quiet compared to the busy street."
+
+**Between Districts (City Scale):**
+
+**From Merchant District to Scholar Quarter:**
+> "You walk north on Academy Avenue, passing bookbinders and cartographers as the shops shift toward academic trades. The street narrows and quietens. Ahead, worn stone steps rise through Scholar's Gate, an archway adorned with carved books. You climb into the academic district, where the air smells of parchment and ink."
+
+**From Merchant District to Dock District:**
+> "Harbor Road slopes downward toward the waterfront. The smell of salt and fish grows stronger as merchant stalls give way to warehouses and chandleries. You descend three tiers of switchback streets, each level rougher than the last."
+
+**From Merchant District to Noble Quarter:**
+> "You cross the Gold Bridge, an elegant stone span over the Inner Canal. Guards in ceremonial armor watch from both ends, noting your presence. The architecture becomes more ornate as you enter the estates district."
+
+**DM Note:** Use these descriptions when players move between locations. Full point crawl network in `Resources/Point_Crawl_Network.md` includes all connections, distances, landmarks, and path descriptions for improvisation.
 
 ## Player Quest Hooks
 

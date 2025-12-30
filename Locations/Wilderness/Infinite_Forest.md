@@ -9,11 +9,11 @@ version: "1.0.0"
 tags: [wilderness, feywild, dangerous, magical, border, chaos]
 ---
 
-# [[Infinite Forest]]
+# Infinite Forest
 
 ## Player Summary
 
-The [[Infinite Forest]] forms the northern border of [[Agastia Region]], a vast woodland where reality grows thin and the Feywild bleeds through. The forest earned its name from travelers who swear it's larger inside than outside, with paths that loop impossibly and distances that refuse to stay consistent. The [[Merit Council]] built their great Northern Wall specifically to contain threats emerging from these woods.
+The Infinite Forest forms the northern border of [[Agastia Region]], a vast woodland where reality grows thin and the Feywild bleeds through. The forest earned its name from travelers who swear it's larger inside than outside, with paths that loop impossibly and distances that refuse to stay consistent. The [[Merit Council]] built their great Northern Wall specifically to contain threats emerging from these woods.
 
 ### Distinctive Phenomena
 
@@ -21,7 +21,7 @@ The [[Infinite Forest]] forms the northern border of [[Agastia Region]], a vast 
 Glowing lights in various colors drift through the forest - blue, green, violet, gold. Local wisdom warns against following them, as they lead travelers astray or into danger. Some wisps seem curious and harmless; others are clearly predatory or malicious.
 
 **Spatial Anomalies**
-Distances don't work properly in the [[Infinite Forest]]. A clearing visible a few yards away might take hours to reach, or you might accidentally walk miles without noticing. Compasses spin uselessly. Only experienced guides know the reliable paths, and even those change periodically.
+Distances don't work properly in the Infinite Forest. A clearing visible a few yards away might take hours to reach, or you might accidentally walk miles without noticing. Compasses spin uselessly. Only experienced guides know the reliable paths, and even those change periodically.
 
 **Pocket Dimensions**
 Small areas of the forest exist partially in the Feywild. These pockets follow Fey rules rather than natural laws - time flows differently, emotions intensify, promises become binding contracts, and lies can manifest physically. Travelers might not realize they've entered a pocket until strange things begin happening.
@@ -44,7 +44,7 @@ Animals exposed to prolonged Fey influence develop strange features or behaviors
 The forest harbors various dangerous creatures: displaced beasts, aberrations attracted to reality distortions, and things that slipped through from the Feywild and can't return.
 
 ### Navigation
-Traveling through the [[Infinite Forest]] without a guide is extremely dangerous. Those attempting it should:
+Traveling through the Infinite Forest without a guide is extremely dangerous. Those attempting it should:
 - Mark their path carefully (though marks sometimes move or disappear)
 - Travel during daylight when possible
 - Avoid following any wisps or mysterious sounds
@@ -58,7 +58,7 @@ Local guides charge high fees but significantly improve survival odds. Even with
 ### The Forest's Nature
 
 **Fey Border Zone**
-The [[Infinite Forest]] sits on a thin boundary between the material plane and the Feywild. This barrier has weakened over centuries, allowing increasing bleed-through. Some force or entity on the Fey side appears to be pushing against the boundary deliberately.
+The Infinite Forest sits on a thin boundary between the material plane and the Feywild. This barrier has weakened over centuries, allowing increasing bleed-through. Some force or entity on the Fey side appears to be pushing against the boundary deliberately.
 
 **Active Expansion**
 The forest is slowly growing, consuming farmland and settlements at its edges. The expansion isn't consistent - some areas remain stable while others advance rapidly. Ratterdan's destruction may have been related to this expansion, though the details remain mysterious.
@@ -67,7 +67,7 @@ The forest is slowly growing, consuming farmland and settlements at its edges. T
 The forest's spatial anomalies result from competing reality frameworks. Material plane physics fight Feywild rules, creating unpredictable outcomes. Those who understand this conflict can potentially manipulate it.
 
 **The Chaos Connection**
-The [[Chaos Cult]] sees the [[Infinite Forest]] as proof that order is temporary and chaos inevitable. They study the forest's phenomena and seek ways to accelerate the Fey bleed-through. Some cultists conduct rituals in the forest depths.
+The [[Chaos Cult]] sees the Infinite Forest as proof that order is temporary and chaos inevitable. They study the forest's phenomena and seek ways to accelerate the Fey bleed-through. Some cultists conduct rituals in the forest depths.
 
 ### Secret Locations
 

@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [healing, depths, underground, dangerous, desperate, unlicensed]
 ---
 
-# [[The Desperate's Refuge]]
+# The Desperate's Refuge
 
 ## Overview
 

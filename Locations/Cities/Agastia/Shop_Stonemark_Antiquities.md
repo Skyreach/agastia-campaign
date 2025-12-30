@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, manny-codex-alternative, mirella]
 ---
 
-# [[Stonemark Antiquities]]
+# Stonemark Antiquities
 
 ## Overview
 
@@ -27,7 +27,7 @@ tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, man
 ## Proprietor
 
 ### [[Mirella Stonemark]]
-**Role:** Owner and Head Antiquarian of [[Stonemark Antiquities]]
+**Role:** Owner and Head Antiquarian of Stonemark Antiquities
 **Faction:** Independent (Primarily loyal to her own interests and the pursuit of rare items)
 
 **Background:**
@@ -116,7 +116,7 @@ tags: [commerce, merchant-district, shop, antiquities, curios, quest-source, man
 - Reward: Mirella's favor, access to her network, or a unique, possibly magical, item.
 
 **The Curious Client:**
-- A mysterious, cloaked figure frequently visits [[Stonemark Antiquities]], asking unusual questions about a specific type of artifact (perhaps related to the Codex).
+- A mysterious, cloaked figure frequently visits Stonemark Antiquities, asking unusual questions about a specific type of artifact (perhaps related to the Codex).
 - Mirella suspects something is amiss and asks the party to observe or investigate the client.
 - Reward: Uncovering a secret society, a new quest lead, or preventing a dangerous plot.
 

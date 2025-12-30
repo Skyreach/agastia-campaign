@@ -10,17 +10,17 @@ version: "1.0.0"
 tags: [district, tier-1, government, merit-council, fortress, elite]
 ---
 
-# [[The Castle]]
+# The Castle
 
 ## Player Summary
 
-[[The Castle]] is the highest and most secure district in [[Agastia]], literally and symbolically representing the pinnacle of the city's meritocratic hierarchy. Built atop the city's highest elevation, the district is both fortress and seat of power, where the [[Merit Council]] governs and the most accomplished citizens of [[Agastia]] reside or conduct official business.
+The Castle is the highest and most secure district in [[Agastia]], literally and symbolically representing the pinnacle of the city's meritocratic hierarchy. Built atop the city's highest elevation, the district is both fortress and seat of power, where the [[Merit Council]] governs and the most accomplished citizens of [[Agastia]] reside or conduct official business.
 
 Access is strictly controlled through magically warded gates and checkpoints staffed by elite guards. Those without proper merit credentials or official business are turned away at the outer perimeter. Even high-merit citizens with legitimate access speak of the Castle in hushed, respectful tones.
 
 ### Atmosphere
 
-[[The Castle]] exudes power and purpose. Wide processional boulevards connect government buildings constructed from white marble and enchanted stone. Every structure demonstrates both defensive architecture and aesthetic grandeur. Magical wards shimmer faintly in the air, and the ever-present guards move with professional precision.
+The Castle exudes power and purpose. Wide processional boulevards connect government buildings constructed from white marble and enchanted stone. Every structure demonstrates both defensive architecture and aesthetic grandeur. Magical wards shimmer faintly in the air, and the ever-present guards move with professional precision.
 
 Unlike the bustling chaos of lower tiers, the Castle operates with quiet efficiency. Conversations are measured, movements deliberate. The air itself feels different here - cleaner, charged with ambient magical energy from the numerous protective enchantments layered over centuries.
 
@@ -40,7 +40,7 @@ Elevated gardens maintained by magical means, featuring plants from across the r
 
 ### Social Dynamics
 
-[[The Castle]] district operates on formal protocol and rigid hierarchy. Everyone here has earned their presence through demonstrated merit - whether council members, government officials, elite guards, master craftspeople commissioned for council projects, or visiting dignitaries.
+The Castle district operates on formal protocol and rigid hierarchy. Everyone here has earned their presence through demonstrated merit - whether council members, government officials, elite guards, master craftspeople commissioned for council projects, or visiting dignitaries.
 
 Social interaction follows strict etiquette. Titles are used. Appointments are scheduled. Spontaneity is viewed with suspicion. Those unfamiliar with proper protocols quickly reveal themselves as outsiders.
 
@@ -54,7 +54,7 @@ Afternoon: Administrative work, inter-departmental coordination, magical researc
 
 Evening: Public sessions conclude. Guards change shifts with ceremonial precision. Only essential personnel remain after dark.
 
-Night: [[The Castle]] becomes fortress. Enhanced wards activate. Patrols increase. Only emergencies justify nighttime access.
+Night: The Castle becomes fortress. Enhanced wards activate. Patrols increase. Only emergencies justify nighttime access.
 
 ## DM Notes
 
@@ -72,7 +72,7 @@ Below the thirteenth level of the Inverse Tower lie sealed chambers containing [
 The [[Merit Council]] isn't just government - it's [[Agastia]]'s defensive barrier against chaos. The original council was founded by seven powerful individuals who recognized that merit-based organization creates natural resistance to chaos's appeal. Each council position represents a different aspect of ordered society: Knowledge, Commerce, Defense, Justice, Innovation, Tradition, Unity. This structure itself forms a protective magical pattern, though current council members may not fully understand the original design.
 
 **Magical Infrastructure**
-[[The Castle]] contains the nexus of [[Agastia]]'s city-wide defensive wards. Magical arrays built into the foundation connect to ward-stones throughout the city. Disrupting these systems would leave [[Agastia]] vulnerable to magical assault. Only the Council's master enchanters understand the complete system, and their knowledge is compartmentalized - no single individual can compromise everything.
+The Castle contains the nexus of [[Agastia]]'s city-wide defensive wards. Magical arrays built into the foundation connect to ward-stones throughout the city. Disrupting these systems would leave [[Agastia]] vulnerable to magical assault. Only the Council's master enchanters understand the complete system, and their knowledge is compartmentalized - no single individual can compromise everything.
 
 **The Watchers**
 An elite group within the Castle guard operates covertly throughout [[Agastia]], monitoring for chaos cult activity and merit fraud. They report directly to the Council and operate with significant autonomy. Some infiltrate suspected chaos cells; others maintain surveillance on high-value targets. Their existence is officially denied but widely suspected.
@@ -149,4 +149,4 @@ For those with legitimate access, the Castle offers unparalleled resources:
 - Master craftspeople and mages for special projects
 - Deep Archive contains knowledge found nowhere else
 
-[[The Castle]] represents both pinnacle of achievement and ultimate authority in [[Agastia]]. Understanding its true function and hidden complexities reveals the city's real nature.
+The Castle represents both pinnacle of achievement and ultimate authority in [[Agastia]]. Understanding its true function and hidden complexities reveals the city's real nature.

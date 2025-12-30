@@ -10,11 +10,11 @@ version: "1.0.0"
 tags: [district, tier-5, working-class, residential, honest-labor, community]
 ---
 
-# [[Lower Residential District]]
+# Lower Residential District
 
 ## Player Summary
 
-The [[Lower Residential District]] houses [[Agastia]]'s working class - those who've earned sufficient merit to maintain residency but occupy the city's economic foundation rather than its heights. Unlike the desperation of lower tiers, residents here maintain honest employment and modest but stable lives.
+The Lower Residential District houses [[Agastia]]'s working class - those who've earned sufficient merit to maintain residency but occupy the city's economic foundation rather than its heights. Unlike the desperation of lower tiers, residents here maintain honest employment and modest but stable lives.
 
 The district feels lived-in and genuine. Buildings show wear but receive regular maintenance. Streets remain clean through community effort rather than magical convenience. People know their neighbors, help each other during difficulties, and take pride in their contributions to [[Agastia]]'s functioning.
 
@@ -24,7 +24,7 @@ The sounds of daily life fill the streets - children playing, neighbors conversi
 
 Buildings stand close together, creating intimate neighborhoods where everyone knows each other's business. This proximity creates both community support and lack of privacy. Gossip spreads quickly but so does help when someone faces trouble.
 
-Unlike higher tiers' competitive striving or lower tiers' desperation, the [[Lower Residential District]] maintains steady rhythm of work, rest, and community. Most residents aren't trying to climb higher - they've found sustainable lives and focus on maintaining what they've achieved.
+Unlike higher tiers' competitive striving or lower tiers' desperation, the Lower Residential District maintains steady rhythm of work, rest, and community. Most residents aren't trying to climb higher - they've found sustainable lives and focus on maintaining what they've achieved.
 
 ### Notable Establishments
 
@@ -149,7 +149,7 @@ Basement below repair shop contains Garrett's real work area - where he crafts i
 
 ### Resources
 
-[[Lower Residential District]] offers resources often overlooked by those focused on wealth and power:
+Lower Residential District offers resources often overlooked by those focused on wealth and power:
 - Community support and mutual aid networks
 - Practical skills and honest labor
 - Affordable services for basic needs

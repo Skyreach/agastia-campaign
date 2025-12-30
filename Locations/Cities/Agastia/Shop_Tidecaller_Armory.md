@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, dock-district, weapons, armor, maritime, salvage, black-market]
 ---
 
-# [[Tidecaller Armory]]
+# Tidecaller Armory
 
 ## Overview
 

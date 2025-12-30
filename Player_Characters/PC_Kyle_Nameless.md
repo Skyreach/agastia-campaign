@@ -1,5 +1,5 @@
 ---
-name: Nameless "Kyle"
+name: Kyle/Nameless
 type: PC
 player: Player 4 (Kyle)
 race: Rainbow Hair (Homebrew)

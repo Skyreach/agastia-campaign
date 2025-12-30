@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [healing, herbalist, community, medicine, tier-5, affordable, teaching]
 ---
 
-# [[Stonewick Herbalist]]
+# Stonewick Herbalist
 
 ## Overview
 

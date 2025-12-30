@@ -1,5 +1,5 @@
 ---
-name: Biago "Nikki"
+name: Nikki
 type: PC
 player: Player 2
 race: Tiefling

@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbitration]
 ---
 
-# [[The Gilded Scale]]
+# The Gilded Scale
 
 ## Overview
 
@@ -20,7 +20,7 @@ tags: [commerce, merchant-district, guild, politics, economic-power, trade, arbi
 
 **Clientele:** Master merchants, guild members, trade negotiators, foreign commercial envoys, Council officials, wealthy investors
 
-**Reputation:** "Where gold speaks louder than merit." [[The Gilded Scale]] wields enormous economic influence that sometimes rivals the [[Merit Council]]'s political power. Membership is a mark of commercial success and opens doors throughout the region.
+**Reputation:** "Where gold speaks louder than merit." The Gilded Scale wields enormous economic influence that sometimes rivals the [[Merit Council]]'s political power. Membership is a mark of commercial success and opens doors throughout the region.
 
 **Atmosphere:** Opulent but calculated. Marble floors, gilded fixtures, expensive furnishings - every detail chosen to project wealth and stability. Public halls buzz with negotiation and deal-making. Private chambers host confidential arbitrations. The building smells of expensive tobacco, fine wine, and money. Power is transacted here as surely as goods.
 

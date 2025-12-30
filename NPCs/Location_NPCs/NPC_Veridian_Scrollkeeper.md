@@ -12,11 +12,11 @@ threat_level: None
 related_entities: [Codex of Peace, Temporal Bloodline, Garrek, Manny]
 ---
 
-# [[Veridian Scrollkeeper]]
+# Veridian Scrollkeeper
 
 ## Player Summary
 
-**[[Veridian Scrollkeeper]]** is an elderly half-elf scholar who has dedicated his life to studying ancient civilizations and lost artifacts. He works at the [[Archive of Lost Histories]] in [[Agastia]]'s [[Scholar Quarter]], surrounded by dusty tomes and fragmented texts. Known for his enthusiasm when discussing ancient lore, Veridian loves sharing knowledge with anyone genuinely interested.
+**Veridian Scrollkeeper** is an elderly half-elf scholar who has dedicated his life to studying ancient civilizations and lost artifacts. He works at the [[Archive of Lost Histories]] in [[Agastia]]'s [[Scholar Quarter]], surrounded by dusty tomes and fragmented texts. Known for his enthusiasm when discussing ancient lore, Veridian loves sharing knowledge with anyone genuinely interested.
 
 ### Basic Information
 - **Race:** Half-Elf
@@ -121,7 +121,7 @@ related_entities: [Codex of Peace, Temporal Bloodline, Garrek, Manny]
 
 **Torvin's Recommendation:**
 - If party asks Torvin about artifact scholars
-- "[[Veridian Scrollkeeper]] - old as dirt, knows twice as much"
+- "Veridian Scrollkeeper - old as dirt, knows twice as much"
 - Provides Archive location
 
 **[[Professor Zero]] Connection:**

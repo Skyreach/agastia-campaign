@@ -17,14 +17,14 @@ tags: [npc, minor, patron, dragonborn, merit-council, agastia, session2, artifac
 related_entities: [Merit Council, Torvin Greycask, Keeper's Sanctuary, Heartstone]
 ---
 
-# [[Thava Thornscale]]
+# Thava Thornscale
 
 ## Player Summary
 
-**[[Thava Thornscale]]** is a bronze dragonborn serving as Senior Coordinator in [[Agastia]]'s Office of Artifact Preservation, a [[Merit Council]] department. A gruff but compassionate mid-ranking official, Thava has built a career through steady contributions over two decades. While he doesn't live lavishly, his position and extensive network of contacts give him the ability to arrange resources, funding, and access when the situation demands it.
+**Thava Thornscale** is a bronze dragonborn serving as Senior Coordinator in [[Agastia]]'s Office of Artifact Preservation, a [[Merit Council]] department. A gruff but compassionate mid-ranking official, Thava has built a career through steady contributions over two decades. While he doesn't live lavishly, his position and extensive network of contacts give him the ability to arrange resources, funding, and access when the situation demands it.
 
 ### Basic Information
-- **Name:** [[Thava Thornscale]]
+- **Name:** Thava Thornscale
 - **Race:** Bronze Dragonborn raised in scholarly circles
 - **Gender:** Male (he/him/his)
 - **Age:** Late 40s

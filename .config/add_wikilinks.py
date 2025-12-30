@@ -72,22 +72,34 @@ def add_wikilinks_to_file(file_path, entities, aliases, dry_run=False):
     # Frontmatter is between --- at start of file
     frontmatter = ""
     body = content
+    current_entity_name = None
+
     if content.startswith('---'):
         parts = content.split('---', 2)
         if len(parts) >= 3:
             frontmatter = '---' + parts[1] + '---'
             body = parts[2]
 
+            # Extract current file's entity name from frontmatter to prevent self-references
+            for line in parts[1].split('\n'):
+                if line.strip().startswith('name:'):
+                    current_entity_name = line.split('name:', 1)[1].strip().strip('"').strip("'")
+                    break
+
     # Combine entities and aliases, prioritize by length
     # Create list of (search_term, wiki_name) tuples
     search_terms = []
 
-    # Add full entity names
+    # Add full entity names (skip current file's entity to prevent self-reference)
     for entity in entities:
+        if current_entity_name and entity == current_entity_name:
+            continue  # Skip self-reference
         search_terms.append((entity, entity))
 
-    # Add aliases that map to full names
+    # Add aliases that map to full names (skip if alias maps to current entity)
     for alias, full_name in aliases.items():
+        if current_entity_name and full_name == current_entity_name:
+            continue  # Skip self-reference via alias
         search_terms.append((alias, full_name))
 
     # Sort by search term length (longest first) to avoid partial matches

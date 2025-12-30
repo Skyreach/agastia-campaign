@@ -10,11 +10,11 @@ version: "1.0.0"
 tags: [city, starting-location, merit-council, civilization, capital, tier-system]
 ---
 
-# [[Agastia]] - The Merit City
+# Agastia - The Merit City
 
 ## Player Summary
 
-[[Agastia]] is the gleaming capital of the [[Merit Council]]'s domain, a city where your worth is measured by your achievements rather than your birth. The city rises in tiers and districts, each reflecting different aspects of the meritocratic ideal. Imposing giant stone statues of ancient heroes watch over the streets, and the massive Northern Wall protects the city from threats emerging from the [[Infinite Forest]].
+Agastia is the gleaming capital of the [[Merit Council]]'s domain, a city where your worth is measured by your achievements rather than your birth. The city rises in tiers and districts, each reflecting different aspects of the meritocratic ideal. Imposing giant stone statues of ancient heroes watch over the streets, and the massive Northern Wall protects the city from threats emerging from the [[Infinite Forest]].
 
 ### Distinctive Features
 
@@ -22,10 +22,10 @@ tags: [city, starting-location, merit-council, civilization, capital, tier-syste
 Enormous statues of legendary figures stand throughout the city, their origins lost to time. Some claim they predate the Merit Council itself. The statues depict warriors, scholars, and leaders frozen in moments of triumph.
 
 **The Northern Wall**
-A massive fortification protecting [[Agastia]] from threats from the [[Infinite Forest]]. Guard towers dot the wall, and [[Merit Council]] soldiers maintain constant vigilance.
+A massive fortification protecting Agastia from threats from the [[Infinite Forest]]. Guard towers dot the wall, and [[Merit Council]] soldiers maintain constant vigilance.
 
 **Airship Docks**
-Magical airships connect [[Agastia]] to distant cities, serving as both transportation and symbols of the Council's technological achievement. The docks are a marvel of engineering perched on the city's upper tiers.
+Magical airships connect Agastia to distant cities, serving as both transportation and symbols of the Council's technological achievement. The docks are a marvel of engineering perched on the city's upper tiers.
 
 **The Three-Generation Rule**
 Families can maintain their merit status for up to three generations before descendants must re-prove themselves through testing. This prevents hereditary privilege while allowing some stability.

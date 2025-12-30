@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 ---
 
-# [[Blades of Glory]]
+# Blades of Glory
 
 ## Overview
 
@@ -34,7 +34,7 @@ tags: [magic-items, premium, legendary, enchanting, tier-2-3, exclusive]
 - Tier 2 merit holder through magical innovation achievement
 - Studied enchanting at Grand Academy, exceeded all instructors by age 25
 - Spent decade traveling, studying different magical traditions and weapon styles
-- Established [[Blades of Glory]] fifteen years ago with Council grant for excellence
+- Established Blades of Glory fifteen years ago with Council grant for excellence
 - Created several magical weapons now legendary in their own right
 - Personally fields-tests experimental designs (accomplished duelist despite scholarly appearance)
 

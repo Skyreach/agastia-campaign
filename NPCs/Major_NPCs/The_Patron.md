@@ -10,11 +10,11 @@ threat_level: Unknown
 related_entities: [Party, Giant Axe, Ratterdan]
 ---
 
-# [[The Patron]] (NEEDS SELECTION)
+# The Patron (NEEDS SELECTION)
 
 ## Player Summary
 
-**[[The Patron]]** is the mysterious individual who brings the party together on a caravan to investigate Ratterdan's destruction. They grant the party bonus feats and seem to know more about the giant's axe and the larger pattern of events than they initially reveal. Their true nature, motivations, and connection to the campaign's mysteries remain to be determined.
+**The Patron** is the mysterious individual who brings the party together on a caravan to investigate Ratterdan's destruction. They grant the party bonus feats and seem to know more about the giant's axe and the larger pattern of events than they initially reveal. Their true nature, motivations, and connection to the campaign's mysteries remain to be determined.
 
 ### Basic Information
 - **Status:** Character concept pending selection

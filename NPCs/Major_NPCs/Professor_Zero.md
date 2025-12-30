@@ -10,11 +10,11 @@ threat_level: Unknown
 related_entities: [Manny, Nikki, All Decimate Subjects, Beholder, Niletrix]
 ---
 
-# [[Professor Zero]]
+# Professor Zero
 
 ## Player Summary
 
-**[[Professor Zero]]** is a mysterious figure who never shows their face. They run the [[Decimate Project]] from a hidden laboratory in Keth, using ten kidnapped and memory-wiped children as experimental agents. The Professor currently seeks the Dominion Evolution Codex for unknown purposes, having dispatched [[Manny]] (#1) and [[Nikki]] (#2) to retrieve it.
+**Professor Zero** is a mysterious figure who never shows their face. They run the [[Decimate Project]] from a hidden laboratory in Keth, using ten kidnapped and memory-wiped children as experimental agents. The Professor currently seeks the Dominion Evolution Codex for unknown purposes, having dispatched [[Manny]] (#1) and [[Nikki]] (#2) to retrieve it.
 
 ### Basic Information
 - **Status:** Active (unknown location)
@@ -69,7 +69,7 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 - **Others (#1-#7):** Status and locations unknown
 
 ### External Connections
-- **[[Ian/Rakash]]:** Knows [[Professor Zero]] "a little" through Niletrix work
+- **[[Ian/Rakash]]:** Knows Professor Zero "a little" through Niletrix work
 - **Niletrix:** Dragon connection (nature unclear)
 - **Beholder:** Sometimes collaborates
 - **Agastian Authorities:** Likely unknown to them
@@ -95,7 +95,7 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 1. **Respected Scholar:** Hidden in plain sight in [[Agastia]]
 2. **Ancient Being:** Living multiple lifetimes
 3. **Construct/Golem:** Not even humanoid
-4. **Collective:** "[[Professor Zero]]" is multiple people
+4. **Collective:** "Professor Zero" is multiple people
 5. **Dragon in Disguise:** Connection to Niletrix
 6. **Former Decimate Subject:** Grew up and took over
 7. **[[Chaos Cult]] Member:** Connected to larger conspiracy
@@ -113,10 +113,10 @@ All kidnapped at age 10 and memory-wiped. **Lower numbers = newer/weaker. Higher
 - [[Manny]]/[[Nikki]] discovering truth about their pasts
 - Meeting other Decimate siblings
 - Laboratory discovery in Keth
-- [[Professor Zero]]'s true identity revelation
+- Professor Zero's true identity revelation
 - Codex actually found (what happens then?)
 - Loyalty crisis among subjects
-- [[Professor Zero]]'s backup plans
+- Professor Zero's backup plans
 - Connection to main campaign plot ([[Steel Dragon]], [[Chaos Cult]], etc.)
 
 ### Character Development Notes

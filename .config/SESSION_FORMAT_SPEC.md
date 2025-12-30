@@ -398,6 +398,131 @@ DC 14: As above and: Corruption pulses through it, reality warps nearby
 
 ---
 
+## City-Based Session Requirements (MANDATORY)
+
+**When a session takes place primarily in a city (Agastia, etc.), MUST follow this structure:**
+
+### Required Section: Locations Visited This Session
+
+After the city overview link, sessions MUST include a "Locations Visited This Session" section that organizes all locations by the city's taxonomic hierarchy.
+
+**Structure:**
+```markdown
+## Welcome to [City Name]
+
+**City Overview:** See [[City Name]] for complete city details, tier structure, districts, and navigation.
+
+### Locations Visited This Session
+
+[Brief explanation that locations are organized by tier/district]
+
+#### Tier X - [[District Name]]
+
+**Overview:** Brief district description
+
+**Location Name - Specific Place**
+- **What:** Physical description
+- **Who:** Key NPCs present
+- **Hook:** Quest hooks or connections
+- **Connection:** Why PCs visit/hear about this
+
+**DM Notes:**
+- Session-specific notes
+```
+
+### Taxonomic Hierarchy Format
+
+**CRITICAL:** City sessions must organize locations hierarchically:
+
+1. **City** → 2. **Tier** → 3. **District** → 4. **Location** → 5. **NPC**
+
+**Example Structure:**
+```markdown
+#### Tier 4 - [[Merchant District]]
+
+**Overview:** Mid-tier commercial hub, accessible to most citizens.
+
+**Central Plaza - Job Board**
+- **What:** Large job posting board
+- **Who:** [[Merit Council]] clerk
+- **System:** Jobs → gold + merit → tier access
+- **Hook:** Primary quest hub
+
+**Murder Scene Alleyway**
+- **What:** Crime scene in quiet alley
+- **Who:** Captain Valerius (city guard)
+- **Hook:** [[Steel Dragon]] investigation
+- **Connection:** Can become job board quest
+
+**[[Il Drago Rosso]] - Nikki's Family Restaurant**
+- **What:** Family-owned restaurant
+- **Hook:** Faction threatening businesses
+- **Connection:** [[Nikki]]'s safe haven
+```
+
+### Why This Matters
+
+**Problem:** Without hierarchical organization:
+- DM can't find location information during session
+- "Merchant District" mentioned in collapsed sub-bullet
+- No clear path: City → Tier → District → Location
+- Breaks session flow, forces ad-hoc document navigation
+
+**Solution:** Taxonomic hierarchy provides:
+- Clear navigation: Tier 4 → Merchant District → Job Board
+- All locations visible in proper context
+- Easy reference during session
+- Maintains city's tier structure
+
+### Anti-Pattern: Flat Organization
+
+❌ **WRONG:**
+```markdown
+## Welcome to Agastia
+
+### Job Board
+[content]
+
+### Murder Scene
+[content]
+```
+
+**Problem:** No tier/district context, hard to navigate city structure.
+
+✅ **RIGHT:**
+```markdown
+## Welcome to Agastia
+
+**City Overview:** See [[Agastia]] for complete details.
+
+### Locations Visited This Session
+
+#### Tier 4 - [[Merchant District]]
+
+**Central Plaza - Job Board**
+[content with What/Who/Hook format]
+
+**Murder Scene Alleyway**
+[content with What/Who/Hook format]
+```
+
+**Benefit:** Clear tier/district context, easy navigation, maintains city structure.
+
+### City Session Checklist
+
+Before marking city session as `status: Ready`:
+
+- [ ] City overview link present at session start
+- [ ] "Locations Visited This Session" section exists
+- [ ] All locations organized by Tier → District hierarchy
+- [ ] Each location includes What/Who/Hook/Connection format
+- [ ] District overview present for each tier mentioned
+- [ ] Wikilinks to [[City]], [[District]], [[Location]] pages
+- [ ] No locations mentioned without tier/district context
+- [ ] Session maintains linear flow while providing hierarchical navigation
+
+---
+
 ## Post-Session Debrief (Required Section)
 
 **ALL session files MUST include this final section:**

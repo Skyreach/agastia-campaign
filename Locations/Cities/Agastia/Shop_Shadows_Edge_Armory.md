@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, the-depths, weapons, black-market, illegal, tier-7, dispossessed]
 ---
 
-# [[Shadow's Edge Armory]]
+# Shadow's Edge Armory
 
 ## Overview
 
@@ -220,7 +220,7 @@ If party befriends Scar, warning him about chaos cult becomes critical mission.
 - **Gender:** Male
 - **Age:** Late 30s (37)
 - **Occupation:** Black market weapons dealer / Revolutionary leader
-- **Location:** [[Shadow's Edge Armory]], [[The Depths]] (Tier 7), [[Agastia]]
+- **Location:** Shadow's Edge Armory, [[The Depths]] (Tier 7), [[Agastia]]
 
 **Physical Description:**
 - **Height/Build:** 6'2", muscular and well-maintained through constant training
@@ -267,7 +267,7 @@ If party befriends Scar, warning him about chaos cult becomes critical mission.
 - **Vulnerable To:** Chaos cult manipulation (they could frame themselves as revolutionary allies)
 
 **Resources:**
-- [[Shadow's Edge Armory]] (black market weapons shop)
+- Shadow's Edge Armory (black market weapons shop)
 - Resistance Cache (hidden armory with military equipment)
 - Network of trained fighters throughout [[The Depths]]
 - Intelligence network tracking guard patrols and Council activities

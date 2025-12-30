@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, merchant-district, starting-equipment, information-broker, party-connection]
 ---
 
-# [[Brightcoin Emergency Supplies]]
+# Brightcoin Emergency Supplies
 
 ## Overview
 
@@ -32,7 +32,7 @@ tags: [commerce, merchant-district, starting-equipment, information-broker, part
 
 **Background:**
 - Tier 4 merchant who made fortune through combination of legitimate business and information trading
-- Established [[Brightcoin Emergency Supplies]] fifteen years ago after retiring from caravan trade
+- Established Brightcoin Emergency Supplies fifteen years ago after retiring from caravan trade
 - Traveled extensively in younger years, built network of contacts across the region
 - Survived situations requiring both quick thinking and good equipment
 - Reputation for discretion makes him trusted neutral party among multiple factions

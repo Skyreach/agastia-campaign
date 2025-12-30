@@ -552,21 +552,28 @@ def sync_to_notion(file_path, entry_type):
     content_sections = markdown_to_notion_blocks(post.content, notion, DATABASES['entities'])
 
     if results['results']:
-        # Archive existing page
-        old_page_id = results['results'][0]['id']
-        notion.pages.update(page_id=old_page_id, archived=True)
+        # Update existing page (preserve page ID to maintain wikilinks)
+        existing_page_id = results['results'][0]['id']
 
-        # Create new page
-        new_page = notion.pages.create(
-            parent={"database_id": DATABASES['entities']},
+        # Update page properties
+        notion.pages.update(
+            page_id=existing_page_id,
             properties=properties
         )
 
-        # Upload content with nested children
-        upload_blocks_with_children(notion, new_page['id'], content_sections)
+        # Delete all existing blocks (clear content while keeping page ID)
+        try:
+            children = notion.blocks.children.list(block_id=existing_page_id)
+            for block in children['results']:
+                notion.blocks.delete(block_id=block['id'])
+        except Exception as e:
+            print(f"⚠️  Warning: Could not delete existing blocks: {e}")
 
-        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (archived old, created new with nesting)")
-        record_push_to_notion(str(file_path), new_page['id'])
+        # Upload new content with nested children
+        upload_blocks_with_children(notion, existing_page_id, content_sections)
+
+        print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (in-place, preserved page ID)")
+        record_push_to_notion(str(file_path), existing_page_id)
     else:
         # Create new page
         new_page = notion.pages.create(

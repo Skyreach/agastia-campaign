@@ -10,11 +10,11 @@ version: "1.0.0"
 tags: [district, tier-6, maritime, docks, fallen-status, recovery, smuggling]
 ---
 
-# [[Dock District]]
+# Dock District
 
 ## Player Summary
 
-The [[Dock District]] sits at [[Agastia]]'s edge where city meets water, housing those who've lost merit status but continue working to regain it. Maritime workers, cargo handlers, ship crews, and those fallen from higher positions struggle here to prove they deserve another chance.
+The Dock District sits at [[Agastia]]'s edge where city meets water, housing those who've lost merit status but continue working to regain it. Maritime workers, cargo handlers, ship crews, and those fallen from higher positions struggle here to prove they deserve another chance.
 
 The district feels rougher than Lower Residential - more transient, more desperate, more willing to bend rules for survival. Salt air mixes with sweat and fish. Buildings show neglect. Streets go uncleaned. But amid the hardship lives stubborn determination. These people haven't given up, even if the city has partially given up on them.
 
@@ -24,7 +24,7 @@ Constant activity surrounds the docks - ships loading and unloading, cranes swin
 
 Buildings lean slightly, worn by weather and time. Repairs happen when absolutely necessary rather than preventatively. Streets muddy from sea spray and rain. Everything feels temporary, provisional - matching residents' uncertain status.
 
-Unlike Lower Residential's community cohesion, [[Dock District]] remains more fragmented. People come and go with the tides. Trust develops slowly. Many keep to themselves, nursing private shame about their fall from status. Others blame the system and nurse resentment. Some find camaraderie in shared struggle.
+Unlike Lower Residential's community cohesion, Dock District remains more fragmented. People come and go with the tides. Trust develops slowly. Many keep to themselves, nursing private shame about their fall from status. Others blame the system and nurse resentment. Some find camaraderie in shared struggle.
 
 ### Notable Establishments
 
@@ -45,7 +45,7 @@ Official government outpost tracking cargo, collecting tariffs, and monitoring w
 
 ### Social Dynamics
 
-The [[Dock District]]'s population divides roughly into three groups: maritime workers who've always lived here, those fallen from higher status trying to recover, and criminals using the chaos for cover.
+The Dock District's population divides roughly into three groups: maritime workers who've always lived here, those fallen from higher status trying to recover, and criminals using the chaos for cover.
 
 **Maritime Workers:** Proud of their profession despite low status. Skilled, hardworking, resentful of being looked down upon. They know [[Agastia]] depends on their labor even while treating them as lower tier. Tight bonds among those sharing dangerous work at sea.
 
@@ -78,7 +78,7 @@ Well-organized criminal network controlling most illegal trade through [[Agastia
 Secret organization helping those who've fallen from status regain their footing. Provides interest-free loans, job training, connections to opportunities. Funded by wealthy benefactor (identity unknown) who apparently fell once and recovered. Operates carefully - Council would view organized assistance to the fallen as undermining merit system's legitimacy. Those helped rarely know organization's name, just that someone gave them crucial chance.
 
 **[[Chaos Cult]] Smuggling**
-Cult uses [[Dock District]] to import forbidden materials, infiltrate agents from elsewhere, and export stolen artifacts. Smuggler's Guild unknowingly facilitates some of this through normal operations. Cult also recruits among the fallen, promising restored status through power rather than merit. Some dock workers secretly cultist, using position to move materials.
+Cult uses Dock District to import forbidden materials, infiltrate agents from elsewhere, and export stolen artifacts. Smuggler's Guild unknowingly facilitates some of this through normal operations. Cult also recruits among the fallen, promising restored status through power rather than merit. Some dock workers secretly cultist, using position to move materials.
 
 **The Salvage Rights Dispute**
 Complex legal battle over who owns cargo from ships wrecked near [[Agastia]]. Maritime workers claim traditional salvage rights. Council asserts government ownership. Merchants argue their insurance contracts specify claims. Meanwhile, actual salvaging continues with goods sold through black market. Dispute involves enough money that resolution would reshape district's economy.
@@ -89,7 +89,7 @@ Complex legal battle over who owns cargo from ships wrecked near [[Agastia]]. Ma
 Rusty Anchor proprietor and unofficial community leader. Ex-ship captain who lost vessel and status in mysterious circumstances he won't discuss. Protects regulars fiercely but stays neutral in larger conflicts. Knows everyone's business through tavern gossip. Maintains careful balance between helping community and avoiding authority attention. Secret supporter of Tidebreakers organization.
 
 **Olric Saltwind**
-Proprietor of [[Saltwind General Supply]]. Practical, fair-dealing, maintains honor despite operating in gray legal areas. Family connections to more successful Tier 4 merchants (sister Mira runs Saltwind Imports) but chose to work in [[Dock District]] helping those others overlook. Fence for stolen goods but refuses items from violence or chaos cult sources. Intelligence network rivals some nobles' operations.
+Proprietor of [[Saltwind General Supply]]. Practical, fair-dealing, maintains honor despite operating in gray legal areas. Family connections to more successful Tier 4 merchants (sister Mira runs Saltwind Imports) but chose to work in Dock District helping those others overlook. Fence for stolen goods but refuses items from violence or chaos cult sources. Intelligence network rivals some nobles' operations.
 
 **"Iron Tooth" Margret**
 [[Tidecaller Armory]] owner and former mercenary. Lost status after refusing order she considered morally wrong, accepting discharge rather than compromising principles. Bitter about merit system but channels frustration into helping others prepare for violence's realities. Trains dock workers in self-defense. Provides weapons to those protecting community. Watching for opportunities to expose corruption that led to her fall.
@@ -98,7 +98,7 @@ Proprietor of [[Saltwind General Supply]]. Practical, fair-dealing, maintains ho
 Sawbones surgeon with genuine medical knowledge despite drinking problem and questionable credentials. Former ship's doctor who lost position due to alcoholism. Treats everyone regardless of ability to pay, accepting barter, IOUs, or future favors. Drunk but functional - steady enough hands when it matters. Knows medical secrets about half the district, creating valuable intelligence source for anyone who could exploit it.
 
 **Inspector Reeve**
-Corrupt Manifest Office supervisor coordinating protection arrangements with Smuggler's Guild. Publicly enforces laws selectively. Privately accepts bribes systematically. Ambitious enough to be dangerous - wants promotion out of [[Dock District]], making him willing to betray current arrangements if better opportunity appears. Weak point in smuggling network and potential leverage for party.
+Corrupt Manifest Office supervisor coordinating protection arrangements with Smuggler's Guild. Publicly enforces laws selectively. Privately accepts bribes systematically. Ambitious enough to be dangerous - wants promotion out of Dock District, making him willing to betray current arrangements if better opportunity appears. Weak point in smuggling network and potential leverage for party.
 
 ### Secret Locations
 
@@ -124,14 +124,14 @@ Behind surgery lies surprisingly well-equipped medical facility where Doc Harrow
 - Corrupt officials' extortion becomes intolerable, requiring intervention
 
 **The Fallen**
-- NPC party cares about loses status, ends up in [[Dock District]]
+- NPC party cares about loses status, ends up in Dock District
 - Helping fallen resident regain status reveals systemic corruption
 - Someone with crucial information fell from higher tier
 - The fall itself was orchestrated by antagonist to silence witness
 - Tidebreakers organization needs protection or assistance
 
 **Maritime Adventure**
-- Ship voyage requires booking passage through [[Dock District]]
+- Ship voyage requires booking passage through Dock District
 - Naval combat or boarding actions against pirates/enemies
 - Underwater salvage operation for specific item or knowledge
 - Mysterious cargo arriving needs investigation or interception
@@ -155,7 +155,7 @@ Behind surgery lies surprisingly well-equipped medical facility where Doc Harrow
 
 ### Resources
 
-Despite harsh conditions, [[Dock District]] offers specific advantages:
+Despite harsh conditions, Dock District offers specific advantages:
 - Maritime access for travel and trade
 - Smuggling networks move restricted goods and people
 - Fallen residents possess knowledge from former higher-tier positions
@@ -164,4 +164,4 @@ Despite harsh conditions, [[Dock District]] offers specific advantages:
 - Information networks tracking ship movements and cargo
 - People willing to take risks others won't for right price
 
-The [[Dock District]] represents those fighting to prove they deserve second chances. Some succeed through determination and skill. Others spiral further down. Understanding their struggles reveals how merit system handles failure - not with support but with marginalization that sometimes becomes self-fulfilling prophecy.
+The Dock District represents those fighting to prove they deserve second chances. Some succeed through determination and skill. Others spiral further down. Understanding their struggles reveals how merit system handles failure - not with support but with marginalization that sometimes becomes self-fulfilling prophecy.

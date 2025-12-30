@@ -9,11 +9,11 @@ version: "1.0.0"
 tags: [district, academic, knowledge, research, testing]
 ---
 
-# [[Scholar Quarter]]
+# Scholar Quarter
 
 ## Player Summary
 
-The [[Scholar Quarter]] is the intellectual heart of [[Agastia]], where knowledge is pursued, tested, and certified according to [[Merit Council]] standards. The district hums with academic energy - students rushing between lectures, scholars debating in coffee houses, and the constant scratch of quills on parchment. Towering libraries and testing centers dominate the architecture, their facades decorated with intricate symbols and inscriptions.
+The Scholar Quarter is the intellectual heart of [[Agastia]], where knowledge is pursued, tested, and certified according to [[Merit Council]] standards. The district hums with academic energy - students rushing between lectures, scholars debating in coffee houses, and the constant scratch of quills on parchment. Towering libraries and testing centers dominate the architecture, their facades decorated with intricate symbols and inscriptions.
 
 ### Atmosphere
 The air smells of old books, fresh ink, and brewing coffee. Chalkboards outside cafes display complex equations and philosophical debates. Street vendors sell study aids, scrolls, and quick meals for students too busy to stop for proper dining.
@@ -36,7 +36,7 @@ A network of establishments where academics gather to debate, collaborate, and e
 Both official Council-sponsored facilities and private labs where magical and scientific research pushes the boundaries of knowledge.
 
 ### Strange Symbols
-Throughout the [[Scholar Quarter]], ancient symbols adorn many buildings - particularly the older structures. These markings are officially described as "decorative motifs from pre-Council architecture," but they match exactly the markings that appear on [[Josh]]'s body. Most scholars seem to ignore them, but a few academics study them obsessively.
+Throughout the Scholar Quarter, ancient symbols adorn many buildings - particularly the older structures. These markings are officially described as "decorative motifs from pre-Council architecture," but they match exactly the markings that appear on [[Josh]]'s body. Most scholars seem to ignore them, but a few academics study them obsessively.
 
 ### Daily Life
 Students and scholars dominate the population. Days are structured around lecture schedules, testing periods, and research deadlines. The atmosphere shifts from frantic energy during exams to leisurely intellectual discourse during breaks.
@@ -56,14 +56,14 @@ The deepest levels of the Archives contain knowledge deemed too dangerous for pu
 - Truth about the giant stone statues throughout the city
 
 **Secret Societies**
-Several underground academic groups operate in the [[Scholar Quarter]]:
+Several underground academic groups operate in the Scholar Quarter:
 - **The Antiquarians:** Study forbidden pre-Council history
 - **The Symbolists:** Research the ancient markings (would be very interested in Josh)
 - **The Reformists:** Work to make knowledge more accessible
 - **The Chaos Scholars:** Study entropy and disorder (some unknowingly aided by Chaos Cult)
 
 **[[Professor Zero]]'s Network**
-The Professor maintains extensive contacts throughout the [[Scholar Quarter]]. He uses academic channels to gather intelligence on both the [[Chaos Cult]] and the [[Merit Council]], playing multiple sides while pursuing his own agenda regarding the Codex.
+The Professor maintains extensive contacts throughout the Scholar Quarter. He uses academic channels to gather intelligence on both the [[Chaos Cult]] and the [[Merit Council]], playing multiple sides while pursuing his own agenda regarding the Codex.
 
 ### Key NPCs
 
@@ -127,4 +127,4 @@ Where manipulated or falsified test results are stored, evidence of systematic c
 - **Knowledge:** Some truths are dangerous to know or speak
 
 ### Resources
-The [[Scholar Quarter]] offers unparalleled access to information, magical research, skill training, and influential contacts. However, much depends on one's merit status and willingness to navigate academic politics.
+The Scholar Quarter offers unparalleled access to information, magical research, skill training, and influential contacts. However, much depends on one's merit status and willingness to navigate academic politics.

@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [divine-magic, healing, research-quarter, interfaith, neutral-ground, resurrection]
 ---
 
-# [[The Grand Cathedral]]
+# The Grand Cathedral
 
 ## Overview
 

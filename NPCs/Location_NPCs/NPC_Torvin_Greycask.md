@@ -12,11 +12,11 @@ threat_level: None
 related_entities: [Rakash, Niletrix, Agastia Patron]
 ---
 
-# [[Torvin Greycask]]
+# Torvin Greycask
 
 ## Player Summary
 
-**[[Torvin Greycask]]** is a cautious dwarf information broker operating out of [[Meridian's Rest]]. He deals in rumors, intelligence, and connections - for a price. Known for his discretion and reliable information, Torvin maintains a network of contacts across the region.
+**Torvin Greycask** is a cautious dwarf information broker operating out of [[Meridian's Rest]]. He deals in rumors, intelligence, and connections - for a price. Known for his discretion and reliable information, Torvin maintains a network of contacts across the region.
 
 ### Basic Information
 - **Race:** Dwarf

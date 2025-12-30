@@ -10,11 +10,11 @@ version: "1.0.0"
 tags: [district, tier-2-3, research, magic, academic-elite, augury]
 ---
 
-# [[Research Quarter]]
+# Research Quarter
 
 ## Player Summary
 
-The [[Research Quarter]] occupies the elevated tiers just below the Castle, home to [[Agastia]]'s magical and academic elite. Where the Castle represents political power, the [[Research Quarter]] embodies intellectual and arcane achievement. Access requires demonstrated magical aptitude, academic credentials, or official sponsorship.
+The Research Quarter occupies the elevated tiers just below the Castle, home to [[Agastia]]'s magical and academic elite. Where the Castle represents political power, the Research Quarter embodies intellectual and arcane achievement. Access requires demonstrated magical aptitude, academic credentials, or official sponsorship.
 
 The district combines cutting-edge magical research facilities with exclusive establishments serving those who've achieved the highest merit through scholarly or arcane accomplishment. The atmosphere balances studious focus with subtle displays of magical mastery.
 
@@ -24,7 +24,7 @@ Floating lights illuminate streets at precise intervals. Magical constructs perf
 
 Buildings showcase architectural innovation impossible without magic: structures that subtly shift configuration, gardens growing in mid-air, doorways leading to spaces larger than their exterior suggests. Everything demonstrates what's possible when magical knowledge meets substantial resources.
 
-Unlike the Castle's formal rigidity, the [[Research Quarter]] maintains professional but collegial atmosphere. Residents bond over shared intellectual pursuits while competing for prestige, funding, and discoveries.
+Unlike the Castle's formal rigidity, the Research Quarter maintains professional but collegial atmosphere. Residents bond over shared intellectual pursuits while competing for prestige, funding, and discoveries.
 
 ### Notable Establishments
 
@@ -45,7 +45,7 @@ Professional guild for enchanters, artificers, and other magical craftspeople. M
 
 ### Social Dynamics
 
-Merit in the [[Research Quarter]] derives from magical knowledge, academic achievement, and arcane innovation. A brilliant enchanter carries more social weight than a wealthy merchant. Published research matters more than family connections.
+Merit in the Research Quarter derives from magical knowledge, academic achievement, and arcane innovation. A brilliant enchanter carries more social weight than a wealthy merchant. Published research matters more than family connections.
 
 Competition runs intense but usually remains professional. Researchers race for discoveries. Enchanters compete for prestigious commissions. Diviners argue about methodology and interpretation. But this competition generally stays within bounds - sabotaging rivals' work or stealing research crosses serious ethical lines enforced by peer pressure and guild sanctions.
 
@@ -68,7 +68,7 @@ Night: Secure facilities conduct sensitive experiments. Night shift maintains su
 ### Hidden Operations
 
 **The Containment Vaults**
-Deep below the [[Research Quarter]] lie vaults holding magical artifacts too dangerous for display or study but too valuable to destroy. Failed experimental enchantments that achieved sentience. Cursed items recovered from chaos cult operations. Artifacts from other planes that corrupt those who use them. Academic curiosity wars with prudent containment - researchers constantly petition for access to study these items, arguing that understanding them might prevent future threats.
+Deep below the Research Quarter lie vaults holding magical artifacts too dangerous for display or study but too valuable to destroy. Failed experimental enchantments that achieved sentience. Cursed items recovered from chaos cult operations. Artifacts from other planes that corrupt those who use them. Academic curiosity wars with prudent containment - researchers constantly petition for access to study these items, arguing that understanding them might prevent future threats.
 
 **Project Farsight**
 Secret augury initiative attempting to predict chaos cult activities before they occur. The Augury Spire's public services fund this classified program. Results remain frustratingly inconsistent - chaos by nature resists prediction, making patterns unreliable. Recent divinations suggest major chaos incursion approaching, but specifics remain unclear. Council receiving regular briefings but hasn't decided whether to act on uncertain prophecies.
@@ -144,7 +144,7 @@ Kaelith's personal workshop where she crafts masterwork items. Contains rare mat
 
 ### Resources
 
-The [[Research Quarter]] offers unparalleled magical expertise and services:
+The Research Quarter offers unparalleled magical expertise and services:
 - Master enchanters capable of creating legendary items (at appropriate cost)
 - Divination services predicting future events and detecting hidden information
 - High-level divine magic for restoration, resurrection, and powerful blessings

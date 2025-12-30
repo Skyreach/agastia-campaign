@@ -9,11 +9,11 @@ version: "1.0.0"
 tags: [district, commerce, trade, social-hub, starting-equipment]
 ---
 
-# [[Merchant District]]
+# Merchant District
 
 ## Player Summary
 
-The [[Merchant District]] is where the wealth and goods of [[Agastia]] change hands in a bustling maze of shops, markets, and trading houses. Unlike the rigid hierarchy visible elsewhere in the city, here merit is measured in coin and successful deals. The district operates under [[Merit Council]] regulations but maintains a distinct culture that values practical results over theoretical qualifications.
+The Merchant District is where the wealth and goods of [[Agastia]] change hands in a bustling maze of shops, markets, and trading houses. Unlike the rigid hierarchy visible elsewhere in the city, here merit is measured in coin and successful deals. The district operates under [[Merit Council]] regulations but maintains a distinct culture that values practical results over theoretical qualifications.
 
 ### Atmosphere
 The sounds of haggling, the smell of exotic spices and fresh bread, the constant movement of carts and customers create an energetic chaos that somehow remains productive. Street performers entertain crowds while pickpockets work the distracted. Every storefront competes for attention with colorful displays and shouted offers.
@@ -36,7 +36,7 @@ A massive covered marketplace where dozens of vendors sell everything from munda
 Banks and money lenders operating under Council regulation but with considerable autonomy. They fund ventures, hold deposits, and facilitate large transactions throughout the region.
 
 ### Social Dynamics
-The [[Merchant District]] is more socially fluid than other parts of [[Agastia]]. A talented trader can rise quickly regardless of formal merit certification. However, this also means protection is weaker - those who fail can fall hard, and shady dealings are more common than authorities acknowledge.
+The Merchant District is more socially fluid than other parts of [[Agastia]]. A talented trader can rise quickly regardless of formal merit certification. However, this also means protection is weaker - those who fail can fall hard, and shady dealings are more common than authorities acknowledge.
 
 ### Daily Rhythms
 Market activity peaks mid-morning and late afternoon. Lunch crowds fill the restaurants. Evening brings a different character as taverns open and less-official business moves into back rooms. Night markets cater to those seeking discretion or dealing in gray-market goods.
@@ -58,7 +58,7 @@ Marcus Brightcoin is more than a simple merchant. He maintains intelligence netw
 The Biagos know more about [[Agastia]]'s political landscape than most Council members, but they never weaponize this knowledge.
 
 **Underground Economy**
-Beneath the legitimate commerce, extensive black market and smuggling operations run through the [[Merchant District]]:
+Beneath the legitimate commerce, extensive black market and smuggling operations run through the Merchant District:
 - Goods that avoided Council taxes and tariffs
 - Items prohibited or restricted by Merit regulations
 - Information, documents, and forged credentials
@@ -89,7 +89,7 @@ Head of the Gilded Scale. Sophisticated, politically savvy, and always calculati
 Unofficial leader of the district's thieves and black marketeers. Maintains working relationships with various factions while running a profitable criminal network. Has an arrangement with Brightcoin that neither acknowledges publicly.
 
 **Inspector Crane**
-[[Merit Council]] official assigned to the [[Merchant District]]. Perpetually frustrated by the district's culture of bending rules without quite breaking them. Suspects widespread corruption but can rarely prove it.
+[[Merit Council]] official assigned to the Merchant District. Perpetually frustrated by the district's culture of bending rules without quite breaking them. Suspects widespread corruption but can rarely prove it.
 
 ### Adventure Hooks
 
@@ -143,4 +143,4 @@ Where Marcus conducts his information brokering. The room has multiple hidden ex
 - **Underground:** The tunnels hide many dangers beyond smugglers
 
 ### Resources
-The [[Merchant District]] offers excellent access to equipment, supplies, information, and contacts. Money talks here more than merit credentials, which can be both liberating and dangerous. The district's neutral spaces and underground networks make it invaluable for parties navigating factional politics.
+The Merchant District offers excellent access to equipment, supplies, information, and contacts. Money talks here more than merit credentials, which can be both liberating and dangerous. The district's neutral spaces and underground networks make it invaluable for parties navigating factional politics.

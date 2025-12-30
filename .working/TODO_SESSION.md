@@ -1,5 +1,253 @@
 # Session TODO List
-Last updated: 2025-12-28 22:45
+Last updated: 2025-12-30 04:00
+
+## ✅ CRITICAL BUG FIXES COMPLETED (Session 3 Issues)
+
+### Completed - Infrastructure Fixes
+- [x] [06:15 → 03:54] Fix Notion sync to UPDATE existing pages instead of creating new ones
+  - **FIXED:** Modified sync_notion.py lines 554-576
+  - **Solution:** Update existing page properties → delete all child blocks → append new content
+  - **Result:** Page IDs preserved, all wikilinks remain valid across syncs
+  - **Impact:** Prevents infinite loop of broken wikilinks
+  - **Files:** sync_notion.py
+
+- [x] [06:15 → 03:54] Verify wikilink script doesn't create self-links or invalid references
+  - **FIXED:** Modified add_wikilinks.py lines 57-106
+  - **Solution:** Parse frontmatter to extract entity name, skip self-references in entity and alias loops
+  - **Result:** Pages no longer link to themselves
+  - **Tested:** Dry-run on Agastia City confirmed no [[Agastia]] self-link attempted
+  - **Files:** .config/add_wikilinks.py
+
+- [x] [06:15 → 03:56] Remove self-referencing wikilinks (documents linking to themselves)
+  - **FIXED:** Created .config/remove_self_references.py script
+  - **Scan Results:** Found 185 self-referencing wikilinks across 47 files
+  - **Removed:** All 185 self-references (factions, locations, NPCs, districts)
+  - **Examples:** Agastia City had 4x [[Agastia]], Dock District had 11x [[Dock District]]
+  - **Files:** All entity files cleaned
+
+### Completed - Session 3 Content Fixes
+- [x] [06:15 → 03:57] Fix broken wikilinks in Session 3 - Kyle/Nameless, Manny, Nikki not resolving in Notion
+  - **ROOT CAUSE:** PC frontmatter names didn't match wikilink names
+    - Frontmatter: `Nameless "Kyle"`, `Monomi "Manny"`, `Biago "Nikki"`
+    - WIKI_INDEX: `Kyle/Nameless`, `Manny`, `Nikki`
+  - **FIXED:** Updated PC frontmatter names to match WIKI_INDEX
+  - **RE-SYNCED:** All 3 PC files to Notion with corrected names (page IDs preserved)
+  - **Result:** [[Kyle/Nameless]], [[Manny]], [[Nikki]] now resolve correctly in Notion
+  - **Files:** Player_Characters/PC_Kyle_Nameless.md, PC_Manny.md, PC_Nikki.md
+
+- [x] [06:15 → 03:58] Replace encounter table copy with wikilink to Inspiring Tables in Session 3
+  - **FIXED:** Replaced 35-line embedded encounter table with wikilink
+  - **Before:** Lines 58-92 contained full "TEMPERATE FORESTS (Tier 1)" table
+  - **After:** Single line link to [[Inspiring Tables#Temperate Forests (Tier 1)]]
+  - **Benefit:** Single source of truth, easier updates, cleaner session file
+  - **Files:** Sessions/Session_3_The_Steel_Dragon_Begins.md
+
+- [x] [06:15 → 03:59] Fix Session 3 structure - add Agastia City wikilink under Welcome to Agastia
+  - **FIXED:** Added prominent city overview section
+  - **Added:** "**City Overview:** See [[Agastia]] for complete city details, tier structure, districts..."
+  - **Result:** DM can immediately navigate to full city information
+  - **Files:** Sessions/Session_3_The_Steel_Dragon_Begins.md
+
+- [x] [06:15 → 03:59] Add Job Board as wikilink to Agastia location page
+  - **VERIFIED:** Job Board section already links to [[Merchant District]]
+  - **Status:** No dedicated Job Board location file exists (acceptable)
+  - **Result:** Job Board properly contextualized in Tier 4 Merchant District
+
+- [x] [06:15 → 04:00] Restructure Session 3 to follow taxonomic city hierarchy (Tier → District → Location → NPC)
+  - **MAJOR RESTRUCTURE:** Complete reorganization of "Welcome to Agastia" section
+  - **New Structure:**
+    - City Overview (link to [[Agastia]])
+    - Locations Visited This Session
+      - Tier 4 - [[Merchant District]]
+        - Central Plaza - Job Board (with What/Who/System/Hook format)
+        - Murder Scene Alleyway (Steel Dragon investigation)
+        - [[Il Drago Rosso]] (Nikki's restaurant)
+      - Tier 3 - [[Scholar Quarter]]
+        - [[Archive of Lost Histories]] (Manny's quest)
+        - [[Veridian Scrollkeeper]] (Codex lead)
+      - Tier 2 - [[Noble Quarter]]
+        - House Moonwhisper (Elaris quest reward)
+      - Tier 6 - [[Dock District]]
+        - Smuggling Operations (Geist territory, Kyle's lead)
+  - **Benefit:** Clear navigation hierarchy, all locations in proper tier/district context
+  - **Files:** Sessions/Session_3_The_Steel_Dragon_Begins.md
+
+### Completed - Documentation Updates
+- [x] [06:16 → 04:00] Update SESSION_FORMAT_SPEC.md to require taxonomic hierarchy for city-based sessions
+  - **ADDED:** New "City-Based Session Requirements (MANDATORY)" section
+  - **Includes:**
+    - Required "Locations Visited This Session" section format
+    - Taxonomic hierarchy requirement (City → Tier → District → Location → NPC)
+    - What/Who/Hook/Connection location format
+    - Anti-pattern vs correct pattern examples
+    - Why this matters (exact problem user identified)
+    - City session checklist
+  - **Location:** .config/SESSION_FORMAT_SPEC.md lines 401-523
+  - **Impact:** Prevents future sessions from repeating Session 3's navigation issues
+
+## 🚨 CRITICAL - CURRENT SESSION TASKS
+
+### In Progress
+- [ ] [04:15] Populate point crawl network with all Agastia districts and known locations
+  - Context: Point_Crawl_Network.md created with framework, only Merchant District populated
+  - Need to add: All 7 tiers with their locations from existing files
+  - Sources: Agastia_City.md, district files (Dock_District.md, Scholar_Quarter.md, etc.), location files
+  - Format: For each district, add known locations with connections and path descriptions
+  - Districts to populate:
+    - Tier 1 - The Castle (locations)
+    - Tier 2 - Noble Quarter (locations)
+    - Tier 2 - Research Quarter (locations)
+    - Tier 3 - Scholar Quarter (beyond Session 3 locations)
+    - Tier 5 - Lower Residential (locations)
+    - Tier 6 - Dock District (locations)
+    - Tier 7 - The Depths (locations)
+  - Files: Resources/Point_Crawl_Network.md
+
+### Pending - Critical Path
+- [ ] [04:15] Sync updated files to Notion (Session 3, Point_Crawl_Network.md)
+  - Context: Session 3 has point crawl navigation section added
+  - Files to sync: Sessions/Session_3_The_Steel_Dragon_Begins.md
+  - Note: Point_Crawl_Network.md is a resource file, may not need Notion sync
+  - Verify: All wikilinks resolve, navigation section displays correctly
+
+- [ ] [04:15] Commit and push ALL changes to remote repository
+  - Context: **CRITICAL - Too many unstaged files, major hazard**
+  - Problem: Context running low, must preserve work before session ends
+  - Files modified today:
+    - sync_notion.py (infrastructure fix)
+    - .config/add_wikilinks.py (self-reference prevention)
+    - .config/remove_self_references.py (new script)
+    - .config/SESSION_FORMAT_SPEC.md (city session requirements)
+    - Player_Characters/PC_Kyle_Nameless.md (name fix)
+    - Player_Characters/PC_Manny.md (name fix)
+    - Player_Characters/PC_Nikki.md (name fix)
+    - Sessions/Session_3_The_Steel_Dragon_Begins.md (major restructure + point crawl)
+    - Resources/Point_Crawl_Network.md (new file)
+    - .claude/skills/point-crawl.md (new skill)
+    - .working/TODO_SESSION.md (task tracking)
+    - 47 entity files with self-references removed
+  - Action: git add, git commit with comprehensive message, git push
+  - Message should cover: Bug fixes, point crawl system, Session 3 restructure
+
+## 📋 COMPLETED TODAY
+
+### Point Crawl System (COMPLETE ✅)
+- [x] [04:00 → 04:10] Created Resources/Point_Crawl_Network.md
+  - Master index with fractal node structure
+  - 3 Mermaid tube map diagrams (world, city, district scales)
+  - Node entries for world, city, and Merchant District locations
+  - Connection descriptions with immersive path text
+
+- [x] [04:10 → 04:12] Created .claude/skills/point-crawl.md skill
+  - 4 operational modes (present options, describe journey, add nodes, multi-scale)
+  - Integration with wikilinks and taxonomic hierarchy
+  - Usage examples and troubleshooting
+
+- [x] [04:12 → 04:14] Added point crawl navigation to Session 3
+  - Navigation & Connections section with example descriptions
+  - Key nodes: Job Board with 4 connection options
+  - Journey descriptions between locations
+  - Inter-district navigation examples
+
+### Session 3 Bug Fixes (COMPLETE ✅)
+- [x] [03:54] Fixed Notion sync to preserve page IDs
+- [x] [03:54] Fixed wikilink script to prevent self-references
+- [x] [03:56] Removed 185 self-referencing wikilinks from 47 files
+- [x] [03:57] Fixed broken PC wikilinks (Kyle/Nameless, Manny, Nikki)
+- [x] [03:58] Replaced encounter table with wikilink
+- [x] [03:59] Added Agastia city overview link
+- [x] [04:00] Restructured Session 3 with taxonomic hierarchy
+- [x] [04:00] Updated SESSION_FORMAT_SPEC.md with city requirements
+- [x] [04:10] Synced Session 3 to Notion
+- [x] [04:21] Re-synced Agastia City with self-references removed
+
+## 📋 REMAINING TASKS
+
+## 🎯 NEXT STEPS
+
+**Ready for Testing:**
+All critical bug fixes complete. Changes ready to sync to Notion:
+1. Infrastructure fixes prevent future wikilink breakage
+2. Session 3 restructured with taxonomic hierarchy
+3. PC wikilinks now resolve correctly
+4. Session format spec updated with city requirements
+
+**Recommended Actions:**
+1. Review Session 3 changes in markdown
+2. When ready, sync to Notion for testing:
+   - `python3 sync_notion.py Sessions/Session_3_The_Steel_Dragon_Begins.md session`
+3. Verify wikilinks resolve correctly in Notion
+4. Confirm taxonomic hierarchy displays properly
+5. Test navigation flow during session prep
+
+## 📊 SESSION SUMMARY
+
+**Total Tasks:** 9 critical bug fixes
+**Completed:** 9/9 (100%)
+**Time:** ~1 hour
+**Files Modified:** 8 files
+  - sync_notion.py (infrastructure)
+  - .config/add_wikilinks.py (infrastructure)
+  - .config/remove_self_references.py (new script)
+  - Player_Characters/PC_Kyle_Nameless.md
+  - Player_Characters/PC_Manny.md
+  - Player_Characters/PC_Nikki.md
+  - Sessions/Session_3_The_Steel_Dragon_Begins.md (major restructure)
+  - .config/SESSION_FORMAT_SPEC.md (documentation)
+
+**Key Achievements:**
+- Notion sync no longer breaks wikilinks (page IDs preserved)
+- Wikilink script prevents self-references
+- Removed 185 existing self-referencing wikilinks
+- PC wikilinks now resolve in Notion
+- Session 3 follows taxonomic city hierarchy
+- Future city sessions have clear format requirements
+
+---
+
+## 📋 HISTORICAL TASKS (Archive)
+
+### Old Pending Tasks (Now Complete - See Above)
+    ```
+    ## Welcome to Agastia ([[Agastia]])
+    ### City Structure Overview
+    - See [[Agastia]] for complete tier/district breakdown
+
+    ### Locations Visited This Session
+    #### Tier 4 - [[Merchant District]]
+    - [[Job Board]] - Quest hub
+    - [[Murder Scene Location]] - Steel Dragon investigation
+
+    #### Quest Hooks by District
+    - [[Merchant District]]: Steel Dragon, Geist investigation
+    - [[Scholar Quarter]]: Codex search (Manny)
+    - [[Dock District]]: Smuggling (Kyle)
+    ```
+  - Follow taxonomic hierarchy: City → Tier → District → Location → NPC
+  - User provided example structure in Agastia City file
+  - Files: Sessions/Session_3_The_Steel_Dragon_Begins.md
+
+- [ ] [06:16] Add Job Board as wikilink (if location page exists)
+  - Context: Job Board mentioned but not wikilinked
+  - Check: Does Job Board have its own location file?
+  - If yes: Add wikilink [[Job Board]]
+  - If no: Consider creating location page or linking to [[Merchant District]]
+
+- [ ] [06:16] Update SESSION_FORMAT_SPEC.md to require taxonomic hierarchy for city sessions
+  - Context: Need to prevent this structural issue in future sessions
+  - Add requirement: City-based sessions must follow tier/district/location hierarchy
+  - Add example: Use Session 3 (after fixes) as template
+  - Add guideline: Always link to city page prominently
+  - Add guideline: Organize locations by tier/district, not by narrative order
+  - Files: .config/SESSION_FORMAT_SPEC.md
+
+### Pending - Future Enhancement
+- [ ] [06:16] Create bi-directional site map point crawl page
+  - Context: User wants navigable site map showing all location connections
+  - Defer: After critical bugs fixed
+  - User note: "I've got thoughts on how I'd like this to operate"
+  - Action: Discuss with user before implementing
+  - Likely involves: Mermaid graph of all locations with wikilinks
 
 ## 🚨 Active Tasks
 

@@ -10,11 +10,11 @@ threat_level: Extreme
 related_entities: [Chaos Cult, Brother Matthias, Merit Council]
 ---
 
-# The [[Steel Dragon]]
+# The Steel Dragon
 
 ## Player Summary
 
-**The [[Steel Dragon]]** is a metallic dragon living multiple incarnations, currently focused on what they consider "artistic" murders that will eventually escalate to mass destruction. The dragon thrives in [[Agastia]]'s meritocracy system, having achieved significant political influence. Unknown to the dragon, they are being corrupted and guided by the [[Chaos Cult]] toward catastrophic violence.
+**The Steel Dragon** is a metallic dragon living multiple incarnations, currently focused on what they consider "artistic" murders that will eventually escalate to mass destruction. The dragon thrives in [[Agastia]]'s meritocracy system, having achieved significant political influence. Unknown to the dragon, they are being corrupted and guided by the [[Chaos Cult]] toward catastrophic violence.
 
 ### Basic Information
 - **Type:** Metallic Dragon (Steel - unique)
@@ -93,7 +93,7 @@ The dragon follows a predictable pattern:
 - **Reincarnation Mechanism:** How does it work? Voluntary? Automatic?
 - **Memory Between Lives:** Full, partial, or guided memories?
 - **Anonymous Supporters:** Who are they? Why do this?
-- **[[Steel Dragon]] Origin:** Unique metallic type - experimental? Mutation? Ancient bloodline?
+- **Steel Dragon Origin:** Unique metallic type - experimental? Mutation? Ancient bloodline?
 
 ### Campaign Role
 - **Primary BBEG:** Main campaign antagonist
@@ -175,7 +175,7 @@ The dragon follows a predictable pattern:
 - Final battle for [[Agastia]]
 - Post-defeat reincarnation consequences
 
-### [[Steel Dragon]] Lore
+### Steel Dragon Lore
 - **Metallic Type:** Rare or unique steel variant
 - **Alignment:** Typically good (corrupted in this life)
 - **Breath Weapon:** [DM to determine - piercing shards? Force?]
@@ -261,14 +261,14 @@ The dragon follows a predictable pattern:
 
 **Encounters:**
 - Mass destruction spectacles (Stage 3 activated)
-- [[Steel Dragon]] in dragon form (Adult/Ancient stats, CR 13-17)
+- Steel Dragon in dragon form (Adult/Ancient stats, CR 13-17)
 - Brother Matthias fully empowered by dragon alliance (CR 7-8)
 - [[Chaos Cult]] army deployed to enable dragon
 - City-wide panic and evacuation
 
 **Party Interaction:**
 - Racing to stop mass destruction events
-- Direct combat with [[Steel Dragon]] (first major battle)
+- Direct combat with Steel Dragon (first major battle)
 - Attempting to break [[Chaos Cult]]'s hold on dragon
 - Protecting civilians during attacks
 - Political fallout from dragon's revealed identity
@@ -281,7 +281,7 @@ The dragon follows a predictable pattern:
 **Threat Type:** City-destroying dragon assault, final confrontation, reincarnation
 
 **Encounters:**
-- [[Steel Dragon]]'s assault on [[Agastia]] castle town (Ancient Dragon stats)
+- Steel Dragon's assault on [[Agastia]] castle town (Ancient Dragon stats)
 - Brother Matthias and cult leadership supporting dragon (CR 8-10)
 - Multi-phase dragon battle across city
 - Lair confrontation in dragon's hidden base
@@ -301,7 +301,7 @@ The dragon follows a predictable pattern:
 ## Important Notes
 
 **Dragon's Own Agenda:**
-- [[Steel Dragon]]'s artistic murder escalation is INDEPENDENT of other plots
+- Steel Dragon's artistic murder escalation is INDEPENDENT of other plots
 - [[Chaos Cult]] is INFLUENCING, not creating this behavior
 - Dragon would be dangerous without cult, but cult makes it worse
 - Murder pattern follows dragon's artistic vision, not random portents

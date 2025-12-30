@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-point, party-connection]
 ---
 
-# [[Il Drago Rosso]]
+# Il Drago Rosso
 
 ## Overview
 
@@ -20,7 +20,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 
 **Clientele:** Everyone - from Tier 2 nobles to Tier 5 workers. Merit levels mix here freely, united by appreciation for excellent food.
 
-**Reputation:** "If you want to meet someone without starting a war, meet them at [[Il Drago Rosso]]." Sacred neutral ground where faction politics stop at the door. Known citywide for the best Italian food in [[Agastia]] and the Biagos' uncanny ability to keep the peace.
+**Reputation:** "If you want to meet someone without starting a war, meet them at Il Drago Rosso." Sacred neutral ground where faction politics stop at the door. Known citywide for the best Italian food in [[Agastia]] and the Biagos' uncanny ability to keep the peace.
 
 **Atmosphere:** Warm, welcoming, alive with conversation and aromas. Red-checked tablecloths, candles in wine bottles, kitchen visible through archway. Papa's booming laughter mingles with sizzling garlic and rich tomato sauce. Mama moves through tables like a general surveying her domain. Everyone feels welcome, but everyone knows the rules: no violence, no weapons drawn, no faction business that disrupts the meal.
 
@@ -32,7 +32,7 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 
 **Background:**
 - Immigrated to [[Agastia]] 35 years ago with nothing but family recipes and ambition
-- Built [[Il Drago Rosso]] from a single-table café to [[Merchant District]] institution
+- Built Il Drago Rosso from a single-table café to [[Merchant District]] institution
 - Remembers every customer, their favorite dishes, and family histories
 - Developed reputation for neutrality through decades of refusing to weaponize what he knows
 - Fiercely protective of the trattoria as sanctuary where all are welcome
@@ -64,12 +64,12 @@ tags: [commerce, merchant-district, restaurant, neutral-ground, faction-meeting-
 **Faction:** None officially (Disposition: Fiercely protective neutrality)
 
 **Background:**
-- The true architect of [[Il Drago Rosso]]'s success and neutral ground status
+- The true architect of Il Drago Rosso's success and neutral ground status
 - Possesses uncanny ability to read people - knows their intentions before they act
 - Established and rigidly enforces the "no violence" policy through force of personality alone
 - Has defused countless potential conflicts with a single look or word
 - Knows more secrets than most Council members but never weaponizes knowledge
-- Source of the family recipes that make [[Il Drago Rosso]] legendary
+- Source of the family recipes that make Il Drago Rosso legendary
 
 **Goals:**
 - Short-term: Maintain the trattoria's neutral ground status during increasing faction tensions
