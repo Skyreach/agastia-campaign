@@ -13,7 +13,7 @@ faction: Feywild Military
 related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Beans]
 ---
 
-# [[Kyle/Nameless]] (Kyle's Character)
+# [[Kyle/Nameless]] ([[Kyle]]'s Character)
 
 ## Player Summary
 
@@ -110,7 +110,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ### Session 0 (2025-09-21)
 - Character created with bandit hunt motivation
 - Feywild connections established
-- Relationship with Rakash revealed (savior)
+- Relationship with [[Rakash]] revealed (savior)
 
 ### Session 1 (2025-01-06 - Completed)
 - Caravan attacked by shadow blob
@@ -139,7 +139,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 - Fiddle's true power revelation
 - Learning about rainbow hair origin
 - Beans reappearance
-- Rakash rescue creating deep bond
+- [[Rakash]] rescue creating deep bond
 
 ### Character Development Notes
 - 100 years of service = very experienced despite being "on leave"

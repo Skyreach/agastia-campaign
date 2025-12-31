@@ -105,15 +105,15 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 ### [[Kyle/Nameless]] History
 
 **The Kidnapping (20+ years ago):**
-- Targeted Kyle at age 3 for rainbow hair
+- Targeted [[Kyle]] at age 3 for rainbow hair
 - Held captive for ~20 years
 - Purpose: Rainbow hair valuable for unknown reason (ritual? collector? rare component?)
-- Kyle eventually escaped to [[Infinite Forest]]
+- [[Kyle]] eventually escaped to [[Infinite Forest]]
 
 **Current Status:**
-- Believed Kyle dead or lost
+- Believed [[Kyle]] dead or lost
 - Intercepted message proves they're alive and operating near [[Agastia]]
-- Do NOT know Kyle is hunting them
+- Do NOT know [[Kyle]] is hunting them
 - May have other current captives
 
 ### Vulnerabilities
@@ -126,7 +126,7 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 
 ### Future Hooks
 
-- Kyle's confrontation with [[Geist (Bandit Lieutenant)]] and [[Kaelborn (Bandit Boss)]]
+- [[Kyle]]'s confrontation with [[Geist (Bandit Lieutenant)]] and [[Kaelborn (Bandit Boss)]]
 - Discovery of current kidnapping victims
 - Corrupt officials turning on them
 - Larger crime syndicate connection revealed
@@ -156,7 +156,7 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 - First hints of [[Geist (Bandit Lieutenant)]]/[[Kaelborn (Bandit Boss)]] names
 
 **Party Interaction:**
-- Kyle recognizes bandit symbols/methods from captivity
+- [[Kyle]] recognizes bandit symbols/methods from captivity
 - Merchants hire party for protection from extortion
 - Stumble upon smuggling operation
 - Rescue kidnapping victim
@@ -177,7 +177,7 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 - Safe house raids
 
 **Party Interaction:**
-- Kyle's identity as former victim revealed to network
+- [[Kyle]]'s identity as former victim revealed to network
 - Direct confrontation with lieutenants
 - Discovering pattern of "special trait" kidnappings
 - Evidence linking crimes to [[Geist (Bandit Lieutenant)]]/[[Kaelborn (Bandit Boss)]]
@@ -198,11 +198,11 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 - Final showdown at network headquarters
 
 **Party Interaction:**
-- Kyle's face-to-face confrontation with kidnappers
+- [[Kyle]]'s face-to-face confrontation with kidnappers
 - Rescue of current kidnapping victims
 - Exposing corrupt officials with evidence
 - Choice: Kill them or bring to justice
-- Learning who commissioned Kyle's kidnapping (plot revelation)
+- Learning who commissioned [[Kyle]]'s kidnapping (plot revelation)
 
 **Leader Status:** [[Geist (Bandit Lieutenant)]] and [[Kaelborn (Bandit Boss)]] fighting for survival, all resources deployed
 
@@ -214,14 +214,14 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 **Encounters:**
 - Surviving lieutenants attempting revenge
 - Larger crime syndicate revealed (if they worked for someone)
-- Client who commissioned Kyle's kidnapping emerges
+- Client who commissioned [[Kyle]]'s kidnapping emerges
 - Corrupt officials' trials and political fallout
 
 **Party Interaction:**
 - Dismantling remaining network infrastructure
-- Confronting the client behind Kyle's kidnapping
+- Confronting the client behind [[Kyle]]'s kidnapping
 - Political consequences of exposing corruption
-- Kyle's closure/justice arc
+- [[Kyle]]'s closure/justice arc
 
 **Leader Status:** Defeated, dead, or imprisoned - arc complete
 
@@ -240,7 +240,7 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 - Helping other kidnapping victims
 - Preventing new networks from forming
 - Understanding why rainbow hair was valuable
-- Kyle's full character arc resolution
+- [[Kyle]]'s full character arc resolution
 
 ---
 
@@ -252,8 +252,8 @@ This is a straightforward criminal organization with magical muscle. [[Geist (Ba
 - May have bribed officials, but they're not "inspectors" or "scholars"
 - Their power comes from fear and illegal resources
 
-**Kyle's Personal Quest:**
-- This is Kyle's primary antagonist arc
+**[[Kyle]]'s Personal Quest:**
+- This is [[Kyle]]'s primary antagonist arc
 - Confrontation should be emotionally charged
 - Justice vs. revenge is key character choice
 - Rainbow hair mystery ties to larger campaign lore

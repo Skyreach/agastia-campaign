@@ -32,7 +32,7 @@ Families can maintain their merit status for up to three generations before desc
 
 ---
 
-## Tier 1 - The Castle
+## Tier 1 - [[The Castle]]
 
 **Access:** Strictly controlled - only council members, high-ranking officials, and those with explicit invitations permitted.
 
@@ -89,13 +89,13 @@ Families can maintain their merit status for up to three generations before desc
 
 **Overview:** Districts housing those who have proven exceptional merit through magical research, political influence, or economic achievement.
 
-### Research Quarter
+### [[Research Quarter]]
 
 **Overview:** Magical and academic elite district. Universities, mage towers, exclusive libraries, and enchanting workshops.
 
 #### Services & Key Locations
 
-##### Blades of Glory
+##### [[Blades of Glory]]
 
 **Description:** Premium magical weaponsmith specializing in Very Rare and Legendary weapons. Signature pieces cost upward of 25,000 gp. Workshop filled with the ring of masterwork hammers and the glow of enchantment forges.
 
@@ -110,7 +110,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-10pm):** Final finishing work, invitation-only viewings of completed pieces
 - **Commissions:** 3-6 month waiting list for custom legendary weapons
 
-##### The Grand Cathedral
+##### [[The Grand Cathedral]]
 
 **Description:** Massive temple dedicated to the Sovereign Host. Offers high-level divine healing including Raise Dead, Regenerate, and Greater Restoration. Soaring vaulted ceilings with stained glass depicting divine interventions.
 
@@ -131,7 +131,7 @@ Families can maintain their merit status for up to three generations before desc
 **Description:** Exclusive magical knowledge repository. Requires special permission to access. Contains spell research, arcane theory, and dangerous magical texts.
 
 **NPCs:**
-- **Chief Librarian Veridian Scrollkeeper** (Ancient Elf) - Guards forbidden knowledge
+- **Chief Librarian [[Veridian Scrollkeeper]]** (Ancient Elf) - Guards forbidden knowledge
 - **Research Assistant Mira Quillbright** (Gnome) - Helps approved researchers
 - **Librarian Construct** - Magical guardian that patrols the stacks
 
@@ -156,7 +156,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (sunset):** Major ritual divinations using the stars
 - **Services:** Augury 100gp, Divination 500gp, Commune 1,500gp
 
-### Noble Quarter (Skyview Estates)
+### [[Noble Quarter]] (Skyview Estates)
 
 **Overview:** Political and wealth elite district. Luxurious estates, exclusive social clubs, private banking, and diplomatic venues.
 
@@ -247,7 +247,7 @@ Families can maintain their merit status for up to three generations before desc
 
 **Overview:** Districts where the majority of Agastia's functional citizenry lives and works. Testing centers offer paths to advancement.
 
-### Scholar Quarter
+### [[Scholar Quarter]]
 
 **Overview:** Libraries, universities, testing centers, and academic institutions. Students and scholars pursue knowledge and merit advancement.
 
@@ -268,19 +268,19 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (4pm-8pm):** Advanced seminars, magical experiments
 - **Tuition:** 500gp per semester, scholarships available for high merit
 
-##### Archive of Lost Histories
+##### [[Archive of Lost Histories]]
 
-**Description:** Where Veridian works. Contains historical records, some predating the Merit Council. Strange symbols mark certain sections—similar to markings on [[Josh]]'s body.
+**Description:** Where [[Veridian]] works. Contains historical records, some predating the Merit Council. Strange symbols mark certain sections—similar to markings on [[Josh]]'s body.
 
 **NPCs:**
-- **Veridian the Ancient** (Very old elf) - Knows everything about Agastia's history
+- **[[Veridian]] the Ancient** (Very old elf) - Knows everything about Agastia's history
 - **Junior Archivists** - Catalog and preserve documents
 - **Archive Guardian** (Construct) - Protects restricted sections
 
 **Day to Day:**
 - **Morning (9am-noon):** Public access to common historical records
 - **Afternoon (noon-5pm):** Researchers study approved materials
-- **Evening (closed):** Veridian researches restricted materials alone
+- **Evening (closed):** [[Veridian]] researches restricted materials alone
 - **Access:** Common sections free, restricted sections require quest/permission
 
 ##### Merit Testing Centers
@@ -328,7 +328,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-8pm):** Special orders pickup, rare item auctions
 - **Prices:** Basic ink 10gp/vial, enchanted ink 50gp+, spell scrolls 100gp+
 
-### Merchant District
+### [[Merchant District]]
 
 **Overview:** The commercial heart of Agastia. Goods from across the realm change hands. Artisan crafting, guilds, and busy markets.
 
@@ -365,7 +365,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-9pm):** "Special orders" - actually information exchanges
 - **Inventory:** All common adventuring gear, some uncommon items, rare by special order
 
-##### The Wanderer's Pack
+##### [[The Wanderer's Pack]]
 
 **Description:** Adventuring gear specialist. Common and Uncommon magical items, practical equipment for travelers.
 
@@ -379,7 +379,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-8pm):** Custom orders, gear testing
 - **Inventory:** Rope, rations, torches, common magic items (50-200gp)
 
-##### The Gilded Scale (Merchant Guild HQ)
+##### [[The Gilded Scale]] (Merchant Guild HQ)
 
 **Description:** Guild headquarters. Members get trade intelligence, certification, and business support.
 
@@ -410,7 +410,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (4pm-7pm):** Bargain hunting, closing sales
 - **Late Evening (7pm-8pm):** Teardown, market empties
 
-##### Public Temple
+##### [[Public Temple]]
 
 **Description:** Accessible temple offering mid-level divine healing. More affordable than the Grand Cathedral.
 
@@ -424,7 +424,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (5pm-8pm):** Blessings, consultations
 - **Prices:** Cure Wounds 10gp, Lesser Restoration 50gp, Remove Curse 100gp
 
-### Government Complex
+### [[Government Complex]]
 
 **Overview:** Seat of Merit Council power visible to the public. Where citizens interact with official institutions.
 
@@ -468,13 +468,13 @@ Families can maintain their merit status for up to three generations before desc
 
 **Overview:** Working-class housing and community spaces. Honest labor, modest living, strong neighborhood bonds.
 
-### Lower Residential District
+### [[Lower Residential District]]
 
 **Overview:** Residential area for laborers, craftspeople, and service workers. Community mutual support and collective action.
 
 #### Services & Key Locations
 
-##### The Copper Mug
+##### [[The Copper Mug (Tavern)]]
 
 **Description:** Working-class tavern and community gathering place. Cheap meals, affordable lodging, honest atmosphere.
 
@@ -490,7 +490,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Night (11pm-close):** Lodging guests settle in (1sp per night)
 - **Atmosphere:** No fighting, Marta enforces strict community rules
 
-##### Stonewick Herbalist
+##### [[Stonewick Herbalist]]
 
 **Description:** Affordable healing shop. Nessa Stonewick provides poultices, potions, and folk remedies.
 
@@ -552,7 +552,7 @@ Families can maintain their merit status for up to three generations before desc
 
 **Overview:** Maritime workers and those seeking to regain lost merit. Rough but determined atmosphere.
 
-### Dock District
+### [[Dock District]]
 
 **Overview:** Maritime labor, salvage operations, rough but cheap services. Black market information flows.
 
@@ -573,7 +573,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-midnight):** Drinking, gambling, fights (regular occurrence)
 - **Prices:** Ale 2cp, stew 3cp, lodging 5cp (floor space)
 
-##### Saltwind General Supply
+##### [[Saltwind General Supply]]
 
 **Description:** Maritime goods and salvage. Olric Saltwind sells waterproofed gear and salvaged items.
 
@@ -587,7 +587,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-8pm):** "Special inventory" (questionable provenance)
 - **Inventory:** Rope, tar, sailcloth, salvaged gear (50% normal price, buyer beware)
 
-##### Tidecaller Armory
+##### [[Tidecaller Armory]]
 
 **Description:** Maritime weapons specialist. "Iron Tooth" Margret sells boarding axes, harpoons, and waterproofed weapons.
 
@@ -601,7 +601,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (7pm-9pm):** "Special orders" (no questions asked)
 - **Inventory:** Boarding axes, harpoons, net launchers, waterproof weapons
 
-##### Sawbones Surgery
+##### [[Sawbones Surgery]]
 
 **Description:** Questionable medical practices. Doc Harrow offers risky surgery and folk medicine.
 
@@ -636,13 +636,13 @@ Families can maintain their merit status for up to three generations before desc
 
 **Overview:** Underground warrens housing those with no merit status. Survival-focused community, gray/black markets.
 
-### The Depths
+### [[The Depths]]
 
 **Overview:** Desperation breeds both solidarity and exploitation. Chaos Cult recruitment active.
 
 #### Services & Key Locations
 
-##### The Hidden Door
+##### [[The Hidden Door (Inn)]]
 
 **Description:** Underground inn offering floor space for 2cp per night. Senna Darkwell provides sanctuary.
 
@@ -658,10 +658,10 @@ Families can maintain their merit status for up to three generations before desc
 
 ##### Underground Market
 
-**Description:** Black market run by Kex the Fence. Stolen goods, illegal items, no questions asked.
+**Description:** Black market run by [[Kex the Fence]]. Stolen goods, illegal items, no questions asked.
 
 **NPCs:**
-- **Kex the Fence** (Halfling crime figure)
+- **[[Kex the Fence]]** (Halfling crime figure)
 - **Market Vendors** - Selling questionable goods
 - **Lookouts** - Watch for City Watch raids
 
@@ -671,7 +671,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (6pm-midnight):** Peak business, dangerous deals
 - **Goods:** Stolen items (30% market value), illegal weapons, forbidden texts
 
-##### Shadow's Edge Armory
+##### [[Shadow's Edge Armory]]
 
 **Description:** Illegal weapons dealer. "Scar" (actually Darius Stone) sells stolen military gear and plans revolution.
 
@@ -686,7 +686,7 @@ Families can maintain their merit status for up to three generations before desc
 - **Evening (8pm-midnight):** Revolution planning meetings
 - **Inventory:** Stolen military weapons, illegal poisons, revolution pamphlets
 
-##### The Desperate's Refuge
+##### [[The Desperate's Refuge]]
 
 **Description:** Unlicensed healing. Mother Cass provides mystery tonics and lamplight surgery.
 
@@ -733,19 +733,19 @@ Originally designed to prevent dynasties, the rule now creates a class of "gener
 
 ### Key Mysteries
 
-**Scholar Quarter Secrets**
-- Hidden research into the Codex and ancient magical theories
+**[[Scholar Quarter]] Secrets**
+- Hidden research into the [[Codex]] and ancient magical theories
 - Underground meetings where academics question Merit Council doctrine
 - [[Josh]]'s markings match symbols in restricted archive sections (Archive of Lost Histories)
 - Secret society of scholars investigating pre-Council history
 
-**Merchant District Dynamics**
+**[[Merchant District]] Dynamics**
 - Black market operations beneath legitimate businesses
 - [[Brightcoin Emergency Supplies]] has connections to multiple factions
 - [[Il Drago Rosso]] serves as neutral ground for information exchange
 - Smuggling routes through sewers and delivery tunnels
 
-**Government Complex Operations**
+**[[Government Complex]] Operations**
 - Extensive surveillance and intelligence gathering
 - Factional power struggles within the Council itself
 - Testing centers sometimes rig results for political purposes
@@ -756,17 +756,17 @@ Originally designed to prevent dynasties, the rule now creates a class of "gener
 - **Council Members** - Various specializations and political alignments
 - **Professor Zero** - Academic with secret cult connections
 - **Dispossessed Leaders** - Organizing resistance at The Gathering Stone
-- **Merchant Guild Representatives** - Economic power brokers at The Gilded Scale
+- **Merchant Guild Representatives** - Economic power brokers at [[The Gilded Scale]]
 - **Lord Thalorien Moonwhisper** - Noble in Skyview Estates, owes party a debt
 - **Marcus Brightcoin** - Information broker at Brightcoin Emergency Supplies
-- **Veridian the Ancient** - Historian at Archive of Lost Histories
+- **[[Veridian]] the Ancient** - Historian at [[Archive of Lost Histories]]
 
 ### Campaign Hooks
 
 **Immediate Opportunities**
-- **Steel Dragon Investigation** - Serial killer in Merchant District
+- **[[Steel Dragon]] Investigation** - Serial killer in [[Merchant District]]
 - **Geist's Smuggling Ring** - [[Kyle/Nameless]]'s quest leads to Warehouse 7
-- **The Codex Quest** - [[Manny]]'s search leads to Archive of Lost Histories
+- **[[The Codex]] Quest** - [[Manny]]'s search leads to [[Archive of Lost Histories]]
 - **Family Protection** - [[Nikki]]'s restaurant threatened by aggressive faction
 - **The Ghost of Elaris** - Investigation of corrupted forest and Chaos Cult activity
 - **House Moonwhisper** - Access to Tier 2 through grateful noble family
@@ -783,10 +783,10 @@ Originally designed to prevent dynasties, the rule now creates a class of "gener
 
 **Available Resources**
 - Extensive libraries (Grand Academy, Resonance Library, Archive of Lost Histories)
-- Professional guilds (The Gilded Scale, various trade guilds)
+- Professional guilds ([[The Gilded Scale]], various trade guilds)
 - Training facilities (Grand Academy, Merit Testing Centers)
 - Well-stocked merchants (all tiers have appropriate shops)
-- Healing services (Grand Cathedral to The Desperate's Refuge, varying quality/price)
+- Healing services (Grand Cathedral to [[The Desperate's Refuge]], varying quality/price)
 
 **Law Enforcement Layers**
 - **City Watch** - Patrol major districts, respond to crimes

@@ -66,7 +66,7 @@ graph TD
   - **None this session** - Solo exploration
   - **Hidden Mastermind:** [[Octavia (Subject #8)]] (Subject #8, unknown to party)
 **Toggle: Important Items**
-  - **Animated Heartstone:** Grants feats, breaks axe corruption
+  - **[[Animated Heartstone]]:** Grants feats, breaks axe corruption
   - **Giant's Axe:** Too large/cursed until cleansed, then [[Ian/Rakash]] claims it
   - **Zhaask Symbols:** Draconic writing on axe (partial translation possible)
 
@@ -78,8 +78,8 @@ graph TD
   Light sensitivity
   1. 22 - Shadow
   1. 15 - [[Kyle/Nameless]]
-  1. 11 - Biago
-  1. 11 - Monomi
+  1. 11 - [[Biago]]
+  1. 11 - [[Monomi]]
   1. 6 - Rahk-ash
 ### Node 1: Cloud Compass Skill Challenge
 
@@ -158,9 +158,9 @@ Shadow Creatures
 1. 23 - [[Kyle/Nameless]]
 1. 14 - Shadow Creatures
 1. 14 - Rack ash
-1. 13 - Biago
+1. 13 - [[Biago]]
 1. 12 - Shadow Creatures
-1. 1 - Monomi
+1. 1 - [[Monomi]]
 **Boxed Text:**
 > You emerge into a natural cave chamber, its ceiling studded with dripping stalactites. Purple mist clings to the uneven floor in pools. The corruption here is thick—you can taste metal in the air, feel the unnatural cold seeping through your clothes. In the dim purple glow, you see movement: dark shapes that might be rats, but they're too quiet, too purposeful. They're watching you from the walls and ceiling.
 **Reactive Skill Checks:**
@@ -193,9 +193,9 @@ Shadow Creatures
 - Let party test tactics in low-stakes fight
 **AREA 2: CORRUPTION NEXUS**
 1. Rackash
-1. Biago
+1. [[Biago]]
 1. [[Kyle/Nameless]]
-1. Monomi
+1. [[Monomi]]
 1. Shadow Guard 1 - 43
 - [x]  Shadow Guard 2 - 40
 
@@ -283,7 +283,7 @@ This room has **no final guardian** this time. Party must navigate:
 > - **[[Manny]]:** Blade and magic becoming one
 > - **[[Nikki]]:** Shadow and arcane merging
 > - **[[Ian/Rakash]]:** Primal fury perfected
-> - **Kyle:** Rainbow spectrum expanding
+> - **[[Kyle]]:** Rainbow spectrum expanding
 > - **[[Josh]]:** Markings glowing with purpose
    >
 > The power manifests within you - you gain a new feat immediately!

@@ -12,11 +12,11 @@ location: Traveling (formerly Ratterdan)
 related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero]
 ---
 
-# [[Ian/Rakash]] (Ian's Character)
+# [[Ian/Rakash]] ([[Ian]]'s Character)
 
 ## Player Summary
 
-**[[Ian/Rakash]]** is a goblin barbarian with prosthetic limbs, sole survivor of Ratterdan's destruction by a storm giant. Saved by Kyle after the attack, he now seeks revenge against the giant and the traitor who betrayed his village. A self-taught rapier fighter turned barbarian, [[Ian/Rakash]] carries the weight of his lost home and the mystery of his survival.
+**[[Ian/Rakash]]** is a goblin barbarian with prosthetic limbs, sole survivor of Ratterdan's destruction by a storm giant. Saved by [[Kyle]] after the attack, he now seeks revenge against the giant and the traitor who betrayed his village. A self-taught rapier fighter turned barbarian, [[Ian/Rakash]] carries the weight of his lost home and the mystery of his survival.
 
 ### Basic Information
 - **Player:** Player 3 (Ian)
@@ -102,7 +102,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Worked for Niletrix for 10 years
 - Lived in Ratterdan
 - Village destroyed by storm giant
-- Saved by Kyle
+- Saved by [[Kyle]]
 - Recovered in IdleCreek, received prosthetics
 
 ### Session 0 (2025-09-21)
@@ -144,7 +144,7 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 - Prosthetics = physical reminder of loss
 - Revenge arc can resolve or consume character
 - Beholder betrayal revelation will be devastating
-- Kyle relationship is anchor preventing total darkness
+- [[Kyle]] relationship is anchor preventing total darkness
 - Return to Ratterdan (Session 1) will be emotionally charged
 
 ### Combat Considerations

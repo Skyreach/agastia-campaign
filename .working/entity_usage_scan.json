@@ -1,0 +1,409 @@
+{
+  "orphaned": [
+    {
+      "file": "Campaign_Core/Giant_Axe_Artifact.md",
+      "name": "Giant Axe",
+      "ref_count": 0
+    },
+    {
+      "file": "Campaign_Core/The_Codex.md",
+      "name": "The Dominion Evolution Codex",
+      "ref_count": 0
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Inkwell_and_Quill.md",
+      "name": "Inkwell and Quill",
+      "ref_count": 0
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Public_Temple.md",
+      "name": "Public Temple",
+      "ref_count": 0
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_The_Delizioso_Trattoria.md",
+      "name": "The Delizioso Trattoria",
+      "ref_count": 0
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Working_Class_Armory.md",
+      "name": "Working Class Armory",
+      "ref_count": 0
+    },
+    {
+      "file": "Locations/Districts/The_Castle.md",
+      "name": "The Castle",
+      "ref_count": 0
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Kaelborn_Bandit_Boss.md",
+      "name": "Kaelborn",
+      "ref_count": 0
+    },
+    {
+      "file": "Quests/Quest_Codex_Search.md",
+      "name": "Codex Search",
+      "ref_count": 0
+    },
+    {
+      "file": "Quests/Quest_Geist_Investigation.md",
+      "name": "Geist Investigation",
+      "ref_count": 0
+    },
+    {
+      "file": "Quests/Quest_Giant_Axe.md",
+      "name": "Giant Axe Quest",
+      "ref_count": 0
+    },
+    {
+      "file": "Sessions/Session_0_Character_Creation.md",
+      "name": "Session 0 - Character Creation",
+      "ref_count": 0
+    },
+    {
+      "file": "Sessions/Session_1_Caravan_to_Ratterdan.md",
+      "name": "Session 1 - Caravan to Ratterdan",
+      "ref_count": 0
+    },
+    {
+      "file": "Sessions/Session_2_Road_to_Agastia.md",
+      "name": "Session 2 - Road to Agastia",
+      "ref_count": 0
+    },
+    {
+      "file": "Sessions/Session_3_The_Steel_Dragon_Begins.md",
+      "name": "Session 3 - The Steel Dragon Begins",
+      "ref_count": 0
+    }
+  ],
+  "low_usage": [
+    {
+      "file": "Campaign_Core/Campaign_Overview.md",
+      "name": "Campaign Overview",
+      "ref_count": 1
+    },
+    {
+      "file": "Locations/Regions/Agastia_Region.md",
+      "name": "Agastia Region",
+      "ref_count": 1
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Stonewick_Herbalist.md",
+      "name": "Stonewick Herbalist",
+      "ref_count": 1
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_The_Gilded_Scale.md",
+      "name": "The Gilded Scale",
+      "ref_count": 1
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_The_Grand_Cathedral.md",
+      "name": "The Grand Cathedral",
+      "ref_count": 1
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_The_Wanderers_Pack.md",
+      "name": "The Wanderer's Pack",
+      "ref_count": 1
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Sawbones_Surgery.md",
+      "name": "Sawbones Surgery",
+      "ref_count": 2
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_The_Desperates_Refuge.md",
+      "name": "The Desperate's Refuge",
+      "ref_count": 2
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Tidecaller_Armory.md",
+      "name": "Tidecaller Armory",
+      "ref_count": 2
+    },
+    {
+      "file": "NPCs/Major_NPCs/The_Patron.md",
+      "name": "The Patron",
+      "ref_count": 1
+    },
+    {
+      "file": "NPCs/Faction_NPCs/Decimate_Project_Subjects.md",
+      "name": "Decimate Project Subjects",
+      "ref_count": 1
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Thava_Thornscale.md",
+      "name": "Thava Thornscale",
+      "ref_count": 1
+    },
+    {
+      "file": "NPCs/Mystery_NPCs/Blood_Target_Unknown.md",
+      "name": "Blood Target (Unknown)",
+      "ref_count": 1
+    }
+  ],
+  "referenced": [
+    {
+      "file": "Locations/Cities/Agastia_City.md",
+      "name": "Agastia",
+      "ref_count": 258
+    },
+    {
+      "file": "Factions/Faction_Merit_Council.md",
+      "name": "Merit Council",
+      "ref_count": 233
+    },
+    {
+      "file": "Player_Characters/PC_Nikki.md",
+      "name": "Nikki",
+      "ref_count": 188
+    },
+    {
+      "file": "NPCs/Major_NPCs/Professor_Zero.md",
+      "name": "Professor Zero",
+      "ref_count": 160
+    },
+    {
+      "file": "Player_Characters/PC_Manny.md",
+      "name": "Manny",
+      "ref_count": 139
+    },
+    {
+      "file": "Factions/Faction_Chaos_Cult.md",
+      "name": "Chaos Cult",
+      "ref_count": 98
+    },
+    {
+      "file": "Factions/Faction_Dispossessed.md",
+      "name": "Dispossessed",
+      "ref_count": 96
+    },
+    {
+      "file": "Player_Characters/PC_Ian_Rakash.md",
+      "name": "Ian/Rakash",
+      "ref_count": 90
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Octavia_Subject8.md",
+      "name": "Octavia (Subject #8)",
+      "ref_count": 85
+    },
+    {
+      "file": "Factions/Faction_Decimate_Project.md",
+      "name": "Decimate Project",
+      "ref_count": 84
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Nona_Subject9.md",
+      "name": "Nona (Subject #9)",
+      "ref_count": 67
+    },
+    {
+      "file": "NPCs/Major_NPCs/Steel_Dragon.md",
+      "name": "Steel Dragon",
+      "ref_count": 60
+    },
+    {
+      "file": "Player_Characters/PC_Josh.md",
+      "name": "Josh",
+      "ref_count": 50
+    },
+    {
+      "file": "Player_Characters/PC_Kyle_Nameless.md",
+      "name": "Kyle/Nameless",
+      "ref_count": 46
+    },
+    {
+      "file": "Locations/Districts/Merchant_District.md",
+      "name": "Merchant District",
+      "ref_count": 42
+    },
+    {
+      "file": "Locations/Towns/Meridians_Rest.md",
+      "name": "Meridian's Rest",
+      "ref_count": 35
+    },
+    {
+      "file": "Locations/Districts/Scholar_Quarter.md",
+      "name": "Scholar Quarter",
+      "ref_count": 34
+    },
+    {
+      "file": "Locations/Districts/The_Depths.md",
+      "name": "The Depths",
+      "ref_count": 33
+    },
+    {
+      "file": "Locations/Wilderness/Infinite_Forest.md",
+      "name": "Infinite Forest",
+      "ref_count": 23
+    },
+    {
+      "file": "Locations/Districts/Dock_District.md",
+      "name": "Dock District",
+      "ref_count": 20
+    },
+    {
+      "file": "Locations/Cities/Agastia/Location_Archive_of_Lost_Histories.md",
+      "name": "Archive of Lost Histories",
+      "ref_count": 20
+    },
+    {
+      "file": "NPCs/Major_NPCs/NPC_Krythak_Stormbringer.md",
+      "name": "Krythak Stormbringer",
+      "ref_count": 18
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Harren_Dock_Worker.md",
+      "name": "Harren (Dock Worker)",
+      "ref_count": 17
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Kex_the_Fence.md",
+      "name": "Kex the Fence",
+      "ref_count": 15
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Decum_Subject10.md",
+      "name": "Decum (Subject #10)",
+      "ref_count": 12
+    },
+    {
+      "file": "Factions/Faction_Storm_Giant_Warband.md",
+      "name": "Storm Giant Warband",
+      "ref_count": 12
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Geist_Bandit_Lieutenant.md",
+      "name": "Geist",
+      "ref_count": 11
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Mira_Saltwind.md",
+      "name": "Mira Saltwind",
+      "ref_count": 11
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Hexus_Subject6.md",
+      "name": "Hexus (Subject #6)",
+      "ref_count": 10
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Stonemark_Antiquities.md",
+      "name": "Stonemark Antiquities",
+      "ref_count": 10
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Septimus_Subject7.md",
+      "name": "Septimus (Subject #7)",
+      "ref_count": 9
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Trinity_Subject3.md",
+      "name": "Trinity (Subject #3)",
+      "ref_count": 9
+    },
+    {
+      "file": "Locations/Districts/Research_Quarter.md",
+      "name": "Research Quarter",
+      "ref_count": 9
+    },
+    {
+      "file": "Locations/Wilderness/Ratterdan_Ruins.md",
+      "name": "Ratterdan Ruins",
+      "ref_count": 9
+    },
+    {
+      "file": "Locations/Cities/Agastia/Inn_The_Hidden_Door.md",
+      "name": "The Hidden Door (Inn)",
+      "ref_count": 9
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Quincy_Subject5.md",
+      "name": "Quincy (Subject #5)",
+      "ref_count": 8
+    },
+    {
+      "file": "NPCs/Faction_NPCs/NPC_Tetran_Subject4.md",
+      "name": "Tetran (Subject #4)",
+      "ref_count": 8
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Corvin_Tradewise.md",
+      "name": "Corvin Tradewise",
+      "ref_count": 7
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Mirella_Stonemark.md",
+      "name": "Mirella Stonemark",
+      "ref_count": 7
+    },
+    {
+      "file": "Locations/Districts/Lower_Residential_District.md",
+      "name": "Lower Residential District",
+      "ref_count": 7
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Il_Drago_Rosso.md",
+      "name": "Il Drago Rosso",
+      "ref_count": 7
+    },
+    {
+      "file": "Locations/Districts/Noble_Quarter.md",
+      "name": "Noble Quarter",
+      "ref_count": 6
+    },
+    {
+      "file": "Locations/Cities/Agastia/Tavern_The_Copper_Mug.md",
+      "name": "The Copper Mug (Tavern)",
+      "ref_count": 6
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Veridian_Scrollkeeper.md",
+      "name": "Veridian Scrollkeeper",
+      "ref_count": 5
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Blades_of_Glory.md",
+      "name": "Blades of Glory",
+      "ref_count": 5
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Brightcoin_Emergency_Supplies.md",
+      "name": "Brightcoin Emergency Supplies",
+      "ref_count": 5
+    },
+    {
+      "file": "Factions/Faction_Bandit_Network_Geist_Kaelborn.md",
+      "name": "Bandit Network (Geist & Kaelborn)",
+      "ref_count": 4
+    },
+    {
+      "file": "Locations/Districts/Government_Complex.md",
+      "name": "Government Complex",
+      "ref_count": 4
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Saltwind_General_Supply.md",
+      "name": "Saltwind General Supply",
+      "ref_count": 4
+    },
+    {
+      "file": "Locations/Cities/Agastia/Shop_Shadows_Edge_Armory.md",
+      "name": "Shadow's Edge Armory",
+      "ref_count": 4
+    },
+    {
+      "file": "NPCs/Location_NPCs/NPC_Torvin_Greycask.md",
+      "name": "Torvin Greycask",
+      "ref_count": 3
+    },
+    {
+      "file": "Campaign_Core/Animated_Heartstone_Artifact.md",
+      "name": "Animated Heartstone",
+      "ref_count": 3
+    }
+  ],
+  "total_wikilinks": 2561
+}

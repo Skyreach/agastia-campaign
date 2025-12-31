@@ -12,11 +12,11 @@ faction: Decimate Project
 related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 ---
 
-# Monomi "[[Manny]]"
+# [[Monomi]] "[[Manny]]"
 
 ## Player Summary
 
-**[[Manny]]** is an energetic half-orc Eldritch Knight, the newest and weakest member of [[Professor Zero]]'s mysterious [[Decimate Project]]. Marked with the number 1, he has no memory of his life before age 10 when the Professor took him in. He travels with [[Nikki]] (#2), seeking the Dominion Evolution Codex on behalf of their enigmatic patron.
+**[[Manny]]** is an energetic half-orc Eldritch Knight, the newest and weakest member of [[Professor Zero]]'s mysterious [[Decimate Project]]. Marked with the number 1, he has no memory of his life before age 10 when the Professor took him in. He travels with [[Nikki]] (#2), seeking the Dominion Evolution [[Codex]] on behalf of their enigmatic patron.
 
 ### Basic Information
 - **Player:** Player 1
@@ -41,8 +41,8 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 ## Current Goals
 
 ### Active Goals
-- **Find the Dominion Evolution Codex** [Long-term] - Primary mission from [[Professor Zero]]
-- **Gather information about Codex location** [Short-term] - Current focus
+- **Find the Dominion Evolution [[Codex]]** [Long-term] - Primary mission from [[Professor Zero]]
+- **Gather information about [[Codex]] location** [Short-term] - Current focus
 - **Meet a real dragon** [Personal] - Life dream
 
 ### Completed Goals
@@ -52,7 +52,7 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 ## Relationships
 
 ### Party Members
-- **[[Nikki]]/Biago (#8):** Fellow [[Decimate Project]] member, traveling together on Codex mission
+- **[[Nikki]]/[[Biago]] (#8):** Fellow [[Decimate Project]] member, traveling together on [[Codex]] mission
 - **[[Ian/Rakash]]:** Knows [[Professor Zero]] "a little" (connection unclear)
 
 ### NPCs
@@ -91,13 +91,13 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 - **Memory Wipe:** [[Professor Zero]] kidnapped and memory-wiped him at age 10
 - **Decimate Purpose:** Unknown even to [[Professor Zero]]'s true intentions
 - **Potential Recognition:** Isiliva may recognize him if they meet
-- **Codex Connection:** Unknown why [[Professor Zero]] wants the Codex
+- **[[Codex]] Connection:** Unknown why [[Professor Zero]] wants the [[Codex]]
 
 ### Future Hooks
 - Rediscovering adoptive father Isiliva
 - Learning truth about [[Professor Zero]]
 - Meeting other Decimate siblings
-- Discovering connection between Codex and [[Decimate Project]]
+- Discovering connection between [[Codex]] and [[Decimate Project]]
 - Fulfilling dragon dream (multiple dragon NPCs in campaign)
 
 ### Character Development Notes
