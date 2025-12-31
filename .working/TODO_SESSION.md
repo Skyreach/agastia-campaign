@@ -1,5 +1,5 @@
 # Session TODO List
-Last updated: 2025-12-30 04:00
+Last updated: 2025-12-30 07:30
 
 ## ✅ CRITICAL BUG FIXES COMPLETED (Session 3 Issues)
 
@@ -431,3 +431,63 @@ All critical bug fixes complete. Changes ready to sync to Notion:
 - [ ] Add search functionality to wiki skill
 - [ ] Create wiki navigation structure in Notion
 - [ ] Add "Related Pages" section to entity templates
+
+## ✅ SESSION 3 WIKI INFRASTRUCTURE (2025-12-30 07:00-07:30)
+
+### Completed - Wiki System Enhancement
+- [x] [07:00 → 07:05] Create .working/Session_3_Dependencies.md dependency tracking file
+  - **Created:** Comprehensive dependency analysis for Session 3
+  - **Coverage:** 95% of entities exist (18/19), only Inspiring Tables was initially missing (found during verification)
+  - **Analysis:** 45 wikilink mentions across 19 unique entities
+  - **Categories:** PCs (3), NPCs (4), Factions (1), Locations (8), Campaign Core (1), Resources (1)
+  - **Duplicates:** None found - all entities use consistent naming
+  - **Files:** .working/Session_3_Dependencies.md
+
+- [x] [07:05 → 07:10] Run format compliance audit on Session 3 dependency files
+  - **Audit Results:** 45/82 files (54.9%) have format errors, 58/82 (70.7%) have warnings
+  - **Auto-Fixed:** 3 files (Geist H1 title, Agastia City H1 title, The Codex H1 title)
+  - **Note:** Most errors are missing required sections (structural, not auto-fixable)
+  - **Decision:** Focus on wikilinks and sync integrity, not format perfection
+  - **Files:** NPCs/Faction_NPCs/NPC_Geist_Bandit_Lieutenant.md, Locations/Cities/Agastia_City.md, Campaign_Core/The_Codex.md
+
+- [x] [07:10 → 07:20] Update WIKI_INDEX.md with current Notion IDs
+  - **Updated:** All 80 synced entities with latest Notion page IDs from .notion_sync_state.json
+  - **Structure:** Organized by 7 categories (PCs, NPCs, Factions, Locations, Campaign Core, Quests, Sessions)
+  - **Added:** Entity aliases section (11 common short names → full names)
+  - **Added:** Session 3 Quick Reference section for easy session prep
+  - **Added:** Maintenance instructions and usage guide
+  - **Files:** WIKI_INDEX.md
+
+- [x] [07:20 → 07:25] Verify wiki-lookup skill exists and is properly documented
+  - **Status:** Skill already exists at .claude/skills/wiki-lookup.md
+  - **Features:** Single entity lookup, category listing, sync status check
+  - **Data Source:** WIKI_INDEX.md
+  - **Examples:** Comprehensive usage examples included
+  - **Files:** .claude/skills/wiki-lookup.md
+
+- [x] [07:25 → 07:30] Add missing wikilinks to Session 3
+  - **Analysis:** Ran add_wikilinks.py in dry-run mode
+  - **Found:** 5 missing wikilinks
+  - **Added:** 1x [[Shadow's Edge Armory]], 3x [[Chaos Cult]], 1x [[Veridian]]
+  - **Result:** All Session 3 entity mentions now properly wikilinked
+  - **Files:** Sessions/Session_3_The_Steel_Dragon_Begins.md
+
+## 📋 NEXT STEPS (Pending)
+
+### High Priority
+- [ ] Commit and push all changes to remote repository
+  - Modified files: 5 (.working/Session_3_Dependencies.md, WIKI_INDEX.md, Sessions/Session_3_The_Steel_Dragon_Begins.md, .working/TODO_SESSION.md, 3 H1 title fixes)
+  - New files: .working/Session_3_Dependencies.md (if not already tracked)
+  - Action: git add, git commit, git push
+
+### Optional Enhancements (From Dependency Analysis)
+- [ ] Create NPC_Captain_Valerius.md (recurring Steel Dragon investigator)
+- [ ] Create NPC_Lord_Thalorien_Moonwhisper.md (Ghost of Elaris quest reward NPC)
+- [ ] Create NPC_Elaris_Moonwhisper.md (Ghost quest giver)
+- [ ] Add "Warehouse 7" subsection to Dock_District.md (Geist's operation hub)
+
+### Future Maintenance
+- [ ] Create .config/update_wiki_index.py automation script
+- [ ] Address remaining 45 format compliance errors (structural issues)
+- [ ] Fix 50 format warnings flagged by pre-commit hook (non-blocking)
+

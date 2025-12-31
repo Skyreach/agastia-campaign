@@ -7,7 +7,7 @@ tags: [npc, bandit-network, lieutenant, human, rogue]
 threat_level: Medium
 ---
 
-# [[Geist (Bandit Lieutenant)]] - [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]] Lieutenant
+# Geist
 
 **[[Geist (Bandit Lieutenant)]]** is a human rogue, a cunning and ruthless lieutenant within the [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]]. He is responsible for coordinating smaller raids and managing local cells. Mentioned 59 times in Session 2.
 

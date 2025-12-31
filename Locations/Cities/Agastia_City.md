@@ -10,7 +10,7 @@ version: "1.0.0"
 tags: [city, starting-location, merit-council, civilization, capital, tier-system]
 ---
 
-# Agastia - The Merit City
+# Agastia
 
 ## Player Summary
 

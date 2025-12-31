@@ -179,7 +179,7 @@ The party will visit or hear about these locations during Session 3, organized b
 > - Travel north toward Scholar's Gate (5 blocks on Academy Avenue)?"
 
 **Moving from Job Board to Il Drago Rosso:**
-> "You walk west on Market Street. You pass Shadow's Edge Armory where a blacksmith hammers at an anvil, then a curiosity dealer's window full of strange trinkets, and finally a crowded tavern where laughter spills into the street. Three blocks from the plaza, you spot the red dragon banner hanging above a warm, inviting doorway."
+> "You walk west on Market Street. You pass [[Shadow's Edge Armory]] where a blacksmith hammers at an anvil, then a curiosity dealer's window full of strange trinkets, and finally a crowded tavern where laughter spills into the street. Three blocks from the plaza, you spot the red dragon banner hanging above a warm, inviting doorway."
 
 **Moving from Job Board to Murder Scene:**
 > "You walk south past the silk merchant's colorful awnings and the warm smell of fresh bread from Goldwheat Bakery. Between them, a narrow alley opens to your right - dark and quiet compared to the busy street."
@@ -217,23 +217,23 @@ The party will visit or hear about these locations during Session 3, organized b
    - Ancient oak split and oozing shadow (similar to encounter #14 but more advanced)
    - A **Wood Woad** corrupted by shadow magic guards the tree
    - At the tree's base: A ritual circle and evidence someone has been feeding the tree victims
-3. **The Culprit:** Investigation reveals signs of a robed figure visiting regularly (Chaos Cult member experimenting with corruption magic)
+3. **The Culprit:** Investigation reveals signs of a robed figure visiting regularly ([[Chaos Cult]] member experimenting with corruption magic)
 
 **Rewards:**
 - **Elaris's Blessing:** Once per long rest, a character can call upon Elaris for advantage on a death saving throw
 - **Lord Thalorien's Gratitude:** 150 gp reward and an invitation to House Moonwhisper in Agastia (Tier 2 Noble Quarter)
-- **Information:** Evidence of Chaos Cult activity in the forest (connects to larger campaign)
+- **Information:** Evidence of [[Chaos Cult]] activity in the forest (connects to larger campaign)
 
 **DM Notes:**
 - This quest can be completed before or after arriving in Agastia
 - Lord Thalorien will not know his child is dead until the party tells him (emotional scene)
-- The Chaos Cult connection can be discovered via Religion/Arcana DC 15 on the ritual circle
+- The [[Chaos Cult]] connection can be discovered via Religion/Arcana DC 15 on the ritual circle
 - Wood Woad stats: AC 18, HP 75, resistant to bludgeoning/piercing
 
 ### [[Manny]] (Monomi) - [[The Codex]] Quest
 
 - The Job Board has a request from a scholar in the [[Scholar Quarter]] (Tier 3) to retrieve a rare book from a dangerous ruin. This could be a lead to the [[Archive of Lost Histories]].
-- A rumor overheard in a tavern mentions a strange, ancient elf named Veridian who knows everything about [[Agastia]]'s history.
+- A rumor overheard in a tavern mentions a strange, ancient elf named [[Veridian]] who knows everything about [[Agastia]]'s history.
 
 ### [[Nikki]] (Biago) - Family and Friends
 

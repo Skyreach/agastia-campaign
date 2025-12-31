@@ -7,7 +7,7 @@ importance: High
 tags: [codex, mystery, dominion-evolution, professor-zero, decimate-project, campaign-central]
 ---
 
-# The Dominion Evolution Codex - Central Campaign Mystery
+# The Dominion Evolution Codex
 
 ## Player Summary
 
