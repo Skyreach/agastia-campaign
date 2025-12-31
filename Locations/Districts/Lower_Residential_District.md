@@ -31,6 +31,9 @@ Unlike higher tiers' competitive striving or lower tiers' desperation, the Lower
 **[[The Copper Mug (Tavern)]]**
 Working-class tavern serving simple meals and cheap ale. Run by Marta Brennan, the tavern functions as community gathering place where residents share news, offer mutual support, and occasionally organize collective action. Basic lodging available (3cp/meal, 1sp/night shared room). The Mug represents the district's heart - unpretentious, welcoming, and fundamentally decent.
 
+**[[Working Class Armory]]**
+Affordable armor and weapon repairs for working-class residents. Basic equipment sales at fair prices for those who can't afford the premium armories in wealthier districts. Practical, functional gear without the fancy decorations.
+
 **Ironhand Repairs**
 General repair shop handling everything from furniture to tools to basic armor. Proprietor Garrett Ironhand (human craftsman) offers emergency loans to regular customers facing hard times. Prices fair, work honest, quality "good enough." The shop embodies district values - practical solutions, fair dealing, and community support over profit maximization.
 

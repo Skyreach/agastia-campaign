@@ -24,7 +24,10 @@ The sounds of haggling, the smell of exotic spices and fresh bread, the constant
 The party's source for starting equipment. This well-stocked shop specializes in outfitting adventurers and travelers with practical gear. The proprietor, Marcus Brightcoin, maintains surprising contacts with various factions and always seems to have exactly what's needed - sometimes before customers know they need it.
 
 **[[Il Drago Rosso]]**
-An authentic Italian restaurant run by [[Nikki]]'s parents (the Biago family). Known for excellent food and a welcoming atmosphere that crosses social boundaries. The restaurant serves as neutral ground where people from different merit levels and factions can meet informally. The Biagos somehow remain uninvolved in factional politics while being aware of everything happening in the district.
+An authentic Italian restaurant run by [[Nikki]]'s parents (the Biago family). Known for excellent food and a welcoming atmosphere that crosses social boundaries. The restaurant serves as neutral ground where people from different merit levels and factions can meet informally. The Biagos somehow remain uninvolved in factional politics while being aware of everything happening in the district. Main competitor: [[The Delizioso Trattoria]].
+
+**[[Public Temple]]**
+The district's main house of worship, open to all faiths and merit levels. Offers healing services, divine blessing ceremonies, and sanctuary for those in need.
 
 **[[The Gilded Scale]]**
 Premier merchant guild headquarters, where major trade deals are negotiated and commercial disputes are arbitrated. The guild wields significant economic influence and sometimes rivals the [[Merit Council]]'s political power.

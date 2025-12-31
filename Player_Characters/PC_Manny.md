@@ -41,7 +41,7 @@ related_entities: [Professor Zero, Nikki, Ian, Nona, Isiliva]
 ## Current Goals
 
 ### Active Goals
-- **Find the Dominion Evolution [[Codex]]** [Long-term] - Primary mission from [[Professor Zero]]
+- **Find the Dominion Evolution [[Codex]]** [Long-term] - Primary mission from [[Professor Zero]] (see [[Codex Search]])
 - **Gather information about [[Codex]] location** [Short-term] - Current focus
 - **Meet a real dragon** [Personal] - Life dream
 

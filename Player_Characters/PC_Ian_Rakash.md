@@ -40,9 +40,9 @@ related_entities: [Niletrix, Kyle, Zhaask, Storm Giant, Beholder, Professor Zero
 ## Current Goals
 
 ### Active Goals
-- **Master the giant's 8-foot axe** [Short-term] - Claimed from Ratterdan
+- **Master the [[Giant Axe]]** [Short-term] - Claimed from Ratterdan (see [[Giant Axe Quest]])
 - **Track down Zhaask the traitor** [Medium-term] - Betrayer must pay
-- **Kill the storm giant** [Long-term] - Primary revenge goal
+- **Kill the storm giant** [Long-term] - Primary revenge goal (see [[Giant Axe Quest]])
 - **Collect 11 gem types for beholder earring** [Side quest] - Ongoing collection
 
 ### Investigation Priorities

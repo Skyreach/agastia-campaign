@@ -29,6 +29,9 @@ Multiple facilities where citizens take examinations to prove their competence a
 **The Archives of Achievement**
 A massive library containing records of every significant achievement in [[Merit Council]] history, plus extensive collections of magical texts, historical documents, and research papers.
 
+**[[Inkwell and Quill]]**
+A well-stocked shop specializing in writing materials, rare parchments, magical inks, and scholarly supplies. Popular with students and researchers alike.
+
 **The Coffee House Circuit**
 A network of establishments where academics gather to debate, collaborate, and exchange ideas. Some conversations here shape [[Merit Council]] policy.
 

@@ -42,7 +42,7 @@ related_entities: [Lord Zaos Yllalar, Lady Eliyen, Kaelborn, Geist, Rakash, Bean
 ## Current Goals
 
 ### Active Goals
-- **Hunt down [[Kaelborn (Bandit Boss)]] (elf sorcerer) and [[Geist (Bandit Lieutenant)]] (dwarf assassin)** [Major] - Bandit leaders who kidnapped him
+- **Hunt down [[Kaelborn]] (elf sorcerer) and [[Geist]] (dwarf assassin)** [Major] - Bandit leaders who kidnapped him (see [[Geist Investigation]])
 - **Monitor for Feywild threats** [Ongoing] - Duty while on leave
 - **Collect and return Fey artifacts legitimately** [Ongoing] - Service to Lord Zaos
 
