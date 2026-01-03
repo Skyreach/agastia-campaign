@@ -129,25 +129,40 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
             })
         # Bold
         elif matched_text.startswith('**') and matched_text.endswith('**'):
-            rich_text.append({
-                'type': 'text',
-                'text': {'content': matched_text[2:-2]},
-                'annotations': {'bold': True}
-            })
+            inner_content = matched_text[2:-2]
+            # Recursively parse content inside bold for wikilinks
+            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, max_length)
+            # Apply bold annotation to each result
+            for item in inner_parsed:
+                if item['type'] == 'text':
+                    if 'annotations' not in item:
+                        item['annotations'] = {}
+                    item['annotations']['bold'] = True
+                rich_text.append(item)
         # Italic
         elif matched_text.startswith('*') and matched_text.endswith('*'):
-            rich_text.append({
-                'type': 'text',
-                'text': {'content': matched_text[1:-1]},
-                'annotations': {'italic': True}
-            })
+            inner_content = matched_text[1:-1]
+            # Recursively parse content inside italic for wikilinks
+            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, max_length)
+            # Apply italic annotation to each result
+            for item in inner_parsed:
+                if item['type'] == 'text':
+                    if 'annotations' not in item:
+                        item['annotations'] = {}
+                    item['annotations']['italic'] = True
+                rich_text.append(item)
         # Strikethrough
         elif matched_text.startswith('~~') and matched_text.endswith('~~'):
-            rich_text.append({
-                'type': 'text',
-                'text': {'content': matched_text[2:-2]},
-                'annotations': {'strikethrough': True}
-            })
+            inner_content = matched_text[2:-2]
+            # Recursively parse content inside strikethrough for wikilinks
+            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, max_length)
+            # Apply strikethrough annotation to each result
+            for item in inner_parsed:
+                if item['type'] == 'text':
+                    if 'annotations' not in item:
+                        item['annotations'] = {}
+                    item['annotations']['strikethrough'] = True
+                rich_text.append(item)
 
         last_end = match.end()
 
