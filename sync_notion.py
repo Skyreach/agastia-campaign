@@ -30,6 +30,18 @@ def load_notion_key():
         sys.exit(1)
     return key_file.read_text().strip()
 
+def load_block_cache():
+    """Load Notion block ID cache for direct section anchor links."""
+    cache_file = Path('.config/notion_block_cache.json')
+    if not cache_file.exists():
+        return {}
+    try:
+        with open(cache_file, 'r') as f:
+            cache = json.load(f)
+            return cache.get('pages', {})
+    except Exception:
+        return {}
+
 def get_notion_client():
     try:
         return Client(auth=load_notion_key())
@@ -68,10 +80,11 @@ def should_ignore(file_path, ignore_patterns):
 
     return False
 
-def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000):
+def parse_rich_text(text, notion_client=None, database_id=None, block_cache=None, max_length=2000):
     """
     Parse markdown formatting (bold, italic, code, wikilinks) into Notion rich_text format
     Supports [[wikilink]] syntax that links to other pages in the database
+    Supports [[page#section]] syntax with direct block links via cached block IDs
     """
     if not text:
         return []
@@ -104,9 +117,28 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
                 page_name = page_name.strip()
                 section_name = section_name.strip()
 
-            # Try to resolve wikilink to page ID
-            page_id = None
-            if notion_client and database_id:
+            # Check if we have a cached block URL for this section anchor
+            block_url = None
+            if section_name and block_cache:
+                page_cache = block_cache.get(page_name)
+                if page_cache:
+                    h3_blocks = page_cache.get('h3_blocks', {})
+                    section_data = h3_blocks.get(section_name)
+                    if section_data:
+                        block_url = section_data.get('url')
+
+            # If we have a block URL, create a direct clickable link
+            if block_url:
+                rich_text.append({
+                    'type': 'text',
+                    'text': {
+                        'content': section_name,
+                        'link': {'url': block_url}
+                    }
+                })
+            # Otherwise, try standard page mention
+            elif notion_client and database_id:
+                page_id = None
                 try:
                     # Search for page by name (without section anchor)
                     results = notion_client.databases.query(
@@ -122,18 +154,21 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
                 except:
                     pass  # If lookup fails, just use plain text
 
-            if page_id:
-                # Create mention link to page
-                rich_text.append({
-                    'type': 'mention',
-                    'mention': {'type': 'page', 'page': {'id': page_id}}
-                })
-                # If there's a section anchor, add it as plain text after the mention
-                if section_name:
+                if page_id:
+                    # Create mention link to page
                     rich_text.append({
-                        'type': 'text',
-                        'text': {'content': f'#{section_name}'}
+                        'type': 'mention',
+                        'mention': {'type': 'page', 'page': {'id': page_id}}
                     })
+                    # If there's a section anchor without block URL, add as text
+                    if section_name:
+                        rich_text.append({
+                            'type': 'text',
+                            'text': {'content': f'#{section_name}'}
+                        })
+                else:
+                    # Fallback to plain text with brackets
+                    rich_text.append({'type': 'text', 'text': {'content': f'[[{link_text}]]'}})
             else:
                 # Fallback to plain text with brackets
                 rich_text.append({'type': 'text', 'text': {'content': f'[[{link_text}]]'}})
@@ -149,7 +184,7 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
         elif matched_text.startswith('**') and matched_text.endswith('**'):
             inner_content = matched_text[2:-2]
             # Recursively parse content inside bold for wikilinks
-            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, max_length)
+            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, block_cache, max_length)
             # Apply bold annotation to each result
             for item in inner_parsed:
                 if item['type'] == 'text':
@@ -161,7 +196,7 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
         elif matched_text.startswith('*') and matched_text.endswith('*'):
             inner_content = matched_text[1:-1]
             # Recursively parse content inside italic for wikilinks
-            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, max_length)
+            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, block_cache, max_length)
             # Apply italic annotation to each result
             for item in inner_parsed:
                 if item['type'] == 'text':
@@ -173,7 +208,7 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
         elif matched_text.startswith('~~') and matched_text.endswith('~~'):
             inner_content = matched_text[2:-2]
             # Recursively parse content inside strikethrough for wikilinks
-            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, max_length)
+            inner_parsed = parse_rich_text(inner_content, notion_client, database_id, block_cache, max_length)
             # Apply strikethrough annotation to each result
             for item in inner_parsed:
                 if item['type'] == 'text':
@@ -206,7 +241,7 @@ def get_heading_level(line):
     return None
 
 
-def parse_single_block(lines, idx, notion_client=None, database_id=None):
+def parse_single_block(lines, idx, notion_client=None, database_id=None, block_cache=None):
     """Parse a single non-heading block. Returns (block_or_list, next_idx)"""
     if idx >= len(lines):
         return None, idx
@@ -249,7 +284,7 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
         return ({
             'object': 'block',
             'type': 'quote',
-            'quote': {'rich_text': parse_rich_text(' '.join(quote_lines), notion_client, database_id)}
+            'quote': {'rich_text': parse_rich_text(' '.join(quote_lines), notion_client, database_id, block_cache)}
         }, i)
 
     # Bulleted lists
@@ -257,7 +292,7 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
         return ({
             'object': 'block',
             'type': 'bulleted_list_item',
-            'bulleted_list_item': {'rich_text': parse_rich_text(line[2:], notion_client, database_id)}
+            'bulleted_list_item': {'rich_text': parse_rich_text(line[2:], notion_client, database_id, block_cache)}
         }, idx + 1)
 
     # Numbered lists
@@ -266,7 +301,7 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
         return ({
             'object': 'block',
             'type': 'numbered_list_item',
-            'numbered_list_item': {'rich_text': parse_rich_text(match.group(1), notion_client, database_id)}
+            'numbered_list_item': {'rich_text': parse_rich_text(match.group(1), notion_client, database_id, block_cache)}
         }, idx + 1)
 
     # Tables - convert to Notion table blocks
@@ -277,7 +312,7 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
         table_blocks = [{
             'object': 'block',
             'type': 'paragraph',
-            'paragraph': {'rich_text': parse_rich_text('**' + ' | '.join(header) + '**', notion_client, database_id)}
+            'paragraph': {'rich_text': parse_rich_text('**' + ' | '.join(header) + '**', notion_client, database_id, block_cache)}
         }]
 
         i = idx + 2
@@ -286,7 +321,7 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
             table_blocks.append({
                 'object': 'block',
                 'type': 'bulleted_list_item',
-                'bulleted_list_item': {'rich_text': parse_rich_text(' | '.join(row), notion_client, database_id)}
+                'bulleted_list_item': {'rich_text': parse_rich_text(' | '.join(row), notion_client, database_id, block_cache)}
             })
             i += 1
         return (table_blocks, i)
@@ -303,11 +338,11 @@ def parse_single_block(lines, idx, notion_client=None, database_id=None):
     return ({
         'object': 'block',
         'type': 'paragraph',
-        'paragraph': {'rich_text': parse_rich_text(line, notion_client, database_id)}
+        'paragraph': {'rich_text': parse_rich_text(line, notion_client, database_id, block_cache)}
     }, idx + 1)
 
 
-def collect_until_heading(lines, start_idx, parent_level, notion_client=None, database_id=None):
+def collect_until_heading(lines, start_idx, parent_level, notion_client=None, database_id=None, block_cache=None):
     """Collect blocks until we hit a heading of same or higher level"""
     blocks = []
     i = start_idx
@@ -322,7 +357,7 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
 
         # If it's a lower-level heading, parse it with its children
         if level is not None and level > parent_level:
-            heading_info, i = parse_heading_section(lines, i, notion_client, database_id)
+            heading_info, i = parse_heading_section(lines, i, notion_client, database_id, False, block_cache)
             if heading_info:
                 blocks.append(heading_info)
             continue
@@ -350,7 +385,7 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
                 if next_level is not None and next_level <= parent_level:
                     break
 
-                block, i = parse_single_block(lines, i, notion_client, database_id)
+                block, i = parse_single_block(lines, i, notion_client, database_id, block_cache)
                 if block:
                     if isinstance(block, list):
                         for b in block:
@@ -365,7 +400,7 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
             toggle_block = {
                 'object': 'block',
                 'type': 'toggle',
-                'toggle': {'rich_text': parse_rich_text(toggle_title, notion_client, database_id)}
+                'toggle': {'rich_text': parse_rich_text(toggle_title, notion_client, database_id, block_cache)}
             }
             blocks.append({'block': toggle_block, 'children': toggle_children})
             continue
@@ -384,7 +419,7 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
                 if lines[i].startswith('**Toggle:'):
                     break
 
-                block, i = parse_single_block(lines, i, notion_client, database_id)
+                block, i = parse_single_block(lines, i, notion_client, database_id, block_cache)
                 if block:
                     if isinstance(block, list):
                         for b in block:
@@ -395,13 +430,13 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
             toggle_block = {
                 'object': 'block',
                 'type': 'toggle',
-                'toggle': {'rich_text': parse_rich_text(toggle_title, notion_client, database_id)}
+                'toggle': {'rich_text': parse_rich_text(toggle_title, notion_client, database_id, block_cache)}
             }
             blocks.append({'block': toggle_block, 'children': toggle_children})
             continue
 
         # Parse regular block
-        block, i = parse_single_block(lines, i, notion_client, database_id)
+        block, i = parse_single_block(lines, i, notion_client, database_id, block_cache)
         if block:
             if isinstance(block, list):
                 for b in block:
@@ -412,7 +447,7 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
     return blocks, i
 
 
-def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_top_level=False):
+def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_top_level=False, block_cache=None):
     """
     Parse a heading and collect all content until next same-level heading.
     Returns (section_info, next_idx) where section_info has 'block' and 'children' keys.
@@ -430,7 +465,7 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_t
     heading_text = line.lstrip('#').strip()
 
     # Collect children
-    children, next_idx = collect_until_heading(lines, idx + 1, level, notion_client, database_id)
+    children, next_idx = collect_until_heading(lines, idx + 1, level, notion_client, database_id, block_cache)
 
     # H1-H3: Use Notion heading blocks
     if level <= 3:
@@ -445,7 +480,7 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_t
             'object': 'block',
             'type': block_type,
             block_type: {
-                'rich_text': parse_rich_text(heading_text, notion_client, database_id),
+                'rich_text': parse_rich_text(heading_text, notion_client, database_id, block_cache),
                 'is_toggleable': True if not (is_top_level and level == 1) else False
             }
         }
@@ -458,13 +493,13 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_t
             'object': 'block',
             'type': 'toggle',
             'toggle': {
-                'rich_text': parse_rich_text(f'**{heading_text}**', notion_client, database_id)
+                'rich_text': parse_rich_text(f'**{heading_text}**', notion_client, database_id, block_cache)
             }
         }
         return {'block': toggle_block, 'children': children}, next_idx
 
 
-def markdown_to_notion_blocks(content, notion_client=None, database_id=None):
+def markdown_to_notion_blocks(content, notion_client=None, database_id=None, block_cache=None):
     """
     Convert markdown to hierarchical Notion block structure.
     Returns list of sections with 'block' and 'children' keys.
@@ -488,12 +523,12 @@ def markdown_to_notion_blocks(content, notion_client=None, database_id=None):
             if level == 1:
                 seen_h1 = True
 
-            section, i = parse_heading_section(lines, i, notion_client, database_id, is_top_level)
+            section, i = parse_heading_section(lines, i, notion_client, database_id, is_top_level, block_cache)
             if section:
                 sections.append(section)
         else:
             # Top-level content
-            block, i = parse_single_block(lines, i, notion_client, database_id)
+            block, i = parse_single_block(lines, i, notion_client, database_id, block_cache)
             if block:
                 if isinstance(block, list):
                     for b in block:
@@ -551,6 +586,7 @@ def upload_blocks_with_children(notion, parent_id, sections, depth=0):
 def sync_to_notion(file_path, entry_type):
     """Sync a markdown file to Notion database with hierarchical nesting"""
     notion = get_notion_client()
+    block_cache = load_block_cache()
 
     with open(file_path, 'r') as f:
         post = frontmatter.load(f)
@@ -588,7 +624,7 @@ def sync_to_notion(file_path, entry_type):
     )
 
     # Convert markdown content to hierarchical Notion blocks (with wikilink support)
-    content_sections = markdown_to_notion_blocks(post.content, notion, DATABASES['entities'])
+    content_sections = markdown_to_notion_blocks(post.content, notion, DATABASES['entities'], block_cache)
 
     if results['results']:
         # Update existing page (preserve page ID to maintain wikilinks)
