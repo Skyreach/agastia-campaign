@@ -328,6 +328,290 @@
     "Quests/Quest_Missing_Person_Investigation.md": {
       "notion_page_id": "2dd693f0c6b481028beec747b60c63d1",
       "last_pushed_to_notion": "2026-01-03T05:25:49.529717+00:00"
+    },
+    "./Sessions/Session_3_The_Steel_Dragon_Begins.md": {
+      "notion_page_id": "2dd693f0c6b48186b6aedc41c2df7fca",
+      "last_pushed_to_notion": "2026-01-03T05:54:35.445709+00:00"
+    },
+    "./Sessions/Session_0_Character_Creation.md": {
+      "notion_page_id": "2dd693f0c6b481db96efcfaa0fb28357",
+      "last_pushed_to_notion": "2026-01-03T05:55:22.194752+00:00"
+    },
+    "./Sessions/Session_1_Caravan_to_Ratterdan.md": {
+      "notion_page_id": "2dd693f0c6b48133a8b6c8b6cdec8957",
+      "last_pushed_to_notion": "2026-01-03T05:56:13.839568+00:00"
+    },
+    "./Campaign_Core/Animated_Heartstone_Artifact.md": {
+      "notion_page_id": "2dd693f0c6b481f0b25bde84998b5400",
+      "last_pushed_to_notion": "2026-01-03T05:57:20.973079+00:00"
+    },
+    "./Campaign_Core/Campaign_Overview.md": {
+      "notion_page_id": "2dd693f0c6b48178a865eb021ef3026b",
+      "last_pushed_to_notion": "2026-01-03T05:58:27.368223+00:00"
+    },
+    "./Campaign_Core/Giant_Axe_Artifact.md": {
+      "notion_page_id": "2dd693f0c6b481978052c951ec67e84f",
+      "last_pushed_to_notion": "2026-01-03T05:58:29.054204+00:00"
+    },
+    "./Campaign_Core/The_Codex.md": {
+      "notion_page_id": "2dd693f0c6b4814c9379efcc3e4d01a1",
+      "last_pushed_to_notion": "2026-01-03T05:59:00.397250+00:00"
+    },
+    "./Factions/Faction_Bandit_Network_Geist_Kaelborn.md": {
+      "notion_page_id": "2dd693f0c6b4811a9a70d3dfb2f7915e",
+      "last_pushed_to_notion": "2026-01-03T05:59:32.417225+00:00"
+    },
+    "./Sessions/Session_2_Road_to_Agastia.md": {
+      "notion_page_id": "2dd693f0c6b481b0a13fc03e510283bd",
+      "last_pushed_to_notion": "2026-01-03T05:59:59.333310+00:00"
+    },
+    "./Factions/Faction_Decimate_Project.md": {
+      "notion_page_id": "2dd693f0c6b481c8bff2d7e49f742faf",
+      "last_pushed_to_notion": "2026-01-03T06:00:12.290942+00:00"
+    },
+    "./Factions/Faction_Merit_Council.md": {
+      "notion_page_id": "2dd693f0c6b4813ca6b5c824f86c1254",
+      "last_pushed_to_notion": "2026-01-03T06:00:13.756375+00:00"
+    },
+    "./Factions/Faction_Storm_Giant_Warband.md": {
+      "notion_page_id": "2dd693f0c6b481cda018fd81cec8c89e",
+      "last_pushed_to_notion": "2026-01-03T06:01:02.231962+00:00"
+    },
+    "./Locations/Cities/Agastia/Inn_The_Hidden_Door.md": {
+      "notion_page_id": "2dd693f0c6b481ccb1ded6df7f89da45",
+      "last_pushed_to_notion": "2026-01-03T06:01:29.487730+00:00"
+    },
+    "./Locations/Cities/Agastia/Location_Archive_of_Lost_Histories.md": {
+      "notion_page_id": "2dd693f0c6b48183ad33f907b23a4ef4",
+      "last_pushed_to_notion": "2026-01-03T06:01:52.271977+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Blades_of_Glory.md": {
+      "notion_page_id": "2dd693f0c6b481caaf04e30b47de79cc",
+      "last_pushed_to_notion": "2026-01-03T06:02:22.427458+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Brightcoin_Emergency_Supplies.md": {
+      "notion_page_id": "2dd693f0c6b4815387b4d6650b6614ff",
+      "last_pushed_to_notion": "2026-01-03T06:02:53.133642+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Il_Drago_Rosso.md": {
+      "notion_page_id": "2dd693f0c6b48123bf18cd34c56d537a",
+      "last_pushed_to_notion": "2026-01-03T06:03:45.378522+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Inkwell_and_Quill.md": {
+      "notion_page_id": "2dd693f0c6b481bd98a7f6cc1286e20a",
+      "last_pushed_to_notion": "2026-01-03T06:03:59.274493+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Public_Temple.md": {
+      "notion_page_id": "2dd693f0c6b4811e805efd70afdb78ed",
+      "last_pushed_to_notion": "2026-01-03T06:04:32.554307+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Saltwind_General_Supply.md": {
+      "notion_page_id": "2dd693f0c6b481da8dbdf111f498cbaa",
+      "last_pushed_to_notion": "2026-01-03T06:04:56.477419+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Sawbones_Surgery.md": {
+      "notion_page_id": "2dd693f0c6b48194ac4bec704aa5dfb2",
+      "last_pushed_to_notion": "2026-01-03T06:05:25.091824+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Shadows_Edge_Armory.md": {
+      "notion_page_id": "2dd693f0c6b481a0bb9bf6d64b87a12e",
+      "last_pushed_to_notion": "2026-01-03T06:06:07.638589+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Stonemark_Antiquities.md": {
+      "notion_page_id": "2dd693f0c6b48135a048d9ddd9f6bdfa",
+      "last_pushed_to_notion": "2026-01-03T06:06:43.456428+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_The_Desperates_Refuge.md": {
+      "notion_page_id": "2dd693f0c6b481cfa65ae5570bd25b32",
+      "last_pushed_to_notion": "2026-01-03T06:07:28.279830+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_The_Gilded_Scale.md": {
+      "notion_page_id": "2dd693f0c6b481618edef3322e1d268b",
+      "last_pushed_to_notion": "2026-01-03T06:08:06.377368+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Stonewick_Herbalist.md": {
+      "notion_page_id": "2dd693f0c6b48101bb11df6b305c0501",
+      "last_pushed_to_notion": "2026-01-03T06:08:14.183257+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_The_Grand_Cathedral.md": {
+      "notion_page_id": "2dd693f0c6b48190bf65d29267802472",
+      "last_pushed_to_notion": "2026-01-03T06:08:28.882962+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_The_Wanderers_Pack.md": {
+      "notion_page_id": "2dd693f0c6b48114b38bda0e1e760690",
+      "last_pushed_to_notion": "2026-01-03T06:09:08.177318+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Tidecaller_Armory.md": {
+      "notion_page_id": "2dd693f0c6b48101b9ecff25054b1807",
+      "last_pushed_to_notion": "2026-01-03T06:09:43.127663+00:00"
+    },
+    "./Locations/Cities/Agastia/Shop_Working_Class_Armory.md": {
+      "notion_page_id": "2dd693f0c6b481ec89a9ec922dff84d2",
+      "last_pushed_to_notion": "2026-01-03T06:10:10.413306+00:00"
+    },
+    "./Locations/Cities/Agastia/Tavern_The_Copper_Mug.md": {
+      "notion_page_id": "2dd693f0c6b481c2acb3c1df79bb2f33",
+      "last_pushed_to_notion": "2026-01-03T06:10:41.738351+00:00"
+    },
+    "./Locations/Districts/Dock_District.md": {
+      "notion_page_id": "2dd693f0c6b4817195d6c0880f0e079a",
+      "last_pushed_to_notion": "2026-01-03T06:11:46.274703+00:00"
+    },
+    "./Locations/Districts/Lower_Residential_District.md": {
+      "notion_page_id": "2dd693f0c6b4815ba0cfea4eecbfae62",
+      "last_pushed_to_notion": "2026-01-03T06:12:34.450984+00:00"
+    },
+    "./Locations/Districts/Merchant_District.md": {
+      "notion_page_id": "2dd693f0c6b481a3b5ced85c5bdf6be4",
+      "last_pushed_to_notion": "2026-01-03T06:12:56.969579+00:00"
+    },
+    "./Locations/Districts/Research_Quarter.md": {
+      "notion_page_id": "2dd693f0c6b48193a722f819d43e9cf8",
+      "last_pushed_to_notion": "2026-01-03T06:13:28.419951+00:00"
+    },
+    "./Locations/Cities/Agastia_City.md": {
+      "notion_page_id": "2dd693f0c6b48155a641de50b1740080",
+      "last_pushed_to_notion": "2026-01-03T06:13:33.601184+00:00"
+    },
+    "./Locations/Districts/Scholar_Quarter.md": {
+      "notion_page_id": "2dd693f0c6b481b79756e5858a6e1ab6",
+      "last_pushed_to_notion": "2026-01-03T06:14:26.499435+00:00"
+    },
+    "./Locations/Districts/The_Depths.md": {
+      "notion_page_id": "2dd693f0c6b48144ba00f95bcdd0cd2f",
+      "last_pushed_to_notion": "2026-01-03T06:14:46.258092+00:00"
+    },
+    "./Locations/Regions/Agastia_Region.md": {
+      "notion_page_id": "2dd693f0c6b4810998cfe27298d40cc7",
+      "last_pushed_to_notion": "2026-01-03T06:15:11.224454+00:00"
+    },
+    "./Locations/Towns/Meridians_Rest.md": {
+      "notion_page_id": "2dd693f0c6b4816395f0c5f3a0481498",
+      "last_pushed_to_notion": "2026-01-03T06:15:47.642905+00:00"
+    },
+    "./Locations/Wilderness/Infinite_Forest.md": {
+      "notion_page_id": "2dd693f0c6b4813cb05fd69ca180e089",
+      "last_pushed_to_notion": "2026-01-03T06:16:08.792576+00:00"
+    },
+    "./Locations/Wilderness/Ratterdan_Ruins.md": {
+      "notion_page_id": "2dd693f0c6b48178921ec5507bf8d1cb",
+      "last_pushed_to_notion": "2026-01-03T06:16:46.372684+00:00"
+    },
+    "./NPCs/Faction_NPCs/NPC_Geist_Bandit_Lieutenant.md": {
+      "notion_page_id": "2dd693f0c6b481cebf60d6e13ff6c2e3",
+      "last_pushed_to_notion": "2026-01-03T06:17:20.762669+00:00"
+    },
+    "./NPCs/Faction_NPCs/NPC_Hexus_Subject6.md": {
+      "notion_page_id": "2dd693f0c6b481b7992cd6c8a2b2fd8c",
+      "last_pushed_to_notion": "2026-01-03T06:17:30.251330+00:00"
+    },
+    "./NPCs/Faction_NPCs/NPC_Kaelborn_Bandit_Boss.md": {
+      "notion_page_id": "2dd693f0c6b4818a9aded2902bead1e1",
+      "last_pushed_to_notion": "2026-01-03T06:17:44.281556+00:00"
+    },
+    "./NPCs/Faction_NPCs/NPC_Nona_Subject9.md": {
+      "notion_page_id": "2dd693f0c6b4812f9801f263e17ea6da",
+      "last_pushed_to_notion": "2026-01-03T06:17:51.746351+00:00"
+    },
+    "./NPCs/Faction_NPCs/NPC_Septimus_Subject7.md": {
+      "notion_page_id": "2dd693f0c6b4810d8832c54011aea6ee",
+      "last_pushed_to_notion": "2026-01-03T06:18:11.012966+00:00"
+    },
+    "./NPCs/Faction_NPCs/NPC_Tetran_Subject4.md": {
+      "notion_page_id": "2dd693f0c6b48180bf6bf29d945c2e16",
+      "last_pushed_to_notion": "2026-01-03T06:18:21.304431+00:00"
+    },
+    "./NPCs/Faction_NPCs/Decimate_Project_Subjects.md": {
+      "notion_page_id": "2dd693f0c6b481b8b56ae8366cf97e2c",
+      "last_pushed_to_notion": "2026-01-03T06:19:41.137737+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Corvin_Tradewise.md": {
+      "notion_page_id": "2dd693f0c6b4813c9e2cdf57bf954208",
+      "last_pushed_to_notion": "2026-01-03T06:19:57.041851+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Harren_Dock_Worker.md": {
+      "notion_page_id": "2dd693f0c6b481268fbec9daf7f7b034",
+      "last_pushed_to_notion": "2026-01-03T06:20:14.835696+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Kex_the_Fence.md": {
+      "notion_page_id": "2dd693f0c6b4814da042c88787731605",
+      "last_pushed_to_notion": "2026-01-03T06:20:53.226348+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Mira_Saltwind.md": {
+      "notion_page_id": "2dd693f0c6b4813f8893df57022b323c",
+      "last_pushed_to_notion": "2026-01-03T06:21:33.814587+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Mirella_Stonemark.md": {
+      "notion_page_id": "2dd693f0c6b481d4a06bf17eb2eae15d",
+      "last_pushed_to_notion": "2026-01-03T06:21:44.729718+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Thava_Thornscale.md": {
+      "notion_page_id": "2dd693f0c6b4814cb1a2d997d12fdaf5",
+      "last_pushed_to_notion": "2026-01-03T06:22:37.375063+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Torvin_Greycask.md": {
+      "notion_page_id": "2dd693f0c6b481df8a25ee4ea088887a",
+      "last_pushed_to_notion": "2026-01-03T06:22:51.961406+00:00"
+    },
+    "./NPCs/Location_NPCs/NPC_Veridian_Scrollkeeper.md": {
+      "notion_page_id": "2dd693f0c6b4818189f4e9b13ab28423",
+      "last_pushed_to_notion": "2026-01-03T06:23:35.032835+00:00"
+    },
+    "./NPCs/Major_NPCs/NPC_Krythak_Stormbringer.md": {
+      "notion_page_id": "2dd693f0c6b4814e9caffc367919b70f",
+      "last_pushed_to_notion": "2026-01-03T06:23:59.113705+00:00"
+    },
+    "./NPCs/Major_NPCs/Professor_Zero.md": {
+      "notion_page_id": "2dd693f0c6b4812caf25d1b7f7934e4e",
+      "last_pushed_to_notion": "2026-01-03T06:24:26.455560+00:00"
+    },
+    "./NPCs/Mystery_NPCs/Blood_Target_Unknown.md": {
+      "notion_page_id": "2dd693f0c6b4817e8644c23ee992c966",
+      "last_pushed_to_notion": "2026-01-03T06:25:12.318804+00:00"
+    },
+    "./NPCs/Major_NPCs/Steel_Dragon.md": {
+      "notion_page_id": "2dd693f0c6b481e284e3df0a4cfb8a4a",
+      "last_pushed_to_notion": "2026-01-03T06:25:41.571497+00:00"
+    },
+    "./Player_Characters/PC_Ian_Rakash.md": {
+      "notion_page_id": "2dd693f0c6b4813b8fb8ff3410ed5d4b",
+      "last_pushed_to_notion": "2026-01-03T06:25:50.593531+00:00"
+    },
+    "./Player_Characters/PC_Josh.md": {
+      "notion_page_id": "2dd693f0c6b481408e48d8ffbc1b885e",
+      "last_pushed_to_notion": "2026-01-03T06:26:42.564206+00:00"
+    },
+    "./Player_Characters/PC_Kyle_Nameless.md": {
+      "notion_page_id": "2dd693f0c6b481a88ac9dcf7090fe39d",
+      "last_pushed_to_notion": "2026-01-03T06:26:59.873182+00:00"
+    },
+    "./Player_Characters/PC_Manny.md": {
+      "notion_page_id": "2dd693f0c6b4818ab0e8ef557796e6db",
+      "last_pushed_to_notion": "2026-01-03T06:27:25.345814+00:00"
+    },
+    "./Player_Characters/PC_Nikki.md": {
+      "notion_page_id": "2dd693f0c6b48100a844f82618130b80",
+      "last_pushed_to_notion": "2026-01-03T06:28:02.725045+00:00"
+    },
+    "./Quests/Quest_Geist_Investigation.md": {
+      "notion_page_id": "2dd693f0c6b481379b08f905b1da7ba7",
+      "last_pushed_to_notion": "2026-01-03T06:29:26.231213+00:00"
+    },
+    "./Quests/Quest_Codex_Search.md": {
+      "notion_page_id": "2dd693f0c6b4810dad80dd0ce88a15e6",
+      "last_pushed_to_notion": "2026-01-03T06:29:38.489948+00:00"
+    },
+    "./Quests/Quest_Missing_Person_Investigation.md": {
+      "notion_page_id": "2dd693f0c6b481fb9e30c623972f820d",
+      "last_pushed_to_notion": "2026-01-03T06:30:16.075108+00:00"
+    },
+    "./Quests/Quest_Giant_Axe.md": {
+      "notion_page_id": "2dd693f0c6b481f0837cf963682934f0",
+      "last_pushed_to_notion": "2026-01-03T06:30:21.302279+00:00"
+    },
+    "Quests/Quest_Blood_Target.md": {
+      "notion_page_id": "2dd693f0c6b481c19ca7ede41b16ffa5",
+      "last_pushed_to_notion": "2026-01-03T19:30:18.137511+00:00"
     }
   }
 }

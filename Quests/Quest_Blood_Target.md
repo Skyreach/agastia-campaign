@@ -8,7 +8,7 @@ quest_giver: Nona (Subject #9) - Decimate Project Patron
 location: Variable (target to be determined)
 difficulty: Medium-High
 level_range: 2-5
-related_entities: [Nikki, Nona (Subject #9), Decimate Project, Temporal Bloodline, Blood Target (Unknown), Professor Zero]
+related_entities: [Nikki, "Nona (Subject #9)", Decimate Project, Temporal Bloodline, "Blood Target (Unknown)", Professor Zero]
 ---
 
 # Quest: The Blood Target
