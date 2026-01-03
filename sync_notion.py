@@ -92,20 +92,33 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
 
         matched_text = match.group()
 
-        # Wikilink [[page name]]
+        # Wikilink [[page name]] or [[page name#section]]
         if matched_text.startswith('[[') and matched_text.endswith(']]'):
             link_text = match.group(2)  # Extract text inside [[]]
+
+            # Handle section anchors: [[Page#Section]]
+            page_name = link_text
+            section_name = None
+            if '#' in link_text:
+                page_name, section_name = link_text.split('#', 1)
+                page_name = page_name.strip()
+                section_name = section_name.strip()
 
             # Try to resolve wikilink to page ID
             page_id = None
             if notion_client and database_id:
                 try:
+                    # Search for page by name (without section anchor)
                     results = notion_client.databases.query(
                         database_id=database_id,
-                        filter={"property": "Name", "title": {"equals": link_text}}
+                        filter={"property": "Name", "title": {"contains": page_name}}
                     )
-                    if results['results']:
-                        page_id = results['results'][0]['id']
+                    # Find exact match
+                    for result in results['results']:
+                        result_name = result['properties']['Name']['title'][0]['plain_text']
+                        if result_name == page_name or page_name in result_name:
+                            page_id = result['id']
+                            break
                 except:
                     pass  # If lookup fails, just use plain text
 
@@ -113,9 +126,14 @@ def parse_rich_text(text, notion_client=None, database_id=None, max_length=2000)
                 # Create mention link to page
                 rich_text.append({
                     'type': 'mention',
-                    'mention': {'type': 'page', 'page': {'id': page_id}},
-                    'plain_text': link_text
+                    'mention': {'type': 'page', 'page': {'id': page_id}}
                 })
+                # If there's a section anchor, add it as plain text after the mention
+                if section_name:
+                    rich_text.append({
+                        'type': 'text',
+                        'text': {'content': f'#{section_name}'}
+                    })
             else:
                 # Fallback to plain text with brackets
                 rich_text.append({'type': 'text', 'text': {'content': f'[[{link_text}]]'}})
@@ -394,12 +412,12 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
     return blocks, i
 
 
-def parse_heading_section(lines, idx, notion_client=None, database_id=None):
+def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_top_level=False):
     """
     Parse a heading and collect all content until next same-level heading.
     Returns (section_info, next_idx) where section_info has 'block' and 'children' keys.
 
-    H1-H3: Notion headings (toggleable)
+    H1-H3: Notion headings (toggleable, except top-level H1)
     H4+: Bold paragraph wrapped in toggle (Notion limitation)
     """
     line = lines[idx]
@@ -428,7 +446,7 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None):
             'type': block_type,
             block_type: {
                 'rich_text': parse_rich_text(heading_text, notion_client, database_id),
-                'is_toggleable': True
+                'is_toggleable': True if not (is_top_level and level == 1) else False
             }
         }
         return {'block': heading_block, 'children': children}, next_idx
@@ -454,6 +472,7 @@ def markdown_to_notion_blocks(content, notion_client=None, database_id=None):
     lines = content.split('\n')
     sections = []
     i = 0
+    seen_h1 = False  # Track if we've seen the first H1
 
     while i < len(lines):
         # Skip empty lines at start
@@ -464,7 +483,12 @@ def markdown_to_notion_blocks(content, notion_client=None, database_id=None):
         # Check for heading
         level = get_heading_level(lines[i])
         if level is not None:
-            section, i = parse_heading_section(lines, i, notion_client, database_id)
+            # First H1 is top-level (not toggleable)
+            is_top_level = (level == 1 and not seen_h1)
+            if level == 1:
+                seen_h1 = True
+
+            section, i = parse_heading_section(lines, i, notion_client, database_id, is_top_level)
             if section:
                 sections.append(section)
         else:
