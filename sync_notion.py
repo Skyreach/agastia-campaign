@@ -357,7 +357,7 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
 
         # If it's a lower-level heading, parse it with its children
         if level is not None and level > parent_level:
-            heading_info, i = parse_heading_section(lines, i, notion_client, database_id, False, block_cache)
+            heading_info, i = parse_heading_section(lines, i, notion_client, database_id, block_cache)
             if heading_info:
                 blocks.append(heading_info)
             continue
@@ -447,12 +447,12 @@ def collect_until_heading(lines, start_idx, parent_level, notion_client=None, da
     return blocks, i
 
 
-def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_top_level=False, block_cache=None):
+def parse_heading_section(lines, idx, notion_client=None, database_id=None, block_cache=None):
     """
     Parse a heading and collect all content until next same-level heading.
     Returns (section_info, next_idx) where section_info has 'block' and 'children' keys.
 
-    H1-H3: Notion headings (toggleable, except top-level H1)
+    H1-H3: Notion headings (toggleable)
     H4+: Bold paragraph wrapped in toggle (Notion limitation)
     """
     line = lines[idx]
@@ -481,7 +481,7 @@ def parse_heading_section(lines, idx, notion_client=None, database_id=None, is_t
             'type': block_type,
             block_type: {
                 'rich_text': parse_rich_text(heading_text, notion_client, database_id, block_cache),
-                'is_toggleable': True if not (is_top_level and level == 1) else False
+                'is_toggleable': True
             }
         }
         return {'block': heading_block, 'children': children}, next_idx
@@ -507,7 +507,6 @@ def markdown_to_notion_blocks(content, notion_client=None, database_id=None, blo
     lines = content.split('\n')
     sections = []
     i = 0
-    seen_h1 = False  # Track if we've seen the first H1
 
     while i < len(lines):
         # Skip empty lines at start
@@ -518,12 +517,7 @@ def markdown_to_notion_blocks(content, notion_client=None, database_id=None, blo
         # Check for heading
         level = get_heading_level(lines[i])
         if level is not None:
-            # First H1 is top-level (not toggleable)
-            is_top_level = (level == 1 and not seen_h1)
-            if level == 1:
-                seen_h1 = True
-
-            section, i = parse_heading_section(lines, i, notion_client, database_id, is_top_level, block_cache)
+            section, i = parse_heading_section(lines, i, notion_client, database_id, block_cache)
             if section:
                 sections.append(section)
         else:
