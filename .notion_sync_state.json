@@ -17,7 +17,7 @@
     },
     "Sessions/Session_3_The_Steel_Dragon_Begins.md": {
       "notion_page_id": "2d9693f0c6b48116a89ec5397dd339e7",
-      "last_pushed_to_notion": "2025-12-31T02:50:33.207523+00:00"
+      "last_pushed_to_notion": "2026-01-03T05:27:00.893362+00:00"
     }
   },
   "entities": {
@@ -324,6 +324,10 @@
     "Quests/Quest_Giant_Axe.md": {
       "notion_page_id": "2d8693f0c6b4816bbd99de3faa0ef2c9",
       "last_pushed_to_notion": "2025-12-29T20:57:16.839419+00:00"
+    },
+    "Quests/Quest_Missing_Person_Investigation.md": {
+      "notion_page_id": "2dd693f0c6b481028beec747b60c63d1",
+      "last_pushed_to_notion": "2026-01-03T05:25:49.529717+00:00"
     }
   }
 }

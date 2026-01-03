@@ -74,18 +74,37 @@ graph TD
 - This provides a direct hook for [[Kyle/Nameless]] (Nameless) to the docks and Warehouse 7.
 - The symbol on the crate can be used to identify other parts of the smuggling operation in [[Agastia]].
 
-### Day 2: Player's Choice
+### Day 2: Player's Choice (Point Crawl Encounters)
 
-**Encounter:** Choose one of the following from the Inspiring Table or create a new one based on player actions.
+**Road Navigation:** The party travels along the main road toward [[Agastia]]. Present the following encounter nodes as points of interest along the way. Players can choose which to investigate or bypass.
 
-**Option 1: The Lost Mastiff (from Inspiring Table)**
-- A chance for a non-combat encounter and to gain a loyal animal companion.
+**Encounter Nodes:**
 
-**Option 2: The Wandering Druid (from Inspiring Table)**
-- An opportunity for healing, information, and a potential side quest.
+**[[Forest Clearing - Lost Mastiff]]** (See [[Inspiring Tables#Lost Mastiff]])
+- **What:** A well-bred mastiff with a noble family crest collar, separated from its owner
+- **Choice:** Investigate the clearing, track the dog's trail, or continue on
+- **Reward:** Non-combat encounter, potential loyal animal companion
 
-**Option 3: The Goblin Ambush Site (from Inspiring Table)**
-- A classic combat encounter.
+**[[Druid's Grove - Wandering Druid]]** (See [[Inspiring Tables#Wandering Druid]])
+- **What:** Ancient oak grove with signs of druidic presence
+- **Choice:** Approach the grove, observe from distance, or bypass
+- **Reward:** Healing, forest information, potential side quest
+
+**[[Abandoned Cart - Goblin Ambush Site]]** (See [[Inspiring Tables#Goblin Ambush Site]])
+- **What:** Overturned cart with goblin tracks nearby
+- **Choice:** Investigate the ambush site, set counter-ambush, or avoid
+- **Reward:** Classic combat encounter with loot
+
+**[[Shortcut Through the Woods]]** (Optional fast travel)
+- **What:** Game trail cutting through dense forest
+- **Choice:** Take the shortcut (saves 2 hours, DC 13 Survival to navigate) or stay on road
+- **Risk:** May miss encounters, risk getting lost
+
+**DM Notes:**
+- Players choose which nodes to engage with
+- Can investigate all, some, or none
+- Bypassing encounters doesn't prevent arrival at [[Agastia]]
+- Time of day matters (arrive late = miss job board hours)
 
 ### Day 3: Arrival in Agastia
 
@@ -101,6 +120,29 @@ graph TD
 
 The party will visit or hear about these locations during Session 3, organized by Agastia's tier system:
 
+#### Tier 2 - [[Noble Quarter]]
+
+**Overview:** Upper-tier district housing wealthy families and estates.
+
+**House Moonwhisper**
+- **What:** Lord Thalorien Moonwhisper's residence
+- **Connection:** Reward location for completing Ghost of Elaris quest
+- **Reward:** 150 gp + invitation to noble house (opens Tier 2 access)
+
+#### Tier 3 - [[Scholar Quarter]]
+
+**Overview:** Academic district with libraries, archives, and research institutions.
+
+**[[Archive of Lost Histories]]**
+- **What:** Repository of ancient texts and forgotten lore
+- **Hook:** Job board request from scholar to retrieve rare book from dangerous ruin
+- **Connection:** [[Manny]]'s [[The Codex]] quest lead
+
+**[[Veridian Scrollkeeper]]'s Location**
+- **What:** Rumored expert on [[Agastia]]'s history
+- **Hook:** Tavern rumor about ancient elf who "knows everything"
+- **Connection:** Another potential [[Codex]] lead for [[Manny]]
+
 #### Tier 4 - [[Merchant District]]
 
 **Overview:** Mid-tier commercial hub, accessible to most citizens and visitors. Where the session's main activities occur.
@@ -112,9 +154,31 @@ The party will visit or hear about these locations during Session 3, organized b
 - **Clerk's Pitch:** *"Welcome to Agastia. If you're looking for work, you've come to the right place. Complete a job, get paid, and earn merit. The more merit you have, the higher you climb. Simple as that."*
 
 **Sample Jobs:**
-- **Rat Extermination (Tier 5):** 10gp, 1 Merit
-- **Guard a Caravan (Tier 4):** 50gp, 5 Merit
-- **Investigate Missing Person (Tier 3):** 100gp, 10 Merit
+
+**Rat Extermination (Tier 5)** - 10gp, 1 Merit
+- **What:** Baker reports aggressive rats in cellar (Goldwheat Bakery, 2 blocks south)
+- **Creatures:** 6 Giant Rats (AC 12, HP 7) + 1 Wererat Spy (AC 12, HP 33, shapechanger)
+- **Hook (Manny):** Baker introduces party to a regular customer - an ancient elf scholar (rumored to know everything about Agastia's history)
+- **Clock:** [[Chaos Cult]] corruption spreading from [[The Depths]] (Tier 7 → Tier 5). Wererat is cult infiltrator establishing foothold. If ignored, infestation spreads (+1 tick every 3 days → disease outbreak → cult ritual site → mass transformation crisis)
+- **Escalation:** Missing wererat ticks clock +2. Captured wererat reveals cult tunnel map + connection to [[Steel Dragon]] murders
+
+**Guard a Caravan (Tier 4)** - 50gp, 5 Merit
+- **What:** Protect book merchant Aldric Scrollwise on 3-day trip to Meridian's Rest
+- **Creatures:** 1 Bandit Captain (AC 15, HP 65) + 4 Bandits + 2 Thugs (hit-and-run tactics)
+- **Hook (Manny):** Aldric carries journal mentioning [[The Codex]]'s last known location (offers to sell for 100gp after trip)
+- **Hook (Kyle):** Bandits work for [[Geist]], testing route for major contraband shipment
+- **Clock:** [[Geist]]'s smuggling network [2/8 ticks]. Success pauses clock. Failure → Feywild artifacts smuggled → [[Geist]] expands power → controls western trade routes → funds major operation against [[Agastia]]
+- **Escalation:** Captured bandit reveals "big shipment next tenday" to docks
+
+**Investigate Missing Person (Tier 3)** - 100gp, 10 Merit
+- **What:** Scholar Elorith Silvervein missing 3 days, last seen near [[Archive of Lost Histories]]
+- **Full Quest Details:** See [[Quest: Missing Person Investigation]] for complete investigation point crawl with map, clues, and timing-based encounters
+- **Quick Summary:**
+  - **Creatures:** 3 Shadows + 1 [[Chaos Cult]] Initiate (Day 1-2) OR Shadow Demon CR 4 (Day 5+)
+  - **Hook (Manny):** Elorith knows about [[The Codex]] and [[Professor Zero]]'s Archive visit
+  - **Hook (All):** [[Steel Dragon]] vs [[Chaos Cult]] faction conflict over same victim
+  - **Clock:** Time-sensitive rescue (Day 1-2 = save, Day 5+ = tragedy + dragon confrontation)
+  - **Reward:** Base 100gp + 10 Merit. Bonus: Restricted Archive access if rescued
 
 **Murder Scene Alleyway - Steel Dragon Investigation**
 - **What:** Quiet alleyway near Job Board, crime scene of latest [[Steel Dragon]] murder
@@ -133,29 +197,6 @@ The party will visit or hear about these locations during Session 3, organized b
 - Motive clearly not robbery (coin purse untouched)
 - Symbol is killer's signature
 
-#### Tier 3 - [[Scholar Quarter]]
-
-**Overview:** Academic district with libraries, archives, and research institutions.
-
-**[[Archive of Lost Histories]]**
-- **What:** Repository of ancient texts and forgotten lore
-- **Hook:** Job board request from scholar to retrieve rare book from dangerous ruin
-- **Connection:** [[Manny]]'s [[The Codex]] quest lead
-
-**[[Veridian Scrollkeeper]]'s Location**
-- **What:** Rumored expert on [[Agastia]]'s history
-- **Hook:** Tavern rumor about ancient elf who "knows everything"
-- **Connection:** Another potential [[Codex]] lead for [[Manny]]
-
-#### Tier 2 - [[Noble Quarter]]
-
-**Overview:** Upper-tier district housing wealthy families and estates.
-
-**House Moonwhisper**
-- **What:** Lord Thalorien Moonwhisper's residence
-- **Connection:** Reward location for completing Ghost of Elaris quest
-- **Reward:** 150 gp + invitation to noble house (opens Tier 2 access)
-
 #### Tier 6 - [[Dock District]]
 
 **Overview:** Lowest tier, waterfront district with smuggling and criminal activity.
@@ -169,20 +210,52 @@ The party will visit or hear about these locations during Session 3, organized b
 
 **Point Crawl System:** See `Resources/Point_Crawl_Network.md` for complete network with all connections and path descriptions.
 
+**Merchant District Map:**
+
+```mermaid
+graph TD
+    JobBoard[Central Plaza<br/>Job Board]
+
+    JobBoard -->|2 blocks south<br/>Past silk merchant & bakery| MurderAlley[Murder Scene Alley]
+    JobBoard -->|3 blocks west<br/>Market Street| IlDrago[Il Drago Rosso]
+    JobBoard -->|4 blocks east<br/>Descending| Warehouse[Warehouse 7<br/>Dock District]
+    JobBoard -->|5 blocks north<br/>Academy Avenue| Archive[Archive of Lost Histories<br/>Scholar Quarter]
+
+    style JobBoard fill:#ffeb3b,stroke:#f57c00,stroke-width:4px
+    style MurderAlley fill:#f44336,stroke:#b71c1c,stroke-width:3px
+    style IlDrago fill:#4caf50,stroke:#2e7d32,stroke-width:3px
+    style Archive fill:#2196f3,stroke:#1565c0,stroke-width:3px
+    style Warehouse fill:#9c27b0,stroke:#6a1b9a,stroke-width:3px
+```
+
 **Key Navigation Nodes:**
 
 **At Central Plaza (Job Board):**
-> "Standing in Central Plaza where the Job Board is posted, do you:
-> - Walk south to the murder scene (2 blocks, past silk merchant and bakery)?
-> - Go west on Market Street to Il Drago Rosso (3 blocks, past armory and tavern)?
+> "Standing in Central Plaza where the Job Board is posted, you look around at the bustling merchant district. Do you:
+> - Walk south past the silk merchant and bakery (2 blocks)?
+> - Go west on Market Street toward the restaurant district (3 blocks, past armory and tavern)?
 > - Head east toward the docks (4 blocks, descending on Merchant's Way)?
 > - Travel north toward Scholar's Gate (5 blocks on Academy Avenue)?"
 
 **Moving from Job Board to Il Drago Rosso:**
 > "You walk west on Market Street. You pass [[Shadow's Edge Armory]] where a blacksmith hammers at an anvil, then a curiosity dealer's window full of strange trinkets, and finally a crowded tavern where laughter spills into the street. Three blocks from the plaza, you spot the red dragon banner hanging above a warm, inviting doorway."
 
-**Moving from Job Board to Murder Scene:**
+**Moving from Job Board to South (Discovery Path):**
 > "You walk south past the silk merchant's colorful awnings and the warm smell of fresh bread from Goldwheat Bakery. Between them, a narrow alley opens to your right - dark and quiet compared to the busy street."
+
+**After Discovering the Murder Scene:**
+
+Once players have discovered the crime scene (either by exploring the alley or hearing about it from guards/NPCs), use these navigation prompts:
+
+**At Central Plaza (Job Board) - Post-Discovery:**
+> "Standing in Central Plaza, do you:
+> - Return to the murder scene investigation (2 blocks south, alley between silk merchant and bakery)?
+> - Go west on Market Street to Il Drago Rosso (3 blocks)?
+> - Head east toward the docks (4 blocks)?
+> - Travel north toward Scholar's Gate (5 blocks)?"
+
+**Moving to Active Murder Scene:**
+> "You walk south past the silk merchant's awnings and Goldwheat Bakery. Yellow guard tape marks the alley entrance where Captain Valerius and his investigators work the scene."
 
 **Between Districts (City Scale):**
 
@@ -199,7 +272,9 @@ The party will visit or hear about these locations during Session 3, organized b
 
 ## Player Quest Hooks
 
-### The Ghost of Elaris (NEW - Emerged from Travel Encounter)
+### The Ghost of Elaris (Conditional - Requires Spider Encounter)
+
+**Trigger:** IF the party encountered and cleared the spider's hunting ground during Day 2 travel, this quest activates during their next long rest.
 
 **Setup:** During the long rest after saving the noble elf from the spider's hunting ground, the party is visited by the ghost of the young elf found dead in the cocoons.
 
