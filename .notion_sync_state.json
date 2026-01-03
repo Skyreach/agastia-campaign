@@ -17,7 +17,7 @@
     },
     "Sessions/Session_3_The_Steel_Dragon_Begins.md": {
       "notion_page_id": "2d9693f0c6b48116a89ec5397dd339e7",
-      "last_pushed_to_notion": "2026-01-03T05:45:45.897174+00:00"
+      "last_pushed_to_notion": "2026-01-03T19:59:34.637963+00:00"
     }
   },
   "entities": {
@@ -612,6 +612,10 @@
     "Quests/Quest_Blood_Target.md": {
       "notion_page_id": "2dd693f0c6b481c19ca7ede41b16ffa5",
       "last_pushed_to_notion": "2026-01-03T19:30:18.137511+00:00"
+    },
+    "Encounters/Inspiring_Tables.md": {
+      "notion_page_id": "2dd693f0c6b4818eb9c1c76ae98b3617",
+      "last_pushed_to_notion": "2026-01-03T19:57:47.268667+00:00"
     }
   }
 }

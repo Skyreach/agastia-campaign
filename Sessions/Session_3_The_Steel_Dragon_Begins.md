@@ -80,22 +80,22 @@ graph TD
 
 **Encounter Nodes:**
 
-**[[Forest Clearing - Lost Mastiff]]** (See [[Inspiring Tables#Lost Mastiff]])
+**Forest Clearing - [[Inspiring Tables#Lost Mastiff]]**
 - **What:** A well-bred mastiff with a noble family crest collar, separated from its owner
 - **Choice:** Investigate the clearing, track the dog's trail, or continue on
 - **Reward:** Non-combat encounter, potential loyal animal companion
 
-**[[Druid's Grove - Wandering Druid]]** (See [[Inspiring Tables#Wandering Druid]])
+**Druid's Grove - [[Inspiring Tables#Wandering Druid]]**
 - **What:** Ancient oak grove with signs of druidic presence
 - **Choice:** Approach the grove, observe from distance, or bypass
 - **Reward:** Healing, forest information, potential side quest
 
-**[[Abandoned Cart - Goblin Ambush Site]]** (See [[Inspiring Tables#Goblin Ambush Site]])
+**Abandoned Cart - [[Inspiring Tables#Goblin Ambush Site]]**
 - **What:** Overturned cart with goblin tracks nearby
 - **Choice:** Investigate the ambush site, set counter-ambush, or avoid
 - **Reward:** Classic combat encounter with loot
 
-**[[Shortcut Through the Woods]]** (Optional fast travel)
+**Shortcut Through the Woods** (Optional fast travel)
 - **What:** Game trail cutting through dense forest
 - **Choice:** Take the shortcut (saves 2 hours, DC 13 Survival to navigate) or stay on road
 - **Risk:** May miss encounters, risk getting lost
