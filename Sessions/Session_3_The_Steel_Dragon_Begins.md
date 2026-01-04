@@ -16,15 +16,21 @@ tags: [session3, travel, agastia, steel-dragon, player-hooks]
 ```mermaid
 graph TD
     Start([Leave Meridian's Rest]) --> Travel1[Travel Day 1]
-    Travel1 --> Encounter1{Docks Hook Encounter}
+    Travel1 --> Encounter1[Geist Crate Discovery]
     Encounter1 --> Travel2[Travel Day 2]
     Travel2 --> Encounter2{Player Choice Encounter}
-    Encounter2 --> Travel3[Travel Day 3]
+    Encounter2 --> SpiderCheck{Cleared Spider<br/>Encounter?}
+    SpiderCheck -->|Yes| GhostRest[Ghost of Elaris<br/>Long Rest]
+    SpiderCheck -->|No| Travel3[Travel Day 3]
+    GhostRest --> Travel3
     Travel3 --> Agastia[Arrive in Agastia]
     Agastia --> JobBoard[Job Board & Notoriety]
     JobBoard --> MurderScene{Steel Dragon Murder Scene}
     MurderScene --> PlayerQuests[Pursue Individual Quests]
     PlayerQuests --> End([Session 3 End])
+
+    style SpiderCheck fill:#ffd43b,stroke:#fab005
+    style GhostRest fill:#9775fa,stroke:#5f3dc4
 ```
 
 ## Quick Reference
@@ -40,12 +46,15 @@ graph TD
 
 **Toggle: Key NPCs**
 - **[[Corvin Tradewise]]:** Merchant caravan leader who can provide information about [[Geist]].
-- **Wounded Smuggler:** An NPC who provides a direct hook to [[Geist]] and the docks.
+- **Dead Smuggler:** Victim at crate scene, provides hook to [[Geist]]'s operation and Starfall Anchors.
+- **[[Mira Saltwind]]:** Merchant District proprietor, extortion victim with evidence against [[Geist]].
 - **Job Board Clerk:** An NPC who explains the job board and merit system.
 - **City Guard Captain:** The NPC who is investigating the first [[Steel Dragon]] murder.
+- **Ghost of Elaris:** (Conditional) Spirit of noble elf's child, appears if spider encounter cleared.
 
 **Toggle: Important Items & Locations**
-- **Bloody Crate:** A crate with a strange symbol, pointing to a smuggling operation.
+- **Starfall Anchor Crate:** Damaged crate containing Feywild packing materials, points to Warehouse 7.
+- **Warehouse 7:** [[Geist]]'s distribution hub in Dock District.
 - **Agastia Job Board:** A central location for quests and gaining merit.
 - **The Murder Scene:** An alley in the Merchant District where the first victim of the Steel Dragon is found.
 
@@ -58,21 +67,63 @@ graph TD
 
 **Encounter Table:** See [[Inspiring Tables#Temperate Forests (Tier 1)]]
 
-### Day 1: The Bloody Crate ([[Kyle/Nameless]]'s Hook)
+### Day 1: The Starfall Anchor Crate ([[Kyle/Nameless]]'s Hook)
 
-**Encounter:** The party comes across an overturned cart on the side of the road. A wounded man is hiding nearby.
+**Encounter:** The party comes across an overturned cart on the roadside. A dead smuggler lies nearby, his body bearing strange shadow burns.
 
-> The road ahead is partially blocked by an overturned cart, its contents spilled across the dirt. A single crate, stained with a dark, still-wet substance, lies a short distance away. A faint groan can be heard from the nearby woods.
+> The road ahead is partially blocked by an overturned cart, its contents spilled across the dirt. A damaged wooden crate lies a short distance away, shimmering faintly with residual magic. Scattered around it are torn silks and strange moss that seems to glow in the shadows. A body lies face-down near the tree line, unmoving.
 
-**The Wounded Man:**
-- A low-level smuggler, ambushed by rivals.
-- He was supposed to deliver the crate to "[[Geist]]" at the [[Agastia]] docks.
-- He is dying and will only be able to utter a few words: "[[Geist]]... Warehouse 7... Docks...".
-- **The Crate:** Contains mundane goods, but has a small, almost invisible symbol of a coiled serpent on it. This is a marker for [[Geist]]'s operation.
+**Read-aloud (Upon Investigation):**
+> The man is dead, his skin marked with dark, writhing burns that seem to move when you're not looking directly at them. His valuables are untouched—this wasn't a robbery. Near his outstretched hand, a crumpled note peeks from his coat pocket.
+
+**The Scene:**
+
+**The Dead Smuggler:**
+- Shadow burns across body (Feywild magic? Chaos Cult retaliation? Artifact accident?)
+- Valuables untouched (coin purse, decent boots, silver ring)
+- Not a robbery—something else killed him
+- **Investigation DC 12:** Death occurred within last 6 hours, burns are magical in nature
+- **Arcana DC 15:** Burns consistent with planar/dimensional magic, not standard evocation
+
+**The Damaged Crate:**
+- **Stenciled label:** "W7-DD-B3" (Warehouse 7, Dock District, Bay 3)
+- **Contents:** Empty anchor-shaped indentations in packing material (two items removed)
+- **Packing materials scattered:**
+  - Moonpetal Moss (shimmers faintly, smells of ozone and wildflowers - Feywild preservative)
+  - Torn silk wrapping (still glowing with faint magic)
+  - Professional packing job (not criminal, looks official)
+- **Nature/Survival DC 13:** Moss is Feywild in origin, used to preserve delicate magical items
+- **Investigation DC 14:** Two identical indentations, approximately 18 inches long, tapered cylinder shape
+
+**The Smuggler's Note:**
+- Crumpled paper in coat pocket
+- Reads: *"Final delivery - 2 anchors to Saltwind Imports by midnight. The Architect wants all six. -H"*
+- Reveals: Partial shipment (2 items), buyer name ("The Architect"), urgency, someone named "H"
+
+**The Business Card:**
+- Found near body (dropped? Or clue for investigators?)
+- Reads: *"Saltwind Imports - Mira Saltwind, Proprietor - Merchant District, Agastia"*
+- High-quality cardstock, professional
+
+**Clue Summary (3-Clue Rule):**
+1. **Warehouse 7 label** (LEAD) → Points to Warehouse 7 as origin/hub
+2. **Feywild packing materials** (REVELATION) → Expensive Feywild artifacts being smuggled
+3. **Smuggler's note** (LEAD + REVELATION) → Buyer "The Architect" wants 6 total, Saltwind Imports connection
+4. **Business card** (LEAD) → Mira Saltwind in Merchant District
+5. **Shadow burns** (REVELATION) → Dangerous magical cargo OR targeted killing
 
 **DM Notes:**
-- This provides a direct hook for [[Kyle/Nameless]] (Nameless) to the docks and Warehouse 7.
-- The symbol on the crate can be used to identify other parts of the smuggling operation in [[Agastia]].
+- This is Entry Point 1 for [[Quest: Geist Investigation]]
+- Dead smuggler was transporting final 2 Starfall Anchors (4 already sold to Chaos Cult)
+- Cause of death intentionally ambiguous (Cult silencing? Artifact backfire? Monster?)
+- Multiple leads prevent single-path railroading
+- Kyle/Lord Zaos connection: Anchors stolen from Zaos's vault (Kyle will learn this later)
+- Full investigation details in Quest_Geist_Investigation.md
+
+**If players ask NPCs in Agastia about the moss/materials:**
+- Augury researchers will recognize Feywild preservation techniques (if shown)
+- Merchant District traders: "That's expensive Feywild packing. Whatever was in there cost a fortune."
+- Dock workers: "Warehouse 7? That's Merit Council property. Inspection storage."
 
 ### Day 2: Player's Choice (Point Crawl Encounters)
 
@@ -166,9 +217,9 @@ The party will visit or hear about these locations during Session 3, organized b
 - **What:** Protect book merchant Aldric Scrollwise on 3-day trip to Meridian's Rest
 - **Creatures:** 1 Bandit Captain (AC 15, HP 65) + 4 Bandits + 2 Thugs (hit-and-run tactics)
 - **Hook (Manny):** Aldric carries journal mentioning [[The Codex]]'s last known location (offers to sell for 100gp after trip)
-- **Hook (Kyle):** Bandits work for [[Geist]], testing route for major contraband shipment
-- **Clock:** [[Geist]]'s smuggling network [2/8 ticks]. Success pauses clock. Failure → Feywild artifacts smuggled → [[Geist]] expands power → controls western trade routes → funds major operation against [[Agastia]]
-- **Escalation:** Captured bandit reveals "big shipment next tenday" to docks
+- **Hook (Kyle):** Bandits mention "someone at the docks" protecting their operation (oblique [[Geist]] reference)
+- **Clock:** Bandit network [2/8 ticks]. Success weakens bandits. Failure → bandits control western trade routes
+- **Escalation:** Captured bandit knows about "corrupt inspector at docks who looks the other way"
 
 **Investigate Missing Person (Tier 3)** - 100gp, 10 Merit
 - **What:** Scholar Elorith Silvervein missing 3 days, last seen near [[Archive of Lost Histories]]
@@ -202,9 +253,11 @@ The party will visit or hear about these locations during Session 3, organized b
 **Overview:** Lowest tier, waterfront district with smuggling and criminal activity.
 
 **Smuggling Operations**
-- **What:** [[Geist]]'s territory and criminal network
-- **Hook:** Bloody crate encounter from Day 1 travel points here
-- **Connection:** [[Kyle/Nameless]]'s personal quest to track down [[Geist]]
+- **What:** [[Geist]]'s criminal network operating under guise of Merit Council authority
+- **Hook:** Starfall Anchor crate from Day 1 points to Warehouse 7 in Dock District
+- **Connection:** [[Kyle/Nameless]]'s personal quest to track down [[Geist]] (and [[Kaelborn]])
+- **Investigation:** See [[Quest: Geist Investigation]] for full 3-3-3-1 mystery structure
+- **Key locations:** Warehouse 7 (distribution hub), Mira Saltwind's shop (evidence), Underground Market ([[Kex the Fence]])
 
 ### Navigation & Connections
 

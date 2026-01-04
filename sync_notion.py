@@ -582,6 +582,9 @@ def sync_to_notion(file_path, entry_type):
     notion = get_notion_client()
     block_cache = load_block_cache()
 
+    # Normalize file path (remove ./ prefix if present)
+    normalized_path = str(file_path).lstrip('./')
+
     with open(file_path, 'r') as f:
         post = frontmatter.load(f)
 
@@ -590,7 +593,7 @@ def sync_to_notion(file_path, entry_type):
         "Name": {"title": [{"text": {"content": post.get('name', Path(file_path).stem)}}]},
         "Tags": {"multi_select": [{"name": tag} for tag in post.get('tags', [])]},
         "Status": {"select": {"name": post.get('status', 'Active')}},
-        "File Path": {"rich_text": [{"text": {"content": str(file_path)}}]},
+        "File Path": {"rich_text": [{"text": {"content": normalized_path}}]},
     }
 
     # Add optional properties if they exist in frontmatter
@@ -611,10 +614,10 @@ def sync_to_notion(file_path, entry_type):
         tags_list.append(entry_type.lower())
         properties["Tags"] = {"multi_select": [{"name": tag} for tag in tags_list]}
 
-    # Check if entry exists - match by File Path
+    # Check if entry exists - match by normalized File Path
     results = notion.databases.query(
         database_id=DATABASES['entities'],
-        filter={"property": "File Path", "rich_text": {"equals": str(file_path)}}
+        filter={"property": "File Path", "rich_text": {"equals": normalized_path}}
     )
 
     # Convert markdown content to hierarchical Notion blocks (with wikilink support)
@@ -642,7 +645,7 @@ def sync_to_notion(file_path, entry_type):
         upload_blocks_with_children(notion, existing_page_id, content_sections)
 
         print(f"✅ Updated: {post.get('name', Path(file_path).stem)} (in-place, preserved page ID)")
-        record_push_to_notion(str(file_path), existing_page_id)
+        record_push_to_notion(normalized_path, existing_page_id)
     else:
         # Create new page
         new_page = notion.pages.create(
@@ -654,7 +657,7 @@ def sync_to_notion(file_path, entry_type):
         upload_blocks_with_children(notion, new_page['id'], content_sections)
 
         print(f"✨ Created: {post.get('name', Path(file_path).stem)} (with nesting)")
-        record_push_to_notion(str(file_path), new_page['id'])
+        record_push_to_notion(normalized_path, new_page['id'])
 
 
 def sync_all():
