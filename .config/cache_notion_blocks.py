@@ -23,9 +23,8 @@ API_KEY_FILE = Path(__file__).parent / 'notion_key.txt'
 DATABASE_ID = '281693f0-c6b4-80be-87c3-f56fef9cc2b9'
 
 # Reference pages to cache (can be extended)
-REFERENCE_PAGES = [
-    'Inspiring Encounter Tables'
-]
+# Note: Inspiring Encounter Tables removed - now uses individual encounter pages instead
+REFERENCE_PAGES = []
 
 
 def load_cache():
