@@ -215,17 +215,17 @@ tags: [investigation, player-driven, breadcrumbs, clue-delivery, dm-tools]
 
 ---
 
-## Josh/Brand: Storm Lord Ancestor Investigation
+## Josh/Brand: Ancestor Investigation
 
 ### What Josh Wants to Find
-- Who his ancestors were (Storm Lords)
+- Who his ancestors were
 - What civilization created his elemental markings
 - Why he has these powers
 - What happened to his people
 - Where they are now (if any survive)
 
 ### The Revelation (Final Discovery)
-Brand's ancestors were the **Storm Lords**, an elemental civilization from another continent. They were attacked by [unknown faction] and forced to flee. The Storm Lords helped protect the **Mistkin** (Temporal Bloodline tribe) during their escape to the Underdark. In gratitude, the Mistkin used the Dominion Codex to preserve the last Storm Lords in temporal stasis, hidden near Garrek's Falls. The Storm Lords know they're being hunted - visitors to the Falls aren't rare enough to guarantee safety, so they remain in stasis/hiding as a separate tribe.
+[TBD - Brand's people and their connection to Garrek's Falls to be determined during play]
 
 ### Mistkin (Temporal Bloodline) Lore
 
@@ -236,7 +236,7 @@ Brand's ancestors were the **Storm Lords**, an elemental civilization from anoth
 
 **Current Situation:**
 - Hiding from past trauma at Garrek's Falls
-- Protected by Dominion Codex alongside Storm Lords
+- Protected by Dominion Codex
 - Most stay hidden in sanctuary
 - **Exception:** Lyria, a Mistkin who left tribe to become adventuring archaeologist (see NPC_Lyria.md)
 
@@ -248,127 +248,10 @@ Brand's ancestors were the **Storm Lords**, an elemental civilization from anoth
 - **Nikki's Dilemma:** Lyria is Mistkin Zero wants found - report or protect?
 
 ### Connection to Other Mysteries
-- **Manny's Arc:** Dominion Codex protects Storm Lords and Mistkin
+- **Manny's Arc:** Dominion Codex protects Mistkin
 - **Nikki's Arc:** Hunting Mistkin for Zero; Lyria is Mistkin hiding in plain sight
-- **Brand's Arc:** Storm Lords are allies of Mistkin, mutual protectors
-- **Party Decision:** Removing Codex endangers both tribes
-
-### Information Delivery (Slower Progression)
-
-**Note:** Brand's investigation progresses slower than others. Simply providing information when he asks is sufficient - no formal 3-3-3-1 structure needed yet. Entry nodes remain ambiguous until later campaign stages.
-
-#### Tier 0: Discovery (Learning His People Existed)
-**When Brand asks about his markings:**
-
-**Option A - Local Ruins (Near Meridian's Rest):**
-- Old carvings/murals depict thunder-marked people
-- Fragmentary - no names, no context
-- Proof: "People like you existed"
-- DC 12 Investigation to find, DC 15 History to interpret
-
-**Option B - Artifact Fragment:**
-- Found in wilderness, old ruins, or given by NPC
-- Carved stone, broken weapon, inscribed tablet
-- Thunder glyphs matching Brand's markings
-- "This is old. Very old. Your people made this."
-
-**Option C - Scholar/Mage Recognition:**
-- NPC sees markings, recognizes them from texts
-- "Those are Storm Lord glyphs. Elemental civilization, long extinct... or so we thought."
-- Vague knowledge, no specifics yet
-
-**Breadcrumb Result:** **Brand's people existed, called Storm Lords, elemental/thunder civilization**
-
----
-
-#### Tier 1: General History (Storm Lords Overview)
-**When Brand researches Storm Lords:**
-
-**Rumor 1 (DC 10 History/Arcana):**
-> "Storm Lords were elemental masters. Thunder, lightning, storms. Came from another continent. Disappeared from history centuries ago."
-
-**Rumor 2 (DC 12 History):**
-> "Storm Lords weren't native to this land. They fled here from somewhere else. Running from something, or someone. Records don't say what."
-
-**Rumor 3 (DC 13 Arcana):**
-> "Elemental bloodlines like yours don't fade naturally. If Storm Lords are 'extinct,' something killed them. Or they're hiding very well."
-
-**Breadcrumb Result:** **Storm Lords from another continent, fled/hunted, may still exist somewhere**
-
----
-
-#### Tier 2: Underdark Connection (Vague Hints)
-**When Brand investigates further:**
-
-**Rumor 1 (DC 13 Investigation, Agastia scholars):**
-> "Some texts mention Storm Lords seeking refuge in the deep places. Caves, Underdark. Alliance with another hidden people. Details are fragmentary."
-
-**Rumor 2 (DC 14 History):**
-> "There's a legend about 'thunder people' who protected a tribe of time-touched refugees. Both groups vanished underground. Never verified."
-
-**Rumor 3 (DC 15 Arcana, rare text):**
-> "A protective artifact - name lost to history - was said to shield both Storm Lords and their allies. Hidden in the Underdark, guarded by those it protects."
-
-**Breadcrumb Result:** **Storm Lords may be in Underdark, allied with "time-touched" people, protected by artifact**
-
----
-
-#### Tier 3: Garrek's Falls Revelation (Discovery)
-**When party reaches Garrek's Falls:**
-
-**Mistkin Recognition:**
-- Mistkin see Brand's markings, react with reverence
-- "You bear the Mark of Thunder. Are you... one of the Storm Lords?"
-- Explain: Storm Lords helped protect Mistkin during flight to Underdark
-- Alliance formed, Dominion Codex protects both tribes
-
-**Storm Lord Tribe (Separate but Allied):**
-- Storm Lords live as separate tribe near Garrek's Falls
-- In temporal stasis or deep hiding (visitors to Falls aren't rare enough for safety)
-- Still hunted by [unknown faction from original continent]
-- Dominion Codex's protection extends to them as well
-- Brand's ancestors: "We thought we were the last. You carry our blood."
-
-**Investigation becomes REUNION:**
-- Brand meets his people (or learns where they are in stasis)
-- Learns why they fled: [faction] attacked, forced exodus
-- Connection: Mistkin and Storm Lords are mutual protectors
-- Codex protects both tribes from their respective hunters
-
-**Moral Complexity:**
-- Removing Codex endangers Storm Lords AND Mistkin
-- Brand must choose: Artifact's power vs. his people's safety
-- Ties directly to Manny's and Nikki's arcs
-
----
-
-### DM Guidance: Brand's Investigation
-
-**Slow Burn Approach:**
-- Don't force clues - wait for Brand to ask
-- Information comes gradually, no rush
-- Entry nodes remain flexible (any NPC, any location can provide hints)
-
-**Session 2 (Meridian's Rest):**
-- Tier 0: If Brand asks, provide artifact fragment or local ruin hint
-- Tier 1: General Storm Lord rumors available
-- No pressure to investigate immediately
-
-**Session 3+ (Agastia):**
-- Tier 1-2: Scholar Quarter has more detailed texts
-- Slowly builds picture: Storm Lords fled, hiding in Underdark
-- Hints at Mistkin alliance
-
-**Garrek's Falls Discovery:**
-- Full revelation when party arrives
-- Brand's arc converges with Manny's (Codex) and Nikki's (Mistkin)
-- Three-way moral dilemma: Remove Codex = endanger two tribes
-
-**Long-Term Questions:**
-- Who hunted Storm Lords from their continent?
-- Why are they still hunting?
-- Can Brand awaken Storm Lord powers?
-- Will Storm Lords emerge from hiding/stasis?
+- **Brand's Arc:** TBD - connection to Garrek's Falls to be determined
+- **Party Decision:** Removing Codex endangers Mistkin
 
 ---
 

@@ -119,7 +119,7 @@ related_entities: [Professor Zero, Manny, Nona, Italian Restaurant Parents]
 - Relationship development with [[Nona (Subject #9)]]
 - Moral choice: [[Professor Zero]] vs. [[Manny]]'s safety
 - Locating Mistkin at Garrek's Falls - mission accomplished, reports to Zero
-- Brand's connection to Mistkin (Storm Lords are their allies) creates party tension
+- Brand's connection to Mistkin creates party tension
 - Learning what [[Professor Zero]] does with people she reports to him
 - Realizing her reconnaissance missions endanger innocent people
 - Does she care more about Brand (party member) than completing Zero's mission?

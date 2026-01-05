@@ -102,7 +102,7 @@ related_entities: [Lost People, Family Unknown, Ancient Civilization]
 - Is the demon portal seal still holding?
 - Where exactly in the Underdark did survivors resettle?
 - Is the Underdark settlement still alive and guarding the seal?
-- Why did Storm Guardians choose to help [[Josh]]'s people?
+- Why did the allied tribe choose to help [[Josh]]'s people?
 - Can [[Josh]] redeem his family name?
 - Are demons still trying to break through the seal?
 

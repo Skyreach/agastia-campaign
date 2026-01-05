@@ -131,9 +131,8 @@ tags: [npc, major, patron, mistkin, temporal-bloodline, archaeologist, future-si
   - Protect party ally (betray Zero)?
 
 **Brand's People:**
-- Lyria knows Storm Lords (Brand's ancestors)
-- Storm Lords allied with Mistkin at Garrek's Falls
-- Can provide information about Brand's heritage
+- Lyria may know of Brand's ancestors
+- Can provide information about Brand's heritage if they were at Garrek's Falls
 - May recognize his thunder markings
 
 **Manny's Quest:**

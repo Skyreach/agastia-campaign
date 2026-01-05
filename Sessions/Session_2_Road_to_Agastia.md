@@ -864,23 +864,6 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 - "She spoke of protecting 'the last of the storm-marked'"
 - Thorne doesn't know her name, but matches Lyria's description
 
-**Toggle: Option 3 - Temple of the Storm (DC 12 Religion)**
-- Small shrine in [[The Depths]] (Tier 7)
-- Priest knows legends of "The Storm Guardians"
-- "Protectors of those marked by elemental power"
-- "They're said to still exist, watching over descendants"
-
-**Revelation:**
-- [[Josh]]'s ancestors were protected by an Elemental Order
-- The Storm Guardians (Lyria's people) sheltered them
-- Lyria herself may have been involved (she's ancient)
-- The markings on [[Josh]] are inherited protections
-
-**Next Steps:**
-- Find the Storm Guardians (requires investigation)
-- Seek out Lyria (she knows the truth)
-- Learn why ancestors needed protection
-
 ---
 
 ## Post-Session Debrief
