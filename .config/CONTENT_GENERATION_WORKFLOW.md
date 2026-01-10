@@ -313,8 +313,112 @@ Update status as each option set is approved.
 
 ---
 
+## 🚨 CRITICAL: Content Linking Requirements
+
+**ADDED:** 2026-01-10 - MANDATORY linking audit step
+
+### The Problem
+
+Orphaned references (entries without actionable content links) are **USELESS**:
+- ❌ "Player Choice Encounter" with no links → completely ignored by DM
+- ❌ "Dead Smuggler" with no encounter link → just flavor text, no mechanics
+- ❌ "[[Il Drago Rosso]]" with no quest link → why would players go there?
+
+**User feedback:** "No one cares about the restaurant in isolation - this is part of her quest. If you don't give them a link to a point-crawl then how would this not simply become a slog?"
+
+### The Rule
+
+**EVERY REFERENCE MUST LINK TO ACTIONABLE CONTENT**
+
+- NPCs → Link to NPC page, quest, or encounter
+- Encounters → Link to Encounter_Name.md or point-crawl page
+- Locations → Link to location page AND any quests/events there
+- Hooks → Link to the quest/investigation/point-crawl they lead to
+
+### Mandatory Workflow Addition
+
+**Step 5: Audit for Orphaned References (BEFORE SAVING)**
+
+After generating content but BEFORE saving/syncing:
+
+1. **Use audit-session-links skill** on generated content
+   ```
+   Use audit-session-links skill on Generated/[file].md
+   ```
+
+2. **For each orphaned reference found:**
+   - Use content-linker skill to search for existing content
+   - If content exists → Add wikilink
+   - If content doesn't exist → Create it using this workflow (present options)
+
+3. **Verify zero orphans:**
+   ```
+   Re-run audit-session-links skill
+   Expected result: "Orphaned references: 0"
+   ```
+
+4. **Only then save and sync to Notion**
+
+### Example Integration
+
+```
+User: "Create Session 4 structure"
+
+Step 1: Present 3-4 session structure options
+User: Selects Option B
+
+Step 2: Present 3-4 encounter options
+User: Approves encounters A, C, D
+
+Step 3: Generate session content
+Result: Session_4_Into_the_Depths.md created
+
+Step 4: Audit for orphaned references ← NEW MANDATORY STEP
+Use audit-session-links skill
+
+Result:
+  Found 3 orphans:
+  - "Dead Smuggler" (no encounter link)
+  - "Player Choice Encounter" (vague, no specific encounters)
+  - "[[Il Drago Rosso]]" (no quest link)
+
+Step 5: Fix orphaned references
+  - Use content-linker: "Dead Smuggler"
+    → Not found, create Encounter_Dead_Smuggler.md (present options)
+  - Use content-linker: "Player Choice"
+    → Replace with specific encounter list
+  - Use content-linker: "Nikki family quest"
+    → Not found, create Quest_Family_Protection.md (present options)
+
+Step 6: Re-audit
+Use audit-session-links skill
+Result: "Orphaned references: 0" ✅
+
+Step 7: Save and sync
+python3 sync_notion.py Sessions/Session_4_Into_the_Depths.md session
+```
+
+### Skills Reference
+
+- **audit-session-links** (.claude/skills/audit-session-links.md)
+  - Validates every list item has proper wikilinks
+  - Reports orphaned references
+  - Required before syncing session files
+
+- **content-linker** (.claude/skills/content-linker.md)
+  - Searches repo for content by name/context
+  - Suggests wikilinks for existing content
+  - Reports when content needs to be created
+
+### Permanent Documentation
+
+This rule is documented in CLAUDE.md:172-183 for all future threads.
+
+---
+
 ## Version History
 
+- **2026-01-10:** Added CRITICAL content linking requirements (MANDATORY audit step)
 - **2025-10-05:** Initial workflow documentation created
 - Added SYWABAGM dungeon keying integration
 - Added MCP tool parameter requirements

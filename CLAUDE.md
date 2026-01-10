@@ -169,6 +169,19 @@ python3 .config/verify_sync_status.py
 - ✅ **Follow SESSION_FORMAT_SPEC.md for all session documents**
 - ✅ **Use tiered DC format for all scene descriptions**
 
+**🚨 CRITICAL LINKING RULE - EVERY REFERENCE MUST LINK TO CONTENT:**
+- ❌ **NEVER create orphaned references** - "Player Choice Encounter" means nothing without links
+- ❌ **NEVER list NPCs/locations/encounters without linking to their WHY**
+- ✅ **EVERY list item MUST link to actionable content:**
+  - NPCs → Link to their NPC page, quest, or encounter
+  - Encounters → Link to Encounter_Name.md or point-crawl page
+  - Locations → Link to location page AND any quests/events there
+  - Hooks → Link to the quest/investigation/point-crawl they lead to
+- ✅ **If content doesn't exist:** Search for it, create it, or flag gap for user
+- ✅ **Process: Search → Create if missing → Link → Verify**
+
+**Why this matters:** Without links, entries are useless. "Dead Smuggler" without a link to the encounter is just flavor text. Players need to know WHAT they're engaging with and WHERE to find it. This is the entire point of the wiki structure.
+
 **Full workflows:** See `.config/CONTENT_GENERATION_WORKFLOW.md` and `.config/SESSION_FORMAT_SPEC.md`
 
 ---

@@ -1,212 +1,368 @@
-# Session TODO List - Notion Bidirectional Sync Project
-Last updated: 2026-01-10 05:20
-**STATUS:** 🚧 IN PROGRESS - Attack plan complete, ready for implementation thread
+# Session TODO List - Content Linking & 2-Way Sync Project
+Last updated: 2026-01-10 17:00
 
-## 📋 PROJECT OVERVIEW
+## 🚨 CRITICAL UNDERSTANDING (2026-01-10)
 
-Fix pull_session_notes.py to achieve 100% feature parity with sync_notion.py, enabling clean Notion→Repo syncing without corruption.
+**EVERY REFERENCE MUST LINK TO ACTIONABLE CONTENT** - This is THE POINT of the wiki structure.
 
-**Context:**
-- Session 3 was run, gameplay notes added to Notion
-- pull_session_notes.py pulled content but corrupted it (328 line diff)
-- Wikilinks stripped, list numbering broken, formatting damaged
-- Another thread reverted Session_3 to HEAD, discarding gameplay notes
-- Gameplay notes now safely isolated in .working/Session_3_Notion_Pull.md
-- Need to fix sync tool before merging gameplay notes back
+- ❌ "Player Choice Encounter" with no links → useless, gets ignored
+- ❌ "Dead Smuggler" with no encounter link → just flavor text
+- ❌ "[[Il Drago Rosso]]" with no quest link → why would players go there?
 
-**Files Involved:**
-- `.config/pull_session_notes.py` (295 lines) - Tool to fix
-- `sync_notion.py` (702 lines) - Reference for working features
-- `.working/Session_3_Notion_Pull.md` - Test case (corrupted)
-- `Sessions/Session_3_The_Steel_Dragon_Begins.md` (git HEAD) - Test case (correct)
-- `.working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md` - Full attack plan
+✅ **Process: Search for content → Create if missing → Add wikilinks → Verify**
 
-**Goal:** Round-trip sync (repo→Notion→repo) must produce zero diff
+**Documented in:** CLAUDE.md:172-183 (permanent guidance for all threads)
+
+**Bold Formatting Rule:** `**[[Entity]]:** Description` NOT `[[Entity]]**:** Description`
+- Bold the ENTIRE subject including wikilinks, then colon, then description
 
 ---
 
-## 🚨 Active Tasks
+## 📋 PROJECT PHASES
 
-### Completed
-- [x] [05:14] Pull Session 3 content from Notion with gameplay notes
-  - Context: Ran .config/pull_session_notes.py to fetch from Notion
-  - Result: 328 lines changed (corruption detected)
+### PHASE 1: Fix Tooling First ✅ (COMPLETED 2026-01-10 17:05)
+**Goal:** Create MCP tools and skills to enforce linking requirements automatically
 
-- [x] [05:14] Save Notion content as working file (.working/Session_3_Notion_Pull.md)
-  - Context: Preserve corrupted version for analysis
-  - File: .working/Session_3_Notion_Pull.md (safe copy)
+- [x] [17:00 → 17:03] Create skill 'content-linker'
+  - **Created:** .claude/skills/content-linker.md
+  - **Purpose:** Search repo for content by name/context, suggest wikilinks, report orphans
+  - **Features:**
+    - Searches Encounters/, Quests/, NPCs/, Locations/, PointCrawls/
+    - Reports orphaned references with context
+    - Suggests content to create if nothing found
+    - Provides wikilink recommendations
+  - **Status:** ✅ Complete and ready to use
 
-- [x] [05:15] Analyze sync damage - compare Notion pull vs git HEAD version
-  - Context: git diff shows 328 line changes
-  - Identified 8 corruption categories:
-    1. Wikilink stripping (50+ instances)
-    2. List numbering (all become "1.")
-    3. Bold formatting (asterisks misplaced)
-    4. Indentation (extra spaces added)
-    5. Frontmatter format (quotes removed, arrays changed)
-    6. Whitespace (blank lines removed)
-    7. Clue list renumbering
-    8. Entity name changes (Geist → Geist Investigation)
+- [x] [17:00 → 17:02] Create skill 'audit-session-links'
+  - **Created:** .claude/skills/audit-session-links.md
+  - **Purpose:** Validate every list item in session files has proper wikilinks
+  - **Process:**
+    - Parses session markdown for list items (bullets, numbered)
+    - Checks each has wikilinks to actionable content
+    - Reports missing links with context
+    - Uses content-linker skill for suggestions
+  - **Status:** ✅ Complete and ready to use
 
-- [x] [05:16] Audit sync_notion.py repo→Notion features (what currently works)
-  - Context: Reviewed sync_notion.py (702 lines)
-  - Documented 7 working feature categories:
-    1. Wikilink support (parse_rich_text function)
-    2. Rich text formatting (bold, italic, code, strikethrough)
-    3. Block types (headings, toggles, lists, quotes, code blocks)
-    4. Hierarchical nesting (headings with children)
-    5. Frontmatter handling (all Notion property types)
-    6. Batch syncing (recursive glob, .notionignore support)
-    7. Timestamp tracking (prevent sync loops)
+- [x] [17:00 → 17:04] Update CONTENT_GENERATION_WORKFLOW.md
+  - **Added:** New mandatory section "CRITICAL: Content Linking Requirements" (lines 316-415)
+  - **Includes:** Step 5 audit requirement (BEFORE SAVING)
+  - **Enforces:** Zero orphaned references before sync
+  - **References:** Both new skills and CLAUDE.md:172-183
+  - **Status:** ✅ Complete
 
-- [x] [05:18] Document expected Notion→repo feature parity requirements
-  - Context: All repo→Notion features must work in reverse
-  - Documented 10 mandatory features
-  - Created 5 test cases with acceptance criteria
-  - Defined success criteria (zero diff on round-trip)
+**✅ PHASE 1 COMPLETION CRITERIA MET:**
+- ✅ content-linker skill created (.claude/skills/content-linker.md)
+- ✅ audit-session-links skill created (.claude/skills/audit-session-links.md)
+- ✅ CONTENT_GENERATION_WORKFLOW.md updated with mandatory linking step
 
-- [x] [05:20] Create attack plan document (.working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md)
-  - Context: Comprehensive plan for fixing pull_session_notes.py
-  - File: .working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md (9,000+ words)
-  - Sections:
-    - Critical context (what happened)
-    - Sync damage analysis (328 line breakdown)
-    - Repo→Notion working features (documented)
-    - Notion→Repo missing features (what to build)
-    - Feature parity requirements (10 mandatory)
-    - Attack plan phases (4 phases)
-    - Technical implementation notes
-    - Test cases & validation
-    - Success criteria
+**🔄 CONTINUATION PROMPT FOR PHASE 2:**
+```
+Phase 1 complete. MCP tool 'content-linker' and skill 'audit-session-links' created.
 
-### In Progress
-- [ ] [05:21] Generate continuation prompt for fresh thread
-  - Context: Thread context getting large (88k+ tokens used)
-  - Need concise prompt to resume in fresh thread
-  - Must include: attack plan location, test files, goal
+Next: PHASE 2 - Fix Session 3 data based on linking requirements and formatting rules.
 
----
+Process:
+1. Use audit-session-links skill on Sessions/Session_3_The_Steel_Dragon_Begins.md
+2. Use content-linker MCP to find existing content for each orphaned reference
+3. Create missing content using workflow-enforcer (present options first)
+4. Fix bold formatting: [[Entity]]**: → **[[Entity]]:**
+5. Verify all list items link to actionable content
 
-## 📊 PROGRESS TRACKING
-
-**Overall:** Phase 1 complete (6/6 tasks), ready for Phase 2 implementation
-
-**Phase 1: Diagnostic & Audit** ✅ (Complete)
-- ✅ Pull Session 3 from Notion
-- ✅ Save as working file
-- ✅ Analyze corruption (328 lines)
-- ✅ Audit sync_notion.py (7 feature categories)
-- ✅ Audit pull_session_notes.py (8 broken features)
-- ✅ Create attack plan document
-
-**Phase 2: Feature Implementation** ⏳ (Next Thread - 9 features)
-- Priority 1: Wikilinks, formatting, list numbering (blockers)
-- Priority 2: Frontmatter, toggles, code blocks (format preservation)
-- Priority 3: Whitespace, blockquotes, nesting (polish)
-
-**Phase 3: Testing & Validation** ⏳ (After Phase 2)
-- Round-trip tests
-- All 5 test cases
-- Acceptance criteria verification
-
-**Phase 4: Session 3 Recovery** ⏳ (After Phase 3)
-- Extract gameplay notes
-- Run fixed sync tool
-- Commit Session 3 with notes
-- Extract deferred modules
-- Resume session planning workflow
-
----
-
-## 🔍 KEY DECISIONS
-
-1. **Merge Strategy:** ✅ DECIDED
-   - Use "Smart Merge" approach (Approach 2)
-   - Detect new sections in Notion, append to local file
-   - Preserve existing sections unchanged
-   - Upgrade to 3-way merge later if needed
-
-2. **Test Case:** ✅ DECIDED
-   - Session 3 is perfect test case (real corruption example)
-   - 328 line diff provides comprehensive validation
-   - Gameplay notes are actual content needing merge
-
-3. **Implementation Order:** ✅ DECIDED
-   - Priority 1 first (wikilinks, formatting, numbering) - blockers
-   - Priority 2 second (frontmatter, toggles, code) - important
-   - Priority 3 last (whitespace, quotes, nesting) - polish
-
-4. **Success Criteria:** ✅ DECIDED
-   - Zero diff on round-trip test is MANDATORY
-   - All 10 feature parity requirements must pass
-   - No exceptions, no compromises
-
----
-
-## 📝 NOTES FOR NEXT THREAD
-
-**Attack Plan Location:**
-- `.working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md` (complete technical spec)
-
-**Test Files:**
-- `.working/Session_3_Notion_Pull.md` (corrupted version from Notion)
-- `Sessions/Session_3_The_Steel_Dragon_Begins.md` (git HEAD - correct version)
-
-**Key Insight:**
-- sync_notion.py already has all the logic we need (wikilink detection, rich text parsing, etc.)
-- We need to reverse-engineer it for Notion→Repo direction
-- Copy parse_rich_text logic, invert it
-
-**First Task for Next Thread:**
-1. Read NOTION_BIDIRECTIONAL_SYNC_PLAN.md
-2. Start with Priority 1: Wikilink reconstruction
-3. Implement fetch_page_title function
-4. Test against Session 3 Notion pull
-5. Verify wikilinks preserved
-
-**Validation Command:**
-```bash
-# After fixing pull_session_notes.py, test round-trip:
-python3 sync_notion.py Sessions/Session_3_The_Steel_Dragon_Begins.md session
-python3 .config/pull_session_notes.py
-git diff Sessions/Session_3_The_Steel_Dragon_Begins.md
-# MUST show zero changes (empty diff)
+Reference: .working/TODO_SESSION.md Phase 2 for full details
 ```
 
 ---
 
-## ✅ Completed Tasks Archive
+### PHASE 2: Fix Session 3 Data ⏳ (Next)
+**Goal:** Audit and fix Session 3 for orphaned references and formatting issues
 
-- [x] [05:14 → 05:14] Pull Session 3 content from Notion with gameplay notes
-  - Ran: python3 .config/pull_session_notes.py
-  - Result: 1 session updated (Session 3), 3 skipped (< 1h since push)
-  - Corruption detected: 328 lines changed
+- [ ] [17:00] Run audit-session-links skill on Session 3
+  - **File:** Sessions/Session_3_The_Steel_Dragon_Begins.md
+  - **Report:** All orphaned references (no wikilinks to content)
 
-- [x] [05:14 → 05:14] Save Notion content as working file
-  - Copied to: .working/Session_3_Notion_Pull.md
-  - Purpose: Preserve corrupted version for analysis
+- [ ] [17:00] Fix Key NPCs section (lines 45-52)
+  - **Current issues:**
+    - `**Dead Smuggler:** Victim at crate scene` → Missing link to encounter
+    - `[[Corvin Tradewise]]**:** [[Merchant Caravan]] leader` → Wrong bold format, missing quest link
+    - `[[Mira Saltwind]]**:** [[Merchant District]] proprietor` → Wrong bold format, missing shop/quest link
+  - **Process:**
+    - Use content-linker to search for: Encounter_Dead_Smuggler, Quest_Corvin, Location_Mira_Shop
+    - Create if missing (use workflow-enforcer)
+    - Fix format: `**[[Entity]]:** Description` with proper wikilinks
 
-- [x] [05:15 → 05:16] Analyze sync damage
-  - Compared: git diff Sessions/Session_3_The_Steel_Dragon_Begins.md
-  - Found: 8 corruption categories, 328 total line changes
-  - Documented: All patterns in attack plan
+- [ ] [17:00] Fix Session Flow section (line 41)
+  - **Current:** `**Player Choice Encounter:** An encounter that can be resolved in multiple ways`
+  - **Problem:** Completely useless - no links to WHAT encounters
+  - **Fix:** Replace with links to specific Day 2 encounters or point-crawl page
+  - **Search for:** Day 2 encounter options, PointCrawl files
 
-- [x] [05:16 → 05:17] Audit sync_notion.py
-  - Reviewed: 702 lines of working code
-  - Documented: 7 feature categories that work correctly
-  - Found: parse_rich_text function (lines 83-228) handles wikilinks perfectly
+- [ ] [17:00] Fix Locations section (lines 226+)
+  - **[[Il Drago Rosso]]** (line 226) → Link to Nikki's family threat quest
+  - **Murder Scene Alleyway** → Link to Steel Dragon investigation quest
+  - **Search:** Quest_Nikki_Family_Threat.md, Quest_Steel_Dragon.md
+  - **Create if missing**
 
-- [x] [05:17 → 05:18] Audit pull_session_notes.py
-  - Reviewed: 295 lines of broken code
-  - Found: notion_blocks_to_markdown function (lines 54-184) has bugs
-  - Identified: 8 missing features causing corruption
+- [ ] [17:00] Fix bold formatting throughout Session 3
+  - **Pattern to fix:** `[[Entity]]**:` → `**[[Entity]]:`
+  - **Pattern to fix:** `[[Entity]]**'s Hook:` → `**[[Entity]]'s Hook:`
+  - **Pattern to fix:** `[[Location]]** - **[[Entity]]'s Place**` → `**[[Location]] - [[Entity]]'s Place**`
+  - **Tool:** Manual edits using Edit tool
 
-- [x] [05:18 → 05:19] Document feature parity requirements
-  - Created: 10 mandatory features list
-  - Created: 5 test cases with acceptance criteria
-  - Defined: Zero-diff success criteria
+**✅ PHASE 2 COMPLETION CRITERIA:**
+- Session 3 has ZERO orphaned references
+- All bold formatting matches rule: `**[[Entity]]:** Description`
+- audit-session-links skill reports 0 issues on Session 3
 
-- [x] [05:19 → 05:20] Create attack plan document
-  - File: .working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md
-  - Size: 9,000+ words, comprehensive technical spec
-  - Sections: Context, damage analysis, features, implementation, tests
+**🔄 CONTINUATION PROMPT FOR PHASE 3:**
+```
+Phase 2 complete. Session 3 data fixed - all references link to content, formatting correct.
+
+Next: PHASE 3 - Fix import scripts for 2-way sync.
+
+Problem: pull_session_notes_v2.py creates malformed bold patterns like [[Entity]]**:** when pulling from Notion.
+
+Tasks:
+1. Fix markdown_normalizer.py to convert malformed patterns to **[[Entity]]:**
+2. Test with: git restore Session_3 → pull → git diff (must be empty)
+3. If issues remain, fix wikilink_reconstructor.py
+
+Reference: .working/TODO_SESSION.md Phase 3 for full details
+```
+
+---
+
+### PHASE 3: Fix 2-Way Sync Scripts ⏳ (After Phase 2)
+**Goal:** Ensure pull_session_notes_v2.py produces zero cosmetic diffs (prevents sync loops)
+
+**Context:** Earlier work fixed most sync issues, but bold formatting still creates diffs:
+- Notion returns: `**[[Entity]]:******` (extra asterisks)
+- Normalizer creates: `[[Entity]]**:**` (wrong - entity should be bold)
+- Need: `**[[Entity]]:**` (entity bold, proper format)
+
+- [ ] [17:00] Fix markdown_normalizer.py bold patterns
+  - **File:** .config/markdown_normalizer.py
+  - **Current patterns:** Lines 31-39 create `[[Entity]]**:**`
+  - **Required patterns:** Detect list items, make entity bold: `**[[Entity]]:**`
+  - **Examples:**
+    - List item: `- [[Entity]]**:` → `- **[[Entity]]:`
+    - Numbered: `2. [[Entity]]**'s Hook:` → `2. **[[Entity]]'s Hook:`
+    - Subsection: `[[Location]]** - **[[Entity]]'s` → `**[[Location]] - [[Entity]]'s`
+  - **Approach:** Context-aware regex (detect list markers, apply bold to full subject)
+
+- [ ] [17:00] Test pull script with Session 3
+  - **Commands:**
+    ```bash
+    git restore Sessions/Session_3_The_Steel_Dragon_Begins.md
+    python3 .config/pull_session_notes_v2.py
+    git diff Sessions/Session_3_The_Steel_Dragon_Begins.md
+    ```
+  - **Expected:** Empty diff (zero lines changed)
+  - **If issues:** Debug which patterns still need fixes
+
+- [ ] [17:00] Fix wikilink_reconstructor.py if needed
+  - **File:** .config/wikilink_reconstructor.py
+  - **Issue:** Applies bold per-segment from Notion (mention separate from punctuation)
+  - **Option:** Detect when surrounding text is bold, apply to wikilink too
+  - **Priority:** Only if normalizer can't fix it in post-processing
+
+**✅ PHASE 3 COMPLETION CRITERIA:**
+- Round-trip sync produces ZERO diff: repo→Notion→repo
+- markdown_normalizer.py handles all bold+wikilink patterns
+- No cosmetic formatting changes between sync runs
+
+**🔄 CONTINUATION PROMPT FOR PHASE 4:**
+```
+Phase 3 complete. 2-way sync working - pull_session_notes_v2.py produces zero diff.
+
+Next: PHASE 4 - Fix ALL content across repository.
+
+The linking and formatting issues exist in ALL session files, not just Session 3. Need to:
+1. Run audit-session-links on ALL session files
+2. Fix orphaned references throughout
+3. Fix bold formatting throughout
+4. Extend to quests, NPCs, encounters, locations
+
+Reference: .working/TODO_SESSION.md Phase 4 for full details
+```
+
+---
+
+### PHASE 4: Fix ALL Content ⏳ (After Phase 3)
+**Goal:** Apply linking and formatting fixes across entire repository
+
+**Scope:**
+- All session files (Sessions/)
+- All quest files (Quests/)
+- All NPC files (NPCs/)
+- All encounter files (Encounters/)
+- All location files (Locations/)
+
+- [ ] [17:00] Audit ALL session files
+  - **Files:** Sessions/Session_1*.md, Session_2*.md, Session_3*.md, Session_4*.md
+  - **Tool:** Run audit-session-links skill on each
+  - **Report:** All orphaned references across all sessions
+  - **Fix:** Use content-linker to find/create missing content
+  - **Fix:** Bold formatting per rule
+
+- [ ] [17:00] Audit ALL quest files
+  - **Files:** Quests/*.md
+  - **Check:** Do quests link to encounters, NPCs, locations, factions?
+  - **Fix:** Add missing wikilinks
+  - **Example:** Quest must link to encounter files, NPC pages involved
+
+- [ ] [17:00] Audit ALL NPC files
+  - **Files:** NPCs/**/*.md
+  - **Check:** Do NPCs link to quests, factions, locations they're involved with?
+  - **Fix:** Add missing wikilinks
+  - **Example:** NPC page must link to quests they offer, faction they belong to
+
+- [ ] [17:00] Audit ALL encounter files
+  - **Files:** Encounters/*.md
+  - **Check:** Do encounters link to NPCs, locations, quests they connect to?
+  - **Fix:** Add missing wikilinks
+
+- [ ] [17:00] Audit ALL location files
+  - **Files:** Locations/**/*.md
+  - **Check:** Do locations link to encounters, quests, NPCs found there?
+  - **Fix:** Add missing wikilinks
+
+**✅ PHASE 4 COMPLETION CRITERIA:**
+- audit-session-links reports 0 issues across ALL sessions
+- All quests link to encounters/NPCs/locations
+- All NPCs link to quests/factions/locations
+- All encounters link to NPCs/locations/quests
+- All locations link to encounters/quests/NPCs
+- Bold formatting consistent across all files
+
+**🔄 CONTINUATION PROMPT FOR PHASE 5:**
+```
+Phase 4 complete. ALL content across repository fixed for linking and formatting.
+
+Next: PHASE 5 - Plan Session 4.
+
+Now that linking requirements are enforced and 2-way sync works, resume session planning workflow:
+1. Use workflow-enforcer MCP to start session generation
+2. Present 3-4 session structure options
+3. Get user approval
+4. Generate session content
+5. Use audit-session-links to verify all references link to content
+6. Sync to Notion
+
+Reference: .working/TODO_SESSION.md Phase 5 for full details
+```
+
+---
+
+### PHASE 5: Session 4 Planning ⏳ (After Phase 4)
+**Goal:** Plan and generate Session 4 using proper workflows
+
+- [ ] [17:00] Start workflow-enforcer for session generation
+  - **MCP:** workflow-enforcer.start_workflow(workflow_type="session_generation")
+  - **Stage:** present_options
+
+- [ ] [17:00] Present 3-4 session structure options
+  - **Follow:** CONTENT_GENERATION_WORKFLOW.md
+  - **Include:** Session themes, major encounters, player hooks
+  - **Get:** User approval on preferred option
+
+- [ ] [17:00] Generate session content
+  - **Follow:** SESSION_FORMAT_SPEC.md for format
+  - **Enforce:** Every list item must link to content (CRITICAL LINKING RULE)
+  - **Create:** Required encounters, quests, NPCs using workflow
+
+- [ ] [17:00] Audit Session 4 with audit-session-links
+  - **Verify:** Zero orphaned references
+  - **Verify:** All formatting correct
+  - **Fix:** Any issues found
+
+- [ ] [17:00] Sync Session 4 to Notion
+  - **Command:** python3 sync_notion.py Sessions/Session_4*.md session
+  - **Verify:** Notion page created correctly
+
+**✅ PHASE 5 COMPLETION CRITERIA:**
+- Session 4 fully planned and generated
+- All references link to content (0 orphans)
+- Formatting correct
+- Synced to Notion successfully
+
+---
+
+## ✅ Completed Tasks
+
+- [x] [16:40 → 16:42] Document CRITICAL RULE in CLAUDE.md
+  - Added: CLAUDE.md:172-183 with linking requirements
+  - Impact: Permanent guidance for all future threads
+
+- [x] [16:45 → 17:00] Update .working/TODO_SESSION.md with phased approach
+  - Structured: 5 phases with continuation prompts
+  - Purpose: Prevent re-explaining complex nuances when context runs out
+
+- [x] [17:00 → 17:05] PHASE 1 COMPLETE - Fix Tooling
+  - Created: .claude/skills/content-linker.md (searches repo for content)
+  - Created: .claude/skills/audit-session-links.md (validates session links)
+  - Updated: .config/CONTENT_GENERATION_WORKFLOW.md (mandatory linking step)
+  - Impact: All future content generation will enforce linking requirements
+  - Ready for: Phase 2 (Session 3 fixes) in NEW THREAD
+
+---
+
+## 📝 Key Decisions & Context
+
+### CRITICAL: Linking Rule (2026-01-10 16:40)
+**Every reference must link to actionable content** - THE POINT of wiki structure.
+
+User: "No one cares about the restaurant in isolation - this is part of her quest. If you don't give them a link to a point-crawl then how would this not simply become a slog?"
+
+**Process:**
+1. Search for existing content (Encounters/, Quests/, NPCs/, PointCrawls/)
+2. If found → Add wikilink
+3. If not found → Flag gap, create content using workflow-enforcer
+4. Never leave orphaned references
+
+### Bold Formatting Rule (2026-01-10 16:30)
+**Bold the entire subject including wikilinks:**
+- `**[[Entity]]:** Description` NOT `[[Entity]]**:** Description`
+- Applies to: NPC lists, session flow items, subsection labels
+
+### Naming Convention
+- No fixed convention - contextual
+- Flat structure (roladex) > nested hierarchies
+- Examples: Encounter_Name.md, Quest_Name.md, NPC_Name.md
+
+### Where to Fix Bold Formatting
+- Option B (normalizer) - Post-processing in markdown_normalizer.py
+- Easier to test in isolation than modifying reconstructor
+
+---
+
+## 🗂️ File Reference
+
+**Key Files:**
+- CLAUDE.md:172-183 (linking rule - permanent)
+- .working/TODO_SESSION.md (this file - continuation prompts)
+- .config/markdown_normalizer.py (needs bold fixes)
+- .config/wikilink_reconstructor.py (may need fixes)
+- .config/CONTENT_GENERATION_WORKFLOW.md (needs linking step)
+
+**Audit Targets:**
+- Sessions/ (all session files)
+- Quests/ (all quest files)
+- NPCs/ (all NPC files)
+- Encounters/ (all encounter files)
+- Locations/ (all location files)
+
+---
+
+## 📊 Overall Progress
+
+**Current Phase:** Phase 1 COMPLETE ✅ → Ready for Phase 2 (NEW THREAD)
+**Overall Progress:** 3/21 tasks complete (14%)
+
+**Phase Breakdown:**
+- Phase 1: 3/3 tasks ✅ COMPLETE (Tooling)
+- Phase 2: 0/5 tasks (Session 3 fixes) - NEXT
+- Phase 3: 0/3 tasks (2-way sync)
+- Phase 4: 0/5 tasks (All content)
+- Phase 5: 0/5 tasks (Session 4)
+
+**Next Action (NEW THREAD):** Begin Phase 2 using continuation prompt above

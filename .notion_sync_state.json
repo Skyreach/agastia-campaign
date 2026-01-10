@@ -17,8 +17,8 @@
     },
     "Sessions/Session_3_The_Steel_Dragon_Begins.md": {
       "notion_page_id": "2d9693f0c6b48116a89ec5397dd339e7",
-      "last_pushed_to_notion": "2026-01-10T15:46:47.855993+00:00",
-      "last_pulled_from_notion": "2026-01-10T14:45:43.841651+00:00"
+      "last_pushed_to_notion": "2026-01-10T21:53:50.082073+00:00",
+      "last_pulled_from_notion": "2026-01-10T15:46:57.901350+00:00"
     }
   },
   "entities": {
@@ -1113,6 +1113,10 @@
     "Encounters/Zombie_Ambush.md": {
       "notion_page_id": "2de693f0c6b4814e8274c5570266a04c",
       "last_pushed_to_notion": "2026-01-04T03:38:46.274911+00:00"
+    },
+    "Quests/Quest_Nikki_Family_Protection.md": {
+      "notion_page_id": "2e4693f0c6b481bebfdadc03b983f926",
+      "last_pushed_to_notion": "2026-01-10T21:51:33.744783+00:00"
     }
   }
 }

@@ -30,6 +30,7 @@ from sync_state_manager import needs_pull_from_notion, record_pull_from_notion
 from wikilink_reconstructor import WikilinkReconstructor
 from hash_utilities import build_notion_block_hashmap, build_local_block_hashmap, find_changed_blocks, print_diff_stats
 from frontmatter_preserver import merge_with_preserved_frontmatter
+from markdown_normalizer import normalize_markdown_output
 
 import frontmatter
 
@@ -253,6 +254,7 @@ def merge_session_content(local_file_path, notion_markdown_lines):
     Strategy:
     - Preserve frontmatter from local file WITH original formatting
     - Replace content with Notion content (Notion is source of truth for sessions)
+    - Normalize markdown formatting to prevent cosmetic diffs
 
     Args:
         local_file_path: Path to local markdown file
@@ -263,6 +265,9 @@ def merge_session_content(local_file_path, notion_markdown_lines):
     """
     # Convert Notion markdown to single string
     notion_content = '\n'.join(notion_markdown_lines)
+
+    # Normalize markdown formatting (fix bold+wikilinks, whitespace)
+    notion_content = normalize_markdown_output(notion_content)
 
     # Use frontmatter preserver to maintain YAML formatting
     return merge_with_preserved_frontmatter(local_file_path, notion_content)

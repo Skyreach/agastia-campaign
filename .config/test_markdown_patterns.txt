@@ -1,0 +1,20 @@
+# Test Patterns from Git Diff
+# These are the EXACT failing patterns
+
+# Test Case 1: Bold closes after 's instead of after Hook:
+# INPUT:
+**[[Kyle/Nameless]]'s** Hook:**
+# EXPECTED:
+**[[Kyle/Nameless]]'s Hook:**
+
+# Test Case 2: Extra ** after colon (4 asterisks total instead of 2)
+# INPUT:
+**[[Corvin Tradewise]]:**** Merchant
+# EXPECTED:
+**[[Corvin Tradewise]]:** Merchant
+
+# Test Case 3: Nested bold markers inside toggle
+# INPUT:
+**Toggle: **Tier 2 - **[[Noble Quarter]]**
+# EXPECTED:
+**Toggle: Tier 2 - [[Noble Quarter]]**

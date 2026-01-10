@@ -37,16 +37,16 @@ graph TD
 
 **Toggle: Session Flow**
   1.  **Travel to [[Agastia]]:** 2-3 day journey with themed encounters.
-  2.  [[Kyle/Nameless]]**'s Hook:** An encounter on the road that points [[Kyle/Nameless]] towards the docks and [[Geist (Bandit Lieutenant)]].
-  3.  **Player Choice Encounter:** An encounter that can be resolved in multiple ways.
+  2.  **[[Kyle/Nameless]]'s Hook:** An encounter on the road that points [[Kyle/Nameless]] towards the docks and [[Geist (Bandit Lieutenant)]].
+  3.  **Player Choice Encounter:** Choose from [[Lost Mastiff]], [[Wandering Druid]], or [[Goblin Ambush Site]].
   4.  **Arrival in [[Agastia]]:** First impressions of the city.
   5.  **Job Board:** Introduction to the system for gaining money and merit.
   6.  **The [[Steel Dragon]]:** The first murder scene is discovered.
   7.  **Player Quest Hooks:** Opportunities for [[Manny]] and [[Nikki]] to get involved in their quests.
 **Toggle: Key NPCs**
-  - [[Corvin Tradewise]]**:** [[Merchant Caravan]] leader who can provide information about [[Geist Investigation]].
-  - **Dead Smuggler:** Victim at crate scene, provides hook to [[Geist Investigation]]'s operation and Starfall Anchors.
-  - [[Mira Saltwind]]**:** [[Merchant District]] proprietor, extortion victim with evidence against [[Geist Investigation]].
+  - **[[Corvin Tradewise]]:** [[Merchant Caravan]] leader who can provide information about [[Quest: Geist Investigation]].
+  - **Dead Smuggler:** Victim at crate scene, provides hook to [[Quest: Geist Investigation]]'s operation and Starfall Anchors.
+  - **[[Mira Saltwind]]:** [[Merchant District]] proprietor, extortion victim with evidence against [[Quest: Geist Investigation]].
   - **Job Board Clerk:** An NPC who explains the job board and merit system.
   - **City Guard Captain:** The NPC who is investigating the first [[Steel Dragon]] murder.
   - **Ghost of Elaris:** (Conditional) Spirit of noble elf's child, appears if spider encounter cleared.
@@ -115,15 +115,15 @@ graph TD
 
 **Road Navigation:** The party travels along the main road toward [[Agastia Region]]. Present the following encounter nodes as points of interest along the way. Players can choose which to investigate or bypass.
 **Encounter Nodes:**
-**Forest Clearing - **[[Lost Mastiff]]
+**Forest Clearing - [[Lost Mastiff]]**
 - **What:** A well-bred mastiff with a noble family crest collar, separated from its owner
 - **Choice:** Investigate the clearing, track the dog's trail, or continue on
 - **Reward:** Non-combat encounter, potential loyal animal companion
-**Druid's Grove - **[[Wandering Druid]]
+**Druid's Grove - [[Wandering Druid]]**
 - **What:** Ancient oak grove with signs of druidic presence
 - **Choice:** Approach the grove, observe from distance, or bypass
 - **Reward:** Healing, forest information, potential side quest
-**Abandoned Cart - **[[Goblin Ambush Site]]
+**Abandoned Cart - [[Goblin Ambush Site]]**
 - **What:** Overturned cart with goblin tracks nearby
 - **Choice:** Investigate the ambush site, set counter-ambush, or avoid
 - **Reward:** Classic combat encounter with loot
@@ -161,7 +161,7 @@ The party will visit or hear about these locations during Session 3, organized b
   - **What:** Repository of ancient texts and forgotten lore
   - **Hook:** Job board request from scholar to retrieve rare book from dangerous ruin
   - **Connection:** [[Manny]]'s [[The Codex Search]] quest lead
-  [[Veridian Scrollkeeper]]**'s Location**
+  **[[Veridian Scrollkeeper]]'s Location**
   - **What:** Rumored expert on [[Agastia Region]]'s history
   - **Hook:** Tavern rumor about ancient elf who "knows everything"
   - **Connection:** Another potential [[Codex of Peace]] lead for [[Manny]]
@@ -201,9 +201,9 @@ The party will visit or hear about these locations during Session 3, organized b
   - **Investigator:** Captain Valerius (grizzled city guard veteran)
   - **Captain's Notes:** *"Another one. Third this month. Same symbol, same clean cut. This one is different though... more... artistic."*
   - **Opportunity:** Captain will deputize competent party members (can be job board quest)
-  [[Il Drago Rosso]]** - [[Nikki]]'s Family Restaurant**
+  **[[Il Drago Rosso]] - [[Nikki]]'s Family Restaurant**
   - **What:** [[Nikki]]'s family establishment, information hub and safe haven
-  - **Hook:** Job board posting about aggressive faction threatening businesses in district
+  - **Hook:** Job board posting about aggressive faction threatening businesses in district (see [[Quest: Nikki Family Protection]])
   - **Connection:** Potential threat to [[Nikki]]'s family restaurant
   **DM Notes:**
   - First "artistic" [[Steel Dragon]] murder (step up from previous work)
@@ -298,7 +298,7 @@ Once players have discovered the crime scene (either by exploring the alley or h
 ### [[Nikki]] ([[Biago]]) - Family and Friends
 
 - [[Nikki]]'s family restaurant, [[Il Drago Rosso]], is a source of information and a safe haven.
-- A job on the board asks for someone to discreetly investigate a new, aggressive faction trying to strong-arm businesses in the [[Merchant District]], potentially threatening her family's restaurant.
+- A job on the board asks for someone to discreetly investigate a new, aggressive faction trying to strong-arm businesses in the [[Merchant District]], potentially threatening her family's restaurant. See [[Quest: Nikki Family Protection]].
 
 
 ## Session End
