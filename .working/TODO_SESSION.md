@@ -1,321 +1,212 @@
-# Session TODO List - WIP Skills Completion Project
-Last updated: 2026-01-09 16:10
-**STATUS:** ✅ COMPLETE (4/4 tasks completed, all pushed to remote)
+# Session TODO List - Notion Bidirectional Sync Project
+Last updated: 2026-01-10 05:20
+**STATUS:** 🚧 IN PROGRESS - Attack plan complete, ready for implementation thread
 
 ## 📋 PROJECT OVERVIEW
-Complete uncommitted WIP skills and infrastructure from git status. Each skill represents independent work that needs verification and completion before commit.
+
+Fix pull_session_notes.py to achieve 100% feature parity with sync_notion.py, enabling clean Notion→Repo syncing without corruption.
 
 **Context:**
-- Found 3 new skills uncommitted: plan-session, extract-deferred-modules, pitch-escalations
-- Found SESSION_PLANNING_WORKFLOW.md (560 lines) supporting documentation
-- Found TIER2_ENCOUNTER_CONVERSION_TRACKER.md (planning only, no work started)
-- CLAUDE.md has thread-aware todo tracking additions
-- Session_3 has minor formatting changes
+- Session 3 was run, gameplay notes added to Notion
+- pull_session_notes.py pulled content but corrupted it (328 line diff)
+- Wikilinks stripped, list numbering broken, formatting damaged
+- Another thread reverted Session_3 to HEAD, discarding gameplay notes
+- Gameplay notes now safely isolated in .working/Session_3_Notion_Pull.md
+- Need to fix sync tool before merging gameplay notes back
 
-**WIP Skills to Complete:**
-1. **plan-session.md** (490 lines) - Interactive session planning with deferred modules
-2. **extract-deferred-modules.md** (238 lines) - Post-session analysis and module extraction
-3. **pitch-escalations.md** (317 lines) - User-controlled escalation options for active modules
-4. **Tier 2 Encounter Conversion** (108 encounters) - Convert to individual pages like Tier 1
+**Files Involved:**
+- `.config/pull_session_notes.py` (295 lines) - Tool to fix
+- `sync_notion.py` (702 lines) - Reference for working features
+- `.working/Session_3_Notion_Pull.md` - Test case (corrupted)
+- `Sessions/Session_3_The_Steel_Dragon_Begins.md` (git HEAD) - Test case (correct)
+- `.working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md` - Full attack plan
 
-**Strategy:**
-- Complete ONE skill at a time to 100%
-- Verify content, test examples, commit with proper message
-- Generate continuation prompt for next thread to tackle next skill
-- Repeat for all 3 skills + encounter conversion
-
----
-
-## 🎉 FINAL SUMMARY
-
-**Project Completed:** 2026-01-09 16:10
-
-**Deliverables:**
-1. **extract-deferred-modules.md** (238 lines) - Post-session analysis skill
-   - Extracts unused prep into reusable modules
-   - Tracks PC awareness and integration opportunities
-   - Identifies multi-PC story beat synergies
-
-2. **plan-session.md** (490 lines) - Interactive session planning skill
-   - Reviews deferred modules before creating new content
-   - Detects tight couplings (geographic, thematic, PC goals)
-   - Presents integration options, builds session structure
-   - Enforces multi-PC engagement verification
-
-3. **pitch-escalations.md** (317 lines) - User-controlled clock advancement skill
-   - Generates 2-3 escalation options for AWARE/ACTIVE modules
-   - Never auto-advances clocks (requires user approval)
-   - Validates PC agency before escalating
-   - Provides "freeze clock" option for every module
-
-4. **SESSION_PLANNING_WORKFLOW.md** (560 lines) - Complete workflow documentation
-   - 3-phase workflow: Post-Session → Pre-Session → Execution
-   - Mandatory TodoWrite integration throughout
-   - Skills reference guide (all cross-references verified)
-   - Troubleshooting guide (5 scenarios with solutions)
-   - Success metrics for workflow health
-   - Complete Session 3→4 example cycle
-
-**Technical Achievements:**
-- All skills cross-reference correctly (verified existing skills exist)
-- All examples use real campaign entities (Session_3, DEFERRED_MODULES.md)
-- Integration with existing infrastructure (TodoWrite, git workflow, Notion sync)
-- No TODOs, placeholders, or incomplete sections
-- All commits include proper co-authorship and Claude Code attribution
-- All changes pushed to remote immediately (4/4 commits pushed ✅)
-
-**Design Requirements Met:**
-- ✅ Todo integration mandatory throughout (Q10, A10)
-- ✅ Keep modules top-of-mind during planning (Q5, Q10)
-- ✅ Phase-based workflow (Q6, A6)
-- ✅ Skills integration (extract → plan → pitch)
-- ✅ Multi-PC story beat verification
-- ✅ User-controlled clock advancement
-
-**Total Impact:**
-- 1,645 lines of new documentation and skills
-- 4 git commits (all pushed to remote)
-- 0 merge conflicts or issues
-- Complete end-to-end session planning system
+**Goal:** Round-trip sync (repo→Notion→repo) must produce zero diff
 
 ---
 
 ## 🚨 Active Tasks
 
+### Completed
+- [x] [05:14] Pull Session 3 content from Notion with gameplay notes
+  - Context: Ran .config/pull_session_notes.py to fetch from Notion
+  - Result: 328 lines changed (corruption detected)
+
+- [x] [05:14] Save Notion content as working file (.working/Session_3_Notion_Pull.md)
+  - Context: Preserve corrupted version for analysis
+  - File: .working/Session_3_Notion_Pull.md (safe copy)
+
+- [x] [05:15] Analyze sync damage - compare Notion pull vs git HEAD version
+  - Context: git diff shows 328 line changes
+  - Identified 8 corruption categories:
+    1. Wikilink stripping (50+ instances)
+    2. List numbering (all become "1.")
+    3. Bold formatting (asterisks misplaced)
+    4. Indentation (extra spaces added)
+    5. Frontmatter format (quotes removed, arrays changed)
+    6. Whitespace (blank lines removed)
+    7. Clue list renumbering
+    8. Entity name changes (Geist → Geist Investigation)
+
+- [x] [05:16] Audit sync_notion.py repo→Notion features (what currently works)
+  - Context: Reviewed sync_notion.py (702 lines)
+  - Documented 7 working feature categories:
+    1. Wikilink support (parse_rich_text function)
+    2. Rich text formatting (bold, italic, code, strikethrough)
+    3. Block types (headings, toggles, lists, quotes, code blocks)
+    4. Hierarchical nesting (headings with children)
+    5. Frontmatter handling (all Notion property types)
+    6. Batch syncing (recursive glob, .notionignore support)
+    7. Timestamp tracking (prevent sync loops)
+
+- [x] [05:18] Document expected Notion→repo feature parity requirements
+  - Context: All repo→Notion features must work in reverse
+  - Documented 10 mandatory features
+  - Created 5 test cases with acceptance criteria
+  - Defined success criteria (zero diff on round-trip)
+
+- [x] [05:20] Create attack plan document (.working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md)
+  - Context: Comprehensive plan for fixing pull_session_notes.py
+  - File: .working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md (9,000+ words)
+  - Sections:
+    - Critical context (what happened)
+    - Sync damage analysis (328 line breakdown)
+    - Repo→Notion working features (documented)
+    - Notion→Repo missing features (what to build)
+    - Feature parity requirements (10 mandatory)
+    - Attack plan phases (4 phases)
+    - Technical implementation notes
+    - Test cases & validation
+    - Success criteria
+
 ### In Progress
-- [15:45] Review and select first WIP skill to complete (plan-session, extract-deferred-modules, or pitch-escalations)
-  - Context: Need to pick ONE skill to complete fully before moving to next
-  - Options: Start with smallest (extract-deferred-modules at 238 lines) for quick win
-  - Or start with foundation (plan-session at 490 lines) since others depend on it
-  - Decision: Need to analyze dependencies between skills
-
-### Pending - Skill Selection Phase
-- [ ] [15:45] Analyze skill dependencies to determine completion order
-  - Context: Skills may reference each other, need logical order
-  - Questions:
-    - Does plan-session.md require extract-deferred-modules.md to exist?
-    - Does pitch-escalations.md depend on deferred module system?
-    - Can any skill be completed independently?
-  - Output: Recommended completion order with rationale
-
-- [ ] [15:45] Read first skill file completely to understand scope
-  - Context: Need full picture before creating detailed completion todos
-  - Tasks: Read entire file, identify sections, spot gaps or incomplete areas
-  - Look for: TODOs, placeholders, example sections, references to other files
-
-### Pending - Skill 1 Completion (TBD which skill)
-- [ ] [15:45] Verify skill content is complete and accurate
-  - Context: Check for placeholder text, incomplete examples, missing sections
-  - Validation: Each section has content, examples are realistic, references are correct
-  - Files: Cross-reference with SESSION_PLANNING_WORKFLOW.md if related
-
-- [ ] [15:45] Test skill examples against actual campaign content
-  - Context: Skills should reference real files/entities from campaign
-  - Test: Do example file paths exist? Do example entities exist?
-  - Fix: Update examples to use real campaign data if needed
-
-- [ ] [15:45] Check for cross-references to other skills
-  - Context: Skills may reference each other (e.g., "see mystery.md for 3-clue rule")
-  - Validation: All referenced skills exist or are in this WIP batch
-  - Fix: Add notes about dependencies if skill references uncommitted work
-
-- [ ] [15:45] Verify skill integrates with existing infrastructure
-  - Context: Skills should work with TodoWrite, format validators, sync, etc.
-  - Check: Does skill mention tools that exist? Correct file paths?
-  - Files: Reference CLAUDE.md for infrastructure documentation
-
-- [ ] [15:45] Add skill to CLAUDE.md skills list
-  - Context: CLAUDE.md has "Available Skills & Commands" section
-  - Update: Add new skill with 1-line description
-  - Location: CLAUDE.md lines 487-500 (Custom Skills section)
-
-- [ ] [15:45] Format check skill file
-  - Context: Ensure markdown formatting is consistent
-  - Check: Headings hierarchy, code blocks, examples formatted correctly
-  - Validation: No broken markdown syntax
-
-- [ ] [15:45] Git add and commit completed skill
-  - Context: Commit ONE skill at a time for clean history
-  - Format: `feat: Add [skill-name] skill - [brief description]`
-  - Include: Skill file + CLAUDE.md update in same commit
-  - Push: Immediately after commit (per git workflow rules)
-
-### Pending - Continuation Prompt Generation
-- [ ] [15:45] Generate continuation prompt for next thread
-  - Context: User wants separate thread for each skill completion
-  - Format: "Resume WIP skills completion - Skill N of 4: [skill-name]"
-  - Include:
-    - Which skill was just completed (Skill 1)
-    - Which skill to tackle next (Skill 2)
-    - Remaining skills after that (Skills 3-4)
-    - Reference to this TODO structure
-  - Output: Full prompt text user can paste to start next thread
-
-### Pending - Skill 2 Completion (TBD)
-- [ ] [Future] Complete second skill using same process as Skill 1
-  - Context: Will be tackled in separate thread per user request
-  - Process: Same verification steps as Skill 1
-  - Continuation: Generate prompt for Skill 3 thread
-
-### Pending - Skill 3 Completion (TBD)
-- [ ] [Future] Complete third skill using same process
-  - Context: Separate thread
-  - Continuation: Generate prompt for Tier 2 Encounter thread
-
-### Pending - Tier 2 Encounter Conversion
-- [ ] [Future] Verify TIER2_ENCOUNTER_CONVERSION_TRACKER.md status
-  - Context: May be planning doc only, no actual work done
-  - Check: Do any Tier 2 encounter individual pages exist?
-  - Compare: Tier1_Inspiring_Table.md vs Tier2_Inspiring_Table.md format
-  - Decision: Is this separate project or quick task?
-
-- [ ] [Future] Complete or archive Tier 2 encounter conversion
-  - Option A: If no work started, archive tracker and defer project
-  - Option B: If partially done, complete conversion in this thread
-  - Option C: If substantial work, generate continuation prompt for separate thread
-
-### Pending - Final Cleanup
-- [ ] [Future] Review all uncommitted changes after skills complete
-  - Context: SESSION_PLANNING_WORKFLOW.md, CLAUDE.md changes, Session_3 formatting
-  - Verify: All related documentation updated
-  - Commit: Final commit with all supporting files
-
-- [ ] [Future] Verify git push completed for all commits
-  - Context: Must push immediately per git workflow rules
-  - Check: `git log origin/main..HEAD` shows no unpushed commits
-  - Validation: All work visible on remote
-
----
-
-## ✅ Completed Tasks
-- [x] [15:45 → 15:46] Archive old TODO session (Geist redesign)
-  - File: .working/archive/TODO_2026-01-04_geist_redesign.md
-  - Context: Was Session 3 Geist Investigation redesign work (33% complete)
-
-- [x] [15:45 → 15:50] Complete extract-deferred-modules skill (Skill 1 of 3)
-  - File: .claude/skills/extract-deferred-modules.md (238 lines)
-  - Verification: Content complete, examples reference real Session_3 file
-  - Cross-references: mystery.md, point-crawl.md, session.md all exist
-  - Integration: References .working/DEFERRED_MODULES.md (file doesn't exist yet - will be created on first use)
-  - Commit: 2fa281e - "feat: Add extract-deferred-modules skill for post-session prep tracking"
-  - Pushed: Yes ✅
-
-- [x] [15:50 → 15:55] Complete plan-session skill (Skill 2 of 3)
-  - File: .claude/skills/plan-session.md (490 lines)
-  - Verification: Interactive planning workflow with module integration
-  - Cross-references: extract-deferred-modules, pitch-escalations, mystery, point-crawl, session
-  - Commit: 8e283fe - "feat: Add plan-session skill for interactive session planning"
-  - Pushed: Yes ✅
-
-- [x] [15:55 → 16:00] Complete pitch-escalations skill (Skill 3 of 3)
-  - File: .claude/skills/pitch-escalations.md (317 lines)
-  - Verification: User-controlled escalation system for deferred modules
-  - Cross-references: extract-deferred-modules, plan-session
-  - Commit: b457546 - "feat: Add pitch-escalations skill for user-controlled clock advancement"
-  - Pushed: Yes ✅
-
-- [x] [16:00 → 16:10] Complete SESSION_PLANNING_WORKFLOW.md (Skill 4 - Documentation)
-  - File: .config/SESSION_PLANNING_WORKFLOW.md (560 lines)
-  - Verification: All workflow phases documented (Post-Session, Pre-Session, Execution)
-  - Todo integration documented throughout (mandatory TodoWrite usage)
-  - Skills cross-references verified (all 3 new skills exist and pushed)
-  - Troubleshooting guide complete (5 scenarios with solutions)
-  - Design principles enforced (modules top-of-mind, multi-PC beats, user-controlled clocks)
-  - Complete Session 3→4 example cycle included
-  - Commit: ba25553 - "feat: Add comprehensive session planning workflow documentation"
-  - Pushed: Yes ✅
-
-- [x] [15:45 → 15:46] Initialize TodoWrite tool with WIP skills project
-  - Created: 4 initial tasks
-  - Status: In-memory tracking active
-
-- [x] [15:45 → 15:46] Create new TODO_SESSION.md for WIP skills completion
-  - File: .working/TODO_SESSION.md
-  - Context: Fresh session for completing uncommitted skills work
+- [ ] [05:21] Generate continuation prompt for fresh thread
+  - Context: Thread context getting large (88k+ tokens used)
+  - Need concise prompt to resume in fresh thread
+  - Must include: attack plan location, test files, goal
 
 ---
 
 ## 📊 PROGRESS TRACKING
 
-**Overall:** ✅ PROJECT COMPLETE (4/4 skills + documentation)
+**Overall:** Phase 1 complete (6/6 tasks), ready for Phase 2 implementation
 
-**Completed:**
-- ✅ Skill 1: extract-deferred-modules (238 lines) - Commit 2fa281e
-- ✅ Skill 2: plan-session (490 lines) - Commit 8e283fe
-- ✅ Skill 3: pitch-escalations (317 lines) - Commit b457546
-- ✅ Skill 4: SESSION_PLANNING_WORKFLOW.md (560 lines) - Commit ba25553
+**Phase 1: Diagnostic & Audit** ✅ (Complete)
+- ✅ Pull Session 3 from Notion
+- ✅ Save as working file
+- ✅ Analyze corruption (328 lines)
+- ✅ Audit sync_notion.py (7 feature categories)
+- ✅ Audit pull_session_notes.py (8 broken features)
+- ✅ Create attack plan document
 
-**Total Lines of Code/Documentation:** 1,645 lines
+**Phase 2: Feature Implementation** ⏳ (Next Thread - 9 features)
+- Priority 1: Wikilinks, formatting, list numbering (blockers)
+- Priority 2: Frontmatter, toggles, code blocks (format preservation)
+- Priority 3: Whitespace, blockquotes, nesting (polish)
 
-**All Changes Pushed:** ✅ Yes (verified 4 commits pushed to remote)
+**Phase 3: Testing & Validation** ⏳ (After Phase 2)
+- Round-trip tests
+- All 5 test cases
+- Acceptance criteria verification
 
-**Tier 2 Encounter Conversion:** Deferred (no work started, tracker remains in .working/)
-
----
-
-## 🔍 KEY DECISIONS NEEDED
-
-1. **Which skill to complete first?** ⏳ PENDING
-   - Option A: extract-deferred-modules (smallest, 238 lines, quick win)
-   - Option B: plan-session (largest, 490 lines, foundation for others)
-   - Option C: pitch-escalations (medium, 317 lines, may be independent)
-   - Decision criteria: Dependencies, logical order, complexity
-
-2. **Are skills independent or interdependent?** ⏳ PENDING
-   - Need to read all 3 skills to understand references
-   - Determine if completion order matters
-   - Identify any circular dependencies
-
-3. **Is Tier 2 encounter conversion substantial work?** ⏳ PENDING
-   - Need to check if any individual encounter pages exist
-   - Compare Tier 1 vs Tier 2 table formats
-   - Determine if this is hours of work or just cleanup
+**Phase 4: Session 3 Recovery** ⏳ (After Phase 3)
+- Extract gameplay notes
+- Run fixed sync tool
+- Commit Session 3 with notes
+- Extract deferred modules
+- Resume session planning workflow
 
 ---
 
-## 📁 FILES INVOLVED
+## 🔍 KEY DECISIONS
 
-**WIP Skills (Untracked):**
-- `.claude/skills/plan-session.md` (490 lines)
-- `.claude/skills/extract-deferred-modules.md` (238 lines)
-- `.claude/skills/pitch-escalations.md` (317 lines)
+1. **Merge Strategy:** ✅ DECIDED
+   - Use "Smart Merge" approach (Approach 2)
+   - Detect new sections in Notion, append to local file
+   - Preserve existing sections unchanged
+   - Upgrade to 3-way merge later if needed
 
-**WIP Documentation (Untracked):**
-- `.config/SESSION_PLANNING_WORKFLOW.md` (560 lines)
-- `.working/TIER2_ENCOUNTER_CONVERSION_TRACKER.md` (134 lines)
-- `.working/tier2_encounter_names.txt` (unknown size)
+2. **Test Case:** ✅ DECIDED
+   - Session 3 is perfect test case (real corruption example)
+   - 328 line diff provides comprehensive validation
+   - Gameplay notes are actual content needing merge
 
-**Modified Files:**
-- `CLAUDE.md` (+40 lines - thread-aware todo tracking docs)
-- `Sessions/Session_3_The_Steel_Dragon_Begins.md` (minor formatting)
+3. **Implementation Order:** ✅ DECIDED
+   - Priority 1 first (wikilinks, formatting, numbering) - blockers
+   - Priority 2 second (frontmatter, toggles, code) - important
+   - Priority 3 last (whitespace, quotes, nesting) - polish
 
-**Reference Files:**
-- `.claude/skills/mystery.md` (existing, 616 lines)
-- `.claude/skills/session.md` (existing, 273 lines)
-- `.claude/skills/point-crawl.md` (existing, 151 lines)
+4. **Success Criteria:** ✅ DECIDED
+   - Zero diff on round-trip test is MANDATORY
+   - All 10 feature parity requirements must pass
+   - No exceptions, no compromises
 
 ---
 
-## 📝 NOTES
+## 📝 NOTES FOR NEXT THREAD
 
-**User Request:**
-- Complete ONE skill at a time to 100%
-- Generate continuation prompt for next thread after each skill
-- Assume work needs verification (not just commit as-is)
-- Be thorough - check for missing content, test examples, validate references
+**Attack Plan Location:**
+- `.working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md` (complete technical spec)
 
-**Thread Strategy:**
-- Thread 1 (current): Complete Skill 1 + generate prompt for Thread 2
-- Thread 2 (future): Complete Skill 2 + generate prompt for Thread 3
-- Thread 3 (future): Complete Skill 3 + generate prompt for Thread 4
-- Thread 4 (future): Complete Tier 2 encounters OR archive if no work done
+**Test Files:**
+- `.working/Session_3_Notion_Pull.md` (corrupted version from Notion)
+- `Sessions/Session_3_The_Steel_Dragon_Begins.md` (git HEAD - correct version)
 
-**Verification Checklist Per Skill:**
-- [ ] Content complete (no TODOs or placeholders)
-- [ ] Examples use real campaign entities/files
-- [ ] Cross-references valid (skills/tools mentioned exist)
-- [ ] Integrates with existing infrastructure
-- [ ] Added to CLAUDE.md skills list
-- [ ] Markdown formatting correct
-- [ ] Committed with descriptive message
-- [ ] Pushed to remote immediately
+**Key Insight:**
+- sync_notion.py already has all the logic we need (wikilink detection, rich text parsing, etc.)
+- We need to reverse-engineer it for Notion→Repo direction
+- Copy parse_rich_text logic, invert it
+
+**First Task for Next Thread:**
+1. Read NOTION_BIDIRECTIONAL_SYNC_PLAN.md
+2. Start with Priority 1: Wikilink reconstruction
+3. Implement fetch_page_title function
+4. Test against Session 3 Notion pull
+5. Verify wikilinks preserved
+
+**Validation Command:**
+```bash
+# After fixing pull_session_notes.py, test round-trip:
+python3 sync_notion.py Sessions/Session_3_The_Steel_Dragon_Begins.md session
+python3 .config/pull_session_notes.py
+git diff Sessions/Session_3_The_Steel_Dragon_Begins.md
+# MUST show zero changes (empty diff)
+```
+
+---
+
+## ✅ Completed Tasks Archive
+
+- [x] [05:14 → 05:14] Pull Session 3 content from Notion with gameplay notes
+  - Ran: python3 .config/pull_session_notes.py
+  - Result: 1 session updated (Session 3), 3 skipped (< 1h since push)
+  - Corruption detected: 328 lines changed
+
+- [x] [05:14 → 05:14] Save Notion content as working file
+  - Copied to: .working/Session_3_Notion_Pull.md
+  - Purpose: Preserve corrupted version for analysis
+
+- [x] [05:15 → 05:16] Analyze sync damage
+  - Compared: git diff Sessions/Session_3_The_Steel_Dragon_Begins.md
+  - Found: 8 corruption categories, 328 total line changes
+  - Documented: All patterns in attack plan
+
+- [x] [05:16 → 05:17] Audit sync_notion.py
+  - Reviewed: 702 lines of working code
+  - Documented: 7 feature categories that work correctly
+  - Found: parse_rich_text function (lines 83-228) handles wikilinks perfectly
+
+- [x] [05:17 → 05:18] Audit pull_session_notes.py
+  - Reviewed: 295 lines of broken code
+  - Found: notion_blocks_to_markdown function (lines 54-184) has bugs
+  - Identified: 8 missing features causing corruption
+
+- [x] [05:18 → 05:19] Document feature parity requirements
+  - Created: 10 mandatory features list
+  - Created: 5 test cases with acceptance criteria
+  - Defined: Zero-diff success criteria
+
+- [x] [05:19 → 05:20] Create attack plan document
+  - File: .working/NOTION_BIDIRECTIONAL_SYNC_PLAN.md
+  - Size: 9,000+ words, comprehensive technical spec
+  - Sections: Context, damage analysis, features, implementation, tests

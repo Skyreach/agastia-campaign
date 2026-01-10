@@ -1,0 +1,295 @@
+#!/usr/bin/env python3
+"""
+Pull session notes from Notion and merge with local markdown files.
+
+This script:
+1. Queries Notion for all session pages
+2. Checks timestamps to detect manual edits (>1 hour after last push)
+3. Converts Notion blocks back to markdown
+4. Intelligently merges with local files (preserve structure, avoid duplication)
+5. Updates sync state tracking
+
+IMPORTANT: Does NOT trigger git commit/push to avoid infinite sync loop.
+"""
+
+import sys
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+
+# Add .config to path for local imports
+sys.path.insert(0, str(Path(__file__).parent))
+from notion_helpers import load_notion_client, load_database_id, get_campaign_root
+from sync_state_manager import needs_pull_from_notion, record_pull_from_notion
+
+import frontmatter
+
+
+def find_session_pages(notion_client, database_id):
+    """
+    Find all session pages in Notion by parsing titles for 'Session X' pattern.
+
+    Returns:
+        List of tuples: (session_number, page_name, page_id, last_edited_time)
+    """
+    results = notion_client.databases.query(database_id=database_id)
+
+    sessions = []
+    for page in results['results']:
+        props = page['properties']
+        name = props.get('Name', {}).get('title', [{}])[0].get('plain_text', 'Unnamed')
+
+        # Extract session number from title
+        match = re.search(r'Session[_\s]+(\d+)', name, re.IGNORECASE)
+        if match:
+            session_num = int(match.group(1))
+            page_id = page['id']
+            last_edited = datetime.fromisoformat(page['last_edited_time'].replace('Z', '+00:00'))
+            sessions.append((session_num, name, page_id, last_edited))
+
+    sessions.sort(key=lambda x: x[0])
+    return sessions
+
+
+def notion_blocks_to_markdown(notion_client, page_id, indent_level=0):
+    """
+    Convert Notion blocks to markdown recursively.
+
+    Args:
+        notion_client: Authenticated Notion client
+        page_id: Notion page/block ID
+        indent_level: Current indentation level for nested blocks
+
+    Returns:
+        List of markdown lines
+    """
+    markdown_lines = []
+
+    # Fetch all blocks (with pagination)
+    has_more = True
+    cursor = None
+    all_blocks = []
+
+    while has_more:
+        if cursor:
+            response = notion_client.blocks.children.list(block_id=page_id, start_cursor=cursor)
+        else:
+            response = notion_client.blocks.children.list(block_id=page_id)
+
+        all_blocks.extend(response['results'])
+        has_more = response.get('has_more', False)
+        cursor = response.get('next_cursor')
+
+    indent = '  ' * indent_level
+
+    for block in all_blocks:
+        block_type = block['type']
+
+        # Extract rich text content with markdown formatting
+        def get_text(block_data):
+            rich_text = block_data.get('rich_text', [])
+            result = []
+            for segment in rich_text:
+                text = segment.get('plain_text', '')
+                annotations = segment.get('annotations', {})
+
+                # Apply markdown formatting based on annotations
+                if annotations.get('code'):
+                    text = f'`{text}`'
+                if annotations.get('bold'):
+                    text = f'**{text}**'
+                if annotations.get('italic'):
+                    text = f'*{text}*'
+
+                result.append(text)
+            return ''.join(result)
+
+        if block_type == 'heading_1':
+            text = get_text(block['heading_1'])
+            markdown_lines.append(f'{indent}# {text}')
+            # Check for children (toggleable headings)
+            if block.get('has_children'):
+                markdown_lines.append('')  # Blank line before nested content
+                child_lines = notion_blocks_to_markdown(notion_client, block['id'], indent_level)
+                markdown_lines.extend(child_lines)
+
+        elif block_type == 'heading_2':
+            text = get_text(block['heading_2'])
+            markdown_lines.append(f'{indent}## {text}')
+            # Check for children (toggleable headings)
+            if block.get('has_children'):
+                markdown_lines.append('')  # Blank line before nested content
+                child_lines = notion_blocks_to_markdown(notion_client, block['id'], indent_level)
+                markdown_lines.extend(child_lines)
+
+        elif block_type == 'heading_3':
+            text = get_text(block['heading_3'])
+            markdown_lines.append(f'{indent}### {text}')
+            # Check for children (toggleable headings)
+            if block.get('has_children'):
+                markdown_lines.append('')  # Blank line before nested content
+                child_lines = notion_blocks_to_markdown(notion_client, block['id'], indent_level)
+                markdown_lines.extend(child_lines)
+
+        elif block_type == 'paragraph':
+            text = get_text(block['paragraph'])
+            if text.strip():  # Only add non-empty paragraphs
+                markdown_lines.append(f'{indent}{text}')
+            else:
+                markdown_lines.append('')  # Preserve empty lines
+
+        elif block_type == 'bulleted_list_item':
+            text = get_text(block['bulleted_list_item'])
+            markdown_lines.append(f'{indent}- {text}')
+
+        elif block_type == 'numbered_list_item':
+            text = get_text(block['numbered_list_item'])
+            markdown_lines.append(f'{indent}1. {text}')
+
+        elif block_type == 'to_do':
+            text = get_text(block['to_do'])
+            checked = block['to_do'].get('checked', False)
+            checkbox = '[x]' if checked else '[ ]'
+            markdown_lines.append(f'{indent}- {checkbox}  {text}')
+
+        elif block_type == 'toggle':
+            text = get_text(block['toggle'])
+            # Don't add "Toggle:" prefix if text already contains it
+            if text.startswith('**Toggle:') or text.startswith('Toggle:'):
+                markdown_lines.append(f'{indent}{text}')
+            else:
+                markdown_lines.append(f'{indent}**Toggle: {text}**')
+
+            # Recursively process children with proper indentation
+            if block.get('has_children'):
+                child_lines = notion_blocks_to_markdown(notion_client, block['id'], indent_level + 1)
+                markdown_lines.extend(child_lines)
+
+        elif block_type == 'quote':
+            text = get_text(block['quote'])
+            markdown_lines.append(f'{indent}> {text}')
+
+        elif block_type == 'code':
+            text = get_text(block['code'])
+            language = block['code'].get('language', 'plain text')
+            markdown_lines.append(f'{indent}```{language}')
+            markdown_lines.extend([f'{indent}{line}' for line in text.split('\n')])
+            markdown_lines.append(f'{indent}```')
+
+        # Add blank line after block for readability
+        if block_type in ['heading_1', 'heading_2', 'heading_3']:
+            markdown_lines.append('')
+
+    return markdown_lines
+
+
+def merge_session_content(local_file_path, notion_markdown_lines):
+    """
+    Intelligently merge Notion content with local file.
+
+    Strategy:
+    - Preserve frontmatter from local file
+    - Match Notion structure where possible
+    - Don't duplicate existing sections
+    - Preserve local unique content
+
+    Args:
+        local_file_path: Path to local markdown file
+        notion_markdown_lines: List of markdown lines from Notion
+
+    Returns:
+        Updated file content as string
+    """
+    # Load local file
+    with open(local_file_path, 'r') as f:
+        local_post = frontmatter.load(f)
+
+    # Convert Notion markdown to single string
+    notion_content = '\n'.join(notion_markdown_lines)
+
+    # For now, use a simple approach:
+    # Keep local frontmatter, replace content with Notion content
+    # This matches the user's request to "match Notion structure"
+
+    # Build merged content
+    merged = frontmatter.Post(notion_content)
+    merged.metadata = local_post.metadata
+
+    return frontmatter.dumps(merged)
+
+
+def pull_sessions():
+    """Main function to pull session notes from Notion."""
+    notion = load_notion_client()
+    db_id = load_database_id()
+    campaign_root = get_campaign_root()
+
+    print("🔍 Searching Notion for session pages...")
+    sessions = find_session_pages(notion, db_id)
+
+    if not sessions:
+        print("⚠️  No session pages found in Notion")
+        return
+
+    print(f"\n📋 Found {len(sessions)} session page(s):")
+    for num, name, page_id, last_edited in sessions:
+        print(f"  Session {num}: {name}")
+        print(f"    Last edited: {last_edited}")
+
+    print("\n" + "="*80)
+    print("Checking which sessions need pulling...")
+    print("="*80 + "\n")
+
+    pulled_count = 0
+    skipped_count = 0
+
+    for session_num, name, page_id, last_edited in sessions:
+        # Determine local file path
+        # Try to find matching session file
+        sessions_dir = campaign_root / 'Sessions'
+        matching_files = list(sessions_dir.glob(f'Session_{session_num}_*.md'))
+
+        if not matching_files:
+            print(f"⚠️  Session {session_num}: No local file found, skipping")
+            skipped_count += 1
+            continue
+
+        local_file = matching_files[0]
+        relative_path = str(local_file.relative_to(campaign_root))
+
+        print(f"\n📄 Session {session_num}: {local_file.name}")
+
+        # Check if we need to pull
+        if needs_pull_from_notion(relative_path, last_edited, buffer_hours=1):
+            print(f"   Pulling from Notion...")
+
+            # Convert Notion blocks to markdown
+            markdown_lines = notion_blocks_to_markdown(notion, page_id)
+
+            # Merge with local content
+            merged_content = merge_session_content(local_file, markdown_lines)
+
+            # Write to file
+            with open(local_file, 'w') as f:
+                f.write(merged_content)
+
+            print(f"   ✅ Updated {local_file.name}")
+
+            # Record pull timestamp
+            record_pull_from_notion(relative_path, page_id)
+
+            pulled_count += 1
+        else:
+            skipped_count += 1
+
+    print("\n" + "="*80)
+    print(f"✨ Pull complete: {pulled_count} updated, {skipped_count} skipped")
+    print("="*80)
+
+    if pulled_count > 0:
+        print("\n⚠️  Remember to review changes and commit manually")
+        print("   (No auto-commit to avoid sync loop)")
+
+
+if __name__ == "__main__":
+    pull_sessions()

@@ -2,6 +2,12 @@
 
 Generate D&D session documents with built-in spoiler prevention and content-introduction verification.
 
+**⚠️ TWO-FAILURE ESCALATION RULE:**
+When ANY task fails twice, STOP and spawn a sub-agent for collaborative problem-solving. See `.config/TWO_FAILURE_RULE.md` for full protocol. Key points:
+- **2 failures** → Spawn sub-agent, solve in isolation (no network requests, create sample files, validate locally)
+- **4 failures** → Escalate to user with problem description, all attempts, and 3 suggestions (without code)
+- **Track failures** in todo list with failure count and symptoms
+
 ## Purpose
 
 Create session files following SESSION_FORMAT_SPEC.md with automated checks to prevent:

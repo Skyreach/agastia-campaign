@@ -1,5 +1,11 @@
 Start workflow-enforcer for session generation workflow, then present 3-4 session structure options for user to choose from.
 
+**⚠️ TWO-FAILURE ESCALATION RULE:**
+When ANY task fails twice, STOP and spawn a sub-agent for collaborative problem-solving. See `.config/TWO_FAILURE_RULE.md` for full protocol. Key points:
+- **2 failures** → Spawn sub-agent, solve in isolation (no network requests, create sample files, validate locally)
+- **4 failures** → Escalate to user with problem description, all attempts, and 3 suggestions (without code)
+- **Track failures** in todo list with failure count and symptoms
+
 ⚠️ CRITICAL: Read .config/ENCOUNTER_EXPECTATIONS.md before generating session content
 - NEVER suggest encounter frequencies or how often to roll on tables
 - Provide complete encounter tables only, DM decides usage

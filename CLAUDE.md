@@ -75,6 +75,34 @@ Unpushed commits cause data loss and desync across sessions. Pre-commit hooks sy
 
 ---
 
+## ⚠️ TWO-FAILURE ESCALATION RULE
+
+**WHEN ANY TASK FAILS TWICE:**
+
+✅ **After 2 failures** → STOP and spawn a sub-agent for collaborative problem-solving
+✅ **After 4 failures** → STOP and escalate to user with full report
+
+**Key Protocol:**
+1. **First failure:** Note it, adjust approach, try again
+2. **Second failure:** Spawn sub-agent with fresh context
+   - Solve problem in isolation (no network requests during debugging)
+   - Create sample files matching test situation
+   - Validate locally before scaling up to real operations
+   - Collaborate as expert problem-solvers
+3. **Fourth failure:** Present to user:
+   - Specific problem description and symptoms
+   - All 4 attempts and their failures
+   - 3 suggestions for fixes (WITHOUT code)
+   - Ask user to guide next steps
+
+**This prevents infinite loops and expensive repeated failures.**
+
+**Full protocol:** `.config/TWO_FAILURE_RULE.md`
+
+**Applied to:** All strategy-based skills and commands (todo, plan, session, quest, sync, etc.)
+
+---
+
 ## 🚨 MANDATORY SESSION STARTUP
 
 **FIRST TIME SETUP (new machine):**

@@ -1,0 +1,2044 @@
+{
+  "entities": {
+    "Ian/Rakash": {
+      "file": "Player_Characters/PC_Ian_Rakash.md",
+      "notion_id": "`2d8693f0c6b481aaae54e148905483cc`",
+      "type": "PC",
+      "variants": [
+        "Ian/Rakash",
+        "Ian",
+        "Rakash"
+      ]
+    },
+    "Josh": {
+      "file": "Player_Characters/PC_Josh.md",
+      "notion_id": "`2d8693f0c6b481b39ef9dcac8a40aeb4`",
+      "type": "PC",
+      "variants": [
+        "Josh"
+      ]
+    },
+    "Kyle/Nameless": {
+      "file": "Player_Characters/PC_Kyle_Nameless.md",
+      "notion_id": "`2d8693f0c6b481ec94fec5e30a01a165`",
+      "type": "PC",
+      "variants": [
+        "Kyle/Nameless",
+        "Kyle",
+        "Nameless"
+      ]
+    },
+    "Manny": {
+      "file": "Player_Characters/PC_Manny.md",
+      "notion_id": "`2d8693f0c6b48133afb3c754750048a7`",
+      "type": "PC",
+      "variants": [
+        "Manny"
+      ]
+    },
+    "Nikki": {
+      "file": "Player_Characters/PC_Nikki.md",
+      "notion_id": "`2d8693f0c6b481a4838ddf6362813f02`",
+      "type": "PC",
+      "variants": [
+        "Nikki"
+      ]
+    },
+    "Krythak Stormbringer": {
+      "file": "NPCs/Major_NPCs/NPC_Krythak_Stormbringer.md",
+      "notion_id": "`2d8693f0c6b481da94b1e9e15230092e`",
+      "type": "NPC_Major",
+      "variants": [
+        "Krythak Stormbringer"
+      ]
+    },
+    "Professor Zero": {
+      "file": "NPCs/Major_NPCs/Professor_Zero.md",
+      "notion_id": "`2d8693f0c6b48172bb57f1447a41a5fa`",
+      "type": "NPC_Major",
+      "variants": [
+        "Professor Zero"
+      ]
+    },
+    "Steel Dragon": {
+      "file": "NPCs/Major_NPCs/Steel_Dragon.md",
+      "notion_id": "`2d8693f0c6b481fcae7ecb7cf71145f9`",
+      "type": "NPC_Major",
+      "variants": [
+        "Steel Dragon"
+      ]
+    },
+    "The Patron": {
+      "file": "NPCs/Major_NPCs/The_Patron.md",
+      "notion_id": "`2d8693f0c6b481eb8b5acc5579e171d6`",
+      "type": "NPC_Major",
+      "variants": [
+        "The Patron"
+      ]
+    },
+    "Decimate Project Subjects": {
+      "file": "NPCs/Faction_NPCs/Decimate_Project_Subjects.md",
+      "notion_id": "`2d8693f0c6b481e39a8cc26b7579f0a1`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Decimate Project Subjects"
+      ]
+    },
+    "Decum (Subject #10)": {
+      "file": "NPCs/Faction_NPCs/NPC_Decum_Subject10.md",
+      "notion_id": "`2d8693f0c6b481d5a3cddd8f3c90ae9b`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Decum (Subject #10)",
+        "Decum"
+      ]
+    },
+    "Geist": {
+      "file": "Geist",
+      "notion_id": "Faction NPC",
+      "type": "Session",
+      "variants": [
+        "Geist"
+      ]
+    },
+    "Hexus (Subject #6)": {
+      "file": "NPCs/Faction_NPCs/NPC_Hexus_Subject6.md",
+      "notion_id": "`2d8693f0c6b4812fbe64c817b9a86d39`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Hexus (Subject #6)",
+        "Hexus"
+      ]
+    },
+    "Kaelborn": {
+      "file": "Kaelborn",
+      "notion_id": "Faction NPC",
+      "type": "Session",
+      "variants": [
+        "Kaelborn"
+      ]
+    },
+    "Nona (Subject #9)": {
+      "file": "NPCs/Faction_NPCs/NPC_Nona_Subject9.md",
+      "notion_id": "`2d8693f0c6b48175b243f1fff73e515c`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Nona (Subject #9)",
+        "Nona"
+      ]
+    },
+    "Octavia (Subject #8)": {
+      "file": "NPCs/Faction_NPCs/NPC_Octavia_Subject8.md",
+      "notion_id": "`2d8693f0c6b4810cab6bc3bc1c5f4ac8`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Octavia (Subject #8)",
+        "Octavia"
+      ]
+    },
+    "Quincy (Subject #5)": {
+      "file": "NPCs/Faction_NPCs/NPC_Quincy_Subject5.md",
+      "notion_id": "`2d8693f0c6b481058f6fe96d61893391`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Quincy (Subject #5)",
+        "Quincy"
+      ]
+    },
+    "Septimus (Subject #7)": {
+      "file": "NPCs/Faction_NPCs/NPC_Septimus_Subject7.md",
+      "notion_id": "`2d8693f0c6b481a6af5cc83b58baedf5`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Septimus (Subject #7)",
+        "Septimus"
+      ]
+    },
+    "Tetran (Subject #4)": {
+      "file": "NPCs/Faction_NPCs/NPC_Tetran_Subject4.md",
+      "notion_id": "`2d8693f0c6b481b59ceeffa018c700c7`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Tetran (Subject #4)",
+        "Tetran"
+      ]
+    },
+    "Trinity (Subject #3)": {
+      "file": "NPCs/Faction_NPCs/NPC_Trinity_Subject3.md",
+      "notion_id": "`2d8693f0c6b4813094f4e171c66eb7fb`",
+      "type": "NPC_Faction",
+      "variants": [
+        "Trinity (Subject #3)",
+        "Trinity"
+      ]
+    },
+    "Corvin Tradewise": {
+      "file": "NPCs/Location_NPCs/NPC_Corvin_Tradewise.md",
+      "notion_id": "`2d8693f0c6b481e1b06af39bdcc0ed4f`",
+      "type": "NPC_Location",
+      "variants": [
+        "Corvin Tradewise"
+      ]
+    },
+    "Harren (Dock Worker)": {
+      "file": "NPCs/Location_NPCs/NPC_Harren_Dock_Worker.md",
+      "notion_id": "`2d8693f0c6b48122aaa4e914149c5912`",
+      "type": "NPC_Location",
+      "variants": [
+        "Harren (Dock Worker)",
+        "Harren"
+      ]
+    },
+    "Kex the Fence": {
+      "file": "NPCs/Location_NPCs/NPC_Kex_the_Fence.md",
+      "notion_id": "`2d8693f0c6b4812b81a7cc19fc7babac`",
+      "type": "NPC_Location",
+      "variants": [
+        "Kex the Fence"
+      ]
+    },
+    "Mira Saltwind": {
+      "file": "NPCs/Location_NPCs/NPC_Mira_Saltwind.md",
+      "notion_id": "`2d8693f0c6b481dba0b9f5f76ed7f85e`",
+      "type": "NPC_Location",
+      "variants": [
+        "Mira Saltwind"
+      ]
+    },
+    "Mirella Stonemark": {
+      "file": "NPCs/Location_NPCs/NPC_Mirella_Stonemark.md",
+      "notion_id": "`2d8693f0c6b48156b625f82340c6e7ba`",
+      "type": "NPC_Location",
+      "variants": [
+        "Mirella Stonemark"
+      ]
+    },
+    "Thava Thornscale": {
+      "file": "NPCs/Location_NPCs/NPC_Thava_Thornscale.md",
+      "notion_id": "`2d8693f0c6b481c781bcdaacb284c234`",
+      "type": "NPC_Location",
+      "variants": [
+        "Thava Thornscale"
+      ]
+    },
+    "Torvin Greycask": {
+      "file": "NPCs/Location_NPCs/NPC_Torvin_Greycask.md",
+      "notion_id": "`2d8693f0c6b481b0a5fdf52d87d7e2c0`",
+      "type": "NPC_Location",
+      "variants": [
+        "Torvin Greycask"
+      ]
+    },
+    "Veridian Scrollkeeper": {
+      "file": "NPCs/Location_NPCs/NPC_Veridian_Scrollkeeper.md",
+      "notion_id": "`2d8693f0c6b4817eafacdd3630416da5`",
+      "type": "NPC_Location",
+      "variants": [
+        "Veridian Scrollkeeper"
+      ]
+    },
+    "Blood Target (Unknown)": {
+      "file": "NPCs/Mystery_NPCs/Blood_Target_Unknown.md",
+      "notion_id": "`2d8693f0c6b48151ac06d77d51f5144d`",
+      "type": "NPC_Mystery",
+      "variants": [
+        "Blood Target (Unknown)",
+        "Blood Target"
+      ]
+    },
+    "Bandit Network (Geist & Kaelborn)": {
+      "file": "Factions/Faction_Bandit_Network_Geist_Kaelborn.md",
+      "notion_id": "`2d8693f0c6b481f987aed9c59baf6634`",
+      "type": "Faction",
+      "variants": [
+        "Bandit Network (Geist & Kaelborn)",
+        "Bandit Network"
+      ]
+    },
+    "Chaos Cult": {
+      "file": "Factions/Faction_Chaos_Cult.md",
+      "notion_id": "`2d8693f0c6b481e49224dbdf4279c464`",
+      "type": "Faction",
+      "variants": [
+        "Chaos Cult"
+      ]
+    },
+    "Decimate Project": {
+      "file": "Factions/Faction_Decimate_Project.md",
+      "notion_id": "`2d8693f0c6b481c2b4a6eb5b559676e5`",
+      "type": "Faction",
+      "variants": [
+        "Decimate Project"
+      ]
+    },
+    "Dispossessed": {
+      "file": "Factions/Faction_Dispossessed.md",
+      "notion_id": "`2d8693f0c6b481718968dbf00a267d17`",
+      "type": "Faction",
+      "variants": [
+        "Dispossessed"
+      ]
+    },
+    "Merit Council": {
+      "file": "Factions/Faction_Merit_Council.md",
+      "notion_id": "`2d8693f0c6b481b2b209d3677440fe12`",
+      "type": "Faction",
+      "variants": [
+        "Merit Council"
+      ]
+    },
+    "Storm Giant Warband": {
+      "file": "Factions/Faction_Storm_Giant_Warband.md",
+      "notion_id": "`2d8693f0c6b481549d36d7cab814551c`",
+      "type": "Faction",
+      "variants": [
+        "Storm Giant Warband"
+      ]
+    },
+    "Agastia": {
+      "file": "Locations/Cities/Agastia_City.md",
+      "notion_id": "`2d9693f0c6b48181a922fa18ec8b9ff2`",
+      "type": "Location",
+      "variants": [
+        "Agastia"
+      ]
+    },
+    "Dock District": {
+      "file": "Locations/Districts/Dock_District.md",
+      "notion_id": "`2d8693f0c6b4818a849ad762f49622da`",
+      "type": "Location",
+      "variants": [
+        "Dock District"
+      ]
+    },
+    "Government Complex": {
+      "file": "Locations/Districts/Government_Complex.md",
+      "notion_id": "`2d8693f0c6b481f2870dcedecc71da0d`",
+      "type": "Location",
+      "variants": [
+        "Government Complex"
+      ]
+    },
+    "Lower Residential District": {
+      "file": "Locations/Districts/Lower_Residential_District.md",
+      "notion_id": "`2d8693f0c6b4811192c8ca496e8cbfe4`",
+      "type": "Location",
+      "variants": [
+        "Lower Residential District"
+      ]
+    },
+    "Merchant District": {
+      "file": "Locations/Districts/Merchant_District.md",
+      "notion_id": "`2d8693f0c6b481f98874eaec4cd4d508`",
+      "type": "Location",
+      "variants": [
+        "Merchant District"
+      ]
+    },
+    "Noble Quarter": {
+      "file": "Locations/Districts/Noble_Quarter.md",
+      "notion_id": "`2d8693f0c6b481a49a7af3b6b22ee84e`",
+      "type": "Location",
+      "variants": [
+        "Noble Quarter"
+      ]
+    },
+    "Research Quarter": {
+      "file": "Locations/Districts/Research_Quarter.md",
+      "notion_id": "`2d8693f0c6b4813abd03e3d69135a4de`",
+      "type": "Location",
+      "variants": [
+        "Research Quarter"
+      ]
+    },
+    "Scholar Quarter": {
+      "file": "Locations/Districts/Scholar_Quarter.md",
+      "notion_id": "`2d8693f0c6b4812ba3bec384dec32a5c`",
+      "type": "Location",
+      "variants": [
+        "Scholar Quarter"
+      ]
+    },
+    "The Castle": {
+      "file": "Locations/Districts/The_Castle.md",
+      "notion_id": "`2d8693f0c6b4815fb0b1c3c0edf3520a`",
+      "type": "Location",
+      "variants": [
+        "The Castle"
+      ]
+    },
+    "The Depths": {
+      "file": "Locations/Districts/The_Depths.md",
+      "notion_id": "`2d8693f0c6b4815fadcfcc5d4fe692c9`",
+      "type": "Location",
+      "variants": [
+        "The Depths"
+      ]
+    },
+    "Meridian's Rest": {
+      "file": "Locations/Towns/Meridians_Rest.md",
+      "notion_id": "`2d8693f0c6b481a38711ed46f07bfa73`",
+      "type": "Location",
+      "variants": [
+        "Meridian's Rest"
+      ]
+    },
+    "Agastia Region": {
+      "file": "Locations/Regions/Agastia_Region.md",
+      "notion_id": "`2d8693f0c6b4814a8353d3a47515a223`",
+      "type": "Location",
+      "variants": [
+        "Agastia Region"
+      ]
+    },
+    "Infinite Forest": {
+      "file": "Locations/Wilderness/Infinite_Forest.md",
+      "notion_id": "`2d8693f0c6b48163bc17f611a1f9d792`",
+      "type": "Location",
+      "variants": [
+        "Infinite Forest"
+      ]
+    },
+    "Ratterdan Ruins": {
+      "file": "Locations/Wilderness/Ratterdan_Ruins.md",
+      "notion_id": "`2d8693f0c6b481b29ba5c1c1df5c3e95`",
+      "type": "Location",
+      "variants": [
+        "Ratterdan Ruins"
+      ]
+    },
+    "Archive of Lost Histories": {
+      "file": "Locations/Cities/Agastia/Location_Archive_of_Lost_Histories.md",
+      "notion_id": "`2d8693f0c6b481af96e3fcc7e21a51c9`",
+      "type": "Location",
+      "variants": [
+        "Archive of Lost Histories"
+      ]
+    },
+    "Blades of Glory": {
+      "file": "Locations/Cities/Agastia/Shop_Blades_of_Glory.md",
+      "notion_id": "`2d8693f0c6b4811bb6acc266b2c7443c`",
+      "type": "Location",
+      "variants": [
+        "Blades of Glory"
+      ]
+    },
+    "Brightcoin Emergency Supplies": {
+      "file": "Locations/Cities/Agastia/Shop_Brightcoin_Emergency_Supplies.md",
+      "notion_id": "`2d8693f0c6b481309eb5f17699335c53`",
+      "type": "Location",
+      "variants": [
+        "Brightcoin Emergency Supplies"
+      ]
+    },
+    "Il Drago Rosso": {
+      "file": "Locations/Cities/Agastia/Shop_Il_Drago_Rosso.md",
+      "notion_id": "`2d8693f0c6b48138ba65eebcaff06221`",
+      "type": "Location",
+      "variants": [
+        "Il Drago Rosso"
+      ]
+    },
+    "Inkwell and Quill": {
+      "file": "Locations/Cities/Agastia/Shop_Inkwell_and_Quill.md",
+      "notion_id": "`2d8693f0c6b48151a44ee076bd305c32`",
+      "type": "Location",
+      "variants": [
+        "Inkwell and Quill"
+      ]
+    },
+    "Public Temple": {
+      "file": "Locations/Cities/Agastia/Shop_Public_Temple.md",
+      "notion_id": "`2d8693f0c6b481e8ba22ca1eafc9a925`",
+      "type": "Location",
+      "variants": [
+        "Public Temple"
+      ]
+    },
+    "Saltwind General Supply": {
+      "file": "Locations/Cities/Agastia/Shop_Saltwind_General_Supply.md",
+      "notion_id": "`2d8693f0c6b48130a2eed071ab2d4f8e`",
+      "type": "Location",
+      "variants": [
+        "Saltwind General Supply"
+      ]
+    },
+    "Sawbones Surgery": {
+      "file": "Locations/Cities/Agastia/Shop_Sawbones_Surgery.md",
+      "notion_id": "`2d8693f0c6b48165816ec0e8acba34dd`",
+      "type": "Location",
+      "variants": [
+        "Sawbones Surgery"
+      ]
+    },
+    "Shadow's Edge Armory": {
+      "file": "Locations/Cities/Agastia/Shop_Shadows_Edge_Armory.md",
+      "notion_id": "`2d8693f0c6b481099b34c194a36898e4`",
+      "type": "Location",
+      "variants": [
+        "Shadow's Edge Armory"
+      ]
+    },
+    "Stonemark Antiquities": {
+      "file": "Locations/Cities/Agastia/Shop_Stonemark_Antiquities.md",
+      "notion_id": "`2d8693f0c6b481cfb6e3e736fa3ad36b`",
+      "type": "Location",
+      "variants": [
+        "Stonemark Antiquities"
+      ]
+    },
+    "Stonewick Herbalist": {
+      "file": "Locations/Cities/Agastia/Shop_Stonewick_Herbalist.md",
+      "notion_id": "`2d8693f0c6b4811581e9e33e0620e1f1`",
+      "type": "Location",
+      "variants": [
+        "Stonewick Herbalist"
+      ]
+    },
+    "The Copper Mug (Tavern)": {
+      "file": "Locations/Cities/Agastia/Tavern_The_Copper_Mug.md",
+      "notion_id": "`2d8693f0c6b4817fa699cf4ab01fe11b`",
+      "type": "Location",
+      "variants": [
+        "The Copper Mug (Tavern)",
+        "The Copper Mug"
+      ]
+    },
+    "The Delizioso Trattoria": {
+      "file": "Locations/Cities/Agastia/Shop_The_Delizioso_Trattoria.md",
+      "notion_id": "`2c9693f0c6b4814fae3bfb9b14dfd8bc`",
+      "type": "Location",
+      "variants": [
+        "The Delizioso Trattoria"
+      ]
+    },
+    "The Desperate's Refuge": {
+      "file": "Locations/Cities/Agastia/Shop_The_Desperates_Refuge.md",
+      "notion_id": "`2d8693f0c6b481e884f0d65920b41bfe`",
+      "type": "Location",
+      "variants": [
+        "The Desperate's Refuge"
+      ]
+    },
+    "The Gilded Scale": {
+      "file": "Locations/Cities/Agastia/Shop_The_Gilded_Scale.md",
+      "notion_id": "`2d8693f0c6b481fead5eda92d56281eb`",
+      "type": "Location",
+      "variants": [
+        "The Gilded Scale"
+      ]
+    },
+    "The Grand Cathedral": {
+      "file": "Locations/Cities/Agastia/Shop_The_Grand_Cathedral.md",
+      "notion_id": "`2d8693f0c6b481258a9ec15c35c21e2a`",
+      "type": "Location",
+      "variants": [
+        "The Grand Cathedral"
+      ]
+    },
+    "The Hidden Door (Inn)": {
+      "file": "Locations/Cities/Agastia/Inn_The_Hidden_Door.md",
+      "notion_id": "`2d8693f0c6b481a0bbb8e92b21b8caa3`",
+      "type": "Location",
+      "variants": [
+        "The Hidden Door (Inn)",
+        "The Hidden Door"
+      ]
+    },
+    "The Wanderer's Pack": {
+      "file": "Locations/Cities/Agastia/Shop_The_Wanderers_Pack.md",
+      "notion_id": "`2d8693f0c6b4811aae26d1f34440fad0`",
+      "type": "Location",
+      "variants": [
+        "The Wanderer's Pack"
+      ]
+    },
+    "Tidecaller Armory": {
+      "file": "Locations/Cities/Agastia/Shop_Tidecaller_Armory.md",
+      "notion_id": "`2d8693f0c6b48101b926cef91b39dba1`",
+      "type": "Location",
+      "variants": [
+        "Tidecaller Armory"
+      ]
+    },
+    "Working Class Armory": {
+      "file": "Locations/Cities/Agastia/Shop_Working_Class_Armory.md",
+      "notion_id": "`2d8693f0c6b4814e94e9e3392137eb55`",
+      "type": "Location",
+      "variants": [
+        "Working Class Armory"
+      ]
+    },
+    "Animated Heartstone": {
+      "file": "Campaign_Core/Animated_Heartstone_Artifact.md",
+      "notion_id": "`2d8693f0c6b481cda6f1ec0f87878c09`",
+      "type": "Core",
+      "variants": [
+        "Animated Heartstone"
+      ]
+    },
+    "Campaign Overview": {
+      "file": "Campaign_Core/Campaign_Overview.md",
+      "notion_id": "`2d8693f0c6b481f1a97fe6b54aaaf4e3`",
+      "type": "Core",
+      "variants": [
+        "Campaign Overview"
+      ]
+    },
+    "Giant Axe": {
+      "file": "Campaign_Core/Giant_Axe_Artifact.md",
+      "notion_id": "`2d8693f0c6b4810f9ed3c3e6c4b675cc`",
+      "type": "Core",
+      "variants": [
+        "Giant Axe"
+      ]
+    },
+    "The Dominion Evolution Codex": {
+      "file": "Campaign_Core/The_Codex.md",
+      "notion_id": "`2d8693f0c6b481a19fa0d04415d3e8d8`",
+      "type": "Core",
+      "variants": [
+        "The Dominion Evolution Codex"
+      ]
+    },
+    "Codex Search": {
+      "file": "Quests/Quest_Codex_Search.md",
+      "notion_id": "`2d8693f0c6b481c0a958e49860591899`",
+      "type": "Quest",
+      "variants": [
+        "Codex Search"
+      ]
+    },
+    "Geist Investigation": {
+      "file": "Quests/Quest_Geist_Investigation.md",
+      "notion_id": "`2d8693f0c6b4816a9763e4e47513de07`",
+      "type": "Quest",
+      "variants": [
+        "Geist Investigation"
+      ]
+    },
+    "Giant Axe Quest": {
+      "file": "Quests/Quest_Giant_Axe.md",
+      "notion_id": "`2d8693f0c6b4816bbd99de3faa0ef2c9`",
+      "type": "Quest",
+      "variants": [
+        "Giant Axe Quest"
+      ]
+    },
+    "Session 0 - Character Creation": {
+      "file": "Sessions/Session_0_Character_Creation.md",
+      "notion_id": "`2d8693f0c6b481c3bf23f0827dead9e7`",
+      "type": "Session",
+      "variants": [
+        "Session 0 - Character Creation"
+      ]
+    },
+    "Session 1 - Caravan to Ratterdan": {
+      "file": "Sessions/Session_1_Caravan_to_Ratterdan.md",
+      "notion_id": "`2d8693f0c6b4817b90b4fe31bee237ed`",
+      "type": "Session",
+      "variants": [
+        "Session 1 - Caravan to Ratterdan"
+      ]
+    },
+    "Session 2 - Road to Agastia": {
+      "file": "Sessions/Session_2_Road_to_Agastia.md",
+      "notion_id": "`2d8693f0c6b481e2946cf8ee7ecbb4d5`",
+      "type": "Session",
+      "variants": [
+        "Session 2 - Road to Agastia"
+      ]
+    },
+    "Session 3 - The Steel Dragon Begins": {
+      "file": "Sessions/Session_3_The_Steel_Dragon_Begins.md",
+      "notion_id": "`2d9693f0c6b48116a89ec5397dd339e7`",
+      "type": "Session",
+      "variants": [
+        "Session 3 - The Steel Dragon Begins"
+      ]
+    },
+    "Alias": {
+      "file": "Full Entity Name",
+      "notion_id": "Category",
+      "type": "Session",
+      "variants": [
+        "Alias"
+      ]
+    },
+    "Kyle": {
+      "file": "Kyle/Nameless",
+      "notion_id": "Player Character",
+      "type": "Session",
+      "variants": [
+        "Kyle"
+      ]
+    },
+    "Ian": {
+      "file": "Ian/Rakash",
+      "notion_id": "Player Character",
+      "type": "Session",
+      "variants": [
+        "Ian"
+      ]
+    },
+    "Rakash": {
+      "file": "Ian/Rakash",
+      "notion_id": "Player Character",
+      "type": "Session",
+      "variants": [
+        "Rakash"
+      ]
+    },
+    "Biago": {
+      "file": "Nikki",
+      "notion_id": "Player Character",
+      "type": "Session",
+      "variants": [
+        "Biago"
+      ]
+    },
+    "Monomi": {
+      "file": "Manny",
+      "notion_id": "Player Character",
+      "type": "Session",
+      "variants": [
+        "Monomi"
+      ]
+    },
+    "The Codex": {
+      "file": "The Dominion Evolution Codex",
+      "notion_id": "Campaign Core",
+      "type": "Session",
+      "variants": [
+        "The Codex"
+      ]
+    },
+    "Codex": {
+      "file": "The Dominion Evolution Codex",
+      "notion_id": "Campaign Core",
+      "type": "Session",
+      "variants": [
+        "Codex"
+      ]
+    },
+    "Veridian": {
+      "file": "Veridian Scrollkeeper",
+      "notion_id": "Location NPC",
+      "type": "Session",
+      "variants": [
+        "Veridian"
+      ]
+    },
+    "Aarakocra Scouts": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Aarakocra Scouts"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Ancient Ruins": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Ancient Ruins"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Ankheg Eruption": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Ankheg Eruption"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Awakened Shrub Choir": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Awakened Shrub Choir"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Awakened Tree Guardian": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Awakened Tree Guardian"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Axe Beak Flock": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Axe Beak Flock"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Bandit Captain's Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Bandit Captain's Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Basilisk Den": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Basilisk Den"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Basilisk Territory": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Basilisk Territory"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Beached Dolphin": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Beached Dolphin"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Berserker Rampage": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Berserker Rampage"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Black Dragon Wyrmling": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Black Dragon Wyrmling"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Blue Dragon Wyrmling": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Blue Dragon Wyrmling"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Bronze Dragon Wyrmling": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Bronze Dragon Wyrmling"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Bullywug Fishermen": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Bullywug Fishermen"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "City Name": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "City Name"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Cockatrice Glade": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Cockatrice Glade"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Con Artist": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Con Artist"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Corrupted Grove": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Corrupted Grove"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Couatl's Test": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Couatl's Test"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Cult Sacrifice": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Cult Sacrifice"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Cultist Kidnapping": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Cultist Kidnapping"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Cultist Recruitment": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Cultist Recruitment"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Cursed Statue": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Cursed Statue"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Death Dogs": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Death Dogs"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Decum (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Decum (Subject ",
+        "Decum"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "District Name": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "District Name"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Dwarven Sentries": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Dwarven Sentries"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Eagle's Nest": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Eagle's Nest"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Ettin's Crossroads": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Ettin's Crossroads"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Fishing Village": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Fishing Village"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Flying Snake Nest": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Flying Snake Nest"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Friendly Lizardfolk Village": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Friendly Lizardfolk Village"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Friendly Merfolk": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Friendly Merfolk"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Friendly Reindeer Herders": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Friendly Reindeer Herders"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Frost Giant Sentry": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Frost Giant Sentry"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Frozen Dead": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Frozen Dead"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Frozen Shrine": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Frozen Shrine"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Fruit Tree Bounty": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Fruit Tree Bounty"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Gargoyle Guardian": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Gargoyle Guardian"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Geist (Bandit Lieutenant)": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Geist (Bandit Lieutenant)",
+        "Geist"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Ape Territory": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Ape Territory"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Axe (Artifact)": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Axe (Artifact)",
+        "Giant Axe"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Constrictor Snake": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Constrictor Snake"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Crabs": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Crabs"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Crocodile": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Crocodile"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Frog Pond": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Frog Pond"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Frogs": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Frogs"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Octopus": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Octopus"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Scorpion Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Scorpion Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Giant Spider Infestation": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Giant Spider Infestation"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Gnoll Scavengers": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Gnoll Scavengers"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Goblin Ambush Site": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Goblin Ambush Site"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Goblin Ice-Fishers": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Goblin Ice-Fishers"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Goblin Parade": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Goblin Parade"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Green Dragon Wyrmling": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Green Dragon Wyrmling"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Green Dragon's Domain": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Green Dragon's Domain"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Grick Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Grick Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Harpies' Cliff": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Harpies' Cliff"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Harpy Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Harpy Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Haunted House": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Haunted House"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Helpful Priest": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Helpful Priest"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Helpful Sprite": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Helpful Sprite"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Helpful Sprite Circle": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Helpful Sprite Circle"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Hermit's Cave": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Hermit's Cave"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Hexus (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Hexus (Subject ",
+        "Hexus"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Hobgoblin Hunting Party": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Hobgoblin Hunting Party"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Ice Mephit Mischief": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Ice Mephit Mischief"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Inspiring Tables": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Inspiring Tables"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Jackalwere Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Jackalwere Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Kaelborn (Bandit Boss)": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Kaelborn (Bandit Boss)",
+        "Kaelborn"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Kobold Dragon Cultists": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Kobold Dragon Cultists"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Kobold Harvesters": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Kobold Harvesters"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Kobold Trappers": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Kobold Trappers"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Kuo-toa Scouts": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Kuo-toa Scouts"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Lamia's Lair": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Lamia's Lair"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Location_Ratterdan": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Location_Ratterdan"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Lost Child": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Lost Child"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Lost Dwarf": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Lost Dwarf"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Lost Lizard Herd": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Lost Lizard Herd"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Lost Mastiff": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Lost Mastiff"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Lost Saber-Tooth Cubs": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Lost Saber-Tooth Cubs"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Magma Vent": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Magma Vent"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Mammoth Migration": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Mammoth Migration"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Manticore Lair": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Manticore Lair"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Marcus": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Marcus"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Market Day": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Market Day"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Merchant's Problem": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Merchant's Problem"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Mimic Warehouse": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Mimic Warehouse"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Mischievous Dust Mephits": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Mischievous Dust Mephits"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Monkey Mischief": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Monkey Mischief"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Mountain Goat Herd": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Mountain Goat Herd"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Mummy Guardian": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Mummy Guardian"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "NPC_Marcus": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "NPC_Marcus"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Nona (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Nona (Subject ",
+        "Nona"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Oasis Haven": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Oasis Haven"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Octavia (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Octavia (Subject ",
+        "Octavia"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Ogre Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Ogre Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Orc Raiders": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Orc Raiders"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Orc Raiding Party": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Orc Raiding Party"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "PC_Ian_Rakash": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "PC_Ian_Rakash"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "PC_Manny": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "PC_Manny"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "PC_Nikki": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "PC_Nikki"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Peryton Hunt": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Peryton Hunt"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Phase Spider": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Phase Spider"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Pirate Raid": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Pirate Raid"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Poisonous Snakes": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Poisonous Snakes"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Polar Bear Hunt": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Polar Bear Hunt"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Pseudodragon Quarrel": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Pseudodragon Quarrel"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Quincy (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Quincy (Subject ",
+        "Quincy"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Rat Swarm": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Rat Swarm"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Ratterdan": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Ratterdan"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Rockslide": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Rockslide"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Rope Bridge": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Rope Bridge"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Sahuagin Raiders": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Sahuagin Raiders"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Sandstorm": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Sandstorm"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Scorpion Nest": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Scorpion Nest"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Sea Hag's Territory": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Sea Hag's Territory"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Septimus (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Septimus (Subject ",
+        "Septimus"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Shipwreck": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Shipwreck"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Spider's Hunting Ground": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Spider's Hunting Ground"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Stirge Storm": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Stirge Storm"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Stray Dog Pack": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Stray Dog Pack"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Street Performer": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Street Performer"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Swarm Territory": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Swarm Territory"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Talking Statue": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Talking Statue"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Territorial Owlbear": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Territorial Owlbear"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Tetran (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Tetran (Subject ",
+        "Tetran"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Thief Chase": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Thief Chase"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Tide Pools": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Tide Pools"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Tribal Warriors": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Tribal Warriors"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Trinity (Subject ": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Trinity (Subject ",
+        "Trinity"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Tyrannosaur Hunt": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Tyrannosaur Hunt"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Unicorn Sighting": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Unicorn Sighting"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Veridian (Scrollkeeper)": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Veridian (Scrollkeeper)",
+        "Veridian"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Vine Blight Infestation": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Vine Blight Infestation"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Wandering Druid": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Wandering Druid"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Wererat Warning": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Wererat Warning"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "White Dragon Wyrmling": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "White Dragon Wyrmling"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Will-o'-Wisp Guides": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Will-o'-Wisp Guides"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Winter Wolf Pack": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Winter Wolf Pack"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Wyvern Nest": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Wyvern Nest"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Yuan-ti Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Yuan-ti Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    },
+    "Zombie Ambush": {
+      "file": null,
+      "notion_id": null,
+      "type": "Discovered",
+      "variants": [
+        "Zombie Ambush"
+      ],
+      "discovered_from": "wikilink_scan"
+    }
+  },
+  "last_updated": "2026-01-10T05:43:03.499580+00:00",
+  "source": "discover_entities.py",
+  "new_entities_count": 144
+}
