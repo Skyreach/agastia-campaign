@@ -498,9 +498,46 @@ When a user's request relates to:
 - **Wikilinking entities** → Use add-wikilinks skill
 - **Building connected locations** → Use point-crawl skill
 - **Finding entity files** → Use wiki-lookup skill
+- **Post-session cleanup** → Use extract-deferred-modules skill
+- **Planning next session** → Use plan-session skill
+- **Advancing deferred module clocks** → Use pitch-escalations skill
 
 Skills are self-documenting markdown files. Read the skill file for detailed usage instructions.
 
+### /todo Command - Thread-Aware Todo Tracking
+
+**CRITICAL:** When /todo is invoked, ALWAYS use thread-based organization.
+
+**Process:**
+1. **Identify thread topic** from user's message or current work context
+   - Example: "Plan Session 4" → thread ID: "session-4-planning"
+   - Example: "Build NPC generator" → thread ID: "npc-generator"
+2. **Check if thread exists** in `.working/TODO_SESSION.md`
+   - If exists → Resume thread (load existing tasks, continue Q&A numbering)
+   - If new → Create thread section using template from file
+3. **Update Active Threads index** at top of file
+4. **Capture ALL Q&A** in thread's Q&A log:
+   - When I ask question → Log as Q[N] immediately
+   - When user answers → Log as A[N] immediately
+   - Link tasks to Q&A that informed them (e.g., "Per Q5/A5")
+5. **Update both systems:**
+   - TodoWrite tool (in-memory, visible in UI)
+   - `.working/TODO_SESSION.md` (persistent, survives crashes)
+
+**Thread ID Format:**
+- Lowercase, hyphens, descriptive (2-4 words)
+- Examples: "session-4-planning", "module-extraction", "npc-generator"
+
+**Benefits:**
+- Support parallel work without conflicts
+- Every question/answer captured for reference
+- Can resume any thread anytime
+- Prevents forgotten decisions
+
+**See `.working/TODO_SESSION.md` for thread template and examples.**
+
 ## 📝 Update Log
+- 2025-01-05: Deferred module system implemented
+- 2025-01-05: Thread-aware todo tracking added
 - 2025-01-20: Repository initialized with safety checks
 - 2025-01-20: Directory structure created
