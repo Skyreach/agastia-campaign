@@ -1,204 +1,222 @@
 ---
 name: Nikki Family Protection
 type: Quest
-category: Personal
-pc_connection: Nikki
+quest_type: Mission
 status: Available
-tier: 4
 version: "1.0.0"
 tags: [quest, nikki, merchant-district, il-drago-rosso, extortion, investigation]
+patron: Inspector Crane
+location: Merchant District
+related_entities: [Nikki, Il Drago Rosso, Merit Council, Papa Biago, Mama Biago]
 ---
 
-# Quest: Nikki Family Protection
+# Nikki Family Protection
 
-## Overview
+## Player Summary
 
-**Type:** Personal quest for [[Nikki]] | Investigation & Social
-**Tier:** 4 ([[Merchant District]])
-**Status:** Available (Job Board posting)
-**Connection:** [[Nikki]]'s family restaurant [[Il Drago Rosso]] is being threatened
-
-**Hook:** A job board posting requests help investigating an aggressive faction trying to strong-arm businesses in the [[Merchant District]]. When the party investigates, they discover [[Il Drago Rosso]] is one of the targeted establishments.
-
-## Quest Hook
+A job board posting in the [[Merchant District]] seeks discreet investigators to look into reports of aggressive business practices. Multiple establishments report intimidation tactics and demands for "protection money."
 
 **Job Board Posting:**
 > "WANTED: Discreet investigators to look into reports of aggressive business practices in [[Merchant District]]. Multiple establishments report intimidation tactics. Reward: 100gp + 10 Merit. Contact: [[Merit Council]] Inspector Crane."
 
-**The Truth:**
-- A new faction (or subfaction) is moving into the [[Merchant District]]
-- They're using intimidation and extortion to establish control
-- [[Il Drago Rosso]] is a prime target due to its neutral ground status and connections
-- Papa and Mama Biago are refusing to pay "protection money"
-- Their neutrality prevents them from fighting back directly
+When investigated, [[Nikki]]'s family restaurant [[Il Drago Rosso]] turns out to be one of the threatened establishments. Papa and Mama Biago are refusing to pay, putting their neutral ground status - and their family - at risk.
 
-## Investigation Structure
+### Basic Information
 
-### Clue Web (3-3-3-1 Pattern)
+- **Type:** Mission (Investigation & Social)
+- **Status:** Available
+- **Patron:** Inspector Crane ([[Merit Council]] official)
+- **Reward:** 100gp + 10 Merit (Base), plus family rewards if [[Il Drago Rosso]] is protected
 
-**Stage 1: Discovery (3 Entry Points)**
-1. **Job Board Investigation** - Inspector Crane provides list of affected businesses
-2. **Family Connection** - [[Nikki]] hears from Papa/Mama about "new customers making demands"
-3. **Witness Reports** - Other [[Merchant District]] merchants mention the problem
+### Objectives
 
-**Stage 2: Evidence Gathering (3 Leads)**
-1. **Business Records** - Pattern of visits, escalating demands, veiled threats
-2. **Witness Testimony** - Merchants describe the enforcers (appearance, tactics, faction symbols)
-3. **Physical Evidence** - Threatening notes, vandalism, "accidents" at non-compliant shops
+1. Investigate the extortion operation targeting [[Merchant District]] businesses
+2. Discover who is behind the intimidation campaign
+3. Protect [[Il Drago Rosso]] and the Biago family from threats
+4. Stop the extortion operation (through confrontation, exposure, negotiation, or sabotage)
 
-**Stage 3: Revelations (3 Connections)**
-1. **Faction Identity** - Discover which faction is behind the extortion
-2. **True Motive** - Not just money - they want control of [[Il Drago Rosso]]'s neutral ground status
-3. **Inside Connection** - Someone in the [[Merit Council]] is looking the other way
+## Quest Structure
 
-**Stage 4: Confrontation (The Truth)**
-- The faction wants to eliminate neutral meeting grounds to prevent rival factions from communicating
-- Controlling [[Il Drago Rosso]] gives them intelligence on all faction activities
-- They're willing to hurt the Biago family to make an example
+### Node 1: Initial Investigation
 
-## Key NPCs
+**Entry Points:**
+- Accept job from Inspector Crane at job board
+- [[Nikki]] hears from Papa/Mama about "new customers making demands"
+- Other merchants in [[Merchant District]] mention the problem
 
-**Inspector Crane:**
-- [[Merit Council]] official assigned to investigate
-- Genuinely wants to help but lacks resources/authority
-- Can provide official backing if party gathers evidence
-- Unaware of the inside connection (not the corrupt official)
+**Investigation (Tiered DCs):**
+- **Easy (DC 10 Investigation):** Identify pattern of affected businesses, all high-traffic locations
+- **Moderate (DC 13 Persuasion):** Merchants describe enforcers - 2-4 thugs, faction symbols visible
+- **Hard (DC 16 Insight):** True target isn't just money - they're focusing on information hubs and meeting places
 
-**The Enforcers:**
-- 2-4 thugs making threats to businesses
-- Working for a faction handler
-- Know very little about the bigger picture
-- Can be intimidated, bribed, or captured for information
+**Outcomes:**
+- Success: Identify affected businesses, get descriptions of enforcers, understand escalation pattern
+- Failure: Miss warning signs, extortion escalates before party can act
 
-**The Handler:**
-- Mid-level faction operative running the extortion operation
-- Knows the true goal (control neutral ground, gather intelligence)
-- Reports to faction leadership
-- Willing to negotiate if cornered, desperate if exposed
+### Node 2: Evidence Gathering
 
-**Papa & Mama Biago:**
-- Refusing to cooperate but worried for family and staff
-- Will not abandon their neutrality even under pressure
-- Trust [[Nikki]] and her companions to handle it
-- Can provide intelligence on the enforcers (overheard conversations, patterns)
+Party must gather proof of the extortion operation.
 
-## Quest Paths
+**Evidence Sources:**
+- **Business Records:** Pattern of visits, escalating demands, veiled threats (DC 12 Investigation)
+- **Witness Testimony:** Merchants describe tactics, faction affiliation (DC 14 Persuasion)
+- **Physical Evidence:** Threatening notes, vandalism evidence, "accident" scenes (DC 15 Investigation)
+- **Biago Intel:** Papa and Mama provide overheard conversations, patterns of behavior (automatic if party asks)
+
+**Outcomes:**
+- Success: Gather enough evidence to identify faction, locate enforcers, understand true motive
+- Failure: Insufficient evidence, must confront enforcers directly without backup plan
+
+### Node 3: Discovery - The True Motive
+
+Through investigation, party discovers the truth:
+
+**Revelations:**
+1. **Faction Identity** - Specific faction behind extortion (DM chooses: [[Chaos Cult]], Criminal Syndicate, [[Merit Council]] Hardliners, or Rival Restaurant)
+2. **True Goal** - Not just money, but control of [[Il Drago Rosso]]'s neutral ground status for intelligence gathering
+3. **Inside Connection** - A corrupt [[Merit Council]] official is being paid to look the other way
+
+**Outcomes:**
+- Success: Understand full scope of threat, can plan appropriate response
+- Failure: Miss deeper implications, may solve immediate threat but leave masterminds in place
+
+### Node 4: Confrontation & Resolution
+
+Party chooses their approach:
 
 **Path A: Direct Confrontation**
-- Track down enforcers, intimidate/fight them
-- Follow trail to handler
+- Track down enforcers (DC 14 Investigation or Survival)
+- Combat or intimidation encounter (2-4 Thugs, CR 2-3 total)
+- Follow trail to handler (DC 16 Insight or Intimidation)
 - Force faction to back off through strength
 - **Risk:** Escalates to open conflict, may damage [[Il Drago Rosso]]'s neutral status
 
 **Path B: Investigation & Exposure**
-- Gather evidence against the faction
-- Present to Inspector Crane and [[Merit Council]]
-- Official crackdown on the operation
-- **Benefit:** Maintains neutrality, uses official channels, less violent
+- Present evidence to Inspector Crane (automatic if evidence gathered)
+- Official crackdown on operation (Inspector organizes guard raid)
+- Public exposure of corrupt official (if discovered)
+- **Benefit:** Maintains neutrality, uses official channels, less violence
 
 **Path C: Negotiate & Redirect**
-- Identify what the faction really wants
-- Offer alternative solution (different intelligence source, different meeting ground)
-- Broker deal that protects [[Il Drago Rosso]]
+- Identify faction's true needs (DC 17 Insight)
+- Broker alternative solution (DC 18 Persuasion)
+- Offer different intelligence source or meeting ground
 - **Benefit:** No bloodshed, maintains all relationships, most complex
 
 **Path D: Undermine & Sabotage**
-- Infiltrate the faction operation
-- Create internal problems (steal money, forge evidence of betrayal)
-- Make the extortion operation unprofitable/dangerous for faction
-- **Risk:** Requires deception, could backfire if discovered
+- Infiltrate operation (DC 15 Deception or Stealth)
+- Create internal problems (DC 16 Sleight of Hand or Deception)
+- Make extortion unprofitable/dangerous for faction
+- **Risk:** Requires deception, could backfire if discovered (DC 18 to avoid)
 
-## Rewards
-
-**Base Rewards:**
-- 100gp (from job board)
-- 10 Merit points
-- Inspector Crane's gratitude and future cooperation
-
-**Family Rewards (if [[Il Drago Rosso]] protected):**
-- Permanent free meals for the party
-- Private room access at [[Il Drago Rosso]]
-- Papa and Mama's deep trust (major intelligence asset)
-- Safe haven/sanctuary when needed
-
-**Bonus Rewards (path-dependent):**
-- **Path A:** Reputation as faction enforcers, intimidation bonus
-- **Path B:** [[Merit Council]] contacts, legitimacy boost
-- **Path C:** Faction gratitude (from deal), diplomatic reputation
-- **Path D:** Underworld contacts, stealth reputation
-
-**Story Rewards:**
-- Deepen relationship with [[Nikki]]'s family
-- Access to [[Il Drago Rosso]] as information hub
-- Protection of neutral ground (benefits all future faction negotiations)
-- Mama's "readings" of NPCs (she'll tell party when someone is lying)
-
-## Complications & Escalations
-
-**Clock: Faction Patience (8 segments)**
-- Tick every 2 days if no action taken
-- At 4 ticks: Vandalism escalates, staff threatened
-- At 6 ticks: Violence - someone gets hurt
-- At 8 ticks: [[Il Drago Rosso]] forced to close OR Biago family attacked
-
-**Complication: The Corrupt Official**
-- A [[Merit Council]] official is taking bribes to ignore the extortion
-- Will actively work against party investigation
-- Can be exposed (bonus reward) or used as leverage
-
-**Complication: Rival Factions**
-- Other factions notice [[Il Drago Rosso]] is threatened
-- Some may try to help (protect neutral ground)
-- Others may see opportunity (take over themselves)
-- Creates three-way conflict if not managed
-
-**Complication: [[Nikki]]'s Personal Stakes**
-- Emotions run high when family is threatened
-- May push for more aggressive action than party prefers
-- Mama and Papa worry about [[Nikki]] getting hurt
-- Character development opportunity for [[Nikki]]
+**Outcomes:**
+- Success (any path): [[Il Drago Rosso]] protected, extortion operation stopped, party gains rewards
+- Partial Success: Immediate threat resolved but deeper problems remain
+- Failure: Biago family forced to comply or flee, neutral ground lost
 
 ## DM Notes
 
-### Faction Options
+### Hidden Information
 
-This quest is designed to work with multiple factions:
-- **[[Chaos Cult]]:** Wants to control information flow, sees neutral ground as threat
-- **Criminal Syndicate:** New gang moving into territory, wants protection racket
-- **[[Merit Council]] Hardliners:** Want to eliminate "unregulated" meeting spaces
-- **Rival Restaurant:** Business competitor using dirty tactics (mundane but personal)
+**The Corrupt Official:**
+- [[Merit Council]] Inspector Voss is taking bribes (500gp per tenday)
+- Will actively work against party investigation if they get close
+- Can be exposed for bonus reward and story impact
+- Inspector Crane is unaware and will be horrified when revealed
 
-Choose based on campaign needs and current faction tensions.
+**The Real Mastermind:**
+- Handler is mid-level operative, reports to faction leadership
+- True goal: Eliminate neutral meeting grounds city-wide
+- [[Il Drago Rosso]] is test case - if successful, expand to other locations
+- Faction wants to force all negotiations through their controlled channels
 
-### Pacing
+**Biago Family Secret:**
+- Mama Biago's people-reading is actually low-level divination magic
+- She doesn't know it's supernatural - thinks everyone can tell lies
+- This is why [[Il Drago Rosso]]'s neutral ground works so well
+- If threatened severely, this ability might manifest more overtly
 
-- **Act 1 (1-2 sessions):** Discovery, investigation, evidence gathering
-- **Act 2 (1 session):** Confrontation with enforcers, discover handler
-- **Act 3 (1 session):** Final confrontation, resolution, faction response
+**Escalation Clock:**
+- 8-segment clock, ticks every 2 days of inaction
+- At 4 ticks: Vandalism escalates, staff threatened directly
+- At 6 ticks: Violence - someone gets hurt (staff member beaten)
+- At 8 ticks: [[Il Drago Rosso]] forced to close OR Biago family directly attacked
 
-Can be compressed into single session for quick resolution or expanded for deeper investigation.
+### Alternative Approaches
 
-### Integration
+**Rival Faction Assistance:**
+- Other factions value neutral ground, might help if approached
+- Creates debt/obligation but solves immediate problem
+- May start faction war if not handled delicately
+
+**Underworld Connections:**
+- Criminal contacts might know who's behind operation
+- Could hire counter-enforcers to protect [[Il Drago Rosso]]
+- Risks turning restaurant into faction territory
+
+**Public Exposure:**
+- Bring issue to public attention, force [[Merit Council]] to act
+- Protects [[Il Drago Rosso]] but may anger powerful factions
+- Mama and Papa prefer discrete solutions
+
+**Relocation:**
+- Offer to help Biagos relocate/fortify restaurant
+- Quickest solution but loses established neutral ground
+- Family will resist this option strenuously
+
+### Consequences
+
+**If [[Il Drago Rosso]] is Protected:**
+- Party gains deep trust of Biago family (major intelligence asset)
+- Permanent free meals, private room access, sanctuary when needed
+- Mama's "readings" of NPCs available to party
+- Other factions see party as protectors of neutral spaces
+- Sets precedent: threatening neutral ground has consequences
+
+**If [[Il Drago Rosso]] is Compromised:**
+- Biago family forced to choose side or close
+- Neutral meeting ground lost (hurts all future faction negotiations)
+- [[Nikki]] loses safe haven and family support
+- Faction gains intelligence advantage over rivals
+- Other neutral locations become targets
+
+**If Corrupt Official Exposed:**
+- [[Merit Council]] internal investigation, shake-up in ranks
+- Inspector Crane promoted, becomes valuable ally
+- Party gains reputation for rooting out corruption
+- Some Council members resent the exposure
+
+**Path-Dependent Outcomes:**
+- **Path A (Confrontation):** Reputation as enforcers, intimidation bonus, faction animosity
+- **Path B (Exposure):** [[Merit Council]] contacts, legitimacy boost, bureaucratic allies
+- **Path C (Negotiation):** Diplomatic reputation, faction gratitude, complex web of favors
+- **Path D (Sabotage):** Underworld contacts, stealth reputation, faction doesn't know who hit them
+
+**Faction Reactions:**
+- Responsible faction: Grudge if exposed/defeated, respect if negotiated with
+- Rival factions: Gratitude for preserving neutral ground
+- [[Merit Council]]: Appreciation if handled officially, concern if too violent
+- [[Nikki]]: Character development regarding family vs. duty
+
+### Integration Notes
 
 **Connects to:**
-- [[Il Drago Rosso]] - Protects key campaign location
-- [[Nikki]] - Personal quest and character development
-- Faction Politics - Demonstrates importance of neutral ground
-- [[Merit Council]] - Potential corruption storyline
-- Information Economy - Party gains valuable intelligence source
+- [[Il Drago Rosso]] - Protects key campaign location and intelligence hub
+- [[Nikki]] - Personal quest deepens family relationships
+- Faction Politics - Demonstrates importance of neutral spaces in city power dynamics
+- [[Merit Council]] - Reveals corruption, creates allies or enemies in government
+- Information Economy - Party gains access to Biago family's accumulated knowledge
 
-**Sets up:**
-- Deep trust with Biago family (major campaign asset)
-- Pattern of protecting neutral spaces in [[Agastia]]
-- Reputation as faction mediators or enforcers (path-dependent)
-- Future quests involving [[Il Drago Rosso]] as meeting location
+**Sets up Future Quests:**
+- Pattern of protecting neutral spaces becomes party calling card
+- Deep trust with Biagos opens doors across all factions
+- Corrupt officials create ongoing investigation thread
+- Faction that backed down may seek revenge later
+- Party reputation attracts similar requests from other threatened locations
 
-### Emotional Stakes
-
-This quest is about:
-- Family vs. duty (for [[Nikki]])
-- Neutrality vs. action (for the Biagos)
-- Protection of community institutions
+**Emotional Stakes:**
+- Family vs. duty conflict for [[Nikki]]
+- Neutrality vs. action dilemma for Biagos
+- Protection of community institutions theme
 - Standing up to bullies without becoming what you fight
-
-High emotional investment, opportunity for meaningful character moments.
+- High emotional investment creates memorable character moments
