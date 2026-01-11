@@ -17,34 +17,78 @@ from typing import List
 
 def fix_bold_wikilink_formatting(text: str) -> str:
     """
-    Fix bold formatting around wikilinks to match SOURCE format.
+    Fix bold formatting around wikilinks to match CORRECT format.
 
-    SOURCE uses unusual pattern: [[Entity]]**:** (entity NOT bold, punctuation IS bold)
-    This preserves that style instead of converting to standard markdown.
+    CORRECT format: **[[Entity]]:** (entity IS bold, entire subject bold)
+
+    User-requested simple fixes:
+    1. Replace **** with ** (no empty bold, no need for nested bold)
+    2. Remove italic wrappers from wikilinks (we don't use italics)
+    3. Old format fixes for manual edits
 
     Args:
         text: Input markdown text
 
     Returns:
-        Text with fixed bold+wikilink patterns matching SOURCE format
+        Text with fixed bold+wikilink patterns matching CORRECT format
     """
-    # Convert Notion's **[[Entity]]:******** → SOURCE format [[Entity]]**:**
-    # Remove bold from entity, keep on punctuation, remove extra **
-    text = re.sub(r'\*\*\[\[([^\]]+)\]\]:\*\*+', r'[[\1]]**:**', text)
+    # FIX 1a: Collapse nested bold markers (** **) that Notion creates
+    # Notion wraps renamed wikilinks in their own bold inside parent bold
 
-    # Fix possessive patterns: **[[Entity]]'s**** Text:** → [[Entity]]**'s Text:**
-    text = re.sub(r"\*\*\[\[([^\]]+)\]\]'s\*\*+ ([^:]+):\*\*", r"[[\1]]**'s \2:**", text)
+    # Pattern 1: **Text **[[Entity]]** more** → **Text [[Entity]] more**
+    text = re.sub(r'(\S)\s*\*\*(\[\[[^\]]+\]\])\*\*', r'\1 \2', text)
 
-    # Fix remaining extra ** after colons (more than 2)
-    text = re.sub(r'\*\*:\*\*\*+', r'**:**', text)
+    # Pattern 2: **Text - **[[Entity]] → **Text - [[Entity]]
+    # (handles cases without closing ** after wikilink)
+    text = re.sub(r'\*\*([^*\n]+)\s+-\s+\*\*(\[\[[^\]]+\]\])', r'**\1 - \2', text)
 
-    # Special fix: [[Entity]]** Map: → **[[Entity]] Map:**
-    # Handle both with and without existing colon
-    text = re.sub(r'\[\[([^\]]+)\]\]\*\* Map:\*\*+', r'**[[\1]] Map:**', text)
-    text = re.sub(r'\[\[([^\]]+)\]\]\*\* Map:(?!\*)', r'**[[\1]] Map:**', text)
+    # FIX 1b: Replace 3+ consecutive asterisks with ** (handles any nesting level)
+    # Notion can return 4, 6, 8+ asterisks depending on nesting
+    # We normalize all of them to just **
+    text = re.sub(r'\*{3,}', '**', text)
 
-    # Fix: [[Il Drago Rosso]]** - **[[Nikki]]'s Family Restaurant** → [[Il Drago Rosso]]** - [[Nikki]]'s Family Restaurant**
-    text = re.sub(r'(\[\[Il Drago Rosso\]\]\*\* - )\*\*(\[\[Nikki\]\])', r'\1\2', text)
+    # FIX 2: Remove italic wrappers from wikilinks (we don't use italics)
+    # More aggressive approach: remove single * before and after wikilinks independently
+    # This catches cases where Notion adds italics inconsistently
+
+    # Remove single * before [[ (but not ** which is bold)
+    # Negative lookbehind: not preceded by *, negative lookahead: not followed by *
+    text = re.sub(r'(?<!\*)\*(?!\*)(\[\[)', r'\1', text)
+
+    # Remove single * after ]] (but not ** which is bold)
+    # Negative lookbehind: not preceded by *, negative lookahead: not followed by *
+    text = re.sub(r'(\]\])(?<!\*)\*(?!\*)', r'\1', text)
+
+    # FIX 3: Notion-specific bold pattern fixes
+    # Notion stores bold incorrectly: [[Entity]]**Text:** instead of **[[Entity]]Text:**
+    # We need to move the ** to the beginning of the subject
+
+    # Fix 3a: List items with possessive - [[Entity]]**'s Text: → **[[Entity]]'s Text:
+    text = re.sub(r'(\d+\.|[-*])\s+\[\[([^\]]+)\]\]\*\*', r'\1 **[[\2]]', text)
+
+    # Fix 3b: Standalone subjects - [[Entity]]** → **[[Entity]]
+    text = re.sub(r'^\s*\[\[([^\]]+)\]\]\*\*', r'**[[\1]]', text, flags=re.MULTILINE)
+
+    # OLD FORMAT FIXES DISABLED
+    # These were designed for fixing manual edits in local files
+    # They INTERFERE with Notion output normalization by ADDING asterisks
+    # Example: Notion sends "[[Entity]]**'s Hook:**", old fix converts to "**[[Entity]]'s Hook:**"
+    # but leaves the trailing "**" from Notion, resulting in "**[[Entity]]'s Hook:****"
+    #
+    # OLD FORMAT FIX 1: [[Entity]]**: → **[[Entity]]:** (simple case)
+    # text = re.sub(r'^\s*(\d+\.|[-*])\s+\[\[([^\]]+)\]\]\*\*:', r'\1 **[[\2]]:**', text, flags=re.MULTILINE)
+    #
+    # OLD FORMAT FIX 2: [[Entity]]**'s Text: → **[[Entity]]'s Text:** (possessive)
+    # text = re.sub(r"^\s*(\d+\.|[-*])\s+\[\[([^\]]+)\]\]\*\*'s ([^*:\n]+):", r"\1 **[[\2]]'s \3:**", text, flags=re.MULTILINE)
+    #
+    # OLD FORMAT FIX 3: [[Entity]]**'s Location** → **[[Entity]]'s Location** (heading-style)
+    # text = re.sub(r"^\s*\[\[([^\]]+)\]\]\*\*'s ([^\*\n]+)\*\*", r"**[[\1]]'s \2**", text, flags=re.MULTILINE)
+    #
+    # OLD FORMAT FIX 4: **Subject - **[[Entity]] → **Subject - [[Entity]]** (composite)
+    # text = re.sub(r'\*\*([^*\n]+) - \*\*(\[\[[^\]]+\]\])', r'**\1 - \2**', text)
+    #
+    # OLD FORMAT FIX 5: [[Entity]]** - Text** → **[[Entity]] - Text** (entity first)
+    # text = re.sub(r'\[\[([^\]]+)\]\]\*\* - ([^*\n]+)\*\*', r'**[[\1]] - \2**', text)
 
     return text
 
@@ -80,70 +124,24 @@ def fix_toggle_formatting(text: str) -> str:
 
 def add_whitespace_between_sections(lines: List[str]) -> List[str]:
     """
-    Add blank lines between sections to match original formatting.
+    DISABLED: Accept Notion's whitespace exactly as-is.
 
-    Rules:
-    1. Blank line after headings (already handled in converter)
-    2. Blank line before headings (if not already present)
-    3. Blank line before **Toggle: sections
-    4. Blank line after code blocks
-    5. Blank line between list groups and paragraphs
-    6. Never add more than one consecutive blank line
+    Previous behavior was adding blank lines to match our conventions.
+    User request: "Update our md formatting to have this whitespace instead
+    of trying to detect it on import."
+
+    This means we accept whatever Notion gives us - extra blank lines,
+    indentation changes, etc. The goal is to minimize diffs by not fighting
+    Notion's formatting choices.
 
     Args:
-        lines: List of markdown lines
+        lines: List of markdown lines from Notion
 
     Returns:
-        Lines with proper spacing
+        Same lines unchanged (pass-through)
     """
-    result = []
-    prev_line = ''
-    prev_was_list = False
-
-    for i, line in enumerate(lines):
-        current_line = line.strip()
-
-        # Skip if we'd be adding a second consecutive blank line
-        if current_line == '' and (not result or result[-1].strip() == ''):
-            continue
-
-        # Check if this is a heading
-        is_heading = current_line.startswith('#')
-
-        # Check if this is a toggle
-        is_toggle = current_line.startswith('**Toggle:')
-
-        # Check if this is a list item
-        is_list = current_line.startswith('-') or current_line.startswith(tuple(f'{n}.' for n in range(1, 10)))
-
-        # Check if previous line was a code block end
-        prev_was_code_end = prev_line.strip() == '```'
-
-        # Add blank line before heading (if not already blank)
-        if is_heading and prev_line.strip() != '':
-            result.append('')
-
-        # Add blank line before toggle (if not already blank)
-        if is_toggle and prev_line.strip() != '':
-            result.append('')
-
-        # Add blank line after code block (if not already blank)
-        if prev_was_code_end and current_line != '':
-            if not result or result[-1].strip() != '':
-                pass  # Already has blank line from heading rule
-
-        # Add blank line between list and paragraph
-        if prev_was_list and not is_list and current_line != '':
-            # Transitioning from list to non-list
-            if not is_heading and not is_toggle:  # Heading/toggle already handled
-                result.append('')
-
-        result.append(line)
-
-        prev_line = line
-        prev_was_list = is_list
-
-    return result
+    # Just return the lines as-is - accept Notion's whitespace
+    return lines
 
 
 def normalize_markdown_output(markdown_content: str) -> str:
@@ -178,34 +176,70 @@ def normalize_markdown_output(markdown_content: str) -> str:
 if __name__ == '__main__':
     print("Testing markdown normalization...")
 
-    # Test 1: SOURCE format preservation - [[Entity]]**: → [[Entity]]**:**
-    test1 = "**[[Corvin Tradewise]]:****** Merchant caravan leader"
-    expected1 = "[[Corvin Tradewise]]**:** Merchant caravan leader"
+    # Test 1: Notion returns italic wrapper AND extra **
+    test1 = "  1. **Travel to *[[Agastia Region]]*:** 2-3 day journey"
+    expected1 = "  1. **Travel to [[Agastia Region]]:** 2-3 day journey"
     result1 = fix_bold_wikilink_formatting(test1)
-    assert result1 == expected1, f"Test 1 failed: {result1}"
+    assert result1 == expected1, f"Test 1 failed:\n  got: '{result1}'\n  exp: '{expected1}'"
     print(f"✅ Test 1 passed: {result1}")
 
-    # Test 2: Possessive fix - preserves SOURCE format
-    test2 = "**[[Kyle/Nameless]]'s**** Hook:**"
-    expected2 = "[[Kyle/Nameless]]**'s Hook:**"
+    # Test 2: Notion returns 4 extra ** at end (possessive)
+    test2 = "  2. **[[Kyle/Nameless]]'s Hook:****  An encounter"
+    expected2 = "  2. **[[Kyle/Nameless]]'s Hook:**  An encounter"
     result2 = fix_bold_wikilink_formatting(test2)
-    assert result2 == expected2, f"Test 2 failed: {result2}"
+    assert result2 == expected2, f"Test 2 failed:\n  got: '{result2}'\n  exp: '{expected2}'"
     print(f"✅ Test 2 passed: {result2}")
 
-    # Test 3: Toggle fix
-    test3 = "**Toggle: **Session Flow**"
-    expected3 = "**Toggle: Session Flow**"
-    result3 = fix_toggle_formatting(test3)
-    assert result3 == expected3, f"Test 3 failed: {result3}"
+    # Test 2b: Notion returns 4 extra ** at end (simple)
+    test2b = "  - **[[Corvin Tradewise]]:****  Merchant leader"
+    expected2b = "  - **[[Corvin Tradewise]]:**  Merchant leader"
+    result2b = fix_bold_wikilink_formatting(test2b)
+    assert result2b == expected2b, f"Test 2b failed:\n  got: '{result2b}'\n  exp: '{expected2b}'"
+    print(f"✅ Test 2b passed: {result2b}")
+
+    # Test 2c: Notion returns 6 asterisks (nested bold)
+    test2c = "  - **[[Corvin Tradewise]]:******  Merchant leader"
+    expected2c = "  - **[[Corvin Tradewise]]:**  Merchant leader"
+    result2c = fix_bold_wikilink_formatting(test2c)
+    assert result2c == expected2c, f"Test 2c failed:\n  got: '{result2c}'\n  exp: '{expected2c}'"
+    print(f"✅ Test 2c passed: {result2c}")
+
+    # Test 3: Already correct format (Notion doesn't break simple entities)
+    test3 = "  - **[[Corvin Tradewise]]:** Merchant leader"
+    expected3 = "  - **[[Corvin Tradewise]]:** Merchant leader"
+    result3 = fix_bold_wikilink_formatting(test3)
+    assert result3 == expected3, f"Test 3 failed:\n  got: '{result3}'\n  exp: '{expected3}'"
     print(f"✅ Test 3 passed: {result3}")
 
-    # Test 4: Full normalization
-    test4 = """# Heading
+    # Test 4: Toggle fix
+    test4 = "**Toggle: **Session Flow**"
+    expected4 = "**Toggle: Session Flow**"
+    result4 = fix_toggle_formatting(test4)
+    assert result4 == expected4, f"Test 4 failed: {result4}"
+    print(f"✅ Test 4 passed: {result4}")
+
+    # Test 5: Composite subject with italics - **Forest Clearing - *[[Lost Mastiff]]* → **Forest Clearing - [[Lost Mastiff]]
+    test5 = "**Forest Clearing - *[[Lost Mastiff]]*"
+    expected5 = "**Forest Clearing - [[Lost Mastiff]]"
+    result5 = fix_bold_wikilink_formatting(test5)
+    assert result5 == expected5, f"Test 5 failed: got '{result5}', expected '{expected5}'"
+    print(f"✅ Test 5 passed: {result5}")
+
+    # Test 6: Full normalization (accepting Notion's whitespace)
+    test6 = """# Heading
 Text here
 ## Section
-[[Entity]]**: Description"""
+  - **[[Corvin Tradewise]]:****  Merchant leader
+  - **Travel to *[[Agastia Region]]*:** 2-3 days"""
 
-    result4 = normalize_markdown_output(test4)
-    print(f"\n✅ Test 4 - Full normalization:\n{result4}")
+    result6 = normalize_markdown_output(test6)
+    # We now accept Notion's whitespace (no blank line added before ##)
+    expected6 = """# Heading
+Text here
+## Section
+  - **[[Corvin Tradewise]]:**  Merchant leader
+  - **Travel to [[Agastia Region]]:** 2-3 days"""
+    assert result6 == expected6, f"Test 6 failed:\n  got: '{result6}'\n  exp: '{expected6}'"
+    print(f"✅ Test 6 passed - Full normalization")
 
     print("\n✅ All tests passed!")
