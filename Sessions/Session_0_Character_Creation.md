@@ -41,11 +41,12 @@ All five player characters were created and approved:
 - **[[Manny]] and [[Nikki]] together:** Traveling companions or partners with established relationship
 - **[Additional connections established during session]**
 **Player-Created Locations:**
-- **Italian Restaurant:** [Details to be developed]
-- **Traveling Carnival:** Mobile entertainment with potential faction connections
-- **Midnight Market:** Underground economy and information exchange
-- **Burned Mansion:** Destroyed noble estate, potential investigation site
-- **Villages and Landmarks:** Multiple settlements and geographic features
+- **[[Il Drago Rosso]]:** [[Nikki]]'s family restaurant (Italian-themed)
+- **[[Traveling Carnival]]:** Mobile entertainment with potential faction connections
+- **[[The Depths|Midnight Market]]:** Underground economy and information exchange (Underground Market in [[The Depths]])
+- **[[Burned Mansion]]:** Destroyed noble estate, potential investigation site
+- **Villages:** [[Thornbrook]] (farming village), [[Millstone Crossing]] (river mill town), [[Copper Ridge]] (mining settlement)
+- **Landmarks:** [[The Weeping Stones]] (ancient monument), [[Blackwater Bridge]] (strategic crossing)
 - **[Additional contributions from session notes]**
 ### Campaign Decisions Made
 

@@ -57,11 +57,11 @@ graph TD
 
 **Toggle: Key NPCs**
   - **[[Torvin Greycask]] (they):** Goblin messenger from [[Agastia]] with letter for party
-  - **Brian Thornscale (Mayor):** Human patron who hired party for corruption quest
-  - **Thorne "The Bear" Kallister:** Retired adventurer, quest giver, Garrek's friend
-  - **Assistant Bellweather:** Mayor's assistant
-  - **Greta Moss:** Apothecary (15-20% discount on materials)
-  - **Aldwin Quill:** Scribe (15-20% discount on scrolls)
+  - **[[Brian Thornscale]] (Mayor):** Human patron who hired party for corruption quest
+  - **[[Thorne Kallister]]:** Retired adventurer, quest giver, Garrek's friend
+  - **[[Assistant Bellweather]]:** Mayor's assistant
+  - **[[Greta Moss]]:** Apothecary (15-20% discount on materials)
+  - **[[Aldwin Quill]]:** Scribe (15-20% discount on scrolls)
 
 **Toggle: Quest Rewards**
   - **Opening:** 500gp from Thava for clearing corruption
@@ -74,7 +74,7 @@ graph TD
   - **Garrek's Journal:** Map fragment, warnings about addictive water, mentions "book" and "time seems wrong"
   - **Codex of Peace:** 7-page artifact at Garrek's Falls (referenced in journal)
   - **Garrek's Falls:** Hidden Underdark sanctuary with healing waters (HIGHLY addictive)
-  - **Temporal Bloodline Tribe:** Guardians of the Falls (potential allies)
+  - **[[Temporal Bloodline Tribe]]:** Guardians of the Falls (potential allies)
 
 **Toggle: Player Hints (Distribute During Downtime)**
   - **[[Kyle/Nameless]]:** Rumors about [[Geist (Bandit Lieutenant)]]'s smuggling operation in [[Agastia]]
@@ -114,7 +114,7 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 
 ### Quest 1: Monster Hunt
 
-**Quest Giver:** Thorne "The Bear" Kallister
+**Quest Giver:** [[Thorne Kallister]]
 
 **Hook:**
 
@@ -140,7 +140,7 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 
 ### Quest 2: Defend Against Moon's Assault
 
-**Quest Giver:** Thorne "The Bear" Kallister
+**Quest Giver:** [[Thorne Kallister]]
 
 **Hook:**
 
@@ -174,7 +174,7 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 
 ### Quest 3: Investigate Garrek's Falls
 
-**Quest Giver:** Thorne "The Bear" Kallister (Unlocks After Quests 1 & 2)
+**Quest Giver:** [[Thorne Kallister]] (Unlocks After Quests 1 & 2)
 
 **Hook:**
 
@@ -217,7 +217,7 @@ After payment, a goblin messenger approaches - [[Torvin Greycask]].
 - Zone prevents violence, ill will, evil acts
 - Removal without keyword → explosion (pages scatter as blue energy)
 
-**Temporal Bloodline Tribe:**
+**[[Temporal Bloodline Tribe]]:**
 - Guardians of the Falls and Codex
 - Possess temporal magic abilities
 - May recognize [[Nikki]]'s interest in temporal power

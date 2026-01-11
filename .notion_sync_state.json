@@ -3,7 +3,7 @@
     "Sessions/Session_0_Character_Creation.md": {
       "notion_page_id": "2d8693f0c6b481c3bf23f0827dead9e7",
       "last_pulled_from_notion": "2025-11-15T22:24:47.483614+00:00",
-      "last_pushed_to_notion": "2026-01-04T14:24:17.835490+00:00"
+      "last_pushed_to_notion": "2026-01-11T21:45:46.558194+00:00"
     },
     "Sessions/Session_1_Caravan_to_Ratterdan.md": {
       "notion_page_id": "2d8693f0c6b4817b90b4fe31bee237ed",
@@ -13,7 +13,7 @@
     "Sessions/Session_2_Road_to_Agastia.md": {
       "notion_page_id": "2d8693f0c6b481e2946cf8ee7ecbb4d5",
       "last_pulled_from_notion": "2025-11-15T22:25:22.527061+00:00",
-      "last_pushed_to_notion": "2026-01-05T18:30:01.686994+00:00"
+      "last_pushed_to_notion": "2026-01-11T21:44:27.300061+00:00"
     },
     "Sessions/Session_3_The_Steel_Dragon_Begins.md": {
       "notion_page_id": "2d9693f0c6b48116a89ec5397dd339e7",
@@ -104,7 +104,7 @@
     },
     "Factions/Faction_Bandit_Network_Geist_Kaelborn.md": {
       "notion_page_id": "2d8693f0c6b481f987aed9c59baf6634",
-      "last_pushed_to_notion": "2026-01-04T14:08:55.863981+00:00"
+      "last_pushed_to_notion": "2026-01-11T22:09:43.966535+00:00"
     },
     "Factions/Faction_Chaos_Cult.md": {
       "notion_page_id": "2d8693f0c6b481e49224dbdf4279c464",
@@ -304,11 +304,11 @@
     },
     "NPCs/Faction_NPCs/NPC_Geist_Bandit_Lieutenant.md": {
       "notion_page_id": "2d8693f0c6b481829f28ce5523c75237",
-      "last_pushed_to_notion": "2026-01-04T14:02:46.140078+00:00"
+      "last_pushed_to_notion": "2026-01-11T22:09:57.749326+00:00"
     },
     "NPCs/Faction_NPCs/NPC_Kaelborn_Bandit_Boss.md": {
       "notion_page_id": "2d8693f0c6b4813eb552d3b4e953eeeb",
-      "last_pushed_to_notion": "2026-01-04T14:48:22.657414+00:00"
+      "last_pushed_to_notion": "2026-01-11T22:10:11.136977+00:00"
     },
     "Locations/Cities/Agastia/Shop_Il_Drago_Rosso.md": {
       "notion_page_id": "2d8693f0c6b48138ba65eebcaff06221",
@@ -1117,6 +1117,70 @@
     "Quests/Quest_Nikki_Family_Protection.md": {
       "notion_page_id": "2e4693f0c6b481bebfdadc03b983f926",
       "last_pushed_to_notion": "2026-01-10T21:56:31.873129+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Thorne_Kallister.md": {
+      "notion_page_id": "2e5693f0c6b481ffa423f968050b09ad",
+      "last_pushed_to_notion": "2026-01-11T21:39:36.885447+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Brian_Thornscale.md": {
+      "notion_page_id": "2e5693f0c6b481ebbef1dc015732fab7",
+      "last_pushed_to_notion": "2026-01-11T21:40:07.013375+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Greta_Moss.md": {
+      "notion_page_id": "2e5693f0c6b481cba145c67453b47502",
+      "last_pushed_to_notion": "2026-01-11T21:41:03.370119+00:00"
+    },
+    "Factions/Faction_Temporal_Bloodline_Tribe.md": {
+      "notion_page_id": "2e5693f0c6b481edb63bd9436471b9f3",
+      "last_pushed_to_notion": "2026-01-11T21:41:04.271956+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Aldwin_Quill.md": {
+      "notion_page_id": "2e5693f0c6b48126883deb889199b5b4",
+      "last_pushed_to_notion": "2026-01-11T21:41:56.635997+00:00"
+    },
+    "NPCs/Location_NPCs/NPC_Assistant_Bellweather.md": {
+      "notion_page_id": "2e5693f0c6b4815697b7dc96cce39a97",
+      "last_pushed_to_notion": "2026-01-11T21:44:00.717098+00:00"
+    },
+    "Locations/Towns/Town_Thornbrook.md": {
+      "notion_page_id": "2e5693f0c6b481c79420d57bf7e81eb4",
+      "last_pushed_to_notion": "2026-01-11T21:46:02.053030+00:00"
+    },
+    "Locations/Towns/Town_Millstone_Crossing.md": {
+      "notion_page_id": "2e5693f0c6b481ac80d8e4b408dded9e",
+      "last_pushed_to_notion": "2026-01-11T21:46:12.344912+00:00"
+    },
+    "Locations/Towns/Town_Copper_Ridge.md": {
+      "notion_page_id": "2e5693f0c6b4819fa872df9e74bc6907",
+      "last_pushed_to_notion": "2026-01-11T21:46:25.851390+00:00"
+    },
+    "Locations/Wilderness/Landmark_Blackwater_Bridge.md": {
+      "notion_page_id": "2e5693f0c6b4811ab8d2d8cfdedf7a73",
+      "last_pushed_to_notion": "2026-01-11T21:46:41.635051+00:00"
+    },
+    "Locations/Wilderness/Landmark_The_Weeping_Stones.md": {
+      "notion_page_id": "2e5693f0c6b481e7a5e3ef6502f9f23f",
+      "last_pushed_to_notion": "2026-01-11T21:46:56.285156+00:00"
+    },
+    "Locations/Wilderness/Location_Burned_Mansion.md": {
+      "notion_page_id": "2e5693f0c6b48184b0cad41e132f00bb",
+      "last_pushed_to_notion": "2026-01-11T21:47:36.763073+00:00"
+    },
+    "Locations/Wilderness/Location_Traveling_Carnival.md": {
+      "notion_page_id": "2e5693f0c6b4812ea3d3d2a53fc21039",
+      "last_pushed_to_notion": "2026-01-11T21:48:33.193369+00:00"
+    },
+    "Artifacts/Artifact_Codex_of_Peace.md": {
+      "notion_page_id": "2e5693f0c6b481d9a0cbf4a7a3e36f47",
+      "last_pushed_to_notion": "2026-01-11T22:08:14.663673+00:00"
+    },
+    "Artifacts/Artifact_Animated_Heartstone.md": {
+      "notion_page_id": "2e5693f0c6b481cbb56ddf1c5266e613",
+      "last_pushed_to_notion": "2026-01-11T22:09:36.606268+00:00"
+    },
+    "Artifacts/Artifact_Giant_Axe.md": {
+      "notion_page_id": "2e5693f0c6b481a1888fd1dab03a3e7e",
+      "last_pushed_to_notion": "2026-01-11T22:10:48.056063+00:00"
     }
   }
 }

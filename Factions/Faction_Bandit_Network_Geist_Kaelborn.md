@@ -12,7 +12,7 @@ related_entities:
   - Merit Council
 ---
 
-# [[Geist (Bandit Lieutenant)]] & [[Kaelborn (Bandit Boss)]]'s [[Bandit Network ([[Geist (Bandit Lieutenant)]] & Kaelborn)]]
+# [[Geist & Kaelborn's Bandit Network]]
 
 ## Player Summary
 
