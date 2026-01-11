@@ -2,7 +2,7 @@
 name: Infinite Forest
 type: Location
 location_type: Wilderness
-parent_location: Agastia Region
+parent_location: Agastia
 child_locations: [Ratterdan Ruins]
 status: Active - Expanding
 version: "1.0.0"
@@ -13,7 +13,7 @@ tags: [wilderness, feywild, dangerous, magical, border, chaos]
 
 ## Player Summary
 
-The Infinite Forest forms the northern border of [[Agastia Region]], a vast woodland where reality grows thin and the Feywild bleeds through. The forest earned its name from travelers who swear it's larger inside than outside, with paths that loop impossibly and distances that refuse to stay consistent. The [[Merit Council]] built their great Northern Wall specifically to contain threats emerging from these woods.
+The Infinite Forest forms the northern border of [[Agastia]], a vast woodland where reality grows thin and the Feywild bleeds through. The forest earned its name from travelers who swear it's larger inside than outside, with paths that loop impossibly and distances that refuse to stay consistent. The [[Merit Council]] built their great Northern Wall specifically to contain threats emerging from these woods.
 
 ### Distinctive Phenomena
 

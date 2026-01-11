@@ -1,8 +1,8 @@
 # Wiki Index - Agastia Campaign
 
 **Purpose:** Central registry of all campaign entities with file paths and Notion page IDs for quick lookup.
-**Last Updated:** 2025-12-30 07:00 UTC
-**Total Entities:** 80 files synced to Notion
+**Last Updated:** 2026-01-10
+**Total Entities:** 79 files synced to Notion
 
 **Notion Database:** `281693f0-c6b4-80be-87c3-f56fef9cc2b9`
 
@@ -22,7 +22,7 @@
 - [Player Characters](#player-characters-5) (5)
 - [NPCs](#npcs-24) (24: 4 Major, 11 Faction, 8 Location, 1 Mystery)
 - [Factions](#factions-6) (6)
-- [Locations](#locations-34) (34: 1 City, 9 Districts, 1 Town, 1 Region, 2 Wilderness, 20 Agastia Establishments)
+- [Locations](#locations-33) (33: 1 City, 9 Districts, 1 Town, 2 Wilderness, 20 Agastia Establishments)
 - [Campaign Core](#campaign-core-4) (4)
 - [Quests](#quests-3) (3)
 - [Sessions](#sessions-4) (4)
@@ -102,7 +102,7 @@
 
 ---
 
-## Locations (34)
+## Locations (33)
 
 ### Cities (1)
 
@@ -129,12 +129,6 @@
 | Name | File Path | Notion ID |
 |------|-----------|-----------|
 | Meridian's Rest | `Locations/Towns/Meridians_Rest.md` | `2d8693f0c6b481a38711ed46f07bfa73` |
-
-### Regions (1)
-
-| Name | File Path | Notion ID |
-|------|-----------|-----------|
-| Agastia Region | `Locations/Regions/Agastia_Region.md` | `2d8693f0c6b4814a8353d3a47515a223` |
 
 ### Wilderness (2)
 

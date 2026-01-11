@@ -58,7 +58,7 @@ graph TD
 
 ## Travel to [[Agastia]] (2-3 Days)
 
-**Route:** [[Meridian's Rest]] → [[Agastia Region]]
+**Route:** [[Meridian's Rest]] → [[Agastia]]
 **Distance:** ~48 miles (2 hexes at 24mi/hex world scale)
 **Travel Time:** 2-3 days at normal pace (24 mi/day)
 **Terrain:** Temperate Forests
@@ -113,7 +113,7 @@ graph TD
 
 ### Day 2: Player's Choice (Point Crawl Encounters)
 
-**Road Navigation:** The party travels along the main road toward [[Agastia Region]]. Present the following encounter nodes as points of interest along the way. Players can choose which to investigate or bypass.
+**Road Navigation:** The party travels along the main road toward [[Agastia]]. Present the following encounter nodes as points of interest along the way. Players can choose which to investigate or bypass.
 **Encounter Nodes:**
 **Forest Clearing - [[Lost Mastiff]]**
 - **What:** A well-bred mastiff with a noble family crest collar, separated from its owner
@@ -134,18 +134,18 @@ graph TD
 **DM Notes:**
 - Players choose which nodes to engage with
 - Can investigate all, some, or none
-- Bypassing encounters doesn't prevent arrival at [[Agastia Region]]
+- Bypassing encounters doesn't prevent arrival at [[Agastia]]
 - Time of day matters (arrive late = miss job board hours)
 
 ### Day 3: Arrival in [[Agastia]]
 
-> The road crests a hill, and the city of [[Agastia Region]] unfolds before you. A tiered metropolis of stone and ambition, with the towering Northern Wall and the sky-piercing Inverse Tower. Airships drift lazily from the upper docks, their magical sails aglow.
+> The road crests a hill, and the city of [[Agastia]] unfolds before you. A tiered metropolis of stone and ambition, with the towering Northern Wall and the sky-piercing Inverse Tower. Airships drift lazily from the upper docks, their magical sails aglow.
 
 
 ## Welcome to [[Agastia]]
 
 **The party arrives at [[Agastia]]**, the campaign's central city and seat of power in the region.
-**City Overview:** See [[Agastia Region]] for complete city details, tier structure, all nine districts, key locations, and navigation.
+**City Overview:** See [[Agastia]] for complete city details, tier structure, all nine districts, key locations, and navigation.
 ### Locations Visited This Session
 
 The party will visit or hear about these locations during Session 3, organized by [[Agastia]]'s tier system:
@@ -162,7 +162,7 @@ The party will visit or hear about these locations during Session 3, organized b
   - **Hook:** Job board request from scholar to retrieve rare book from dangerous ruin
   - **Connection:** [[Manny]]'s [[The Codex Search]] quest lead
   **[[Veridian Scrollkeeper]]'s Location**
-  - **What:** Rumored expert on [[Agastia Region]]'s history
+  - **What:** Rumored expert on [[Agastia]]'s history
   - **Hook:** Tavern rumor about ancient elf who "knows everything"
   - **Connection:** Another potential [[Codex of Peace]] lead for [[Manny]]
 **Toggle: **Tier 4 - **[[Merchant District]]**
@@ -293,7 +293,7 @@ Once players have discovered the crime scene (either by exploring the alley or h
 ### [[Manny]] ([[Monomi]]) - [[The Codex Search]] Quest
 
 - The Job Board has a request from a scholar in the [[Scholar Quarter]] (Tier 3) to retrieve a rare book from a dangerous ruin. This could be a lead to the [[Archive of Lost Histories]].
-- A rumor overheard in a tavern mentions a strange, ancient elf named [[Veridian Scrollkeeper]] who knows everything about [[Agastia Region]]'s history.
+- A rumor overheard in a tavern mentions a strange, ancient elf named [[Veridian Scrollkeeper]] who knows everything about [[Agastia]]'s history.
 
 ### [[Nikki]] ([[Biago]]) - Family and Friends
 
@@ -303,7 +303,7 @@ Once players have discovered the crime scene (either by exploring the alley or h
 
 ## Session End
 
-The session ends with the party in [[Agastia Region]], with several open threads:
+The session ends with the party in [[Agastia]], with several open threads:
 - Investigating the [[Steel Dragon]]'s murder.
 - Following the lead to [[Geist Investigation]] and the [[Dock District]].
 - Taking a job from the job board.

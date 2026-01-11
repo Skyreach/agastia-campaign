@@ -1,13 +1,13 @@
 ---
 name: Agastia
 type: Location
-location_type: Major City
-parent_location: Agastia Region
-child_locations: [The Castle, Research Quarter, Noble Quarter, Scholar Quarter, Merchant District, Government Complex, Lower Residential District, Dock District, The Depths]
+location_type: Major City & Region
+parent_location: null
+child_locations: [The Castle, Research Quarter, Noble Quarter, Scholar Quarter, Merchant District, Government Complex, Lower Residential District, Dock District, The Depths, Infinite Forest, Ratterdan Ruins, Meridian's Rest]
 status: Active
 government: Merit Council
 version: "1.0.0"
-tags: [city, starting-location, merit-council, civilization, capital, tier-system]
+tags: [city, region, starting-location, merit-council, civilization, capital, tier-system, kingdom]
 ---
 
 # Agastia
@@ -29,6 +29,39 @@ Magical airships connect Agastia to distant cities, serving as both transportati
 
 **The Three-Generation Rule**
 Families can maintain their merit status for up to three generations before descendants must re-prove themselves through testing. This prevents hereditary privilege while allowing some stability.
+
+---
+
+## Regional Context
+
+### Geography
+The Agastia Region centers around the grand city of [[Agastia]], surrounded by varied terrain including the mysterious [[Infinite Forest]] to the north and various settlements and ruins throughout.
+
+- **Capital:** [[Agastia]] City - The gleaming metropolis of meritocracy
+- **Northern Border:** The [[Infinite Forest]], where reality blurs with the Feywild
+- **Settlements:** [[Meridian's Rest]] and various smaller communities
+- **Ruins:** [[Ratterdan Ruins]], a destroyed settlement now reclaimed by the wilderness
+
+### Climate & Terrain
+- Temperate climate with distinct seasons
+- Mixed terrain of farmland, forest, and hills
+- Well-maintained roads connecting major settlements
+- Northern regions become increasingly wild and unpredictable
+
+### Travel & Trade
+- Organized caravan routes between settlements
+- [[Merit Council]] patrols on major roads
+- Guide services required for travel to dangerous areas
+- Airship routes connecting [[Agastia]] to allied cities
+
+### Known Regional Threats
+- [[Chaos Cult]] activity throughout the region
+- Monsters emerging from the [[Infinite Forest]]
+- Bandits and desperate refugees on remote roads
+- Mysterious phenomena near Fey-touched areas
+
+### Cultural Overview
+The region reflects [[Merit Council]] values - ordered, efficient, and achievement-focused. Citizens are expected to contribute to society and earn their place through competence. However, this system has created a growing population of the [[Dispossessed]] who cannot or will not fit into the meritocratic structure.
 
 ---
 
@@ -716,6 +749,36 @@ Families can maintain their merit status for up to three generations before desc
 ---
 
 ## DM Notes
+
+### Regional Context
+
+**Regional Politics**
+- **[[Merit Council]] Control:** Strong in [[Agastia]] City and major roads, weaker in outlying areas
+- **[[Chaos Cult]] Presence:** Active cells throughout, especially among the [[Dispossessed]]
+- **Border Tensions:** The [[Infinite Forest]] represents uncontrollable chaos that threatens ordered society
+- **Social Pressure:** Growing inequality between merit achievers and those left behind
+
+**Strategic Significance**
+The Agastia Region serves as the primary setting for early campaign adventures, representing the [[Merit Council]]'s sphere of influence and the tensions that drive the campaign's central conflicts.
+
+**Environmental Features**
+- **Giant Stone Statues:** Ancient monuments of unknown origin scattered throughout the region
+- **Ley Lines:** Magical energy flows converging near [[Agastia]]
+- **Fey Influence:** Increasing manifestations of Feywild phenomena in northern areas
+- **Natural Resources:** Rich farmland, timber, and mineral deposits support the region's prosperity
+
+**Regional Factions**
+- **[[Merit Council]]:** Primary governmental authority
+- **[[Chaos Cult]]:** Underground resistance and terrorist network
+- **[[Dispossessed]]:** Growing population of the excluded and failed
+- **Merchant Guilds:** Economic power players
+- **Academic Institutions:** Centers of knowledge and magical research
+
+**Secret Information**
+- **Fey Incursions:** The [[Infinite Forest]] is slowly expanding, with pocket dimensions bleeding into reality
+- **Ancient History:** Pre-[[Merit Council]] civilizations left ruins and artifacts throughout the region
+- **[[Chaos Cult]] Goals:** The cult sees the region as a key battleground for undermining ordered society
+- **Hidden Sites:** Several locations of power remain undiscovered or forgotten
 
 ### Hidden Truths
 

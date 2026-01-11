@@ -10,7 +10,7 @@
 ## What Notion ACTUALLY Returns
 ```markdown
 **[[Kyle/Nameless]]'s Hook:****     ← Extra ** at end!
-**Travel to ****[[Agastia Region]]:** ← Extra ** in middle!
+**Travel to ****[[Agastia]]:** ← Extra ** in middle!
 **[[Corvin Tradewise]]:**            ← CORRECT ✓
 ```
 

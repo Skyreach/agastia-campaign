@@ -47,11 +47,11 @@ The normalizer runs but doesn't fix all patterns.
 
 **What Notion returns (after normalizer):**
 ```markdown
-- [[Agastia Region]]** Job Board:** A central location
+- [[Agastia]]** Job Board:** A central location
 ```
 
 **Problem:**
-1. Wikilink changed from `[[Agastia]]` → `[[Agastia Region]]`
+1. Wikilink changed from `[[Agastia]]` → `[[Agastia]]`
 2. Bold formatting broken: entity NOT bold, `** Job Board:` has misplaced asterisks
 
 **Expected:** Should preserve `[[Agastia]]` and keep `**[[Agastia]] Job Board:**` format
@@ -67,11 +67,11 @@ The normalizer runs but doesn't fix all patterns.
 
 **What Notion returns (after normalizer):**
 ```markdown
-1. **Travel to *[[Agastia Region]]*:** 2-3 day journey
+1. **Travel to *[[Agastia]]*:** 2-3 day journey
 ```
 
 **Problem:**
-1. Wikilink wrapped in italics: `*[[Agastia Region]]*`
+1. Wikilink wrapped in italics: `*[[Agastia]]*`
 2. Wikilink name changed: `Agastia` → `Agastia Region`
 
 **Expected:** Should remove italic wrapper and preserve original wikilink name
@@ -134,7 +134,7 @@ text = re.sub(r'(\*\*[^\n]*?:)\*\*+(\s)', r'\1**\2', text)
 But this requires a space after the extra `**`. If there's no space (end of line), it doesn't match.
 
 ### Issue 2: Wikilink name changes
-Notion is resolving `[[Agastia]]` to `[[Agastia Region]]` (the full page title).
+Notion is resolving `[[Agastia]]` to `[[Agastia]]` (the full page title).
 The normalizer can't fix this - it's a data change, not formatting.
 
 ### Issue 3: Normalizer may not be running

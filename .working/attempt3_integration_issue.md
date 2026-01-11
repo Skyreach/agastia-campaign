@@ -19,7 +19,7 @@ The normalizer logic is **correct** but is **not being applied** during the pull
 ```bash
 $ python3 .config/markdown_normalizer.py
 Testing markdown normalization...
-✅ Test 1 passed:   1. **Travel to [[Agastia Region]]:** 2-3 day journey
+✅ Test 1 passed:   1. **Travel to [[Agastia]]:** 2-3 day journey
 ✅ Test 2 passed:   2. **[[Kyle/Nameless]]'s Hook:**  An encounter
 ✅ Test 2b passed:   - **[[Corvin Tradewise]]:**  Merchant leader
 ✅ Test 3 passed:   - **[[Corvin Tradewise]]:** Merchant leader

@@ -21,7 +21,7 @@
 ### Pattern 3: Agastia wikilinks - NEW PROBLEM ❌
 ```diff
 - **Travel to [[Agastia]]:**
-+ **Travel to *[[Agastia Region]]*:**
++ **Travel to *[[Agastia]]*:**
 ```
 **Problem:** Wikilink is wrapped in `*` (italics) inside the bold
 

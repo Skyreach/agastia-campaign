@@ -177,8 +177,8 @@ if __name__ == '__main__':
     print("Testing markdown normalization...")
 
     # Test 1: Notion returns italic wrapper AND extra **
-    test1 = "  1. **Travel to *[[Agastia Region]]*:** 2-3 day journey"
-    expected1 = "  1. **Travel to [[Agastia Region]]:** 2-3 day journey"
+    test1 = "  1. **Travel to *[[Agastia]]*:** 2-3 day journey"
+    expected1 = "  1. **Travel to [[Agastia]]:** 2-3 day journey"
     result1 = fix_bold_wikilink_formatting(test1)
     assert result1 == expected1, f"Test 1 failed:\n  got: '{result1}'\n  exp: '{expected1}'"
     print(f"✅ Test 1 passed: {result1}")
@@ -230,7 +230,7 @@ if __name__ == '__main__':
 Text here
 ## Section
   - **[[Corvin Tradewise]]:****  Merchant leader
-  - **Travel to *[[Agastia Region]]*:** 2-3 days"""
+  - **Travel to *[[Agastia]]*:** 2-3 days"""
 
     result6 = normalize_markdown_output(test6)
     # We now accept Notion's whitespace (no blank line added before ##)
@@ -238,7 +238,7 @@ Text here
 Text here
 ## Section
   - **[[Corvin Tradewise]]:**  Merchant leader
-  - **Travel to [[Agastia Region]]:** 2-3 days"""
+  - **Travel to [[Agastia]]:** 2-3 days"""
     assert result6 == expected6, f"Test 6 failed:\n  got: '{result6}'\n  exp: '{expected6}'"
     print(f"✅ Test 6 passed - Full normalization")
 
