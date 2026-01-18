@@ -17,9 +17,9 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 
 **Creatures:**
 - 1 Rust Monster (CR 1/2) - Crystal-Corrupted
-- 1 Crystal Guardian Construct (CR 1) - Mind-Controlled
+- 1 Crystal Guardian Construct (CR 5) - Mind-Controlled
 
-**Combined CR:** ~1.5 (450 XP total)
+**Combined CR:** ~5.5 (1,900 XP total) - Deadly encounter for level 3 party
 **Terrain:** Narrow passage (10-15 ft wide, 60 ft long)
 **Hazards:** Red crystal formations line walls and ceiling
 
@@ -53,29 +53,32 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 - Attracted to both metal AND crystal formations
 - Will defend crystals if threatened
 
-### Crystal Guardian Construct - CR 1
+### Crystal Guardian Construct - CR 5
 
-**AC 18 | HP 33 (6d8+6) | Speed 25 ft.**
+**AC 18 | HP 93 (11d10+33) | Speed 30 ft.**
 
-**STR** 14 (+2) | **DEX** 11 (+0) | **CON** 13 (+1) | **INT** 1 (-5) | **WIS** 3 (-4) | **CHA** 1 (-5)
+**STR** 18 (+4) | **DEX** 11 (+0) | **CON** 16 (+3) | **INT** 1 (-5) | **WIS** 3 (-4) | **CHA** 1 (-5)
 
-**Damage Immunities:** Poison, Psychic
-**Damage Resistances:** Piercing and Slashing from nonmagical attacks
-**Condition Immunities:** Blinded, Charmed, Deafened, Frightened, Paralyzed, Petrified, Poisoned
+**Damage Immunities:** Poison, Psychic, Fire
+**Damage Resistances:** Bludgeoning, Piercing, and Slashing from nonmagical attacks
+**Condition Immunities:** Blinded, Charmed, Deafened, Exhausted, Frightened, Paralyzed, Petrified, Poisoned
 **Senses:** Blindsight 60 ft. (blind beyond), passive Perception 6
-**CR:** 1 (200 XP)
+**CR:** 5 (1,800 XP)
 
-**Antimagic Susceptibility:** Incapacitated in *antimagic field*. *Dispel magic*: DC 13 Con save or unconscious 1 minute.
+**Antimagic Susceptibility:** Incapacitated in *antimagic field*. *Dispel magic*: DC 15 Con save or unconscious 1 minute.
 
 **False Appearance:** While motionless near crystals, indistinguishable from crystal formation (DC 15 Investigation to detect).
 
-**Crystal Body:** Destroying red crystal core (AC 13, 10 HP, vulnerable to bludgeoning, within 15 ft) instantly disables construct.
+**Crystal Body:** Destroying red crystal core (AC 15, 30 HP, resistant to all damage except bludgeoning which bypasses resistance, within 20 ft) instantly disables construct.
 
-**Reflective Crystals:** When hit by damaging spell, roll 1d6. On 5-6, spell reflects at caster. Once per round.
+**Reflective Crystals:** When hit by damaging spell, roll 1d6. On 4-6, spell reflects at caster. Once per round.
+
+**Regeneration:** The construct regains 10 HP at the start of its turn if it has at least 1 HP and is within 30 feet of its crystal core. If the construct takes bludgeoning damage, this trait doesn't function at the start of its next turn.
 
 **Actions:**
-- **Multiattack:** Two slam attacks.
-- **Slam:** +4 to hit, 5 ft., one target. *Hit:* 5 (1d6+2) bludgeoning + target makes DC 12 Con save or takes 2 (1d4) piercing from crystal shards.
+- **Multiattack:** Three slam attacks.
+- **Slam:** +7 to hit, 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage + target makes DC 15 Con save or takes 7 (2d6) piercing damage from crystal shards and is knocked prone.
+- **Crystal Shockwave (Recharge 5-6):** The construct slams the ground, sending crystal shards in a 15-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (4d10) piercing damage on a failed save, or half as much on a successful one.
 
 ## Encounter Phases
 
@@ -113,10 +116,13 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 - Defends crystals if threatened
 
 **Construct Tactics:**
-- Guards passage and crystal core
-- Prioritizes threats to core
-- Does not pursue beyond 30 feet
-- Becomes aggressive if core discovered
+- Guards passage and crystal core aggressively
+- Uses Multiattack (three slams) to devastating effect
+- Prioritizes threats to core, positions to protect it
+- Uses Crystal Shockwave when 2+ enemies are clustered
+- Regenerates 10 HP per turn (vulnerable to bludgeoning damage to stop this)
+- Does not pursue beyond 30 feet from core
+- Becomes extremely aggressive if core is attacked
 
 ## Tactical Challenges
 
@@ -126,9 +132,11 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 - Non-metal weapons suddenly valuable
 
 **For Casters:**
-- Construct's Reflective Crystals creates risk
-- Area spells might hit both creatures
-- *Dispel magic* useful on construct
+- Construct's Reflective Crystals creates HIGH risk (4-6 on d6 reflects)
+- Area spells might hit both creatures (but also damage core if positioned right)
+- *Dispel magic* useful on construct (DC 15 Con save)
+- Regeneration makes damage spells less effective
+- Bludgeoning cantrips (*magic stone*) stop regeneration
 
 **For Ranged:**
 - Narrow passage limits movement
@@ -138,7 +146,9 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 **Environmental:**
 - Crystal formations provide half cover
 - Destroying crystals angers rust monster
-- Finding core crystal disables construct
+- Finding core crystal disables construct (CRITICAL to success)
+- Narrow passage means Crystal Shockwave can hit multiple PCs
+- Construct regenerates near core - must separate or destroy core quickly
 
 ## Non-Combat Solutions
 
@@ -150,9 +160,10 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 
 ### Destroy Crystal Core
 - DC 12 Investigation (bonus action) to notice pulsing
-- Core: AC 13, 10 HP, vulnerable to bludgeoning
-- Located behind construct (ranged attack or reach weapon)
-- Construct collapses immediately
+- Core: AC 15, 30 HP, resistant to all damage except bludgeoning (bypasses resistance)
+- Located behind construct (ranged attack or reach weapon needed)
+- Construct collapses immediately when core destroyed
+- **Critical:** This is the key to victory - direct combat is deadly for level 3 party
 
 ### Lure Rust Monster Away
 - Drop metal 30+ feet back down passage
@@ -178,10 +189,10 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 - Rust monster antennae (20 gp, spell component)
 
 **Experience:**
-- 450 XP if both defeated
-- 350 XP if construct disabled via core + rust monster handled non-lethally
-- 300 XP if one avoided/bypassed
-- 200 XP if both avoided via stealth
+- 1,900 XP if both defeated in combat
+- 1,800 XP if construct disabled via core + rust monster defeated
+- 1,500 XP if construct disabled via core + rust monster avoided
+- 1,000 XP if both avoided via stealth (awarded for clever problem-solving)
 
 **Mistfallen Observation Points:**
 - **Positive:** Destroyed core instead of construct (shows intelligence), distracted rust monster (shows wisdom), avoided combat (shows restraint)
@@ -192,19 +203,23 @@ A narrow passage lined with red crystal formations. As you approach, two threats
 
 ### Difficulty Adjustments
 
-**Too Easy:**
-- Rust monster starts 20 feet closer
-- Construct has 40 HP instead of 33
+**Too Easy (for level 4-5 party):**
+- Construct has 120 HP instead of 93
+- Reduce core HP vulnerability window (only bludgeoning works)
 - Add second rust monster
 
-**Too Hard:**
-- Remove Reflective Crystals from construct
-- Rust monster has 20 HP instead of 27
+**Too Hard (for level 3 party):**
+- **Recommended:** Ensure party discovers core mechanic early (NPC hint, obvious pulsing)
+- Reduce construct HP to 70
+- Remove Regeneration ability
 - Make crystal core more obvious (bright pulsing, DC 10 to notice)
+- Crystal Shockwave recharges on 6 only
 
 **Party Has No Metal:**
 - Replace rust monster with Violet Fungi (CR 1/4, 3 fungi)
 - Or make rust monster non-hostile (just curious)
+
+**CRITICAL NOTE:** This is a deadly encounter for level 3 party if fought head-on. Players SHOULD use puzzle solution (destroy core) or avoid combat. If they engage directly without discovering core mechanic, consider dropping hints or having Mistfallen scouts intervene.
 
 ### Pacing Suggestions
 
