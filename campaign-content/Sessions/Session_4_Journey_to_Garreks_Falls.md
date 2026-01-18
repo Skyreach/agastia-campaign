@@ -98,17 +98,82 @@ At this point, party should understand:
 
 **Distance & Duration:** 8-12 hours of travel deeper into the Underdark
 **Encounters:** 4-6 encounters rolled on Underdark Crystal Encounters table
-**Encounter Table:** See `Resources/Tables/Underdark_Crystal_Encounters.md`
 
-### Using the Encounter Table
+### 2d6 Encounter Table (Level 3 Party)
 
 **Rolling:** 2d6 per 2-hour travel segment
-**Result 12:** Roll twice, both encounters happen (simultaneously or in sequence)
 
-**Encounter Themes:**
-- **Mind-Controlled (rolls 4, 6, 9, 11):** Creatures controlled by red crystals - can be freed by destroying nearby crystal
-- **Crystal-Corrupted (rolls 7, 8, 10):** Environmental hazards and creatures attracted to crystal energy
-- **Desperate Addicts (rolls 2, 3, 5):** Creatures driven mad by water addiction - tragic encounters
+**2d6 Roll 2:** 2 Hook Horrors (addicted) - CR 3 each
+- **Theme:** Desperate Addicts
+- **Description:** Violent, erratic behavior. Foam at mouth, claw marks on walls from trying to dig toward Falls
+- **Tactics:** Mindless aggression, fight to the death
+
+**2d6 Roll 3:** 1d4+1 Grimlocks (tribal) - CR 1/4 each
+- **Theme:** Desperate Addicts
+- **Description:** Some addicted, some not. Tribal group living in Underdark
+- **Non-Combat:** Possible negotiation if party shows mercy and doesn't claim to seek the water
+
+**2d6 Roll 4:** 2 Darkmantles + Red Crystal Formation - CR 1/2 each
+- **Theme:** Mind-Controlled
+- **Description:** Attached to red crystal cluster, drop on intruders from ceiling
+- **Liberation:** Crystal can be destroyed to free them (may flee or be confused)
+
+**2d6 Roll 5:** 1 Carrion Crawler - CR 2
+- **Theme:** Desperate Addicts
+- **Description:** Feeding on skeletal remains of failed seekers. Trail of bones leads toward Falls
+- **Environment:** Scattered remains tell story of past victims
+
+**2d6 Roll 6:** 2 Piercers near Crystal Choke Point - CR 1/2 each
+- **Theme:** Mind-Controlled
+- **Description:** Disguised as stalactites, creates narrow passage
+- **Detection:** DC 15 Perception to spot before they drop
+
+**2d6 Roll 7:** 1d3 Violet Fungi + Crystal Cluster - CR 1/4 each
+- **Theme:** Crystal-Corrupted
+- **Description:** Growing around pulsing red crystals. Hazardous zone
+- **Non-Combat:** Can bypass with successful DC 13 Stealth or find alternate route
+
+**2d6 Roll 8:** 1 Ochre Jelly (feeding on crystal) - CR 2
+- **Theme:** Crystal-Corrupted
+- **Description:** Translucent with red glow inside
+- **Tactics:** Splits when damaged by slashing. Lightning vulnerability
+
+**2d6 Roll 9:** 2 Quaggoths (controlled) - CR 2 each
+- **Theme:** Mind-Controlled
+- **Description:** Patrolling the area, under crystal influence
+- **Liberation:** Breaking nearby crystal frees them, may become allies or flee in confusion
+
+**2d6 Roll 10:** 1 Rust Monster + Crystal Formation - CR 1/2
+- **Theme:** Crystal-Corrupted
+- **Description:** Attracted to crystal energy. Dangerous for armored PCs
+- **Non-Combat:** Can be lured away with metal objects
+
+**2d6 Roll 11:** Crystal Guardian Construct - CR 1
+- **Theme:** Mind-Controlled
+- **Description:** Use Animated Armor stats. Made of crystalline shards, guards key passage
+- **Appearance:** Red crystals form humanoid shape, attacks intruders
+
+**2d6 Roll 12:** Roll Twice
+- Roll 2d6 twice, keep both results
+- Encounters happen simultaneously or in sequence (DM choice)
+- Represents heightened danger or bad luck
+
+### Encounter Themes Explained
+
+**Mind-Controlled (rolls 4, 6, 9, 11):**
+- Creatures controlled by red crystals can be freed by destroying nearby crystal
+- May become grateful or simply flee in confusion
+- Freeing them shows mercy (observed by Mistfallen scouts)
+
+**Crystal-Corrupted (rolls 7, 8, 10):**
+- Environmental hazards mixed with creatures
+- Emphasize the crystals' strange influence on Underdark ecology
+- Not hostile by intent, just dangerous
+
+**Desperate Addicts (rolls 2, 3, 5):**
+- Tragic encounters with creatures driven mad by water addiction
+- Some may be pitied, others are too far gone
+- Shows consequences of the Falls' power
 
 **Non-Combat Options:**
 Emphasize that combat isn't always necessary:
