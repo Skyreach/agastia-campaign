@@ -1,0 +1,27 @@
+# HuggingFace Token (contains secrets)
+config/hf_token.txt
+
+# Audio recordings (can be large WAV/MP3 files)
+recordings/
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+
+# Transcription outputs (raw outputs - transcripts will be in campaign-content/)
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

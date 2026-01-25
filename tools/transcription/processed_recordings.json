@@ -1,0 +1,5 @@
+{
+  "_schema_version": "1.0",
+  "_description": "Tracks processed audio recordings and their transcription status",
+  "recordings": {}
+}
