@@ -82,20 +82,26 @@ def detect_device() -> Tuple[str, str]:
 
 
 class Checkpoint:
-    """Save/load intermediate results so crashed jobs can resume"""
+    """
+    Save/load intermediate results so crashed jobs can resume.
+    Creates a manifest file for easy status checking from any thread.
+    """
 
-    def __init__(self, audio_path: str):
+    def __init__(self, audio_path: str, audio_duration: float = 0):
         audio = Path(audio_path)
         file_hash = hashlib.md5(audio.name.encode()).hexdigest()[:8]
         self.checkpoint_dir = audio.parent / f".checkpoint_{file_hash}"
         self.checkpoint_dir.mkdir(exist_ok=True)
         self.audio_path = audio_path
+        self.manifest_path = self.checkpoint_dir / "manifest.json"
+        self.audio_duration = audio_duration
 
     def save(self, step: str, data: Dict):
         """Save step result to checkpoint file"""
         path = self.checkpoint_dir / f"{step}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, default=str), encoding="utf-8")
         _log(f"  [checkpoint saved: {step}]")
+        self._update_manifest(current_step=step)
 
     def load(self, step: str) -> Optional[Dict]:
         """Load step result from checkpoint, or None if not found"""
@@ -109,18 +115,19 @@ class Checkpoint:
 
     def save_chunk(self, chunk_idx: int, data: List[Dict]):
         """Save individual diarization chunk result"""
-        path = self.checkpoint_dir / f"diarize_chunk_{chunk_idx}.json"
+        path = self.checkpoint_dir / f"diarize_chunk_{chunk_idx:03d}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, default=str), encoding="utf-8")
+        self._update_manifest()
 
     def load_chunk(self, chunk_idx: int) -> Optional[List[Dict]]:
         """Load individual chunk result"""
-        path = self.checkpoint_dir / f"diarize_chunk_{chunk_idx}.json"
+        path = self.checkpoint_dir / f"diarize_chunk_{chunk_idx:03d}.json"
         if path.exists():
             return json.loads(path.read_text(encoding="utf-8"))
         return None
 
     def has_chunk(self, chunk_idx: int) -> bool:
-        return (self.checkpoint_dir / f"diarize_chunk_{chunk_idx}.json").exists()
+        return (self.checkpoint_dir / f"diarize_chunk_{chunk_idx:03d}.json").exists()
 
     def get_completed_chunks(self) -> List[int]:
         """Get list of completed chunk indices"""
@@ -132,6 +139,58 @@ class Checkpoint:
             except ValueError:
                 pass
         return sorted(completed)
+
+    def _update_manifest(self, current_step: str = None, total_chunks: int = None, status: str = "in_progress"):
+        """Update the manifest file with current job state"""
+        manifest = self.load_manifest() or {}
+
+        manifest.update({
+            "audio_file": str(Path(self.audio_path).name),
+            "audio_path": str(self.audio_path),
+            "audio_duration_sec": self.audio_duration,
+            "audio_duration_human": _format_duration(self.audio_duration) if self.audio_duration else "unknown",
+            "checkpoint_dir": str(self.checkpoint_dir),
+            "last_updated": datetime.now().isoformat(),
+            "status": status,
+        })
+
+        if current_step:
+            manifest["current_step"] = current_step
+
+        if total_chunks is not None:
+            manifest["total_chunks"] = total_chunks
+
+        # Always update completed chunks
+        completed = self.get_completed_chunks()
+        manifest["completed_chunks"] = len(completed)
+        manifest["completed_chunk_ids"] = completed
+
+        if manifest.get("total_chunks"):
+            manifest["pending_chunks"] = manifest["total_chunks"] - len(completed)
+            manifest["progress_pct"] = round(100 * len(completed) / manifest["total_chunks"], 1)
+
+        # Check step completion
+        manifest["steps_completed"] = {
+            "step1_transcribe": self.has("step1_transcribe"),
+            "step2_align": self.has("step2_align"),
+            "step3_diarize": self.has("step3_diarize"),
+        }
+
+        self.manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+    def load_manifest(self) -> Optional[Dict]:
+        """Load manifest file"""
+        if self.manifest_path.exists():
+            return json.loads(self.manifest_path.read_text(encoding="utf-8"))
+        return None
+
+    def init_diarization(self, total_chunks: int):
+        """Initialize manifest for diarization tracking"""
+        self._update_manifest(current_step="step3_diarize", total_chunks=total_chunks)
+
+    def complete(self):
+        """Mark job as complete"""
+        self._update_manifest(status="complete")
 
     def cleanup(self):
         """Remove checkpoint files after successful completion"""
@@ -241,11 +300,12 @@ class TranscriptionServiceV2:
             self.load_model()
 
         total_start = time.time()
-        ckpt = Checkpoint(audio_path)
 
-        # Load audio and show duration
+        # Pre-load audio to get duration for manifest
         audio = whisperx.load_audio(audio_path)
         audio_duration = audio.shape[0] / 16000
+
+        ckpt = Checkpoint(audio_path, audio_duration=audio_duration)
         _log(f"\nTranscribing: {audio_path}")
         _log(f"Audio duration: {_format_duration(audio_duration)}")
         _log(f"Device: {self.device}")
@@ -342,6 +402,7 @@ class TranscriptionServiceV2:
         speed = audio_duration / total_elapsed if total_elapsed > 0 else 0
         _log(f"Overall speed: {speed:.2f}x realtime")
 
+        ckpt.complete()
         ckpt.cleanup()
         return result
 
@@ -376,8 +437,8 @@ class TranscriptionServiceV2:
         global _interrupt_requested
         import pandas as pd
 
-        # Calculate chunk boundaries (30 min chunks with 30s overlap)
-        chunk_duration = 1800  # 30 minutes
+        # Calculate chunk boundaries (10 min chunks with 30s overlap)
+        chunk_duration = 600  # 10 minutes - smaller chunks = faster checkpoints
         overlap = 30  # 30 seconds
 
         chunks = []
@@ -390,6 +451,9 @@ class TranscriptionServiceV2:
             chunk_idx += 1
 
         total_chunks = len(chunks)
+
+        # Initialize manifest for tracking
+        ckpt.init_diarization(total_chunks)
 
         # Check which chunks are already completed (from previous interrupted run)
         completed_chunks = set(ckpt.get_completed_chunks())
@@ -462,11 +526,67 @@ def load_hf_token() -> Optional[str]:
     return None
 
 
+def list_pending_jobs(recordings_dir: Path) -> List[Dict]:
+    """
+    Find all pending/incomplete transcription jobs.
+    Scans for checkpoint directories and returns their manifest status.
+    """
+    jobs = []
+
+    for checkpoint_dir in recordings_dir.rglob(".checkpoint_*"):
+        manifest_path = checkpoint_dir / "manifest.json"
+        if manifest_path.exists():
+            try:
+                manifest = json.loads(manifest_path.read_text())
+                if manifest.get("status") != "complete":
+                    jobs.append(manifest)
+            except Exception:
+                pass
+
+    return sorted(jobs, key=lambda x: x.get("last_updated", ""), reverse=True)
+
+
+def print_job_status(recordings_dir: Path):
+    """Print status of all pending transcription jobs"""
+    jobs = list_pending_jobs(recordings_dir)
+
+    if not jobs:
+        _log("No pending transcription jobs found.")
+        return
+
+    _log(f"\n{'='*60}")
+    _log(f"PENDING TRANSCRIPTION JOBS ({len(jobs)} found)")
+    _log(f"{'='*60}\n")
+
+    for job in jobs:
+        _log(f"📁 {job.get('audio_file', 'Unknown')}")
+        _log(f"   Duration: {job.get('audio_duration_human', 'Unknown')}")
+        _log(f"   Status: {job.get('status', 'unknown')}")
+
+        steps = job.get("steps_completed", {})
+        step_status = []
+        if steps.get("step1_transcribe"):
+            step_status.append("✓ Transcribed")
+        if steps.get("step2_align"):
+            step_status.append("✓ Aligned")
+        if steps.get("step3_diarize"):
+            step_status.append("✓ Diarized")
+        _log(f"   Steps: {', '.join(step_status) if step_status else 'Not started'}")
+
+        if job.get("total_chunks"):
+            _log(f"   Diarization: {job.get('completed_chunks', 0)}/{job.get('total_chunks')} chunks "
+                 f"({job.get('progress_pct', 0)}%)")
+
+        _log(f"   Last updated: {job.get('last_updated', 'Unknown')}")
+        _log(f"   Resume with: python3 transcribe_v2.py \"{job.get('audio_path', '')}\"")
+        _log()
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Optimized audio transcription with parallel diarization"
     )
-    parser.add_argument("audio_file", help="Path to audio file")
+    parser.add_argument("audio_file", nargs="?", help="Path to audio file (omit to list pending jobs)")
     parser.add_argument("--model", default="base",
                        choices=["tiny", "base", "small", "medium", "large-v2"])
     parser.add_argument("--language", help="Language code (auto-detect if not set)")
@@ -476,8 +596,38 @@ def main():
     parser.add_argument("--workers", type=int, default=4,
                        help="Parallel diarization workers (default: 4)")
     parser.add_argument("--output-dir", help="Output directory")
+    parser.add_argument("--status", action="store_true",
+                       help="Show status of all pending jobs")
+    parser.add_argument("--resume-all", action="store_true",
+                       help="Resume all pending jobs one by one")
 
     args = parser.parse_args()
+
+    # Default recordings directory
+    recordings_dir = Path(__file__).parent.parent / "recordings"
+
+    # Status mode - list all pending jobs
+    if args.status or (args.audio_file is None and not args.resume_all):
+        print_job_status(recordings_dir)
+        return
+
+    # Resume-all mode
+    if args.resume_all:
+        jobs = list_pending_jobs(recordings_dir)
+        if not jobs:
+            _log("No pending jobs to resume.")
+            return
+        _log(f"Resuming {len(jobs)} pending job(s)...\n")
+        for job in jobs:
+            audio_path = job.get("audio_path")
+            if audio_path and Path(audio_path).exists():
+                _log(f"\n{'='*60}")
+                _log(f"Resuming: {job.get('audio_file')}")
+                _log(f"{'='*60}")
+                # Recursive call to process this file
+                sys.argv = [sys.argv[0], audio_path]
+                main()
+        return
 
     audio_path = Path(args.audio_file)
     if not audio_path.exists():
