@@ -5,14 +5,74 @@ Uses WhisperX for transcription and pyannote for speaker identification
 """
 
 import argparse
+import hashlib
 import json
 import os
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 
+# Force unbuffered output so progress is visible in real time
+os.environ["PYTHONUNBUFFERED"] = "1"
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(line_buffering=True)
+
 import whisperx
+
+
+def _log(msg: str = ""):
+    """Print with immediate flush"""
+    print(msg, flush=True)
+
+
+def _format_duration(seconds: float) -> str:
+    """Format seconds as human-readable duration"""
+    h = int(seconds // 3600)
+    m = int((seconds % 3600) // 60)
+    s = int(seconds % 60)
+    if h > 0:
+        return f"{h}h {m:02d}m {s:02d}s"
+    elif m > 0:
+        return f"{m}m {s:02d}s"
+    return f"{s}s"
+
+
+class Checkpoint:
+    """Save/load intermediate results so crashed jobs can resume"""
+
+    def __init__(self, audio_path: str):
+        # Checkpoint dir lives next to the audio file
+        audio = Path(audio_path)
+        file_hash = hashlib.md5(audio.name.encode()).hexdigest()[:8]
+        self.checkpoint_dir = audio.parent / f".checkpoint_{file_hash}"
+        self.checkpoint_dir.mkdir(exist_ok=True)
+
+    def save(self, step: str, data: Dict):
+        """Save step result to checkpoint file"""
+        path = self.checkpoint_dir / f"{step}.json"
+        path.write_text(json.dumps(data, ensure_ascii=False, default=str), encoding="utf-8")
+        _log(f"  [checkpoint saved: {step}]")
+
+    def load(self, step: str) -> Optional[Dict]:
+        """Load step result from checkpoint, or None if not found"""
+        path = self.checkpoint_dir / f"{step}.json"
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8"))
+        return None
+
+    def has(self, step: str) -> bool:
+        return (self.checkpoint_dir / f"{step}.json").exists()
+
+    def cleanup(self):
+        """Remove checkpoint files after successful completion"""
+        import shutil
+        if self.checkpoint_dir.exists():
+            shutil.rmtree(self.checkpoint_dir)
+            _log("  [checkpoints cleaned up]")
 
 
 class TranscriptionService:
@@ -39,7 +99,7 @@ class TranscriptionService:
         Args:
             model_name: Model size (tiny, base, small, medium, large-v2)
         """
-        print(f"Loading Whisper model '{model_name}' on {self.device}...")
+        _log(f"Loading Whisper model '{model_name}' on {self.device}...")
         self.model = whisperx.load_model(
             model_name,
             self.device,
@@ -53,63 +113,104 @@ class TranscriptionService:
         batch_size: int = 16
     ) -> Dict:
         """
-        Transcribe audio file with speaker diarization
-
-        Args:
-            audio_path: Path to audio file
-            language: Language code (e.g., 'en', 'es') or None for auto-detect
-            batch_size: Batch size for processing
-
-        Returns:
-            Dictionary containing transcription results
+        Transcribe audio file with speaker diarization.
+        Saves checkpoints after each step so crashed jobs can resume.
         """
         if not self.model:
             self.load_model()
 
-        print(f"\nTranscribing: {audio_path}")
-        print("Step 1/4: Running Whisper transcription...")
+        total_start = time.time()
+        ckpt = Checkpoint(audio_path)
+
+        # Load audio and show duration
+        audio = whisperx.load_audio(audio_path)
+        audio_duration = audio.shape[0] / 16000  # whisperx resamples to 16kHz
+        _log(f"\nTranscribing: {audio_path}")
+        _log(f"Audio duration: {_format_duration(audio_duration)}")
+        _log()
 
         # Step 1: Transcribe with Whisper
-        audio = whisperx.load_audio(audio_path)
-        result = self.model.transcribe(audio, batch_size=batch_size, language=language)
-
-        print(f"Detected language: {result.get('language', 'unknown')}")
+        if ckpt.has("step1_transcribe"):
+            _log("Step 1/4: Whisper transcription [RESUMING FROM CHECKPOINT]")
+            result = ckpt.load("step1_transcribe")
+            _log(f"  Loaded from checkpoint. Language: {result.get('language', 'unknown')}")
+        else:
+            step_start = time.time()
+            _log("Step 1/4: Running Whisper transcription...")
+            result = self.model.transcribe(audio, batch_size=batch_size, language=language)
+            step_elapsed = time.time() - step_start
+            _log(f"  Done in {_format_duration(step_elapsed)} "
+                 f"({audio_duration / step_elapsed:.1f}x realtime)")
+            _log(f"  Detected language: {result.get('language', 'unknown')}")
+            ckpt.save("step1_transcribe", result)
 
         # Step 2: Align whisper output
-        print("Step 2/4: Aligning timestamps...")
-        model_a, metadata = whisperx.load_align_model(
-            language_code=result["language"],
-            device=self.device
-        )
-        result = whisperx.align(
-            result["segments"],
-            model_a,
-            metadata,
-            audio,
-            self.device,
-            return_char_alignments=False
-        )
+        if ckpt.has("step2_align"):
+            _log("Step 2/4: Timestamp alignment [RESUMING FROM CHECKPOINT]")
+            result = ckpt.load("step2_align")
+            _log(f"  Loaded from checkpoint. {len(result.get('segments', []))} segments.")
+        else:
+            step_start = time.time()
+            _log("Step 2/4: Aligning timestamps...")
+            model_a, metadata = whisperx.load_align_model(
+                language_code=result["language"],
+                device=self.device
+            )
+            result = whisperx.align(
+                result["segments"],
+                model_a,
+                metadata,
+                audio,
+                self.device,
+                return_char_alignments=False
+            )
+            step_elapsed = time.time() - step_start
+            _log(f"  Done in {_format_duration(step_elapsed)}. "
+                 f"{len(result.get('segments', []))} segments.")
+            ckpt.save("step2_align", result)
 
         # Step 3: Speaker diarization (if HF token provided)
         if self.hf_token:
-            print("Step 3/4: Identifying speakers...")
-            try:
-                # Using community-maintained model (actively updated)
-                diarize_model = whisperx.DiarizationPipeline(
-                    model_name="pyannote/speaker-diarization-community-1",
-                    use_auth_token=self.hf_token,
-                    device=self.device
-                )
-                diarize_segments = diarize_model(audio)
-                result = whisperx.assign_word_speakers(diarize_segments, result)
-                print(f"Identified {len(set(s.get('speaker', 'UNKNOWN') for s in result['segments']))} speakers")
-            except Exception as e:
-                print(f"Warning: Speaker diarization failed: {e}")
-                print("Continuing without speaker labels...")
+            if ckpt.has("step3_diarize"):
+                _log("Step 3/4: Speaker diarization [RESUMING FROM CHECKPOINT]")
+                result = ckpt.load("step3_diarize")
+                num_speakers = len(set(s.get('speaker', 'UNKNOWN') for s in result['segments']))
+                _log(f"  Loaded from checkpoint. {num_speakers} speakers.")
+            else:
+                step_start = time.time()
+                _log("Step 3/4: Identifying speakers...")
+                try:
+                    import pandas as pd
+                    from pyannote.audio import Pipeline
+                    import torch as _torch
+                    diarize_pipeline = Pipeline.from_pretrained(
+                        "pyannote/speaker-diarization-3.1",
+                        use_auth_token=self.hf_token,
+                    ).to(_torch.device(self.device))
+                    annotation = diarize_pipeline(audio_path)
+                    rows = []
+                    for turn, _, speaker in annotation.itertracks(yield_label=True):
+                        rows.append({"start": turn.start, "end": turn.end, "speaker": speaker})
+                    diarize_df = pd.DataFrame(rows)
+                    result = whisperx.assign_word_speakers(diarize_df, result)
+                    step_elapsed = time.time() - step_start
+                    num_speakers = len(set(s.get('speaker', 'UNKNOWN') for s in result['segments']))
+                    _log(f"  Identified {num_speakers} speakers in {_format_duration(step_elapsed)}")
+                    ckpt.save("step3_diarize", result)
+                except Exception as e:
+                    _log(f"  Warning: Speaker diarization failed: {e}")
+                    _log(f"  Continuing without speaker labels...")
         else:
-            print("Step 3/4: Skipping speaker diarization (no HuggingFace token)")
+            _log("Step 3/4: Skipping speaker diarization (no HuggingFace token)")
 
-        print("Step 4/4: Finalizing results...")
+        total_elapsed = time.time() - total_start
+        _log(f"Step 4/4: Finalizing results...")
+        _log(f"\nTotal processing time: {_format_duration(total_elapsed)} "
+             f"for {_format_duration(audio_duration)} of audio "
+             f"({audio_duration / total_elapsed:.1f}x realtime)")
+
+        # Clean up checkpoints on success
+        ckpt.cleanup()
 
         return result
 

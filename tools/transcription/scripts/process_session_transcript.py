@@ -14,7 +14,8 @@ from typing import Dict, List, Optional
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
-from transcribe import TranscriptionService, TranscriptFormatter
+# Use v2 for optimized long-audio processing (parallel diarization, GPU auto-detect)
+from transcribe_v2 import TranscriptionServiceV2 as TranscriptionService
 
 
 class SessionTranscriptProcessor:
@@ -372,7 +373,8 @@ def main():
     if hf_token_file.exists():
         hf_token = hf_token_file.read_text().strip()
 
-    service = TranscriptionService(hf_token=hf_token, device="cpu", compute_type="int8")
+    # V2 auto-detects GPU/CPU
+    service = TranscriptionService(hf_token=hf_token)
 
     try:
         result = service.transcribe_audio(recording["path"])
