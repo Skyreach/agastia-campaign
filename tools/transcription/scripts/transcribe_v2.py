@@ -13,6 +13,7 @@ import argparse
 import hashlib
 import json
 import os
+import signal
 import sys
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -23,6 +24,22 @@ import multiprocessing as mp
 
 # Force unbuffered output
 os.environ["PYTHONUNBUFFERED"] = "1"
+
+# Graceful interrupt handling
+_interrupt_requested = False
+
+def _signal_handler(signum, frame):
+    """Handle Ctrl+C gracefully - finish current work, save, exit"""
+    global _interrupt_requested
+    if _interrupt_requested:
+        _log("\n⚠️  Force quit requested. Exiting immediately (progress may be lost)...")
+        sys.exit(1)
+    _interrupt_requested = True
+    _log("\n⚠️  Interrupt received. Finishing current chunk and saving progress...")
+    _log("   (Press Ctrl+C again to force quit)")
+
+signal.signal(signal.SIGINT, _signal_handler)
+signal.signal(signal.SIGTERM, _signal_handler)
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(line_buffering=True)
 if hasattr(sys.stderr, "reconfigure"):
@@ -89,6 +106,32 @@ class Checkpoint:
 
     def has(self, step: str) -> bool:
         return (self.checkpoint_dir / f"{step}.json").exists()
+
+    def save_chunk(self, chunk_idx: int, data: List[Dict]):
+        """Save individual diarization chunk result"""
+        path = self.checkpoint_dir / f"diarize_chunk_{chunk_idx}.json"
+        path.write_text(json.dumps(data, ensure_ascii=False, default=str), encoding="utf-8")
+
+    def load_chunk(self, chunk_idx: int) -> Optional[List[Dict]]:
+        """Load individual chunk result"""
+        path = self.checkpoint_dir / f"diarize_chunk_{chunk_idx}.json"
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8"))
+        return None
+
+    def has_chunk(self, chunk_idx: int) -> bool:
+        return (self.checkpoint_dir / f"diarize_chunk_{chunk_idx}.json").exists()
+
+    def get_completed_chunks(self) -> List[int]:
+        """Get list of completed chunk indices"""
+        completed = []
+        for f in self.checkpoint_dir.glob("diarize_chunk_*.json"):
+            try:
+                idx = int(f.stem.split("_")[-1])
+                completed.append(idx)
+            except ValueError:
+                pass
+        return sorted(completed)
 
     def cleanup(self):
         """Remove checkpoint files after successful completion"""
@@ -272,12 +315,16 @@ class TranscriptionServiceV2:
             # Decide whether to parallelize based on audio length
             if audio_duration > 1800:  # > 30 minutes
                 _log(f"Step 3/4: Parallel speaker diarization ({parallel_chunks} workers)...")
-                diarize_df = self._parallel_diarize(audio_path, audio_duration, parallel_chunks)
+                diarize_df = self._parallel_diarize(audio_path, audio_duration, parallel_chunks, ckpt)
             else:
                 _log("Step 3/4: Speaker diarization...")
                 diarize_df = self._single_diarize(audio_path)
 
-            if diarize_df is not None and len(diarize_df) > 0:
+            if _interrupt_requested:
+                _log("\n⚠️  Exiting due to interrupt. Checkpoints preserved for resume.")
+                _log(f"   Run the same command again to continue from where you left off.")
+                sys.exit(0)
+            elif diarize_df is not None and len(diarize_df) > 0:
                 result = whisperx.assign_word_speakers(diarize_df, result)
                 step_elapsed = time.time() - step_start
                 num_speakers = len(set(s.get('speaker', 'UNKNOWN') for s in result['segments']))
@@ -320,11 +367,13 @@ class TranscriptionServiceV2:
             _log(f"  Warning: Diarization failed: {e}")
             return None
 
-    def _parallel_diarize(self, audio_path: str, duration: float, num_workers: int):
+    def _parallel_diarize(self, audio_path: str, duration: float, num_workers: int, ckpt: Checkpoint):
         """
         Split audio into chunks and diarize in parallel.
         Uses overlapping windows to handle speaker continuity.
+        Supports graceful interrupt - saves each chunk as it completes.
         """
+        global _interrupt_requested
         import pandas as pd
 
         # Calculate chunk boundaries (30 min chunks with 30s overlap)
@@ -340,22 +389,50 @@ class TranscriptionServiceV2:
             start = end - overlap
             chunk_idx += 1
 
-        _log(f"  Splitting into {len(chunks)} chunks...")
+        total_chunks = len(chunks)
 
-        # Process chunks in parallel
+        # Check which chunks are already completed (from previous interrupted run)
+        completed_chunks = set(ckpt.get_completed_chunks())
+        if completed_chunks:
+            _log(f"  Resuming: {len(completed_chunks)}/{total_chunks} chunks already done")
+
+        # Load already-completed chunk results
         all_rows = []
+        for idx in completed_chunks:
+            chunk_data = ckpt.load_chunk(idx)
+            if chunk_data:
+                all_rows.extend(chunk_data)
 
-        # Use 'spawn' to avoid CUDA context issues
-        ctx = mp.get_context('spawn')
-        with ProcessPoolExecutor(max_workers=num_workers, mp_context=ctx) as executor:
-            futures = {executor.submit(_diarize_chunk, chunk): i for i, chunk in enumerate(chunks)}
+        # Filter to only pending chunks
+        pending_chunks = [(c, i) for i, c in enumerate(chunks) if i not in completed_chunks]
 
-            completed = 0
-            for future in as_completed(futures):
-                completed += 1
-                chunk_rows = future.result()
-                all_rows.extend(chunk_rows)
-                _log(f"  Chunk {completed}/{len(chunks)} complete ({len(chunk_rows)} segments)")
+        if not pending_chunks:
+            _log(f"  All {total_chunks} chunks already completed!")
+        else:
+            _log(f"  Processing {len(pending_chunks)} remaining chunks with {num_workers} workers...")
+
+            # Process chunks in parallel
+            ctx = mp.get_context('spawn')
+            with ProcessPoolExecutor(max_workers=num_workers, mp_context=ctx) as executor:
+                futures = {executor.submit(_diarize_chunk, chunk): idx for chunk, idx in pending_chunks}
+
+                completed = len(completed_chunks)
+                for future in as_completed(futures):
+                    chunk_idx = futures[future]
+                    chunk_rows = future.result()
+
+                    # Save this chunk immediately
+                    ckpt.save_chunk(chunk_idx, chunk_rows)
+                    all_rows.extend(chunk_rows)
+
+                    completed += 1
+                    _log(f"  Chunk {completed}/{total_chunks} complete ({len(chunk_rows)} segments)")
+
+                    # Check for interrupt
+                    if _interrupt_requested:
+                        _log(f"\n⚠️  Interrupt: Saved {completed}/{total_chunks} chunks. Run again to resume.")
+                        executor.shutdown(wait=False, cancel_futures=True)
+                        return None
 
         if not all_rows:
             return None
@@ -365,7 +442,6 @@ class TranscriptionServiceV2:
         df = df.sort_values("start").reset_index(drop=True)
 
         # Simple speaker reconciliation: map chunk-specific IDs to global IDs
-        # This is a basic approach - could be improved with embedding similarity
         speaker_map = {}
         global_id = 0
         for speaker in df["speaker"].unique():
