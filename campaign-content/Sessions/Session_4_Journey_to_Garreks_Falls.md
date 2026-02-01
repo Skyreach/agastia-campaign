@@ -93,17 +93,23 @@ graph TD
   7. **Week-Long Quest:** Party stays with tribe, explores Underdark, addresses problems (content TBD)
   8. **Agastia Mission:** Final task sends party back to surface (sets up Lyria connection)
 
-**Toggle: Key NPCs**
+**Toggle: Key NPCs - Mistfall Village**
   - **Green Dragon (freed):** Guide and narrator, warns party about water's addictive properties
-  - **Kethrin:** Mistfallen elder/shaman (CR 2), controls crystal network, performs cure rituals
-  - **Darva:** Scout leader (CR 1/2), observes party from shadows, makes first assessment
-  - **Finn:** Young artisan (CR 1/4), sympathetic to outsiders, acts as cultural bridge
-  - **Morvek:** Caretaker (CR 1/4), presents harsh realities of addiction, challenges idealism
+  - **[[NPC_Kethrin_Elder|Kethrin]]:** Mistfallen elder/shaman (CR 2), controls crystal network, performs cure rituals
+  - **[[NPC_Darva_Scout|Darva]]:** Scout leader (CR 1/2), observes party from shadows, makes first assessment
+  - **[[NPC_Finn_Artisan|Finn]]:** Young artisan (CR 1/4), sympathetic to outsiders, acts as cultural bridge
+  - **[[NPC_Morvek_Caretaker|Morvek]]:** Caretaker (CR 1/4), presents harsh realities of addiction, challenges idealism
+
+**Toggle: Key NPCs - If Party Returns to Agastia**
+  - See [[Agastia_City]] for full district breakdown and NPC listings
+  - **[[NPC_Lyria|Lyria]]:** Red-haired woman with Mistfallen freckle patterns (connection TBD)
+  - **[[NPC_Thorne_Kallister|Thorne Kallister]]:** Potential information broker in [[Dock District]]
+  - **[[NPC_Kex_the_Fence|Kex the Fence]]:** Underworld contact for quick jobs
 
 **Toggle: Important Locations & Items**
-  - **Garrek's Falls:** Legendary location with healing/addictive water (see Location_Garreks_Falls.md)
-  - **Red Crystal Network:** Mind control system used by Mistfallen for protection
-  - **Mistfallen Settlement:** Hidden deeper in Underdark (week-long content TBD)
+  - **[[Location_Garreks_Falls|Garrek's Falls]]:** Legendary location with healing/addictive water
+  - **Red Crystal Network:** Mind control system used by [[Faction_Mistfallen_Tribe|Mistfallen]] for protection
+  - **[[Location_Mistfall_Village|Mistfall Village]]:** Hidden deeper in Underdark (week-long content TBD)
   - **Healing Water (potential):** Regrows limbs, cures disease, raises dead (<72hr), restores all HP
 
 **Toggle: Key Mechanics**
@@ -503,29 +509,39 @@ Before session, prepare:
 
 ## NPC Roleplay Reference
 
-**Kethrin (Elder/Shaman):**
+### Mistfall Village NPCs
+
+**[[NPC_Kethrin_Elder|Kethrin]] (Elder/Shaman):**
 - Voice: Slow, measured, weary but hopeful
 - Tests through questions, not combat
 - Quotes: "Every season, we bury those who thought themselves wiser than the warning."
 - Goal: Find trustworthy allies, ease the burden
 
-**Darva (Scout Leader):**
+**[[NPC_Darva_Scout|Darva]] (Scout Leader):**
 - Voice: Short, clipped, always watching
 - Suspicious but fair
 - Actions speak louder than words
 - Goal: Protect tribe, assess threats accurately
 
-**Finn (Young Artisan):**
+**[[NPC_Finn_Artisan|Finn]] (Young Artisan):**
 - Voice: Eager, curious, asks about surface world
 - Bridges cultural gaps with enthusiasm
 - Quotes: "Is it true the surface has a sky? What does it look like?"
 - Goal: Learn about outsiders, maybe find better way than isolation
 
-**Morvek (Caretaker):**
+**[[NPC_Morvek_Caretaker|Morvek]] (Caretaker):**
 - Voice: Blunt, practical, challenges idealism
 - Presents harsh realities without sugar-coating
 - Quotes: "You want to help? Start by not drinking the water."
 - Goal: Prevent suffering, respects those who make hard choices
+
+### Agastia NPCs (If Party Returns)
+
+See [[Agastia_City]] for complete NPC listings by district. Key contacts:
+
+**[[NPC_Lyria|Lyria]]:** Connection to Mistfallen (faded red hair, scattered freckles = mixed heritage). Party will recognize her after meeting the tribe.
+
+**[[NPC_Thorne_Kallister|Thorne Kallister]]:** Information broker who might know about Underdark trade routes or Chaos Cult activity on the surface.
 
 ## Connections to Campaign
 
@@ -535,9 +551,9 @@ Before session, prepare:
 - Dragon freedom: Cited as evidence of party's mercy/wisdom
 
 **Future Hooks:**
-- **Lyria in Agastia:** Red hair + freckle patterns will be recognizable after meeting Mistfallen
-- **Chaos Cult:** Corruption threatening Falls ties to main campaign antagonist
-- **Week-Long Quest:** Opens up Underdark point-crawl content
+- **[[NPC_Lyria|Lyria]] in [[Agastia_City|Agastia]]:** Red hair + freckle patterns will be recognizable after meeting [[Faction_Mistfallen_Tribe|Mistfallen]]
+- **[[Faction_Chaos_Cult|Chaos Cult]]:** Corruption threatening Falls ties to main campaign antagonist
+- **Week-Long Quest:** Opens up Underdark point-crawl content (see [[Location_Mistfall_Village]])
 - **Agastia Mission:** Creates reason to return to surface with Mistfallen objective
 
 ## DM Preparation Checklist
