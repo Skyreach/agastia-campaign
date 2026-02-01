@@ -1,10 +1,55 @@
 ---
-date: TBD
+date: 2025-01-18
 name: Session 4 - Journey to Garrek's Falls
 session_number: 4
-status: Planning
+status: Played
 version: "1.0.0"
 tags: [session4, underdark, garreks-falls, mistfallen-tribe, crystal-network, peaceful-resolution]
+---
+
+## Session Summary (What Actually Happened)
+
+### Encounters
+
+**Encounter 1: Golem & Ooze**
+- CR 5 Golem (AC reduced to 15 for balance)
+- Ochre Jelly (CR 2)
+- *Outcome:* Party victorious
+
+**Encounter 2: Beast Gauntlet**
+- Minotaur (CR 3)
+- Giant Snake (CR 2)
+- Giant Scorpion (CR 3)
+- Golgari Shaman (CR 5)
+- *Outcome:* Party victorious - wild fight!
+
+### Arrival at Garrek's Falls
+
+- Party reached Garrek's Falls
+- Considering turning back at this point
+- **Monomi's Investigation:** Rolled investigation on the room
+- **Discovery:** Found a secret door hidden behind the falls
+
+### Loot
+
+**From the Golgari Shaman:**
+
+**[[Item_Mistfall_Shamans_Journal]]** - Weathered leather bound with sinew, fungal stains on the cover, written in Common with occasional Undercommon marginalia. Contains decades of entries chronicling the writer's time guarding the falls, his relationship with the Mistfallen tribe, and his gradual descent into isolation.
+
+**Magic Items:**
+- **Eyes of Charming** (Uncommon, requires attunement) - Lenses of smoky quartz set in copper wire frames
+- **Elemental Gem (Earth)** - Khaki-colored stone containing a bound Earth Elemental
+- **Heward's Handy Spice Pouch** (Common) - Embroidered with mushroom motifs
+
+**Spell Components:**
+- **Pearl** (100 gp) - Suitable for *Identify*
+- **Diamond** (300 gp) - Suitable for *Revivify*
+
+**Gemstones:**
+- **Red Corundum** (50 gp) - Deep crimson, similar color to the mind-control crystals
+
+**Gold:** 45 gp in mixed coinage
+
 ---
 
 # Session 4: Journey to Garrek's Falls - DM Guide

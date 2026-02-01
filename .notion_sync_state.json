@@ -948,7 +948,7 @@
     },
     "campaign-content/Sessions/Session_4_Journey_to_Garreks_Falls.md": {
       "notion_page_id": "2ec693f0c6b481ca93f5cb189ad9fbf7",
-      "last_pushed_to_notion": "2026-01-18T16:17:26.084849+00:00"
+      "last_pushed_to_notion": "2026-02-01T04:42:39.749081+00:00"
     },
     "campaign-content/Encounters/Crystal_Guardian_Construct.md": {
       "notion_page_id": "2ec693f0c6b4812887cdfa84986c3668",
@@ -961,6 +961,10 @@
     "campaign-content/Encounters/Crystal_Passage_Ambush.md": {
       "notion_page_id": "2ec693f0c6b481fca262e67b73d1f324",
       "last_pushed_to_notion": "2026-01-18T17:11:55.688297+00:00"
+    },
+    "campaign-content/Items/Item_Mistfall_Shamans_Journal.md": {
+      "notion_page_id": "2fa693f0c6b481ed991ee14dae498e59",
+      "last_pushed_to_notion": "2026-02-01T04:40:45.267829+00:00"
     }
   }
 }
